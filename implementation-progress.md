@@ -28,11 +28,10 @@
 - 手順は `agents/experience-improver.md`、提案は `improvement-ideas.md` に保存する。要求事項は変更しない。
 - PR #5は設定変更後の再試行でmainマージ済み（f7b5cc3）。以前の更新制限によるブロッカーは解消済み。
 - 第1サイクル UX-001（設定から全画面表示）はPR #6でCI成功後mainマージ済み。
-- 第2サイクルはユーザー追加要求の電車・飛行機・野良猫・窓の点消灯。`feat/living-night-city` で実装済み、コミット・PR・CI・マージへ進む。
-- 2026-10-21再開後、型・Lint・単体11件・本番ビルド成功。Chromiumで1440×900と390×844の表示、実行時エラーなしを確認。飛行機の端での折り返しを補正。
-- 動き軽減のOS同期も全演出の停止操作を支える修正として含める。Playwrightでは全描画の停止・再開とOS設定の動的変更・個人設定の保持を検証する。
-- 次回はコンテンツ候補を再評価する。現在の最優先候補はC-001（カップの湯気・鉢植えの夜風）。猫のくつろぐ仕草、遠いタクシー、月と薄雲も候補。
-- `requirements.md` の追加はユーザーが明示した乗り物・猫・窓のみ。エージェントの案は `improvement-ideas.md` に分ける。
+- 第2サイクル（電車・飛行機・野良猫・窓の点消灯とOS動き軽減の同期）はPR #7でCI成功後mainマージ済み（76d2c9a）。公開処理の結果を確認する。
+- 第3サイクル C-001（カップの湯気と鉢植えの夜風）を `feat/rooftop-night-breeze` で実装・ローカル検証済み。型・Lint・単体11件・ビルド成功。PC/スマートフォンを目視確認し実行時エラーなし。コミット・PR・CI・マージへ進む。
+- 次の候補はC-002（猫がくつろぐ仕草・足元の影）、C-006（窓の奥の人影）、C-003（遠いタクシー）。コンテンツの充実を設定・CI案より優先する。
+- 要求事項はユーザーの明示指定のみを保持し、C-001等は `improvement-ideas.md` に分ける。
 
 ## 再開手順
 
@@ -55,6 +54,7 @@
 - [#2 開発基盤](https://github.com/khatada/silent-webpage/pull/2): マージ済み。
 - [#3 夜景と音の体験](https://github.com/khatada/silent-webpage/pull/3): マージ済み。
 - [#4 CIと公開](https://github.com/khatada/silent-webpage/pull/4): CI成功後にマージ済み。
+- [#7 動く夜景](https://github.com/khatada/silent-webpage/pull/7): CI成功後mainマージ済み。
 - [#6 全画面表示・改善エージェント定義](https://github.com/khatada/silent-webpage/pull/6): CI成功後mainマージ済み。
 - [#5 完了記録と引き継ぎ](https://github.com/khatada/silent-webpage/pull/5): CI成功後、設定変更後の再試行でマージ済み。
 
@@ -64,3 +64,5 @@
 - [初回main公開処理](https://github.com/khatada/silent-webpage/actions/runs/39439630135): 全検証、Pages有効化、デプロイが成功。
 - [PR #5初回CI](https://github.com/khatada/silent-webpage/actions/runs/39440161448): 全チェック成功。ブロッカー追記による後続pushのCIは別実行となる。
 - 公開URLは上記デプロイの成功に基づく。外部Web参照ツールではURLを取得できず、公開後の実ブラウザ操作は未確認。体験自体は本番ビルドのローカル表示およびCIで検証済み。
+
+- [PR #7 CI成功](https://github.com/khatada/silent-webpage/actions/runs/39516912663): 型・Lint・単体11件・ビルド・Chromium/モバイルWebKit。

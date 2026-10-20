@@ -1,5 +1,6 @@
 import { Application, Container, Graphics } from 'pixi.js';
 import { catPose, travelPosition, windowBrightness } from './animation';
+import { createRooftopBreeze } from './rooftop-breeze';
 
 /** Draw at a deliberately small resolution: every visible edge stays on the pixel grid. */
 export async function createScene(host: HTMLElement): Promise<{
@@ -26,6 +27,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let navigationLight: Graphics;
   let cat: Container;
   let catFrames: Graphics[] = [];
+  let rooftopBreeze: ReturnType<typeof createRooftopBreeze>;
 
   function build() {
     const bounds = host.getBoundingClientRect();
@@ -241,15 +243,13 @@ export async function createScene(host: HTMLElement): Promise<{
     rect(foreground, plantX - 4, 350, 12, 14, 0x5b4050);
     rect(foreground, plantX - 6, 348, 16, 3, 0x8c6370);
     rect(foreground, plantX + 1, 322, 2, 27, 0x3e5255);
-    for (let i = 0; i < 7; i++) {
-      const y = 324 + i * 3;
-      rect(foreground, plantX + (i % 2 ? 3 : -6), y, 7, 3, i % 2 ? 0x4a5c5c : 0x384b50);
-    }
     rect(foreground, 56, 345, 29, 20, 0x4d485c);
     rect(foreground, 56, 343, 29, 3, 0x72616d);
     rect(foreground, 59, 348, 18, 13, 0x252c40);
     for (let y = 350; y < 361; y += 3) rect(foreground, 61, y, 14, 1, 0x565268);
     rect(foreground, 79, 349, 3, 3, 0x8c7a81);
+    rooftopBreeze = createRooftopBreeze({ cupX: tableX + 10, cupY: 344, plantX });
+    app.stage.addChild(rooftopBreeze.art);
     // Prebuilt walk/sit frames keep per-frame work to transforms and visibility changes.
     cat = new Container();
     catFrames = [];
@@ -289,6 +289,7 @@ export async function createScene(host: HTMLElement): Promise<{
   }
 
   function animate() {
+    rooftopBreeze.update(elapsed);
     for (const { art, phase } of stars) art.alpha = 0.45 + Math.sin(elapsed * 0.24 + phase) * 0.25;
     for (const { art, initialX, speed } of clouds) art.x = Math.round(((initialX + elapsed * speed + 160) % (width + 180)) - 160);
     for (const { art, phase, period } of lights) art.alpha = windowBrightness(elapsed, phase, period);
