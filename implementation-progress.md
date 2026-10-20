@@ -16,8 +16,8 @@
 | --- | --- | --- |
 | 要求と作業方針の保存 | 完了 | PR #1 mainマージ済み |
 | 開発基盤・コミット前検証 | 完了 | PR #2 mainマージ済み。TypeScript / Vite / Vitest / ESLint / Husky |
-| ピクセル夜景・音・設定 | 実装・ローカル検証済み | `feat/rooftop-experience`。型・Lint・単体8件・ビルド成功。ChromiumでPC・スマートフォンのスクリーンショットと実行時エラーなしを確認。PR作成・マージ待ち |
-| CI・E2E | 未マージ | 後続PRでGitHub ActionsとChromium/モバイルWebKitのPlaywrightを追加する |
+| ピクセル夜景・音・設定 | 完了 | PR #3 mainマージ済み。型・Lint・単体8件・ビルド成功。ChromiumでPC・スマートフォンのスクリーンショットと実行時エラーなしを確認 |
+| CI・E2E | 進行中 | `ci/pages-deployment`。GitHub ActionsとChromium/モバイルWebKitのPlaywrightを追加。コミットとPR作成後にCIを確認する |
 | GitHub Pages公開 | 未完了 | CI成功後のdistを配信。PagesのActions公開設定と実際の公開を確認する |
 
 ## 再開手順
@@ -32,10 +32,11 @@
 - 夜景体験の `npm run verify` 成功: 単体テスト8件、型、Lint、本番ビルド。
 - ローカルHTTP待ち受けとGitのネットワーク操作には環境のsandbox外実行が必要。
 - `gh api` はForbidden。Git fetch/pushとGitHubコネクタのPR作成・マージは利用できる。
-- CI追加用ファイルは一時的に `/tmp/tokyo-implementation/` に退避している。未復元なら `.github/`、`e2e/`、`playwright.config.ts` を取り込む。別環境で一時ファイルがない場合は再作成する。
+- CI追加用ファイルは `ci/pages-deployment` に復元済み。一時ファイルに依存せず再開できる。
 - 画面は合成の音を使用するため、音質や心地よさは実装後の見直し事項。
 
 ## PR
 
 - [#1 要件と方針](https://github.com/khatada/silent-webpage/pull/1): マージ済み。
 - [#2 開発基盤](https://github.com/khatada/silent-webpage/pull/2): マージ済み。
+- [#3 夜景と音の体験](https://github.com/khatada/silent-webpage/pull/3): マージ済み。
