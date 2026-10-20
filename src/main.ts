@@ -2,6 +2,7 @@ import './style.css';
 import { createScene } from './scene';
 import { Soundscape, type SoundMode } from './audio';
 import { parsePreferences } from './preferences';
+import { setupFullscreen } from './fullscreen';
 
 const storageKey = 'tokyo-after-hours:preferences';
 let stored: string | null = null;
@@ -10,6 +11,7 @@ const preferences = parsePreferences(stored);
 const systemMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const dialog = document.querySelector<HTMLDialogElement>('#settings')!;
 const opener = document.querySelector<HTMLButtonElement>('#settings-open')!;
+const disposeFullscreen = setupFullscreen(dialog, opener);
 const volume = document.querySelector<HTMLInputElement>('#volume')!;
 const motion = document.querySelector<HTMLInputElement>('#reduce-motion')!;
 const status = document.querySelector<HTMLParagraphElement>('#status')!;
@@ -61,4 +63,4 @@ void createScene(document.querySelector<HTMLElement>('#scene')!).then(value => {
   status.hidden = true;
   document.documentElement.dataset.ready = 'true';
 }).catch(() => notify('夜景を表示できませんでした。ページを再読み込みしてください。'));
-window.addEventListener('pagehide', event => { if (!event.persisted) { scene?.destroy(); audio.destroy(); } });
+window.addEventListener('pagehide', event => { if (!event.persisted) { scene?.destroy(); audio.destroy(); disposeFullscreen(); } });
