@@ -14,6 +14,7 @@ const opener = document.querySelector<HTMLButtonElement>('#settings-open')!;
 const disposeFullscreen = setupFullscreen(dialog, opener);
 const volume = document.querySelector<HTMLInputElement>('#volume')!;
 const motion = document.querySelector<HTMLInputElement>('#reduce-motion')!;
+const motionDescription = document.querySelector<HTMLElement>('#motion-description')!;
 const status = document.querySelector<HTMLParagraphElement>('#status')!;
 const audio = new Soundscape();
 let desiredSound: SoundMode = 'off';
@@ -21,9 +22,16 @@ let scene: Awaited<ReturnType<typeof createScene>> | undefined;
 function save() {
   try { localStorage.setItem(storageKey, JSON.stringify(preferences)); } catch { /* Settings still work without storage. */ }
 }
-function updateMotion() { scene?.setMotion(!preferences.reduceMotion && !systemMotion.matches); }
+function updateMotion() {
+  motion.checked = preferences.reduceMotion || systemMotion.matches;
+  motion.disabled = systemMotion.matches;
+  motionDescription.textContent = systemMotion.matches
+    ? '端末の設定に合わせて動きを抑えています'
+    : '星や雲、街の動きを静かにします';
+  scene?.setMotion(!motion.checked);
+}
 volume.value = String(Math.round(preferences.volume * 100));
-motion.checked = preferences.reduceMotion || systemMotion.matches;
+updateMotion();
 audio.setVolume(preferences.volume);
 const volumeOutput = document.querySelector<HTMLOutputElement>('#volume-value')!;
 volumeOutput.value = `${volume.value}%`;

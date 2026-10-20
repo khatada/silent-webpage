@@ -1,6 +1,6 @@
 # 実装の進行状況
 
-最終更新: 2026-10-20。別セッションの実装再開用。
+最終更新: 2026-10-21。別セッションの実装再開用。
 
 ## 決定事項
 
@@ -20,16 +20,19 @@
 | CI・E2E | 完了 | PR #4 mainマージ済み。GitHub ActionsとChromium/モバイルWebKitのPlaywrightが成功 |
 | GitHub Pages公開 | 完了 | mainの全チェック、Pages有効化、検証済みdistの配信が成功。https://khatada.github.io/silent-webpage/ |
 
-現在、要求された初期実装の未完了タスクはない。実装上の見直し候補は `implementation-notes.md` を参照する。
+初期実装は完了。ユーザー追加要求の動く夜景は下記の継続改善で対応中。実装上の見直し候補は `implementation-notes.md` を参照する。
 
 ## 継続改善の現在地
 
 - ユーザー指示により、停止指示までアイディア提案→最優先1件の実装→再評価を継続する。
 - 手順は `agents/experience-improver.md`、提案は `improvement-ideas.md` に保存する。要求事項は変更しない。
 - PR #5は設定変更後の再試行でmainマージ済み（f7b5cc3）。以前の更新制限によるブロッカーは解消済み。
-- 第1サイクル UX-001（設定から全画面表示）を `feat/immersive-fullscreen` で実装済み。サブエージェントがUIとE2E、親が記録を担当。`npm run verify` 成功（単体8件）、コミット・PR・CI・マージへ進む。
-- 次回の最優先候補はUX-002（動き軽減のOS同期）。監査で表示と有効状態の不一致を確認した。
-- コミット前の `npm run verify`、PRのCI成功、マージ、公開状態を区切りごとに追記する。
+- 第1サイクル UX-001（設定から全画面表示）はPR #6でCI成功後mainマージ済み。
+- 第2サイクルはユーザー追加要求の電車・飛行機・野良猫・窓の点消灯。`feat/living-night-city` で実装済み、コミット・PR・CI・マージへ進む。
+- 2026-10-21再開後、型・Lint・単体11件・本番ビルド成功。Chromiumで1440×900と390×844の表示、実行時エラーなしを確認。飛行機の端での折り返しを補正。
+- 動き軽減のOS同期も全演出の停止操作を支える修正として含める。Playwrightでは全描画の停止・再開とOS設定の動的変更・個人設定の保持を検証する。
+- 次回はコンテンツ候補を再評価する。現在の最優先候補はC-001（カップの湯気・鉢植えの夜風）。猫のくつろぐ仕草、遠いタクシー、月と薄雲も候補。
+- `requirements.md` の追加はユーザーが明示した乗り物・猫・窓のみ。エージェントの案は `improvement-ideas.md` に分ける。
 
 ## 再開手順
 
@@ -52,6 +55,7 @@
 - [#2 開発基盤](https://github.com/khatada/silent-webpage/pull/2): マージ済み。
 - [#3 夜景と音の体験](https://github.com/khatada/silent-webpage/pull/3): マージ済み。
 - [#4 CIと公開](https://github.com/khatada/silent-webpage/pull/4): CI成功後にマージ済み。
+- [#6 全画面表示・改善エージェント定義](https://github.com/khatada/silent-webpage/pull/6): CI成功後mainマージ済み。
 - [#5 完了記録と引き継ぎ](https://github.com/khatada/silent-webpage/pull/5): CI成功後、設定変更後の再試行でマージ済み。
 
 ## 検証の証跡
