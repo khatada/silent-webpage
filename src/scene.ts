@@ -1,4 +1,5 @@
 import { Application, Container, Graphics } from 'pixi.js';
+import { catPose, travelPosition, windowBrightness } from './animation';
 
 /** Draw at a deliberately small resolution: every visible edge stays on the pixel grid. */
 export async function createScene(host: HTMLElement): Promise<{
@@ -9,7 +10,7 @@ export async function createScene(host: HTMLElement): Promise<{
   await app.init({ width: 640, height: 400, antialias: false, resolution: 1, background: '#101326', preference: 'webgl', autoStart: false });
   const canvas = app.canvas;
   canvas.setAttribute('role', 'img');
-  canvas.setAttribute('aria-label', '星空の下、屋上から眺める東京。紺と紫の街並みに暖かな窓の灯りがともっています。');
+  canvas.setAttribute('aria-label', '星空の下、屋上から眺める東京。電車が街を走り、飛行機が空を渡り、野良猫が屋上を歩きます。暖かな窓の灯りが点いたり消えたりしています。');
   canvas.style.cssText = 'display:block;width:100%;height:100%;image-rendering:pixelated;';
   host.append(canvas);
   app.ticker.maxFPS = 20;
@@ -19,7 +20,12 @@ export async function createScene(host: HTMLElement): Promise<{
   let height = 400;
   let stars: { art: Graphics; phase: number }[] = [];
   let clouds: { art: Container; initialX: number; speed: number }[] = [];
-  let lights: { art: Graphics; phase: number }[] = [];
+  let lights: { art: Graphics; phase: number; period: number }[] = [];
+  let train: Container;
+  let airplane: Container;
+  let navigationLight: Graphics;
+  let cat: Container;
+  let catFrames: Graphics[] = [];
 
   function build() {
     const bounds = host.getBoundingClientRect();
@@ -79,7 +85,21 @@ export async function createScene(host: HTMLElement): Promise<{
       clouds.push({ art, initialX: art.x, speed: 0.35 + random() * 0.3 });
       app.stage.addChild(art);
     }
-    const city = new Graphics();
+    // A distant aircraft crosses well above the skyline, with restrained navigation lights.
+    airplane = new Container();
+    const aircraft = new Graphics();
+    rect(aircraft, -7, 0, 14, 2, 0xb3a4b5);
+    rect(aircraft, -4, -1, 7, 4, 0xc7b8c2);
+    rect(aircraft, -1, -4, 2, 9, 0x9a91aa);
+    rect(aircraft, -6, -2, 2, 6, 0x8c819b);
+    rect(aircraft, 6, 0, 2, 1, 0xe4cfae);
+    navigationLight = new Graphics();
+    rect(navigationLight, 0, -4, 1, 1, 0xb9757d);
+    rect(navigationLight, 0, 4, 1, 1, 0x9fb5ae);
+    airplane.addChild(aircraft, navigationLight);
+    airplane.y = 105;
+    app.stage.addChild(airplane);
+    let city = new Graphics();
     app.stage.addChild(city);
     // Haze and distant high-rises. Silhouettes become darker and more detailed toward the viewer.
     rect(city, 0, 242, width, 75, 0x51405c);
@@ -106,6 +126,38 @@ export async function createScene(host: HTMLElement): Promise<{
         x += bw + 2 + Math.floor(random() * 4);
       }
     }
+    // An elevated railway sits behind the nearby homes, in front of the distant city.
+    const viaduct = new Graphics();
+    rect(viaduct, 0, 273, width, 5, 0x454159);
+    rect(viaduct, 0, 272, width, 1, 0x8b7481);
+    rect(viaduct, 0, 278, width, 2, 0x1d2438);
+    for (let x = 18; x < width; x += 62) rect(viaduct, x, 280, 5, 28, 0x38364e);
+    app.stage.addChild(viaduct);
+    train = new Container();
+    const carriages = new Graphics();
+    for (let car = 0; car < 4; car++) {
+      const x = car * 29;
+      rect(carriages, x, 1, 27, 9, 0xafa1aa);
+      rect(carriages, x + 2, 0, 23, 1, 0xc0b1b7);
+      rect(carriages, x, 7, 27, 2, 0x978094);
+      for (let window = 3; window < 24; window += 6) {
+        rect(carriages, x + window, 3, 4, 3, 0xe6ba8b);
+        rect(carriages, x + window, 3, 4, 1, 0xf0cfa0);
+      }
+      rect(carriages, x + 3, 10, 4, 1, 0x171e30);
+      rect(carriages, x + 20, 10, 4, 1, 0x171e30);
+      if (car < 3) rect(carriages, x + 27, 5, 2, 3, 0x65556e);
+    }
+    rect(carriages, 114, 4, 2, 2, 0xe9d5ac);
+    rect(carriages, 0, 4, 1, 2, 0xb67581);
+    train.addChild(carriages);
+    train.y = 261;
+    app.stage.addChild(train);
+    // Residential facades must occlude the train and support columns, not the other way around.
+    city = new Graphics();
+    app.stage.addChild(city);
+    const roomLights = new Container();
+    app.stage.addChild(roomLights);
     // Residential roofs, balconies, aerials, and the occasional still-lit room.
     let houseX = -12;
     while (houseX < width) {
@@ -126,18 +178,16 @@ export async function createScene(host: HTMLElement): Promise<{
       }
       for (let y = top + 9; y < 330; y += 16) {
         for (let x = houseX + 6; x < houseX + bw - 10; x += 13) {
-          const lit = random() > 0.5;
           rect(city, x - 1, y - 1, 10, 9, 0x131c30);
-          rect(city, x, y, 8, 7, lit ? 0xbb8c71 : 0x38405b);
-          if (lit) {
-            rect(city, x, y, 8, 2, 0xe3b48a);
-            rect(city, x + 3, y, 1, 7, 0x5a4d56);
-            if (random() > 0.7) {
-              const glow = new Graphics();
-              rect(glow, x, y, 8, 7, 0xe3b48a, 0.28);
-              lights.push({ art: glow, phase: random() * 6.28 });
-              app.stage.addChild(glow);
-            }
+          rect(city, x, y, 8, 7, 0x30364d);
+          if (random() > 0.28) {
+            const light = new Graphics();
+            rect(light, x, y, 8, 7, 0xbb8c71);
+            rect(light, x, y, 8, 2, 0xe3b48a);
+            rect(light, x + 3, y, 1, 7, 0x5a4d56);
+            const period = 18 + random() * 28;
+            lights.push({ art: light, phase: random() * period, period });
+            roomLights.addChild(light);
           }
           rect(city, x - 2, y + 8, 12, 2, 0x171d30);
         }
@@ -200,17 +250,64 @@ export async function createScene(host: HTMLElement): Promise<{
     rect(foreground, 59, 348, 18, 13, 0x252c40);
     for (let y = 350; y < 361; y += 3) rect(foreground, 61, y, 14, 1, 0x565268);
     rect(foreground, 79, 349, 3, 3, 0x8c7a81);
+    // Prebuilt walk/sit frames keep per-frame work to transforms and visibility changes.
+    cat = new Container();
+    catFrames = [];
+    for (let frame = 0; frame < 5; frame++) {
+      const art = new Graphics();
+      const sitting = frame === 4;
+      const coat = 0xb39a8b;
+      const shade = 0x786f77;
+      rect(art, -8, -9, 12, 7, shade);
+      rect(art, -7, -10, sitting ? 9 : 12, 7, coat);
+      rect(art, 2, -13, 7, 7, coat);
+      rect(art, 2, -15, 2, 3, shade);
+      rect(art, 7, -15, 2, 3, shade);
+      rect(art, 3, -14, 1, 2, 0xc9a4a0);
+      rect(art, 8, -14, 1, 2, 0xc9a4a0);
+      rect(art, 7, -11, 1, 1, 0xe7d7a7);
+      rect(art, 8, -9, 2, 1, 0x5e5361);
+      rect(art, 3, -6, 4, 3, 0xcebbab);
+      rect(art, -5, -10, 2, 3, shade);
+      rect(art, -1, -10, 2, 3, shade);
+      const stride = sitting ? 0 : [0, 1, 0, -1][frame];
+      rect(art, -6 + stride, -3, 2, 3, coat);
+      rect(art, 3 - stride, -3, 2, 3, coat);
+      rect(art, -6 + stride, -1, 3, 1, 0xcbb5a5);
+      rect(art, 3 - stride, -1, 3, 1, 0xcbb5a5);
+      const tailY = sitting ? -7 : -10 + frame % 2;
+      rect(art, -11, tailY, 4, 2, shade);
+      rect(art, -12, tailY - 3, 2, 4, coat);
+      rect(art, -11, tailY - 4, 2, 2, coat);
+      catFrames.push(art);
+      cat.addChild(art);
+    }
+    cat.y = 383;
+    app.stage.addChild(cat);
+    animate();
     app.renderer.render(app.stage);
   }
 
-  app.ticker.add((ticker) => {
-    elapsed += ticker.deltaMS / 1000;
+  function animate() {
     for (const { art, phase } of stars) art.alpha = 0.45 + Math.sin(elapsed * 0.24 + phase) * 0.25;
     for (const { art, initialX, speed } of clouds) art.x = Math.round(((initialX + elapsed * speed + 160) % (width + 180)) - 160);
-    for (const { art, phase } of lights) art.alpha = 0.45 + Math.sin(elapsed * 0.055 + phase) * 0.4;
+    for (const { art, phase, period } of lights) art.alpha = windowBrightness(elapsed, phase, period);
+    train.x = travelPosition(elapsed, width, 116, 10, width * 0.12);
+    airplane.x = travelPosition(elapsed, width + 8, 18, 3.8, width * 0.42);
+    navigationLight.alpha = 0.45 + (Math.cos(elapsed * Math.PI / 2) + 1) * 0.275;
+    const pose = catPose(elapsed, width);
+    cat.x = pose.x;
+    cat.scale.x = pose.direction;
+    catFrames.forEach((art, index) => { art.visible = index === pose.frame; });
+  }
+  app.ticker.add((ticker) => {
+    elapsed += ticker.deltaMS / 1000;
+    animate();
   });
   const updateActivity = () => {
-    if (motion && !document.hidden) app.start();
+    const running = motion && !document.hidden;
+    canvas.dataset.motion = running ? 'running' : 'paused';
+    if (running) app.start();
     else app.stop();
   };
   const observer = new ResizeObserver(() => {
