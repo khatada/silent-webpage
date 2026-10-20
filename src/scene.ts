@@ -1,6 +1,7 @@
 import { Application, Container, Graphics } from 'pixi.js';
 import { catPose, travelPosition, windowBrightness } from './animation';
 import { createRooftopBreeze } from './rooftop-breeze';
+import { createRooftopCat } from './rooftop-cat';
 
 /** Draw at a deliberately small resolution: every visible edge stays on the pixel grid. */
 export async function createScene(host: HTMLElement): Promise<{
@@ -11,7 +12,7 @@ export async function createScene(host: HTMLElement): Promise<{
   await app.init({ width: 640, height: 400, antialias: false, resolution: 1, background: '#101326', preference: 'webgl', autoStart: false });
   const canvas = app.canvas;
   canvas.setAttribute('role', 'img');
-  canvas.setAttribute('aria-label', '星空の下、屋上から眺める東京。電車が街を走り、飛行機が空を渡り、野良猫が屋上を歩きます。暖かな窓の灯りが点いたり消えたりしています。');
+  canvas.setAttribute('aria-label', '星空の下、屋上から眺める東京。電車が街を走り、飛行機が空を渡り、野良猫が屋上を歩き、毛づくろいをして丸くなります。暖かな窓の灯りが点いたり消えたりしています。');
   canvas.style.cssText = 'display:block;width:100%;height:100%;image-rendering:pixelated;';
   host.append(canvas);
   app.ticker.maxFPS = 20;
@@ -25,8 +26,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let train: Container;
   let airplane: Container;
   let navigationLight: Graphics;
-  let cat: Container;
-  let catFrames: Graphics[] = [];
+  let cat: ReturnType<typeof createRooftopCat>;
   let rooftopBreeze: ReturnType<typeof createRooftopBreeze>;
 
   function build() {
@@ -250,40 +250,9 @@ export async function createScene(host: HTMLElement): Promise<{
     rect(foreground, 79, 349, 3, 3, 0x8c7a81);
     rooftopBreeze = createRooftopBreeze({ cupX: tableX + 10, cupY: 344, plantX });
     app.stage.addChild(rooftopBreeze.art);
-    // Prebuilt walk/sit frames keep per-frame work to transforms and visibility changes.
-    cat = new Container();
-    catFrames = [];
-    for (let frame = 0; frame < 5; frame++) {
-      const art = new Graphics();
-      const sitting = frame === 4;
-      const coat = 0xb39a8b;
-      const shade = 0x786f77;
-      rect(art, -8, -9, 12, 7, shade);
-      rect(art, -7, -10, sitting ? 9 : 12, 7, coat);
-      rect(art, 2, -13, 7, 7, coat);
-      rect(art, 2, -15, 2, 3, shade);
-      rect(art, 7, -15, 2, 3, shade);
-      rect(art, 3, -14, 1, 2, 0xc9a4a0);
-      rect(art, 8, -14, 1, 2, 0xc9a4a0);
-      rect(art, 7, -11, 1, 1, 0xe7d7a7);
-      rect(art, 8, -9, 2, 1, 0x5e5361);
-      rect(art, 3, -6, 4, 3, 0xcebbab);
-      rect(art, -5, -10, 2, 3, shade);
-      rect(art, -1, -10, 2, 3, shade);
-      const stride = sitting ? 0 : [0, 1, 0, -1][frame];
-      rect(art, -6 + stride, -3, 2, 3, coat);
-      rect(art, 3 - stride, -3, 2, 3, coat);
-      rect(art, -6 + stride, -1, 3, 1, 0xcbb5a5);
-      rect(art, 3 - stride, -1, 3, 1, 0xcbb5a5);
-      const tailY = sitting ? -7 : -10 + frame % 2;
-      rect(art, -11, tailY, 4, 2, shade);
-      rect(art, -12, tailY - 3, 2, 4, coat);
-      rect(art, -11, tailY - 4, 2, 2, coat);
-      catFrames.push(art);
-      cat.addChild(art);
-    }
-    cat.y = 383;
-    app.stage.addChild(cat);
+    cat = createRooftopCat();
+    cat.art.y = 383;
+    app.stage.addChild(cat.art);
     animate();
     app.renderer.render(app.stage);
   }
@@ -296,10 +265,7 @@ export async function createScene(host: HTMLElement): Promise<{
     train.x = travelPosition(elapsed, width, 116, 10, width * 0.12);
     airplane.x = travelPosition(elapsed, width + 8, 18, 3.8, width * 0.42);
     navigationLight.alpha = 0.45 + (Math.cos(elapsed * Math.PI / 2) + 1) * 0.275;
-    const pose = catPose(elapsed, width);
-    cat.x = pose.x;
-    cat.scale.x = pose.direction;
-    catFrames.forEach((art, index) => { art.visible = index === pose.frame; });
+    cat.update(catPose(elapsed, width));
   }
   app.ticker.add((ticker) => {
     elapsed += ticker.deltaMS / 1000;
