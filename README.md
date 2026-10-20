@@ -16,6 +16,13 @@ Node.js 22以降で `npm ci`、`npm run dev` を実行します。
 
 Gitフックは `npm ci` のprepareで設定されます。
 
+## CI・公開
+
+PRではGitHub Actionsで必須チェックとPlaywrightを実行します。
+mainへのpushでは同じCIを再利用し、検証済みの `dist` をGitHub Pagesに公開します。
+公開先は `https://khatada.github.io/silent-webpage/` を想定しています。
+Pagesの初回有効化にはリポジトリのプラン・権限が必要です。公開workflowの結果で有効化の成否を確認します。
+
 ## ドキュメント
 
 - [要求事項](requirements.md)
