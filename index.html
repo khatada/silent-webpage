@@ -1,2 +1,33 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TOKYO AFTER HOURS</title></head><body><div id="app"></div><script type="module" src="/src/main.ts"></script></body></html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#121329" />
+    <meta name="description" content="東京の夜に、ひと休み。屋上から眺めるピクセルアートの夜景と、穏やかな音。" />
+    <title>TOKYO AFTER HOURS</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23121329' d='M0 0h32v32H0z'/%3E%3Cpath fill='%23e8ba82' d='M20 4h4v4h4v4h-4v8h-8v-4h-4V8h8z'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <main id="scene" aria-label="屋上から眺める東京の夜景"></main>
+    <p id="status" class="status" role="status">夜の支度をしています…</p>
+    <button id="settings-open" class="settings-open" type="button" aria-label="設定を開く" aria-haspopup="dialog" aria-controls="settings">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 7h16M4 17h16"/><path d="M9 4v6m6 4v6" stroke-width="3"/></svg>
+    </button>
+    <dialog id="settings" aria-labelledby="settings-title">
+      <header><div><span class="eyebrow">TOKYO AFTER HOURS</span><h1 id="settings-title">夜の過ごしかた</h1></div><button id="settings-close" class="close" aria-label="設定を閉じる">×</button></header>
+      <p class="intro">灯りを眺めて、ひと息。</p>
+      <fieldset><legend>音の風景</legend><div class="sound-options">
+        <label><input type="radio" name="sound" value="off" checked /><span>無音</span></label>
+        <label><input type="radio" name="sound" value="city" /><span>街の音</span></label>
+        <label><input type="radio" name="sound" value="ambient" /><span>アンビエント</span></label>
+      </div></fieldset>
+      <label class="volume-label" for="volume">音量 <output id="volume-value">35%</output></label>
+      <input id="volume" type="range" min="0" max="100" value="35" aria-label="音量" />
+      <div class="divider"></div>
+      <label class="motion-label" for="reduce-motion"><span>動きを減らす<small>星や雲の動きを静かにします</small></span><input id="reduce-motion" type="checkbox" /></label>
+      <footer>何もしない時間を、少しだけ。</footer>
+    </dialog>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
