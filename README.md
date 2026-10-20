@@ -29,3 +29,4 @@ Pagesの初回有効化にはリポジトリのプラン・権限が必要です
 - [エージェントの作業方針](AGENTS.md)
 - [実装の仮定と確認ポイント](implementation-notes.md)
 - [効率的な作業の進め方](workflow-notes.md)
+- [実装の進行状況・再開手順](implementation-progress.md)
