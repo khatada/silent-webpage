@@ -15,15 +15,24 @@ export function windowBrightness(seconds: number, phase: number, period: number)
   return time < edge ? smooth(time / 0.9) : 1 - smooth((time - edge) / 0.9);
 }
 
-/** A rooftop patrol has two walking legs and pauses at each end. */
-export function catPose(seconds: number, width: number): { x: number; direction: 1 | -1; frame: number } {
-  const time = ((seconds % 50) + 50) % 50;
-  const outward = time < 25;
-  const walking = outward ? time < 18 : time < 43;
-  const progress = outward ? Math.min(time / 18, 1) : 1 - Math.min((time - 25) / 18, 1);
+export interface CatPose { x: number; direction: 1 | -1; frame: number }
+
+/** Eighteen-second walks alternate with long, unhurried grooming and resting pauses. */
+export function catPose(seconds: number, width: number): CatPose {
+  const time = ((seconds % 64) + 64) % 64;
+  const outward = time < 32;
+  const leg = outward ? time : time - 32;
+  const walking = leg < 18;
+  const progress = outward ? Math.min(leg / 18, 1) : 1 - Math.min(leg / 18, 1);
+  let frame: number;
+  if (walking) frame = Math.floor(leg * 4) % 4;
+  else if (leg < 21) frame = 4;
+  else if (leg < 25) frame = 5 + Math.floor(leg - 21) % 2;
+  else if (leg < 30) frame = 7;
+  else frame = 8;
   return {
     x: Math.round(width * (0.3 + 0.23 * progress)),
     direction: outward ? 1 : -1,
-    frame: walking ? Math.floor(seconds * 4) % 4 : 4,
+    frame,
   };
 }

@@ -19,19 +19,41 @@ describe('city animation timing', () => {
     expect(windowBrightness(0.45, 0, 20)).toBeCloseTo(0.5);
     expect(windowBrightness(20.45, 0, 20)).toBeCloseTo(0.5);
   });
-  it('pauses the cat at both ends, returns smoothly and scales its route on mobile', () => {
-    expect(catPose(19, 640)).toEqual(catPose(24, 640));
-    expect(catPose(44, 640)).toEqual(catPose(49, 640));
-    expect(catPose(26, 640).direction).toBe(-1);
-    expect(catPose(26, 640).x).toBeLessThan(catPose(25, 640).x);
+  it('gives the cat distinct sitting, grooming, sleeping and stretching periods', () => {
+    const samples = [
+      [0, 0], [0.25, 1], [0.5, 2], [0.75, 3],
+      [18, 4], [20.99, 4], [21, 5], [22, 6], [23, 5], [24, 6],
+      [25, 7], [29.99, 7], [30, 8], [31.99, 8],
+    ];
+    for (const [seconds, frame] of samples) {
+      expect(catPose(seconds, 640).frame).toBe(frame);
+      expect(catPose(seconds + 32, 640).frame).toBe(frame);
+    }
+    expect(catPose(32, 640).direction).toBe(-1);
+    expect(catPose(33, 640).x).toBeLessThan(catPose(32, 640).x);
+  });
+  it('keeps the cat in place while resting and continuous through posture changes', () => {
     for (const width of [140, 185, 640, 1280]) {
-      for (let seconds = 0; seconds < 50; seconds++) {
-        const pose = catPose(seconds, width);
-        expect(pose.x).toBeGreaterThan(20);
-        expect(pose.x).toBeLessThan(width - 20);
-        expect(pose.frame).toBeGreaterThanOrEqual(0);
-        expect(pose.frame).toBeLessThanOrEqual(4);
+      for (const seconds of [18, 21, 25, 30, 32, 50, 53, 57, 62, 64]) {
+        expect(Math.abs(catPose(seconds, width).x - catPose(seconds - 0.001, width).x)).toBeLessThanOrEqual(1);
+      }
+      for (let seconds = 18; seconds < 32; seconds += 0.25) {
+        expect(catPose(seconds, width).x).toBe(Math.round(width * 0.53));
+        expect(catPose(seconds + 32, width).x).toBe(Math.round(width * 0.3));
       }
     }
+  });
+  it('repeats every 64 seconds without taking the cat outside mobile roof bounds', () => {
+    for (const width of [140, 185, 640, 1280]) {
+      for (let seconds = 0; seconds < 64; seconds += 0.25) {
+        const pose = catPose(seconds, width);
+        expect(catPose(seconds + 64, width)).toEqual(pose);
+        expect(pose.x - 12).toBeGreaterThanOrEqual(0);
+        expect(pose.x + 14).toBeLessThan(width);
+        expect(pose.frame).toBeGreaterThanOrEqual(0);
+        expect(pose.frame).toBeLessThanOrEqual(8);
+      }
+    }
+    expect(catPose(-1, 640)).toEqual(catPose(63, 640));
   });
 });

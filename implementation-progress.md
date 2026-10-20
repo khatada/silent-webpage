@@ -28,9 +28,10 @@
 - 手順は `agents/experience-improver.md`、提案は `improvement-ideas.md` に保存する。要求事項は変更しない。
 - PR #5は設定変更後の再試行でmainマージ済み（f7b5cc3）。以前の更新制限によるブロッカーは解消済み。
 - 第1サイクル UX-001（設定から全画面表示）はPR #6でCI成功後mainマージ済み。
-- 第2サイクル（電車・飛行機・野良猫・窓の点消灯とOS動き軽減の同期）はPR #7でCI成功後mainマージ済み（76d2c9a）。公開処理の結果を確認する。
-- 第3サイクル C-001（カップの湯気と鉢植えの夜風）を `feat/rooftop-night-breeze` で実装・ローカル検証済み。型・Lint・単体11件・ビルド成功。PC/スマートフォンを目視確認し実行時エラーなし。コミット・PR・CI・マージへ進む。
-- 次の候補はC-002（猫がくつろぐ仕草・足元の影）、C-006（窓の奥の人影）、C-003（遠いタクシー）。コンテンツの充実を設定・CI案より優先する。
+- 第2サイクル（電車・飛行機・野良猫・窓の点消灯とOS動き軽減の同期）はPR #7でCI成功後mainマージ済み（76d2c9a）。公開も成功。
+- 第3サイクル C-001（カップの湯気と鉢植えの夜風）はPR #8でCI成功後mainマージ済み（74c3bb9）。公開も成功。
+- 第4サイクル C-002（猫のくつろぐ仕草と足元の影）を `feat/rooftop-cat-rest` で実装・ローカル検証済み。型・Lint・単体13件・ビルド成功。ブラウザの仮想時間で姿勢を目視確認し、実行時エラーなし。コミット・PR・CI・マージへ進む。
+- 次の最優先候補はC-006（窓の奥の人影）。猫の改善後は近景が充実するため、街の生活感を増やす案を優先する。C-003（遠いタクシーと信号）、C-004（月と薄雲）も候補。
 - 要求事項はユーザーの明示指定のみを保持し、C-001等は `improvement-ideas.md` に分ける。
 
 ## 再開手順
@@ -54,6 +55,7 @@
 - [#2 開発基盤](https://github.com/khatada/silent-webpage/pull/2): マージ済み。
 - [#3 夜景と音の体験](https://github.com/khatada/silent-webpage/pull/3): マージ済み。
 - [#4 CIと公開](https://github.com/khatada/silent-webpage/pull/4): CI成功後にマージ済み。
+- [#8 カップの湯気と葉の揺れ](https://github.com/khatada/silent-webpage/pull/8): CI成功後mainマージ済み。
 - [#7 動く夜景](https://github.com/khatada/silent-webpage/pull/7): CI成功後mainマージ済み。
 - [#6 全画面表示・改善エージェント定義](https://github.com/khatada/silent-webpage/pull/6): CI成功後mainマージ済み。
 - [#5 完了記録と引き継ぎ](https://github.com/khatada/silent-webpage/pull/5): CI成功後、設定変更後の再試行でマージ済み。
@@ -66,3 +68,8 @@
 - 公開URLは上記デプロイの成功に基づく。外部Web参照ツールではURLを取得できず、公開後の実ブラウザ操作は未確認。体験自体は本番ビルドのローカル表示およびCIで検証済み。
 
 - [PR #7 CI成功](https://github.com/khatada/silent-webpage/actions/runs/39516912663): 型・Lint・単体11件・ビルド・Chromium/モバイルWebKit。
+
+- [PR #8 CI成功](https://github.com/khatada/silent-webpage/actions/runs/39517464293): 全チェック成功。
+- [PR #7反映後の公開成功](https://github.com/khatada/silent-webpage/actions/runs/39517187285)。
+
+- [PR #8反映後の公開成功](https://github.com/khatada/silent-webpage/actions/runs/39517688545)。
