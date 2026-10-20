@@ -22,6 +22,14 @@
 
 現在、要求された初期実装の未完了タスクはない。実装上の見直し候補は `implementation-notes.md` を参照する。
 
+## 引き継ぎ時の現在地とブロッカー
+
+- 文書の最終更新は `docs/implementation-handoff` ブランチ、[PR #5](https://github.com/khatada/silent-webpage/pull/5) にある。アプリ・CI・公開はmainに反映済み。
+- PR #5の初回CIは全チェック成功したが、GitHub APIがマージを405で拒否した。
+- 作業途中に有効化された [mainルールセット](https://github.com/khatada/silent-webpage/rules/25481835) に `update`（更新制限）があり、バイパス可能な主体は空、現在の接続も `current_user_can_bypass: never`。レビュー待ちが原因ではない。
+- 保護ルールの変更・迂回は行っていない。現在の権限ではPR #5のmainマージがブロックされる。再開時はルールと接続権限の状態を確認し、解消済みならPR #5の最新CIを確認してマージする。
+- 本文書はPR #5側が最新。main側の本文書には完了・公開の最終結果がまだ反映されていないため、別セッションではPR #5のブランチも確認する。
+
 ## 再開手順
 
 1. `git status --short --branch`、`git log`、GitHub上のPR状態で、この記録以降の変更を確認する。
@@ -48,4 +56,5 @@
 
 - [PR #4 CI成功](https://github.com/khatada/silent-webpage/actions/runs/39439319952): 型・Lint・単体8件・ビルド・Playwright。
 - [初回main公開処理](https://github.com/khatada/silent-webpage/actions/runs/39439630135): 全検証、Pages有効化、デプロイが成功。
+- [PR #5初回CI](https://github.com/khatada/silent-webpage/actions/runs/39440161448): 全チェック成功。ブロッカー追記による後続pushのCIは別実行となる。
 - 公開URLは上記デプロイの成功に基づく。外部Web参照ツールではURLを取得できず、公開後の実ブラウザ操作は未確認。体験自体は本番ビルドのローカル表示およびCIで検証済み。
