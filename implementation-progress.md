@@ -22,13 +22,14 @@
 
 現在、要求された初期実装の未完了タスクはない。実装上の見直し候補は `implementation-notes.md` を参照する。
 
-## 引き継ぎ時の現在地とブロッカー
+## 継続改善の現在地
 
-- 文書の最終更新は `docs/implementation-handoff` ブランチ、[PR #5](https://github.com/khatada/silent-webpage/pull/5) にある。アプリ・CI・公開はmainに反映済み。
-- PR #5の初回CIは全チェック成功したが、GitHub APIがマージを405で拒否した。
-- 作業途中に有効化された [mainルールセット](https://github.com/khatada/silent-webpage/rules/25481835) に `update`（更新制限）があり、バイパス可能な主体は空、現在の接続も `current_user_can_bypass: never`。レビュー待ちが原因ではない。
-- 保護ルールの変更・迂回は行っていない。現在の権限ではPR #5のmainマージがブロックされる。再開時はルールと接続権限の状態を確認し、解消済みならPR #5の最新CIを確認してマージする。
-- 本文書はPR #5側が最新。main側の本文書には完了・公開の最終結果がまだ反映されていないため、別セッションではPR #5のブランチも確認する。
+- ユーザー指示により、停止指示までアイディア提案→最優先1件の実装→再評価を継続する。
+- 手順は `agents/experience-improver.md`、提案は `improvement-ideas.md` に保存する。要求事項は変更しない。
+- PR #5は設定変更後の再試行でmainマージ済み（f7b5cc3）。以前の更新制限によるブロッカーは解消済み。
+- 第1サイクル UX-001（設定から全画面表示）を `feat/immersive-fullscreen` で実装済み。サブエージェントがUIとE2E、親が記録を担当。`npm run verify` 成功（単体8件）、コミット・PR・CI・マージへ進む。
+- 次回の最優先候補はUX-002（動き軽減のOS同期）。監査で表示と有効状態の不一致を確認した。
+- コミット前の `npm run verify`、PRのCI成功、マージ、公開状態を区切りごとに追記する。
 
 ## 再開手順
 
@@ -51,6 +52,7 @@
 - [#2 開発基盤](https://github.com/khatada/silent-webpage/pull/2): マージ済み。
 - [#3 夜景と音の体験](https://github.com/khatada/silent-webpage/pull/3): マージ済み。
 - [#4 CIと公開](https://github.com/khatada/silent-webpage/pull/4): CI成功後にマージ済み。
+- [#5 完了記録と引き継ぎ](https://github.com/khatada/silent-webpage/pull/5): CI成功後、設定変更後の再試行でマージ済み。
 
 ## 検証の証跡
 
