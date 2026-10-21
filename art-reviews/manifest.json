@@ -1,26 +1,68 @@
 {
-  "sourceSha256": "66d262752c51b4262e4df0b5a22043bbc3243e1826ee578b05bb3b3ec1eaa3bf",
+  "sourceSha256": "cd53fac74683c165800a52656cab2739f118f704af11010bc7e61d7c4733e38f",
   "images": [
     {
-      "image": "art-reviews/2026-10-21-fine-grid-final/desktop-corrected.png",
-      "report": "art-reviews/2026-10-21-fine-grid-final/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-21-rooftop-fan/desktop-corrected.png",
+      "report": "art-reviews/2026-10-21-rooftop-fan/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGを実際に閲覧。細い窓枠・建物の縁・椅子の布線・屋上の目地が保たれ、猫・電車・飛行機の輪郭の破損なし。補正前後のRGBA一致も確認し、整数表示格子に既に整列した手続き描画の代表証跡として採用。"
+      "reason": "補正後の全景画像を実際に閲覧。室外機の位置と外形、既存の街並み・小物が保たれ、暗い羽根が周囲より目立ちすぎず精細描画にも馴染むため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-fine-grid-final/mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-fine-grid-final/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-21-rooftop-fan/mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-rooftop-fan/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGを実際に閲覧。細い窓枠・建物の縁・椅子の布線・屋上の目地が保たれ、猫・電車・飛行機の輪郭の破損なし。補正前後のRGBA一致も確認し、整数表示格子に既に整列した手続き描画の代表証跡として採用。"
+      "reason": "補正後の全景画像を実際に閲覧。室外機の位置と外形、既存の街並み・小物が保たれ、暗い羽根が周囲より目立ちすぎず精細描画にも馴染むため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-fine-grid-final/narrow-corrected.png",
-      "report": "art-reviews/2026-10-21-fine-grid-final/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-21-rooftop-fan/narrow-corrected.png",
+      "report": "art-reviews/2026-10-21-rooftop-fan/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGを実際に閲覧。細い窓枠・建物の縁・椅子の布線・屋上の目地が保たれ、猫・電車・飛行機の輪郭の破損なし。補正前後のRGBA一致も確認し、整数表示格子に既に整列した手続き描画の代表証跡として採用。"
+      "reason": "補正後の全景画像を実際に閲覧。室外機の位置と外形、既存の街並み・小物が保たれ、暗い羽根が周囲より目立ちすぎず精細描画にも馴染むため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-rooftop-fan/pose-0-corrected.png",
+      "report": "art-reviews/2026-10-21-rooftop-fan/pose-0-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の拡大画像を実際に閲覧。固定グリルと外形が保たれ、奥の羽根の輪郭だけが変わる。6姿勢の画素ハッシュも異なり、明るい十字の点滅や輪郭の破損がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-rooftop-fan/pose-1-corrected.png",
+      "report": "art-reviews/2026-10-21-rooftop-fan/pose-1-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の拡大画像を実際に閲覧。固定グリルと外形が保たれ、奥の羽根の輪郭だけが変わる。6姿勢の画素ハッシュも異なり、明るい十字の点滅や輪郭の破損がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-rooftop-fan/pose-2-corrected.png",
+      "report": "art-reviews/2026-10-21-rooftop-fan/pose-2-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の拡大画像を実際に閲覧。固定グリルと外形が保たれ、奥の羽根の輪郭だけが変わる。6姿勢の画素ハッシュも異なり、明るい十字の点滅や輪郭の破損がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-rooftop-fan/pose-3-corrected.png",
+      "report": "art-reviews/2026-10-21-rooftop-fan/pose-3-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の拡大画像を実際に閲覧。固定グリルと外形が保たれ、奥の羽根の輪郭だけが変わる。6姿勢の画素ハッシュも異なり、明るい十字の点滅や輪郭の破損がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-rooftop-fan/pose-4-corrected.png",
+      "report": "art-reviews/2026-10-21-rooftop-fan/pose-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の拡大画像を実際に閲覧。固定グリルと外形が保たれ、奥の羽根の輪郭だけが変わる。6姿勢の画素ハッシュも異なり、明るい十字の点滅や輪郭の破損がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-rooftop-fan/pose-5-corrected.png",
+      "report": "art-reviews/2026-10-21-rooftop-fan/pose-5-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の拡大画像を実際に閲覧。固定グリルと外形が保たれ、奥の羽根の輪郭だけが変わる。6姿勢の画素ハッシュも異なり、明るい十字の点滅や輪郭の破損がないため採用。"
     }
   ]
 }

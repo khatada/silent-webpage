@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-rooftop-fan/pose-4-source.png",
+    "width": 80,
+    "height": 65,
+    "sha256": "e9128ba571bfddab11a39de1a6cb8bcdedd051801fa7956c05429da3a4c3795e"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-rooftop-fan/pose-4-corrected.png",
+    "width": 240,
+    "height": 195,
+    "sha256": "fbf658b0b16164e99bbed4773ff95fe32748674c47619630666f9f20eba9b5ee"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 3
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

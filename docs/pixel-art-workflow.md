@@ -36,3 +36,5 @@ npm run art:correct -- --input original.png --output corrected.png --cell-size 2
 ## 代表画像の再出力
 
 本番previewを127.0.0.1:4173で起動し、`npm run art:capture -- --output art-reviews/新しい名前` を実行する。必要なら `ART_BROWSER_PATH=/usr/bin/chromium` でローカルブラウザを指定する。PC・DPR 2のモバイル・狭幅を撮影し、最新ビルドと補正画像を作る。出力先は新規ディレクトリを使う。このコマンドは自動採用しない。画像を閲覧した後、capture.jsonのsourceSha256と画像ごとの採否をmanifest.jsonへ記録する。これは描画の証跡作成であり、コミット前にPlaywrightテスト全体の成功を要求するものではない。
+
+補正レポートとcapture.jsonのPENDING表示は自動採用をしないことを示す生成時の状態として保持する。実際の採否はmanifest.jsonに記録する。

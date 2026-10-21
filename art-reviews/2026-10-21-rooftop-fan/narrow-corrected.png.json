@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-rooftop-fan/narrow-source.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "ba5d03eed9f0d4fc978f101fd51110070e09d465b88ee8b971ac93a7c5519f86"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-rooftop-fan/narrow-corrected.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "7ea01d7c52e301d2f1266b084a86bbc2d3bfc3d7e39642f51aa675fbf5849326"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
