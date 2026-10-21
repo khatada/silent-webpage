@@ -6,6 +6,7 @@ import { createWindowLife } from './window-life';
 import { residentialHouses, streetGap } from './residential-layout';
 import { createDistantTaxi } from './distant-taxi';
 import { createAlleyVendingMachine } from './alley-vending-machine';
+import { createNeighbourClothesline } from './neighbour-clothesline';
 
 /** Draw at a deliberately small resolution: every visible edge stays on the pixel grid. */
 export async function createScene(host: HTMLElement): Promise<{
@@ -34,6 +35,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let cat: ReturnType<typeof createRooftopCat>;
   let rooftopBreeze: ReturnType<typeof createRooftopBreeze>;
   let taxi: ReturnType<typeof createDistantTaxi> | undefined;
+  let clothesline: ReturnType<typeof createNeighbourClothesline>;
 
   function build() {
     const bounds = host.getBoundingClientRect();
@@ -223,6 +225,8 @@ export async function createScene(host: HTMLElement): Promise<{
     windowLife = createWindowLife(lights.filter(({ x }) => x >= 0 && x + 8 <= width));
     const vendingMachine = createAlleyVendingMachine({ alley, viewportWidth: width });
     if (vendingMachine) app.stage.addChild(vendingMachine);
+    clothesline = createNeighbourClothesline(houses, width, alley);
+    if (clothesline) app.stage.addChild(clothesline.art);
     const foreground = new Graphics();
     app.stage.addChild(foreground);
     // The foreground is a quiet place to sit, rather than another interface.
@@ -288,6 +292,7 @@ export async function createScene(host: HTMLElement): Promise<{
     rooftopBreeze.update(elapsed);
     windowLife.update(elapsed);
     taxi?.update(elapsed);
+    clothesline?.update(elapsed);
     for (const { art, phase } of stars) art.alpha = 0.45 + Math.sin(elapsed * 0.24 + phase) * 0.25;
     for (const { art, initialX, speed } of clouds) art.x = Math.round(((initialX + elapsed * speed + 160) % (width + 180)) - 160);
     for (const { art, phase, period } of lights) art.alpha = windowBrightness(elapsed, phase, period);
