@@ -7,5 +7,5 @@ await captureGeneratedArtReview({
   output: values.output,
   entryPath: '/scripts/generated-cat-review-entry.ts',
   exportName: 'renderGeneratedCatReview',
-  width: 1920, height: 1440,
+  width: 1920, height: 1920,
 });

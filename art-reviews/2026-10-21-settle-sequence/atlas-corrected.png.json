@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-settle-sequence/atlas-source.png",
+    "width": 1920,
+    "height": 1920,
+    "sha256": "78b5b6e9d1217a15487e674a09650d8033d9a0838b83d517fec7162177674a66"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-settle-sequence/atlas-corrected.png",
+    "width": 1920,
+    "height": 1920,
+    "sha256": "9370988ea74d0d29c18e13e71f31ff9322a5de723fb4166b18b4493ce8ff2d1c"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

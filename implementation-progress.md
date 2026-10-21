@@ -4,14 +4,15 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `feat/generated-grooming`（main 5307f96から作成）。C021「毛づくろいの中間姿勢」を開始。imagegenで6姿勢を生成しart-reviews/2026-10-21-cat-groomへ原本と2px補正画像保存。補正後は親/独立LLMとも素材採用。public/art/cat-groom.pngへ同条件補正出力。共有factory/timingへ統合済み。全6枚共通.58倍率/固定腰・足元、4秒期間/64秒/既存frame互換を維持。左右の全9区間+前後姿勢を含むatlasと全景11サイズは補正後に親/独立LLMが採用。次: verify→commit/push→PR/CI/merge。
+- ブランチ: `feat/generated-settle`（main 0cd17baから作成）。C022「伏せて丸まる中間姿勢」を開始。imagegen原画と2px補正（627square）はart-reviews/2026-10-21-cat-settle保存済み。親/独立LLMとも補正後4姿勢を素材採用。public/art/cat-settle.pngへ同じ条件で補正出力。共有factory/timing/preview統合済み。新4枚共通.5倍率、床の支持帯で原点を整列。既存始点/終点を再使用し、境界の左右4組はRGBA一致。素材間の肩/首/毛色の小差は記録した上で、左右全6段階と前後/全景11構図を補正後LLMが採用。次: verify→commit/push→PR/CI/merge。
+- C021はPR #29でCI 39691339838成功後mainマージ済み（0cd17ba）。単体42件/採用画像22件でverify成功。Pages 39691591549も成功し公開済み。PR29添付toolは無応答で成否未確認。
 - C020はPR #28でCI 39689614717成功後mainマージ済み（5307f96）。Pages 39689876290も成功し公開済み。PR28添付は無応答のため成功未確認。
 - C018はPR #27でCI 39688627541成功後mainへマージ済み（027a6e7）。Pages 39688936144も成功、公開済み。PR27添付toolは1回無応答で中断、成否未確認。
 - ユーザー指摘の歩行中間フレームはPR #26でmainマージ済み（6187a84）。画像生成8姿勢・体格整列・移動距離連動。支持位置を調整したが固定Sprite保持中の足滑りを完全に消す連続補間ではない。
 - PR #26: 単体41件とverify成功、素材8枚＋全景11枚＋歩行/実移動atlasの20画像を補正・LLM採用。CI 39687474902成功。Pages 39687834998も成功、公開済み。
 - 画像生成の初回8枚は中間不足で不採用。v2の6枚と個別追加した後方支持・回収で8姿勢。原画・補正・部分参照編集・不採用理由も保存済み。
 - PR #26添付: codex_app.attach_artifactを親・補助とも呼び出したが長時間応答なく中断。GitHubのPR作成・マージは成功済み。添付成否は未確認で開発は妨げない。
-- 次: C021素材を補正後LLMが採用判断→共有factoryと既存4秒のgroom期間へ統合→姿勢/境界と全景11サイズを補正後LLM採否→verify/commit/push/PR/CI/merge。要求事項は変更しない。
+- 次: C022素材採否→同条件で公開素材へ補正出力→共有factory/timingへ統合（始点groom0/終点curledは同じTexture再使用）→全6段階/左右/境界/全景を補正後LLM確認→verify/commit/push/PR/CI/merge。要求事項は変更しない。
 - ユーザーの停止指示はなく継続改善は有効。旧stashは古いdocsを含むため一括適用しない。
 
 ## 決定事項

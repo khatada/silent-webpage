@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-settle-final/tall-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "1d521cfe6081b36c2e3da56783a98efaef7c2b06160a8ef32984acc98f2f0e60"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-settle-final/tall-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "c84c024ce9378b4192eef15c1d97b0277ab299d0f10023cd6ec30ed05bf3a764"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

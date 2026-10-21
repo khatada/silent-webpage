@@ -59,6 +59,27 @@ describe('city animation timing', () => {
       if (pose.frame !== 5 && pose.frame !== 6) expect(pose).not.toHaveProperty('groomFrame');
     }
   });
+  it('settles through six stages between grooming and the held curled pose', () => {
+    for (const offset of [-64, 0, 32, 64]) {
+      expect(catPose(24.999 + offset, 640)).not.toHaveProperty('settleFrame');
+      for (let stage = 0; stage < 6; stage++) {
+        const start = 25 + stage * 0.25 + offset;
+        const first = catPose(start, 640);
+        expect(first.settleFrame).toBe(stage);
+        expect(catPose(start + 0.2499, 640).settleFrame).toBe(stage);
+        expect(first.frame).toBe(7);
+        expect(first.x).toBe(catPose(24.999 + offset, 640).x);
+        expect(first).not.toHaveProperty('groomFrame');
+      }
+      expect(catPose(26.5 + offset, 640)).not.toHaveProperty('settleFrame');
+      expect(catPose(26.5 + offset, 640).frame).toBe(7);
+    }
+    for (let seconds = 0; seconds < 64; seconds += 0.125) {
+      const pose = catPose(seconds, 640);
+      const leg = seconds % 32;
+      if (leg < 25 || leg >= 26.5) expect(pose).not.toHaveProperty('settleFrame');
+    }
+  });
   it('matches walking speed to body size and stops at the route endpoint', () => {
     for (const [width, scale] of [[390, 2], [640, 1], [1280, 2]]) {
       const duration = width * 0.5 / (32 * scale);

@@ -6,7 +6,8 @@ import { walkingFrame } from './walking-timing';
 type Frame = readonly [number, number, number, number];
 
 /** Shared production/preview compositor. Every visible pixel comes from reviewed generated images. */
-export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Texture, back: Texture, lift: Texture, groomAtlas?: Texture) {
+export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Texture, back: Texture, lift: Texture,
+  groomAtlas?: Texture, settleAtlas?: Texture) {
   const textures: Texture[] = [];
   const frame = (source: Texture, rectangle: Frame, foot: number, normalization = 1) => {
     const texture = new Texture({ source: source.source, frame: new Rectangle(...rectangle) });
@@ -35,6 +36,14 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
     selected.horizontalAnchor = (spec.hip - groom.bodyOffset / groom.normalization) / spec.rect[2];
     return selected;
   }) : [];
+  const settle = generatedArt.catSettle;
+  const settling = settleAtlas ? [grooming[0] ?? groomOne,
+    ...settle.frames.map(spec => {
+      const selected = frame(settleAtlas, spec.rect, spec.foot, settle.normalization);
+      // Align the support footprint while the hips and head lower through the generated poses.
+      selected.horizontalAnchor = spec.anchorX / spec.rect[2];
+      return selected;
+    }), curled] : [];
   return {
     createSprite() {
       const art = new Sprite(walking[0].texture);
@@ -45,6 +54,7 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
       const groomPose = pose.frame === 5 || pose.frame === 6;
       const selected = pose.frame < 4 ? walking[walkingFrame(pose.x, pose.direction, sceneScale)]
         : (groomPose && pose.groomFrame !== undefined ? grooming[pose.groomFrame] : undefined)
+          ?? (pose.frame === 7 && pose.settleFrame !== undefined ? settling[pose.settleFrame] : undefined)
           ?? poses[pose.frame] ?? sitting;
       art.texture = selected.texture;
       art.anchor.set(selected.horizontalAnchor, selected.footAnchor);

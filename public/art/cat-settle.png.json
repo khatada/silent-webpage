@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-settle/original.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "077c0649db2bd05a749b3473e370df19d9580338654a879756ab87f622da479a"
+  },
+  "output": {
+    "path": "public/art/cat-settle.png",
+    "width": 627,
+    "height": 627,
+    "sha256": "562455e7d66e4b3db2e3415baa914b960a6c7f190b7983d684a17357113c8754"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

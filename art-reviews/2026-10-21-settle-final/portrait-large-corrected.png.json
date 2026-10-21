@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-settle-final/portrait-large-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "b6caaa6b75dbf2fb3c966e0422e6b82caee28f82d50e809f4135325f1772c1e2"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-settle-final/portrait-large-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "e2befab95d3cfda4e9c18c4bf25a7298f7a5af510296963d52be0bc15641418f"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

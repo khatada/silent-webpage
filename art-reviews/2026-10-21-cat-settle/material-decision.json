@@ -1,0 +1,10 @@
+{
+  "decision": "accepted-as-material",
+  "reviewedBy": "LLM",
+  "reason": "親と独立LLMが2px補正後画像を実閲覧。前足を下げ、胸を伏せ、腰を下ろし、尾を巻いて頭を下げる4姿勢が明確。胴の厚み・毛色・脚数に破綻なし。不等切り出しでひげ等を切らない。腰が高い胸伏せ姿勢や既存curledとの体格は実表示で最終確認する。",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "originalSha256": "077c0649db2bd05a749b3473e370df19d9580338654a879756ab87f622da479a",
+    "prompt": "Four new intermediate settling-down poses of the same generated charcoal cat, using the seated low-groom and curled-rest references. Two columns by two rows: forepaw lowering while seated; chest lowered with hips high; hips lowered and head up in low loaf; tail wrapping and head lowering toward front paws. Fixed side view, same physical size and pixel density, transparent background; no scene, text or UI. Requested 1024 square, actual output1254 square; positions reviewed and irregular crop boundaries retained."
+  }
+}

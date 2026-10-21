@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-settle-final/compact-source.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "9bb6651ab0a475105cbc1a852f061dc5d12d70707c6b38cc07e25c9b1b60202c"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-settle-final/compact-corrected.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "acf167e3f02b4badaeb56a2ffdfcd6de773331f10bb2756f32d668d3e5fb7e58"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
