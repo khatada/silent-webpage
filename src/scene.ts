@@ -3,6 +3,8 @@ import { catPose, travelPosition, windowBrightness } from './animation';
 import { createRooftopBreeze } from './rooftop-breeze';
 import { createRooftopCat } from './rooftop-cat';
 import { createWindowLife } from './window-life';
+import { residentialHouses, streetGap } from './residential-layout';
+import { createDistantTaxi } from './distant-taxi';
 
 /** Draw at a deliberately small resolution: every visible edge stays on the pixel grid. */
 export async function createScene(host: HTMLElement): Promise<{
@@ -13,7 +15,7 @@ export async function createScene(host: HTMLElement): Promise<{
   await app.init({ width: 640, height: 400, antialias: false, resolution: 1, background: '#101326', preference: 'webgl', autoStart: false });
   const canvas = app.canvas;
   canvas.setAttribute('role', 'img');
-  canvas.setAttribute('aria-label', '星空の下、屋上から眺める東京。電車が街を走り、飛行機が空を渡り、野良猫が屋上を歩き、毛づくろいをして丸くなります。暖かな窓の灯りが点いたり消えたりしています。');
+  canvas.setAttribute('aria-label', '星空の下、屋上から眺める東京。電車が街を走り、飛行機が空を渡り、野良猫が屋上を歩き、毛づくろいをして丸くなります。ときどき路地をタクシーが通り、暖かな窓の灯りが点いたり消えたりしています。');
   canvas.style.cssText = 'display:block;width:100%;height:100%;image-rendering:pixelated;';
   host.append(canvas);
   app.ticker.maxFPS = 20;
@@ -30,6 +32,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let navigationLight: Graphics;
   let cat: ReturnType<typeof createRooftopCat>;
   let rooftopBreeze: ReturnType<typeof createRooftopBreeze>;
+  let taxi: ReturnType<typeof createDistantTaxi> | undefined;
 
   function build() {
     const bounds = host.getBoundingClientRect();
@@ -170,50 +173,52 @@ export async function createScene(host: HTMLElement): Promise<{
     train.addChild(carriages);
     train.y = 261;
     app.stage.addChild(train);
-    // Residential facades must occlude the train and support columns, not the other way around.
+    const houses = residentialHouses(width, random);
+    const alley = streetGap(houses, width);
+    taxi = alley ? createDistantTaxi({ left: alley.left, width: alley.width, y: 329 }) : undefined;
+    if (taxi) app.stage.addChild(taxi.art);
+    // Residential facades occlude the taxi, train and support columns.
     city = new Graphics();
     app.stage.addChild(city);
     const roomLights = new Container();
     app.stage.addChild(roomLights);
-    // Residential roofs, balconies, aerials, and the occasional still-lit room.
-    let houseX = -12;
-    while (houseX < width) {
-      const bw = 31 + Math.floor(random() * 34);
-      const top = 274 + Math.floor(random() * 27);
-      const body = random() > 0.5 ? 0x24253a : 0x2e2b40;
-      rect(city, houseX, top, bw, 64, body);
+    // Open one street view without moving the neighboring houses or regenerating their rooms.
+    houses.forEach((house, index) => {
+      const trimStart = alley?.after === index - 1 ? alley.rightTrim : 0;
+      const trimEnd = alley?.after === index ? alley.leftTrim : 0;
+      const houseX = house.x + trimStart;
+      const bw = house.width - trimStart - trimEnd;
+      const top = house.top;
+      rect(city, houseX, top, bw, 64, house.body);
       rect(city, houseX + bw - 6, top, 6, 64, 0x1c2033);
       rect(city, houseX - 2, top - 3, bw + 4, 3, 0x171e32);
       rect(city, houseX, top - 4, bw, 1, 0x646071);
       rect(city, houseX + 7, top - 11, 12, 7, 0x343148);
       rect(city, houseX + 9, top - 12, 9, 1, 0x6e5d70);
-      if (random() > 0.4) {
+      if (house.antenna) {
         rect(city, houseX + bw - 13, top - 22, 1, 19, 0x181e31);
         rect(city, houseX + bw - 21, top - 19, 17, 1, 0x181e31);
         rect(city, houseX + bw - 18, top - 22, 1, 6, 0x181e31);
         rect(city, houseX + bw - 8, top - 22, 1, 6, 0x181e31);
       }
-      for (let y = top + 9; y < 330; y += 16) {
-        for (let x = houseX + 6; x < houseX + bw - 10; x += 13) {
-          rect(city, x - 1, y - 1, 10, 9, 0x131c30);
-          rect(city, x, y, 8, 7, 0x30364d);
-          if (random() > 0.28) {
-            const light = new Graphics();
-            rect(light, x, y, 8, 7, 0xbb8c71);
-            rect(light, x, y, 8, 2, 0xe3b48a);
-            const frame = new Graphics();
-            rect(frame, x + 3, y, 1, 7, 0x5a4d56);
-            const room = new Container();
-            room.addChild(light, frame);
-            const period = 18 + random() * 28;
-            lights.push({ x, y, art: room, phase: random() * period, period });
-            roomLights.addChild(room);
-          }
-          rect(city, x - 2, y + 8, 12, 2, 0x171d30);
+      for (const { x, y, light: illumination } of house.rooms) {
+        if (x - 2 < houseX || x + 10 > houseX + bw) continue;
+        rect(city, x - 1, y - 1, 10, 9, 0x131c30);
+        rect(city, x, y, 8, 7, 0x30364d);
+        if (illumination) {
+          const light = new Graphics();
+          rect(light, x, y, 8, 7, 0xbb8c71);
+          rect(light, x, y, 8, 2, 0xe3b48a);
+          const frame = new Graphics();
+          rect(frame, x + 3, y, 1, 7, 0x5a4d56);
+          const room = new Container();
+          room.addChild(light, frame);
+          lights.push({ x, y, art: room, ...illumination });
+          roomLights.addChild(room);
         }
+        rect(city, x - 2, y + 8, 12, 2, 0x171d30);
       }
-      houseX += bw + 4;
-    }
+    });
     windowLife = createWindowLife(lights.filter(({ x }) => x >= 0 && x + 8 <= width));
     const foreground = new Graphics();
     app.stage.addChild(foreground);
@@ -279,6 +284,7 @@ export async function createScene(host: HTMLElement): Promise<{
   function animate() {
     rooftopBreeze.update(elapsed);
     windowLife.update(elapsed);
+    taxi?.update(elapsed);
     for (const { art, phase } of stars) art.alpha = 0.45 + Math.sin(elapsed * 0.24 + phase) * 0.25;
     for (const { art, initialX, speed } of clouds) art.x = Math.round(((initialX + elapsed * speed + 160) % (width + 180)) - 160);
     for (const { art, phase, period } of lights) art.alpha = windowBrightness(elapsed, phase, period);
