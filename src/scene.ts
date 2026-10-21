@@ -1,6 +1,7 @@
 import { Application, Assets, Rectangle, Sprite, Texture } from 'pixi.js';
 import { catPose, travelPosition, windowBrightness } from './animation';
 import { generatedArt } from './generated-art';
+import { generatedLayout } from './generated-layout';
 import { pixelViewport } from './pixel-viewport';
 
 type Frame = readonly [number, number, number, number];
@@ -11,11 +12,15 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, atlas] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
+    Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
+    Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.atlas}`),
   ]);
   background.source.scaleMode = 'nearest';
+  wideBackground.source.scaleMode = 'nearest';
+  portraitBackground.source.scaleMode = 'nearest';
   atlas.source.scaleMode = 'nearest';
   const crops: Texture[] = [];
   const crop = (source: Texture, frame: Frame) => {
@@ -31,8 +36,13 @@ export async function createScene(host: HTMLElement): Promise<{
     walkTwo: crop(atlas, generatedArt.frames.walkTwo),
     sitting: crop(atlas, generatedArt.frames.sitting),
   };
-  const darkWall = crop(background, generatedArt.darkWall);
-  const darkSky = crop(background, generatedArt.darkSky);
+  const compositionTextures = [
+    { background, darkWall: crop(background, generatedArt.darkWall), darkSky: crop(background, generatedArt.darkSky), floorPatch: crop(background, generatedArt.floorPatch) },
+    { background: wideBackground, darkWall: crop(wideBackground, generatedArt.wide.darkWall),
+      darkSky: crop(wideBackground, generatedArt.wide.darkSky), floorPatch: crop(wideBackground, generatedArt.wide.floorPatch) },
+    { background: portraitBackground, darkWall: crop(portraitBackground, generatedArt.portrait.darkWall),
+      darkSky: crop(portraitBackground, generatedArt.portrait.darkSky), floorPatch: crop(portraitBackground, generatedArt.portrait.floorPatch) },
+  ];
   const app = new Application();
   await app.init({ width: 768, height: 512, antialias: false, resolution: 1,
     background: '#101326', preference: 'webgl', autoStart: false });
@@ -51,6 +61,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let originX = 0;
   let originY = 0;
   let catY = 470;
+  let actorScale = 1;
   let train: Sprite;
   let aircraft: Sprite;
   let cloud: Sprite;
@@ -75,43 +86,58 @@ export async function createScene(host: HTMLElement): Promise<{
     canvas.style.width = `${viewport.cssWidth}px`;
     canvas.style.height = `${viewport.cssHeight}px`;
     for (const child of app.stage.removeChildren()) child.destroy({ children: true });
-    // Integer magnification keeps the corrected source-image grid intact.
-    scale = Math.ceil(Math.max(width / generatedArt.width, height / generatedArt.height));
-    originX = Math.round((width - generatedArt.width * scale) / 2);
-    const centeredY = Math.round((height - generatedArt.height * scale) / 2);
-    // Preserve some rooftop floor even on very wide windows.
-    originY = Math.min(centeredY, height - generatedArt.floor * scale - 18 * scale);
-    const backdrop = sprite(background);
+    const layout = generatedLayout(width, height);
+    const composition = layout.composition;
+    const textures = compositionTextures[layout.portrait ? 2 : layout.wide ? 1 : 0];
+    scale = layout.scale;
+    actorScale = composition.actorScale;
+    originX = layout.originX;
+    originY = layout.originY;
+    // Only uncovered edges use crops from the reviewed source image.
+    const topGap = Math.max(0, originY);
+    if (topGap) {
+      const skyEdge = sprite(textures.darkSky);
+      skyEdge.width = width;
+      skyEdge.height = topGap;
+    }
+    const bottomStart = Math.max(0, originY + composition.height * scale);
+    if (bottomStart < height) {
+      const floorEdge = sprite(textures.floorPatch);
+      floorEdge.position.set(0, bottomStart);
+      floorEdge.width = width;
+      floorEdge.height = height - bottomStart;
+    }
+    const backdrop = sprite(textures.background);
     backdrop.position.set(originX, originY);
     backdrop.scale.set(scale);
-    stars = generatedArt.stars.map(([x, y, w, h]) => {
-      const art = sprite(darkSky);
+    stars = composition.stars.map(([x, y, w, h]) => {
+      const art = sprite(textures.darkSky);
       art.position.set(sourceX(x), sourceY(y));
       art.width = w * scale;
       art.height = h * scale;
       return art;
     });
-    windows = generatedArt.windows.map(([x, y, w, h]) => {
-      const art = sprite(darkWall);
+    windows = composition.windows.map(([x, y, w, h]) => {
+      const art = sprite(textures.darkWall);
       art.position.set(sourceX(x), sourceY(y));
       art.width = w * scale;
       art.height = h * scale;
       return art;
     });
     cloud = sprite(frames.cloud);
-    cloud.scale.set(scale * 0.7);
-    cloud.y = sourceY(90);
+    cloud.scale.set(layout.cloudScale);
+    cloud.y = layout.cloudY;
     cloud.alpha = 0.35;
     aircraft = sprite(frames.aircraft);
-    aircraft.scale.set(scale * 0.17);
-    aircraft.y = sourceY(78);
+    aircraft.scale.set(layout.aircraftScale);
+    aircraft.y = layout.aircraftY;
     train = sprite(frames.train);
-    train.scale.set(scale * 0.24);
-    train.y = sourceY(generatedArt.railBottom) - train.height;
+    train.scale.set(scale * 0.24 * actorScale);
+    train.y = layout.railBottom - train.height;
     cat = sprite(frames.walkOne);
     cat.anchor.set(0.5, 1);
     cat.scale.set(scale * 0.25);
-    catY = Math.min(height - 8 * scale, sourceY(generatedArt.floor));
+    catY = layout.catY;
     animate();
     app.renderer.render(app.stage);
   }

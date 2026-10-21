@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-generated-all-sizes/narrow-source.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "34bdf8aa1b3069fba35fe31c1cf9783c5388d57aeb8f3754c9b14210d60672b7"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-generated-all-sizes/narrow-corrected.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "2901f425463e72e867fb36965d3510879551809ca0adade7d71a43386ec9c64f"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

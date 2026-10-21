@@ -1,15 +1,15 @@
 {
   "input": {
-    "path": "art-reviews/2026-10-21-generated-scene-final/mobile-source.png",
-    "width": 780,
-    "height": 1688,
-    "sha256": "1c21eb8d2498871a65990353dfd3ce6c1a7e285acc9d3018cc7bf54f5fd39c86"
+    "path": "art-reviews/2026-10-21-generated-all-sizes/small-phone-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "7c9bb8aaeecd1a85e3e1eff2f65240bcf6e6372ca82f28177620e09893aa050b"
   },
   "output": {
-    "path": "art-reviews/2026-10-21-generated-scene-final/mobile-corrected.png",
-    "width": 780,
-    "height": 1688,
-    "sha256": "2882cf8d3604627a1106c5d44fc14f3860975911fc4de0a2095fd49c9d5d675d"
+    "path": "art-reviews/2026-10-21-generated-all-sizes/small-phone-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "d9c03e316d088f45eaec2ff784eabe647f42fb7937121f7078a4d9dff45dd1f9"
   },
   "grid": {
     "cellSize": 2,

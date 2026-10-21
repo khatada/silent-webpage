@@ -1,15 +1,15 @@
 {
   "input": {
-    "path": "art-reviews/2026-10-21-generated-scene-final/desktop-source.png",
-    "width": 1440,
-    "height": 900,
-    "sha256": "53d5bd1cfc80c76550e966ab3dfa72a687a98438751482c7eb58992e9863b96f"
+    "path": "art-reviews/2026-10-21-generated-all-sizes/portrait-boundary-source.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "0d8dbb2d5a070adfec25ed1a4b23db9417db848355036d4c3121eb39f006852b"
   },
   "output": {
-    "path": "art-reviews/2026-10-21-generated-scene-final/desktop-corrected.png",
-    "width": 1440,
-    "height": 900,
-    "sha256": "141b912afaccee86f13c461d672acbb4c3670e624886d9b78f2da29cdb442972"
+    "path": "art-reviews/2026-10-21-generated-all-sizes/portrait-boundary-corrected.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "9d6539752470f70509e1b10eff6a9d792639779edf272e098d948c460d93fc44"
   },
   "grid": {
     "cellSize": 1,

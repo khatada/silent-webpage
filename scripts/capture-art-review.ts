@@ -17,6 +17,10 @@ const browser = await chromium.launch({
 try {
   for (const [name, width, height, dpr] of [
     ['desktop', 1440, 900, 1], ['mobile', 390, 844, 2], ['narrow', 295, 844, 1],
+    ['landscape', 844, 390, 2], ['wide', 2560, 1080, 1],
+    ['compact', 800, 600, 1], ['tall', 390, 1025, 2],
+    ['portrait-large', 900, 1600, 1], ['portrait-boundary', 1024, 1537, 1],
+    ['small-phone', 320, 568, 2], ['small-mobile', 375, 667, 2],
   ] as const) {
     const page = await browser.newPage({ viewport: { width, height }, deviceScaleFactor: dpr, reducedMotion: 'reduce' });
     const errors: string[] = [];

@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "b96da998dfd920405053aaf27856a0878750bd44aaa7dcde47343e3999917d78",
+  "sourceSha256": "1ed7a062771f0ac8ae96013cb2bc53ee729129894f3c316802c6902e981862b5",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -26,25 +26,105 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-21-generated-scene-final/desktop-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-scene-final/desktop-corrected.png.json",
+      "image": "public/art/tokyo-wide.png",
+      "report": "public/art/tokyo-wide.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "生成素材で合成した補正後の全景をLLMが実際に閲覧。精細な住宅街と屋上、猫・飛行機・雲が読み取れ、修正した電車の車輪が線路の高さに揃う。縦長でも猫が画面内に残り、背景の整数倍率でドットの幅が揃っているため採用。"
+      "reason": "補正後724x241の横長背景をLLMが実際に閲覧。星空、遠い高層ビル、住宅街、空の線路、屋上床が短い画面内に再構成され、細部と配色が保たれているため横長用素材として採用。表示への合成後も確認する。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "401d94516bceb4b55ac2dd527fa908558db6ad426218da54d13a262ef6199b55",
+        "prompt": "Recompose the previously generated Tokyo rooftop reference into an ultrawide panorama. Preserve fine navy/violet pixel art, warm windows, starry sky, distant skyline, residential streets, empty elevated railway and empty foreground rooftop, all within the short central composition. No cats, trains, aircraft, clouds, people, text or UI. Requested 4:1; generated output 2172x724 (3:1) accepted after correction and review."
+      }
     },
     {
-      "image": "art-reviews/2026-10-21-generated-scene-final/mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-scene-final/mobile-corrected.png.json",
+      "image": "public/art/tokyo-portrait.png",
+      "report": "public/art/tokyo-portrait.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "生成素材で合成した補正後の全景をLLMが実際に閲覧。精細な住宅街と屋上、猫・飛行機・雲が読み取れ、修正した電車の車輪が線路の高さに揃う。縦長でも猫が画面内に残り、背景の整数倍率でドットの幅が揃っているため採用。"
+      "reason": "1px格子の補正後画像は原画とRGBA完全一致。全体ビューの表示不調のため、補正PNGを無変形で上空(0..512)、街(512..1100)、屋上(1100..1536)に分けてLLMが全域を実際に閲覧。細かな窓と屋根、星空と広い屋上床の輪郭が保たれた縦構図として素材採用。合成画面も別途確認する。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "20af0778c4d6f93aa71e21706b16107544bff7df9f4f88ee4a4172a3a661c5d3",
+        "prompt": "Create a new 1024x1536 portrait adaptation of the generated fine pixel-art Tokyo rooftop style. Navy/violet starry sky top40%, distant skyline and residential houses with empty elevated railway middle35%, empty rooftop floor bottom25%; central40% includes all essential content. Warm windows and tiny crisp architecture details. No cats, trains, planes, clouds, people, typography or UI; recompose rather than crop the reference."
+      }
     },
     {
-      "image": "art-reviews/2026-10-21-generated-scene-final/narrow-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-scene-final/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-21-generated-all-sizes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-21-generated-all-sizes/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "生成素材で合成した補正後の全景をLLMが実際に閲覧。精細な住宅街と屋上、猫・飛行機・雲が読み取れ、修正した電車の車輪が線路の高さに揃う。縦長でも猫が画面内に残り、背景の整数倍率でドットの幅が揃っているため採用。"
+      "reason": "補正後PNGをLLMが実際に閲覧。生成素材の細かな街並み、空の飛行機と雲、線路の電車、屋上の猫が読み取れ、構図とドット幅が保たれるため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-generated-all-sizes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-generated-all-sizes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後PNGをLLMが実際に閲覧。生成素材の細かな街並み、空の飛行機と雲、線路の電車、屋上の猫が読み取れ、構図とドット幅が保たれるため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-generated-all-sizes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-21-generated-all-sizes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後PNGをLLMが実際に閲覧。生成素材の細かな街並み、空の飛行機と雲、線路の電車、屋上の猫が読み取れ、構図とドット幅が保たれるため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-generated-all-sizes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-21-generated-all-sizes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後PNGをLLMが実際に閲覧。生成素材の細かな街並み、空の飛行機と雲、線路の電車、屋上の猫が読み取れ、構図とドット幅が保たれるため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-generated-all-sizes/wide-corrected.png",
+      "report": "art-reviews/2026-10-21-generated-all-sizes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後PNGをLLMが実際に閲覧。生成素材の細かな街並み、空の飛行機と雲、線路の電車、屋上の猫が読み取れ、構図とドット幅が保たれるため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-generated-all-sizes/compact-corrected.png",
+      "report": "art-reviews/2026-10-21-generated-all-sizes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。星空・列車・飛行機・屋上猫が読み取れ、格子が均一。採用を妨げる重大な問題はないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-generated-all-sizes/tall-corrected.png",
+      "report": "art-reviews/2026-10-21-generated-all-sizes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。専用縦長背景の窓・屋根・路地の細部を維持し、旧案の粗い拡大を解消。採用を妨げる重大な問題はないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-generated-all-sizes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-21-generated-all-sizes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。星空から住宅街と屋上まで同居し、空消失と機体の極小化を解消。端の部分画像による補完も景色を破損しない。採用を妨げる重大な問題はないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-generated-all-sizes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-21-generated-all-sizes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。等倍の縦長背景で空と屋上が残り、端の補完も破損を起こさない。採用を妨げる重大な問題はないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-generated-all-sizes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-21-generated-all-sizes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。整数間引きの縮小後も暖かな窓と屋根が読め、機体・列車・猫が画面内に残る。採用を妨げる重大な問題はないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-generated-all-sizes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-generated-all-sizes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。整数間引きの縮小後も住宅街の細部と空・乗り物・屋上の猫が読み取れる。採用を妨げる重大な問題はないため採用。"
     }
   ]
 }

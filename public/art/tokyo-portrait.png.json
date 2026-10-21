@@ -1,15 +1,15 @@
 {
   "input": {
-    "path": "art-reviews/2026-10-21-generated-scene-final/narrow-source.png",
-    "width": 295,
-    "height": 844,
-    "sha256": "10dd3a9d98ef88763cd519c358a97ce39638f299f303156200c98381fa1e56f0"
+    "path": "art-reviews/2026-10-21-imagegen/portrait-original.png",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "20af0778c4d6f93aa71e21706b16107544bff7df9f4f88ee4a4172a3a661c5d3"
   },
   "output": {
-    "path": "art-reviews/2026-10-21-generated-scene-final/narrow-corrected.png",
-    "width": 295,
-    "height": 844,
-    "sha256": "95626f3b2c68b2316eac78e372841f52fe7b8aef9203c07ab711895d6e171a71"
+    "path": "public/art/tokyo-portrait.png",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "9a191c6e5ae3baf0fe6a675f1d3c5ebaaf903a0b31282908e24c4045adffc603"
   },
   "grid": {
     "cellSize": 1,

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-imagegen/wide-original.png",
+    "width": 2172,
+    "height": 724,
+    "sha256": "401d94516bceb4b55ac2dd527fa908558db6ad426218da54d13a262ef6199b55"
+  },
+  "output": {
+    "path": "public/art/tokyo-wide.png",
+    "width": 724,
+    "height": 241,
+    "sha256": "35420fba55274f95d4cb757955a4467088d6ea941f6841350294619899d3f535"
+  },
+  "grid": {
+    "cellSize": 3,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
