@@ -89,6 +89,19 @@ export async function createScene(host: HTMLElement): Promise<{
       clouds.push({ art, initialX: art.x, speed: 0.35 + random() * 0.3 });
       app.stage.addChild(art);
     }
+    // One thin, sky-colored wisp gently veils the moon without turning the clear night overcast.
+    const moonCloud = new Container();
+    const veil = new Graphics();
+    rect(veil, 16, 0, 56, 2, 0x12152c, 0.025);
+    rect(veil, 6, 2, 70, 2, 0x12152c, 0.04);
+    rect(veil, 0, 4, 88, 2, 0x12152c, 0.06);
+    rect(veil, 9, 6, 74, 2, 0x12152c, 0.045);
+    rect(veil, 24, 8, 48, 2, 0x12152c, 0.02);
+    moonCloud.addChild(veil);
+    moonCloud.x = moonX - 100;
+    moonCloud.y = 48;
+    clouds.push({ art: moonCloud, initialX: moonCloud.x, speed: 0.55 });
+    app.stage.addChild(moonCloud);
     // A distant aircraft crosses well above the skyline, with restrained navigation lights.
     airplane = new Container();
     const aircraft = new Graphics();
