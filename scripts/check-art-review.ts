@@ -5,7 +5,19 @@ import { artSourceHash } from './art-source-hash';
 import { PNG } from 'pngjs';
 import { correctPixelArt } from '../src/pixel-correction';
 
-interface ReviewImage { image: string; report: string; decision: string; reviewedBy: string; reason: string }
+interface GenerationEvidence {
+  tool: 'image_gen.imagegen';
+  originalSha256: string;
+  prompt: string;
+}
+interface ReviewImage {
+  image: string;
+  report: string;
+  decision: string;
+  reviewedBy: string;
+  reason: string;
+  generation?: GenerationEvidence;
+}
 const manifest = JSON.parse(await readFile('art-reviews/manifest.json', 'utf8')) as {
   sourceSha256: string; images: ReviewImage[];
 };
@@ -13,9 +25,21 @@ if (manifest.sourceSha256 !== await artSourceHash()) throw new Error('Art source
 if (!manifest.images?.length) throw new Error('At least one corrected image needs an LLM adoption record.');
 const hash = (bytes: Uint8Array) => createHash('sha256').update(bytes).digest('hex');
 const accepted = new Set<string>();
+const generated = new Set<string>();
 for (const review of manifest.images) {
   if (review.decision !== 'accepted' || review.reviewedBy !== 'LLM' || !review.reason?.trim()) throw new Error(`Missing LLM adoption decision: ${review.image}`);
   const report = JSON.parse(await readFile(review.report, 'utf8'));
+  if (review.generation !== undefined) {
+    const evidence = review.generation;
+    if (evidence?.tool !== 'image_gen.imagegen'
+      || typeof evidence.originalSha256 !== 'string'
+      || !/^[a-f0-9]{64}$/.test(evidence.originalSha256)
+      || evidence.originalSha256 !== report.input.sha256
+      || typeof evidence.prompt !== 'string' || !evidence.prompt.trim()) {
+      throw new Error(`Invalid image generation evidence: ${review.image}`);
+    }
+    generated.add(resolve(review.image));
+  }
   const image = await readFile(review.image);
   if (hash(image) !== report.output.sha256) throw new Error(`Corrected image differs from its report: ${review.image}`);
   // Original PNGs are retained beside the corrected image, making evidence portable.
@@ -36,7 +60,10 @@ async function inspectPublic(path: string): Promise<void> {
   for (const entry of entries) {
     const child = join(path, entry.name);
     if (entry.isDirectory()) await inspectPublic(child);
-    else if (/\.png$/i.test(entry.name) && !accepted.has(resolve(child))) throw new Error(`Unreviewed public PNG: ${relative('.', child)}`);
+    else if (/\.png$/i.test(entry.name)) {
+      if (!accepted.has(resolve(child))) throw new Error(`Unreviewed public PNG: ${relative('.', child)}`);
+      if (!generated.has(resolve(child))) throw new Error(`Missing image generation evidence for public PNG: ${relative('.', child)}`);
+    }
   }
 }
 await inspectPublic('public');
