@@ -49,9 +49,3 @@ npm run art:correct -- --input original.png --output corrected.png --cell-size 2
 本番previewを127.0.0.1:4173で起動し、`npm run art:capture -- --output art-reviews/新しい名前` を実行する。必要なら `ART_BROWSER_PATH=/usr/bin/chromium` でローカルブラウザを指定する。PC・DPR 2のモバイル・狭幅・横向き・横長・小型端末・倍率境界を撮影し、最新ビルドと補正画像を作る。出力先は新規ディレクトリを使う。このコマンドは自動採用しない。画像を閲覧した後、capture.jsonのsourceSha256と画像ごとの採否をmanifest.jsonへ記録する。これは描画の証跡作成であり、コミット前にPlaywrightテスト全体の成功を要求するものではない。
 
 補正レポートとcapture.jsonのPENDING表示は自動採用をしないことを示す生成時の状態として保持する。実際の採否はmanifest.jsonに記録する。
-
-## 過去実装の猫の姿勢確認（移行対象）
-
-以下はGraphicsによる手続き描画を使用していた時点の確認方法であり、新規原画制作に使用しない。生成素材への移行後は、採用済み画像のフレームを並べて確認する方式へ置き換える。
-
-`npm run art:capture-cat -- --output art-reviews/既存ディレクトリ` は、同じcatPose/createRooftopCatから25.5/27/29秒の猫を並べた静止アトラスを一度だけ描画し、補正する。Viteの確認専用ページを127.0.0.1:4174へ一時配信し、サイト本体のタイマーは実行しない。必要ならART_BROWSER_PATHでブラウザを指定する。長い仮想時間による大量の描画待ちを避ける補助手段で、タイミングは単体テスト、全景と実際の停止・再開は別途検証する。アトラスもLLMが実際に開いてからmanifest.jsonへ採否を記録する。

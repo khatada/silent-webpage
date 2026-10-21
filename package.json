@@ -15,8 +15,7 @@
     "prepare": "husky",
     "art:correct": "node --import tsx scripts/correct-pixel-art.ts",
     "art:check": "node --import tsx scripts/check-art-review.ts",
-    "art:capture": "node --import tsx scripts/capture-art-review.ts",
-    "art:capture-cat": "node --import tsx scripts/capture-cat-review.ts"
+    "art:capture": "node --import tsx scripts/capture-art-review.ts"
   },
   "dependencies": {
     "pixi.js": "^8.14.0"

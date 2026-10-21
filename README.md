@@ -3,6 +3,8 @@
 屋上から東京の夜景を眺める、静的なピクセルアートのWebサイト。
 TypeScript / Vite / PixiJS。
 
+ピクセルアートの原画はimagegenによる画像生成で制作し、プログラムでは生成しません。生成画像は[補正・LLM確認・採用の手順](docs/pixel-art-workflow.md)を経て使用します。
+
 ## 開発
 
 Node.js 22以降で `npm ci`、`npm run dev` を実行します。
@@ -10,7 +12,7 @@ Node.js 22以降で `npm ci`、`npm run dev` を実行します。
 
 ## 検証
 
-- `npm run verify`: 型・Lint・単体テスト・本番ビルド。コミット前に必須です。
+- `npm run verify`: 型・Lint・単体テスト・画像の補正と採用記録の検証（`art:check`）・本番ビルド。コミット前に必須です。
 - `npm run test:e2e`: Playwright。GitHub Actionsで実行します。
 - `npm run preview`: 生成済みの本番ビルドを確認します。
 
