@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-train-depth/landscape-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "3f70ebded226cd476a2233265c43220f620dcfd213ec50cbb88947e2509245e7"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-train-depth/landscape-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "ce05acc054c1de603dcb807f83605e1f5d8cb87df220a867764ee8be65554826"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

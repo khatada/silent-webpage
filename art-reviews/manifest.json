@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "bee787f83933a7008e5fc0e3aec207833912359d8c41a93699900794842bffd5",
+  "sourceSha256": "98b02954b0c0585667b047bcf1fc6b9ba8a6ae1161d79bcabbc043ef8d3ee5bc",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -98,41 +98,6 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-21-cat-walk-final/desktop-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-walk-final/desktop-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "補正後全景を親LLMが実閲覧。歩行猫の足元・輪郭・大きさが床に馴染み、空・乗り物・街の可視性も保たれているため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-cat-walk-final/mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-walk-final/mobile-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "補正後全景を親LLMが実閲覧。歩行猫の足元・輪郭・大きさが床に馴染み、空・乗り物・街の可視性も保たれているため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-cat-walk-final/narrow-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-walk-final/narrow-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "補正後全景を親LLMが実閲覧。歩行猫の足元・輪郭・大きさが床に馴染み、空・乗り物・街の可視性も保たれているため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-cat-walk-final/landscape-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-walk-final/landscape-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "補正後全景を親LLMが実閲覧。歩行猫の足元・輪郭・大きさが床に馴染み、空・乗り物・街の可視性も保たれているため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-cat-walk-final/wide-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-walk-final/wide-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "補正後全景を親LLMが実閲覧。歩行猫の足元・輪郭・大きさが床に馴染み、空・乗り物・街の可視性も保たれているため採用。"
-    },
-    {
       "image": "art-reviews/2026-10-21-cat-walk-motion-v2/atlas-corrected.png",
       "report": "art-reviews/2026-10-21-cat-walk-motion-v2/atlas-corrected.png.json",
       "decision": "accepted",
@@ -140,46 +105,81 @@
       "reason": "親と独立レビュー担当LLMが補正後画像を実閲覧。左右各8歩行姿勢、休憩7姿勢、同じ床柄上を実移動する16コマで中間姿勢と整列を確認。接地・垂直支持・後方支持・回収・前振りが読め、最後から最初も大きな反転がないため採用。固定Sprite保持中の足滑りを完全に消す連続補間ではない。"
     },
     {
-      "image": "art-reviews/2026-10-21-cat-walk-final/compact-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-walk-final/compact-corrected.png.json",
+      "image": "art-reviews/2026-10-21-train-depth/desktop-corrected.png",
+      "report": "art-reviews/2026-10-21-train-depth/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後画像を実閲覧。猫は尾・頭・足先まで画面内で各構図の床に接地し、体格を判別できる。空・雲・飛行機・列車・街の灯りも残り構図の退行がないため採用。"
+      "reason": "親LLMが補正後全景を実閲覧。柱は元背景と位置が揃い、列車の中央を手前から隠す。切り出しの矩形境界は目立たず、空・街・猫の表示も維持されるため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-cat-walk-final/tall-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-walk-final/tall-corrected.png.json",
+      "image": "art-reviews/2026-10-21-train-depth/mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-train-depth/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後画像を実閲覧。猫は尾・頭・足先まで画面内で各構図の床に接地し、体格を判別できる。空・雲・飛行機・列車・街の灯りも残り構図の退行がないため採用。"
+      "reason": "親LLMが補正後全景を実閲覧。柱は元背景と位置が揃い、列車の中央を手前から隠す。切り出しの矩形境界は目立たず、空・街・猫の表示も維持されるため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-cat-walk-final/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-walk-final/portrait-large-corrected.png.json",
+      "image": "art-reviews/2026-10-21-train-depth/narrow-corrected.png",
+      "report": "art-reviews/2026-10-21-train-depth/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後画像を実閲覧。猫は尾・頭・足先まで画面内で各構図の床に接地し、体格を判別できる。空・雲・飛行機・列車・街の灯りも残り構図の退行がないため採用。"
+      "reason": "親LLMが補正後全景を実閲覧。柱は元背景と位置が揃い、列車の中央を手前から隠す。切り出しの矩形境界は目立たず、空・街・猫の表示も維持されるため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-cat-walk-final/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-walk-final/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/2026-10-21-train-depth/landscape-corrected.png",
+      "report": "art-reviews/2026-10-21-train-depth/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後画像を実閲覧。猫は尾・頭・足先まで画面内で各構図の床に接地し、体格を判別できる。空・雲・飛行機・列車・街の灯りも残り構図の退行がないため採用。"
+      "reason": "親LLMが補正後全景を実閲覧。柱は元背景と位置が揃い、列車の中央を手前から隠す。切り出しの矩形境界は目立たず、空・街・猫の表示も維持されるため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-cat-walk-final/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-walk-final/small-phone-corrected.png.json",
+      "image": "art-reviews/2026-10-21-train-depth/wide-corrected.png",
+      "report": "art-reviews/2026-10-21-train-depth/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後画像を実閲覧。猫は尾・頭・足先まで画面内で各構図の床に接地し、体格を判別できる。空・雲・飛行機・列車・街の灯りも残り構図の退行がないため採用。"
+      "reason": "親LLMが補正後全景を実閲覧。柱は元背景と位置が揃い、列車の中央を手前から隠す。切り出しの矩形境界は目立たず、空・街・猫の表示も維持されるため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-cat-walk-final/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-walk-final/small-mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-21-train-depth/compact-corrected.png",
+      "report": "art-reviews/2026-10-21-train-depth/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後画像を実閲覧。猫は尾・頭・足先まで画面内で各構図の床に接地し、体格を判別できる。空・雲・飛行機・列車・街の灯りも残り構図の退行がないため採用。"
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。柱が列車の前に重なり、柱の二重化・目立つ矩形境界・位置ずれなし。空・街・猫の可視性も維持されるため採用。tallの初期列車は一部画面外だが遮蔽は確認できる。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-train-depth/tall-corrected.png",
+      "report": "art-reviews/2026-10-21-train-depth/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。柱が列車の前に重なり、柱の二重化・目立つ矩形境界・位置ずれなし。空・街・猫の可視性も維持されるため採用。tallの初期列車は一部画面外だが遮蔽は確認できる。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-train-depth/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-21-train-depth/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。柱が列車の前に重なり、柱の二重化・目立つ矩形境界・位置ずれなし。空・街・猫の可視性も維持されるため採用。tallの初期列車は一部画面外だが遮蔽は確認できる。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-train-depth/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-21-train-depth/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。柱が列車の前に重なり、柱の二重化・目立つ矩形境界・位置ずれなし。空・街・猫の可視性も維持されるため採用。tallの初期列車は一部画面外だが遮蔽は確認できる。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-train-depth/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-21-train-depth/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。柱が列車の前に重なり、柱の二重化・目立つ矩形境界・位置ずれなし。空・街・猫の可視性も維持されるため採用。tallの初期列車は一部画面外だが遮蔽は確認できる。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-train-depth/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-train-depth/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。柱が列車の前に重なり、柱の二重化・目立つ矩形境界・位置ずれなし。空・街・猫の可視性も維持されるため採用。tallの初期列車は一部画面外だが遮蔽は確認できる。"
     }
   ]
 }
