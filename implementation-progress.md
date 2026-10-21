@@ -103,3 +103,9 @@
 - [PR #13 CI成功](https://github.com/khatada/silent-webpage/actions/runs/39521548309): 全チェック成功。
 
 - [PR #13反映後の公開成功](https://github.com/khatada/silent-webpage/actions/runs/39521753347)。
+
+## 最新ユーザー要求: 精細化と補正
+
+- 第10サイクルC-009の未完了変更は `feat/rooftop-fan` のstash `WIP C-009 rooftop fan before pixel alignment request` に保存。最新要求を優先する。stashは自動適用せず差分を確認する。
+- `feat/pixel-art-correction` で補正プログラムと手順を実装。PNG/RGBAの格子補正、透明度、整数拡大、SHA256レポート、単体5件。まずツールをPR化し、続くPRで表示格子と細部を改善する。
+- requirements.mdにユーザーの明示変更のみを反映。補正後画像のLLM確認を以後必須とした。
