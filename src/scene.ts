@@ -8,6 +8,7 @@ import { createDistantTaxi } from './distant-taxi';
 import { createAlleyVendingMachine } from './alley-vending-machine';
 import { createNeighbourClothesline } from './neighbour-clothesline';
 import { pixelViewport } from './pixel-viewport';
+import { createRooftopFan } from './rooftop-fan';
 
 /** Draw at a deliberately small resolution: every visible edge stays on the pixel grid. */
 export async function createScene(host: HTMLElement): Promise<{
@@ -35,6 +36,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let navigationLight: Graphics;
   let cat: ReturnType<typeof createRooftopCat>;
   let rooftopBreeze: ReturnType<typeof createRooftopBreeze>;
+  let rooftopFan: ReturnType<typeof createRooftopFan>;
   let taxi: ReturnType<typeof createDistantTaxi> | undefined;
   let clothesline: ReturnType<typeof createNeighbourClothesline>;
 
@@ -308,11 +310,8 @@ export async function createScene(host: HTMLElement): Promise<{
     rect(foreground, plantX - 3, 352, 0.5, 10, 0x8a6070);
     rect(foreground, plantX - 6, 348, 16, 3, 0x8c6370);
     rect(foreground, plantX + 1, 322, 2, 27, 0x3e5255);
-    rect(foreground, 56, 345, 29, 20, 0x4d485c);
-    rect(foreground, 56, 343, 29, 3, 0x72616d);
-    rect(foreground, 59, 348, 18, 13, 0x252c40);
-    for (let y = 350; y < 361; y += 3) rect(foreground, 61, y, 14, 1, 0x565268);
-    rect(foreground, 79, 349, 3, 3, 0x8c7a81);
+    rooftopFan = createRooftopFan();
+    app.stage.addChild(rooftopFan.art);
     rooftopBreeze = createRooftopBreeze({ cupX: tableX + 10, cupY: 344, plantX });
     app.stage.addChild(rooftopBreeze.art);
     cat = createRooftopCat();
@@ -324,6 +323,7 @@ export async function createScene(host: HTMLElement): Promise<{
 
   function animate() {
     rooftopBreeze.update(elapsed);
+    rooftopFan.update(elapsed);
     windowLife.update(elapsed);
     taxi?.update(elapsed);
     clothesline?.update(elapsed);
