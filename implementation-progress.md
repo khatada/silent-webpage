@@ -109,3 +109,10 @@
 - 第10サイクルC-009の未完了変更は `feat/rooftop-fan` のstash `WIP C-009 rooftop fan before pixel alignment request` に保存。最新要求を優先する。stashは自動適用せず差分を確認する。
 - `feat/pixel-art-correction` で補正プログラムと手順を実装。PNG/RGBAの格子補正、透明度、整数拡大、SHA256レポート、単体5件。まずツールをPR化し、続くPRで表示格子と細部を改善する。
 - requirements.mdにユーザーの明示変更のみを反映。補正後画像のLLM確認を以後必須とした。
+
+- 補正ツールはPR #15でCI成功後mainマージ済み（c981d67）。CI: https://github.com/khatada/silent-webpage/actions/runs/39568745673 。
+- 精細化は `feat/finer-nightscape` 。表示格子・細部・影を修正し、PC/高DPIモバイル/狭幅の補正後画像をLLMが閲覧して採用。`art-reviews/manifest.json` に保存。コミット・CI・マージ・公開はこれから。
+
+- 精細化の最終証跡: `art-reviews/2026-10-21-fine-grid-final/` 。補正前後RGBAは3サイズ全て一致（表示側で既に整列済み）、補正後PNGをLLMが再閲覧し採用。DPRだけの変更にも追従。PR #15反映後の公開成功: https://github.com/khatada/silent-webpage/actions/runs/39569056462 。
+
+- 精細化の必須チェックは型・Lint・単体33件・補正/採用記録・本番ビルド。表示格子のリサイズ検証はCIで実行。古いソース証跡・未採用記録の拒否を確認済み。

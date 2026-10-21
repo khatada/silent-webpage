@@ -6,7 +6,9 @@ export function createRooftopCat(): { art: Container; update(pose: CatPose): voi
   const art = new Container();
   const shadow = new Graphics()
     .rect(-9, 0, 18, 1).rect(-6, 1, 12, 1).fill({ color: 0x080e1c, alpha: 0.35 });
-  art.addChild(shadow);
+  const stretchShadow = new Graphics()
+    .rect(-11, 0, 22, 1).rect(-7, 1, 14, 1).fill({ color: 0x080e1c, alpha: 0.35 });
+  art.addChild(shadow, stretchShadow);
   const coat = 0xb39a8b;
   const shade = 0x786f77;
   const light = 0xcebbab;
@@ -22,6 +24,8 @@ export function createRooftopCat(): { art: Container; update(pose: CatPose): voi
     rect(g, x + 6, y - 1, 1, 2, 0xc9a4a0);
     rect(g, x + 5, y + 2, closed ? 2 : 1, 1, closed ? shade : 0xe7d7a7);
     rect(g, x + 6, y + 4, 2, 1, 0x5e5361);
+    rect(g, x + 6.5, y + 4, 0.5, 0.5, 0xb48791);
+    rect(g, x + 3.5, y + 4.5, 1.5, 0.5, light);
   };
   const seatedBody = (g: Graphics) => {
     rect(g, -8, -7, 9, 7, shade);
@@ -92,7 +96,8 @@ export function createRooftopCat(): { art: Container; update(pose: CatPose): voi
   function update(pose: CatPose) {
     art.x = pose.x;
     art.scale.x = pose.direction;
-    shadow.scale.x = pose.frame === 8 ? 1.2 : 1;
+    shadow.visible = pose.frame !== 8;
+    stretchShadow.visible = pose.frame === 8;
     frames.forEach((frame, index) => { frame.visible = index === pose.frame; });
   }
   return { art, update };
