@@ -1,33 +1,33 @@
 {
-  "sourceSha256": "6521d20dbe3aa9d28c6b7e9c922a365ae0dcf9f815331d867a5b7b4df590cd54",
+  "sourceSha256": "6f9048a7bb2b8ed05596830ba0b12c549c9e47a4e76666d0d84bf98627c06d0d",
   "images": [
     {
-      "image": "art-reviews/2026-10-21-distant-aircraft/desktop-corrected.png",
-      "report": "art-reviews/2026-10-21-distant-aircraft/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-breath/desktop-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-breath/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGを実際に閲覧。細い胴体・後退した主翼・小さい尾翼が読み取れ、遠い小さな旅客機として見える。全景で目立ちすぎず、翼端灯も翼に接続し、輪郭や夜景の構図に破損がないため採用。"
+      "reason": "補正後の全景PNGを実際に閲覧。既存の精細な夜景・猫の輪郭と構図が保たれ、静かに眺める体験を妨げる変化がないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-distant-aircraft/mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-distant-aircraft/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-breath/mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-breath/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGを実際に閲覧。細い胴体・後退した主翼・小さい尾翼が読み取れ、遠い小さな旅客機として見える。全景で目立ちすぎず、翼端灯も翼に接続し、輪郭や夜景の構図に破損がないため採用。"
+      "reason": "補正後の全景PNGを実際に閲覧。既存の精細な夜景・猫の輪郭と構図が保たれ、静かに眺める体験を妨げる変化がないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-distant-aircraft/narrow-corrected.png",
-      "report": "art-reviews/2026-10-21-distant-aircraft/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-breath/narrow-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-breath/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGを実際に閲覧。細い胴体・後退した主翼・小さい尾翼が読み取れ、遠い小さな旅客機として見える。全景で目立ちすぎず、翼端灯も翼に接続し、輪郭や夜景の構図に破損がないため採用。"
+      "reason": "補正後の全景PNGを実際に閲覧。既存の精細な夜景・猫の輪郭と構図が保たれ、静かに眺める体験を妨げる変化がないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-distant-aircraft/aircraft-detail-corrected.png",
-      "report": "art-reviews/2026-10-21-distant-aircraft/aircraft-detail-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-breath/atlas-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-breath/atlas-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGを実際に閲覧。細い胴体・後退した主翼・小さい尾翼が読み取れ、遠い小さな旅客機として見える。全景で目立ちすぎず、翼端灯も翼に接続し、輪郭や夜景の構図に破損がないため採用。"
+      "reason": "補正後アトラスを実際に閲覧。通常・吸気・戻りを比較し、吸気中は背中の上端だけが変わり、頭・耳・尾・足・影は固定。通常と戻りは画素単位でも一致し、吸気差分は背中の2行68画素だけで浮いたり跳ねたり見えないため採用。"
     }
   ]
 }

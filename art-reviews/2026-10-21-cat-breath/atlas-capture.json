@@ -1,0 +1,53 @@
+{
+  "sourceSha256": "6f9048a7bb2b8ed05596830ba0b12c549c9e47a4e76666d0d84bf98627c06d0d",
+  "finalSourceSha256": "6f9048a7bb2b8ed05596830ba0b12c549c9e47a4e76666d0d84bf98627c06d0d",
+  "metadata": {
+    "width": 360,
+    "height": 120,
+    "displayScale": 4,
+    "samples": [
+      {
+        "seconds": 25.5,
+        "pose": {
+          "x": 339,
+          "direction": 1,
+          "frame": 7,
+          "breath": 0
+        },
+        "atlasPosition": {
+          "x": 60,
+          "y": 90
+        }
+      },
+      {
+        "seconds": 27,
+        "pose": {
+          "x": 339,
+          "direction": 1,
+          "frame": 7,
+          "breath": 0.5
+        },
+        "atlasPosition": {
+          "x": 180,
+          "y": 90
+        }
+      },
+      {
+        "seconds": 29,
+        "pose": {
+          "x": 339,
+          "direction": 1,
+          "frame": 7,
+          "breath": 0
+        },
+        "atlasPosition": {
+          "x": 300,
+          "y": 90
+        }
+      }
+    ]
+  },
+  "method": "Current catPose and createRooftopCat rendered once on a blank review page; no scene ticker or simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

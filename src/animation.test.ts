@@ -43,6 +43,19 @@ describe('city animation timing', () => {
       }
     }
   });
+  it('adds one small breath inside each curled rest, returning to neutral before stretching', () => {
+    const samples = [[25, 0], [25.999, 0], [26, 0.5], [27.25, 0.5], [28.499, 0.5], [28.5, 0], [29.999, 0], [30, 0]];
+    for (const [seconds, breath] of samples) {
+      for (const offset of [-64, -32, 0, 32, 64]) {
+        expect(catPose(seconds + offset, 640).breath).toBe(breath);
+      }
+    }
+    for (let seconds = 0; seconds < 64; seconds += 0.125) {
+      const pose = catPose(seconds, 640);
+      expect([0, 0.5]).toContain(pose.breath);
+      if (pose.frame !== 7) expect(pose.breath).toBe(0);
+    }
+  });
   it('repeats every 64 seconds without taking the cat outside mobile roof bounds', () => {
     for (const width of [140, 185, 640, 1280]) {
       for (let seconds = 0; seconds < 64; seconds += 0.25) {
