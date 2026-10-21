@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-walk-lift/original.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "0256960a7049904d8a406ca62cef9936a264e8c1eb7872087ad18262c02582d9"
+  },
+  "output": {
+    "path": "public/art/cat-walk-lift.png",
+    "width": 209,
+    "height": 209,
+    "sha256": "d54f05dc5ee5ec1a9483fc1645efcd52de3ebdc10726f955f9592e714f840c2e"
+  },
+  "grid": {
+    "cellSize": 6,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

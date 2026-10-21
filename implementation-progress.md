@@ -4,12 +4,13 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `feat/generated-cat-rest`。C-014を実装中。PR #24はCI成功後mainマージ済み（715a9ce）。公開処理の確認はこれから。PR #23の画像生成への移行は公開成功済み。
-- 新しい猫アトラスをimagegen生成、2px格子補正後LLMが素材を実閲覧し採用。毛づくろい2姿勢・丸まり・伸びを接続、呼吸候補と追加座位は使わない。体格を.8で正規化、足元のanchorを実輪郭で合わせた。
-- 本番と静止確認の共有APIは `src/image-cat.ts`。`art:preview-cat` は採用済み画像の合成確認のみ行い、原画をコードで生成しない。画面別actorScaleの継承修正後、全景11画面と静止姿勢を再出力・補正し、LLMが実閲覧して採用済み。
-- 次: verify、コミット・push・PR・CI・マージ。最終証跡は `art-reviews/2026-10-21-cat-rest-final/`。
-- 要求事項は変更しない。C-014はエージェント提案。停止指示はなく継続改善を続ける。
-- 原画コード生成は禁止。補正と実閲覧を以後も省略しない。旧stashは古いdocsを含むため一括適用しない。
+- ブランチ: `feat/generated-cat-walk`。ユーザーの『歩行2フレームでは中間不足で自然に見えない』指摘を最優先対応中。
+- 最初の8枚は中間姿勢不足で不採用（art-reviews/2026-10-21-generated-cat-walk）。v2の6姿勢に、imagegenで個別追加した後方支持・脚回収を組み合わせ8phaseを実装。補正素材はcat-walk.png/cat-walk-back.png/cat-walk-lift.png。単独追加素材はLLM確認済み、最終ループの採用はまだ。
+- 頭・足元で8姿勢を整列し、移動距離で切り替える。支持脚の実測からstride192source/非等距離phaseを採用。体格に合う速度と25〜75%の経路に調整。静止23姿勢と実移動16コマの補正画像は親・独立LLMとも採用可（足滑りの完全解消ではない）。全景11サイズの補正後画像は親5枚・独立LLM6枚の実閲覧で採用。素材3枚と全景/歩行確認画像のmanifest更新済み。次: verify→コミット→push→PR→CI→マージ。
+- PR #25（休憩と毛づくろい）はCI成功後mainマージ済み（28f5868）。公開も成功（39618822635）。
+- C018（柱の奥を走る電車）は指摘対応を優先して保留。`feat/train-depth` は作成のみで実装変更なし。
+- 要求事項はユーザーの中間フレーム指摘だけ追加。8枚と速度同期は実装仮定として別記する。画像生成・補正・LLM実閲覧を省略しない。
+- ユーザーの停止指示はなく、継続改善は引き続き有効。旧stashは古いdocsを含むため一括適用しない。
 
 ## 決定事項
 
@@ -162,3 +163,7 @@
 
 - [PR #24](https://github.com/khatada/silent-webpage/pull/24): 旧原画描画19ファイルとコマンドを撤去。Graphics/GraphicsContext importをLintで禁止。CI https://github.com/khatada/silent-webpage/actions/runs/39615634253 成功後mainマージ715a9ce。
 - PR #23公開成功: https://github.com/khatada/silent-webpage/actions/runs/39615153195 。
+
+- PR #24公開成功: https://github.com/khatada/silent-webpage/actions/runs/39616183337 。
+
+- [PR #25](https://github.com/khatada/silent-webpage/pull/25): 生成した休憩/毛づくろい/伸び。CI https://github.com/khatada/silent-webpage/actions/runs/39618102039 成功後mainマージ28f5868。

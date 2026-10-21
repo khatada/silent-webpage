@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-walk-final/mobile-source.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "2f8d334b111aa85257c59888f376e3824bc5d5b21b4abd908e4b2bf24c00b2cc"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-cat-walk-final/mobile-corrected.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "0b33728e857b2fc4bfd9ed824d8040734fef50df5a6a60bbba26b0d3fe2f0638"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

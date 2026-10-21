@@ -3,6 +3,20 @@ export const generatedArt = {
   background: 'art/tokyo-night.png',
   atlas: 'art/night-sprites.png',
   catRestAtlas: 'art/cat-rest.png',
+  catWalkAtlas: 'art/cat-walk.png',
+  catWalkBack: 'art/cat-walk-back.png',
+  catWalkLift: 'art/cat-walk-lift.png',
+  // Frames 2/3 of the atlas are excluded; the separately generated poses fill those gait phases.
+  catWalk: [
+    { source: 'atlas', rect: [0, 0, 222, 222], foot: 211, head: 107, nose: 209 },
+    { source: 'atlas', rect: [222, 0, 222, 222], foot: 211, head: 106, nose: 205 },
+    { source: 'back', rect: [0, 0, 209, 209], foot: 203, head: 102, nose: 202 },
+    { source: 'lift', rect: [0, 0, 209, 209], foot: 191, head: 97, nose: 194 },
+    { source: 'atlas', rect: [0, 222, 222, 221], foot: 181, head: 77, nose: 208 },
+    { source: 'atlas', rect: [222, 222, 222, 221], foot: 181, head: 77, nose: 205 },
+    { source: 'atlas', rect: [444, 222, 222, 221], foot: 181, head: 77, nose: 206 },
+    { source: 'atlas', rect: [666, 222, 221, 221], foot: 181, head: 77, nose: 204 },
+  ],
   catRest: {
     groomOne: [75, 65, 140, 178],
     groomTwo: [320, 68, 140, 175],

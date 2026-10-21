@@ -1,0 +1,7 @@
+{
+  "decision": "rejected",
+  "reviewedBy": "LLM",
+  "reason": "8枠の大半で前脚と後脚が同じ方向へ伸びたまま。接地から体の下を通り、脚を回収する中間姿勢と支持脚の交代が不足。頭胴の一貫性は良いが、ユーザー指摘の自然な歩行へ改善するには不十分。",
+  "tool": "image_gen.imagegen",
+  "promptSummary": "Eight-frame walking cycle with fixed torso and sequential leg poses; the requested phase distinctions were not sufficiently generated."
+}
