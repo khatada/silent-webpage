@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-walk-back/original.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "938573e991f0a8279d702a85b9e5deff61aecab041335143d00a6a4496c82ae0"
+  },
+  "output": {
+    "path": "public/art/cat-walk-back.png",
+    "width": 209,
+    "height": 209,
+    "sha256": "db3ee5fd4078d704eddd988a4126453e549b5c8500f90167b0101868a687cfe6"
+  },
+  "grid": {
+    "cellSize": 6,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

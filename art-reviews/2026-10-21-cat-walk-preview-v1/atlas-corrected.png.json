@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-walk-preview-v1/atlas-source.png",
+    "width": 1920,
+    "height": 720,
+    "sha256": "37195cf833a6f6330f15cc8e0879efe4bdc11b7bb54975633b76dc5d255ade2a"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-cat-walk-preview-v1/atlas-corrected.png",
+    "width": 1920,
+    "height": 720,
+    "sha256": "bfc202ec6139a175734e51d56dd7d6995d8d7f6fbc14e6cab3291b419d2d608d"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

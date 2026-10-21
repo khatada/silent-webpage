@@ -13,19 +13,23 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas, restAtlas] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.atlas}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.catRestAtlas}`),
+    Assets.load<Texture>(`${baseUrl}${generatedArt.catWalkAtlas}`),
+    Assets.load<Texture>(`${baseUrl}${generatedArt.catWalkBack}`),
+    Assets.load<Texture>(`${baseUrl}${generatedArt.catWalkLift}`),
   ]);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
   portraitBackground.source.scaleMode = 'nearest';
   atlas.source.scaleMode = 'nearest';
   restAtlas.source.scaleMode = 'nearest';
-  const imageCat = createImageCat(atlas, restAtlas);
+  for (const image of [walkAtlas, back, lift]) image.source.scaleMode = 'nearest';
+  const imageCat = createImageCat(atlas, restAtlas, walkAtlas, back, lift);
   const crops: Texture[] = [];
   const crop = (source: Texture, frame: Frame) => {
     const texture = new Texture({ source: source.source, frame: new Rectangle(...frame) });
@@ -148,7 +152,7 @@ export async function createScene(host: HTMLElement): Promise<{
     cloud.x = travelPosition(elapsed, width, cloud.width, scale * 1.2, width * 0.12);
     aircraft.x = travelPosition(elapsed, width, aircraft.width, scale * 3.2, width * 0.7);
     train.x = travelPosition(elapsed, width, train.width, scale * 8, width * 0.1);
-    const pose = catPose(elapsed, width);
+    const pose = catPose(elapsed, width, scale * actorScale);
     imageCat.update(cat, pose, scale * actorScale, catY);
   }
   app.ticker.add(ticker => { elapsed += ticker.deltaMS / 1000; animate(); });

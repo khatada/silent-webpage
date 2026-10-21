@@ -1,0 +1,45 @@
+{
+  "method": "Temporary partial erasure of the foreground foreleg in a crop of an image-generated frame, used only as an imagegen editing reference. No replacement artwork was drawn by code. Final new artwork was produced by image_gen.imagegen.",
+  "source": "public/art/cat-walk.png first cell [0,0,222,222]",
+  "polygon": [
+    [
+      145,
+      136
+    ],
+    [
+      160,
+      133
+    ],
+    [
+      178,
+      159
+    ],
+    [
+      214,
+      196
+    ],
+    [
+      214,
+      218
+    ],
+    [
+      187,
+      218
+    ],
+    [
+      158,
+      184
+    ],
+    [
+      142,
+      160
+    ]
+  ],
+  "replacement": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "reference": "art-reviews/2026-10-21-cat-walk-back/reference-partial-edit.png"
+}

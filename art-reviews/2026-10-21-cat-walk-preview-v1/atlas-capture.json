@@ -1,0 +1,308 @@
+{
+  "sourceSha256": "078008d3428223f655b2cc5069bdc81d28836ad08f854fd0a3cc67d2f5c7a705",
+  "finalSourceSha256": "078008d3428223f655b2cc5069bdc81d28836ad08f854fd0a3cc67d2f5c7a705",
+  "metadata": {
+    "width": 1920,
+    "height": 720,
+    "sceneScale": 4,
+    "walkingPoses": 16,
+    "restingPoses": 7,
+    "samples": [
+      {
+        "kind": "walking",
+        "direction": 1,
+        "phase": 0,
+        "pose": {
+          "x": 0,
+          "direction": 1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 120,
+        "footY": 220
+      },
+      {
+        "kind": "walking",
+        "direction": 1,
+        "phase": 1,
+        "pose": {
+          "x": 8,
+          "direction": 1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 360,
+        "footY": 220
+      },
+      {
+        "kind": "walking",
+        "direction": 1,
+        "phase": 2,
+        "pose": {
+          "x": 16,
+          "direction": 1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 600,
+        "footY": 220
+      },
+      {
+        "kind": "walking",
+        "direction": 1,
+        "phase": 3,
+        "pose": {
+          "x": 24,
+          "direction": 1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 840,
+        "footY": 220
+      },
+      {
+        "kind": "walking",
+        "direction": 1,
+        "phase": 4,
+        "pose": {
+          "x": 32,
+          "direction": 1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 1080,
+        "footY": 220
+      },
+      {
+        "kind": "walking",
+        "direction": 1,
+        "phase": 5,
+        "pose": {
+          "x": 40,
+          "direction": 1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 1320,
+        "footY": 220
+      },
+      {
+        "kind": "walking",
+        "direction": 1,
+        "phase": 6,
+        "pose": {
+          "x": 48,
+          "direction": 1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 1560,
+        "footY": 220
+      },
+      {
+        "kind": "walking",
+        "direction": 1,
+        "phase": 7,
+        "pose": {
+          "x": 56,
+          "direction": 1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 1800,
+        "footY": 220
+      },
+      {
+        "kind": "walking",
+        "direction": -1,
+        "phase": 0,
+        "pose": {
+          "x": 0,
+          "direction": -1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 120,
+        "footY": 450
+      },
+      {
+        "kind": "walking",
+        "direction": -1,
+        "phase": 1,
+        "pose": {
+          "x": -8,
+          "direction": -1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 360,
+        "footY": 450
+      },
+      {
+        "kind": "walking",
+        "direction": -1,
+        "phase": 2,
+        "pose": {
+          "x": -16,
+          "direction": -1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 600,
+        "footY": 450
+      },
+      {
+        "kind": "walking",
+        "direction": -1,
+        "phase": 3,
+        "pose": {
+          "x": -24,
+          "direction": -1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 840,
+        "footY": 450
+      },
+      {
+        "kind": "walking",
+        "direction": -1,
+        "phase": 4,
+        "pose": {
+          "x": -32,
+          "direction": -1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 1080,
+        "footY": 450
+      },
+      {
+        "kind": "walking",
+        "direction": -1,
+        "phase": 5,
+        "pose": {
+          "x": -40,
+          "direction": -1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 1320,
+        "footY": 450
+      },
+      {
+        "kind": "walking",
+        "direction": -1,
+        "phase": 6,
+        "pose": {
+          "x": -48,
+          "direction": -1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 1560,
+        "footY": 450
+      },
+      {
+        "kind": "walking",
+        "direction": -1,
+        "phase": 7,
+        "pose": {
+          "x": -56,
+          "direction": -1,
+          "frame": 0,
+          "breath": 0
+        },
+        "x": 1800,
+        "footY": 450
+      },
+      {
+        "kind": "resting",
+        "seconds": 18.5,
+        "pose": {
+          "x": 339,
+          "direction": 1,
+          "frame": 4,
+          "breath": 0
+        },
+        "x": 135,
+        "footY": 680
+      },
+      {
+        "kind": "resting",
+        "seconds": 21.2,
+        "pose": {
+          "x": 339,
+          "direction": 1,
+          "frame": 5,
+          "breath": 0
+        },
+        "x": 409,
+        "footY": 680
+      },
+      {
+        "kind": "resting",
+        "seconds": 22.2,
+        "pose": {
+          "x": 339,
+          "direction": 1,
+          "frame": 6,
+          "breath": 0
+        },
+        "x": 683,
+        "footY": 680
+      },
+      {
+        "kind": "resting",
+        "seconds": 26.5,
+        "pose": {
+          "x": 339,
+          "direction": 1,
+          "frame": 7,
+          "breath": 0.5
+        },
+        "x": 957,
+        "footY": 680
+      },
+      {
+        "kind": "resting",
+        "seconds": 30.5,
+        "pose": {
+          "x": 339,
+          "direction": 1,
+          "frame": 8,
+          "breath": 0
+        },
+        "x": 1231,
+        "footY": 680
+      },
+      {
+        "kind": "resting",
+        "seconds": 50.5,
+        "pose": {
+          "x": 192,
+          "direction": -1,
+          "frame": 4,
+          "breath": 0
+        },
+        "x": 1505,
+        "footY": 680
+      },
+      {
+        "kind": "resting",
+        "seconds": 62.5,
+        "pose": {
+          "x": 192,
+          "direction": -1,
+          "frame": 8,
+          "breath": 0
+        },
+        "x": 1779,
+        "footY": 680
+      }
+    ]
+  },
+  "method": "Reviewed image-generation textures composited with the production createImageCat/catPose API; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

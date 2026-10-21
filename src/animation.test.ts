@@ -38,10 +38,23 @@ describe('city animation timing', () => {
         expect(Math.abs(catPose(seconds, width).x - catPose(seconds - 0.001, width).x)).toBeLessThanOrEqual(1);
       }
       for (let seconds = 18; seconds < 32; seconds += 0.25) {
-        expect(catPose(seconds, width).x).toBe(Math.round(width * 0.53));
-        expect(catPose(seconds + 32, width).x).toBe(Math.round(width * 0.3));
+        expect(catPose(seconds, width).x).toBe(Math.round(width * 0.75));
+        expect(catPose(seconds + 32, width).x).toBe(Math.round(width * 0.25));
       }
     }
+  });
+  it('matches walking speed to body size and stops at the route endpoint', () => {
+    for (const [width, scale] of [[390, 2], [640, 1], [1280, 2]]) {
+      const duration = width * 0.5 / (32 * scale);
+      expect(catPose(1, width, scale).x - catPose(0, width, scale).x).toBe(32 * scale);
+      expect(catPose(duration, width, scale).frame).toBe(4);
+      expect(catPose(duration + 1, width, scale).x).toBe(catPose(duration, width, scale).x);
+      expect(catPose(33, width, scale).x - catPose(32, width, scale).x).toBe(-32 * scale);
+    }
+    expect(catPose(1, 640, 2).x - catPose(0, 640, 2).x)
+      .toBe(2 * (catPose(1, 640, 1).x - catPose(0, 640, 1).x));
+    expect(catPose(18, 2560, 1).frame).toBe(4);
+    expect(catPose(2, 140, 4).frame).toBe(4);
   });
   it('adds one small breath inside each curled rest, returning to neutral before stretching', () => {
     const samples = [[25, 0], [25.999, 0], [26, 0.5], [27.25, 0.5], [28.499, 0.5], [28.5, 0], [29.999, 0], [30, 0]];

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-walk-final/landscape-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "395090bfc52086968dda41556ca027c98a266372173e5d12e6ea4e766edf5417"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-cat-walk-final/landscape-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "1be5bfd4067342ec426197de7eed935e0a19ac9a55900b58fd6c37893c9cbc01"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

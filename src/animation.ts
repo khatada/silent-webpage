@@ -17,13 +17,16 @@ export function windowBrightness(seconds: number, phase: number, period: number)
 
 export interface CatPose { x: number; direction: 1 | -1; frame: number; breath: 0 | 0.5 }
 
-/** Eighteen-second walks alternate with long, unhurried grooming and resting pauses. */
-export function catPose(seconds: number, width: number): CatPose {
+/** Body-scaled walks alternate with long grooming and resting pauses in a 64-second cycle. */
+export function catPose(seconds: number, width: number, sceneScale = 1): CatPose {
   const time = ((seconds % 64) + 64) % 64;
   const outward = time < 32;
   const leg = outward ? time : time - 32;
-  const walking = leg < 18;
-  const progress = outward ? Math.min(leg / 18, 1) : 1 - Math.min(leg / 18, 1);
+  const size = Number.isFinite(sceneScale) && sceneScale > 0 ? sceneScale : 1;
+  const distance = width * 0.5;
+  const walkDuration = Math.min(18, Math.max(2, distance / (32 * size)));
+  const walking = leg < walkDuration;
+  const progress = outward ? Math.min(leg / walkDuration, 1) : 1 - Math.min(leg / walkDuration, 1);
   let frame: number;
   if (walking) frame = Math.floor(leg * 4) % 4;
   else if (leg < 21) frame = 4;
@@ -31,7 +34,7 @@ export function catPose(seconds: number, width: number): CatPose {
   else if (leg < 30) frame = 7;
   else frame = 8;
   return {
-    x: Math.round(width * (0.3 + 0.23 * progress)),
+    x: Math.round(width * (0.25 + 0.5 * progress)),
     direction: outward ? 1 : -1,
     frame,
     breath: frame === 7 && leg >= 26 && leg < 28.5 ? 0.5 : 0,
