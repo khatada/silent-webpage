@@ -1,0 +1,6 @@
+{
+  "decision": "rejected",
+  "reviewedBy": "LLM",
+  "sourceSha256": "970fa8ccca3663cfea6a01366e6d0cfc8f0dd55f932b32b8ba695ac677dd1671",
+  "reason": "390x1025へ横長背景をscale5で表示し、約78 source px幅を過剰に拡大して街が粗くなった。縦長専用の生成画像へ置換する。"
+}

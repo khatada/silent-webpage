@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-imagegen/portrait-original.png",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "20af0778c4d6f93aa71e21706b16107544bff7df9f4f88ee4a4172a3a661c5d3"
+  },
+  "output": {
+    "path": "public/art/tokyo-portrait.png",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "9a191c6e5ae3baf0fe6a675f1d3c5ebaaf903a0b31282908e24c4045adffc603"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
