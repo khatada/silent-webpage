@@ -4,12 +4,12 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `refactor/remove-procedural-art`。PR #23は最終CI成功後mainへマージ済み（aa970d6）。公開処理の成功確認はこれから。
-- 旧Graphics原画描画9ファイル、専用helper4とテスト4、旧猫確認工具2を削除。packageコマンドとdocsを更新し、PixiJS Graphics/GraphicsContextのimportをLintで禁止。現在の生成画像による描画は変更していないため、採用済み11画面と素材4画像の証跡をそのまま検証する。
-- 撤去変更のverify・コミット・push・PR・CI・マージが次の作業。
-- 次はC-014（画像生成した猫の休憩フレーム）を優先して継続改善する。ユーザーの停止指示はない。
-- 生成素材の補正後LLM実閲覧採用を今後も必須とする。原画をコードで描かない。
-- PR #22はmainマージ・公開済み。PR #21は新方針に合わせ未マージでクローズ。旧stashは古いdocsを含むため一括適用しない。
+- ブランチ: `feat/generated-cat-rest`。C-014を実装中。PR #24はCI成功後mainマージ済み（715a9ce）。公開処理の確認はこれから。PR #23の画像生成への移行は公開成功済み。
+- 新しい猫アトラスをimagegen生成、2px格子補正後LLMが素材を実閲覧し採用。毛づくろい2姿勢・丸まり・伸びを接続、呼吸候補と追加座位は使わない。体格を.8で正規化、足元のanchorを実輪郭で合わせた。
+- 本番と静止確認の共有APIは `src/image-cat.ts`。`art:preview-cat` は採用済み画像の合成確認のみ行い、原画をコードで生成しない。画面別actorScaleの継承修正後、全景11画面と静止姿勢を再出力・補正し、LLMが実閲覧して採用済み。
+- 次: verify、コミット・push・PR・CI・マージ。最終証跡は `art-reviews/2026-10-21-cat-rest-final/`。
+- 要求事項は変更しない。C-014はエージェント提案。停止指示はなく継続改善を続ける。
+- 原画コード生成は禁止。補正と実閲覧を以後も省略しない。旧stashは古いdocsを含むため一括適用しない。
 
 ## 決定事項
 
@@ -159,3 +159,6 @@
 - [PR #22](https://github.com/khatada/silent-webpage/pull/22): 画像生成素材・制作規約・生成出典ゲート。CI成功 https://github.com/khatada/silent-webpage/actions/runs/39608095949 、mainマージ4e271bc。
 
 - [PR #23](https://github.com/khatada/silent-webpage/pull/23): 生成素材による全景とアニメーション、14サイズ回帰と11画面補正LLM採用。最終CI https://github.com/khatada/silent-webpage/actions/runs/39614747139 成功、mainマージaa970d6。
+
+- [PR #24](https://github.com/khatada/silent-webpage/pull/24): 旧原画描画19ファイルとコマンドを撤去。Graphics/GraphicsContext importをLintで禁止。CI https://github.com/khatada/silent-webpage/actions/runs/39615634253 成功後mainマージ715a9ce。
+- PR #23公開成功: https://github.com/khatada/silent-webpage/actions/runs/39615153195 。

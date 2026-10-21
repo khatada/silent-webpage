@@ -2,6 +2,7 @@ import { Application, Assets, Rectangle, Sprite, Texture } from 'pixi.js';
 import { catPose, travelPosition, windowBrightness } from './animation';
 import { generatedArt } from './generated-art';
 import { generatedLayout } from './generated-layout';
+import { createImageCat } from './image-cat';
 import { pixelViewport } from './pixel-viewport';
 
 type Frame = readonly [number, number, number, number];
@@ -12,16 +13,19 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas, restAtlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.atlas}`),
+    Assets.load<Texture>(`${baseUrl}${generatedArt.catRestAtlas}`),
   ]);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
   portraitBackground.source.scaleMode = 'nearest';
   atlas.source.scaleMode = 'nearest';
+  restAtlas.source.scaleMode = 'nearest';
+  const imageCat = createImageCat(atlas, restAtlas);
   const crops: Texture[] = [];
   const crop = (source: Texture, frame: Frame) => {
     const texture = new Texture({ source: source.source, frame: new Rectangle(...frame) });
@@ -32,9 +36,6 @@ export async function createScene(host: HTMLElement): Promise<{
     train: crop(atlas, generatedArt.frames.train),
     aircraft: crop(atlas, generatedArt.frames.aircraft),
     cloud: crop(atlas, generatedArt.frames.cloud),
-    walkOne: crop(atlas, generatedArt.frames.walkOne),
-    walkTwo: crop(atlas, generatedArt.frames.walkTwo),
-    sitting: crop(atlas, generatedArt.frames.sitting),
   };
   const compositionTextures = [
     { background, darkWall: crop(background, generatedArt.darkWall), darkSky: crop(background, generatedArt.darkSky), floorPatch: crop(background, generatedArt.floorPatch) },
@@ -48,7 +49,7 @@ export async function createScene(host: HTMLElement): Promise<{
     background: '#101326', preference: 'webgl', autoStart: false });
   const canvas = app.canvas;
   canvas.setAttribute('role', 'img');
-  canvas.setAttribute('aria-label', '星が瞬く東京の夜景。電車と飛行機がゆっくり行き交い、屋上で猫が歩いて休み、窓の灯りが移ろいます。');
+  canvas.setAttribute('aria-label', '星が瞬く東京の夜景。電車と飛行機がゆっくり行き交い、屋上で猫が歩き、毛づくろいをしたり丸くなって休んだりしながら、窓の灯りが移ろいます。');
   canvas.style.display = 'block';
   canvas.style.imageRendering = 'pixelated';
   host.append(canvas);
@@ -134,9 +135,8 @@ export async function createScene(host: HTMLElement): Promise<{
     train = sprite(frames.train);
     train.scale.set(scale * 0.24 * actorScale);
     train.y = layout.railBottom - train.height;
-    cat = sprite(frames.walkOne);
-    cat.anchor.set(0.5, 1);
-    cat.scale.set(scale * 0.25);
+    cat = imageCat.createSprite();
+    app.stage.addChild(cat);
     catY = layout.catY;
     animate();
     app.renderer.render(app.stage);
@@ -149,9 +149,7 @@ export async function createScene(host: HTMLElement): Promise<{
     aircraft.x = travelPosition(elapsed, width, aircraft.width, scale * 3.2, width * 0.7);
     train.x = travelPosition(elapsed, width, train.width, scale * 8, width * 0.1);
     const pose = catPose(elapsed, width);
-    cat.texture = pose.frame < 4 ? (pose.frame % 2 ? frames.walkTwo : frames.walkOne) : frames.sitting;
-    cat.scale.set(pose.direction * scale * 0.25, scale * 0.25);
-    cat.position.set(pose.x, catY);
+    imageCat.update(cat, pose, scale * actorScale, catY);
   }
   app.ticker.add(ticker => { elapsed += ticker.deltaMS / 1000; animate(); });
   const updateActivity = () => {
@@ -180,7 +178,8 @@ export async function createScene(host: HTMLElement): Promise<{
       document.removeEventListener('visibilitychange', updateActivity);
       app.destroy(true, { children: true });
       for (const texture of crops) texture.destroy(false);
-      // Assets owns the two shared image sources; sprite/crop disposal must not destroy them.
+      imageCat.destroy();
+      // Assets owns the shared image sources; sprite/crop disposal must not destroy them.
     },
   };
 }

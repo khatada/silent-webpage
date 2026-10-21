@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-rest-final/portrait-large-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "fa73b65ee1fa4045111c2c184dd41b4b78f9ad2becac130078e1708f6d7d9291"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-cat-rest-final/portrait-large-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "b9adb7d92eaec3c877178f416fa50b132fe2ae6b146f59e1a57a3d309fb469d0"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

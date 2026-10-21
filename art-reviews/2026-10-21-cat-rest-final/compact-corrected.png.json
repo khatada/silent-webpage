@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-rest-final/compact-source.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "efd99d121b5c32e1daa7aab2d0d977747ff3678ace062be8ebd0b07fd6fe05ac"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-cat-rest-final/compact-corrected.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "c4caa7b06808789c7485cda4f211cfa34b2598e2ffdeb0e6c2954974bf04e4f2"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
