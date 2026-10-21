@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "ce54c1ea01067d7acad69524f317e7d1c77557b740974fee5340e2da54175fd3",
+  "sourceSha256": "398c1d4a462fe468fadfdb96332b5199de363664731c4b60461d4f01a5bdd60a",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -117,88 +117,100 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-21-groom-final/desktop-corrected.png",
-      "report": "art-reviews/2026-10-21-groom-final/desktop-corrected.png.json",
+      "image": "public/art/cat-settle.png",
+      "report": "public/art/cat-settle.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。猫・街・空・乗り物と窓の表示に退行なし。0秒停止画像なので新毛づくろいの動きは別の全姿勢atlasと合わせて採用。"
+      "reason": "親と独立LLMが2px補正後素材と本番factoryの左右連続表示を実閲覧して採用。公開用の補正画像も同一SHAである。前足・胸・腰・頭が下がる4中間で、輪郭切れや浮きなし。既存素材と肩/首の厚み・毛色の小差は残るが全体寸法と床上位置は概ね揃う。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "077c0649db2bd05a749b3473e370df19d9580338654a879756ab87f622da479a",
+        "prompt": "Four new intermediate settling-down poses of the same generated charcoal cat, using the seated low-groom and curled-rest references. Two columns by two rows: forepaw lowering while seated; chest lowered with hips high; hips lowered and head up in low loaf; tail wrapping and head lowering toward front paws. Fixed side view, same physical size and pixel density, transparent background; no scene, text or UI. Requested 1024 square, actual output1254 square; positions reviewed and irregular crop boundaries retained."
+      }
     },
     {
-      "image": "art-reviews/2026-10-21-groom-final/mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-groom-final/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-21-settle-final/desktop-corrected.png",
+      "report": "art-reviews/2026-10-21-settle-final/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。猫・街・空・乗り物と窓の表示に退行なし。0秒停止画像なので新毛づくろいの動きは別の全姿勢atlasと合わせて採用。"
+      "reason": "親LLMが補正後全景を実閲覧。0秒の猫・空・街・乗り物・窓の可視性と構図を維持。新しい丸まり動作は全姿勢atlasと併用して採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-groom-final/narrow-corrected.png",
-      "report": "art-reviews/2026-10-21-groom-final/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-21-settle-final/mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-settle-final/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。猫・街・空・乗り物と窓の表示に退行なし。0秒停止画像なので新毛づくろいの動きは別の全姿勢atlasと合わせて採用。"
+      "reason": "親LLMが補正後全景を実閲覧。0秒の猫・空・街・乗り物・窓の可視性と構図を維持。新しい丸まり動作は全姿勢atlasと併用して採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-groom-final/landscape-corrected.png",
-      "report": "art-reviews/2026-10-21-groom-final/landscape-corrected.png.json",
+      "image": "art-reviews/2026-10-21-settle-final/narrow-corrected.png",
+      "report": "art-reviews/2026-10-21-settle-final/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。猫・街・空・乗り物と窓の表示に退行なし。0秒停止画像なので新毛づくろいの動きは別の全姿勢atlasと合わせて採用。"
+      "reason": "親LLMが補正後全景を実閲覧。0秒の猫・空・街・乗り物・窓の可視性と構図を維持。新しい丸まり動作は全姿勢atlasと併用して採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-groom-final/wide-corrected.png",
-      "report": "art-reviews/2026-10-21-groom-final/wide-corrected.png.json",
+      "image": "art-reviews/2026-10-21-settle-final/landscape-corrected.png",
+      "report": "art-reviews/2026-10-21-settle-final/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。猫・街・空・乗り物と窓の表示に退行なし。0秒停止画像なので新毛づくろいの動きは別の全姿勢atlasと合わせて採用。"
+      "reason": "親LLMが補正後全景を実閲覧。0秒の猫・空・街・乗り物・窓の可視性と構図を維持。新しい丸まり動作は全姿勢atlasと併用して採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-groom-sequence/atlas-corrected.png",
-      "report": "art-reviews/2026-10-21-groom-sequence/atlas-corrected.png.json",
+      "image": "art-reviews/2026-10-21-settle-final/wide-corrected.png",
+      "report": "art-reviews/2026-10-21-settle-final/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親と独立LLMが補正後実表示を実閲覧。左右の歩行・休憩・実移動と、座位→毛づくろい9区間→丸まりを確認。前足の中間が読め、腰・尾・接地は安定し、床上の紫縁や矩形切れなしで採用。座位で胴の丸みが変わり丸まりへの境界は切替で、全身の連続補間ではない。"
+      "reason": "親LLMが補正後全景を実閲覧。0秒の猫・空・街・乗り物・窓の可視性と構図を維持。新しい丸まり動作は全姿勢atlasと併用して採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-groom-final/compact-corrected.png",
-      "report": "art-reviews/2026-10-21-groom-final/compact-corrected.png.json",
+      "image": "art-reviews/2026-10-21-settle-sequence/atlas-corrected.png",
+      "report": "art-reviews/2026-10-21-settle-sequence/atlas-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れ・接地ずれ・構図退行なし。空・街・乗り物を維持。0秒の全景確認として新毛づくろいの評価は全姿勢atlasを併用して採用。"
+      "reason": "親と独立LLMが補正後atlasを実閲覧。既存歩行/毛づくろいと、左右の前後境界付きsettle全6段階を確認。胸→腰→頭/尾の動きが読め、切れや浮きなしで採用。新素材と旧素材は肩/首・背の丸み・顔/毛色に小差が残る。前groom→段階0、段階5→後curledは両方向でRGBA一致も確認。"
     },
     {
-      "image": "art-reviews/2026-10-21-groom-final/tall-corrected.png",
-      "report": "art-reviews/2026-10-21-groom-final/tall-corrected.png.json",
+      "image": "art-reviews/2026-10-21-settle-final/compact-corrected.png",
+      "report": "art-reviews/2026-10-21-settle-final/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れ・接地ずれ・構図退行なし。空・街・乗り物を維持。0秒の全景確認として新毛づくろいの評価は全姿勢atlasを併用して採用。"
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れや接地ずれなし、空・街・乗り物の構図を維持。0秒全景と全姿勢atlasを併用して採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-groom-final/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-21-groom-final/portrait-large-corrected.png.json",
+      "image": "art-reviews/2026-10-21-settle-final/tall-corrected.png",
+      "report": "art-reviews/2026-10-21-settle-final/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れ・接地ずれ・構図退行なし。空・街・乗り物を維持。0秒の全景確認として新毛づくろいの評価は全姿勢atlasを併用して採用。"
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れや接地ずれなし、空・街・乗り物の構図を維持。0秒全景と全姿勢atlasを併用して採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-groom-final/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-21-groom-final/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/2026-10-21-settle-final/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-21-settle-final/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れ・接地ずれ・構図退行なし。空・街・乗り物を維持。0秒の全景確認として新毛づくろいの評価は全姿勢atlasを併用して採用。"
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れや接地ずれなし、空・街・乗り物の構図を維持。0秒全景と全姿勢atlasを併用して採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-groom-final/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-21-groom-final/small-phone-corrected.png.json",
+      "image": "art-reviews/2026-10-21-settle-final/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-21-settle-final/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れ・接地ずれ・構図退行なし。空・街・乗り物を維持。0秒の全景確認として新毛づくろいの評価は全姿勢atlasを併用して採用。"
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れや接地ずれなし、空・街・乗り物の構図を維持。0秒全景と全姿勢atlasを併用して採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-groom-final/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-groom-final/small-mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-21-settle-final/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-21-settle-final/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れ・接地ずれ・構図退行なし。空・街・乗り物を維持。0秒の全景確認として新毛づくろいの評価は全姿勢atlasを併用して採用。"
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れや接地ずれなし、空・街・乗り物の構図を維持。0秒全景と全姿勢atlasを併用して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-settle-final/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-settle-final/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れや接地ずれなし、空・街・乗り物の構図を維持。0秒全景と全姿勢atlasを併用して採用。"
     }
   ]
 }

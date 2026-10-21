@@ -1,0 +1,23 @@
+{
+  "start": {
+    "source": "public/art/cat-groom.png",
+    "crop": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "reference": "art-reviews/2026-10-21-cat-settle/start-reference.png"
+  },
+  "end": {
+    "source": "public/art/cat-rest.png",
+    "crop": [
+      550,
+      137,
+      194,
+      111
+    ],
+    "reference": "art-reviews/2026-10-21-cat-settle/end-reference.png"
+  },
+  "method": "Only existing generated images were cropped as imagegen character/endpoint references; all four new intermediate drawings were produced by image_gen.imagegen."
+}

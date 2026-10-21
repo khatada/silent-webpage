@@ -4,6 +4,7 @@ export const generatedArt = {
   atlas: 'art/night-sprites.png',
   catRestAtlas: 'art/cat-rest.png',
   catGroomAtlas: 'art/cat-groom.png',
+  catSettleAtlas: 'art/cat-settle.png',
   catWalkAtlas: 'art/cat-walk.png',
   catWalkBack: 'art/cat-walk-back.png',
   catWalkLift: 'art/cat-walk-lift.png',
@@ -36,6 +37,16 @@ export const generatedArt = {
       { rect: [0, 256, 256, 256], foot: 249, hip: 121 },
       { rect: [256, 256, 256, 256], foot: 249, hip: 107 },
       { rect: [512, 256, 256, 256], foot: 249, hip: 114 },
+    ],
+  },
+  catSettle: {
+    // The body lowers physically; all four intermediate images use one common scale.
+    normalization: 0.5,
+    frames: [
+      { rect: [0, 0, 314, 355], foot: 343, anchorX: 148 },
+      { rect: [314, 0, 313, 355], foot: 343, anchorX: 108 },
+      { rect: [0, 355, 324, 272], foot: 220, anchorX: 139 },
+      { rect: [324, 355, 303, 272], foot: 224, anchorX: 147 },
     ],
   },
   width: 768,

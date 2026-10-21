@@ -13,7 +13,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -23,14 +23,15 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${generatedArt.catWalkBack}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.catWalkLift}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.catGroomAtlas}`),
+    Assets.load<Texture>(`${baseUrl}${generatedArt.catSettleAtlas}`),
   ]);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
   portraitBackground.source.scaleMode = 'nearest';
   atlas.source.scaleMode = 'nearest';
   restAtlas.source.scaleMode = 'nearest';
-  for (const image of [walkAtlas, back, lift, groomAtlas]) image.source.scaleMode = 'nearest';
-  const imageCat = createImageCat(atlas, restAtlas, walkAtlas, back, lift, groomAtlas);
+  for (const image of [walkAtlas, back, lift, groomAtlas, settleAtlas]) image.source.scaleMode = 'nearest';
+  const imageCat = createImageCat(atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas);
   const crops: Texture[] = [];
   const crop = (source: Texture, frame: Frame) => {
     const texture = new Texture({ source: source.source, frame: new Rectangle(...frame) });
