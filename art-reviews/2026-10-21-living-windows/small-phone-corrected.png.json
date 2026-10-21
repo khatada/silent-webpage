@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-living-windows/small-phone-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "6d1c63adbb94efe4bccb03eaf896b5d91ad300bac169bfb32cdd763767840121"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-living-windows/small-phone-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "f484701c6c448b109265363b2f98f8bce4c63066293c840e3491f651de080fb2"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

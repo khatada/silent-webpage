@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-living-windows/mobile-source.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "2432a369cbd2d21124571b0bef9a303d783bbf5350d35e0995e57a2094ece16b"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-living-windows/mobile-corrected.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "b710990b351b68027bbb25e5ee0dc596b1c452bdd0efdd7eb469d3ed43e8ef32"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

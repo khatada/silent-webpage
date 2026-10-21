@@ -53,3 +53,8 @@ npm run art:correct -- --input original.png --output corrected.png --cell-size 2
 ## 生成した猫フレームの表示確認
 
 `npm run art:preview-cat -- --output art-reviews/既存ディレクトリ` は、採用済み生成画像を本番と同じ `createImageCat` と `catPose` で配置する。左右各8枚の歩行、座位・毛づくろい2姿勢・丸まり・左右の伸び、同じ生成済み床画像上で実際の移動を含む16コマを1回描画し、最終canvas格子で補正する。原画の制作処理は含まない。Viteの一時ページは127.0.0.1:4174を使い、必要ならART_BROWSER_PATHを指定する。出力画像とメタデータを閲覧してから採否をmanifestへ記録する。全景では画面別倍率も確認する。
+
+
+## 窓の表示確認
+
+`npm run art:preview-windows -- --output art-reviews/既存ディレクトリ` で、標準・横長・縦長の生成済み背景から各9窓の周囲を切り出し、点灯・遷移中・消灯を並べる。元画像のcropと消灯用の壁cropのSprite合成だけを行い、原画は制作しない。共通runnerが最終格子で補正し、LLMが実閲覧して採否を記録する。各背景の3行は順に点灯・中間・消灯、各列はwindows配列順。初期状態の全景と合わせて窓枠・色・位置を確認する。
