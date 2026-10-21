@@ -4,13 +4,12 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `feat/image-based-nightscape`。画像生成素材へ表示を全面置換し、PR #23を作成済み。初回head e318237のCIは成功したが、構図の追加修正を行ったためマージ前に再push・再CIが必要。
-- 背景3種（標準・横長・縦長）と透過スプライトをimage_gen.imagegenで制作。すべて補正後にLLMが実閲覧して素材採用。合成後11サイズも補正後LLM採用済み。最終証跡は `art-reviews/2026-10-21-generated-all-sizes/`。
-- 14サイズの構図回帰テストにより星・空・乗り物・猫の可視性とサイズを検証。横長の空消失、縦長の過剰拡大、小型端末の切れを修正。旧不採用画面は `art-reviews/2026-10-21-rejected-tall/`。
-- 最終変更のverify・追加コミット・push・PR #23 CI確認とマージが次の作業。その後、準備済み `/tmp/cleanup-generated-art.patch` を最新mainの別ブランチに適用して不要な旧原画描画コードを撤去する。patch未適用、ソースを再調査して使用する。
-- PR #22（素材と生成出典ゲート）はCI成功後mainマージ・公開成功（4e271bc）。表示移行はまだ公開されていない。
-- PR #21（手続き描画カーテン）は新指示により未マージでクローズ。旧ブランチに変更を保存。
-- 継続改善の次候補はC-014（生成した猫の休憩フレーム）。ユーザーの停止指示はない。旧stashは古いdocsを含むため一括適用しない。
+- ブランチ: `refactor/remove-procedural-art`。PR #23は最終CI成功後mainへマージ済み（aa970d6）。公開処理の成功確認はこれから。
+- 旧Graphics原画描画9ファイル、専用helper4とテスト4、旧猫確認工具2を削除。packageコマンドとdocsを更新し、PixiJS Graphics/GraphicsContextのimportをLintで禁止。現在の生成画像による描画は変更していないため、採用済み11画面と素材4画像の証跡をそのまま検証する。
+- 撤去変更のverify・コミット・push・PR・CI・マージが次の作業。
+- 次はC-014（画像生成した猫の休憩フレーム）を優先して継続改善する。ユーザーの停止指示はない。
+- 生成素材の補正後LLM実閲覧採用を今後も必須とする。原画をコードで描かない。
+- PR #22はmainマージ・公開済み。PR #21は新方針に合わせ未マージでクローズ。旧stashは古いdocsを含むため一括適用しない。
 
 ## 決定事項
 
@@ -158,3 +157,5 @@
 - C-013の型・Lint・単体34件・4画像の補正/採用記録・本番ビルド成功。
 
 - [PR #22](https://github.com/khatada/silent-webpage/pull/22): 画像生成素材・制作規約・生成出典ゲート。CI成功 https://github.com/khatada/silent-webpage/actions/runs/39608095949 、mainマージ4e271bc。
+
+- [PR #23](https://github.com/khatada/silent-webpage/pull/23): 生成素材による全景とアニメーション、14サイズ回帰と11画面補正LLM採用。最終CI https://github.com/khatada/silent-webpage/actions/runs/39614747139 成功、mainマージaa970d6。
