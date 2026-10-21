@@ -6,18 +6,19 @@ import { walkingFrame, walkingPhaseOffsets, walkingSourceStride, walkingStride }
 
 /** Compose reviewed generated images with exactly the production frame selection and alignment. */
 export async function renderGeneratedCatReview() {
-  const [atlas, rest, walk, back, lift, background] = await Promise.all([
+  const [atlas, rest, walk, back, lift, background, groom] = await Promise.all([
     Assets.load<Texture>(`/${generatedArt.atlas}`),
     Assets.load<Texture>(`/${generatedArt.catRestAtlas}`),
     Assets.load<Texture>(`/${generatedArt.catWalkAtlas}`),
     Assets.load<Texture>(`/${generatedArt.catWalkBack}`),
     Assets.load<Texture>(`/${generatedArt.catWalkLift}`),
     Assets.load<Texture>(`/${generatedArt.background}`),
+    Assets.load<Texture>(`/${generatedArt.catGroomAtlas}`),
   ]);
-  for (const texture of [atlas, rest, walk, back, lift, background]) texture.source.scaleMode = 'nearest';
-  const cat = createImageCat(atlas, rest, walk, back, lift);
+  for (const texture of [atlas, rest, walk, back, lift, background, groom]) texture.source.scaleMode = 'nearest';
+  const cat = createImageCat(atlas, rest, walk, back, lift, groom);
   const app = new Application();
-  await app.init({ width: 1920, height: 960, resolution: 1, antialias: false,
+  await app.init({ width: 1920, height: 1440, resolution: 1, antialias: false,
     background: '#171e30', preference: 'webgl', autoStart: false });
   document.body.append(app.canvas);
   const sceneScale = 4;
@@ -68,7 +69,29 @@ export async function renderGeneratedCatReview() {
       nearForepawOffsetSource: toe ?? null,
       nearForepawFloorX: toe === undefined ? null : rootX + toe * filmScale * 0.25 });
   });
+  // Include both surrounding postures and all nine grooming intervals over generated floor pixels.
+  const groomingTimes = [20.9, 21.1, 21.35, 21.8, 22.35, 22.75, 23.2, 23.6, 23.85, 24.4, 25.1];
+  for (const direction of [1, -1] as const) {
+    const rowY = direction === 1 ? 960 : 1200;
+    const footY = rowY + 220;
+    groomingTimes.forEach((seconds, index) => {
+      const panelX = index * 174 + 3;
+      const floorSprite = new Sprite(floor);
+      floorSprite.position.set(panelX, rowY);
+      floorSprite.width = 174;
+      floorSprite.height = 240;
+      app.stage.addChild(floorSprite);
+      const pose = catPose(seconds + (direction === 1 ? 0 : 32), 640);
+      const sprite = cat.createSprite();
+      const x = panelX + 87;
+      cat.update(sprite, { ...pose, x }, sceneScale, footY);
+      app.stage.addChild(sprite);
+      samples.push({ kind: 'grooming-sequence', seconds, direction, pose, x, footY,
+        floorCrop: [280, 420, 120, 92] });
+    });
+  }
   app.renderer.render(app.stage);
   app.canvas.dataset.ready = 'true';
-  return { width: 1920, height: 960, sceneScale, walkingPoses: 16, restingPoses: 7, movingPanels: 16, samples };
+  return { width: 1920, height: 1440, sceneScale, walkingPoses: 16, restingPoses: 7,
+    movingPanels: 16, groomingSequencePoses: 22, samples };
 }

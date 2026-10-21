@@ -43,6 +43,22 @@ describe('city animation timing', () => {
       }
     }
   });
+  it('moves through six grooming poses and lowers the paw before curled rest on both legs', () => {
+    const phases = [[21, 0], [21.25, 1], [21.5, 2], [22.25, 3], [22.5, 4],
+      [23, 5], [23.5, 3], [23.75, 1], [24, 0], [24.999, 0]];
+    for (const offset of [-64, 0, 32, 64]) {
+      phases.forEach(([seconds, phase], index) => {
+        expect(catPose(seconds + offset, 640).groomFrame).toBe(phase);
+        if (index > 0) expect(catPose(seconds + offset - 0.0001, 640).groomFrame).toBe(phases[index - 1][1]);
+      });
+      expect(catPose(20.999 + offset, 640)).not.toHaveProperty('groomFrame');
+      expect(catPose(25 + offset, 640)).not.toHaveProperty('groomFrame');
+    }
+    for (let seconds = 0; seconds < 64; seconds += 0.125) {
+      const pose = catPose(seconds, 640);
+      if (pose.frame !== 5 && pose.frame !== 6) expect(pose).not.toHaveProperty('groomFrame');
+    }
+  });
   it('matches walking speed to body size and stops at the route endpoint', () => {
     for (const [width, scale] of [[390, 2], [640, 1], [1280, 2]]) {
       const duration = width * 0.5 / (32 * scale);

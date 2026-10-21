@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "fdbe338ba9c24e32ce0dd154e2a3145b44eb070a39e8bbad542236a628c8cdcd",
+  "sourceSha256": "ce54c1ea01067d7acad69524f317e7d1c77557b740974fee5340e2da54175fd3",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -98,95 +98,107 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-21-cat-walk-motion-v2/atlas-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-walk-motion-v2/atlas-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "親と独立レビュー担当LLMが補正後画像を実閲覧。左右各8歩行姿勢、休憩7姿勢、同じ床柄上を実移動する16コマで中間姿勢と整列を確認。接地・垂直支持・後方支持・回収・前振りが読め、最後から最初も大きな反転がないため採用。固定Sprite保持中の足滑りを完全に消す連続補間ではない。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-living-windows/desktop-corrected.png",
-      "report": "art-reviews/2026-10-21-living-windows/desktop-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。追加した消灯箇所は窓内に収まり、空・街・乗り物・猫の可視性や構図に退行がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-living-windows/mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-living-windows/mobile-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。追加した消灯箇所は窓内に収まり、空・街・乗り物・猫の可視性や構図に退行がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-living-windows/narrow-corrected.png",
-      "report": "art-reviews/2026-10-21-living-windows/narrow-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。追加した消灯箇所は窓内に収まり、空・街・乗り物・猫の可視性や構図に退行がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-living-windows/landscape-corrected.png",
-      "report": "art-reviews/2026-10-21-living-windows/landscape-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。追加した消灯箇所は窓内に収まり、空・街・乗り物・猫の可視性や構図に退行がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-living-windows/wide-corrected.png",
-      "report": "art-reviews/2026-10-21-living-windows/wide-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。追加した消灯箇所は窓内に収まり、空・街・乗り物・猫の可視性や構図に退行がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-living-windows/compact-corrected.png",
-      "report": "art-reviews/2026-10-21-living-windows/compact-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。追加した消灯箇所は窓内に収まり、空・街・乗り物・猫の可視性や構図に退行がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-living-windows/tall-corrected.png",
-      "report": "art-reviews/2026-10-21-living-windows/tall-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。追加した消灯箇所は窓内に収まり、空・街・乗り物・猫の可視性や構図に退行がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-living-windows/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-21-living-windows/portrait-large-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。追加した消灯箇所は窓内に収まり、空・街・乗り物・猫の可視性や構図に退行がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-living-windows/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-21-living-windows/portrait-boundary-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。追加した消灯箇所は窓内に収まり、空・街・乗り物・猫の可視性や構図に退行がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-living-windows/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-21-living-windows/small-phone-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。追加した消灯箇所は窓内に収まり、空・街・乗り物・猫の可視性や構図に退行がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-living-windows/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-living-windows/small-mobile-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。追加した消灯箇所は窓内に収まり、空・街・乗り物・猫の可視性や構図に退行がないため採用。"
-    },
-    {
       "image": "art-reviews/2026-10-21-window-states/atlas-corrected.png",
       "report": "art-reviews/2026-10-21-window-states/atlas-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親と独立レビュー担当LLMが補正後の27窓×3状態を実閲覧。窓枠・壁・手すりを保ち、暗い窓に橙線や植栽の混入なし。消灯矩形は内窓に収まり暗い室内として許容できるため採用。生成背景と壁cropのSprite合成で原画制作ではない。"
+    },
+    {
+      "image": "public/art/cat-groom.png",
+      "report": "public/art/cat-groom.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親と独立LLMが同一SHAの2px補正画像を実閲覧。胸から口・頬・下げる6姿勢を素材採用し、共通倍率と固定腰/足元を用いた左右実表示も補正後に再閲覧して採用。床上の紫縁や矩形切れは目立たない。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "7f10650e9b49ef1593f4eb2335b81207a7c32fa003b6db06880247dbc475bfc8",
+        "prompt": "New six-pose fine pixel-art atlas of the same seated charcoal cat using cropped generated cat-rest reference; three columns by two rows: low chest paw, intermediate raising, licking at mouth, mouth-to-cheek transition, high cheek wiping, lowering paw. Fixed pelvis, tail and planted feet; slight head inclination; transparent background, consistent fine square pixel clusters, no scenery, text or UI."
+      }
+    },
+    {
+      "image": "art-reviews/2026-10-21-groom-final/desktop-corrected.png",
+      "report": "art-reviews/2026-10-21-groom-final/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが補正後全景を実閲覧。猫・街・空・乗り物と窓の表示に退行なし。0秒停止画像なので新毛づくろいの動きは別の全姿勢atlasと合わせて採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-groom-final/mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-groom-final/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが補正後全景を実閲覧。猫・街・空・乗り物と窓の表示に退行なし。0秒停止画像なので新毛づくろいの動きは別の全姿勢atlasと合わせて採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-groom-final/narrow-corrected.png",
+      "report": "art-reviews/2026-10-21-groom-final/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが補正後全景を実閲覧。猫・街・空・乗り物と窓の表示に退行なし。0秒停止画像なので新毛づくろいの動きは別の全姿勢atlasと合わせて採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-groom-final/landscape-corrected.png",
+      "report": "art-reviews/2026-10-21-groom-final/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが補正後全景を実閲覧。猫・街・空・乗り物と窓の表示に退行なし。0秒停止画像なので新毛づくろいの動きは別の全姿勢atlasと合わせて採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-groom-final/wide-corrected.png",
+      "report": "art-reviews/2026-10-21-groom-final/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが補正後全景を実閲覧。猫・街・空・乗り物と窓の表示に退行なし。0秒停止画像なので新毛づくろいの動きは別の全姿勢atlasと合わせて採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-groom-sequence/atlas-corrected.png",
+      "report": "art-reviews/2026-10-21-groom-sequence/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親と独立LLMが補正後実表示を実閲覧。左右の歩行・休憩・実移動と、座位→毛づくろい9区間→丸まりを確認。前足の中間が読め、腰・尾・接地は安定し、床上の紫縁や矩形切れなしで採用。座位で胴の丸みが変わり丸まりへの境界は切替で、全身の連続補間ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-groom-final/compact-corrected.png",
+      "report": "art-reviews/2026-10-21-groom-final/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れ・接地ずれ・構図退行なし。空・街・乗り物を維持。0秒の全景確認として新毛づくろいの評価は全姿勢atlasを併用して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-groom-final/tall-corrected.png",
+      "report": "art-reviews/2026-10-21-groom-final/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れ・接地ずれ・構図退行なし。空・街・乗り物を維持。0秒の全景確認として新毛づくろいの評価は全姿勢atlasを併用して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-groom-final/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-21-groom-final/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れ・接地ずれ・構図退行なし。空・街・乗り物を維持。0秒の全景確認として新毛づくろいの評価は全姿勢atlasを併用して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-groom-final/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-21-groom-final/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れ・接地ずれ・構図退行なし。空・街・乗り物を維持。0秒の全景確認として新毛づくろいの評価は全姿勢atlasを併用して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-groom-final/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-21-groom-final/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れ・接地ずれ・構図退行なし。空・街・乗り物を維持。0秒の全景確認として新毛づくろいの評価は全姿勢atlasを併用して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-groom-final/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-groom-final/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れ・接地ずれ・構図退行なし。空・街・乗り物を維持。0秒の全景確認として新毛づくろいの評価は全姿勢atlasを併用して採用。"
     }
   ]
 }

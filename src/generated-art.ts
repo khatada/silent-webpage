@@ -3,6 +3,7 @@ export const generatedArt = {
   background: 'art/tokyo-night.png',
   atlas: 'art/night-sprites.png',
   catRestAtlas: 'art/cat-rest.png',
+  catGroomAtlas: 'art/cat-groom.png',
   catWalkAtlas: 'art/cat-walk.png',
   catWalkBack: 'art/cat-walk-back.png',
   catWalkLift: 'art/cat-walk-lift.png',
@@ -23,6 +24,19 @@ export const generatedArt = {
     curled: [560, 145, 173, 98],
     stretch: [270, 295, 258, 169],
     normalization: 0.8,
+  },
+  catGroom: {
+    // One common body scale; the moving head and raised forepaw never control magnification.
+    normalization: 0.58,
+    bodyOffset: -10,
+    frames: [
+      { rect: [0, 0, 256, 256], foot: 255, hip: 120 },
+      { rect: [256, 0, 256, 256], foot: 255, hip: 107 },
+      { rect: [512, 0, 256, 256], foot: 255, hip: 114 },
+      { rect: [0, 256, 256, 256], foot: 249, hip: 121 },
+      { rect: [256, 256, 256, 256], foot: 249, hip: 107 },
+      { rect: [512, 256, 256, 256], foot: 249, hip: 114 },
+    ],
   },
   width: 768,
   height: 512,

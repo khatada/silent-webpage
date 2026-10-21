@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-groom/original.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "7f10650e9b49ef1593f4eb2335b81207a7c32fa003b6db06880247dbc475bfc8"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-cat-groom/corrected.png",
+    "width": 768,
+    "height": 512,
+    "sha256": "4ea85b86b90d6b6bf9493f6903a2c3642e09f9f31e00392fde1092fd9e8eba4c"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
