@@ -1,0 +1,2556 @@
+{
+  "sourceSha256": "fdbe338ba9c24e32ce0dd154e2a3145b44eb070a39e8bbad542236a628c8cdcd",
+  "finalSourceSha256": "fdbe338ba9c24e32ce0dd154e2a3145b44eb070a39e8bbad542236a628c8cdcd",
+  "metadata": {
+    "width": 1152,
+    "height": 1152,
+    "columns": 9,
+    "rows": 9,
+    "scale": 4,
+    "contextPadding": 8,
+    "rowOrder": [
+      "normal-original",
+      "normal-half",
+      "normal-off",
+      "wide-original",
+      "wide-half",
+      "wide-off",
+      "portrait-original",
+      "portrait-half",
+      "portrait-off"
+    ],
+    "states": [
+      {
+        "name": "original",
+        "seconds": 2,
+        "alpha": 0
+      },
+      {
+        "name": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001
+      },
+      {
+        "name": "off",
+        "seconds": 20,
+        "alpha": 0.92
+      }
+    ],
+    "samples": [
+      {
+        "row": 0,
+        "column": 0,
+        "background": "art/tokyo-night.png",
+        "window": [
+          134,
+          339,
+          5,
+          10
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          126,
+          331,
+          21,
+          26
+        ],
+        "contextX": 22,
+        "contextY": 12,
+        "scale": 4
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "background": "art/tokyo-night.png",
+        "window": [
+          134,
+          339,
+          5,
+          10
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          126,
+          331,
+          21,
+          26
+        ],
+        "contextX": 22,
+        "contextY": 140,
+        "scale": 4
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "background": "art/tokyo-night.png",
+        "window": [
+          134,
+          339,
+          5,
+          10
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          126,
+          331,
+          21,
+          26
+        ],
+        "contextX": 22,
+        "contextY": 268,
+        "scale": 4
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "background": "art/tokyo-night.png",
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "contextX": 148,
+        "contextY": 20,
+        "scale": 4
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "background": "art/tokyo-night.png",
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "contextX": 148,
+        "contextY": 148,
+        "scale": 4
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "background": "art/tokyo-night.png",
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "contextX": 148,
+        "contextY": 276,
+        "scale": 4
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "background": "art/tokyo-night.png",
+        "window": [
+          528,
+          281,
+          6,
+          5
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          520,
+          273,
+          22,
+          21
+        ],
+        "contextX": 276,
+        "contextY": 22,
+        "scale": 4
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "background": "art/tokyo-night.png",
+        "window": [
+          528,
+          281,
+          6,
+          5
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          520,
+          273,
+          22,
+          21
+        ],
+        "contextX": 276,
+        "contextY": 150,
+        "scale": 4
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "background": "art/tokyo-night.png",
+        "window": [
+          528,
+          281,
+          6,
+          5
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          520,
+          273,
+          22,
+          21
+        ],
+        "contextX": 276,
+        "contextY": 278,
+        "scale": 4
+      },
+      {
+        "row": 0,
+        "column": 3,
+        "background": "art/tokyo-night.png",
+        "window": [
+          216,
+          273,
+          3,
+          5
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          208,
+          265,
+          19,
+          21
+        ],
+        "contextX": 410,
+        "contextY": 22,
+        "scale": 4
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "background": "art/tokyo-night.png",
+        "window": [
+          216,
+          273,
+          3,
+          5
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          208,
+          265,
+          19,
+          21
+        ],
+        "contextX": 410,
+        "contextY": 150,
+        "scale": 4
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "background": "art/tokyo-night.png",
+        "window": [
+          216,
+          273,
+          3,
+          5
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          208,
+          265,
+          19,
+          21
+        ],
+        "contextX": 410,
+        "contextY": 278,
+        "scale": 4
+      },
+      {
+        "row": 0,
+        "column": 4,
+        "background": "art/tokyo-night.png",
+        "window": [
+          283,
+          318,
+          3,
+          5
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          275,
+          310,
+          19,
+          21
+        ],
+        "contextX": 538,
+        "contextY": 22,
+        "scale": 4
+      },
+      {
+        "row": 1,
+        "column": 4,
+        "background": "art/tokyo-night.png",
+        "window": [
+          283,
+          318,
+          3,
+          5
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          275,
+          310,
+          19,
+          21
+        ],
+        "contextX": 538,
+        "contextY": 150,
+        "scale": 4
+      },
+      {
+        "row": 2,
+        "column": 4,
+        "background": "art/tokyo-night.png",
+        "window": [
+          283,
+          318,
+          3,
+          5
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          275,
+          310,
+          19,
+          21
+        ],
+        "contextX": 538,
+        "contextY": 278,
+        "scale": 4
+      },
+      {
+        "row": 0,
+        "column": 5,
+        "background": "art/tokyo-night.png",
+        "window": [
+          406,
+          252,
+          3,
+          7
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          398,
+          244,
+          19,
+          23
+        ],
+        "contextX": 666,
+        "contextY": 18,
+        "scale": 4
+      },
+      {
+        "row": 1,
+        "column": 5,
+        "background": "art/tokyo-night.png",
+        "window": [
+          406,
+          252,
+          3,
+          7
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          398,
+          244,
+          19,
+          23
+        ],
+        "contextX": 666,
+        "contextY": 146,
+        "scale": 4
+      },
+      {
+        "row": 2,
+        "column": 5,
+        "background": "art/tokyo-night.png",
+        "window": [
+          406,
+          252,
+          3,
+          7
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          398,
+          244,
+          19,
+          23
+        ],
+        "contextX": 666,
+        "contextY": 274,
+        "scale": 4
+      },
+      {
+        "row": 0,
+        "column": 6,
+        "background": "art/tokyo-night.png",
+        "window": [
+          598,
+          272,
+          5,
+          7
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          590,
+          264,
+          21,
+          23
+        ],
+        "contextX": 790,
+        "contextY": 18,
+        "scale": 4
+      },
+      {
+        "row": 1,
+        "column": 6,
+        "background": "art/tokyo-night.png",
+        "window": [
+          598,
+          272,
+          5,
+          7
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          590,
+          264,
+          21,
+          23
+        ],
+        "contextX": 790,
+        "contextY": 146,
+        "scale": 4
+      },
+      {
+        "row": 2,
+        "column": 6,
+        "background": "art/tokyo-night.png",
+        "window": [
+          598,
+          272,
+          5,
+          7
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          590,
+          264,
+          21,
+          23
+        ],
+        "contextX": 790,
+        "contextY": 274,
+        "scale": 4
+      },
+      {
+        "row": 0,
+        "column": 7,
+        "background": "art/tokyo-night.png",
+        "window": [
+          628,
+          272,
+          4,
+          7
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          620,
+          264,
+          20,
+          23
+        ],
+        "contextX": 920,
+        "contextY": 18,
+        "scale": 4
+      },
+      {
+        "row": 1,
+        "column": 7,
+        "background": "art/tokyo-night.png",
+        "window": [
+          628,
+          272,
+          4,
+          7
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          620,
+          264,
+          20,
+          23
+        ],
+        "contextX": 920,
+        "contextY": 146,
+        "scale": 4
+      },
+      {
+        "row": 2,
+        "column": 7,
+        "background": "art/tokyo-night.png",
+        "window": [
+          628,
+          272,
+          4,
+          7
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          620,
+          264,
+          20,
+          23
+        ],
+        "contextX": 920,
+        "contextY": 274,
+        "scale": 4
+      },
+      {
+        "row": 0,
+        "column": 8,
+        "background": "art/tokyo-night.png",
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "contextX": 1042,
+        "contextY": 18,
+        "scale": 4
+      },
+      {
+        "row": 1,
+        "column": 8,
+        "background": "art/tokyo-night.png",
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "contextX": 1042,
+        "contextY": 146,
+        "scale": 4
+      },
+      {
+        "row": 2,
+        "column": 8,
+        "background": "art/tokyo-night.png",
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "darkWall": [
+          403,
+          294,
+          6,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "contextX": 1042,
+        "contextY": 274,
+        "scale": 4
+      },
+      {
+        "row": 3,
+        "column": 0,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          251,
+          169,
+          3,
+          6
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          243,
+          161,
+          19,
+          22
+        ],
+        "contextX": 26,
+        "contextY": 404,
+        "scale": 4
+      },
+      {
+        "row": 4,
+        "column": 0,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          251,
+          169,
+          3,
+          6
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          243,
+          161,
+          19,
+          22
+        ],
+        "contextX": 26,
+        "contextY": 532,
+        "scale": 4
+      },
+      {
+        "row": 5,
+        "column": 0,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          251,
+          169,
+          3,
+          6
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          243,
+          161,
+          19,
+          22
+        ],
+        "contextX": 26,
+        "contextY": 660,
+        "scale": 4
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          519,
+          132,
+          4,
+          3
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          511,
+          124,
+          20,
+          19
+        ],
+        "contextX": 152,
+        "contextY": 410,
+        "scale": 4
+      },
+      {
+        "row": 4,
+        "column": 1,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          519,
+          132,
+          4,
+          3
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          511,
+          124,
+          20,
+          19
+        ],
+        "contextX": 152,
+        "contextY": 538,
+        "scale": 4
+      },
+      {
+        "row": 5,
+        "column": 1,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          519,
+          132,
+          4,
+          3
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          511,
+          124,
+          20,
+          19
+        ],
+        "contextX": 152,
+        "contextY": 666,
+        "scale": 4
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          572,
+          161,
+          3,
+          4
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          564,
+          153,
+          19,
+          20
+        ],
+        "contextX": 282,
+        "contextY": 408,
+        "scale": 4
+      },
+      {
+        "row": 4,
+        "column": 2,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          572,
+          161,
+          3,
+          4
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          564,
+          153,
+          19,
+          20
+        ],
+        "contextX": 282,
+        "contextY": 536,
+        "scale": 4
+      },
+      {
+        "row": 5,
+        "column": 2,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          572,
+          161,
+          3,
+          4
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          564,
+          153,
+          19,
+          20
+        ],
+        "contextX": 282,
+        "contextY": 664,
+        "scale": 4
+      },
+      {
+        "row": 3,
+        "column": 3,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          304,
+          156,
+          5,
+          5
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          296,
+          148,
+          21,
+          21
+        ],
+        "contextX": 406,
+        "contextY": 406,
+        "scale": 4
+      },
+      {
+        "row": 4,
+        "column": 3,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          304,
+          156,
+          5,
+          5
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          296,
+          148,
+          21,
+          21
+        ],
+        "contextX": 406,
+        "contextY": 534,
+        "scale": 4
+      },
+      {
+        "row": 5,
+        "column": 3,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          304,
+          156,
+          5,
+          5
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          296,
+          148,
+          21,
+          21
+        ],
+        "contextX": 406,
+        "contextY": 662,
+        "scale": 4
+      },
+      {
+        "row": 3,
+        "column": 4,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          333,
+          148,
+          3,
+          4
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          325,
+          140,
+          19,
+          20
+        ],
+        "contextX": 538,
+        "contextY": 408,
+        "scale": 4
+      },
+      {
+        "row": 4,
+        "column": 4,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          333,
+          148,
+          3,
+          4
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          325,
+          140,
+          19,
+          20
+        ],
+        "contextX": 538,
+        "contextY": 536,
+        "scale": 4
+      },
+      {
+        "row": 5,
+        "column": 4,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          333,
+          148,
+          3,
+          4
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          325,
+          140,
+          19,
+          20
+        ],
+        "contextX": 538,
+        "contextY": 664,
+        "scale": 4
+      },
+      {
+        "row": 3,
+        "column": 5,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          410,
+          157,
+          3,
+          4
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          402,
+          149,
+          19,
+          20
+        ],
+        "contextX": 666,
+        "contextY": 408,
+        "scale": 4
+      },
+      {
+        "row": 4,
+        "column": 5,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          410,
+          157,
+          3,
+          4
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          402,
+          149,
+          19,
+          20
+        ],
+        "contextX": 666,
+        "contextY": 536,
+        "scale": 4
+      },
+      {
+        "row": 5,
+        "column": 5,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          410,
+          157,
+          3,
+          4
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          402,
+          149,
+          19,
+          20
+        ],
+        "contextX": 666,
+        "contextY": 664,
+        "scale": 4
+      },
+      {
+        "row": 3,
+        "column": 6,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          482,
+          176,
+          4,
+          6
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          474,
+          168,
+          20,
+          22
+        ],
+        "contextX": 792,
+        "contextY": 404,
+        "scale": 4
+      },
+      {
+        "row": 4,
+        "column": 6,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          482,
+          176,
+          4,
+          6
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          474,
+          168,
+          20,
+          22
+        ],
+        "contextX": 792,
+        "contextY": 532,
+        "scale": 4
+      },
+      {
+        "row": 5,
+        "column": 6,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          482,
+          176,
+          4,
+          6
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          474,
+          168,
+          20,
+          22
+        ],
+        "contextX": 792,
+        "contextY": 660,
+        "scale": 4
+      },
+      {
+        "row": 3,
+        "column": 7,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          503,
+          150,
+          5,
+          4
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          495,
+          142,
+          21,
+          20
+        ],
+        "contextX": 918,
+        "contextY": 408,
+        "scale": 4
+      },
+      {
+        "row": 4,
+        "column": 7,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          503,
+          150,
+          5,
+          4
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          495,
+          142,
+          21,
+          20
+        ],
+        "contextX": 918,
+        "contextY": 536,
+        "scale": 4
+      },
+      {
+        "row": 5,
+        "column": 7,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          503,
+          150,
+          5,
+          4
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          495,
+          142,
+          21,
+          20
+        ],
+        "contextX": 918,
+        "contextY": 664,
+        "scale": 4
+      },
+      {
+        "row": 3,
+        "column": 8,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          593,
+          144,
+          5,
+          3
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          585,
+          136,
+          21,
+          19
+        ],
+        "contextX": 1046,
+        "contextY": 410,
+        "scale": 4
+      },
+      {
+        "row": 4,
+        "column": 8,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          593,
+          144,
+          5,
+          3
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          585,
+          136,
+          21,
+          19
+        ],
+        "contextX": 1046,
+        "contextY": 538,
+        "scale": 4
+      },
+      {
+        "row": 5,
+        "column": 8,
+        "background": "art/tokyo-wide.png",
+        "window": [
+          593,
+          144,
+          5,
+          3
+        ],
+        "darkWall": [
+          238,
+          169,
+          3,
+          5
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          585,
+          136,
+          21,
+          19
+        ],
+        "contextX": 1046,
+        "contextY": 666,
+        "scale": 4
+      },
+      {
+        "row": 6,
+        "column": 0,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "contextX": 18,
+        "contextY": 782,
+        "scale": 4
+      },
+      {
+        "row": 7,
+        "column": 0,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "contextX": 18,
+        "contextY": 910,
+        "scale": 4
+      },
+      {
+        "row": 8,
+        "column": 0,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "contextX": 18,
+        "contextY": 1038,
+        "scale": 4
+      },
+      {
+        "row": 6,
+        "column": 1,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          380,
+          972,
+          5,
+          11
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          372,
+          964,
+          21,
+          27
+        ],
+        "contextX": 150,
+        "contextY": 778,
+        "scale": 4
+      },
+      {
+        "row": 7,
+        "column": 1,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          380,
+          972,
+          5,
+          11
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          372,
+          964,
+          21,
+          27
+        ],
+        "contextX": 150,
+        "contextY": 906,
+        "scale": 4
+      },
+      {
+        "row": 8,
+        "column": 1,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          380,
+          972,
+          5,
+          11
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          372,
+          964,
+          21,
+          27
+        ],
+        "contextX": 150,
+        "contextY": 1034,
+        "scale": 4
+      },
+      {
+        "row": 6,
+        "column": 2,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          496,
+          987,
+          5,
+          10
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          488,
+          979,
+          21,
+          26
+        ],
+        "contextX": 278,
+        "contextY": 780,
+        "scale": 4
+      },
+      {
+        "row": 7,
+        "column": 2,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          496,
+          987,
+          5,
+          10
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          488,
+          979,
+          21,
+          26
+        ],
+        "contextX": 278,
+        "contextY": 908,
+        "scale": 4
+      },
+      {
+        "row": 8,
+        "column": 2,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          496,
+          987,
+          5,
+          10
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          488,
+          979,
+          21,
+          26
+        ],
+        "contextX": 278,
+        "contextY": 1036,
+        "scale": 4
+      },
+      {
+        "row": 6,
+        "column": 3,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          271,
+          876,
+          4,
+          12
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          263,
+          868,
+          20,
+          28
+        ],
+        "contextX": 408,
+        "contextY": 776,
+        "scale": 4
+      },
+      {
+        "row": 7,
+        "column": 3,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          271,
+          876,
+          4,
+          12
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          263,
+          868,
+          20,
+          28
+        ],
+        "contextX": 408,
+        "contextY": 904,
+        "scale": 4
+      },
+      {
+        "row": 8,
+        "column": 3,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          271,
+          876,
+          4,
+          12
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          263,
+          868,
+          20,
+          28
+        ],
+        "contextX": 408,
+        "contextY": 1032,
+        "scale": 4
+      },
+      {
+        "row": 6,
+        "column": 4,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          487,
+          885,
+          7,
+          7
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          479,
+          877,
+          23,
+          23
+        ],
+        "contextX": 530,
+        "contextY": 786,
+        "scale": 4
+      },
+      {
+        "row": 7,
+        "column": 4,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          487,
+          885,
+          7,
+          7
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          479,
+          877,
+          23,
+          23
+        ],
+        "contextX": 530,
+        "contextY": 914,
+        "scale": 4
+      },
+      {
+        "row": 8,
+        "column": 4,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          487,
+          885,
+          7,
+          7
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          479,
+          877,
+          23,
+          23
+        ],
+        "contextX": 530,
+        "contextY": 1042,
+        "scale": 4
+      },
+      {
+        "row": 6,
+        "column": 5,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          621,
+          892,
+          7,
+          4
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          613,
+          884,
+          23,
+          20
+        ],
+        "contextX": 658,
+        "contextY": 792,
+        "scale": 4
+      },
+      {
+        "row": 7,
+        "column": 5,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          621,
+          892,
+          7,
+          4
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          613,
+          884,
+          23,
+          20
+        ],
+        "contextX": 658,
+        "contextY": 920,
+        "scale": 4
+      },
+      {
+        "row": 8,
+        "column": 5,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          621,
+          892,
+          7,
+          4
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          613,
+          884,
+          23,
+          20
+        ],
+        "contextX": 658,
+        "contextY": 1048,
+        "scale": 4
+      },
+      {
+        "row": 6,
+        "column": 6,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "contextX": 784,
+        "contextY": 778,
+        "scale": 4
+      },
+      {
+        "row": 7,
+        "column": 6,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "contextX": 784,
+        "contextY": 906,
+        "scale": 4
+      },
+      {
+        "row": 8,
+        "column": 6,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "contextX": 784,
+        "contextY": 1034,
+        "scale": 4
+      },
+      {
+        "row": 6,
+        "column": 7,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          336,
+          891,
+          3,
+          6
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          328,
+          883,
+          19,
+          22
+        ],
+        "contextX": 922,
+        "contextY": 788,
+        "scale": 4
+      },
+      {
+        "row": 7,
+        "column": 7,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          336,
+          891,
+          3,
+          6
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          328,
+          883,
+          19,
+          22
+        ],
+        "contextX": 922,
+        "contextY": 916,
+        "scale": 4
+      },
+      {
+        "row": 8,
+        "column": 7,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          336,
+          891,
+          3,
+          6
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          328,
+          883,
+          19,
+          22
+        ],
+        "contextX": 922,
+        "contextY": 1044,
+        "scale": 4
+      },
+      {
+        "row": 6,
+        "column": 8,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          559,
+          999,
+          3,
+          7
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "original",
+        "seconds": 2,
+        "alpha": 0,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          551,
+          991,
+          19,
+          23
+        ],
+        "contextX": 1050,
+        "contextY": 786,
+        "scale": 4
+      },
+      {
+        "row": 7,
+        "column": 8,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          559,
+          999,
+          3,
+          7
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "half",
+        "seconds": 0.45,
+        "alpha": 0.460000000000001,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          551,
+          991,
+          19,
+          23
+        ],
+        "contextX": 1050,
+        "contextY": 914,
+        "scale": 4
+      },
+      {
+        "row": 8,
+        "column": 8,
+        "background": "art/tokyo-portrait.png",
+        "window": [
+          559,
+          999,
+          3,
+          7
+        ],
+        "darkWall": [
+          556,
+          938,
+          6,
+          10
+        ],
+        "state": "off",
+        "seconds": 20,
+        "alpha": 0.92,
+        "phase": 0,
+        "period": 29,
+        "context": [
+          551,
+          991,
+          19,
+          23
+        ],
+        "contextX": 1050,
+        "contextY": 1042,
+        "scale": 4
+      }
+    ]
+  },
+  "method": "Image-generation textures composited by /scripts/generated-window-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

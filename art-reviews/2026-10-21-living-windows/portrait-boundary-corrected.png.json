@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-living-windows/portrait-boundary-source.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "497d586ae43a656bf0be6df4e44057df18468c12a4ba260766710d336590e59b"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-living-windows/portrait-boundary-corrected.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "17647a5acf4214733aa969b30a0488731bbbef3fed0e737ff152c9bbf8b2dc42"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

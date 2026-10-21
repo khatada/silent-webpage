@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-living-windows/narrow-source.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "17becdcc819fd843d6ee0fb4da0b33ce353e51da681fa61c0e2c7478d71767a6"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-living-windows/narrow-corrected.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "3b5a64c7053826f070bc279d4d4b9ccae1773f282faed10bb5987260663f00a3"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
