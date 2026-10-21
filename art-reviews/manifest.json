@@ -1,68 +1,33 @@
 {
-  "sourceSha256": "cd53fac74683c165800a52656cab2739f118f704af11010bc7e61d7c4733e38f",
+  "sourceSha256": "470376d41bd3b382973276895111f14b6723bcd5de482a1bd6bc97aa2cdd9681",
   "images": [
     {
-      "image": "art-reviews/2026-10-21-rooftop-fan/desktop-corrected.png",
-      "report": "art-reviews/2026-10-21-rooftop-fan/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-21-train-interior/desktop-corrected.png",
+      "report": "art-reviews/2026-10-21-train-interior/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後の全景画像を実際に閲覧。室外機の位置と外形、既存の街並み・小物が保たれ、暗い羽根が周囲より目立ちすぎず精細描画にも馴染むため採用。"
+      "reason": "補正後PNGを実際に閲覧。窓の上部の暖かな光と4両の輪郭が保たれ、一部の窓の小さな顔なし乗客が控えめに見える。細い枠・継ぎ目が散らからず、住宅や高架に隠れる描画順も自然なため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-rooftop-fan/mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-rooftop-fan/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-21-train-interior/mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-train-interior/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後の全景画像を実際に閲覧。室外機の位置と外形、既存の街並み・小物が保たれ、暗い羽根が周囲より目立ちすぎず精細描画にも馴染むため採用。"
+      "reason": "補正後PNGを実際に閲覧。窓の上部の暖かな光と4両の輪郭が保たれ、一部の窓の小さな顔なし乗客が控えめに見える。細い枠・継ぎ目が散らからず、住宅や高架に隠れる描画順も自然なため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-rooftop-fan/narrow-corrected.png",
-      "report": "art-reviews/2026-10-21-rooftop-fan/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-21-train-interior/narrow-corrected.png",
+      "report": "art-reviews/2026-10-21-train-interior/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後の全景画像を実際に閲覧。室外機の位置と外形、既存の街並み・小物が保たれ、暗い羽根が周囲より目立ちすぎず精細描画にも馴染むため採用。"
+      "reason": "補正後PNGを実際に閲覧。窓の上部の暖かな光と4両の輪郭が保たれ、一部の窓の小さな顔なし乗客が控えめに見える。細い枠・継ぎ目が散らからず、住宅や高架に隠れる描画順も自然なため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-rooftop-fan/pose-0-corrected.png",
-      "report": "art-reviews/2026-10-21-rooftop-fan/pose-0-corrected.png.json",
+      "image": "art-reviews/2026-10-21-train-interior/train-detail-corrected.png",
+      "report": "art-reviews/2026-10-21-train-interior/train-detail-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後の拡大画像を実際に閲覧。固定グリルと外形が保たれ、奥の羽根の輪郭だけが変わる。6姿勢の画素ハッシュも異なり、明るい十字の点滅や輪郭の破損がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-rooftop-fan/pose-1-corrected.png",
-      "report": "art-reviews/2026-10-21-rooftop-fan/pose-1-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "補正後の拡大画像を実際に閲覧。固定グリルと外形が保たれ、奥の羽根の輪郭だけが変わる。6姿勢の画素ハッシュも異なり、明るい十字の点滅や輪郭の破損がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-rooftop-fan/pose-2-corrected.png",
-      "report": "art-reviews/2026-10-21-rooftop-fan/pose-2-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "補正後の拡大画像を実際に閲覧。固定グリルと外形が保たれ、奥の羽根の輪郭だけが変わる。6姿勢の画素ハッシュも異なり、明るい十字の点滅や輪郭の破損がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-rooftop-fan/pose-3-corrected.png",
-      "report": "art-reviews/2026-10-21-rooftop-fan/pose-3-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "補正後の拡大画像を実際に閲覧。固定グリルと外形が保たれ、奥の羽根の輪郭だけが変わる。6姿勢の画素ハッシュも異なり、明るい十字の点滅や輪郭の破損がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-rooftop-fan/pose-4-corrected.png",
-      "report": "art-reviews/2026-10-21-rooftop-fan/pose-4-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "補正後の拡大画像を実際に閲覧。固定グリルと外形が保たれ、奥の羽根の輪郭だけが変わる。6姿勢の画素ハッシュも異なり、明るい十字の点滅や輪郭の破損がないため採用。"
-    },
-    {
-      "image": "art-reviews/2026-10-21-rooftop-fan/pose-5-corrected.png",
-      "report": "art-reviews/2026-10-21-rooftop-fan/pose-5-corrected.png.json",
-      "decision": "accepted",
-      "reviewedBy": "LLM",
-      "reason": "補正後の拡大画像を実際に閲覧。固定グリルと外形が保たれ、奥の羽根の輪郭だけが変わる。6姿勢の画素ハッシュも異なり、明るい十字の点滅や輪郭の破損がないため採用。"
+      "reason": "補正後PNGを実際に閲覧。窓の上部の暖かな光と4両の輪郭が保たれ、一部の窓の小さな顔なし乗客が控えめに見える。細い枠・継ぎ目が散らからず、住宅や高架に隠れる描画順も自然なため採用。"
     }
   ]
 }

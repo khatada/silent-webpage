@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-train-interior/train-detail-source.png",
+    "width": 290,
+    "height": 45,
+    "sha256": "211dbad260cfbd6585fa265c7cca75968d680fc907cfb474530a5eee9c73a1a7"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-train-interior/train-detail-corrected.png",
+    "width": 870,
+    "height": 135,
+    "sha256": "66c46753507d6322bdeee9b7087324ace0907e19f5f30158359a61d0f72b7b52"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 3
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

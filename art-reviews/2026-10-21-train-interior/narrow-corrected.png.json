@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-train-interior/narrow-source.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "fb943ae9626b628c5b88981bb330aff7183eb7ce98ce4a111a56e2a9e2035404"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-train-interior/narrow-corrected.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "ab6e4e9581d5fa4286b9f69ed362e13c15bd57b159ebb5bf2386892b88e626c3"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

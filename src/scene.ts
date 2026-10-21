@@ -9,6 +9,7 @@ import { createAlleyVendingMachine } from './alley-vending-machine';
 import { createNeighbourClothesline } from './neighbour-clothesline';
 import { pixelViewport } from './pixel-viewport';
 import { createRooftopFan } from './rooftop-fan';
+import { createNightTrain } from './night-train';
 
 /** Draw at a deliberately small resolution: every visible edge stays on the pixel grid. */
 export async function createScene(host: HTMLElement): Promise<{
@@ -166,29 +167,7 @@ export async function createScene(host: HTMLElement): Promise<{
     rect(viaduct, 0, 278, width, 2, 0x1d2438);
     for (let x = 18; x < width; x += 62) rect(viaduct, x, 280, 5, 28, 0x38364e);
     app.stage.addChild(viaduct);
-    train = new Container();
-    const carriages = new Graphics();
-    for (let car = 0; car < 4; car++) {
-      const x = car * 29;
-      rect(carriages, x, 1, 27, 9, 0xafa1aa);
-      rect(carriages, x + 2, 0, 23, 1, 0xc0b1b7);
-      rect(carriages, x, 7, 27, 2, 0x978094);
-      rect(carriages, x + 0.5, 1.5, 26, 0.5, 0xd1bec6);
-      for (const door of [1, 24]) {
-        rect(carriages, x + door, 3, 0.5, 5, 0x796b80);
-        rect(carriages, x + door + 1, 3, 0.5, 5, 0x796b80);
-      }
-      for (let window = 3; window < 24; window += 6) {
-        rect(carriages, x + window, 3, 4, 3, 0xe6ba8b);
-        rect(carriages, x + window, 3, 4, 1, 0xf0cfa0);
-      }
-      rect(carriages, x + 3, 10, 4, 1, 0x171e30);
-      rect(carriages, x + 20, 10, 4, 1, 0x171e30);
-      if (car < 3) rect(carriages, x + 27, 5, 2, 3, 0x65556e);
-    }
-    rect(carriages, 114, 4, 2, 2, 0xe9d5ac);
-    rect(carriages, 0, 4, 1, 2, 0xb67581);
-    train.addChild(carriages);
+    train = createNightTrain();
     train.y = 261;
     app.stage.addChild(train);
     const houses = residentialHouses(width, random);
