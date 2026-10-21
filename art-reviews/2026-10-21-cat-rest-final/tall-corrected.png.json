@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-rest-final/tall-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "dec26be653d22a6737e31586f85f40fe0f91751449705bce604686f0fc7ada6d"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-cat-rest-final/tall-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "5b250d0cc7c45f823a15a614f32d246ab4c248206248a0f732119b4119978569"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

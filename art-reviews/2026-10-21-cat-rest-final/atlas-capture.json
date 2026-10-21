@@ -1,0 +1,84 @@
+{
+  "sourceSha256": "470c39a7cd9a36b6bba7119fd79bf22048e3505e809d604595f157341808416d",
+  "finalSourceSha256": "470c39a7cd9a36b6bba7119fd79bf22048e3505e809d604595f157341808416d",
+  "metadata": {
+    "width": 1024,
+    "height": 240,
+    "sceneScale": 2,
+    "samples": [
+      {
+        "seconds": 0,
+        "pose": {
+          "x": 192,
+          "direction": 1,
+          "frame": 0,
+          "breath": 0
+        },
+        "footY": 170
+      },
+      {
+        "seconds": 18.5,
+        "pose": {
+          "x": 339,
+          "direction": 1,
+          "frame": 4,
+          "breath": 0
+        },
+        "footY": 170
+      },
+      {
+        "seconds": 21.2,
+        "pose": {
+          "x": 339,
+          "direction": 1,
+          "frame": 5,
+          "breath": 0
+        },
+        "footY": 170
+      },
+      {
+        "seconds": 22.2,
+        "pose": {
+          "x": 339,
+          "direction": 1,
+          "frame": 6,
+          "breath": 0
+        },
+        "footY": 170
+      },
+      {
+        "seconds": 26.5,
+        "pose": {
+          "x": 339,
+          "direction": 1,
+          "frame": 7,
+          "breath": 0.5
+        },
+        "footY": 170
+      },
+      {
+        "seconds": 30.5,
+        "pose": {
+          "x": 339,
+          "direction": 1,
+          "frame": 8,
+          "breath": 0
+        },
+        "footY": 170
+      },
+      {
+        "seconds": 62.5,
+        "pose": {
+          "x": 192,
+          "direction": -1,
+          "frame": 8,
+          "breath": 0
+        },
+        "footY": 170
+      }
+    ]
+  },
+  "method": "Reviewed image-generation textures composited with the production createImageCat/catPose API; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

@@ -2,6 +2,14 @@
 export const generatedArt = {
   background: 'art/tokyo-night.png',
   atlas: 'art/night-sprites.png',
+  catRestAtlas: 'art/cat-rest.png',
+  catRest: {
+    groomOne: [75, 65, 140, 178],
+    groomTwo: [320, 68, 140, 175],
+    curled: [560, 145, 173, 98],
+    stretch: [270, 295, 258, 169],
+    normalization: 0.8,
+  },
   width: 768,
   height: 512,
   frames: {

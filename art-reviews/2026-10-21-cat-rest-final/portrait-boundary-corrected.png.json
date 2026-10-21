@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-rest-final/portrait-boundary-source.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "96b2c4a211676144b71becab289517ceea311301bedc198955550ac67d39214f"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-cat-rest-final/portrait-boundary-corrected.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "cdb52aaac20f8ba4279a064f2f751a06f754c4f59b47f65eb6e1fb85bcbe00bc"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

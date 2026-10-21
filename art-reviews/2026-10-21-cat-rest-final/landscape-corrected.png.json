@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-rest-final/landscape-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "fec0d4ffec337db8060822d9e323d280205ca3b666d3e6e533524041dd4cbf6b"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-cat-rest-final/landscape-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "cbd6fe94c7c42a5c30971a8039b7443d062db0cf19cd74cef64ac8940167bd0f"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -49,3 +49,7 @@ npm run art:correct -- --input original.png --output corrected.png --cell-size 2
 本番previewを127.0.0.1:4173で起動し、`npm run art:capture -- --output art-reviews/新しい名前` を実行する。必要なら `ART_BROWSER_PATH=/usr/bin/chromium` でローカルブラウザを指定する。PC・DPR 2のモバイル・狭幅・横向き・横長・小型端末・倍率境界を撮影し、最新ビルドと補正画像を作る。出力先は新規ディレクトリを使う。このコマンドは自動採用しない。画像を閲覧した後、capture.jsonのsourceSha256と画像ごとの採否をmanifest.jsonへ記録する。これは描画の証跡作成であり、コミット前にPlaywrightテスト全体の成功を要求するものではない。
 
 補正レポートとcapture.jsonのPENDING表示は自動採用をしないことを示す生成時の状態として保持する。実際の採否はmanifest.jsonに記録する。
+
+## 生成した猫フレームの表示確認
+
+`npm run art:preview-cat -- --output art-reviews/既存ディレクトリ` は、採用済み生成画像を本番と同じ `createImageCat` と `catPose` で配置する。歩行・座位・毛づくろい2姿勢・丸まり・左右の伸びを1回描画し、最終canvas格子で補正する。原画の制作処理は含まない。Viteの一時ページは127.0.0.1:4174を使い、必要ならART_BROWSER_PATHを指定する。出力画像とメタデータを閲覧してから採否をmanifestへ記録する。全景では画面別倍率も確認する。

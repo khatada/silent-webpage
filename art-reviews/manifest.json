@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "1ed7a062771f0ac8ae96013cb2bc53ee729129894f3c316802c6902e981862b5",
+  "sourceSha256": "470c39a7cd9a36b6bba7119fd79bf22048e3505e809d604595f157341808416d",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -50,81 +50,100 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-21-generated-all-sizes/desktop-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-all-sizes/desktop-corrected.png.json",
+      "image": "public/art/cat-rest.png",
+      "report": "public/art/cat-rest.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGをLLMが実際に閲覧。生成素材の細かな街並み、空の飛行機と雲、線路の電車、屋上の猫が読み取れ、構図とドット幅が保たれるため採用。"
+      "reason": "補正後768x512の透過アトラスをLLMが実際に閲覧。毛づくろい2姿勢、丸まる休憩と伸びの輪郭・配色を確認し素材採用。左下の丸まりは右上との差が呼吸として大きいため使用せず、右下座位も既存を維持する。実表示では大きさと足元を揃えて別途確認する。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "ffbce58ff14b93204f09af7a16dbc7ec12d68a302b845b2c971d5b6a8199a6a1",
+        "prompt": "New transparent six-pose atlas of the same charcoal cat from the generated night-sprites reference, 1536x1024, 3 columns by2 rows: paw licking, cheek wiping, curled asleep, curled breathing variation, forward stretch, seated relaxed. Fine navy/violet square pixel clusters and amber eyes, consistent adult cat scale, no other objects, scenery, text, glow or ground shadows."
+      }
     },
     {
-      "image": "art-reviews/2026-10-21-generated-all-sizes/mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-all-sizes/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-rest-final/desktop-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-rest-final/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGをLLMが実際に閲覧。生成素材の細かな街並み、空の飛行機と雲、線路の電車、屋上の猫が読み取れ、構図とドット幅が保たれるため採用。"
+      "reason": "補正後全景をLLMが実際に閲覧。猫の輪郭と足元が各構図の床に馴染み、小型画面でも見分けられる。空・乗り物・街の細部を妨げないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-generated-all-sizes/narrow-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-all-sizes/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-rest-final/mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-rest-final/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGをLLMが実際に閲覧。生成素材の細かな街並み、空の飛行機と雲、線路の電車、屋上の猫が読み取れ、構図とドット幅が保たれるため採用。"
+      "reason": "補正後全景をLLMが実際に閲覧。猫の輪郭と足元が各構図の床に馴染み、小型画面でも見分けられる。空・乗り物・街の細部を妨げないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-generated-all-sizes/landscape-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-all-sizes/landscape-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-rest-final/narrow-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-rest-final/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGをLLMが実際に閲覧。生成素材の細かな街並み、空の飛行機と雲、線路の電車、屋上の猫が読み取れ、構図とドット幅が保たれるため採用。"
+      "reason": "補正後全景をLLMが実際に閲覧。猫の輪郭と足元が各構図の床に馴染み、小型画面でも見分けられる。空・乗り物・街の細部を妨げないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-generated-all-sizes/wide-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-all-sizes/wide-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-rest-final/landscape-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-rest-final/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGをLLMが実際に閲覧。生成素材の細かな街並み、空の飛行機と雲、線路の電車、屋上の猫が読み取れ、構図とドット幅が保たれるため採用。"
+      "reason": "補正後全景をLLMが実際に閲覧。猫の輪郭と足元が各構図の床に馴染み、小型画面でも見分けられる。空・乗り物・街の細部を妨げないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-generated-all-sizes/compact-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-all-sizes/compact-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-rest-final/wide-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-rest-final/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。星空・列車・飛行機・屋上猫が読み取れ、格子が均一。採用を妨げる重大な問題はないため採用。"
+      "reason": "補正後全景をLLMが実際に閲覧。猫の輪郭と足元が各構図の床に馴染み、小型画面でも見分けられる。空・乗り物・街の細部を妨げないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-generated-all-sizes/tall-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-all-sizes/tall-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-rest-final/compact-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-rest-final/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。専用縦長背景の窓・屋根・路地の細部を維持し、旧案の粗い拡大を解消。採用を妨げる重大な問題はないため採用。"
+      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。画面別actorScaleを継承した猫の大きさ・足元・輪郭が保たれ、空と街の細部も読み取れるため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-generated-all-sizes/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-all-sizes/portrait-large-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-rest-final/tall-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-rest-final/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。星空から住宅街と屋上まで同居し、空消失と機体の極小化を解消。端の部分画像による補完も景色を破損しない。採用を妨げる重大な問題はないため採用。"
+      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。画面別actorScaleを継承した猫の大きさ・足元・輪郭が保たれ、空と街の細部も読み取れるため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-generated-all-sizes/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-all-sizes/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-rest-final/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-rest-final/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。等倍の縦長背景で空と屋上が残り、端の補完も破損を起こさない。採用を妨げる重大な問題はないため採用。"
+      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。画面別actorScaleを継承した猫の大きさ・足元・輪郭が保たれ、空と街の細部も読み取れるため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-generated-all-sizes/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-all-sizes/small-phone-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-rest-final/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-rest-final/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。整数間引きの縮小後も暖かな窓と屋根が読め、機体・列車・猫が画面内に残る。採用を妨げる重大な問題はないため採用。"
+      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。画面別actorScaleを継承した猫の大きさ・足元・輪郭が保たれ、空と街の細部も読み取れるため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-generated-all-sizes/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-generated-all-sizes/small-mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-21-cat-rest-final/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-rest-final/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。整数間引きの縮小後も住宅街の細部と空・乗り物・屋上の猫が読み取れる。採用を妨げる重大な問題はないため採用。"
+      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。画面別actorScaleを継承した猫の大きさ・足元・輪郭が保たれ、空と街の細部も読み取れるため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-cat-rest-final/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-rest-final/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "レビュー担当LLMが補正後PNGを実際に閲覧。画面別actorScaleを継承した猫の大きさ・足元・輪郭が保たれ、空と街の細部も読み取れるため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-21-cat-rest-final/atlas-corrected.png",
+      "report": "art-reviews/2026-10-21-cat-rest-final/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の静止姿勢画像をLLMが実際に閲覧。歩行と座位、毛づくろい2姿勢、丸まり、左右の伸びを比較。体格が揃い、全姿勢の足元が同じ高さに接地し、頭・尾・足先が切れず仕草を判別できるため採用。画像生成素材を本番と同じSprite APIで合成した確認画像。"
     }
   ]
 }
