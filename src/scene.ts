@@ -10,8 +10,9 @@ import { createNeighbourClothesline } from './neighbour-clothesline';
 import { pixelViewport } from './pixel-viewport';
 import { createRooftopFan } from './rooftop-fan';
 import { createNightTrain } from './night-train';
+import { createDistantAircraft } from './distant-aircraft';
 
-/** Draw at a deliberately small resolution: every visible edge stays on the pixel grid. */
+/** Draw fine scene details onto a uniform pixel grid at an integer physical display scale. */
 export async function createScene(host: HTMLElement): Promise<{
   setMotion(enabled: boolean): void;
   destroy(): void;
@@ -117,17 +118,9 @@ export async function createScene(host: HTMLElement): Promise<{
     clouds.push({ art: moonCloud, initialX: moonCloud.x, speed: 0.55 });
     app.stage.addChild(moonCloud);
     // A distant aircraft crosses well above the skyline, with restrained navigation lights.
-    airplane = new Container();
-    const aircraft = new Graphics();
-    rect(aircraft, -7, 0, 14, 2, 0xb3a4b5);
-    rect(aircraft, -4, -1, 7, 4, 0xc7b8c2);
-    rect(aircraft, -1, -4, 2, 9, 0x9a91aa);
-    rect(aircraft, -6, -2, 2, 6, 0x8c819b);
-    rect(aircraft, 6, 0, 2, 1, 0xe4cfae);
-    navigationLight = new Graphics();
-    rect(navigationLight, 0, -4, 1, 1, 0xb9757d);
-    rect(navigationLight, 0, 4, 1, 1, 0x9fb5ae);
-    airplane.addChild(aircraft, navigationLight);
+    const aircraft = createDistantAircraft();
+    airplane = aircraft.art;
+    navigationLight = aircraft.navigationLight;
     airplane.y = 105;
     app.stage.addChild(airplane);
     let city = new Graphics();

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-distant-aircraft/desktop-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "36e18ef6a3c124e53b71a8c427408afe8e6ba77d78578a0dd54a89fb780bd999"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-distant-aircraft/desktop-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "ba632eb6618b0e74fe38198144790938b9866cabcf009ef3c37c41f7275ac367"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
