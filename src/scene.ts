@@ -7,6 +7,7 @@ import { residentialHouses, streetGap } from './residential-layout';
 import { createDistantTaxi } from './distant-taxi';
 import { createAlleyVendingMachine } from './alley-vending-machine';
 import { createNeighbourClothesline } from './neighbour-clothesline';
+import { pixelViewport } from './pixel-viewport';
 
 /** Draw at a deliberately small resolution: every visible edge stays on the pixel grid. */
 export async function createScene(host: HTMLElement): Promise<{
@@ -18,7 +19,7 @@ export async function createScene(host: HTMLElement): Promise<{
   const canvas = app.canvas;
   canvas.setAttribute('role', 'img');
   canvas.setAttribute('aria-label', '星空の下、屋上から眺める東京。電車が街を走り、飛行機が空を渡り、野良猫が屋上を歩き、毛づくろいをして丸くなります。ときどき路地をタクシーが通り、暖かな窓の灯りが点いたり消えたりしています。');
-  canvas.style.cssText = 'display:block;width:100%;height:100%;image-rendering:pixelated;';
+  canvas.style.cssText = 'display:block;image-rendering:pixelated;';
   host.append(canvas);
   app.ticker.maxFPS = 20;
   let motion = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -39,10 +40,13 @@ export async function createScene(host: HTMLElement): Promise<{
 
   function build() {
     const bounds = host.getBoundingClientRect();
-    const aspect = Math.max(0.35, Math.min(3.2, (bounds.width || 1280) / (bounds.height || 800)));
+    const viewport = pixelViewport(bounds.width, bounds.height, window.devicePixelRatio);
     height = 400;
-    width = Math.round(height * aspect);
-    app.renderer.resize(width, height);
+    width = viewport.worldWidth;
+    app.renderer.resize(viewport.width, viewport.height);
+    canvas.style.width = `${viewport.cssWidth}px`;
+    canvas.style.height = `${viewport.cssHeight}px`;
+    app.stage.scale.set(viewport.worldScale);
     const previous = app.stage.removeChildren();
     previous.forEach((child) => child.destroy({ children: true }));
     stars = [];
@@ -54,7 +58,8 @@ export async function createScene(host: HTMLElement): Promise<{
       return seed / 4294967296;
     };
     const rect = (g: Graphics, x: number, y: number, w: number, h: number, color: number, alpha = 1) => {
-      g.rect(Math.round(x), Math.round(y), Math.round(w), Math.round(h)).fill({ color, alpha });
+      const half = (value: number) => Math.round(value * 2) / 2;
+      g.rect(half(x), half(y), half(w), half(h)).fill({ color, alpha });
     };
     const background = new Graphics();
     app.stage.addChild(background);
@@ -73,7 +78,7 @@ export async function createScene(host: HTMLElement): Promise<{
       const x = Math.floor(random() * width);
       const y = Math.floor(12 + random() * 155);
       const art = new Graphics();
-      rect(art, x, y, 1, 1, i % 7 === 0 ? 0xd8d6e0 : 0x9393b2);
+      rect(art, x, y, i % 7 === 0 ? 1 : 0.5, i % 7 === 0 ? 1 : 0.5, i % 7 === 0 ? 0xd8d6e0 : 0x9393b2);
       if (i % 18 === 0) {
         rect(art, x - 1, y, 3, 1, 0xa8a4c2, 0.7);
         rect(art, x, y - 1, 1, 3, 0xa8a4c2, 0.7);
@@ -136,6 +141,9 @@ export async function createScene(host: HTMLElement): Promise<{
         const top = bottom - bh;
         rect(city, x, top, bw, bh, facade);
         rect(city, x + 2, top - 2, bw - 4, 2, facade);
+        // Fine parapet edges remain subdued behind the nearby homes.
+        rect(city, x + 2, top - 2, bw - 4, 0.5, 0x696078, 0.3);
+        rect(city, x + bw - 2, top + 1, 0.5, bh - 1, 0x121c30, 0.3);
         if (layer === 0 && bh > 58) {
           rect(city, x + bw / 2, top - 9, 1, 8, 0x4c405c);
           rect(city, x + bw / 2, top - 9, 1, 1, 0xc97b82);
@@ -163,6 +171,11 @@ export async function createScene(host: HTMLElement): Promise<{
       rect(carriages, x, 1, 27, 9, 0xafa1aa);
       rect(carriages, x + 2, 0, 23, 1, 0xc0b1b7);
       rect(carriages, x, 7, 27, 2, 0x978094);
+      rect(carriages, x + 0.5, 1.5, 26, 0.5, 0xd1bec6);
+      for (const door of [1, 24]) {
+        rect(carriages, x + door, 3, 0.5, 5, 0x796b80);
+        rect(carriages, x + door + 1, 3, 0.5, 5, 0x796b80);
+      }
       for (let window = 3; window < 24; window += 6) {
         rect(carriages, x + window, 3, 4, 3, 0xe6ba8b);
         rect(carriages, x + window, 3, 4, 1, 0xf0cfa0);
@@ -196,6 +209,13 @@ export async function createScene(host: HTMLElement): Promise<{
       rect(city, houseX + bw - 6, top, 6, 64, 0x1c2033);
       rect(city, houseX - 2, top - 3, bw + 4, 3, 0x171e32);
       rect(city, houseX, top - 4, bw, 1, 0x646071);
+      rect(city, houseX + 0.5, top - 4, bw - 1, 0.5, 0x8b7787);
+      rect(city, houseX + bw - 6, top + 1, 0.5, 62, 0x565063, 0.45);
+      // A few masonry seams and utility brackets add texture without filling every wall.
+      for (let seam = top + 14; seam < top + 60; seam += 18) {
+        rect(city, houseX + 1, seam, 3, 0.5, 0x595166, 0.35);
+        rect(city, houseX + 2, seam - 2, 0.5, 2, 0x595166, 0.3);
+      }
       rect(city, houseX + 7, top - 11, 12, 7, 0x343148);
       rect(city, houseX + 9, top - 12, 9, 1, 0x6e5d70);
       if (house.antenna) {
@@ -213,13 +233,16 @@ export async function createScene(host: HTMLElement): Promise<{
           rect(light, x, y, 8, 7, 0xbb8c71);
           rect(light, x, y, 8, 2, 0xe3b48a);
           const frame = new Graphics();
-          rect(frame, x + 3, y, 1, 7, 0x5a4d56);
+          rect(frame, x + 3.5, y, 0.5, 7, 0x5a4d56);
+          rect(frame, x, y + 3.5, 8, 0.5, 0x5a4d56);
+          rect(frame, x + 0.5, y + 0.5, 0.5, 6, 0xf1cba0, 0.5);
           const room = new Container();
           room.addChild(light, frame);
           lights.push({ x, y, art: room, ...illumination });
           roomLights.addChild(room);
         }
         rect(city, x - 2, y + 8, 12, 2, 0x171d30);
+        rect(city, x - 1.5, y + 8, 11, 0.5, 0x6c5b6e, 0.7);
       }
     });
     windowLife = createWindowLife(lights.filter(({ x }) => x >= 0 && x + 8 <= width));
@@ -232,8 +255,11 @@ export async function createScene(host: HTMLElement): Promise<{
     // The foreground is a quiet place to sit, rather than another interface.
     rect(foreground, 0, 343, width, 57, 0x171e30);
     for (let y = 353; y < height; y += 14) {
-      rect(foreground, 0, y, width, 1, 0x23283b);
-      for (let x = -30 + ((y / 14) % 2) * 31; x < width; x += 62) rect(foreground, x, y, 1, 14, 0x23283b);
+      rect(foreground, 0, y, width, 0.5, 0x303046);
+      for (let x = -30 + ((y / 14) % 2) * 31; x < width; x += 62) {
+        rect(foreground, x, y, 0.5, 14, 0x303046);
+        rect(foreground, x + 3, y + 2, 4, 0.5, 0x3a3549, 0.45);
+      }
     }
     rect(foreground, 0, 337, width, 7, 0x343348);
     rect(foreground, 0, 336, width, 2, 0x7a6875);
@@ -255,11 +281,17 @@ export async function createScene(host: HTMLElement): Promise<{
     rect(foreground, 13, 272, 13, 1, 0x806773);
     rect(foreground, 19, 265, 1, 22, 0x806773);
     rect(foreground, 24, 303, 2, 2, 0xc3a588);
+    rect(foreground, 25.5, 303, 0.5, 2, 0xefd1b0);
+    rect(foreground, 10, 331.5, 19, 0.5, 0x87707a);
     foreground.poly([9, 344, 32, 344, 75, 385, 0, 385]).fill({ color: 0xc09170, alpha: 0.06 });
     // Folding chair and tiny table frame the city without obscuring it.
     const chairX = Math.round(width * 0.68);
     foreground.poly([chairX, 326, chairX + 20, 326, chairX + 26, 349, chairX + 5, 349]).fill(0x74616e);
     foreground.poly([chairX + 3, 330, chairX + 17, 330, chairX + 21, 345, chairX + 7, 345]).fill(0x4e4a62);
+    for (let y = 333; y < 344; y += 3) {
+      const inset = Math.round((y - 330) / 4 * 2) / 2;
+      rect(foreground, chairX + 4 + inset, y, 12, 0.5, 0x6a5a6f);
+    }
     rect(foreground, chairX + 3, 349, 27, 4, 0x8c7380);
     foreground.poly([chairX + 5, 353, chairX + 8, 353, chairX + 27, 378, chairX + 25, 378]).fill(0x777080);
     foreground.poly([chairX + 25, 353, chairX + 28, 353, chairX + 6, 378, chairX + 4, 378]).fill(0x777080);
@@ -268,10 +300,12 @@ export async function createScene(host: HTMLElement): Promise<{
     rect(foreground, tableX + 3, 353, 2, 20, 0x56516a);
     rect(foreground, tableX + 17, 353, 2, 20, 0x56516a);
     rect(foreground, tableX + 8, 344, 5, 6, 0xc3a18e);
+    rect(foreground, tableX + 8.5, 344, 4, 0.5, 0xe0c2a9);
     rect(foreground, tableX + 13, 345, 2, 3, 0x9b7f79);
     // Plants, utility pipes and a rooftop ventilation unit add a lived-in scale.
     const plantX = width - 24;
     rect(foreground, plantX - 4, 350, 12, 14, 0x5b4050);
+    rect(foreground, plantX - 3, 352, 0.5, 10, 0x8a6070);
     rect(foreground, plantX - 6, 348, 16, 3, 0x8c6370);
     rect(foreground, plantX + 1, 322, 2, 27, 0x3e5255);
     rect(foreground, 56, 345, 29, 20, 0x4d485c);
@@ -315,14 +349,28 @@ export async function createScene(host: HTMLElement): Promise<{
     build();
     updateActivity();
   });
+  let densityQuery: MediaQueryList | undefined;
+  const observeDensity = () => {
+    densityQuery?.removeEventListener('change', updateDensity);
+    densityQuery = window.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);
+    densityQuery.addEventListener('change', updateDensity);
+  };
+  function updateDensity() {
+    // Moving between displays can change DPR without changing the host's CSS dimensions.
+    observeDensity();
+    build();
+    updateActivity();
+  }
   build();
   observer.observe(host);
+  observeDensity();
   document.addEventListener('visibilitychange', updateActivity);
   updateActivity();
   return {
     setMotion(enabled) { motion = enabled; updateActivity(); },
     destroy() {
       observer.disconnect();
+      densityQuery?.removeEventListener('change', updateDensity);
       document.removeEventListener('visibilitychange', updateActivity);
       app.destroy(true, { children: true });
     },

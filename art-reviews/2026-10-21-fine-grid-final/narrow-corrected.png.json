@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-fine-grid-final/narrow-source.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "3d049f952349a113f7f2303aad775e269559b631382b829bc91bf538dd871f51"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-fine-grid-final/narrow-corrected.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "0d0ac1c38077b990c751cdcf2143f2c5a9948782f4e0958fbe1f4e5fa7723412"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

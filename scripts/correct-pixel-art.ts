@@ -1,6 +1,6 @@
 import { readFile, writeFile, stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { resolve } from 'node:path';
+import { relative, resolve } from 'node:path';
 import { parseArgs } from 'node:util';
 import { PNG } from 'pngjs';
 import { correctPixelArt, validateImageSize } from '../src/pixel-correction';
@@ -33,8 +33,8 @@ const output = PNG.sync.write(result);
 await writeFile(outputPath, output, { flag: 'wx' });
 const sha256 = (bytes: Uint8Array) => createHash('sha256').update(bytes).digest('hex');
 const report = {
-  input: { path: inputPath, width: decoded.width, height: decoded.height, sha256: sha256(source) },
-  output: { path: outputPath, width: corrected.width, height: corrected.height, sha256: sha256(output) },
+  input: { path: relative(process.cwd(), inputPath), width: decoded.width, height: decoded.height, sha256: sha256(source) },
+  output: { path: relative(process.cwd(), outputPath), width: corrected.width, height: corrected.height, sha256: sha256(output) },
   grid: options,
   method: 'Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.',
   edges: 'Partial edge cells cropped.',

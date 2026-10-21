@@ -26,3 +26,13 @@ npm run art:correct -- --input original.png --output corrected.png --cell-size 2
 5. 不採用なら修正と補正を繰り返す。採用記録を作る前に公開用素材へ反映しない。
 
 ユーザーへの承認依頼は不要。これはエージェント自身が行う確認工程である。
+
+## 必須チェック
+
+`npm run art:check` は `npm run verify` とCIに含む。`art-reviews/manifest.json` の採用記録、補正前後PNGとレポートのSHA256、およびscene.tsから到達する描画ソースのハッシュを検証する。public配下のPNGにも採用記録を要求する。LLMの実際の閲覧をプログラムが証明するものではなく、担当エージェントが閲覧した事実と判断を正しく記録する。手続き描画は補正画像を代表証跡として採用し、毎フレームのPNG変換は行わない。
+
+現在の描画は画面の物理ピクセルの整数倍率へ整列済み。代表PNGにcell-size 1（DPR 2では2）で補正を適用し、追加の破損やずれがないことを確認する。補正が冪等な場合も工程を省略しない。
+
+## 代表画像の再出力
+
+本番previewを127.0.0.1:4173で起動し、`npm run art:capture -- --output art-reviews/新しい名前` を実行する。必要なら `ART_BROWSER_PATH=/usr/bin/chromium` でローカルブラウザを指定する。PC・DPR 2のモバイル・狭幅を撮影し、最新ビルドと補正画像を作る。出力先は新規ディレクトリを使う。このコマンドは自動採用しない。画像を閲覧した後、capture.jsonのsourceSha256と画像ごとの採否をmanifest.jsonへ記録する。これは描画の証跡作成であり、コミット前にPlaywrightテスト全体の成功を要求するものではない。
