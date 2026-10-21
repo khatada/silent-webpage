@@ -5,6 +5,7 @@ import { createRooftopCat } from './rooftop-cat';
 import { createWindowLife } from './window-life';
 import { residentialHouses, streetGap } from './residential-layout';
 import { createDistantTaxi } from './distant-taxi';
+import { createAlleyVendingMachine } from './alley-vending-machine';
 
 /** Draw at a deliberately small resolution: every visible edge stays on the pixel grid. */
 export async function createScene(host: HTMLElement): Promise<{
@@ -220,6 +221,8 @@ export async function createScene(host: HTMLElement): Promise<{
       }
     });
     windowLife = createWindowLife(lights.filter(({ x }) => x >= 0 && x + 8 <= width));
+    const vendingMachine = createAlleyVendingMachine({ alley, viewportWidth: width });
+    if (vendingMachine) app.stage.addChild(vendingMachine);
     const foreground = new Graphics();
     app.stage.addChild(foreground);
     // The foreground is a quiet place to sit, rather than another interface.

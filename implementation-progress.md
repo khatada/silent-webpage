@@ -33,8 +33,9 @@
 - 第4サイクル C-002（猫のくつろぐ仕草と足元の影）はPR #9でCI成功後mainマージ済み（b71f3ba）。公開も成功。
 - 第5サイクル C-006（窓の奥の人影）はPR #10でCI成功後mainマージ済み（956d352）。公開も成功。
 - 第6サイクル C-004（月と薄雲）はPR #11でCI成功後mainマージ済み（b68f12c）。公開も成功。
-- 第7サイクル C-003（路地を通る遠いタクシー）を `feat/distant-taxi-alley` で実装・ローカル検証済み。型・Lint・単体22件・ビルド成功。PC/スマートフォンで車が見えることを確認し、実行時エラーなし。コミット・PR・CI・マージへ進む。
-- 次の候補はC-008（路地の自販機の灯り）、C-005（向かいの屋上の物干し）、C-003の信号との連動。コンテンツの充実を設定・CI案より優先する。
+- 第7サイクル C-003（路地を通る遠いタクシー）はPR #12でCI成功後mainマージ済み（9b58dc7）。公開も成功。
+- 第8サイクル C-008（路地の自販機の灯り）を `feat/alley-vending-light` で実装・ローカル検証済み。型・Lint・単体22件・ビルド成功。論理幅140/185/640の画面を確認し実行時エラーなし。コミット・PR・CI・マージへ進む。
+- 次の候補はC-005（向かいの屋上の物干し）、C-003の信号との連動、C-009（屋上の室外機のファン）。コンテンツの充実を設定・CI案より優先する。
 - 要求事項はユーザーの明示指定のみを保持し、コンテンツ案は `improvement-ideas.md` に分ける。
 
 ## 再開手順
@@ -58,6 +59,7 @@
 - [#2 開発基盤](https://github.com/khatada/silent-webpage/pull/2): マージ済み。
 - [#3 夜景と音の体験](https://github.com/khatada/silent-webpage/pull/3): マージ済み。
 - [#4 CIと公開](https://github.com/khatada/silent-webpage/pull/4): CI成功後にマージ済み。
+- [#12 路地のタクシー](https://github.com/khatada/silent-webpage/pull/12): CI成功後mainマージ済み。
 - [#11 月をかすめる薄雲](https://github.com/khatada/silent-webpage/pull/11): CI成功後mainマージ済み。
 - [#10 窓の奥の生活感](https://github.com/khatada/silent-webpage/pull/10): CI成功後mainマージ済み。
 - [#9 猫のくつろぐ仕草](https://github.com/khatada/silent-webpage/pull/9): CI成功後mainマージ済み。
@@ -91,3 +93,7 @@
 - [PR #11 CI成功](https://github.com/khatada/silent-webpage/actions/runs/39519846050): 全チェック成功。
 
 - [PR #11反映後の公開成功](https://github.com/khatada/silent-webpage/actions/runs/39520070280)。
+
+- [PR #12 CI成功](https://github.com/khatada/silent-webpage/actions/runs/39520843127): 型・Lint・単体22件・ビルド・ブラウザ検証。
+
+- [PR #12反映後の公開成功](https://github.com/khatada/silent-webpage/actions/runs/39521050817)。
