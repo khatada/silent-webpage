@@ -1,33 +1,33 @@
 {
-  "sourceSha256": "470376d41bd3b382973276895111f14b6723bcd5de482a1bd6bc97aa2cdd9681",
+  "sourceSha256": "6521d20dbe3aa9d28c6b7e9c922a365ae0dcf9f815331d867a5b7b4df590cd54",
   "images": [
     {
-      "image": "art-reviews/2026-10-21-train-interior/desktop-corrected.png",
-      "report": "art-reviews/2026-10-21-train-interior/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-21-distant-aircraft/desktop-corrected.png",
+      "report": "art-reviews/2026-10-21-distant-aircraft/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGを実際に閲覧。窓の上部の暖かな光と4両の輪郭が保たれ、一部の窓の小さな顔なし乗客が控えめに見える。細い枠・継ぎ目が散らからず、住宅や高架に隠れる描画順も自然なため採用。"
+      "reason": "補正後PNGを実際に閲覧。細い胴体・後退した主翼・小さい尾翼が読み取れ、遠い小さな旅客機として見える。全景で目立ちすぎず、翼端灯も翼に接続し、輪郭や夜景の構図に破損がないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-train-interior/mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-train-interior/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-21-distant-aircraft/mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-distant-aircraft/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGを実際に閲覧。窓の上部の暖かな光と4両の輪郭が保たれ、一部の窓の小さな顔なし乗客が控えめに見える。細い枠・継ぎ目が散らからず、住宅や高架に隠れる描画順も自然なため採用。"
+      "reason": "補正後PNGを実際に閲覧。細い胴体・後退した主翼・小さい尾翼が読み取れ、遠い小さな旅客機として見える。全景で目立ちすぎず、翼端灯も翼に接続し、輪郭や夜景の構図に破損がないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-train-interior/narrow-corrected.png",
-      "report": "art-reviews/2026-10-21-train-interior/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-21-distant-aircraft/narrow-corrected.png",
+      "report": "art-reviews/2026-10-21-distant-aircraft/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGを実際に閲覧。窓の上部の暖かな光と4両の輪郭が保たれ、一部の窓の小さな顔なし乗客が控えめに見える。細い枠・継ぎ目が散らからず、住宅や高架に隠れる描画順も自然なため採用。"
+      "reason": "補正後PNGを実際に閲覧。細い胴体・後退した主翼・小さい尾翼が読み取れ、遠い小さな旅客機として見える。全景で目立ちすぎず、翼端灯も翼に接続し、輪郭や夜景の構図に破損がないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-train-interior/train-detail-corrected.png",
-      "report": "art-reviews/2026-10-21-train-interior/train-detail-corrected.png.json",
+      "image": "art-reviews/2026-10-21-distant-aircraft/aircraft-detail-corrected.png",
+      "report": "art-reviews/2026-10-21-distant-aircraft/aircraft-detail-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後PNGを実際に閲覧。窓の上部の暖かな光と4両の輪郭が保たれ、一部の窓の小さな顔なし乗客が控えめに見える。細い枠・継ぎ目が散らからず、住宅や高架に隠れる描画順も自然なため採用。"
+      "reason": "補正後PNGを実際に閲覧。細い胴体・後退した主翼・小さい尾翼が読み取れ、遠い小さな旅客機として見える。全景で目立ちすぎず、翼端灯も翼に接続し、輪郭や夜景の構図に破損がないため採用。"
     }
   ]
 }

@@ -4,10 +4,10 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `feat/train-window-detail`。第11サイクルC-010（電車の車内の描き込み）を実装中。サブエージェントがnight-train.ts/scene.ts、親が記録・画像補正・LLM採否・検証・PRを担当。
-- PR #17（ファン）は修正後CI成功でmainマージ済み（b4d7825）、公開も成功。
-- 公開成功確認済み: PR #17まで。PR #16の精細化・格子整列・補正とLLM採用記録の必須化を含む。
-- 次候補はC-011（カーテン）、C-012（飛行機の細部）、UX-003（街の音）。コンテンツを優先する。
+- ブランチ: `feat/detailed-aircraft`。第12サイクルC-012（飛行機の輪郭の精細化）を実装中。サブエージェントがdistant-aircraft.ts/scene.ts、親が記録・画像補正・LLM採否・検証・PRを担当。
+- PR #18（電車の車内）はCI成功後mainマージ済み（279131a）、公開も成功。
+- 公開成功確認済み: PR #18まで。PR #16の精細化・格子整列・補正とLLM採用記録の必須化を含む。
+- 次候補はC-011（カーテン）、UX-003（街の音）。コンテンツを優先する。
 - 旧 `feat/rooftop-fan` のstashは必要な描画のみ移植済み。古いdocsを含むので一括適用しない。
 
 ## 決定事項
@@ -139,3 +139,9 @@
 
 - PR #17反映後の公開成功: https://github.com/khatada/silent-webpage/actions/runs/39573155313 。
 - C-010の型・Lint・単体33件・4画像の補正/採用記録・本番ビルド成功。PR化とCI確認へ進む。
+
+- PR #18 CI成功: https://github.com/khatada/silent-webpage/actions/runs/39574103277 。型・Lint・単体33件・4画像の補正/採用記録・ビルド・ブラウザ検証。
+
+- C-012は実装済み。PC・高DPIモバイル・狭幅の全景と飛行機の拡大の4画像を補正後にLLMが閲覧し採用。証跡 `art-reviews/2026-10-21-distant-aircraft/` 。コミット前チェックへ進む。
+
+- PR #18反映後の公開成功: https://github.com/khatada/silent-webpage/actions/runs/39574606533 。
