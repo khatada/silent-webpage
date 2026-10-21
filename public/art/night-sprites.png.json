@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-imagegen/sprites-original.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "4cbf036d612c1ae55211ac5b24cc5dbd47aa8a0ad5fe18867fbbf8453c09168a"
+  },
+  "output": {
+    "path": "public/art/night-sprites.png",
+    "width": 768,
+    "height": 512,
+    "sha256": "a4dee349f33ffd3df2388f7a28f11ce09b826d223158201bf216d8b34a3fd467"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -28,6 +28,30 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "補正後アトラスを実際に閲覧。通常・吸気・戻りを比較し、吸気中は背中の上端だけが変わり、頭・耳・尾・足・影は固定。通常と戻りは画素単位でも一致し、吸気差分は背中の2行68画素だけで浮いたり跳ねたり見えないため採用。"
+    },
+    {
+      "image": "public/art/tokyo-night.png",
+      "report": "public/art/tokyo-night.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後768x512画像をLLMが実際に閲覧。暖色の窓、住宅街、遠景、屋上の細部が保たれ、輪郭の格子が揃っている。中央縦長構図でも街と屋上が残るため採用。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "678ba2905998eba49eebec4947128ee2cf7607394a69a8b03e27bf35e4a94fe4",
+        "prompt": "Fine detailed hard-edged pixel art of a quiet midnight Tokyo residential rooftop; navy/violet clear starry sky, moon, distant high-rises, warm windows, empty elevated railway, empty central rooftop for animated cat; no text, UI, people, cats, planes or clouds. Landscape 1536x1024, central crop-safe composition."
+      }
+    },
+    {
+      "image": "public/art/night-sprites.png",
+      "report": "public/art/night-sprites.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後768x512画像をLLMが実際に閲覧。電車と飛行機の全体形、雲、猫の歩行2姿勢と座位を確認。猫の色と向きが揃い、透過領域で分離できる。実装では各輪郭の範囲で切り出し、実画面で光の縁と縮小後の読みやすさを再確認する条件で素材として採用。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "4cbf036d612c1ae55211ac5b24cc5dbd47aa8a0ad5fe18867fbbf8453c09168a",
+        "prompt": "Transparent fine pixel-art sprite atlas, 1536x1024, six separate subjects in 3 columns and 2 rows: four-car Japanese commuter train facing right, small aircraft, lavender night cloud, charcoal stray cat walking right in two opposite strides, same cat sitting relaxed; consistent navy/violet and warm lights, no scenery, text or grid lines."
+      }
     }
   ]
 }

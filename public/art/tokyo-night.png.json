@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-imagegen/background-original.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "678ba2905998eba49eebec4947128ee2cf7607394a69a8b03e27bf35e4a94fe4"
+  },
+  "output": {
+    "path": "public/art/tokyo-night.png",
+    "width": 768,
+    "height": 512,
+    "sha256": "3d25bf6495c640e5a3fca61d4bee6d1c8192704a3c200620f882cdb966f8a1ca"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
