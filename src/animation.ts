@@ -15,7 +15,7 @@ export function windowBrightness(seconds: number, phase: number, period: number)
   return time < edge ? smooth(time / 0.9) : 1 - smooth((time - edge) / 0.9);
 }
 
-export interface CatPose { x: number; direction: 1 | -1; frame: number }
+export interface CatPose { x: number; direction: 1 | -1; frame: number; breath: 0 | 0.5 }
 
 /** Eighteen-second walks alternate with long, unhurried grooming and resting pauses. */
 export function catPose(seconds: number, width: number): CatPose {
@@ -34,5 +34,6 @@ export function catPose(seconds: number, width: number): CatPose {
     x: Math.round(width * (0.3 + 0.23 * progress)),
     direction: outward ? 1 : -1,
     frame,
+    breath: frame === 7 && leg >= 26 && leg < 28.5 ? 0.5 : 0,
   };
 }

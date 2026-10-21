@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-breath/atlas-source.png",
+    "width": 360,
+    "height": 120,
+    "sha256": "8cd5ac3f26d91def399650591658d582f54c0a7fc64d4c1bb0eae262569a05f8"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-cat-breath/atlas-corrected.png",
+    "width": 360,
+    "height": 120,
+    "sha256": "db448f0aee68a275ba0df9105561c875ccfafcacd818e0d02ec4693f192fa27f"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

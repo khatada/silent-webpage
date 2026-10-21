@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-cat-breath/mobile-source.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "bbd6b83356cc1faca0089197849441929869f5175dbd5fef50908b317560e2c2"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-cat-breath/mobile-corrected.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "6dd0c37fb5f6673c5f634b46ce949cb7aab061cd8e2e4fa1ea1ca5b144c6a4d2"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

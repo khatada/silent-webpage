@@ -92,6 +92,10 @@ export function createRooftopCat(): { art: Container; update(pose: CatPose): voi
     art.addChild(g);
     return g;
   });
+  // A half-unit rise along the back leaves the sleeping head, paws, tail and shadow still.
+  const sleepingBack = new Graphics().rect(-6.5, -9.5, 8.5, 0.5).fill(coat);
+  sleepingBack.visible = false;
+  art.addChild(sleepingBack);
 
   function update(pose: CatPose) {
     art.x = pose.x;
@@ -99,6 +103,7 @@ export function createRooftopCat(): { art: Container; update(pose: CatPose): voi
     shadow.visible = pose.frame !== 8;
     stretchShadow.visible = pose.frame === 8;
     frames.forEach((frame, index) => { frame.visible = index === pose.frame; });
+    sleepingBack.visible = pose.frame === 7 && pose.breath === 0.5;
   }
   return { art, update };
 }
