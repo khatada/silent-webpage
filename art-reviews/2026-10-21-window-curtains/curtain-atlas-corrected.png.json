@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-window-curtains/curtain-atlas-source.png",
+    "width": 360,
+    "height": 120,
+    "sha256": "9fdc45390f8b6423628cb0cfcecb5fe53112ac933b710ed8c1423ffcfdd701e2"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-window-curtains/curtain-atlas-corrected.png",
+    "width": 360,
+    "height": 120,
+    "sha256": "ac0a02072cd92c3de03b90a6e962bb5433fedaafb1b27f65bafaa12afb5b0107"
+  },
+  "grid": {
+    "cellSize": 4,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 4
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

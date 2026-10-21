@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { occupiedWindows, residentPose, windowPhase } from './window-timing';
+import { curtainedWindows, curtainOffset, occupiedWindows, residentPose, windowPhase } from './window-timing';
 
 describe('quiet household activity', () => {
   it('selects no more than one seventh of rooms without reordering the city', () => {
@@ -17,6 +17,29 @@ describe('quiet household activity', () => {
     const phases = occupiedWindows(rooms).map(windowPhase);
     expect(new Set(phases.map((phase) => Math.floor(phase / 10))).size).toBe(3);
     expect(Math.max(...phases) - Math.min(...phases)).toBeGreaterThan(18);
+  });
+  it('gives at most three other rooms curtains with stable selection and unchanged room data', () => {
+    const rooms = Array.from({ length: 57 }, (_, index) => ({ x: index * 13, y: 290 + index % 3 * 16 }));
+    const before = structuredClone(rooms);
+    for (let length = 0; length <= rooms.length; length++) {
+      const candidates = rooms.slice(0, length);
+      const selected = curtainedWindows(candidates);
+      const occupied = new Set(occupiedWindows(candidates));
+      expect(selected).toHaveLength(Math.min(3, Math.floor(length / 10)));
+      expect(selected.every(room => !occupied.has(room))).toBe(true);
+      expect(curtainedWindows([...candidates].reverse())).toEqual(selected);
+    }
+    expect(rooms).toEqual(before);
+  });
+  it('keeps the breeze within a half-unit and repeats its slow cycle through either direction', () => {
+    expect(curtainOffset(17)).toBe(-0.5);
+    expect(curtainOffset(0)).toBe(0);
+    expect(curtainOffset(4)).toBe(0.5);
+    for (let seconds = -30; seconds < 60; seconds += 0.25) {
+      const offset = curtainOffset(seconds);
+      expect([-0.5, 0, 0.5]).toContain(offset);
+      expect(curtainOffset(seconds + Math.PI * 2 / 0.24)).toBe(offset);
+    }
   });
   it('keeps the entire silhouette inside the glass and leaves most of each cycle empty', () => {
     let absent = 0;

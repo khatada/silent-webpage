@@ -42,3 +42,7 @@ npm run art:correct -- --input original.png --output corrected.png --cell-size 2
 ## 長い周期の猫の姿勢確認
 
 `npm run art:capture-cat -- --output art-reviews/既存ディレクトリ` は、同じcatPose/createRooftopCatから25.5/27/29秒の猫を並べた静止アトラスを一度だけ描画し、補正する。Viteの確認専用ページを127.0.0.1:4174へ一時配信し、サイト本体のタイマーは実行しない。必要ならART_BROWSER_PATHでブラウザを指定する。長い仮想時間による大量の描画待ちを避ける補助手段で、タイミングは単体テスト、全景と実際の停止・再開は別途検証する。アトラスもLLMが実際に開いてからmanifest.jsonへ採否を記録する。
+
+## カーテンの静止姿勢
+
+`npm run art:capture-curtains -- --output art-reviews/既存ディレクトリ` は、実際のカーテン選択・描画モジュールを使って左・中央・右の3姿勢を並べる。ガラスと枠は確認用の代表窓であり、実際の街並みは別途3画面の全景で確認する。猫と共通の撮影処理を使い、どちらも自動採用しない。

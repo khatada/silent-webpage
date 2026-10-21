@@ -1,0 +1,39 @@
+{
+  "sourceSha256": "24f43d9efa976aae63d4518032339e63930ffa13c1793306baaa8c8f367ef86b",
+  "finalSourceSha256": "24f43d9efa976aae63d4518032339e63930ffa13c1793306baaa8c8f367ef86b",
+  "metadata": {
+    "width": 360,
+    "height": 120,
+    "displayScale": 8,
+    "samples": [
+      {
+        "seconds": 17,
+        "offset": -0.5,
+        "selectedWindow": {
+          "x": 144,
+          "y": 0
+        }
+      },
+      {
+        "seconds": 0,
+        "offset": 0,
+        "selectedWindow": {
+          "x": 144,
+          "y": 0
+        }
+      },
+      {
+        "seconds": 4,
+        "offset": 0.5,
+        "selectedWindow": {
+          "x": 144,
+          "y": 0
+        }
+      }
+    ],
+    "context": "Representative lit glass and frame; curtain artwork and selection use the actual modules."
+  },
+  "method": "Current artwork drawing modules rendered once on a blank review page; no scene ticker or simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

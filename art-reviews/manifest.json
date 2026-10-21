@@ -1,33 +1,33 @@
 {
-  "sourceSha256": "6f9048a7bb2b8ed05596830ba0b12c549c9e47a4e76666d0d84bf98627c06d0d",
+  "sourceSha256": "24f43d9efa976aae63d4518032339e63930ffa13c1793306baaa8c8f367ef86b",
   "images": [
     {
-      "image": "art-reviews/2026-10-21-cat-breath/desktop-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-breath/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-21-window-curtains/desktop-corrected.png",
+      "report": "art-reviews/2026-10-21-window-curtains/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後の全景PNGを実際に閲覧。既存の精細な夜景・猫の輪郭と構図が保たれ、静かに眺める体験を妨げる変化がないため採用。"
+      "reason": "補正後の全景PNGを実際に閲覧。少数の布端が既存の窓と街並みに馴染み、構図・枠・暖かな光の印象に破損がないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-cat-breath/mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-breath/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-21-window-curtains/mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-window-curtains/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後の全景PNGを実際に閲覧。既存の精細な夜景・猫の輪郭と構図が保たれ、静かに眺める体験を妨げる変化がないため採用。"
+      "reason": "補正後の全景PNGを実際に閲覧。少数の布端が既存の窓と街並みに馴染み、構図・枠・暖かな光の印象に破損がないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-cat-breath/narrow-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-breath/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-21-window-curtains/narrow-corrected.png",
+      "report": "art-reviews/2026-10-21-window-curtains/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後の全景PNGを実際に閲覧。既存の精細な夜景・猫の輪郭と構図が保たれ、静かに眺める体験を妨げる変化がないため採用。"
+      "reason": "補正後の全景PNGを実際に閲覧。少数の布端が既存の窓と街並みに馴染み、構図・枠・暖かな光の印象に破損がないため採用。"
     },
     {
-      "image": "art-reviews/2026-10-21-cat-breath/atlas-corrected.png",
-      "report": "art-reviews/2026-10-21-cat-breath/atlas-corrected.png.json",
+      "image": "art-reviews/2026-10-21-window-curtains/curtain-atlas-corrected.png",
+      "report": "art-reviews/2026-10-21-window-curtains/curtain-atlas-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "補正後アトラスを実際に閲覧。通常・吸気・戻りを比較し、吸気中は背中の上端だけが変わり、頭・耳・尾・足・影は固定。通常と戻りは画素単位でも一致し、吸気差分は背中の2行68画素だけで浮いたり跳ねたり見えないため採用。"
+      "reason": "補正後アトラスを実際に閲覧。上端と窓枠は固定され、つながった下部の布だけが左右へ移る。布はガラス内に収まり、暖かな光の面が十分残るため採用。"
     }
   ]
 }

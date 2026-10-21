@@ -3,6 +3,7 @@ import { catPose, travelPosition, windowBrightness } from './animation';
 import { createRooftopBreeze } from './rooftop-breeze';
 import { createRooftopCat } from './rooftop-cat';
 import { createWindowLife } from './window-life';
+import { createWindowCurtains } from './window-curtains';
 import { residentialHouses, streetGap } from './residential-layout';
 import { createDistantTaxi } from './distant-taxi';
 import { createAlleyVendingMachine } from './alley-vending-machine';
@@ -33,6 +34,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let clouds: { art: Container; initialX: number; speed: number }[] = [];
   let lights: { x: number; y: number; art: Container; phase: number; period: number }[] = [];
   let windowLife: ReturnType<typeof createWindowLife>;
+  let windowCurtains: ReturnType<typeof createWindowCurtains>;
   let train: Container;
   let airplane: Container;
   let navigationLight: Graphics;
@@ -219,7 +221,9 @@ export async function createScene(host: HTMLElement): Promise<{
         rect(city, x - 1.5, y + 8, 11, 0.5, 0x6c5b6e, 0.7);
       }
     });
-    windowLife = createWindowLife(lights.filter(({ x }) => x >= 0 && x + 8 <= width));
+    const visibleRooms = lights.filter(({ x }) => x >= 0 && x + 8 <= width);
+    windowLife = createWindowLife(visibleRooms);
+    windowCurtains = createWindowCurtains(visibleRooms);
     const vendingMachine = createAlleyVendingMachine({ alley, viewportWidth: width });
     if (vendingMachine) app.stage.addChild(vendingMachine);
     clothesline = createNeighbourClothesline(houses, width, alley);
@@ -297,6 +301,7 @@ export async function createScene(host: HTMLElement): Promise<{
     rooftopBreeze.update(elapsed);
     rooftopFan.update(elapsed);
     windowLife.update(elapsed);
+    windowCurtains.update(elapsed);
     taxi?.update(elapsed);
     clothesline?.update(elapsed);
     for (const { art, phase } of stars) art.alpha = 0.45 + Math.sin(elapsed * 0.24 + phase) * 0.25;

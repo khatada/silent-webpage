@@ -20,6 +20,21 @@ export function occupiedWindows<T extends WindowPosition>(windows: readonly T[])
     .slice(0, Math.floor(windows.length / 7));
 }
 
+/** A few different rooms have curtains; the existing residents keep their windows. */
+export function curtainedWindows<T extends WindowPosition>(windows: readonly T[]): T[] {
+  const occupied = new Set(occupiedWindows(windows));
+  const score = (position: WindowPosition) => coordinateHash(position, 0x29a6d47b);
+  return windows.filter(window => !occupied.has(window))
+    .sort((a, b) => score(a) - score(b) || a.x - b.x || a.y - b.y)
+    .slice(0, Math.min(3, Math.floor(windows.length / 10)));
+}
+
+/** The same night breeze as the rooftop, quantized to a half-unit at the fabric edge. */
+export function curtainOffset(seconds: number): -0.5 | 0 | 0.5 {
+  const direction = Math.round(Math.sin(seconds * 0.24));
+  return direction < 0 ? -0.5 : direction > 0 ? 0.5 : 0;
+}
+
 /** A brief, unhurried household movement is separated by long periods out of view. */
 export function residentPose(seconds: number, phase: number): { x: number; alpha: number } {
   const time = ((seconds + phase) % 30 + 30) % 30;
