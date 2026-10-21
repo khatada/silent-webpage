@@ -41,12 +41,17 @@ export async function createScene(host: HTMLElement): Promise<{
     aircraft: crop(atlas, generatedArt.frames.aircraft),
     cloud: crop(atlas, generatedArt.frames.cloud),
   };
+  const railPoles = (source: Texture, frames: readonly Frame[]) =>
+    frames.map(frame => ({ texture: crop(source, frame), frame }));
   const compositionTextures = [
-    { background, darkWall: crop(background, generatedArt.darkWall), darkSky: crop(background, generatedArt.darkSky), floorPatch: crop(background, generatedArt.floorPatch) },
+    { background, darkWall: crop(background, generatedArt.darkWall), darkSky: crop(background, generatedArt.darkSky),
+      floorPatch: crop(background, generatedArt.floorPatch), railPoles: railPoles(background, generatedArt.railPoles) },
     { background: wideBackground, darkWall: crop(wideBackground, generatedArt.wide.darkWall),
-      darkSky: crop(wideBackground, generatedArt.wide.darkSky), floorPatch: crop(wideBackground, generatedArt.wide.floorPatch) },
+      darkSky: crop(wideBackground, generatedArt.wide.darkSky), floorPatch: crop(wideBackground, generatedArt.wide.floorPatch),
+      railPoles: railPoles(wideBackground, generatedArt.wide.railPoles) },
     { background: portraitBackground, darkWall: crop(portraitBackground, generatedArt.portrait.darkWall),
-      darkSky: crop(portraitBackground, generatedArt.portrait.darkSky), floorPatch: crop(portraitBackground, generatedArt.portrait.floorPatch) },
+      darkSky: crop(portraitBackground, generatedArt.portrait.darkSky), floorPatch: crop(portraitBackground, generatedArt.portrait.floorPatch),
+      railPoles: railPoles(portraitBackground, generatedArt.portrait.railPoles) },
   ];
   const app = new Application();
   await app.init({ width: 768, height: 512, antialias: false, resolution: 1,
@@ -68,6 +73,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let catY = 470;
   let actorScale = 1;
   let train: Sprite;
+  let trainInitialX = 0;
   let aircraft: Sprite;
   let cloud: Sprite;
   let cat: Sprite;
@@ -139,6 +145,21 @@ export async function createScene(host: HTMLElement): Promise<{
     train = sprite(frames.train);
     train.scale.set(scale * 0.24 * actorScale);
     train.y = layout.railBottom - train.height;
+    trainInitialX = width * 0.1;
+    let nearestPoleDistance = Infinity;
+    // Restore only the reviewed background's pole pixels over the passing train.
+    for (const { texture, frame: [x, y, w, h] } of textures.railPoles) {
+      const pole = sprite(texture);
+      pole.position.set(sourceX(x), sourceY(y));
+      pole.scale.set(scale);
+      if (pole.x + w * scale <= 0 || pole.x >= width || pole.y + h * scale <= 0 || pole.y >= height) continue;
+      const center = sourceX(x + w / 2);
+      const distance = Math.abs(center - width * 0.25);
+      if (distance < nearestPoleDistance) {
+        nearestPoleDistance = distance;
+        trainInitialX = center - train.width / 2;
+      }
+    }
     cat = imageCat.createSprite();
     app.stage.addChild(cat);
     catY = layout.catY;
@@ -151,7 +172,7 @@ export async function createScene(host: HTMLElement): Promise<{
     windows.forEach((art, index) => { art.alpha = 0.92 * (1 - windowBrightness(elapsed, 5 + index * 11, 29 + index * 7)); });
     cloud.x = travelPosition(elapsed, width, cloud.width, scale * 1.2, width * 0.12);
     aircraft.x = travelPosition(elapsed, width, aircraft.width, scale * 3.2, width * 0.7);
-    train.x = travelPosition(elapsed, width, train.width, scale * 8, width * 0.1);
+    train.x = travelPosition(elapsed, width, train.width, scale * 8, trainInitialX);
     const pose = catPose(elapsed, width, scale * actorScale);
     imageCat.update(cat, pose, scale * actorScale, catY);
   }

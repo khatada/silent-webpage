@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-train-depth/small-phone-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "4f2148b26dd76c7bc8c061b8d2663ed6583185aee795810df250a16fdd3988d7"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-train-depth/small-phone-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "0341f20f33ca97e619f110cc10cc372c53547ca6a1cafc0a2fab0c5d65172b3d"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

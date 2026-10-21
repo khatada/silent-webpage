@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-train-depth/tall-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "cf6dd029a5dad67bb35c7c677d5e222417aa94ea82e2e70dd8ae3fc03b5717ff"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-train-depth/tall-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "5a0c2c4cd051ac6a07a86d0d758171fe120952133ae7eabed2904284a21fbc40"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-train-depth/portrait-boundary-source.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "fc78687584897fbb065daf20e4b40824113e750bb98af73b96211879018ada68"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-train-depth/portrait-boundary-corrected.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "185816053c63ecab33a7847a239fbc56877f96da98cd4e7215cc2ed16d003bd8"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

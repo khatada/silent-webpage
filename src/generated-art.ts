@@ -48,6 +48,7 @@ export const generatedArt = {
   floorMargin: 18,
   actorScale: 1,
   railBottom: 224,
+  railPoles: [[92, 207, 5, 18], [253, 207, 5, 18], [378, 207, 5, 18], [541, 207, 5, 18], [681, 207, 5, 18]],
   floor: 470,
   portrait: {
     background: 'art/tokyo-portrait.png', width: 1024, height: 1536,
@@ -55,6 +56,7 @@ export const generatedArt = {
     darkWall: [609, 1005, 6, 10],
     stars: [[502, 446, 1, 1], [583, 452, 1, 1], [538, 406, 1, 1]],
     darkSky: [500, 400, 1, 1], floorPatch: [500, 1500, 8, 8], railBottom: 764, floor: 1370,
+    railPoles: [[116, 732, 4, 33], [276, 732, 4, 33], [324, 732, 4, 33], [504, 732, 4, 33], [752, 732, 4, 33], [856, 732, 4, 33]],
     skyBottom: 510, aircraftY: 420, cloudY: 450, floorMargin: 18, actorScale: 2,
   },
   wide: {
@@ -66,6 +68,7 @@ export const generatedArt = {
       [302, 37, 1, 1], [348, 39, 1, 1], [382, 41, 1, 1], [432, 44, 1, 1],
       [567, 36, 1, 1], [462, 44, 1, 1], [258, 45, 1, 1]],
     darkSky: [400, 8, 1, 1], floorPatch: [350, 230, 8, 8], railBottom: 122, floor: 222,
+    railPoles: [[282, 114, 3, 9], [357, 114, 3, 9], [425, 114, 3, 9], [486, 114, 3, 9], [619, 114, 3, 9]],
     skyBottom: 55, aircraftY: 35, cloudY: 45, floorMargin: 8, actorScale: 0.5,
   },
 } as const;
