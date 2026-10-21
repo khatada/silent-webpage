@@ -1,0 +1,11 @@
+{
+  "source": "public/art/cat-rest.png",
+  "crop": [
+    64,
+    56,
+    164,
+    192
+  ],
+  "reference": "art-reviews/2026-10-21-cat-groom/reference-crop.png",
+  "method": "Crop only from an existing imagegen asset, used as character reference; all six new poses were created by image_gen.imagegen."
+}

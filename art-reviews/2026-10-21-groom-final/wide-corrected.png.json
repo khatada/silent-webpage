@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-groom-final/wide-source.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "d0a9a3d125e2b19aca3a6c9eb82683fec2f2eecce728db37ee8c2f720cc0a458"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-groom-final/wide-corrected.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "8271f09356dff2fa458a6049e8e15b6b3cec565afeebe31588451e1841d718be"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

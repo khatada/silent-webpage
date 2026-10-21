@@ -1,0 +1,10 @@
+{
+  "decision": "accepted-as-material",
+  "reviewedBy": "LLM",
+  "reason": "親と独立LLMが2px補正後画像を実閲覧。胸元から口・頬・下げる6姿勢が読み取れ、腰・巻いた尾・支持脚が概ね一致。1/3は近いが頭と前足の角度に差がある。最終表示の正規化・左右・前後姿勢境界と床上の淡い紫縁は別途確認する。",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "originalSha256": "7f10650e9b49ef1593f4eb2335b81207a7c32fa003b6db06880247dbc475bfc8",
+    "prompt": "New six-pose fine pixel-art atlas of the same seated charcoal cat using cropped generated cat-rest reference; three columns by two rows: low chest paw, intermediate raising, licking at mouth, mouth-to-cheek transition, high cheek wiping, lowering paw. Fixed pelvis, tail and planted feet; slight head inclination; transparent background, consistent fine square pixel clusters, no scenery, text or UI."
+  }
+}

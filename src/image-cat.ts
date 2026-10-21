@@ -6,7 +6,7 @@ import { walkingFrame } from './walking-timing';
 type Frame = readonly [number, number, number, number];
 
 /** Shared production/preview compositor. Every visible pixel comes from reviewed generated images. */
-export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Texture, back: Texture, lift: Texture) {
+export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Texture, back: Texture, lift: Texture, groomAtlas?: Texture) {
   const textures: Texture[] = [];
   const frame = (source: Texture, rectangle: Frame, foot: number, normalization = 1) => {
     const texture = new Texture({ source: source.source, frame: new Rectangle(...rectangle) });
@@ -28,6 +28,13 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
   const curled = frame(restAtlas, rest.curled, 95, rest.normalization);
   const stretch = frame(restAtlas, rest.stretch, 164, rest.normalization);
   const poses = [sitting, sitting, sitting, sitting, sitting, groomOne, groomTwo, curled, stretch];
+  const groom = generatedArt.catGroom;
+  const grooming = groomAtlas ? groom.frames.map(spec => {
+    const selected = frame(groomAtlas, spec.rect, spec.foot, groom.normalization);
+    // Match the old seated body's origin, then align the stationary hips across the six poses.
+    selected.horizontalAnchor = (spec.hip - groom.bodyOffset / groom.normalization) / spec.rect[2];
+    return selected;
+  }) : [];
   return {
     createSprite() {
       const art = new Sprite(walking[0].texture);
@@ -35,8 +42,10 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
       return art;
     },
     update(art: Sprite, pose: CatPose, sceneScale: number, footY: number) {
+      const groomPose = pose.frame === 5 || pose.frame === 6;
       const selected = pose.frame < 4 ? walking[walkingFrame(pose.x, pose.direction, sceneScale)]
-        : poses[pose.frame] ?? sitting;
+        : (groomPose && pose.groomFrame !== undefined ? grooming[pose.groomFrame] : undefined)
+          ?? poses[pose.frame] ?? sitting;
       art.texture = selected.texture;
       art.anchor.set(selected.horizontalAnchor, selected.footAnchor);
       const size = sceneScale * 0.25 * selected.normalization;

@@ -15,7 +15,12 @@ export function windowBrightness(seconds: number, phase: number, period: number)
   return time < edge ? smooth(time / 0.9) : 1 - smooth((time - edge) / 0.9);
 }
 
-export interface CatPose { x: number; direction: 1 | -1; frame: number; breath: 0 | 0.5 }
+type GroomFrame = 0 | 1 | 2 | 3 | 4 | 5;
+export interface CatPose { x: number; direction: 1 | -1; frame: number; breath: 0 | 0.5; groomFrame?: GroomFrame }
+
+// Passing poses are short; licking, wiping and the final lowered paw hold longer.
+const groomingSteps = [[21.25, 0], [21.5, 1], [22.25, 2], [22.5, 3], [23, 4],
+  [23.5, 5], [23.75, 3], [24, 1], [25, 0]] as const;
 
 /** Body-scaled walks alternate with long grooming and resting pauses in a 64-second cycle. */
 export function catPose(seconds: number, width: number, sceneScale = 1): CatPose {
@@ -38,5 +43,6 @@ export function catPose(seconds: number, width: number, sceneScale = 1): CatPose
     direction: outward ? 1 : -1,
     frame,
     breath: frame === 7 && leg >= 26 && leg < 28.5 ? 0.5 : 0,
+    ...(leg >= 21 && leg < 25 ? { groomFrame: groomingSteps.find(([end]) => leg < end)![1] } : {}),
   };
 }

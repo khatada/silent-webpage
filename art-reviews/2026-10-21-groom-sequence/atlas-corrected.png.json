@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-groom-sequence/atlas-source.png",
+    "width": 1920,
+    "height": 1440,
+    "sha256": "d7f2ec0667aafaec7d9259709fff6c3b393d213b4a5a5ee5aee6df0a7a9db5a5"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-groom-sequence/atlas-corrected.png",
+    "width": 1920,
+    "height": 1440,
+    "sha256": "6531cf53e67b92b9ca821c5ba602cde2a6c0bae8efbab680b7a2dad0922f3704"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
