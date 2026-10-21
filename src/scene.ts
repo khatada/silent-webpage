@@ -2,6 +2,7 @@ import { Application, Container, Graphics } from 'pixi.js';
 import { catPose, travelPosition, windowBrightness } from './animation';
 import { createRooftopBreeze } from './rooftop-breeze';
 import { createRooftopCat } from './rooftop-cat';
+import { createWindowLife } from './window-life';
 
 /** Draw at a deliberately small resolution: every visible edge stays on the pixel grid. */
 export async function createScene(host: HTMLElement): Promise<{
@@ -22,7 +23,8 @@ export async function createScene(host: HTMLElement): Promise<{
   let height = 400;
   let stars: { art: Graphics; phase: number }[] = [];
   let clouds: { art: Container; initialX: number; speed: number }[] = [];
-  let lights: { art: Graphics; phase: number; period: number }[] = [];
+  let lights: { x: number; y: number; art: Container; phase: number; period: number }[] = [];
+  let windowLife: ReturnType<typeof createWindowLife>;
   let train: Container;
   let airplane: Container;
   let navigationLight: Graphics;
@@ -186,16 +188,20 @@ export async function createScene(host: HTMLElement): Promise<{
             const light = new Graphics();
             rect(light, x, y, 8, 7, 0xbb8c71);
             rect(light, x, y, 8, 2, 0xe3b48a);
-            rect(light, x + 3, y, 1, 7, 0x5a4d56);
+            const frame = new Graphics();
+            rect(frame, x + 3, y, 1, 7, 0x5a4d56);
+            const room = new Container();
+            room.addChild(light, frame);
             const period = 18 + random() * 28;
-            lights.push({ art: light, phase: random() * period, period });
-            roomLights.addChild(light);
+            lights.push({ x, y, art: room, phase: random() * period, period });
+            roomLights.addChild(room);
           }
           rect(city, x - 2, y + 8, 12, 2, 0x171d30);
         }
       }
       houseX += bw + 4;
     }
+    windowLife = createWindowLife(lights.filter(({ x }) => x >= 0 && x + 8 <= width));
     const foreground = new Graphics();
     app.stage.addChild(foreground);
     // The foreground is a quiet place to sit, rather than another interface.
@@ -259,6 +265,7 @@ export async function createScene(host: HTMLElement): Promise<{
 
   function animate() {
     rooftopBreeze.update(elapsed);
+    windowLife.update(elapsed);
     for (const { art, phase } of stars) art.alpha = 0.45 + Math.sin(elapsed * 0.24 + phase) * 0.25;
     for (const { art, initialX, speed } of clouds) art.x = Math.round(((initialX + elapsed * speed + 160) % (width + 180)) - 160);
     for (const { art, phase, period } of lights) art.alpha = windowBrightness(elapsed, phase, period);

@@ -30,9 +30,10 @@
 - 第1サイクル UX-001（設定から全画面表示）はPR #6でCI成功後mainマージ済み。
 - 第2サイクル（電車・飛行機・野良猫・窓の点消灯とOS動き軽減の同期）はPR #7でCI成功後mainマージ済み（76d2c9a）。公開も成功。
 - 第3サイクル C-001（カップの湯気と鉢植えの夜風）はPR #8でCI成功後mainマージ済み（74c3bb9）。公開も成功。
-- 第4サイクル C-002（猫のくつろぐ仕草と足元の影）を `feat/rooftop-cat-rest` で実装・ローカル検証済み。型・Lint・単体13件・ビルド成功。ブラウザの仮想時間で姿勢を目視確認し、実行時エラーなし。コミット・PR・CI・マージへ進む。
-- 次の最優先候補はC-006（窓の奥の人影）。猫の改善後は近景が充実するため、街の生活感を増やす案を優先する。C-003（遠いタクシーと信号）、C-004（月と薄雲）も候補。
-- 要求事項はユーザーの明示指定のみを保持し、C-001等は `improvement-ideas.md` に分ける。
+- 第4サイクル C-002（猫のくつろぐ仕草と足元の影）はPR #9でCI成功後mainマージ済み（b71f3ba）。公開も成功。
+- 第5サイクル C-006（窓の奥の人影）を `feat/windows-with-life` で実装・ローカル検証済み。型・Lint・単体17件・ビルド成功、PC/スマートフォンの表示を確認し実行時エラー・警告なし。コミット・PR・CI・マージへ進む。
+- 次の候補はC-004（月と薄雲）、C-003（遠いタクシーと信号）、C-008（路地の自販機の灯り）。コンテンツの充実を設定・CI案より優先する。
+- 要求事項はユーザーの明示指定のみを保持し、コンテンツ案は `improvement-ideas.md` に分ける。
 
 ## 再開手順
 
@@ -43,10 +44,10 @@
 
 ## この時点の環境・検証
 
-- 夜景体験の `npm run verify` 成功: 単体テスト8件、型、Lint、本番ビルド。
+- 初期夜景体験の検証は単体8件。現在の改善を含む最新の件数は「継続改善の現在地」を参照する。
 - ローカルHTTP待ち受けとGitのネットワーク操作には環境のsandbox外実行が必要。
 - `gh api` はForbidden。Git fetch/pushとGitHubコネクタのPR作成・マージは利用できる。
-- 実装・CIファイルはすべてmainへマージ済み。一時ファイルに依存せず再開できる。
+- 初期実装・CIファイルはmainへマージ済み。改善中のブランチと未コミット変更は「継続改善の現在地」とGitで照合する。一時ファイルに依存せず再開できる。
 - 画面は合成の音を使用するため、音質や心地よさは実装後の見直し事項。
 
 ## PR
@@ -55,6 +56,7 @@
 - [#2 開発基盤](https://github.com/khatada/silent-webpage/pull/2): マージ済み。
 - [#3 夜景と音の体験](https://github.com/khatada/silent-webpage/pull/3): マージ済み。
 - [#4 CIと公開](https://github.com/khatada/silent-webpage/pull/4): CI成功後にマージ済み。
+- [#9 猫のくつろぐ仕草](https://github.com/khatada/silent-webpage/pull/9): CI成功後mainマージ済み。
 - [#8 カップの湯気と葉の揺れ](https://github.com/khatada/silent-webpage/pull/8): CI成功後mainマージ済み。
 - [#7 動く夜景](https://github.com/khatada/silent-webpage/pull/7): CI成功後mainマージ済み。
 - [#6 全画面表示・改善エージェント定義](https://github.com/khatada/silent-webpage/pull/6): CI成功後mainマージ済み。
@@ -73,3 +75,7 @@
 - [PR #7反映後の公開成功](https://github.com/khatada/silent-webpage/actions/runs/39517187285)。
 
 - [PR #8反映後の公開成功](https://github.com/khatada/silent-webpage/actions/runs/39517688545)。
+
+- [PR #9 CI成功](https://github.com/khatada/silent-webpage/actions/runs/39518129075): 型・Lint・単体13件・ビルド・ブラウザ検証。
+
+- [PR #9反映後の公開成功](https://github.com/khatada/silent-webpage/actions/runs/39518376172)。
