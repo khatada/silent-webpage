@@ -1,0 +1,10 @@
+{
+  "decision": "accepted-as-material",
+  "reviewedBy": "LLM",
+  "reason": "親と独立LLMが2px補正後画像を実閲覧。上方/少し右へ遠ざかる後方俯瞰、アイボリー小型タクシー、赤い尾灯と濃紺の陰影が明確。輪郭が独立し格子も整列。小さい実寸での向き・路地・遮蔽・明度は最終合成で別途確認する。",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "originalSha256": "aaf0eb87a64c20f38dc58e357ae7e061f02574d8b0298a762a515542457ea6c1",
+    "prompt": "One isolated compact Japanese taxi, high rooftop rear/roof view, traveling away toward the top with a slight right angle. Warm ivory body, charcoal blue-violet shadows/glass, two small red rear lamps and tiny amber roof lamp with no text. Fine coherent square pixel clusters, transparent background, no scene, floor, glow, exhaust or UI."
+  }
+}

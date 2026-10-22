@@ -1,5 +1,6 @@
 /** Coordinates refer to the corrected, LLM-reviewed image files, never procedural artwork. */
 export const generatedArt = {
+  streetCar: { image: 'art/street-car.png', frame: [190, 128, 256, 368] },
   background: 'art/tokyo-night.png',
   atlas: 'art/night-sprites.png',
   catRestAtlas: 'art/cat-rest.png',

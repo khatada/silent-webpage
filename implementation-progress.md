@@ -1,10 +1,12 @@
 # 実装の進行状況
 
-最終更新: 2026-10-21。別セッションの実装再開用。
+最終更新: 2026-10-22。別セッションの実装再開用。
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `feat/generated-settle`（main 0cd17baから作成）。C022「伏せて丸まる中間姿勢」を開始。imagegen原画と2px補正（627square）はart-reviews/2026-10-21-cat-settle保存済み。親/独立LLMとも補正後4姿勢を素材採用。public/art/cat-settle.pngへ同じ条件で補正出力。共有factory/timing/preview統合済み。新4枚共通.5倍率、床の支持帯で原点を整列。既存始点/終点を再使用し、境界の左右4組はRGBA一致。素材間の肩/首/毛色の小差は記録した上で、左右全6段階と前後/全景11構図を補正後LLMが採用。次: verify→commit/push→PR/CI/merge。
+- ブランチ: `feat/generated-street-car`（main 4bdeac6から作成）。C016「路地を遠ざかる車」は実装・最終画像採用完了。最終source `afc90d0550077ddbfb9d8e2936f6e2a23fcc65d1e61eabc0364cb60d06f662f2` の補正後15パネル/11サイズ全景を親・独立LLMが採用。manifestは25画像。追加独立レビューでも最終atlasとdesktop全景を実閲覧した。
+- C022はPR #30でCI 39693202139成功後mainマージ（4bdeac6）。単体43件/採用画像23件でverify成功。Pages 39693505226も成功し公開済み。PR30添付toolは無応答で成否未確認。
+- C022の中間4素材は共通.5倍率と支持帯で整列。素材間の肩/首/毛色の小差を記録してLLM採用。端点の左右4組はRGBA一致。
 - C021はPR #29でCI 39691339838成功後mainマージ済み（0cd17ba）。単体42件/採用画像22件でverify成功。Pages 39691591549も成功し公開済み。PR29添付toolは無応答で成否未確認。
 - C020はPR #28でCI 39689614717成功後mainマージ済み（5307f96）。Pages 39689876290も成功し公開済み。PR28添付は無応答のため成功未確認。
 - C018はPR #27でCI 39688627541成功後mainへマージ済み（027a6e7）。Pages 39688936144も成功、公開済み。PR27添付toolは1回無応答で中断、成否未確認。
@@ -12,7 +14,7 @@
 - PR #26: 単体41件とverify成功、素材8枚＋全景11枚＋歩行/実移動atlasの20画像を補正・LLM採用。CI 39687474902成功。Pages 39687834998も成功、公開済み。
 - 画像生成の初回8枚は中間不足で不採用。v2の6枚と個別追加した後方支持・回収で8姿勢。原画・補正・部分参照編集・不採用理由も保存済み。
 - PR #26添付: codex_app.attach_artifactを親・補助とも呼び出したが長時間応答なく中断。GitHubのPR作成・マージは成功済み。添付成否は未確認で開発は妨げない。
-- 次: C022素材採否→同条件で公開素材へ補正出力→共有factory/timingへ統合（始点groom0/終点curledは同じTexture再使用）→全6段階/左右/境界/全景を補正後LLM確認→verify/commit/push/PR/CI/merge。要求事項は変更しない。
+- 次: 必須verify成功（型・Lint・単体46件・補正/採用25画像・build）。commit/push/PR→CI→merge/Pages確認。公開は未実施。
 - ユーザーの停止指示はなく継続改善は有効。旧stashは古いdocsを含むため一括適用しない。
 
 ## 決定事項
@@ -170,3 +172,9 @@
 - PR #24公開成功: https://github.com/khatada/silent-webpage/actions/runs/39616183337 。
 
 - [PR #25](https://github.com/khatada/silent-webpage/pull/25): 生成した休憩/毛づくろい/伸び。CI https://github.com/khatada/silent-webpage/actions/runs/39618102039 成功後mainマージ28f5868。
+
+
+## C016 最終画像採用（2026-10-22）
+
+- 車幅はnative canvasの整数pxへ丸めてからシーン倍率へ戻す。固定遮蔽cropは背景と同じsampling phaseを保ち、座標を独立に丸めない。
+- 最終15パネルと11サイズ全景を採用し、既存10公開素材と猫/窓atlasの採用記録を保持。小型車の尾灯は実寸で判別しにくい。静止QAは連続再生の全時刻や実機長時間評価を代替しない。

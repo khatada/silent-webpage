@@ -58,3 +58,8 @@ npm run art:correct -- --input original.png --output corrected.png --cell-size 2
 ## 窓の表示確認
 
 `npm run art:preview-windows -- --output art-reviews/既存ディレクトリ` で、標準・横長・縦長の生成済み背景から各9窓の周囲を切り出し、点灯・遷移中・消灯を並べる。元画像のcropと消灯用の壁cropのSprite合成だけを行い、原画は制作しない。共通runnerが最終格子で補正し、LLMが実閲覧して採否を記録する。各背景の3行は順に点灯・中間・消灯、各列はwindows配列順。初期状態の全景と合わせて窓枠・色・位置を確認する。
+
+
+## 路地の車の表示確認
+
+`npm run art:preview-street-car -- --output art-reviews/既存ディレクトリ` で、背景3構図の実際の路地を切り出し、共通factoryによる車と手前の遮蔽物を5時点で比較する。路面や車体をコードで描かず、採用済み生成画像のcrop・移動・大きさ・透明度で合成する。共通runnerの補正後画像をLLMが閲覧し、屋根からの進入、柱/街灯の前後関係、実寸の明度と遠近縮小を確認して採否を記録する。全景の初期位相と合わせて判断する。

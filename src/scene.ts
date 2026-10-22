@@ -4,6 +4,7 @@ import { generatedArt } from './generated-art';
 import { generatedLayout } from './generated-layout';
 import { createImageCat } from './image-cat';
 import { pixelViewport } from './pixel-viewport';
+import { createImageStreetCar } from './image-street-car';
 
 type Frame = readonly [number, number, number, number];
 
@@ -13,7 +14,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -24,6 +25,7 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${generatedArt.catWalkLift}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.catGroomAtlas}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.catSettleAtlas}`),
+    Assets.load<Texture>(`${baseUrl}${generatedArt.streetCar.image}`),
   ]);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
@@ -32,6 +34,8 @@ export async function createScene(host: HTMLElement): Promise<{
   restAtlas.source.scaleMode = 'nearest';
   for (const image of [walkAtlas, back, lift, groomAtlas, settleAtlas]) image.source.scaleMode = 'nearest';
   const imageCat = createImageCat(atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas);
+  const imageStreetCar = createImageStreetCar(streetCar, [background, wideBackground, portraitBackground]);
+  let roadCar: ReturnType<typeof imageStreetCar.createSprite>;
   const crops: Texture[] = [];
   const crop = (source: Texture, frame: Frame) => {
     const texture = new Texture({ source: source.source, frame: new Rectangle(...frame) });
@@ -137,6 +141,8 @@ export async function createScene(host: HTMLElement): Promise<{
       art.height = h * scale;
       return art;
     });
+    roadCar = imageStreetCar.createSprite(layout.portrait ? 2 : layout.wide ? 1 : 0, scale, originX, originY);
+    app.stage.addChild(roadCar.root);
     cloud = sprite(frames.cloud);
     cloud.scale.set(layout.cloudScale);
     cloud.y = layout.cloudY;
@@ -170,6 +176,7 @@ export async function createScene(host: HTMLElement): Promise<{
   }
 
   function animate() {
+    imageStreetCar.update(roadCar, elapsed);
     stars.forEach((art, index) => { art.alpha = 0.4 + Math.sin(elapsed * 0.24 + index * 1.7) * 0.35; });
     windows.forEach((art, index) => { art.alpha = 0.92 * (1 - windowBrightness(elapsed, 5 + index * 11, 29 + index * 7)); });
     cloud.x = travelPosition(elapsed, width, cloud.width, scale * 1.2, width * 0.12);
@@ -206,6 +213,7 @@ export async function createScene(host: HTMLElement): Promise<{
       app.destroy(true, { children: true });
       for (const texture of crops) texture.destroy(false);
       imageCat.destroy();
+      imageStreetCar.destroy();
       // Assets owns the shared image sources; sprite/crop disposal must not destroy them.
     },
   };

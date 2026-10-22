@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "398c1d4a462fe468fadfdb96332b5199de363664731c4b60461d4f01a5bdd60a",
+  "sourceSha256": "afc90d0550077ddbfb9d8e2936f6e2a23fcc65d1e61eabc0364cb60d06f662f2",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,39 +129,39 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-21-settle-final/desktop-corrected.png",
-      "report": "art-reviews/2026-10-21-settle-final/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-21-street-car-final/desktop-corrected.png",
+      "report": "art-reviews/2026-10-21-street-car-final/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。0秒の猫・空・街・乗り物・窓の可視性と構図を維持。新しい丸まり動作は全姿勢atlasと併用して採用。"
+      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
     },
     {
-      "image": "art-reviews/2026-10-21-settle-final/mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-settle-final/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-21-street-car-final/mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-street-car-final/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。0秒の猫・空・街・乗り物・窓の可視性と構図を維持。新しい丸まり動作は全姿勢atlasと併用して採用。"
+      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
     },
     {
-      "image": "art-reviews/2026-10-21-settle-final/narrow-corrected.png",
-      "report": "art-reviews/2026-10-21-settle-final/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-21-street-car-final/narrow-corrected.png",
+      "report": "art-reviews/2026-10-21-street-car-final/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。0秒の猫・空・街・乗り物・窓の可視性と構図を維持。新しい丸まり動作は全姿勢atlasと併用して採用。"
+      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
     },
     {
-      "image": "art-reviews/2026-10-21-settle-final/landscape-corrected.png",
-      "report": "art-reviews/2026-10-21-settle-final/landscape-corrected.png.json",
+      "image": "art-reviews/2026-10-21-street-car-final/landscape-corrected.png",
+      "report": "art-reviews/2026-10-21-street-car-final/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。0秒の猫・空・街・乗り物・窓の可視性と構図を維持。新しい丸まり動作は全姿勢atlasと併用して採用。"
+      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
     },
     {
-      "image": "art-reviews/2026-10-21-settle-final/wide-corrected.png",
-      "report": "art-reviews/2026-10-21-settle-final/wide-corrected.png.json",
+      "image": "art-reviews/2026-10-21-street-car-final/wide-corrected.png",
+      "report": "art-reviews/2026-10-21-street-car-final/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親LLMが補正後全景を実閲覧。0秒の猫・空・街・乗り物・窓の可視性と構図を維持。新しい丸まり動作は全姿勢atlasと併用して採用。"
+      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
     },
     {
       "image": "art-reviews/2026-10-21-settle-sequence/atlas-corrected.png",
@@ -171,46 +171,65 @@
       "reason": "親と独立LLMが補正後atlasを実閲覧。既存歩行/毛づくろいと、左右の前後境界付きsettle全6段階を確認。胸→腰→頭/尾の動きが読め、切れや浮きなしで採用。新素材と旧素材は肩/首・背の丸み・顔/毛色に小差が残る。前groom→段階0、段階5→後curledは両方向でRGBA一致も確認。"
     },
     {
-      "image": "art-reviews/2026-10-21-settle-final/compact-corrected.png",
-      "report": "art-reviews/2026-10-21-settle-final/compact-corrected.png.json",
+      "image": "art-reviews/2026-10-21-street-car-final/compact-corrected.png",
+      "report": "art-reviews/2026-10-21-street-car-final/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れや接地ずれなし、空・街・乗り物の構図を維持。0秒全景と全姿勢atlasを併用して採用。"
+      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
     },
     {
-      "image": "art-reviews/2026-10-21-settle-final/tall-corrected.png",
-      "report": "art-reviews/2026-10-21-settle-final/tall-corrected.png.json",
+      "image": "art-reviews/2026-10-21-street-car-final/tall-corrected.png",
+      "report": "art-reviews/2026-10-21-street-car-final/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れや接地ずれなし、空・街・乗り物の構図を維持。0秒全景と全姿勢atlasを併用して採用。"
+      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
     },
     {
-      "image": "art-reviews/2026-10-21-settle-final/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-21-settle-final/portrait-large-corrected.png.json",
+      "image": "art-reviews/2026-10-21-street-car-final/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-21-street-car-final/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れや接地ずれなし、空・街・乗り物の構図を維持。0秒全景と全姿勢atlasを併用して採用。"
+      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
     },
     {
-      "image": "art-reviews/2026-10-21-settle-final/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-21-settle-final/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/2026-10-21-street-car-final/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-21-street-car-final/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れや接地ずれなし、空・街・乗り物の構図を維持。0秒全景と全姿勢atlasを併用して採用。"
+      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
     },
     {
-      "image": "art-reviews/2026-10-21-settle-final/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-21-settle-final/small-phone-corrected.png.json",
+      "image": "art-reviews/2026-10-21-street-car-final/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-21-street-car-final/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れや接地ずれなし、空・街・乗り物の構図を維持。0秒全景と全姿勢atlasを併用して採用。"
+      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
     },
     {
-      "image": "art-reviews/2026-10-21-settle-final/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-settle-final/small-mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-21-street-car-final/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-21-street-car-final/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "独立レビュー担当LLMが補正後全景を実閲覧。猫の切れや接地ずれなし、空・街・乗り物の構図を維持。0秒全景と全姿勢atlasを併用して採用。"
+      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
+    },
+    {
+      "image": "public/art/street-car.png",
+      "report": "public/art/street-car.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親と独立LLMが2px補正後画像を実閲覧。上方/少し右へ遠ざかる後方俯瞰、アイボリー小型タクシー、赤い尾灯と濃紺の陰影が明確。輪郭が独立し格子も整列。小さい実寸での向き・路地・遮蔽・明度は最終合成で別途確認する。 最終補正atlasと11サイズ全景も親/独立LLMが実閲覧して採用。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "aaf0eb87a64c20f38dc58e357ae7e061f02574d8b0298a762a515542457ea6c1",
+        "prompt": "One isolated compact Japanese taxi, high rooftop rear/roof view, traveling away toward the top with a slight right angle. Warm ivory body, charcoal blue-violet shadows/glass, two small red rear lamps and tiny amber roof lamp with no text. Fine coherent square pixel clusters, transparent background, no scene, floor, glow, exhaust or UI."
+      }
+    },
+    {
+      "image": "art-reviews/2026-10-21-street-car-motion-final/atlas-corrected.png",
+      "report": "art-reviews/2026-10-21-street-car-motion-final/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/独立LLMが最終補正後3背景×5時点の全15パネルを実閲覧し採用。追加の独立実閲覧でも、路地内を遠ざかり縮小する車と屋根・柱/街灯の前後関係を確認。車幅はnative canvasの整数pxへ揃え、固定遮蔽cropは背景のsampling phaseを保ち独立丸めしない。尾灯の実寸判別と連続再生の全時刻は静止QAの範囲外。"
     }
   ]
 }
