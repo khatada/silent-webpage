@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-22-resident-motion-final/atlas-source.png",
+    "width": 1536,
+    "height": 768,
+    "sha256": "92b41de105af2cd44412cb2a371c51c4699a39b580d6df3e0bc0d2532abd6505"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-22-resident-motion-final/atlas-corrected.png",
+    "width": 1536,
+    "height": 768,
+    "sha256": "7657acabd80c1ca81b90fb3e501dd57bc900ef10ceac2c1b2db71591fc59d93c"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

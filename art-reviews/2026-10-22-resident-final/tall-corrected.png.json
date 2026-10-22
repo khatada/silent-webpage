@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-22-resident-final/tall-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "30f69b74e8b2bbd83ab9d255678e99ab65c7e5765024baa9f1781b2bfdae5a95"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-22-resident-final/tall-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "13af435ba60ffe85c20814d1d2a1098a39980fa298f01ffec0a7917b5378a160"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

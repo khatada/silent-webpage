@@ -1,0 +1,895 @@
+{
+  "sourceSha256": "8d60e357b99c1b0b618b8372392299b9032849e6ae04fe06db7b5bc62285082a",
+  "finalSourceSha256": "8d60e357b99c1b0b618b8372392299b9032849e6ae04fe06db7b5bc62285082a",
+  "metadata": {
+    "width": 1536,
+    "height": 384,
+    "samples": [
+      {
+        "composition": 0,
+        "index": 1,
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "scale": 0.5,
+        "pose": -1,
+        "actualFrame": null,
+        "seconds": 0,
+        "lightSeconds": -14,
+        "lightPhase": 16,
+        "lightPeriod": 36,
+        "alpha": 0,
+        "rootX": -178,
+        "rootY": -118,
+        "contextX": 8,
+        "contextY": 24.5,
+        "row": 0,
+        "column": 0,
+        "panel": [
+          8,
+          24,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 0,
+        "index": 1,
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "scale": 0.5,
+        "pose": -1,
+        "actualFrame": null,
+        "seconds": 0,
+        "lightSeconds": -15.55,
+        "lightPhase": 16,
+        "lightPeriod": 36,
+        "alpha": 0.45999999999999575,
+        "rootX": -50,
+        "rootY": -118,
+        "contextX": 136,
+        "contextY": 24.5,
+        "row": 0,
+        "column": 1,
+        "panel": [
+          136,
+          24,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 0,
+        "index": 1,
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "scale": 0.5,
+        "pose": -1,
+        "actualFrame": null,
+        "seconds": 0,
+        "lightSeconds": 6.52,
+        "lightPhase": 16,
+        "lightPeriod": 36,
+        "alpha": 0.92,
+        "rootX": 78,
+        "rootY": -118,
+        "contextX": 264,
+        "contextY": 24.5,
+        "row": 0,
+        "column": 2,
+        "panel": [
+          264,
+          24,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 0,
+        "index": 1,
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "scale": 0.5,
+        "pose": 0,
+        "actualFrame": 0,
+        "seconds": 0,
+        "lightSeconds": -14,
+        "lightPhase": 16,
+        "lightPeriod": 36,
+        "alpha": 0,
+        "rootX": 206,
+        "rootY": -118,
+        "contextX": 392,
+        "contextY": 24.5,
+        "row": 0,
+        "column": 3,
+        "panel": [
+          392,
+          24,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 0,
+        "index": 1,
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "scale": 0.5,
+        "pose": 0,
+        "actualFrame": 0,
+        "seconds": 0,
+        "lightSeconds": -15.55,
+        "lightPhase": 16,
+        "lightPeriod": 36,
+        "alpha": 0.45999999999999575,
+        "rootX": 334,
+        "rootY": -118,
+        "contextX": 520,
+        "contextY": 24.5,
+        "row": 0,
+        "column": 4,
+        "panel": [
+          520,
+          24,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 0,
+        "index": 1,
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "scale": 0.5,
+        "pose": 0,
+        "actualFrame": 0,
+        "seconds": 0,
+        "lightSeconds": 6.52,
+        "lightPhase": 16,
+        "lightPeriod": 36,
+        "alpha": 0.92,
+        "rootX": 462,
+        "rootY": -118,
+        "contextX": 648,
+        "contextY": 24.5,
+        "row": 0,
+        "column": 5,
+        "panel": [
+          648,
+          24,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 0,
+        "index": 1,
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "scale": 0.5,
+        "pose": 1,
+        "actualFrame": 1,
+        "seconds": 9.5,
+        "lightSeconds": -14,
+        "lightPhase": 16,
+        "lightPeriod": 36,
+        "alpha": 0,
+        "rootX": 590,
+        "rootY": -118,
+        "contextX": 776,
+        "contextY": 24.5,
+        "row": 0,
+        "column": 6,
+        "panel": [
+          776,
+          24,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 0,
+        "index": 1,
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "scale": 0.5,
+        "pose": 1,
+        "actualFrame": 1,
+        "seconds": 9.5,
+        "lightSeconds": -15.55,
+        "lightPhase": 16,
+        "lightPeriod": 36,
+        "alpha": 0.45999999999999575,
+        "rootX": 718,
+        "rootY": -118,
+        "contextX": 904,
+        "contextY": 24.5,
+        "row": 0,
+        "column": 7,
+        "panel": [
+          904,
+          24,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 0,
+        "index": 1,
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "scale": 0.5,
+        "pose": 1,
+        "actualFrame": 1,
+        "seconds": 9.5,
+        "lightSeconds": 6.52,
+        "lightPhase": 16,
+        "lightPeriod": 36,
+        "alpha": 0.92,
+        "rootX": 846,
+        "rootY": -118,
+        "contextX": 1032,
+        "contextY": 24.5,
+        "row": 0,
+        "column": 8,
+        "panel": [
+          1032,
+          24,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 0,
+        "index": 1,
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "scale": 0.5,
+        "pose": 2,
+        "actualFrame": 2,
+        "seconds": 12,
+        "lightSeconds": -14,
+        "lightPhase": 16,
+        "lightPeriod": 36,
+        "alpha": 0,
+        "rootX": 974,
+        "rootY": -118,
+        "contextX": 1160,
+        "contextY": 24.5,
+        "row": 0,
+        "column": 9,
+        "panel": [
+          1160,
+          24,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 0,
+        "index": 1,
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "scale": 0.5,
+        "pose": 2,
+        "actualFrame": 2,
+        "seconds": 12,
+        "lightSeconds": -15.55,
+        "lightPhase": 16,
+        "lightPeriod": 36,
+        "alpha": 0.45999999999999575,
+        "rootX": 1102,
+        "rootY": -118,
+        "contextX": 1288,
+        "contextY": 24.5,
+        "row": 0,
+        "column": 10,
+        "panel": [
+          1288,
+          24,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 0,
+        "index": 1,
+        "window": [
+          380,
+          293,
+          6,
+          6
+        ],
+        "context": [
+          372,
+          285,
+          22,
+          22
+        ],
+        "scale": 0.5,
+        "pose": 2,
+        "actualFrame": 2,
+        "seconds": 12,
+        "lightSeconds": 6.52,
+        "lightPhase": 16,
+        "lightPeriod": 36,
+        "alpha": 0.92,
+        "rootX": 1230,
+        "rootY": -118,
+        "contextX": 1416,
+        "contextY": 24.5,
+        "row": 0,
+        "column": 11,
+        "panel": [
+          1416,
+          24,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 1,
+        "index": 0,
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "scale": 0.5,
+        "pose": -1,
+        "actualFrame": null,
+        "seconds": -7,
+        "lightSeconds": -3,
+        "lightPhase": 5,
+        "lightPeriod": 29,
+        "alpha": 0,
+        "rootX": -247,
+        "rootY": -250,
+        "contextX": 8.5,
+        "contextY": 216,
+        "row": 1,
+        "column": 0,
+        "panel": [
+          8,
+          216,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 1,
+        "index": 0,
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "scale": 0.5,
+        "pose": -1,
+        "actualFrame": null,
+        "seconds": -7,
+        "lightSeconds": -4.55,
+        "lightPhase": 5,
+        "lightPeriod": 29,
+        "alpha": 0.460000000000001,
+        "rootX": -119,
+        "rootY": -250,
+        "contextX": 136.5,
+        "contextY": 216,
+        "row": 1,
+        "column": 1,
+        "panel": [
+          136,
+          216,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 1,
+        "index": 0,
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "scale": 0.5,
+        "pose": -1,
+        "actualFrame": null,
+        "seconds": -7,
+        "lightSeconds": 13.529999999999998,
+        "lightPhase": 5,
+        "lightPeriod": 29,
+        "alpha": 0.92,
+        "rootX": 9,
+        "rootY": -250,
+        "contextX": 264.5,
+        "contextY": 216,
+        "row": 1,
+        "column": 2,
+        "panel": [
+          264,
+          216,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 1,
+        "index": 0,
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "scale": 0.5,
+        "pose": 0,
+        "actualFrame": 0,
+        "seconds": -7,
+        "lightSeconds": -3,
+        "lightPhase": 5,
+        "lightPeriod": 29,
+        "alpha": 0,
+        "rootX": 137,
+        "rootY": -250,
+        "contextX": 392.5,
+        "contextY": 216,
+        "row": 1,
+        "column": 3,
+        "panel": [
+          392,
+          216,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 1,
+        "index": 0,
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "scale": 0.5,
+        "pose": 0,
+        "actualFrame": 0,
+        "seconds": -7,
+        "lightSeconds": -4.55,
+        "lightPhase": 5,
+        "lightPeriod": 29,
+        "alpha": 0.460000000000001,
+        "rootX": 265,
+        "rootY": -250,
+        "contextX": 520.5,
+        "contextY": 216,
+        "row": 1,
+        "column": 4,
+        "panel": [
+          520,
+          216,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 1,
+        "index": 0,
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "scale": 0.5,
+        "pose": 0,
+        "actualFrame": 0,
+        "seconds": -7,
+        "lightSeconds": 13.529999999999998,
+        "lightPhase": 5,
+        "lightPeriod": 29,
+        "alpha": 0.92,
+        "rootX": 393,
+        "rootY": -250,
+        "contextX": 648.5,
+        "contextY": 216,
+        "row": 1,
+        "column": 5,
+        "panel": [
+          648,
+          216,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 1,
+        "index": 0,
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "scale": 0.5,
+        "pose": 1,
+        "actualFrame": 1,
+        "seconds": 2.5,
+        "lightSeconds": -3,
+        "lightPhase": 5,
+        "lightPeriod": 29,
+        "alpha": 0,
+        "rootX": 521,
+        "rootY": -250,
+        "contextX": 776.5,
+        "contextY": 216,
+        "row": 1,
+        "column": 6,
+        "panel": [
+          776,
+          216,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 1,
+        "index": 0,
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "scale": 0.5,
+        "pose": 1,
+        "actualFrame": 1,
+        "seconds": 2.5,
+        "lightSeconds": -4.55,
+        "lightPhase": 5,
+        "lightPeriod": 29,
+        "alpha": 0.460000000000001,
+        "rootX": 649,
+        "rootY": -250,
+        "contextX": 904.5,
+        "contextY": 216,
+        "row": 1,
+        "column": 7,
+        "panel": [
+          904,
+          216,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 1,
+        "index": 0,
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "scale": 0.5,
+        "pose": 1,
+        "actualFrame": 1,
+        "seconds": 2.5,
+        "lightSeconds": 13.529999999999998,
+        "lightPhase": 5,
+        "lightPeriod": 29,
+        "alpha": 0.92,
+        "rootX": 777,
+        "rootY": -250,
+        "contextX": 1032.5,
+        "contextY": 216,
+        "row": 1,
+        "column": 8,
+        "panel": [
+          1032,
+          216,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 1,
+        "index": 0,
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "scale": 0.5,
+        "pose": 2,
+        "actualFrame": 2,
+        "seconds": 5,
+        "lightSeconds": -3,
+        "lightPhase": 5,
+        "lightPeriod": 29,
+        "alpha": 0,
+        "rootX": 905,
+        "rootY": -250,
+        "contextX": 1160.5,
+        "contextY": 216,
+        "row": 1,
+        "column": 9,
+        "panel": [
+          1160,
+          216,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 1,
+        "index": 0,
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "scale": 0.5,
+        "pose": 2,
+        "actualFrame": 2,
+        "seconds": 5,
+        "lightSeconds": -4.55,
+        "lightPhase": 5,
+        "lightPeriod": 29,
+        "alpha": 0.460000000000001,
+        "rootX": 1033,
+        "rootY": -250,
+        "contextX": 1288.5,
+        "contextY": 216,
+        "row": 1,
+        "column": 10,
+        "panel": [
+          1288,
+          216,
+          128,
+          192
+        ]
+      },
+      {
+        "composition": 1,
+        "index": 0,
+        "window": [
+          519,
+          940,
+          7,
+          9
+        ],
+        "context": [
+          511,
+          932,
+          23,
+          25
+        ],
+        "scale": 0.5,
+        "pose": 2,
+        "actualFrame": 2,
+        "seconds": 5,
+        "lightSeconds": 13.529999999999998,
+        "lightPhase": 5,
+        "lightPeriod": 29,
+        "alpha": 0.92,
+        "rootX": 1161,
+        "rootY": -250,
+        "contextX": 1416.5,
+        "contextY": 216,
+        "row": 1,
+        "column": 11,
+        "panel": [
+          1416,
+          216,
+          128,
+          192
+        ]
+      }
+    ],
+    "rows": [
+      "normal-0.5x",
+      "portrait-0.5x"
+    ],
+    "columns": [
+      "original-on",
+      "original-mid",
+      "original-off",
+      "upright-on",
+      "upright-mid",
+      "upright-off",
+      "slight-on",
+      "slight-mid",
+      "slight-off",
+      "deeper-on",
+      "deeper-mid",
+      "deeper-off"
+    ]
+  },
+  "method": "Image-generation textures composited by /scripts/generated-resident-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

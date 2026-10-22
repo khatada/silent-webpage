@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-22-resident-halfscale/atlas-source.png",
+    "width": 1536,
+    "height": 384,
+    "sha256": "fd0757cbfc2ad0a0a68176a541c74c5313d89f9dbca674ea5edf95161f113ad2"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-22-resident-halfscale/atlas-corrected.png",
+    "width": 1536,
+    "height": 384,
+    "sha256": "13c71e09df99ee36ca79ff39716b97973a34d1a5d28ba085d452fd8622f8b235"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

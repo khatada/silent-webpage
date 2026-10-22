@@ -7,6 +7,7 @@ import { pixelViewport } from './pixel-viewport';
 import { createImageStreetCar } from './image-street-car';
 import { createImageCurtain, curtainArt } from './image-curtain';
 import { createImageFan, fanArt } from './image-fan';
+import { createImageResident, residentArt } from './image-resident';
 
 type Frame = readonly [number, number, number, number];
 
@@ -16,7 +17,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -33,6 +34,7 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${curtainArt.image}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.catTurnAtlas}`),
     Assets.load<Texture>(`${baseUrl}${fanArt.image}`),
+    Assets.load<Texture>(`${baseUrl}${residentArt.image}`),
   ]);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
@@ -46,6 +48,9 @@ export async function createScene(host: HTMLElement): Promise<{
   const imageFan = createImageFan(fanAtlas, [background, portraitBackground]);
   let fan: ReturnType<typeof imageFan.createSprite> | undefined;
   let curtain: Sprite | undefined;
+  const imageResident = createImageResident(residentAtlas);
+  let resident: Sprite | undefined;
+  let residentComposition: 0 | 1 = 0;
   let roadCar: ReturnType<typeof imageStreetCar.createSprite>;
   const crops: Texture[] = [];
   const crop = (source: Texture, frame: Frame) => {
@@ -151,8 +156,14 @@ export async function createScene(host: HTMLElement): Promise<{
       app.stage.addChild(fan.root);
     }
     curtain = undefined;
+    resident = undefined;
+    residentComposition = layout.portrait ? 1 : 0;
     windows = composition.windows.map(([x, y, w, h], index) => {
-      // The existing dark overlay is added AFTER the curtain, so both inherit one window fade.
+      // Residents and curtains are beneath the existing dark overlay and inherit its light cycle.
+      if (!layout.wide && index === residentArt.placements[residentComposition].window) {
+        resident = imageResident.createSprite([x, y, w, h], residentComposition, scale, originX, originY);
+        app.stage.addChild(resident);
+      }
       if (!layout.wide && index === (layout.portrait ? curtainArt.portraitWindow : curtainArt.normalWindow)) {
         curtain = imageCurtain.createSprite([x, y, w, h], scale, originX, originY);
         app.stage.addChild(curtain);
@@ -201,8 +212,13 @@ export async function createScene(host: HTMLElement): Promise<{
     imageStreetCar.update(roadCar, elapsed);
     if (curtain) imageCurtain.update(curtain, elapsed);
     if (fan) imageFan.update(fan, elapsed);
+    if (resident) imageResident.update(resident, elapsed, residentComposition);
     stars.forEach((art, index) => { art.alpha = 0.4 + Math.sin(elapsed * 0.24 + index * 1.7) * 0.35; });
-    windows.forEach((art, index) => { art.alpha = 0.92 * (1 - windowBrightness(elapsed, 5 + index * 11, 29 + index * 7)); });
+    windows.forEach((art, index) => {
+      const brightness = windowBrightness(elapsed, 5 + index * 11, 29 + index * 7);
+      art.alpha = 0.92 * (1 - brightness);
+      if (resident && index === residentArt.placements[residentComposition].window) resident.alpha = brightness;
+    });
     cloud.x = travelPosition(elapsed, width, cloud.width, scale * 1.2, width * 0.12);
     aircraft.x = travelPosition(elapsed, width, aircraft.width, scale * 3.2, width * 0.7);
     train.x = travelPosition(elapsed, width, train.width, scale * 8, trainInitialX);
@@ -240,6 +256,7 @@ export async function createScene(host: HTMLElement): Promise<{
       imageStreetCar.destroy();
       imageCurtain.destroy();
       imageFan.destroy();
+      imageResident.destroy();
       // Assets owns the shared image sources; sprite/crop disposal must not destroy them.
     },
   };

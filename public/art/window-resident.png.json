@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-22-resident/source.png",
+    "width": 2172,
+    "height": 724,
+    "sha256": "f4a34c73dd803ca5d860c45cafe3e7d64081de92aeb5ffab81136e255a16d7ed"
+  },
+  "output": {
+    "path": "public/art/window-resident.png",
+    "width": 271,
+    "height": 90,
+    "sha256": "a7f546a46176172e545c5806377a71d5f90ba021c2110c53bf72d7a96bbc7ead"
+  },
+  "grid": {
+    "cellSize": 8,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
