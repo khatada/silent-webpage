@@ -4,8 +4,9 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `feat/generated-cat-turn`、worktree `/workspace/silent-webpage-turn`。C024の実装と最終画像採用完了。共通倍率0.65、片道36秒/周期72秒、32秒以降に起立・方向転換を追加。描画source `1622a62a9390f1b68c71afb7618d36076e2a4bf119f58ddbbb6e42d9e644e5e5` を固定。
-- 補正後80パネルatlasと11サイズ全景を親/独立LLMが実閲覧して採用。8歩行位相×左右×倍率1/4の32端点組は独立RGBA再計算でも完全一致。manifest31画像。最新記録を含む必須verify成功（型・Lint・単体50件・採用31画像・build）。commit/push/PR/CI/mergeはこれから。
+- ブランチ: `feat/generated-rooftop-fan`、worktree `/workspace/silent-webpage-fan`。C-009の生成素材による復元は実装/最終画像採用完了。source `48076a40d98683f238083d51f51f144ad83a41370ef55f01878d5560397b5267` 固定。4位相/alpha0.7/1.6秒周期、標準・縦のみ。
+- 20パネルと11全景を補正後に親/実装LLMが採用。16条件で原画ハブRGBA一致、面外変更0、平均輝度差0.98/255未満。manifest33画像。最新記録を含むverify成功（型・Lint・単体52件・採用33画像・build）。commit/push/PR/CI/merge/Pagesはこれから。
+- C024はPR36のCI39871794928成功後main707e6d733e320ae785fb1b94768b2e62120bcf87へマージ。補正後80パネルと11全景採用、32端点RGBA一致。verifyは50テスト/31画像成功。Pages39872158259成功で公開済み。PR36添付は1回呼出後60秒超無応答で中断、成否未確認。
 - C011はPR #35のCI39775441110成功後main838ed6cへマージ済み。source44ed047ce351e43eee36864186f25dc4cf7d64d3f682e787ef49080d578e94c7、採用29画像、単体49件のverify成功。Pages39776106544成功で公開済み。PR35添付は60秒超無応答で中断し成否未確認。
 - C023はPR #33の最終CI 39774773442成功後main d6a1a6edf26f065fdc37533048e0e1841e42b3f0へマージ済み。Pages39775173863成功で公開済み。左右4端点RGBA一致、最終全景/atlas採用済み。
 - C016はPR #31でCI 39771598524成功後main a7e7eb0へマージ、Pages 39771950954成功で公開済み。
@@ -21,7 +22,7 @@
 - PR #26: 単体41件とverify成功、素材8枚＋全景11枚＋歩行/実移動atlasの20画像を補正・LLM採用。CI 39687474902成功。Pages 39687834998も成功、公開済み。
 - 画像生成の初回8枚は中間不足で不採用。v2の6枚と個別追加した後方支持・回収で8姿勢。原画・補正・部分参照編集・不採用理由も保存済み。
 - PR #26添付: codex_app.attach_artifactを親・補助とも呼び出したが長時間応答なく中断。GitHubのPR作成・マージは成功済み。添付成否は未確認で開発は妨げない。
-- 次: 最新差分の必須verify→commit/push/PR/CI/merge→Pages確認。要求事項は変更しない。
+- 次: 最新差分のverify→commit/push/PR/CI/merge/Pages。要求事項は変更しない。
 - ユーザーの停止指示はなく継続改善は有効。旧stashは古いdocsを含むため一括適用しない。
 
 ## 決定事項

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-22-fan-final/desktop-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "291ce8616d4e43e9b5ddb816eb8dbee75521d892f3a3b13148d64446c1f64f36"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-22-fan-final/desktop-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "9877f2f988246e8c4612abe8dd85db8d8e68a931a20e5a0400eca6ec8876313f"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

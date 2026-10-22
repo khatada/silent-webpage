@@ -1,0 +1,98 @@
+{
+  "sourceSha256": "48076a40d98683f238083d51f51f144ad83a41370ef55f01878d5560397b5267",
+  "method": "Corrected PNG pixel comparison with original-background column; Rec.709 luminance on face rectangles.",
+  "checks": [
+    {
+      "composition": 0,
+      "scale": 1,
+      "hubExactRGBA": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "changedPixelsOutsideFace": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meanFaceLuminance": [
+        22.244517777777777,
+        22.062564444444444,
+        21.56021111111111,
+        21.274237777777778
+      ],
+      "meanLuminanceRange": 0.9702799999999989
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "hubExactRGBA": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "changedPixelsOutsideFace": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meanFaceLuminance": [
+        22.003676388888888,
+        21.891765,
+        22.047993194444444,
+        21.33798125
+      ],
+      "meanLuminanceRange": 0.7100119444444459
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "hubExactRGBA": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "changedPixelsOutsideFace": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meanFaceLuminance": [
+        24.61093846153846,
+        24.01173128205128,
+        23.978419487179487,
+        23.82892
+      ],
+      "meanLuminanceRange": 0.7820184615384598
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "hubExactRGBA": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "changedPixelsOutsideFace": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "meanFaceLuminance": [
+        24.456820064102562,
+        24.22607147435897,
+        24.404123076923078,
+        24.019002884615382
+      ],
+      "meanLuminanceRange": 0.4378171794871797
+    }
+  ]
+}

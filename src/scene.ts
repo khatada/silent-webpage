@@ -6,6 +6,7 @@ import { createImageCat } from './image-cat';
 import { pixelViewport } from './pixel-viewport';
 import { createImageStreetCar } from './image-street-car';
 import { createImageCurtain, curtainArt } from './image-curtain';
+import { createImageFan, fanArt } from './image-fan';
 
 type Frame = readonly [number, number, number, number];
 
@@ -15,7 +16,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -31,6 +32,7 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${generatedArt.catStretchMid}`),
     Assets.load<Texture>(`${baseUrl}${curtainArt.image}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.catTurnAtlas}`),
+    Assets.load<Texture>(`${baseUrl}${fanArt.image}`),
   ]);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
@@ -41,6 +43,8 @@ export async function createScene(host: HTMLElement): Promise<{
   const imageCat = createImageCat(atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, stretchAtlas, stretchMid, turnAtlas);
   const imageStreetCar = createImageStreetCar(streetCar, [background, wideBackground, portraitBackground]);
   const imageCurtain = createImageCurtain(curtainAtlas);
+  const imageFan = createImageFan(fanAtlas, [background, portraitBackground]);
+  let fan: ReturnType<typeof imageFan.createSprite> | undefined;
   let curtain: Sprite | undefined;
   let roadCar: ReturnType<typeof imageStreetCar.createSprite>;
   const crops: Texture[] = [];
@@ -141,6 +145,11 @@ export async function createScene(host: HTMLElement): Promise<{
       art.height = h * scale;
       return art;
     });
+    fan = undefined;
+    if (!layout.wide) {
+      fan = imageFan.createSprite(layout.portrait ? 1 : 0, scale, originX, originY);
+      app.stage.addChild(fan.root);
+    }
     curtain = undefined;
     windows = composition.windows.map(([x, y, w, h], index) => {
       // The existing dark overlay is added AFTER the curtain, so both inherit one window fade.
@@ -191,6 +200,7 @@ export async function createScene(host: HTMLElement): Promise<{
   function animate() {
     imageStreetCar.update(roadCar, elapsed);
     if (curtain) imageCurtain.update(curtain, elapsed);
+    if (fan) imageFan.update(fan, elapsed);
     stars.forEach((art, index) => { art.alpha = 0.4 + Math.sin(elapsed * 0.24 + index * 1.7) * 0.35; });
     windows.forEach((art, index) => { art.alpha = 0.92 * (1 - windowBrightness(elapsed, 5 + index * 11, 29 + index * 7)); });
     cloud.x = travelPosition(elapsed, width, cloud.width, scale * 1.2, width * 0.12);
@@ -229,6 +239,7 @@ export async function createScene(host: HTMLElement): Promise<{
       imageCat.destroy();
       imageStreetCar.destroy();
       imageCurtain.destroy();
+      imageFan.destroy();
       // Assets owns the shared image sources; sprite/crop disposal must not destroy them.
     },
   };

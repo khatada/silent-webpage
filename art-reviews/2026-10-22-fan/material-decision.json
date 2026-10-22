@@ -1,0 +1,19 @@
+{
+  "decision": "accepted-as-material",
+  "reviewedBy": "LLM",
+  "image": "public/art/rooftop-fan.png",
+  "report": "public/art/rooftop-fan.png.json",
+  "reason": "親と実装LLMが4px補正後350x280の4位相を実閲覧。暗い3枚羽根と円盤、位相差を確認し素材採用。実寸・背景との明度・中心固定・外周の合成採否は局所QAで判断する。",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "originalSha256": "dce4e161d04eb1c42fdd73dbfe9f98c0c4086cea0bded4af5349ba63b33e8ec9",
+    "prompt": "Four generated rotation phases of one very dark navy/violet three-blade recessed AC fan, 0/30/60/90 degrees, fixed circular disc and hub, transparent surroundings, no housing, grille, labels, scenery or glow; reference actual generated rooftop AC crops.",
+    "references": [
+      "art-reviews/2026-10-22-fan/normal-reference.png",
+      "art-reviews/2026-10-22-fan/portrait-reference.png"
+    ]
+  },
+  "correctedSha256": "81a13ba382962afb802ced4034338ebffe6d5b14beb66fa407eb0f3afc42fcc0",
+  "displayDecision": "accepted",
+  "displayReason": "親/実装LLMが局所20パネルと全景11サイズを実閲覧して採用。固定ハブ/面外/明度の比較結果はfan-motion/placement-check.json。"
+}
