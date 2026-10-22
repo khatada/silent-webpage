@@ -1,8 +1,10 @@
 # 実装の進行状況
 
-最終更新: 2026-10-21。別セッションの実装再開用。
+最終更新: 2026-10-22。別セッションの実装再開用。
 
 ## 現在の作業（再開時はまずここを参照）
+
+- CI復旧: `fix/stable-ci-runner`（main 4bdeac6から作成）。PR #31のCI 39768849572はPlaywright依存導入中のUbuntu resoluteミラー取得タイムアウトで15分制限に達し、ブラウザテスト未開始。共有CIのrunnerをubuntu-24.04へ固定。アプリの変更なし。コミット前verifyとPRのCIで復旧確認し、成功後にmainへ反映してPR #31を更新・再検証する。PR #31の失敗状態でのマージは行わない。
 
 - ブランチ: `feat/generated-settle`（main 0cd17baから作成）。C022「伏せて丸まる中間姿勢」を開始。imagegen原画と2px補正（627square）はart-reviews/2026-10-21-cat-settle保存済み。親/独立LLMとも補正後4姿勢を素材採用。public/art/cat-settle.pngへ同じ条件で補正出力。共有factory/timing/preview統合済み。新4枚共通.5倍率、床の支持帯で原点を整列。既存始点/終点を再使用し、境界の左右4組はRGBA一致。素材間の肩/首/毛色の小差は記録した上で、左右全6段階と前後/全景11構図を補正後LLMが採用。次: verify→commit/push→PR/CI/merge。
 - C021はPR #29でCI 39691339838成功後mainマージ済み（0cd17ba）。単体42件/採用画像22件でverify成功。Pages 39691591549も成功し公開済み。PR29添付toolは無応答で成否未確認。
