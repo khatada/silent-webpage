@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-street-car/original.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "aaf0eb87a64c20f38dc58e357ae7e061f02574d8b0298a762a515542457ea6c1"
+  },
+  "output": {
+    "path": "public/art/street-car.png",
+    "width": 627,
+    "height": 627,
+    "sha256": "b841c1d2375e18b3c7a09be6188151a3d3510c6adb50aba46eee6dbd283979ca"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

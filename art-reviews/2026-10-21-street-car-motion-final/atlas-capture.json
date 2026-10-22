@@ -1,0 +1,328 @@
+{
+  "sourceSha256": "afc90d0550077ddbfb9d8e2936f6e2a23fcc65d1e61eabc0364cb60d06f662f2",
+  "finalSourceSha256": "afc90d0550077ddbfb9d8e2936f6e2a23fcc65d1e61eabc0364cb60d06f662f2",
+  "metadata": {
+    "width": 1500,
+    "height": 1200,
+    "samples": [
+      {
+        "scene": 0,
+        "context": [
+          285,
+          300,
+          55,
+          100
+        ],
+        "scale": 3,
+        "visible": true,
+        "progress": 0.1,
+        "distance": 0.18999999999999995,
+        "alpha": 1,
+        "x": 309,
+        "y": 364.9451466856927,
+        "width": 5,
+        "desiredWidth": 5.050000000000001,
+        "nativeWidth": 15,
+        "height": 7.1875,
+        "seconds": -3
+      },
+      {
+        "scene": 0,
+        "context": [
+          285,
+          300,
+          55,
+          100
+        ],
+        "scale": 3,
+        "visible": true,
+        "progress": 0.25,
+        "distance": 0.4375,
+        "alpha": 1,
+        "x": 310.4188312683316,
+        "y": 353.3246749266736,
+        "width": 3.6666666666666665,
+        "desiredWidth": 3.8125,
+        "nativeWidth": 11,
+        "height": 5.270833333333333,
+        "seconds": 0
+      },
+      {
+        "scene": 0,
+        "context": [
+          285,
+          300,
+          55,
+          100
+        ],
+        "scale": 3,
+        "visible": true,
+        "progress": 0.45,
+        "distance": 0.6975,
+        "alpha": 1,
+        "x": 313.4240542795497,
+        "y": 341.3037828818012,
+        "width": 2.6666666666666665,
+        "desiredWidth": 2.5125,
+        "nativeWidth": 8,
+        "height": 3.833333333333333,
+        "seconds": 4
+      },
+      {
+        "scene": 0,
+        "context": [
+          285,
+          300,
+          55,
+          100
+        ],
+        "scale": 3,
+        "visible": true,
+        "progress": 0.65,
+        "distance": 0.8775000000000001,
+        "alpha": 1,
+        "x": 314.5151806936039,
+        "y": 332.817831676753,
+        "width": 1.6666666666666667,
+        "desiredWidth": 1.6124999999999998,
+        "nativeWidth": 5,
+        "height": 2.3958333333333335,
+        "seconds": 8
+      },
+      {
+        "scene": 0,
+        "context": [
+          285,
+          300,
+          55,
+          100
+        ],
+        "scale": 3,
+        "visible": true,
+        "progress": 0.9,
+        "distance": 0.99,
+        "alpha": 0.6666666666666665,
+        "x": 314.9604229137636,
+        "y": 327.474925034837,
+        "width": 1,
+        "desiredWidth": 1.05,
+        "nativeWidth": 3,
+        "height": 1.4375,
+        "seconds": 13
+      },
+      {
+        "scene": 1,
+        "context": [
+          337,
+          142,
+          43,
+          65
+        ],
+        "scale": 4,
+        "visible": true,
+        "progress": 0.1,
+        "distance": 0.18999999999999995,
+        "alpha": 1,
+        "x": 358,
+        "y": 191.58322291895254,
+        "width": 3.5,
+        "desiredWidth": 3.43,
+        "nativeWidth": 14,
+        "height": 5.03125,
+        "seconds": -3
+      },
+      {
+        "scene": 1,
+        "context": [
+          337,
+          142,
+          43,
+          65
+        ],
+        "scale": 4,
+        "visible": true,
+        "progress": 0.25,
+        "distance": 0.4375,
+        "alpha": 1,
+        "x": 357.7094470406001,
+        "y": 181.9322585684009,
+        "width": 2.75,
+        "desiredWidth": 2.6875,
+        "nativeWidth": 11,
+        "height": 3.953125,
+        "seconds": 0
+      },
+      {
+        "scene": 1,
+        "context": [
+          337,
+          142,
+          43,
+          65
+        ],
+        "scale": 4,
+        "visible": true,
+        "progress": 0.45,
+        "distance": 0.6975,
+        "alpha": 1,
+        "x": 357,
+        "y": 171.80828982640452,
+        "width": 2,
+        "desiredWidth": 1.9075,
+        "nativeWidth": 8,
+        "height": 2.875,
+        "seconds": 4
+      },
+      {
+        "scene": 1,
+        "context": [
+          337,
+          142,
+          43,
+          65
+        ],
+        "scale": 4,
+        "visible": true,
+        "progress": 0.65,
+        "distance": 0.8775000000000001,
+        "alpha": 1,
+        "x": 357,
+        "y": 164.78186943383324,
+        "width": 1.25,
+        "desiredWidth": 1.3674999999999997,
+        "nativeWidth": 5,
+        "height": 1.796875,
+        "seconds": 8
+      },
+      {
+        "scene": 1,
+        "context": [
+          337,
+          142,
+          43,
+          65
+        ],
+        "scale": 4,
+        "visible": true,
+        "progress": 0.9,
+        "distance": 0.99,
+        "alpha": 0.6666666666666665,
+        "x": 357,
+        "y": 160.39035668847617,
+        "width": 1,
+        "desiredWidth": 1.03,
+        "nativeWidth": 4,
+        "height": 1.4375,
+        "seconds": 13
+      },
+      {
+        "scene": 2,
+        "context": [
+          375,
+          922,
+          70,
+          190
+        ],
+        "scale": 2,
+        "visible": true,
+        "progress": 0.1,
+        "distance": 0.18999999999999995,
+        "alpha": 1,
+        "x": 409.0174473002717,
+        "y": 1065.7976113168481,
+        "width": 8.5,
+        "desiredWidth": 8.290000000000001,
+        "nativeWidth": 17,
+        "height": 12.21875,
+        "seconds": -3
+      },
+      {
+        "scene": 2,
+        "context": [
+          375,
+          922,
+          70,
+          190
+        ],
+        "scale": 2,
+        "visible": true,
+        "progress": 0.25,
+        "distance": 0.4375,
+        "alpha": 1,
+        "x": 412.1728389736276,
+        "y": 1029.1950679059196,
+        "width": 6,
+        "desiredWidth": 6.0625,
+        "nativeWidth": 12,
+        "height": 8.625,
+        "seconds": 0
+      },
+      {
+        "scene": 2,
+        "context": [
+          375,
+          922,
+          70,
+          190
+        ],
+        "scale": 2,
+        "visible": true,
+        "progress": 0.45,
+        "distance": 0.6975,
+        "alpha": 1,
+        "x": 411.4800309109448,
+        "y": 990.8642101944245,
+        "width": 3.5,
+        "desiredWidth": 3.7225,
+        "nativeWidth": 7,
+        "height": 5.03125,
+        "seconds": 4
+      },
+      {
+        "scene": 2,
+        "context": [
+          375,
+          922,
+          70,
+          190
+        ],
+        "scale": 2,
+        "visible": true,
+        "progress": 0.65,
+        "distance": 0.8775000000000001,
+        "alpha": 1,
+        "x": 405.52753305951586,
+        "y": 964.9715859547412,
+        "width": 2,
+        "desiredWidth": 2.1024999999999996,
+        "nativeWidth": 4,
+        "height": 2.875,
+        "seconds": 8
+      },
+      {
+        "scene": 2,
+        "context": [
+          375,
+          922,
+          70,
+          190
+        ],
+        "scale": 2,
+        "visible": true,
+        "progress": 0.9,
+        "distance": 0.99,
+        "alpha": 0.6666666666666665,
+        "x": 399.5328598415931,
+        "y": 949.3854355881422,
+        "width": 1,
+        "desiredWidth": 1.09,
+        "nativeWidth": 2,
+        "height": 1.4375,
+        "seconds": 13
+      }
+    ]
+  },
+  "method": "Image-generation textures composited by /scripts/generated-street-car-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

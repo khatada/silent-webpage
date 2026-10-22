@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-street-car-final/small-phone-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "57284707da9746d9a72ad2a7ec2d8e5224e6d7abe4c15615fbdf804eb6fc43f2"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-street-car-final/small-phone-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "7de3551e8dc72e447d6707b11d8566d7d94c31d660b35bfcde038296e1f483d6"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

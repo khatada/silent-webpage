@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-21-street-car-motion/atlas-source.png",
+    "width": 1500,
+    "height": 1200,
+    "sha256": "ac5ff615d6fe6232b42225ecd1c5fe5847b8f9243df11604c2bf04b93091e368"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-21-street-car-motion/atlas-corrected.png",
+    "width": 1500,
+    "height": 1200,
+    "sha256": "9702f6e13f4f1b04da2f31b47a3effebefbba52cfe2291f6202cec072fa15796"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
