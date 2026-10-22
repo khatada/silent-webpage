@@ -6,7 +6,7 @@ import { walkingFrame, walkingPhaseOffsets, walkingSourceStride, walkingStride }
 
 /** Compose reviewed generated images with exactly the production frame selection and alignment. */
 export async function renderGeneratedCatReview() {
-  const [atlas, rest, walk, back, lift, background, groom, settle] = await Promise.all([
+  const [atlas, rest, walk, back, lift, background, groom, settle, stretch, stretchMid] = await Promise.all([
     Assets.load<Texture>(`/${generatedArt.atlas}`),
     Assets.load<Texture>(`/${generatedArt.catRestAtlas}`),
     Assets.load<Texture>(`/${generatedArt.catWalkAtlas}`),
@@ -15,11 +15,13 @@ export async function renderGeneratedCatReview() {
     Assets.load<Texture>(`/${generatedArt.background}`),
     Assets.load<Texture>(`/${generatedArt.catGroomAtlas}`),
     Assets.load<Texture>(`/${generatedArt.catSettleAtlas}`),
+    Assets.load<Texture>(`/${generatedArt.catStretchAtlas}`),
+    Assets.load<Texture>(`/${generatedArt.catStretchMid}`),
   ]);
-  for (const texture of [atlas, rest, walk, back, lift, background, groom, settle]) texture.source.scaleMode = 'nearest';
-  const cat = createImageCat(atlas, rest, walk, back, lift, groom, settle);
+  for (const texture of [atlas, rest, walk, back, lift, background, groom, settle, stretch, stretchMid]) texture.source.scaleMode = 'nearest';
+  const cat = createImageCat(atlas, rest, walk, back, lift, groom, settle, stretch, stretchMid);
   const app = new Application();
-  await app.init({ width: 1920, height: 1920, resolution: 1, antialias: false,
+  await app.init({ width: 1920, height: 2400, resolution: 1, antialias: false,
     background: '#171e30', preference: 'webgl', autoStart: false });
   document.body.append(app.canvas);
   const sceneScale = 4;
@@ -112,8 +114,28 @@ export async function renderGeneratedCatReview() {
         floorCrop: [280, 420, 120, 92] });
     });
   }
+  const stretchingTimes = [29.9, 30.1, 30.35, 30.6, 30.85, 31.1, 31.35, 31.6];
+  for (const direction of [1, -1] as const) {
+    const rowY = direction === 1 ? 1920 : 2160;
+    const footY = rowY + 220;
+    stretchingTimes.forEach((seconds, index) => {
+      const panelX = index * 240;
+      const floorSprite = new Sprite(floor);
+      floorSprite.position.set(panelX, rowY);
+      floorSprite.width = 240;
+      floorSprite.height = 240;
+      app.stage.addChild(floorSprite);
+      const pose = catPose(seconds + (direction === 1 ? 0 : 32), 640);
+      const sprite = cat.createSprite();
+      const x = panelX + 120;
+      cat.update(sprite, { ...pose, x }, sceneScale, footY);
+      app.stage.addChild(sprite);
+      samples.push({ kind: 'stretching-sequence', seconds, direction, pose, x, footY,
+        floorCrop: [280, 420, 120, 92] });
+    });
+  }
   app.renderer.render(app.stage);
   app.canvas.dataset.ready = 'true';
-  return { width: 1920, height: 1920, sceneScale, walkingPoses: 16, restingPoses: 7,
-    movingPanels: 16, groomingSequencePoses: 22, settlingSequencePoses: 16, samples };
+  return { width: 1920, height: 2400, sceneScale, walkingPoses: 16, restingPoses: 7,
+    movingPanels: 16, groomingSequencePoses: 22, settlingSequencePoses: 16, stretchingSequencePoses: 16, samples };
 }

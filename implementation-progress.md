@@ -4,15 +4,14 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- PR #34追加修正: PR #33の成功ログで `file:/etc/apt/apt-mirrors.txt` とAzure HTTP archiveの継続利用が判明。初回source直接置換はmirror+file形式で無効だった。既知のapt-mirrors.txtとapt-mirrors-security.txtも対象へ追加。PR #33成功はミラー修正の有効性を証明しない。新CIのGet/Hitが対象URIを公式HTTPSで取得するまでPR #34をマージしない。
-
-- CIミラー対策: `fix/official-ubuntu-mirror`をmain a7e7eb0から作成。PR #32のUbuntu24固定後もPages 39771312848とPR #33のCI 39772163427でPlaywright依存導入の長時間待ちを観測。既知のAzure apt URIだけを公式HTTPS archiveへ置換するstepを追加。アプリ・画像変更なし。必須verify→PR/CI確認待ち。
-- 先行状況: CI修正PR #32はCI 39771025641成功後main 24b7d24へ、車PR #31はCI 39771598524成功後main a7e7eb0へマージ済み。猫C023のPR #33は未マージ。Pagesの完了は確認待ち。
-
-- ブランチ: `feat/generated-street-car`（main 4bdeac6から作成）。C016「路地を遠ざかる車」は実装・最終画像採用完了。最終source `afc90d0550077ddbfb9d8e2936f6e2a23fcc65d1e61eabc0364cb60d06f662f2` の補正後15パネル/11サイズ全景を親・独立LLMが採用。manifestは25画像。追加独立レビューでも最終atlasとdesktop全景を実閲覧した。
-- C022はPR #30でCI 39693202139成功後mainマージ（4bdeac6）。単体43件/採用画像23件でverify成功。Pages 39693505226も成功し公開済み。PR30添付toolは無応答で成否未確認。
-- C022の中間4素材は共通.5倍率と支持帯で整列。素材間の肩/首/毛色の小差を記録してLLM採用。端点の左右4組はRGBA一致。
-- CI復旧: PR #32はCI 39771025641成功後mainへマージ済み（24b7d24）。共有CIをubuntu-24.04へ固定。PR #31の初回CI 39768849572はPlaywright依存導入時のUbuntu resoluteミラー取得タイムアウトでテスト未開始のまま15分制限に達した。mainの修正を車ブランチへ統合し、新しいCIの成功確認待ち。失敗状態ではマージしない。
+- ブランチ: `feat/generated-cat-stretch`、worktree `/workspace/silent-webpage-stretch`。C023をmain a7e7eb0へrebase後、PR #34のCIミラー修正を統合し、描画sourceと採用画像を維持。保存stashは再popしない。
+- C023「丸まりから伸びへの中間姿勢」は素材4中間、左右各8コマ列、最終11サイズ全景とatlasを親/独立LLMが採用済み。端点左右4組RGBA完全一致。最終source `34cc745e33176b6a5582420b84c270f8aaefc246abc569ef8fe79cca231b8a94`、manifest27画像。必須verifyは型・Lint・単体47件・採用27画像・build成功。
+- C016はPR #31でCI 39771598524成功後mainへマージ済み（a7e7eb04aef7e7cbae2cda8988574a8aaccd524a）。車の最終15パネル/11サイズ全景は採用済み。Pages 39771950954も成功済み。
+- CI復旧: PR #32はCI 39771025641成功後main 24b7d24へマージ済み。共有CIはubuntu-24.04。Pages 39771312848も成功済み。PR #31初回CI 39768849572はUbuntu resoluteの依存取得でtimeoutし、テスト未開始。修正統合後のCI成功で解消した。
+- C022はPR #30でCI 39693202139成功後main 4bdeac6へマージ。Pages 39693505226成功。補正後中間4素材は共通.5倍率と支持帯で整列、端点左右4組RGBA一致。
+- CIミラー対策: PR #34の修正版はCI 39774106648成功後main 283a78b2afcb3748be9998a3c3f9a015822cf44dへマージ済み。job 119808606726のGet/Hitでhttps://archive.ubuntu.comからnoble/依存を取得し、対象Azure HTTP URIが出ないことを確認。mirror+file先のapt-mirrors.txt/securityも対象にする修正を統合した。
+- C023: 旧HEADのCI 39773133577は成功。修正済みmain統合後の最終HEADは新CIの成功確認が必要で、PR #33は未マージ。
+- 添付: PR #33は1回呼び出し後60秒超無応答で中断し成否未確認。PR #34はNo handler registeredで添付できなかった。CI/マージは親が管理する。
 - C021はPR #29でCI 39691339838成功後mainマージ済み（0cd17ba）。単体42件/採用画像22件でverify成功。Pages 39691591549も成功し公開済み。PR29添付toolは無応答で成否未確認。
 - C020はPR #28でCI 39689614717成功後mainマージ済み（5307f96）。Pages 39689876290も成功し公開済み。PR28添付は無応答のため成功未確認。
 - C018はPR #27でCI 39688627541成功後mainへマージ済み（027a6e7）。Pages 39688936144も成功、公開済み。PR27添付toolは1回無応答で中断、成否未確認。
@@ -20,8 +19,7 @@
 - PR #26: 単体41件とverify成功、素材8枚＋全景11枚＋歩行/実移動atlasの20画像を補正・LLM採用。CI 39687474902成功。Pages 39687834998も成功、公開済み。
 - 画像生成の初回8枚は中間不足で不採用。v2の6枚と個別追加した後方支持・回収で8姿勢。原画・補正・部分参照編集・不採用理由も保存済み。
 - PR #26添付: codex_app.attach_artifactを親・補助とも呼び出したが長時間応答なく中断。GitHubのPR作成・マージは成功済み。添付成否は未確認で開発は妨げない。
-- PR #31は初回CI39768849572でUbuntu26の依存パッケージ配布ミラー再試行により15分タイムアウト。テスト本体未実行。Ubuntu24固定を別PR #32に分離し、同じrunner指定をこのブランチにも適用して再CIする。PR31/32添付toolは親で1回ずつ実行したが60秒超無応答で中断、成否未確認。
-- 次: 必須verify成功（型・Lint・単体46件・補正/採用25画像・build）。commit/push/PR→CI→merge/Pages確認。公開は未実施。
+- 次: C023のrebase後verify→push/PR→CI確認→merge/Pages確認。QAと採用は完了しPR #33作成済み、新CI待ち。PR #31/32添付は60秒超無応答で中断し、成否未確認。要求事項は変更しない。
 - ユーザーの停止指示はなく継続改善は有効。旧stashは古いdocsを含むため一括適用しない。
 
 ## 決定事項
@@ -185,3 +183,16 @@
 
 - 車幅はnative canvasの整数pxへ丸めてからシーン倍率へ戻す。固定遮蔽cropは背景と同じsampling phaseを保ち、座標を独立に丸めない。
 - 最終15パネルと11サイズ全景を採用し、既存10公開素材と猫/窓atlasの採用記録を保持。小型車の尾灯は実寸で判別しにくい。静止QAは連続再生の全時刻や実機長時間評価を代替しない。
+
+## C023 初回連続QA（2026-10-22）
+
+- 素材と左右各8コマ列を採用。支持帯は概ね揃い、目立つ浮き・沈み・輪郭切れなし。始点前→段階0と最終段階→終点後の左右4組はRGBA一致。
+- 限界: midの頭/首がやや小さく、尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差が残る。最終統合sourceで補正後11サイズ全景と最終atlasを採用済み。
+- 後続候補C024は伸び→歩行の中間姿勢。今回のC023では実装しない。
+
+
+## C023 最終画像採用（2026-10-22）
+
+- 最終source `34cc745e33176b6a5582420b84c270f8aaefc246abc569ef8fe79cca231b8a94` の補正後全景11サイズを親/独立LLMが実閲覧して採用。全景は初期walkingのレイアウト/読み込み、C023動作はatlasで確認。
+- 最終atlasは親も実閲覧して採用。trial/finalのSHA256が `fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04` で完全一致し、独立LLM採用済みの左右列も同一bytes。endpoint-check.jsonを最終証跡へ複製し、端点左右4組のRGBA一致を保持。
+- manifestは公開13/全景11/atlas3の計27画像。要求事項変更なし。必須verify・コミットは未実施。先行PR31未マージ、runner固定PR32はCI進行中。

@@ -1,0 +1,25 @@
+{
+  "method": "Exact RGBA comparison of equal-floor 240x240 corrected production-factory panels.",
+  "checks": [
+    {
+      "row": 1920,
+      "boundary": "held-curled-to-stage0",
+      "rgbaIdentical": true
+    },
+    {
+      "row": 1920,
+      "boundary": "stage5-to-held-stretch",
+      "rgbaIdentical": true
+    },
+    {
+      "row": 2160,
+      "boundary": "held-curled-to-stage0",
+      "rgbaIdentical": true
+    },
+    {
+      "row": 2160,
+      "boundary": "stage5-to-held-stretch",
+      "rgbaIdentical": true
+    }
+  ]
+}

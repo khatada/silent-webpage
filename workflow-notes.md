@@ -60,6 +60,12 @@
 
 - PlaywrightのOS依存パッケージ導入には安定版runnerを明示する。PR #31のCI 39768849572ではubuntu-latestがUbuntu 26.04（resolute）へ移り、azure.archiveの取得が30秒単位でタイムアウトし、テスト開始前に15分制限へ達した。共有CIをubuntu-24.04へ固定し、Pagesの再利用時にも同じ環境で検証する。
 
+- 中間atlasは枚数より、頭上げ・胸上げ・前脚送り・腰上げなど必要な動作が埋まるかを評価する。完成形に近い重複姿勢を増やさず、不足動作を単独poseとして画像生成で追加すると、既存の採用姿勢を保って改善できる。左右連続列と同じ床で支持帯を確認し、端点のRGBA一致と途中の自然さを別々に評価する。
+
+- PRのCI待ち中に次の独立した改善を進める場合は、別worktreeを使って未マージPRと変更を混ぜない。描画の最終全景は先行PRがmainへ入った後の統合ソースで撮影する。QAのブラウザはこの環境の `ART_BROWSER_PATH=/usr/bin/chromium` を明示し、存在しない同梱browserを毎回試さない。
+
+- 追加worktreeで依存関係を共有する場合も、最初に `npm run prepare` を実行してそのworktreeのHusky実体を用意する。node_modulesの共有だけでは無視対象の `.husky/_` が作られず、フックが動かないことがある。必須verifyは独立して実行し、フックの有無に依存して省略しない。
+
 - Ubuntu 24.04固定だけではAzureのaptミラー遅延は解消しない。PR #31初回ログのhttp://azure.archive.ubuntu.com/ubuntuは30秒再試行を繰り返し、公式archiveへのfallbackは成功した。Playwright導入前に既知のsources.list/ubuntu.sourcesとapt-mirrors.txt/apt-mirrors-security.txtを確認し、そのURIを公式HTTPS archiveへ置換する。TLS検証、依存導入、テスト、15分制限は維持し、存在する対応sourceがない場合は明示的に失敗させる。
 
 - CI成功だけではミラー置換成功とは判断しない。PR #33成功ログの先頭はfile:/etc/apt/apt-mirrors.txtで、その後もAzure HTTPへ接続していた。mirror+file参照はsourcesのURI置換だけでは変わらないため、既知の参照先mirror listも対象にし、再CIのGet/Hitで実際のHTTPS接続先を確認する。

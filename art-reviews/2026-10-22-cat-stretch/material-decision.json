@@ -1,0 +1,77 @@
+{
+  "decision": "accepted-as-material",
+  "reviewedBy": "LLM",
+  "date": "2026-10-22",
+  "scope": "素材、左右各8コマ連続列、最終統合sourceの補正後11サイズ全景をLLM実閲覧して採用済み。manifest更新済み。必須verifyは未実施。",
+  "materials": [
+    {
+      "image": "public/art/cat-stretch.png",
+      "report": "public/art/cat-stretch.png.json",
+      "decision": "accepted-as-material",
+      "reviewedBy": "LLM",
+      "reason": "補正後768x512画像を独立LLMが実閲覧。毛色・琥珀眼・顔/耳/尾は既存referenceと同一個体として許容。上段左の頭上げ、上段右の胸上げ、下段右の腰高/胸低の伸びを素材採用。下段左は下段右に似て中間性が不足するため不使用。周辺の紫haloは代表画素でalpha0を確認。右下の尾は等分セル上端へ達するため不等cropで輪郭を保持し、実表示を別途確認する。",
+      "selectedFrames": [
+        "top-left",
+        "top-right",
+        "bottom-right"
+      ],
+      "unusedFrames": [
+        "bottom-left"
+      ],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "original": "art-reviews/2026-10-22-cat-stretch/original.png",
+        "originalSha256": "04d61f42eca2ba4c703db454006f9b14f7bf94143cdd0a47fcd92975035425e5",
+        "prompt": "Four intermediate poses of the same generated charcoal cat between curled rest and forward stretch, using the generated curled/stretch reference; preserve identity, fine navy-violet pixel art and transparent background.",
+        "promptType": "summary"
+      },
+      "correctedSha256": "cec25bf4c773e21baa620b2d8eac2ec62a0d11ffd0273ee735668b35fcacb050",
+      "grid": {
+        "cellSize": 2,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 1
+      }
+    },
+    {
+      "image": "public/art/cat-stretch-mid.png",
+      "report": "public/art/cat-stretch-mid.png.json",
+      "decision": "accepted-as-material",
+      "reviewedBy": "LLM",
+      "reason": "補正後887x443画像を独立LLMが実閲覧。既存の毛色・顔・琥珀眼を保ち、腰を上げ始め、胸がまだ高く、前脚が途中まで伸びた姿勢を確認。初回の胸上げと完成形に近い伸びの間を補う1姿勢として素材採用。尾の形・顔の輪郭には生成素材間の小差があるため共通床と左右の実表示で接地・体格を確認する。",
+      "selectedFrames": [
+        "single"
+      ],
+      "unusedFrames": [],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "original": "art-reviews/2026-10-22-cat-stretch/mid-original.png",
+        "originalSha256": "867eccbde282cf81d6918d05112e69183f5f9ff297a4d0b4f0022992d39bd849",
+        "prompt": "One additional intermediate of the same charcoal cat between raised-chest loaf and full forward stretch: hips beginning to rise, chest still elevated, forelegs partly extended; preserve identity, transparent background and fine pixel art.",
+        "promptType": "summary"
+      },
+      "correctedSha256": "b188f5e40d658ca8e0ac37dcf7ccc4f657ef0383fddb528aaf9d77959dc26cc4",
+      "grid": {
+        "cellSize": 2,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 1
+      }
+    }
+  ],
+  "sequenceReview": {
+    "decision": "accepted",
+    "reviewedBy": "LLM",
+    "reason": "独立LLMが補正済みatlas下部の無変形cropで左右各8コマを実閲覧。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯が概ね揃い、目立つ浮き・沈み・輪郭切れなしとして採用。midの頭/首がやや小さく、尾/腰の段差と生成中間→既存stretchの背/顔/尾の小差は残る。完全な連続変形ではない。",
+    "endpointCheck": "始点前→段階0、最終段階→終点後の左右4組はRGBA完全一致（親の検証報告）。",
+    "finalAtlasSha256": "fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04",
+    "trialAndFinalBytesIdentical": true
+  },
+  "finalSceneReview": {
+    "decision": "accepted",
+    "reviewedBy": "LLM",
+    "sourceSha256": "34cc745e33176b6a5582420b84c270f8aaefc246abc569ef8fe79cca231b8a94",
+    "sizes": 11,
+    "scope": "初期walking全景でlayoutとasset loadを確認。C023の姿勢は連続列atlasで評価。"
+  }
+}
