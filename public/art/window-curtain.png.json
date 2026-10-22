@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-22-curtain/original.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "d7dafd676b15faa4ae8450cc0557cba2d5a9062b37c53c93f27eb3e23b171398"
+  },
+  "output": {
+    "path": "public/art/window-curtain.png",
+    "width": 384,
+    "height": 256,
+    "sha256": "d225b0eeeaea8e68f686ecb4f0f61104e098d644a4bb43b34539d1c7305af568"
+  },
+  "grid": {
+    "cellSize": 4,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,97 @@
+{
+  "decision": "accepted",
+  "reviewedBy": "LLM",
+  "date": "2026-10-22",
+  "image": "public/art/window-curtain.png",
+  "report": "public/art/window-curtain.png.json",
+  "reason": "親/実装担当LLMの素材実閲覧に加え、docs担当LLMも4px補正後384x256の3姿勢を実閲覧。暖色の布のひだと上固定/裾の変化、独立した輪郭を確認して素材採用。極小窓での動作と消灯への合成は別QAとして扱う。実装担当は補正後36パネルatlasを実閲覧し採用と報告。 最終sourceでの新36パネルmotion atlasを親/実装LLMが実閲覧し採用。標準の実寸では非常に小さく、横長は対象外。",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "original": "art-reviews/2026-10-22-curtain/original.png",
+    "originalSha256": "d7dafd676b15faa4ae8450cc0557cba2d5a9062b37c53c93f27eb3e23b171398",
+    "prompt": "Three warm taupe/amber sheer curtain poses, only cloth on transparent, no frames or walls, same fixed top; lower third bends right then returns halfway; fine square clusters matching existing windows.",
+    "promptType": "summary",
+    "references": [
+      "art-reviews/2026-10-22-curtain/reference-normal.png",
+      "art-reviews/2026-10-22-curtain/reference-portrait.png"
+    ],
+    "referenceReview": "親LLMが参照2画像を実閲覧後、image_gen.imagegenで原画生成。",
+    "referenceSources": [
+      {
+        "image": "art-reviews/2026-10-22-curtain/reference-normal.png",
+        "publicSource": "public/art/tokyo-night.png",
+        "windowsIndex": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ]
+      },
+      {
+        "image": "art-reviews/2026-10-22-curtain/reference-portrait.png",
+        "publicSource": "public/art/tokyo-portrait.png",
+        "windowsIndex": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ]
+      }
+    ]
+  },
+  "correctedSha256": "d225b0eeeaea8e68f686ecb4f0f61104e098d644a4bb43b34539d1c7305af568",
+  "grid": {
+    "cellSize": 4,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "crops": [
+    [
+      46,
+      18,
+      84,
+      208
+    ],
+    [
+      159,
+      18,
+      84,
+      208
+    ],
+    [
+      277,
+      18,
+      84,
+      208
+    ]
+  ],
+  "displayQa": {
+    "decision": "accepted",
+    "reviewedBy": "LLM",
+    "panels": 36,
+    "image": "art-reviews/2026-10-22-curtain-motion-final/atlas-corrected.png",
+    "sourceSha256": "44ed047ce351e43eee36864186f25dc4cf7d64d3f682e787ef49080d578e94c7",
+    "reason": "親/実装担当LLMが修正順序0→2→1→2→0を用いた最終36パネルを実閲覧して採用。旧trialは採用しない。"
+  },
+  "timing": {
+    "periodSeconds": 12,
+    "frameOrder": [
+      0,
+      2,
+      1,
+      2,
+      0
+    ],
+    "reason": "frame0 straight, frame1 maximum bend, frame2 half bend; monotonic bend and return."
+  },
+  "finalSceneReview": {
+    "decision": "accepted",
+    "reviewedBy": "LLM",
+    "sizes": 11,
+    "directory": "art-reviews/2026-10-22-curtain-final-v2",
+    "sourceSha256": "44ed047ce351e43eee36864186f25dc4cf7d64d3f682e787ef49080d578e94c7"
+  }
+}

@@ -4,13 +4,13 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `feat/generated-cat-stretch`、worktree `/workspace/silent-webpage-stretch`。C023をmain a7e7eb0へrebase後、PR #34のCIミラー修正を統合し、描画sourceと採用画像を維持。保存stashは再popしない。
-- C023「丸まりから伸びへの中間姿勢」は素材4中間、左右各8コマ列、最終11サイズ全景とatlasを親/独立LLMが採用済み。端点左右4組RGBA完全一致。最終source `34cc745e33176b6a5582420b84c270f8aaefc246abc569ef8fe79cca231b8a94`、manifest27画像。必須verifyは型・Lint・単体47件・採用27画像・build成功。
-- C016はPR #31でCI 39771598524成功後mainへマージ済み（a7e7eb04aef7e7cbae2cda8988574a8aaccd524a）。車の最終15パネル/11サイズ全景は採用済み。Pages 39771950954も成功済み。
-- CI復旧: PR #32はCI 39771025641成功後main 24b7d24へマージ済み。共有CIはubuntu-24.04。Pages 39771312848も成功済み。PR #31初回CI 39768849572はUbuntu resoluteの依存取得でtimeoutし、テスト未開始。修正統合後のCI成功で解消した。
+- ブランチ: `feat/generated-window-curtain`、worktree `/workspace/silent-webpage-curtain`。C011だけを最新main d6a1a6eへrebase。標準index8/縦index6、横長は省略。0→2→1→2→0/12秒のsource `44ed047ce351e43eee36864186f25dc4cf7d64d3f682e787ef49080d578e94c7` を維持し、11全景と36パネルatlasを親/実装LLMが採用済み。manifest29画像、必須verify成功（型・Lint・単体49件・採用29画像・build）。コミット済み変更のrebaseとPR作成待ち。
+- C023はPR #33の最終CI 39774773442成功後main d6a1a6edf26f065fdc37533048e0e1841e42b3f0へマージ済み。Pagesは確認待ち。左右4端点RGBA一致、最終全景/atlas採用済み。
+- C016はPR #31でCI 39771598524成功後main a7e7eb0へマージ、Pages 39771950954成功で公開済み。
+- CI #32はCI 39771025641後main 24b7d24へマージ、Pages 39771312848成功。Ubuntu24固定を維持。初回PR31の依存導入timeoutはテスト開始前だった。
 - C022はPR #30でCI 39693202139成功後main 4bdeac6へマージ。Pages 39693505226成功。補正後中間4素材は共通.5倍率と支持帯で整列、端点左右4組RGBA一致。
 - CIミラー対策: PR #34の修正版はCI 39774106648成功後main 283a78b2afcb3748be9998a3c3f9a015822cf44dへマージ済み。job 119808606726のGet/Hitでhttps://archive.ubuntu.comからnoble/依存を取得し、対象Azure HTTP URIが出ないことを確認。mirror+file先のapt-mirrors.txt/securityも対象にする修正を統合した。
-- C023: 旧HEADのCI 39773133577は成功。修正済みmain統合後の最終HEADは新CIの成功確認が必要で、PR #33は未マージ。
+- C023の旧CI 39773133577成功はミラー変更の有効性を示さなかった。修正後の最終CI 39774773442成功を確認してPR #33をマージ済み。
 - 添付: PR #33は1回呼び出し後60秒超無応答で中断し成否未確認。PR #34はNo handler registeredで添付できなかった。CI/マージは親が管理する。
 - C021はPR #29でCI 39691339838成功後mainマージ済み（0cd17ba）。単体42件/採用画像22件でverify成功。Pages 39691591549も成功し公開済み。PR29添付toolは無応答で成否未確認。
 - C020はPR #28でCI 39689614717成功後mainマージ済み（5307f96）。Pages 39689876290も成功し公開済み。PR28添付は無応答のため成功未確認。
@@ -19,7 +19,7 @@
 - PR #26: 単体41件とverify成功、素材8枚＋全景11枚＋歩行/実移動atlasの20画像を補正・LLM採用。CI 39687474902成功。Pages 39687834998も成功、公開済み。
 - 画像生成の初回8枚は中間不足で不採用。v2の6枚と個別追加した後方支持・回収で8姿勢。原画・補正・部分参照編集・不採用理由も保存済み。
 - PR #26添付: codex_app.attach_artifactを親・補助とも呼び出したが長時間応答なく中断。GitHubのPR作成・マージは成功済み。添付成否は未確認で開発は妨げない。
-- 次: C023のrebase後verify→push/PR→CI確認→merge/Pages確認。QAと採用は完了しPR #33作成済み、新CI待ち。PR #31/32添付は60秒超無応答で中断し、成否未確認。要求事項は変更しない。
+- 次: C011のrebase後verify→push/PR→CI→merge/Pages確認。49テスト/29画像のQAとコミット前検証は完了済み。要求事項は変更しない。
 - ユーザーの停止指示はなく継続改善は有効。旧stashは古いdocsを含むため一括適用しない。
 
 ## 決定事項
@@ -196,3 +196,17 @@
 - 最終source `34cc745e33176b6a5582420b84c270f8aaefc246abc569ef8fe79cca231b8a94` の補正後全景11サイズを親/独立LLMが実閲覧して採用。全景は初期walkingのレイアウト/読み込み、C023動作はatlasで確認。
 - 最終atlasは親も実閲覧して採用。trial/finalのSHA256が `fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04` で完全一致し、独立LLM採用済みの左右列も同一bytes。endpoint-check.jsonを最終証跡へ複製し、端点左右4組のRGBA一致を保持。
 - manifestは公開13/全景11/atlas3の計27画像。要求事項変更なし。必須verify・コミットは未実施。先行PR31未マージ、runner固定PR32はCI進行中。
+
+- C011素材/局所QA追記: 4px補正後の3姿勢素材をdocs担当も実閲覧して素材採用。実装担当は実寸/4倍と3姿勢×明度3状態の36パネルを実閲覧して採用と報告。出典・hash・cropは `art-reviews/2026-10-22-curtain/material-decision.json`。最終全景QAと必須verify成功（型・Lint・単体49件・採用29画像・build）。
+
+- C011局所QAは親も補正384x256素材と36パネルatlasを実閲覧して採用。素材採用と局所合成採用を記録し、最終全景は未確認として残す。
+
+- C011タイミング修正: 原画frame0は直立、frame1は最大曲げ、frame2は半曲げなので、12秒周期を `0→2→1→2→0` に修正。一方向へ穏やかに曲がって戻る順序に揃え、最大曲げを往復途中で二度繰り返す動きを避ける。補正済み素材は同一だが描画sourceが変更されたため、旧全景/局所atlasは最終採用に使用しない。新しい `2026-10-22-curtain-final-v2` 全景と `2026-10-22-curtain-motion-final` atlasを再撮影中。manifestは最終QA後に更新する。親が型/タイミングテストを実行、必須verify全体は別途必要。CI34は39772778913待ち、猫PR33は新HEAD f60b7291e43f233312f5b34596683641e25bdc56 のCI39773133577待ち。
+
+- C011最終QA（2026-10-22）: `curtain-final-v2`の補正後11全景を親5枚/実装担当6枚、`curtain-motion-final`の新36パネルを親/実装担当が実閲覧し採用。source `44ed047ce351e43eee36864186f25dc4cf7d64d3f682e787ef49080d578e94c7`、manifestは公開14/全景11/atlas4の29画像。旧trial atlas/旧全景は採用しない。素材生成出典と補正hashはmaterial-decisionへ保持。標準窓では裾の変化が非常に小さく、横長は窓が小さすぎるため省略。最終画像採用完了、最新差分の必須verify成功（型・Lint・単体49件・採用29画像・build）。
+
+- 2026-10-22確認: 車PR31のPages39771950954は成功し公開済み。猫PR33は初期ミラー設定を含むCI39773133577が成功。ただし実参照先はまだAzureだったためPR34で一覧対応を修正中。ミラー修正PR34のCI39772778913は依存取得中のためmainマージ待ち。
+
+- CIミラー調査補足: CI33成功ログは `Get:1 file:/etc/apt/apt-mirrors.txt` の後にAzure HTTPを参照していた。初期PR34のsourcesだけの置換は実際には無効だったため、既存PR34で実際のミラー一覧パスも対象へ修正中。成功ログをHTTPSミラーへの切替成功と解釈しない。車Pages39771950954、CI32のPages39771312848は成功。
+
+- 最新CI復旧: PR34はCI39774106648成功後main283a78bへマージ済み。job119808606726で実際のHTTPS取得を確認。C011のsource44ed047ce351e43eee36864186f25dc4cf7d64d3f682e787ef49080d578e94c7は変更なし。今回の記録/参照保存後にverifyを再実行してamendし、親がrebase/PR/公開へ進む。

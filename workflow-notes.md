@@ -69,3 +69,8 @@
 - Ubuntu 24.04固定だけではAzureのaptミラー遅延は解消しない。PR #31初回ログのhttp://azure.archive.ubuntu.com/ubuntuは30秒再試行を繰り返し、公式archiveへのfallbackは成功した。Playwright導入前に既知のsources.list/ubuntu.sourcesとapt-mirrors.txt/apt-mirrors-security.txtを確認し、そのURIを公式HTTPS archiveへ置換する。TLS検証、依存導入、テスト、15分制限は維持し、存在する対応sourceがない場合は明示的に失敗させる。
 
 - CI成功だけではミラー置換成功とは判断しない。PR #33成功ログの先頭はfile:/etc/apt/apt-mirrors.txtで、その後もAzure HTTPへ接続していた。mirror+file参照はsourcesのURI置換だけでは変わらないため、既知の参照先mirror listも対象にし、再CIのGet/Hitで実際のHTTPS接続先を確認する。
+
+- 生成poseの配列順が動作の時間順とは限らない。全景QAの前に原画を実閲覧し、直立・半曲げ・最大曲げなどの意味を確認してfactory/timingへ対応付ける。C011は0直立/1最大/2半曲げだったため `0→2→1→2→0` とし、番号順による二度の強い曲げと全景再撮影を避ける。
+- aptの設定変更はsourcesファイルの置換だけで完了としない。CIログに `file:/etc/apt/apt-mirrors.txt` が出る環境では参照先一覧も確認し、実際の取得URLで変更の効果を検証する。CI自体の成功とミラー切替の成功を区別する。
+
+- imagegenへ渡した実際の参照画像は、一時パスだけでなく生成原本の横へ保存する。採否記録はrepo相対パスと元の公開背景/座標を併記し、別環境でも生成時の入力を追跡できるようにする。

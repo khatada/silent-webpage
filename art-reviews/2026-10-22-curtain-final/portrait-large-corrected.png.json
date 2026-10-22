@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-22-curtain-final/portrait-large-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "97cad94cb83ba45ebe9e440d1261f56df972469d9d009da73cd05cf47b991748"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-22-curtain-final/portrait-large-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "d59842c8543249ea6f01eb3a2cf836421bd524f3942aafec933865c4a9bda023"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
