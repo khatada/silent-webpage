@@ -7,7 +7,7 @@ type Frame = readonly [number, number, number, number];
 
 /** Shared production/preview compositor. Every visible pixel comes from reviewed generated images. */
 export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Texture, back: Texture, lift: Texture,
-  groomAtlas?: Texture, settleAtlas?: Texture) {
+  groomAtlas?: Texture, settleAtlas?: Texture, stretchAtlas?: Texture, stretchMid?: Texture) {
   const textures: Texture[] = [];
   const frame = (source: Texture, rectangle: Frame, foot: number, normalization = 1) => {
     const texture = new Texture({ source: source.source, frame: new Rectangle(...rectangle) });
@@ -44,6 +44,13 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
       selected.horizontalAnchor = spec.anchorX / spec.rect[2];
       return selected;
     }), curled] : [];
+  const stretchSources = { atlas: stretchAtlas, mid: stretchMid };
+  const stretching = stretchAtlas && stretchMid ? [curled,
+    ...generatedArt.catStretch.frames.map(spec => {
+      const selected = frame(stretchSources[spec.source]!, spec.rect, spec.foot, spec.normalization);
+      selected.horizontalAnchor = spec.anchorX / spec.rect[2];
+      return selected;
+    }), stretch] : [];
   return {
     createSprite() {
       const art = new Sprite(walking[0].texture);
@@ -55,6 +62,7 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
       const selected = pose.frame < 4 ? walking[walkingFrame(pose.x, pose.direction, sceneScale)]
         : (groomPose && pose.groomFrame !== undefined ? grooming[pose.groomFrame] : undefined)
           ?? (pose.frame === 7 && pose.settleFrame !== undefined ? settling[pose.settleFrame] : undefined)
+          ?? (pose.frame === 8 && pose.stretchFrame !== undefined ? stretching[pose.stretchFrame] : undefined)
           ?? poses[pose.frame] ?? sitting;
       art.texture = selected.texture;
       art.anchor.set(selected.horizontalAnchor, selected.footAnchor);

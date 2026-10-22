@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-22-stretch-sequence-final/atlas-source.png",
+    "width": 1920,
+    "height": 2400,
+    "sha256": "658139e7e89e5b6a2e7cef76f3de6b81e3e9d90c24284ef37880c46e78e6eec2"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
+    "width": 1920,
+    "height": 2400,
+    "sha256": "fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

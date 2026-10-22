@@ -80,6 +80,29 @@ describe('city animation timing', () => {
       if (leg < 25 || leg >= 26.5) expect(pose).not.toHaveProperty('settleFrame');
     }
   });
+  it('uncurls through six stretching stages and holds the exact stretched endpoint on both legs', () => {
+    for (const offset of [-64, 0, 32, 64]) {
+      expect(catPose(29.999 + offset, 640)).not.toHaveProperty('stretchFrame');
+      for (let stage = 0; stage < 6; stage++) {
+        const start = 30 + stage * 0.25 + offset;
+        for (const time of [start, start + 0.2499]) {
+          const pose = catPose(time, 640);
+          expect(pose.stretchFrame).toBe(stage);
+          expect(pose.frame).toBe(8);
+          expect(pose.x).toBe(catPose(29.999 + offset, 640).x);
+          expect(pose).not.toHaveProperty('groomFrame');
+          expect(pose).not.toHaveProperty('settleFrame');
+        }
+      }
+      expect(catPose(31.5 + offset, 640)).not.toHaveProperty('stretchFrame');
+      expect(catPose(31.999 + offset, 640).frame).toBe(8);
+      expect(catPose(32 + offset, 640).frame).toBe(0);
+    }
+    for (let seconds = 0; seconds < 64; seconds += 0.125) {
+      const leg = seconds % 32;
+      if (leg < 30 || leg >= 31.5) expect(catPose(seconds, 640)).not.toHaveProperty('stretchFrame');
+    }
+  });
   it('matches walking speed to body size and stops at the route endpoint', () => {
     for (const [width, scale] of [[390, 2], [640, 1], [1280, 2]]) {
       const duration = width * 0.5 / (32 * scale);

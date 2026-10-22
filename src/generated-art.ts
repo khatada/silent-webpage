@@ -6,6 +6,8 @@ export const generatedArt = {
   catRestAtlas: 'art/cat-rest.png',
   catGroomAtlas: 'art/cat-groom.png',
   catSettleAtlas: 'art/cat-settle.png',
+  catStretchAtlas: 'art/cat-stretch.png',
+  catStretchMid: 'art/cat-stretch-mid.png',
   catWalkAtlas: 'art/cat-walk.png',
   catWalkBack: 'art/cat-walk-back.png',
   catWalkLift: 'art/cat-walk-lift.png',
@@ -48,6 +50,15 @@ export const generatedArt = {
       { rect: [314, 0, 313, 355], foot: 343, anchorX: 108 },
       { rect: [0, 355, 324, 272], foot: 220, anchorX: 139 },
       { rect: [324, 355, 303, 272], foot: 224, anchorX: 147 },
+    ],
+  },
+  catStretch: {
+    // Anatomical scale is shared across atlas poses; the larger standalone source is twice that size.
+    frames: [
+      { source: 'atlas', rect: [0, 0, 384, 256], foot: 230, anchorX: 184, normalization: 0.5 },
+      { source: 'atlas', rect: [384, 0, 384, 256], foot: 230, anchorX: 150, normalization: 0.5 },
+      { source: 'mid', rect: [0, 0, 887, 443], foot: 382, anchorX: 460, normalization: 0.25 },
+      { source: 'atlas', rect: [384, 256, 384, 256], foot: 220, anchorX: 196, normalization: 0.5 },
     ],
   },
   width: 768,

@@ -19,6 +19,7 @@ type GroomFrame = 0 | 1 | 2 | 3 | 4 | 5;
 export interface CatPose {
   x: number; direction: 1 | -1; frame: number; breath: 0 | 0.5;
   groomFrame?: GroomFrame; settleFrame?: 0 | 1 | 2 | 3 | 4 | 5;
+  stretchFrame?: 0 | 1 | 2 | 3 | 4 | 5;
 }
 
 // Passing poses are short; licking, wiping and the final lowered paw hold longer.
@@ -47,6 +48,7 @@ export function catPose(seconds: number, width: number, sceneScale = 1): CatPose
     frame,
     breath: frame === 7 && leg >= 26 && leg < 28.5 ? 0.5 : 0,
     ...(leg >= 21 && leg < 25 ? { groomFrame: groomingSteps.find(([end]) => leg < end)![1] } : {}),
+    ...(leg >= 30 && leg < 31.5 ? { stretchFrame: Math.floor((leg - 30) * 4) as 0 | 1 | 2 | 3 | 4 | 5 } : {}),
     ...(leg >= 25 && leg < 26.5 ? { settleFrame: Math.floor((leg - 25) * 4) as 0 | 1 | 2 | 3 | 4 | 5 } : {}),
   };
 }

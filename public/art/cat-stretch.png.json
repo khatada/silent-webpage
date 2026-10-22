@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-22-cat-stretch/original.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "04d61f42eca2ba4c703db454006f9b14f7bf94143cdd0a47fcd92975035425e5"
+  },
+  "output": {
+    "path": "public/art/cat-stretch.png",
+    "width": 768,
+    "height": 512,
+    "sha256": "cec25bf4c773e21baa620b2d8eac2ec62a0d11ffd0273ee735668b35fcacb050"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

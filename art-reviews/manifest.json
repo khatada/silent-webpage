@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "afc90d0550077ddbfb9d8e2936f6e2a23fcc65d1e61eabc0364cb60d06f662f2",
+  "sourceSha256": "34cc745e33176b6a5582420b84c270f8aaefc246abc569ef8fe79cca231b8a94",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,88 +129,88 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-21-street-car-final/desktop-corrected.png",
-      "report": "art-reviews/2026-10-21-street-car-final/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-22-stretch-final/desktop-corrected.png",
+      "report": "art-reviews/2026-10-22-stretch-final/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
+      "reason": "補正後の最終統合source全景11サイズを親/独立LLMが実閲覧し採用。初期walking状態で猫の接地・輪郭と空/街/屋上/電車/飛行機の構図、素材読み込みを確認。車の合成境界に目立つ問題なし。C023動作は左右連続列atlasと併用して評価し、この全景だけで伸びの各姿勢を確認したものではない。"
     },
     {
-      "image": "art-reviews/2026-10-21-street-car-final/mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-street-car-final/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-22-stretch-final/mobile-corrected.png",
+      "report": "art-reviews/2026-10-22-stretch-final/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
+      "reason": "補正後の最終統合source全景11サイズを親/独立LLMが実閲覧し採用。初期walking状態で猫の接地・輪郭と空/街/屋上/電車/飛行機の構図、素材読み込みを確認。車の合成境界に目立つ問題なし。C023動作は左右連続列atlasと併用して評価し、この全景だけで伸びの各姿勢を確認したものではない。"
     },
     {
-      "image": "art-reviews/2026-10-21-street-car-final/narrow-corrected.png",
-      "report": "art-reviews/2026-10-21-street-car-final/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-22-stretch-final/narrow-corrected.png",
+      "report": "art-reviews/2026-10-22-stretch-final/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
+      "reason": "補正後の最終統合source全景11サイズを親/独立LLMが実閲覧し採用。初期walking状態で猫の接地・輪郭と空/街/屋上/電車/飛行機の構図、素材読み込みを確認。車の合成境界に目立つ問題なし。C023動作は左右連続列atlasと併用して評価し、この全景だけで伸びの各姿勢を確認したものではない。"
     },
     {
-      "image": "art-reviews/2026-10-21-street-car-final/landscape-corrected.png",
-      "report": "art-reviews/2026-10-21-street-car-final/landscape-corrected.png.json",
+      "image": "art-reviews/2026-10-22-stretch-final/landscape-corrected.png",
+      "report": "art-reviews/2026-10-22-stretch-final/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
+      "reason": "補正後の最終統合source全景11サイズを親/独立LLMが実閲覧し採用。初期walking状態で猫の接地・輪郭と空/街/屋上/電車/飛行機の構図、素材読み込みを確認。車の合成境界に目立つ問題なし。C023動作は左右連続列atlasと併用して評価し、この全景だけで伸びの各姿勢を確認したものではない。"
     },
     {
-      "image": "art-reviews/2026-10-21-street-car-final/wide-corrected.png",
-      "report": "art-reviews/2026-10-21-street-car-final/wide-corrected.png.json",
+      "image": "art-reviews/2026-10-22-stretch-final/wide-corrected.png",
+      "report": "art-reviews/2026-10-22-stretch-final/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
+      "reason": "補正後の最終統合source全景11サイズを親/独立LLMが実閲覧し採用。初期walking状態で猫の接地・輪郭と空/街/屋上/電車/飛行機の構図、素材読み込みを確認。車の合成境界に目立つ問題なし。C023動作は左右連続列atlasと併用して評価し、この全景だけで伸びの各姿勢を確認したものではない。"
     },
     {
-      "image": "art-reviews/2026-10-21-settle-sequence/atlas-corrected.png",
-      "report": "art-reviews/2026-10-21-settle-sequence/atlas-corrected.png.json",
+      "image": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
+      "report": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親と独立LLMが補正後atlasを実閲覧。既存歩行/毛づくろいと、左右の前後境界付きsettle全6段階を確認。胸→腰→頭/尾の動きが読め、切れや浮きなしで採用。新素材と旧素材は肩/首・背の丸み・顔/毛色に小差が残る。前groom→段階0、段階5→後curledは両方向でRGBA一致も確認。"
+      "reason": "親LLMが最終補正atlasを実閲覧して採用。独立LLMも同一bytesのtrial左右各8コマ列を実閲覧して採用済み（SHA256 fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04）。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯は概ね揃い切れ/浮きなし。端点左右4組はRGBA一致。midの頭/首がやや小さく尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差は残る。"
     },
     {
-      "image": "art-reviews/2026-10-21-street-car-final/compact-corrected.png",
-      "report": "art-reviews/2026-10-21-street-car-final/compact-corrected.png.json",
+      "image": "art-reviews/2026-10-22-stretch-final/compact-corrected.png",
+      "report": "art-reviews/2026-10-22-stretch-final/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
+      "reason": "補正後の最終統合source全景11サイズを親/独立LLMが実閲覧し採用。初期walking状態で猫の接地・輪郭と空/街/屋上/電車/飛行機の構図、素材読み込みを確認。車の合成境界に目立つ問題なし。C023動作は左右連続列atlasと併用して評価し、この全景だけで伸びの各姿勢を確認したものではない。"
     },
     {
-      "image": "art-reviews/2026-10-21-street-car-final/tall-corrected.png",
-      "report": "art-reviews/2026-10-21-street-car-final/tall-corrected.png.json",
+      "image": "art-reviews/2026-10-22-stretch-final/tall-corrected.png",
+      "report": "art-reviews/2026-10-22-stretch-final/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
+      "reason": "補正後の最終統合source全景11サイズを親/独立LLMが実閲覧し採用。初期walking状態で猫の接地・輪郭と空/街/屋上/電車/飛行機の構図、素材読み込みを確認。車の合成境界に目立つ問題なし。C023動作は左右連続列atlasと併用して評価し、この全景だけで伸びの各姿勢を確認したものではない。"
     },
     {
-      "image": "art-reviews/2026-10-21-street-car-final/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-21-street-car-final/portrait-large-corrected.png.json",
+      "image": "art-reviews/2026-10-22-stretch-final/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-22-stretch-final/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
+      "reason": "補正後の最終統合source全景11サイズを親/独立LLMが実閲覧し採用。初期walking状態で猫の接地・輪郭と空/街/屋上/電車/飛行機の構図、素材読み込みを確認。車の合成境界に目立つ問題なし。C023動作は左右連続列atlasと併用して評価し、この全景だけで伸びの各姿勢を確認したものではない。"
     },
     {
-      "image": "art-reviews/2026-10-21-street-car-final/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-21-street-car-final/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/2026-10-22-stretch-final/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-22-stretch-final/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
+      "reason": "補正後の最終統合source全景11サイズを親/独立LLMが実閲覧し採用。初期walking状態で猫の接地・輪郭と空/街/屋上/電車/飛行機の構図、素材読み込みを確認。車の合成境界に目立つ問題なし。C023動作は左右連続列atlasと併用して評価し、この全景だけで伸びの各姿勢を確認したものではない。"
     },
     {
-      "image": "art-reviews/2026-10-21-street-car-final/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-21-street-car-final/small-phone-corrected.png.json",
+      "image": "art-reviews/2026-10-22-stretch-final/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-22-stretch-final/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
+      "reason": "補正後の最終統合source全景11サイズを親/独立LLMが実閲覧し採用。初期walking状態で猫の接地・輪郭と空/街/屋上/電車/飛行機の構図、素材読み込みを確認。車の合成境界に目立つ問題なし。C023動作は左右連続列atlasと併用して評価し、この全景だけで伸びの各姿勢を確認したものではない。"
     },
     {
-      "image": "art-reviews/2026-10-21-street-car-final/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-21-street-car-final/small-mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-22-stretch-final/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-22-stretch-final/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/独立LLMによる補正後11サイズ全景の実閲覧で採用。猫・空・街・電車・飛行機・窓の構図を維持し、小型車が背景の路地内に収まる。最終15パネルatlasと併用して経路・縮小・遮蔽を確認。小さい車の尾灯は実寸で判別しにくく、静止QAは連続再生の全時刻を保証しない。"
+      "reason": "補正後の最終統合source全景11サイズを親/独立LLMが実閲覧し採用。初期walking状態で猫の接地・輪郭と空/街/屋上/電車/飛行機の構図、素材読み込みを確認。車の合成境界に目立つ問題なし。C023動作は左右連続列atlasと併用して評価し、この全景だけで伸びの各姿勢を確認したものではない。"
     },
     {
       "image": "public/art/street-car.png",
@@ -230,6 +230,34 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親/独立LLMが最終補正後3背景×5時点の全15パネルを実閲覧し採用。追加の独立実閲覧でも、路地内を遠ざかり縮小する車と屋根・柱/街灯の前後関係を確認。車幅はnative canvasの整数pxへ揃え、固定遮蔽cropは背景のsampling phaseを保ち独立丸めしない。尾灯の実寸判別と連続再生の全時刻は静止QAの範囲外。"
+    },
+    {
+      "image": "public/art/cat-stretch.png",
+      "report": "public/art/cat-stretch.png.json",
+      "reviewedBy": "LLM",
+      "reason": "補正後768x512画像を独立LLMが実閲覧。毛色・琥珀眼・顔/耳/尾は既存referenceと同一個体として許容。上段左の頭上げ、上段右の胸上げ、下段右の腰高/胸低の伸びを素材採用。下段左は下段右に似て中間性が不足するため不使用。周辺の紫haloは代表画素でalpha0を確認。右下の尾は等分セル上端へ達するため不等cropで輪郭を保持し、実表示を別途確認する。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "original": "art-reviews/2026-10-22-cat-stretch/original.png",
+        "originalSha256": "04d61f42eca2ba4c703db454006f9b14f7bf94143cdd0a47fcd92975035425e5",
+        "prompt": "Four intermediate poses of the same generated charcoal cat between curled rest and forward stretch, using the generated curled/stretch reference; preserve identity, fine navy-violet pixel art and transparent background.",
+        "promptType": "summary"
+      },
+      "decision": "accepted"
+    },
+    {
+      "image": "public/art/cat-stretch-mid.png",
+      "report": "public/art/cat-stretch-mid.png.json",
+      "reviewedBy": "LLM",
+      "reason": "補正後887x443画像を独立LLMが実閲覧。既存の毛色・顔・琥珀眼を保ち、腰を上げ始め、胸がまだ高く、前脚が途中まで伸びた姿勢を確認。初回の胸上げと完成形に近い伸びの間を補う1姿勢として素材採用。尾の形・顔の輪郭には生成素材間の小差があるため共通床と左右の実表示で接地・体格を確認する。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "original": "art-reviews/2026-10-22-cat-stretch/mid-original.png",
+        "originalSha256": "867eccbde282cf81d6918d05112e69183f5f9ff297a4d0b4f0022992d39bd849",
+        "prompt": "One additional intermediate of the same charcoal cat between raised-chest loaf and full forward stretch: hips beginning to rise, chest still elevated, forelegs partly extended; preserve identity, transparent background and fine pixel art.",
+        "promptType": "summary"
+      },
+      "decision": "accepted"
     }
   ]
 }
