@@ -65,3 +65,5 @@
 - PRのCI待ち中に次の独立した改善を進める場合は、別worktreeを使って未マージPRと変更を混ぜない。描画の最終全景は先行PRがmainへ入った後の統合ソースで撮影する。QAのブラウザはこの環境の `ART_BROWSER_PATH=/usr/bin/chromium` を明示し、存在しない同梱browserを毎回試さない。
 
 - 追加worktreeで依存関係を共有する場合も、最初に `npm run prepare` を実行してそのworktreeのHusky実体を用意する。node_modulesの共有だけでは無視対象の `.husky/_` が作られず、フックが動かないことがある。必須verifyは独立して実行し、フックの有無に依存して省略しない。
+
+- Ubuntu 24.04固定だけではAzureのaptミラー遅延は解消しない。PR #31初回ログのhttp://azure.archive.ubuntu.com/ubuntuは30秒再試行を繰り返し、公式archiveへのfallbackは成功した。Playwright導入前に既知のsources.list/ubuntu.sourcesだけを確認し、そのURIを公式HTTPS archiveへ置換する。TLS検証、依存導入、テスト、15分制限は維持し、存在する対応sourceがない場合は明示的に失敗させる。

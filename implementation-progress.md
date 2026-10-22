@@ -4,11 +4,13 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `feat/generated-cat-stretch`、worktree `/workspace/silent-webpage-stretch`。C023だけをmain a7e7eb0へrebaseし、描画sourceと採用画像を維持。保存stashは再popしない。
+- ブランチ: `feat/generated-cat-stretch`、worktree `/workspace/silent-webpage-stretch`。C023をmain a7e7eb0へrebase後、PR #34のCIミラー修正を統合し、描画sourceと採用画像を維持。保存stashは再popしない。
 - C023「丸まりから伸びへの中間姿勢」は素材4中間、左右各8コマ列、最終11サイズ全景とatlasを親/独立LLMが採用済み。端点左右4組RGBA完全一致。最終source `34cc745e33176b6a5582420b84c270f8aaefc246abc569ef8fe79cca231b8a94`、manifest27画像。必須verifyは型・Lint・単体47件・採用27画像・build成功。
 - C016はPR #31でCI 39771598524成功後mainへマージ済み（a7e7eb04aef7e7cbae2cda8988574a8aaccd524a）。車の最終15パネル/11サイズ全景は採用済み。Pagesは確認待ち。
 - CI復旧: PR #32はCI 39771025641成功後main 24b7d24へマージ済み。共有CIはubuntu-24.04。PR #31初回CI 39768849572はUbuntu resoluteの依存取得でtimeoutし、テスト未開始。修正統合後のCI成功で解消した。
 - C022はPR #30でCI 39693202139成功後main 4bdeac6へマージ。Pages 39693505226成功。補正後中間4素材は共通.5倍率と支持帯で整列、端点左右4組RGBA一致。
+- CIミラー対策: PR #34（fix/official-ubuntu-mirror、abf26ea）をこのブランチへ統合。既知Azure apt URIを公式HTTPS archiveへ置換する。PR #34はCI 39772778913確認待ちでmain未マージ。先に #34をmainへ反映する予定。PR #33の旧CI 39772163427は依存導入で長時間待ちとなり、今回push後の新CIで再確認する（旧runはキャンセルされる場合がある）。Pages 39771312848の完了も確認待ち。
+- 添付: PR #33は1回呼び出し後60秒超無応答で中断し成否未確認。PR #34はNo handler registeredで添付できなかった。CI/マージは親が管理する。
 - C021はPR #29でCI 39691339838成功後mainマージ済み（0cd17ba）。単体42件/採用画像22件でverify成功。Pages 39691591549も成功し公開済み。PR29添付toolは無応答で成否未確認。
 - C020はPR #28でCI 39689614717成功後mainマージ済み（5307f96）。Pages 39689876290も成功し公開済み。PR28添付は無応答のため成功未確認。
 - C018はPR #27でCI 39688627541成功後mainへマージ済み（027a6e7）。Pages 39688936144も成功、公開済み。PR27添付toolは1回無応答で中断、成否未確認。
@@ -16,7 +18,7 @@
 - PR #26: 単体41件とverify成功、素材8枚＋全景11枚＋歩行/実移動atlasの20画像を補正・LLM採用。CI 39687474902成功。Pages 39687834998も成功、公開済み。
 - 画像生成の初回8枚は中間不足で不採用。v2の6枚と個別追加した後方支持・回収で8姿勢。原画・補正・部分参照編集・不採用理由も保存済み。
 - PR #26添付: codex_app.attach_artifactを親・補助とも呼び出したが長時間応答なく中断。GitHubのPR作成・マージは成功済み。添付成否は未確認で開発は妨げない。
-- 次: C023のrebase後verify→push/PR→CI確認→merge/Pages確認。QAと採用は完了しPR作成待ち。PR #31/32添付は60秒超無応答で中断し、成否未確認。要求事項は変更しない。
+- 次: C023のrebase後verify→push/PR→CI確認→merge/Pages確認。QAと採用は完了しPR #33作成済み、新CI待ち。PR #31/32添付は60秒超無応答で中断し、成否未確認。要求事項は変更しない。
 - ユーザーの停止指示はなく継続改善は有効。旧stashは古いdocsを含むため一括適用しない。
 
 ## 決定事項

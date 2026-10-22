@@ -27,6 +27,16 @@ jobs:
       - run: npm ci
       - name: Run commit checks
         run: npm run verify
+      - name: Use the official Ubuntu archive for browser dependencies
+        run: |
+          found_source=false
+          for source in /etc/apt/sources.list /etc/apt/sources.list.d/ubuntu.sources; do
+            if [ -f "$source" ]; then
+              found_source=true
+              sudo sed -i 's|http://azure\.archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' "$source"
+            fi
+          done
+          test "$found_source" = true
       - name: Install browsers
         run: npx playwright install --with-deps chromium webkit
       - name: Run browser tests against the production build
