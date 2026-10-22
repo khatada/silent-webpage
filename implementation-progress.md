@@ -4,12 +4,14 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `feat/generated-window-curtain`、worktree `/workspace/silent-webpage-curtain`。C011だけを最新main d6a1a6eへrebase。標準index8/縦index6、横長は省略。0→2→1→2→0/12秒のsource `44ed047ce351e43eee36864186f25dc4cf7d64d3f682e787ef49080d578e94c7` を維持し、11全景と36パネルatlasを親/実装LLMが採用済み。manifest29画像、必須verify成功（型・Lint・単体49件・採用29画像・build）。コミット済み変更のrebaseとPR作成待ち。
-- C023はPR #33の最終CI 39774773442成功後main d6a1a6edf26f065fdc37533048e0e1841e42b3f0へマージ済み。Pagesは確認待ち。左右4端点RGBA一致、最終全景/atlas採用済み。
+- ブランチ: `feat/generated-cat-turn`、worktree `/workspace/silent-webpage-turn`。C024の実装と最終画像採用完了。共通倍率0.65、片道36秒/周期72秒、32秒以降に起立・方向転換を追加。描画source `1622a62a9390f1b68c71afb7618d36076e2a4bf119f58ddbbb6e42d9e644e5e5` を固定。
+- 補正後80パネルatlasと11サイズ全景を親/独立LLMが実閲覧して採用。8歩行位相×左右×倍率1/4の32端点組は独立RGBA再計算でも完全一致。manifest31画像。最新記録を含む必須verify成功（型・Lint・単体50件・採用31画像・build）。commit/push/PR/CI/mergeはこれから。
+- C011はPR #35のCI39775441110成功後main838ed6cへマージ済み。source44ed047ce351e43eee36864186f25dc4cf7d64d3f682e787ef49080d578e94c7、採用29画像、単体49件のverify成功。Pages39776106544成功で公開済み。PR35添付は60秒超無応答で中断し成否未確認。
+- C023はPR #33の最終CI 39774773442成功後main d6a1a6edf26f065fdc37533048e0e1841e42b3f0へマージ済み。Pages39775173863成功で公開済み。左右4端点RGBA一致、最終全景/atlas採用済み。
 - C016はPR #31でCI 39771598524成功後main a7e7eb0へマージ、Pages 39771950954成功で公開済み。
 - CI #32はCI 39771025641後main 24b7d24へマージ、Pages 39771312848成功。Ubuntu24固定を維持。初回PR31の依存導入timeoutはテスト開始前だった。
 - C022はPR #30でCI 39693202139成功後main 4bdeac6へマージ。Pages 39693505226成功。補正後中間4素材は共通.5倍率と支持帯で整列、端点左右4組RGBA一致。
-- CIミラー対策: PR #34の修正版はCI 39774106648成功後main 283a78b2afcb3748be9998a3c3f9a015822cf44dへマージ済み。job 119808606726のGet/Hitでhttps://archive.ubuntu.comからnoble/依存を取得し、対象Azure HTTP URIが出ないことを確認。mirror+file先のapt-mirrors.txt/securityも対象にする修正を統合した。
+- CIミラー対策: PR #34の修正版はCI 39774106648成功後main 283a78b2afcb3748be9998a3c3f9a015822cf44dへマージ済み。job 119808606726のGet/Hitでhttps://archive.ubuntu.comからnoble/依存を取得し、対象Azure HTTP URIが出ないことを確認。mirror+file先のapt-mirrors.txt/securityも対象にする修正を統合した。Pages39774572621も成功。
 - C023の旧CI 39773133577成功はミラー変更の有効性を示さなかった。修正後の最終CI 39774773442成功を確認してPR #33をマージ済み。
 - 添付: PR #33は1回呼び出し後60秒超無応答で中断し成否未確認。PR #34はNo handler registeredで添付できなかった。CI/マージは親が管理する。
 - C021はPR #29でCI 39691339838成功後mainマージ済み（0cd17ba）。単体42件/採用画像22件でverify成功。Pages 39691591549も成功し公開済み。PR29添付toolは無応答で成否未確認。
@@ -19,7 +21,7 @@
 - PR #26: 単体41件とverify成功、素材8枚＋全景11枚＋歩行/実移動atlasの20画像を補正・LLM採用。CI 39687474902成功。Pages 39687834998も成功、公開済み。
 - 画像生成の初回8枚は中間不足で不採用。v2の6枚と個別追加した後方支持・回収で8姿勢。原画・補正・部分参照編集・不採用理由も保存済み。
 - PR #26添付: codex_app.attach_artifactを親・補助とも呼び出したが長時間応答なく中断。GitHubのPR作成・マージは成功済み。添付成否は未確認で開発は妨げない。
-- 次: C011のrebase後verify→push/PR→CI→merge/Pages確認。49テスト/29画像のQAとコミット前検証は完了済み。要求事項は変更しない。
+- 次: 最新差分の必須verify→commit/push/PR/CI/merge→Pages確認。要求事項は変更しない。
 - ユーザーの停止指示はなく継続改善は有効。旧stashは古いdocsを含むため一括適用しない。
 
 ## 決定事項
