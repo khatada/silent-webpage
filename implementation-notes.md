@@ -126,3 +126,12 @@
 - 対象: PRとPagesが再利用するGitHub Actions CI。`ubuntu-24.04`を明示した。
 - 仮定と理由: Ubuntu resoluteのミラー取得遅延を避け、Playwrightが対応する安定版OSで同じ検証を続ける。アプリの不具合ではなく依存導入の失敗であり、テストや時間制限は緩和しない。
 - 実装後に見直す点: CIでChromium/WebKitの導入と全テストが成功するか。runnerの更新は今後のPlaywright対応状況と合わせて見直す。
+
+
+## CIのUbuntu公式ミラー選択
+
+- 対象/実装: Playwright依存導入前に、存在する `/etc/apt/sources.list`、`/etc/apt/sources.list.d/ubuntu.sources`、`/etc/apt/apt-mirrors.txt`、`/etc/apt/apt-mirrors-security.txt` の既知Azure HTTP URIだけを公式HTTPS archiveへ置換する。対応sourceが1つもない場合は失敗させる。
+- 仮定と理由: 実ログでAzureミラーの30秒再試行と公式archiveの成功を確認したため、安定版runner固定に加えミラー経路を選択する。TLS検証・テスト範囲・時間制限は緩めない。
+- 実装後に見直す点: PRとPagesで依存導入が完了し、全ブラウザテストが成功するか。ホスト側のsource形式や公式archiveの可用性は今後も変わり得る。
+
+- 修正確認: PR #33の成功ログでも `file:/etc/apt/apt-mirrors.txt` からAzure HTTP archiveを取得していた。初回のsource直接置換だけではmirror+file参照先に届かず、ミラー変更の効果は未検証だった。既知mirror listも対象へ追加し、新CIのGet/Hitが対象archiveをHTTPSで取得することを確認してからマージする。
