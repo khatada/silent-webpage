@@ -20,7 +20,8 @@
     "art:preview-windows": "node --import tsx scripts/preview-generated-windows.ts",
     "art:preview-street-car": "node --import tsx scripts/preview-generated-street-car.ts",
     "art:preview-curtain": "node --import tsx scripts/preview-generated-curtain.ts",
-    "art:preview-cat-turn": "node --import tsx scripts/preview-generated-cat-turn.ts"
+    "art:preview-cat-turn": "node --import tsx scripts/preview-generated-cat-turn.ts",
+    "art:preview-fan": "node --import tsx scripts/preview-generated-fan.ts"
   },
   "dependencies": {
     "pixi.js": "^8.14.0"

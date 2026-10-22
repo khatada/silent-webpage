@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "1622a62a9390f1b68c71afb7618d36076e2a4bf119f58ddbbb6e42d9e644e5e5",
+  "sourceSha256": "48076a40d98683f238083d51f51f144ad83a41370ef55f01878d5560397b5267",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,39 +129,39 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-22-cat-turn-final/desktop-corrected.png",
-      "report": "art-reviews/2026-10-22-cat-turn-final/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-22-fan-final/desktop-corrected.png",
+      "report": "art-reviews/2026-10-22-fan-final/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
+      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-cat-turn-final/mobile-corrected.png",
-      "report": "art-reviews/2026-10-22-cat-turn-final/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-22-fan-final/mobile-corrected.png",
+      "report": "art-reviews/2026-10-22-fan-final/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
+      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-cat-turn-final/narrow-corrected.png",
-      "report": "art-reviews/2026-10-22-cat-turn-final/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-22-fan-final/narrow-corrected.png",
+      "report": "art-reviews/2026-10-22-fan-final/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
+      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-cat-turn-final/landscape-corrected.png",
-      "report": "art-reviews/2026-10-22-cat-turn-final/landscape-corrected.png.json",
+      "image": "art-reviews/2026-10-22-fan-final/landscape-corrected.png",
+      "report": "art-reviews/2026-10-22-fan-final/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
+      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-cat-turn-final/wide-corrected.png",
-      "report": "art-reviews/2026-10-22-cat-turn-final/wide-corrected.png.json",
+      "image": "art-reviews/2026-10-22-fan-final/wide-corrected.png",
+      "report": "art-reviews/2026-10-22-fan-final/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
+      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
     },
     {
       "image": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
@@ -171,46 +171,46 @@
       "reason": "親LLMが最終補正atlasを実閲覧して採用。独立LLMも同一bytesのtrial左右各8コマ列を実閲覧して採用済み（SHA256 fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04）。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯は概ね揃い切れ/浮きなし。端点左右4組はRGBA一致。midの頭/首がやや小さく尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差は残る。"
     },
     {
-      "image": "art-reviews/2026-10-22-cat-turn-final/compact-corrected.png",
-      "report": "art-reviews/2026-10-22-cat-turn-final/compact-corrected.png.json",
+      "image": "art-reviews/2026-10-22-fan-final/compact-corrected.png",
+      "report": "art-reviews/2026-10-22-fan-final/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
+      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-cat-turn-final/tall-corrected.png",
-      "report": "art-reviews/2026-10-22-cat-turn-final/tall-corrected.png.json",
+      "image": "art-reviews/2026-10-22-fan-final/tall-corrected.png",
+      "report": "art-reviews/2026-10-22-fan-final/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
+      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-cat-turn-final/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-22-cat-turn-final/portrait-large-corrected.png.json",
+      "image": "art-reviews/2026-10-22-fan-final/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-22-fan-final/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
+      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-cat-turn-final/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-22-cat-turn-final/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/2026-10-22-fan-final/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-22-fan-final/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
+      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-cat-turn-final/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-22-cat-turn-final/small-phone-corrected.png.json",
+      "image": "art-reviews/2026-10-22-fan-final/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-22-fan-final/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
+      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-cat-turn-final/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-22-cat-turn-final/small-mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-22-fan-final/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-22-fan-final/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
+      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
     },
     {
       "image": "public/art/street-car.png",
@@ -310,6 +310,29 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親/独立LLMが補正後80パネルを実閲覧して採用。左右の起立・後方回頭・背面・反対向き歩行を区別でき、支持帯と輪郭を保持。独立RGBA再計算でも8歩行位相×左右×倍率1/4の32端点組が完全一致。静止コマによる採用で、実時間の全端末の切替テンポまでは保証しない。"
+    },
+    {
+      "image": "public/art/rooftop-fan.png",
+      "report": "public/art/rooftop-fan.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "dce4e161d04eb1c42fdd73dbfe9f98c0c4086cea0bded4af5349ba63b33e8ec9",
+        "prompt": "Four generated rotation phases of one very dark navy/violet three-blade recessed AC fan, 0/30/60/90 degrees, fixed circular disc and hub, transparent surroundings, no housing, grille, labels, scenery or glow; reference actual generated rooftop AC crops.",
+        "references": [
+          "art-reviews/2026-10-22-fan/normal-reference.png",
+          "art-reviews/2026-10-22-fan/portrait-reference.png"
+        ]
+      },
+      "reason": "親と実装LLMが4px補正後350x280の4位相を実閲覧。暗い3枚羽根と円盤、位相差を確認し素材採用。実寸・背景との明度・中心固定・外周の合成採否は局所QAで判断する。 局所20パネルと11全景も親/実装LLMが実閲覧し採用。共通alpha0.7と固定ハブにより筐体・縁を保つ。"
+    },
+    {
+      "image": "art-reviews/2026-10-22-fan-motion/atlas-corrected.png",
+      "report": "art-reviews/2026-10-22-fan-motion/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/実装LLMが原背景と4位相を標準/縦の等倍/4倍で実閲覧して採用。回転位相を区別でき、筐体と縁・固定ハブを保持。16条件のハブRGBA一致、面外の変更0、位相間平均輝度差0.98/255未満も確認。実寸の変化は小さく、静止QAが全端末の実時間の印象を保証するものではない。"
     }
   ]
 }

@@ -1,0 +1,406 @@
+{
+  "sourceSha256": "48076a40d98683f238083d51f51f144ad83a41370ef55f01878d5560397b5267",
+  "finalSourceSha256": "48076a40d98683f238083d51f51f144ad83a41370ef55f01878d5560397b5267",
+  "metadata": {
+    "width": 1440,
+    "height": 1000,
+    "samples": [
+      {
+        "composition": 0,
+        "context": [
+          170,
+          340,
+          50,
+          40
+        ],
+        "scale": 1,
+        "phase": -1,
+        "seconds": null,
+        "actualFrame": null,
+        "panel": [
+          12,
+          20,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          170,
+          340,
+          50,
+          40
+        ],
+        "scale": 1,
+        "phase": 0,
+        "seconds": 0.1,
+        "actualFrame": 0,
+        "panel": [
+          300,
+          20,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          170,
+          340,
+          50,
+          40
+        ],
+        "scale": 1,
+        "phase": 1,
+        "seconds": 0.5,
+        "actualFrame": 1,
+        "panel": [
+          588,
+          20,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          170,
+          340,
+          50,
+          40
+        ],
+        "scale": 1,
+        "phase": 2,
+        "seconds": 0.9,
+        "actualFrame": 2,
+        "panel": [
+          876,
+          20,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          170,
+          340,
+          50,
+          40
+        ],
+        "scale": 1,
+        "phase": 3,
+        "seconds": 1.3000000000000003,
+        "actualFrame": 3,
+        "panel": [
+          1164,
+          20,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          170,
+          340,
+          50,
+          40
+        ],
+        "scale": 4,
+        "phase": -1,
+        "seconds": null,
+        "actualFrame": null,
+        "panel": [
+          12,
+          270,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          170,
+          340,
+          50,
+          40
+        ],
+        "scale": 4,
+        "phase": 0,
+        "seconds": 0.1,
+        "actualFrame": 0,
+        "panel": [
+          300,
+          270,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          170,
+          340,
+          50,
+          40
+        ],
+        "scale": 4,
+        "phase": 1,
+        "seconds": 0.5,
+        "actualFrame": 1,
+        "panel": [
+          588,
+          270,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          170,
+          340,
+          50,
+          40
+        ],
+        "scale": 4,
+        "phase": 2,
+        "seconds": 0.9,
+        "actualFrame": 2,
+        "panel": [
+          876,
+          270,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          170,
+          340,
+          50,
+          40
+        ],
+        "scale": 4,
+        "phase": 3,
+        "seconds": 1.3000000000000003,
+        "actualFrame": 3,
+        "panel": [
+          1164,
+          270,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          460,
+          1050,
+          65,
+          55
+        ],
+        "scale": 1,
+        "phase": -1,
+        "seconds": null,
+        "actualFrame": null,
+        "panel": [
+          12,
+          520,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          460,
+          1050,
+          65,
+          55
+        ],
+        "scale": 1,
+        "phase": 0,
+        "seconds": 0.1,
+        "actualFrame": 0,
+        "panel": [
+          300,
+          520,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          460,
+          1050,
+          65,
+          55
+        ],
+        "scale": 1,
+        "phase": 1,
+        "seconds": 0.5,
+        "actualFrame": 1,
+        "panel": [
+          588,
+          520,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          460,
+          1050,
+          65,
+          55
+        ],
+        "scale": 1,
+        "phase": 2,
+        "seconds": 0.9,
+        "actualFrame": 2,
+        "panel": [
+          876,
+          520,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          460,
+          1050,
+          65,
+          55
+        ],
+        "scale": 1,
+        "phase": 3,
+        "seconds": 1.3000000000000003,
+        "actualFrame": 3,
+        "panel": [
+          1164,
+          520,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          460,
+          1050,
+          65,
+          55
+        ],
+        "scale": 4,
+        "phase": -1,
+        "seconds": null,
+        "actualFrame": null,
+        "panel": [
+          12,
+          770,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          460,
+          1050,
+          65,
+          55
+        ],
+        "scale": 4,
+        "phase": 0,
+        "seconds": 0.1,
+        "actualFrame": 0,
+        "panel": [
+          300,
+          770,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          460,
+          1050,
+          65,
+          55
+        ],
+        "scale": 4,
+        "phase": 1,
+        "seconds": 0.5,
+        "actualFrame": 1,
+        "panel": [
+          588,
+          770,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          460,
+          1050,
+          65,
+          55
+        ],
+        "scale": 4,
+        "phase": 2,
+        "seconds": 0.9,
+        "actualFrame": 2,
+        "panel": [
+          876,
+          770,
+          288,
+          250
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          460,
+          1050,
+          65,
+          55
+        ],
+        "scale": 4,
+        "phase": 3,
+        "seconds": 1.3000000000000003,
+        "actualFrame": 3,
+        "panel": [
+          1164,
+          770,
+          288,
+          250
+        ]
+      }
+    ],
+    "rows": [
+      "normal-native",
+      "normal-4x",
+      "portrait-native",
+      "portrait-4x"
+    ],
+    "columns": [
+      "original",
+      "phase0",
+      "phase1",
+      "phase2",
+      "phase3"
+    ]
+  },
+  "method": "Image-generation textures composited by /scripts/generated-fan-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}
