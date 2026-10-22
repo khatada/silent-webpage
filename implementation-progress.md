@@ -4,6 +4,9 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
+- CIミラー対策: `fix/official-ubuntu-mirror`をmain a7e7eb0から作成。PR #32のUbuntu24固定後もPages 39771312848とPR #33のCI 39772163427でPlaywright依存導入の長時間待ちを観測。既知のAzure apt URIだけを公式HTTPS archiveへ置換するstepを追加。アプリ・画像変更なし。必須verify→PR/CI確認待ち。
+- 先行状況: CI修正PR #32はCI 39771025641成功後main 24b7d24へ、車PR #31はCI 39771598524成功後main a7e7eb0へマージ済み。猫C023のPR #33は未マージ。Pagesの完了は確認待ち。
+
 - ブランチ: `feat/generated-street-car`（main 4bdeac6から作成）。C016「路地を遠ざかる車」は実装・最終画像採用完了。最終source `afc90d0550077ddbfb9d8e2936f6e2a23fcc65d1e61eabc0364cb60d06f662f2` の補正後15パネル/11サイズ全景を親・独立LLMが採用。manifestは25画像。追加独立レビューでも最終atlasとdesktop全景を実閲覧した。
 - C022はPR #30でCI 39693202139成功後mainマージ（4bdeac6）。単体43件/採用画像23件でverify成功。Pages 39693505226も成功し公開済み。PR30添付toolは無応答で成否未確認。
 - C022の中間4素材は共通.5倍率と支持帯で整列。素材間の肩/首/毛色の小差を記録してLLM採用。端点の左右4組はRGBA一致。

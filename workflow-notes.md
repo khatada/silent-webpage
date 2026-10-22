@@ -59,3 +59,5 @@
 - 最終ソースを固定してから同じhashの動作atlasと全景を採用記録へ反映する。3背景×5時点の静止QAは経路・縮小・遮蔽を比べられるが、微小な尾灯の判別や連続再生の全時刻は別の評価として残す。
 
 - PlaywrightのOS依存パッケージ導入には安定版runnerを明示する。PR #31のCI 39768849572ではubuntu-latestがUbuntu 26.04（resolute）へ移り、azure.archiveの取得が30秒単位でタイムアウトし、テスト開始前に15分制限へ達した。共有CIをubuntu-24.04へ固定し、Pagesの再利用時にも同じ環境で検証する。
+
+- Ubuntu 24.04固定だけではAzureのaptミラー遅延は解消しない。PR #31初回ログのhttp://azure.archive.ubuntu.com/ubuntuは30秒再試行を繰り返し、公式archiveへのfallbackは成功した。Playwright導入前に既知のsources.list/ubuntu.sourcesだけを確認し、そのURIを公式HTTPS archiveへ置換する。TLS検証、依存導入、テスト、15分制限は維持し、存在する対応sourceがない場合は明示的に失敗させる。
