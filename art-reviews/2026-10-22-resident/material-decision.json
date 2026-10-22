@@ -1,0 +1,30 @@
+{
+  "decision": "accepted-as-material",
+  "reviewedBy": "LLM",
+  "image": "public/art/window-resident.png",
+  "report": "public/art/window-resident.png.json",
+  "reason": "親/担当LLMが8px補正後271x90の3姿勢を実閲覧。共通の座位から浅い傾き/深い傾きへ移る頭と肩、暗い紫褐色の輪郭と透過を確認して素材採用。実寸での人物判別、窓との重なり、点消灯は合成QAで別途判断する。",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "originalSha256": "f4a34c73dd803ca5d860c45cafe3e7d64081de92aeb5ffab81136e255a16d7ed",
+    "prompt": "Three transparent pixel-art seated resident silhouettes with identical waist, scale and head size: upright, slight head/shoulder inclination, deeper gentle bow. Deep dark purple/brown, no face/accessories/scenery/window/chair/text/glow. Actual generated warm-window crops supplied as color/style references.",
+    "references": [
+      "art-reviews/2026-10-22-resident/normal-reference.png",
+      "art-reviews/2026-10-22-resident/portrait-reference.png"
+    ]
+  },
+  "correctedSha256": "a7f546a46176172e545c5806377a71d5f90ba021c2110c53bf72d7a96bbc7ead",
+  "trialRejection": {
+    "image": "art-reviews/2026-10-22-resident-motion/atlas-corrected.png",
+    "reviewedBy": "LLM",
+    "decision": "rejected",
+    "reason": "担当LLMが消灯時にも暗幕alpha0.92の下で人影がわずかに残ることを実閲覧。既存windowBrightnessを人影alphaにも適用して再撮影した。"
+  },
+  "displayDecision": "accepted",
+  "displayReason": "親/担当LLMが局所48/半倍率24パネルと11全景を補正後実閲覧。36比較で窓外0、消灯12組RGBA一致。半倍率では詳細な人物/動作判別が難しい制約を記録したうえで採用。",
+  "halfScaleTrialRejection": {
+    "image": "art-reviews/2026-10-22-resident-halfscale/atlas-corrected.png",
+    "decision": "rejected-as-production-proof",
+    "reason": "実行時と異なる原点/暗幕丸めでsampling phaseが異なるため最終証跡には使わない。QAだけ修正してhalfscale-finalを補正後実閲覧・採用。実行時ソースは変更していない。"
+  }
+}

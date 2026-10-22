@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "48076a40d98683f238083d51f51f144ad83a41370ef55f01878d5560397b5267",
+  "sourceSha256": "8d60e357b99c1b0b618b8372392299b9032849e6ae04fe06db7b5bc62285082a",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,39 +129,39 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-22-fan-final/desktop-corrected.png",
-      "report": "art-reviews/2026-10-22-fan-final/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-22-resident-final/desktop-corrected.png",
+      "report": "art-reviews/2026-10-22-resident-final/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
+      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
     },
     {
-      "image": "art-reviews/2026-10-22-fan-final/mobile-corrected.png",
-      "report": "art-reviews/2026-10-22-fan-final/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-22-resident-final/mobile-corrected.png",
+      "report": "art-reviews/2026-10-22-resident-final/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
+      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
     },
     {
-      "image": "art-reviews/2026-10-22-fan-final/narrow-corrected.png",
-      "report": "art-reviews/2026-10-22-fan-final/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-22-resident-final/narrow-corrected.png",
+      "report": "art-reviews/2026-10-22-resident-final/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
+      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
     },
     {
-      "image": "art-reviews/2026-10-22-fan-final/landscape-corrected.png",
-      "report": "art-reviews/2026-10-22-fan-final/landscape-corrected.png.json",
+      "image": "art-reviews/2026-10-22-resident-final/landscape-corrected.png",
+      "report": "art-reviews/2026-10-22-resident-final/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
+      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
     },
     {
-      "image": "art-reviews/2026-10-22-fan-final/wide-corrected.png",
-      "report": "art-reviews/2026-10-22-fan-final/wide-corrected.png.json",
+      "image": "art-reviews/2026-10-22-resident-final/wide-corrected.png",
+      "report": "art-reviews/2026-10-22-resident-final/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
+      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
     },
     {
       "image": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
@@ -171,46 +171,46 @@
       "reason": "親LLMが最終補正atlasを実閲覧して採用。独立LLMも同一bytesのtrial左右各8コマ列を実閲覧して採用済み（SHA256 fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04）。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯は概ね揃い切れ/浮きなし。端点左右4組はRGBA一致。midの頭/首がやや小さく尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差は残る。"
     },
     {
-      "image": "art-reviews/2026-10-22-fan-final/compact-corrected.png",
-      "report": "art-reviews/2026-10-22-fan-final/compact-corrected.png.json",
+      "image": "art-reviews/2026-10-22-resident-final/compact-corrected.png",
+      "report": "art-reviews/2026-10-22-resident-final/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
+      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
     },
     {
-      "image": "art-reviews/2026-10-22-fan-final/tall-corrected.png",
-      "report": "art-reviews/2026-10-22-fan-final/tall-corrected.png.json",
+      "image": "art-reviews/2026-10-22-resident-final/tall-corrected.png",
+      "report": "art-reviews/2026-10-22-resident-final/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
+      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
     },
     {
-      "image": "art-reviews/2026-10-22-fan-final/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-22-fan-final/portrait-large-corrected.png.json",
+      "image": "art-reviews/2026-10-22-resident-final/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-22-resident-final/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
+      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
     },
     {
-      "image": "art-reviews/2026-10-22-fan-final/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-22-fan-final/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/2026-10-22-resident-final/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-22-resident-final/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
+      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
     },
     {
-      "image": "art-reviews/2026-10-22-fan-final/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-22-fan-final/small-phone-corrected.png.json",
+      "image": "art-reviews/2026-10-22-resident-final/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-22-resident-final/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
+      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
     },
     {
-      "image": "art-reviews/2026-10-22-fan-final/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-22-fan-final/small-mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-22-resident-final/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-22-resident-final/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "ファン追加後の補正済み全景を親/実装LLMが実閲覧して採用。室外機の範囲内への配置、空・街・床・乗り物・猫の読み込みと接地を確認。局所の回転位相と固定軸は別atlasで評価する。"
+      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
     },
     {
       "image": "public/art/street-car.png",
@@ -333,6 +333,36 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親/実装LLMが原背景と4位相を標準/縦の等倍/4倍で実閲覧して採用。回転位相を区別でき、筐体と縁・固定ハブを保持。16条件のハブRGBA一致、面外の変更0、位相間平均輝度差0.98/255未満も確認。実寸の変化は小さく、静止QAが全端末の実時間の印象を保証するものではない。"
+    },
+    {
+      "image": "public/art/window-resident.png",
+      "report": "public/art/window-resident.png.json",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが8px補正後271x90の3姿勢を実閲覧。共通の座位から浅い傾き/深い傾きへ移る頭と肩、暗い紫褐色の輪郭と透過を確認して素材採用。実寸での人物判別、窓との重なり、点消灯は合成QAで別途判断する。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "f4a34c73dd803ca5d860c45cafe3e7d64081de92aeb5ffab81136e255a16d7ed",
+        "prompt": "Three transparent pixel-art seated resident silhouettes with identical waist, scale and head size: upright, slight head/shoulder inclination, deeper gentle bow. Deep dark purple/brown, no face/accessories/scenery/window/chair/text/glow. Actual generated warm-window crops supplied as color/style references.",
+        "references": [
+          "art-reviews/2026-10-22-resident/normal-reference.png",
+          "art-reviews/2026-10-22-resident/portrait-reference.png"
+        ]
+      },
+      "decision": "accepted"
+    },
+    {
+      "image": "art-reviews/2026-10-22-resident-motion-final/atlas-corrected.png",
+      "report": "art-reviews/2026-10-22-resident-motion-final/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが原画+3姿勢×3照明×標準/縦×等倍/4倍の48パネルを補正後実閲覧。頭と胴体、浅い/深い傾き、窓枠と手すりの維持を確認。親の独立RGBA比較でも36組で窓外変更0、12消灯組は原画と完全一致しており採用。等倍の傾きは微細。"
+    },
+    {
+      "image": "art-reviews/2026-10-22-resident-halfscale-final/atlas-corrected.png",
+      "report": "art-reviews/2026-10-22-resident-halfscale-final/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが半倍率24パネルを補正後実閲覧。窓外漏れや枠の破損、消灯時の残像がない描画として採用。約2×2pxの影では頭・肩・傾きを確実には読めず、詳細動作が明瞭とは扱わない。本番と同じ整数背景原点・cropのsampling phase・暗幕丸めで撮り直した最終画像を実閲覧した。"
     }
   ]
 }

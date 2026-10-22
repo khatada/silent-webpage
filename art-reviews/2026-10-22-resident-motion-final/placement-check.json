@@ -1,0 +1,366 @@
+{
+  "sourceSha256": "8d60e357b99c1b0b618b8372392299b9032849e6ae04fe06db7b5bc62285082a",
+  "method": "Corrected PNG comparison against the original-background column with identical target-window lighting and scale.",
+  "checks": [
+    {
+      "composition": 0,
+      "scale": 1,
+      "pose": 0,
+      "light": 0,
+      "brightness": 1.0,
+      "changedPixels": 9,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "pose": 0,
+      "light": 1,
+      "brightness": 0.5000000000000047,
+      "changedPixels": 9,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "pose": 0,
+      "light": 2,
+      "brightness": 0.0,
+      "changedPixels": 0,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": true
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "pose": 0,
+      "light": 0,
+      "brightness": 1.0,
+      "changedPixels": 125,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "pose": 0,
+      "light": 1,
+      "brightness": 0.5000000000000047,
+      "changedPixels": 125,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "pose": 0,
+      "light": 2,
+      "brightness": 0.0,
+      "changedPixels": 0,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": true
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "pose": 1,
+      "light": 0,
+      "brightness": 1.0,
+      "changedPixels": 7,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "pose": 1,
+      "light": 1,
+      "brightness": 0.5000000000000047,
+      "changedPixels": 7,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "pose": 1,
+      "light": 2,
+      "brightness": 0.0,
+      "changedPixels": 0,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": true
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "pose": 1,
+      "light": 0,
+      "brightness": 1.0,
+      "changedPixels": 114,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "pose": 1,
+      "light": 1,
+      "brightness": 0.5000000000000047,
+      "changedPixels": 113,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "pose": 1,
+      "light": 2,
+      "brightness": 0.0,
+      "changedPixels": 0,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": true
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "pose": 2,
+      "light": 0,
+      "brightness": 1.0,
+      "changedPixels": 8,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "pose": 2,
+      "light": 1,
+      "brightness": 0.5000000000000047,
+      "changedPixels": 8,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "pose": 2,
+      "light": 2,
+      "brightness": 0.0,
+      "changedPixels": 0,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": true
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "pose": 2,
+      "light": 0,
+      "brightness": 1.0,
+      "changedPixels": 111,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "pose": 2,
+      "light": 1,
+      "brightness": 0.5000000000000047,
+      "changedPixels": 108,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "pose": 2,
+      "light": 2,
+      "brightness": 0.0,
+      "changedPixels": 0,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": true
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "pose": 0,
+      "light": 0,
+      "brightness": 1.0,
+      "changedPixels": 12,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "pose": 0,
+      "light": 1,
+      "brightness": 0.4999999999999989,
+      "changedPixels": 12,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "pose": 0,
+      "light": 2,
+      "brightness": 0.0,
+      "changedPixels": 0,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": true
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "pose": 0,
+      "light": 0,
+      "brightness": 1.0,
+      "changedPixels": 177,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "pose": 0,
+      "light": 1,
+      "brightness": 0.4999999999999989,
+      "changedPixels": 175,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "pose": 0,
+      "light": 2,
+      "brightness": 0.0,
+      "changedPixels": 0,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": true
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "pose": 1,
+      "light": 0,
+      "brightness": 1.0,
+      "changedPixels": 11,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "pose": 1,
+      "light": 1,
+      "brightness": 0.4999999999999989,
+      "changedPixels": 11,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "pose": 1,
+      "light": 2,
+      "brightness": 0.0,
+      "changedPixels": 0,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": true
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "pose": 1,
+      "light": 0,
+      "brightness": 1.0,
+      "changedPixels": 169,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "pose": 1,
+      "light": 1,
+      "brightness": 0.4999999999999989,
+      "changedPixels": 168,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "pose": 1,
+      "light": 2,
+      "brightness": 0.0,
+      "changedPixels": 0,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": true
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "pose": 2,
+      "light": 0,
+      "brightness": 1.0,
+      "changedPixels": 12,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "pose": 2,
+      "light": 1,
+      "brightness": 0.4999999999999989,
+      "changedPixels": 12,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "pose": 2,
+      "light": 2,
+      "brightness": 0.0,
+      "changedPixels": 0,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": true
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "pose": 2,
+      "light": 0,
+      "brightness": 1.0,
+      "changedPixels": 164,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "pose": 2,
+      "light": 1,
+      "brightness": 0.4999999999999989,
+      "changedPixels": 158,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": false
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "pose": 2,
+      "light": 2,
+      "brightness": 0.0,
+      "changedPixels": 0,
+      "changedPixelsOutsideWindow": 0,
+      "rgbaEqualToOriginal": true
+    }
+  ]
+}
