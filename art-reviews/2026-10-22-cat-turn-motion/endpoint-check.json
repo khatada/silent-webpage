@@ -1,0 +1,798 @@
+{
+  "sourceSha256": "1622a62a9390f1b68c71afb7618d36076e2a4bf119f58ddbbb6e42d9e644e5e5",
+  "image": "atlas-corrected.png",
+  "comparisonMethod": "Decoded PNG RGBA row-by-row byte equality for complete corresponding 240x240 panels, including the same generated floor.",
+  "summary": {
+    "pairs": 32,
+    "allRgbaEqual": true,
+    "allRootXEqual": true,
+    "walkingPhases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "scales": [
+      1,
+      4
+    ],
+    "nextDirections": [
+      -1,
+      1
+    ]
+  },
+  "checks": [
+    {
+      "beforePanel": 16,
+      "afterPanel": 17,
+      "beforeRectangle": [
+        0,
+        480,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        240,
+        480,
+        240,
+        240
+      ],
+      "width": 181,
+      "scale": 1,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 0,
+      "beforeRootX": 136,
+      "afterRootX": 136,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 18,
+      "afterPanel": 19,
+      "beforeRectangle": [
+        480,
+        480,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        720,
+        480,
+        240,
+        240
+      ],
+      "width": 172,
+      "scale": 1,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 1,
+      "beforeRootX": 129,
+      "afterRootX": 129,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 20,
+      "afterPanel": 21,
+      "beforeRectangle": [
+        960,
+        480,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1200,
+        480,
+        240,
+        240
+      ],
+      "width": 164,
+      "scale": 1,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 2,
+      "beforeRootX": 123,
+      "afterRootX": 123,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 22,
+      "afterPanel": 23,
+      "beforeRectangle": [
+        1440,
+        480,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1680,
+        480,
+        240,
+        240
+      ],
+      "width": 156,
+      "scale": 1,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 3,
+      "beforeRootX": 117,
+      "afterRootX": 117,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 24,
+      "afterPanel": 25,
+      "beforeRectangle": [
+        0,
+        720,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        240,
+        720,
+        240,
+        240
+      ],
+      "width": 146,
+      "scale": 1,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 4,
+      "beforeRootX": 110,
+      "afterRootX": 110,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 26,
+      "afterPanel": 27,
+      "beforeRectangle": [
+        480,
+        720,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        720,
+        720,
+        240,
+        240
+      ],
+      "width": 140,
+      "scale": 1,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 5,
+      "beforeRootX": 105,
+      "afterRootX": 105,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 28,
+      "afterPanel": 29,
+      "beforeRectangle": [
+        960,
+        720,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1200,
+        720,
+        240,
+        240
+      ],
+      "width": 196,
+      "scale": 1,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 6,
+      "beforeRootX": 147,
+      "afterRootX": 147,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 30,
+      "afterPanel": 31,
+      "beforeRectangle": [
+        1440,
+        720,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1680,
+        720,
+        240,
+        240
+      ],
+      "width": 193,
+      "scale": 1,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 7,
+      "beforeRootX": 145,
+      "afterRootX": 145,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 32,
+      "afterPanel": 33,
+      "beforeRectangle": [
+        0,
+        960,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        240,
+        960,
+        240,
+        240
+      ],
+      "width": 190,
+      "scale": 1,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 0,
+      "beforeRootX": 48,
+      "afterRootX": 48,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 34,
+      "afterPanel": 35,
+      "beforeRectangle": [
+        480,
+        960,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        720,
+        960,
+        240,
+        240
+      ],
+      "width": 226,
+      "scale": 1,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 1,
+      "beforeRootX": 57,
+      "afterRootX": 57,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 36,
+      "afterPanel": 37,
+      "beforeRectangle": [
+        960,
+        960,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1200,
+        960,
+        240,
+        240
+      ],
+      "width": 254,
+      "scale": 1,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 2,
+      "beforeRootX": 64,
+      "afterRootX": 64,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 38,
+      "afterPanel": 39,
+      "beforeRectangle": [
+        1440,
+        960,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1680,
+        960,
+        240,
+        240
+      ],
+      "width": 278,
+      "scale": 1,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 3,
+      "beforeRootX": 70,
+      "afterRootX": 70,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 40,
+      "afterPanel": 41,
+      "beforeRectangle": [
+        0,
+        1200,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        240,
+        1200,
+        240,
+        240
+      ],
+      "width": 302,
+      "scale": 1,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 4,
+      "beforeRootX": 76,
+      "afterRootX": 76,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 42,
+      "afterPanel": 43,
+      "beforeRectangle": [
+        480,
+        1200,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        720,
+        1200,
+        240,
+        240
+      ],
+      "width": 140,
+      "scale": 1,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 5,
+      "beforeRootX": 35,
+      "afterRootX": 35,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 44,
+      "afterPanel": 45,
+      "beforeRectangle": [
+        960,
+        1200,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1200,
+        1200,
+        240,
+        240
+      ],
+      "width": 162,
+      "scale": 1,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 6,
+      "beforeRootX": 41,
+      "afterRootX": 41,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 46,
+      "afterPanel": 47,
+      "beforeRectangle": [
+        1440,
+        1200,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1680,
+        1200,
+        240,
+        240
+      ],
+      "width": 182,
+      "scale": 1,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 7,
+      "beforeRootX": 46,
+      "afterRootX": 46,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 48,
+      "afterPanel": 49,
+      "beforeRectangle": [
+        0,
+        1440,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        240,
+        1440,
+        240,
+        240
+      ],
+      "width": 213,
+      "scale": 4,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 0,
+      "beforeRootX": 160,
+      "afterRootX": 160,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 50,
+      "afterPanel": 51,
+      "beforeRectangle": [
+        480,
+        1440,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        720,
+        1440,
+        240,
+        240
+      ],
+      "width": 173,
+      "scale": 4,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 1,
+      "beforeRootX": 130,
+      "afterRootX": 130,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 52,
+      "afterPanel": 53,
+      "beforeRectangle": [
+        960,
+        1440,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1200,
+        1440,
+        240,
+        240
+      ],
+      "width": 140,
+      "scale": 4,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 2,
+      "beforeRootX": 105,
+      "afterRootX": 105,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 54,
+      "afterPanel": 55,
+      "beforeRectangle": [
+        1440,
+        1440,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1680,
+        1440,
+        240,
+        240
+      ],
+      "width": 364,
+      "scale": 4,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 3,
+      "beforeRootX": 273,
+      "afterRootX": 273,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 56,
+      "afterPanel": 57,
+      "beforeRectangle": [
+        0,
+        1680,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        240,
+        1680,
+        240,
+        240
+      ],
+      "width": 326,
+      "scale": 4,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 4,
+      "beforeRootX": 245,
+      "afterRootX": 245,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 58,
+      "afterPanel": 59,
+      "beforeRectangle": [
+        480,
+        1680,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        720,
+        1680,
+        240,
+        240
+      ],
+      "width": 294,
+      "scale": 4,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 5,
+      "beforeRootX": 221,
+      "afterRootX": 221,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 60,
+      "afterPanel": 61,
+      "beforeRectangle": [
+        960,
+        1680,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1200,
+        1680,
+        240,
+        240
+      ],
+      "width": 268,
+      "scale": 4,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 6,
+      "beforeRootX": 201,
+      "afterRootX": 201,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 62,
+      "afterPanel": 63,
+      "beforeRectangle": [
+        1440,
+        1680,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1680,
+        1680,
+        240,
+        240
+      ],
+      "width": 257,
+      "scale": 4,
+      "oldDirection": 1,
+      "nextDirection": -1,
+      "walkingPhase": 7,
+      "beforeRootX": 193,
+      "afterRootX": 193,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 64,
+      "afterPanel": 65,
+      "beforeRectangle": [
+        0,
+        1920,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        240,
+        1920,
+        240,
+        240
+      ],
+      "width": 766,
+      "scale": 4,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 0,
+      "beforeRootX": 192,
+      "afterRootX": 192,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 66,
+      "afterPanel": 67,
+      "beforeRectangle": [
+        480,
+        1920,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        720,
+        1920,
+        240,
+        240
+      ],
+      "width": 140,
+      "scale": 4,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 1,
+      "beforeRootX": 35,
+      "afterRootX": 35,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 68,
+      "afterPanel": 69,
+      "beforeRectangle": [
+        960,
+        1920,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1200,
+        1920,
+        240,
+        240
+      ],
+      "width": 250,
+      "scale": 4,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 2,
+      "beforeRootX": 63,
+      "afterRootX": 63,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 70,
+      "afterPanel": 71,
+      "beforeRectangle": [
+        1440,
+        1920,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1680,
+        1920,
+        240,
+        240
+      ],
+      "width": 350,
+      "scale": 4,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 3,
+      "beforeRootX": 88,
+      "afterRootX": 88,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 72,
+      "afterPanel": 73,
+      "beforeRectangle": [
+        0,
+        2160,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        240,
+        2160,
+        240,
+        240
+      ],
+      "width": 446,
+      "scale": 4,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 4,
+      "beforeRootX": 112,
+      "afterRootX": 112,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 74,
+      "afterPanel": 75,
+      "beforeRectangle": [
+        480,
+        2160,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        720,
+        2160,
+        240,
+        240
+      ],
+      "width": 558,
+      "scale": 4,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 5,
+      "beforeRootX": 140,
+      "afterRootX": 140,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 76,
+      "afterPanel": 77,
+      "beforeRectangle": [
+        960,
+        2160,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1200,
+        2160,
+        240,
+        240
+      ],
+      "width": 654,
+      "scale": 4,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 6,
+      "beforeRootX": 164,
+      "afterRootX": 164,
+      "rgbaEqual": true
+    },
+    {
+      "beforePanel": 78,
+      "afterPanel": 79,
+      "beforeRectangle": [
+        1440,
+        2160,
+        240,
+        240
+      ],
+      "afterRectangle": [
+        1680,
+        2160,
+        240,
+        240
+      ],
+      "width": 734,
+      "scale": 4,
+      "oldDirection": -1,
+      "nextDirection": 1,
+      "walkingPhase": 7,
+      "beforeRootX": 184,
+      "afterRootX": 184,
+      "rgbaEqual": true
+    }
+  ]
+}

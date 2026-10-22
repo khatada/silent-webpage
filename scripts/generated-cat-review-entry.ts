@@ -1,5 +1,5 @@
 import { Application, Assets, Rectangle, Sprite, Texture } from 'pixi.js';
-import { catPose } from '../src/animation';
+import { catLegDuration, catPose } from '../src/animation';
 import { generatedArt } from '../src/generated-art';
 import { createImageCat } from '../src/image-cat';
 import { walkingFrame, walkingPhaseOffsets, walkingSourceStride, walkingStride } from '../src/walking-timing';
@@ -39,7 +39,7 @@ export async function renderGeneratedCatReview() {
         pose, x: sprite.x, footY });
     }
   }
-  [18.5, 21.2, 22.2, 26.5, 30.5, 50.5, 62.5].forEach((seconds, index) => {
+  [18.5, 21.2, 22.2, 26.5, 30.5, 54.5, 66.5].forEach((seconds, index) => {
     const pose = catPose(seconds, 640);
     const sprite = cat.createSprite();
     cat.update(sprite, { ...pose, x: 135 + index * 274 }, sceneScale, 680);
@@ -84,7 +84,7 @@ export async function renderGeneratedCatReview() {
       floorSprite.width = 174;
       floorSprite.height = 240;
       app.stage.addChild(floorSprite);
-      const pose = catPose(seconds + (direction === 1 ? 0 : 32), 640);
+      const pose = catPose(seconds + (direction === 1 ? 0 : catLegDuration), 640);
       const sprite = cat.createSprite();
       const x = panelX + 87;
       cat.update(sprite, { ...pose, x }, sceneScale, footY);
@@ -105,7 +105,7 @@ export async function renderGeneratedCatReview() {
       floorSprite.width = 240;
       floorSprite.height = 240;
       app.stage.addChild(floorSprite);
-      const pose = catPose(seconds + (direction === 1 ? 0 : 32), 640);
+      const pose = catPose(seconds + (direction === 1 ? 0 : catLegDuration), 640);
       const sprite = cat.createSprite();
       const x = panelX + 120;
       cat.update(sprite, { ...pose, x }, sceneScale, footY);
@@ -125,7 +125,7 @@ export async function renderGeneratedCatReview() {
       floorSprite.width = 240;
       floorSprite.height = 240;
       app.stage.addChild(floorSprite);
-      const pose = catPose(seconds + (direction === 1 ? 0 : 32), 640);
+      const pose = catPose(seconds + (direction === 1 ? 0 : catLegDuration), 640);
       const sprite = cat.createSprite();
       const x = panelX + 120;
       cat.update(sprite, { ...pose, x }, sceneScale, footY);

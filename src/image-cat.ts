@@ -7,7 +7,7 @@ type Frame = readonly [number, number, number, number];
 
 /** Shared production/preview compositor. Every visible pixel comes from reviewed generated images. */
 export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Texture, back: Texture, lift: Texture,
-  groomAtlas?: Texture, settleAtlas?: Texture, stretchAtlas?: Texture, stretchMid?: Texture) {
+  groomAtlas?: Texture, settleAtlas?: Texture, stretchAtlas?: Texture, stretchMid?: Texture, turnAtlas?: Texture) {
   const textures: Texture[] = [];
   const frame = (source: Texture, rectangle: Frame, foot: number, normalization = 1) => {
     const texture = new Texture({ source: source.source, frame: new Rectangle(...rectangle) });
@@ -51,6 +51,11 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
       selected.horizontalAnchor = spec.anchorX / spec.rect[2];
       return selected;
     }), stretch] : [];
+  const turning = turnAtlas ? [stretch, ...generatedArt.catTurn.frames.map(spec => {
+    const selected = frame(turnAtlas, spec.rect, spec.foot, generatedArt.catTurn.normalization);
+    selected.horizontalAnchor = spec.anchorX / spec.rect[2];
+    return selected;
+  })] : [];
   return {
     createSprite() {
       const art = new Sprite(walking[0].texture);
@@ -59,15 +64,18 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
     },
     update(art: Sprite, pose: CatPose, sceneScale: number, footY: number) {
       const groomPose = pose.frame === 5 || pose.frame === 6;
-      const selected = pose.frame < 4 ? walking[walkingFrame(pose.x, pose.direction, sceneScale)]
+      const turnDirection = pose.turnFrame === 7 ? -pose.direction as 1 | -1 : pose.direction;
+      const turnPose = pose.turnFrame === 7 ? walking[walkingFrame(pose.x, turnDirection, sceneScale)]
+        : pose.turnFrame !== undefined ? turning[pose.turnFrame] : undefined;
+      const selected = turnPose ?? (pose.frame < 4 ? walking[walkingFrame(pose.x, pose.direction, sceneScale)]
         : (groomPose && pose.groomFrame !== undefined ? grooming[pose.groomFrame] : undefined)
           ?? (pose.frame === 7 && pose.settleFrame !== undefined ? settling[pose.settleFrame] : undefined)
           ?? (pose.frame === 8 && pose.stretchFrame !== undefined ? stretching[pose.stretchFrame] : undefined)
-          ?? poses[pose.frame] ?? sitting;
+          ?? poses[pose.frame] ?? sitting);
       art.texture = selected.texture;
       art.anchor.set(selected.horizontalAnchor, selected.footAnchor);
       const size = sceneScale * 0.25 * selected.normalization;
-      art.scale.set(pose.direction * size, size);
+      art.scale.set(turnDirection * size, size);
       art.position.set(pose.x, footY);
       // No breathing deformation: the reviewed curled frame is held still.
     },

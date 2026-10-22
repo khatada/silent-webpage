@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "44ed047ce351e43eee36864186f25dc4cf7d64d3f682e787ef49080d578e94c7",
+  "sourceSha256": "1622a62a9390f1b68c71afb7618d36076e2a4bf119f58ddbbb6e42d9e644e5e5",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,39 +129,39 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-22-curtain-final-v2/desktop-corrected.png",
-      "report": "art-reviews/2026-10-22-curtain-final-v2/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-22-cat-turn-final/desktop-corrected.png",
+      "report": "art-reviews/2026-10-22-cat-turn-final/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/実装担当LLMが補正後最終全景11サイズを実閲覧し採用。猫・空・街・電車・飛行機・車・屋上の構図と素材読み込みを維持。カーテンは対象2窓だけに限定し窓枠や植栽を大きく覆わない。実寸の3姿勢/明度変化は最終motion atlasと併用して評価。標準窓では非常に小さく、横長は省略する。"
+      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-curtain-final-v2/mobile-corrected.png",
-      "report": "art-reviews/2026-10-22-curtain-final-v2/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-22-cat-turn-final/mobile-corrected.png",
+      "report": "art-reviews/2026-10-22-cat-turn-final/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/実装担当LLMが補正後最終全景11サイズを実閲覧し採用。猫・空・街・電車・飛行機・車・屋上の構図と素材読み込みを維持。カーテンは対象2窓だけに限定し窓枠や植栽を大きく覆わない。実寸の3姿勢/明度変化は最終motion atlasと併用して評価。標準窓では非常に小さく、横長は省略する。"
+      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-curtain-final-v2/narrow-corrected.png",
-      "report": "art-reviews/2026-10-22-curtain-final-v2/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-22-cat-turn-final/narrow-corrected.png",
+      "report": "art-reviews/2026-10-22-cat-turn-final/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/実装担当LLMが補正後最終全景11サイズを実閲覧し採用。猫・空・街・電車・飛行機・車・屋上の構図と素材読み込みを維持。カーテンは対象2窓だけに限定し窓枠や植栽を大きく覆わない。実寸の3姿勢/明度変化は最終motion atlasと併用して評価。標準窓では非常に小さく、横長は省略する。"
+      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-curtain-final-v2/landscape-corrected.png",
-      "report": "art-reviews/2026-10-22-curtain-final-v2/landscape-corrected.png.json",
+      "image": "art-reviews/2026-10-22-cat-turn-final/landscape-corrected.png",
+      "report": "art-reviews/2026-10-22-cat-turn-final/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/実装担当LLMが補正後最終全景11サイズを実閲覧し採用。猫・空・街・電車・飛行機・車・屋上の構図と素材読み込みを維持。カーテンは対象2窓だけに限定し窓枠や植栽を大きく覆わない。実寸の3姿勢/明度変化は最終motion atlasと併用して評価。標準窓では非常に小さく、横長は省略する。"
+      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-curtain-final-v2/wide-corrected.png",
-      "report": "art-reviews/2026-10-22-curtain-final-v2/wide-corrected.png.json",
+      "image": "art-reviews/2026-10-22-cat-turn-final/wide-corrected.png",
+      "report": "art-reviews/2026-10-22-cat-turn-final/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/実装担当LLMが補正後最終全景11サイズを実閲覧し採用。猫・空・街・電車・飛行機・車・屋上の構図と素材読み込みを維持。カーテンは対象2窓だけに限定し窓枠や植栽を大きく覆わない。実寸の3姿勢/明度変化は最終motion atlasと併用して評価。標準窓では非常に小さく、横長は省略する。"
+      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
     },
     {
       "image": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
@@ -171,46 +171,46 @@
       "reason": "親LLMが最終補正atlasを実閲覧して採用。独立LLMも同一bytesのtrial左右各8コマ列を実閲覧して採用済み（SHA256 fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04）。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯は概ね揃い切れ/浮きなし。端点左右4組はRGBA一致。midの頭/首がやや小さく尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差は残る。"
     },
     {
-      "image": "art-reviews/2026-10-22-curtain-final-v2/compact-corrected.png",
-      "report": "art-reviews/2026-10-22-curtain-final-v2/compact-corrected.png.json",
+      "image": "art-reviews/2026-10-22-cat-turn-final/compact-corrected.png",
+      "report": "art-reviews/2026-10-22-cat-turn-final/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/実装担当LLMが補正後最終全景11サイズを実閲覧し採用。猫・空・街・電車・飛行機・車・屋上の構図と素材読み込みを維持。カーテンは対象2窓だけに限定し窓枠や植栽を大きく覆わない。実寸の3姿勢/明度変化は最終motion atlasと併用して評価。標準窓では非常に小さく、横長は省略する。"
+      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-curtain-final-v2/tall-corrected.png",
-      "report": "art-reviews/2026-10-22-curtain-final-v2/tall-corrected.png.json",
+      "image": "art-reviews/2026-10-22-cat-turn-final/tall-corrected.png",
+      "report": "art-reviews/2026-10-22-cat-turn-final/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/実装担当LLMが補正後最終全景11サイズを実閲覧し採用。猫・空・街・電車・飛行機・車・屋上の構図と素材読み込みを維持。カーテンは対象2窓だけに限定し窓枠や植栽を大きく覆わない。実寸の3姿勢/明度変化は最終motion atlasと併用して評価。標準窓では非常に小さく、横長は省略する。"
+      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-curtain-final-v2/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-22-curtain-final-v2/portrait-large-corrected.png.json",
+      "image": "art-reviews/2026-10-22-cat-turn-final/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-22-cat-turn-final/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/実装担当LLMが補正後最終全景11サイズを実閲覧し採用。猫・空・街・電車・飛行機・車・屋上の構図と素材読み込みを維持。カーテンは対象2窓だけに限定し窓枠や植栽を大きく覆わない。実寸の3姿勢/明度変化は最終motion atlasと併用して評価。標準窓では非常に小さく、横長は省略する。"
+      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-curtain-final-v2/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-22-curtain-final-v2/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/2026-10-22-cat-turn-final/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-22-cat-turn-final/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/実装担当LLMが補正後最終全景11サイズを実閲覧し採用。猫・空・街・電車・飛行機・車・屋上の構図と素材読み込みを維持。カーテンは対象2窓だけに限定し窓枠や植栽を大きく覆わない。実寸の3姿勢/明度変化は最終motion atlasと併用して評価。標準窓では非常に小さく、横長は省略する。"
+      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-curtain-final-v2/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-22-curtain-final-v2/small-phone-corrected.png.json",
+      "image": "art-reviews/2026-10-22-cat-turn-final/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-22-cat-turn-final/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/実装担当LLMが補正後最終全景11サイズを実閲覧し採用。猫・空・街・電車・飛行機・車・屋上の構図と素材読み込みを維持。カーテンは対象2窓だけに限定し窓枠や植栽を大きく覆わない。実寸の3姿勢/明度変化は最終motion atlasと併用して評価。標準窓では非常に小さく、横長は省略する。"
+      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
     },
     {
-      "image": "art-reviews/2026-10-22-curtain-final-v2/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-22-curtain-final-v2/small-mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-22-cat-turn-final/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-22-cat-turn-final/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/実装担当LLMが補正後最終全景11サイズを実閲覧し採用。猫・空・街・電車・飛行機・車・屋上の構図と素材読み込みを維持。カーテンは対象2窓だけに限定し窓枠や植栽を大きく覆わない。実寸の3姿勢/明度変化は最終motion atlasと併用して評価。標準窓では非常に小さく、横長は省略する。"
+      "reason": "固定した方向転換実装の補正後全景を親/独立LLMが実閲覧し採用。空・街・床と乗り物、初期歩行の猫の接地・足先・尾・画面内配置を確認。方向転換自体は別の80パネルatlasで評価する。"
     },
     {
       "image": "public/art/street-car.png",
@@ -284,6 +284,32 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親と実装担当LLMが補正後最終36パネルを実閲覧し採用。標準/縦の実寸と4倍、3姿勢×点灯/中間/消灯を確認。実際の順序は0直立→2半曲げ→1最大曲げ→2→0の12秒。上端固定で裾だけ控えめに変化し、暗幕の下で既存明度を継承。標準の実寸変化は非常に小さく横長では省略。旧trial atlasと旧全景は最終採用に使わない。"
+    },
+    {
+      "image": "public/art/cat-turn.png",
+      "report": "public/art/cat-turn.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親と独立LLMが2px補正後768x512画像を実閲覧し、6姿勢を素材採用。右向きの伸び回復→立位→後方斜め→後ろ→反対斜め→左立位を区別でき、濃紺/紫の毛色・琥珀眼・耳/尾は同じ猫として許容。後ろ姿は幅が狭まり、首/尾/毛並みに小差がある。素材採用のみで、左右の体格/接地・2倍率・実walking frameへの端点一致と最終全景は別途QAする。 合成後も共通倍率0.65と支持帯で左右を確認し採用。首・尾・毛並みの小差は残る。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "original": "art-reviews/2026-10-22-cat-turn/original.png",
+        "originalSha256": "1c711b44ef48a4af271ba7c3255a54ca31b0773d85535e3ccb5fb02ae127cdd3",
+        "prompt": "Six poses of the same charcoal cat from generated walk and stretch references: right-facing recovery from stretch, right standing, rear three-quarter, rear view, opposite three-quarter, left standing; preserve identity and coherent fine pixel art on transparent background.",
+        "promptType": "summary",
+        "references": [
+          "art-reviews/2026-10-22-cat-turn/walk-reference.png",
+          "art-reviews/2026-10-22-cat-turn/stretch-reference.png"
+        ],
+        "referenceSource": "既存の採用済み画像生成による猫の歩行/伸び素材を参照。新原画はimagegenで制作し、コード描画しない。"
+      }
+    },
+    {
+      "image": "art-reviews/2026-10-22-cat-turn-motion/atlas-corrected.png",
+      "report": "art-reviews/2026-10-22-cat-turn-motion/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/独立LLMが補正後80パネルを実閲覧して採用。左右の起立・後方回頭・背面・反対向き歩行を区別でき、支持帯と輪郭を保持。独立RGBA再計算でも8歩行位相×左右×倍率1/4の32端点組が完全一致。静止コマによる採用で、実時間の全端末の切替テンポまでは保証しない。"
     }
   ]
 }

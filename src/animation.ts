@@ -19,6 +19,7 @@ type GroomFrame = 0 | 1 | 2 | 3 | 4 | 5;
 export interface CatPose {
   x: number; direction: 1 | -1; frame: number; breath: 0 | 0.5;
   groomFrame?: GroomFrame; settleFrame?: 0 | 1 | 2 | 3 | 4 | 5;
+  turnFrame?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
   stretchFrame?: 0 | 1 | 2 | 3 | 4 | 5;
 }
 
@@ -26,11 +27,17 @@ export interface CatPose {
 const groomingSteps = [[21.25, 0], [21.5, 1], [22.25, 2], [22.5, 3], [23, 4],
   [23.5, 5], [23.75, 3], [24, 1], [25, 0]] as const;
 
-/** Body-scaled walks alternate with long grooming and resting pauses in a 64-second cycle. */
+export const catLegDuration = 36;
+export const catPeriod = catLegDuration * 2;
+export const catTurnStart = 32;
+const turningSteps = [[32.25, 0], [32.75, 1], [33.25, 2], [33.75, 3],
+  [34.25, 4], [34.75, 5], [35.75, 6], [36, 7]] as const;
+
+/** Body-scaled walks, resting and a gradual turn repeat in a 72-second cycle. */
 export function catPose(seconds: number, width: number, sceneScale = 1): CatPose {
-  const time = ((seconds % 64) + 64) % 64;
-  const outward = time < 32;
-  const leg = outward ? time : time - 32;
+  const time = ((seconds % catPeriod) + catPeriod) % catPeriod;
+  const outward = time < catLegDuration;
+  const leg = outward ? time : time - catLegDuration;
   const size = Number.isFinite(sceneScale) && sceneScale > 0 ? sceneScale : 1;
   const distance = width * 0.5;
   const walkDuration = Math.min(18, Math.max(2, distance / (32 * size)));
@@ -46,6 +53,7 @@ export function catPose(seconds: number, width: number, sceneScale = 1): CatPose
     x: Math.round(width * (0.25 + 0.5 * progress)),
     direction: outward ? 1 : -1,
     frame,
+    ...(leg >= catTurnStart ? { turnFrame: turningSteps.find(([end]) => leg < end)![1] } : {}),
     breath: frame === 7 && leg >= 26 && leg < 28.5 ? 0.5 : 0,
     ...(leg >= 21 && leg < 25 ? { groomFrame: groomingSteps.find(([end]) => leg < end)![1] } : {}),
     ...(leg >= 30 && leg < 31.5 ? { stretchFrame: Math.floor((leg - 30) * 4) as 0 | 1 | 2 | 3 | 4 | 5 } : {}),

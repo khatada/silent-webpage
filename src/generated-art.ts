@@ -8,6 +8,19 @@ export const generatedArt = {
   catSettleAtlas: 'art/cat-settle.png',
   catStretchAtlas: 'art/cat-stretch.png',
   catStretchMid: 'art/cat-stretch-mid.png',
+  catTurnAtlas: 'art/cat-turn.png',
+  catTurn: {
+    // One anatomical scale across recovery, profile, quarter and rear views.
+    normalization: 0.65,
+    frames: [
+      { rect: [0, 0, 280, 256], foot: 244, anchorX: 140 },
+      { rect: [280, 0, 270, 256], foot: 244, anchorX: 132 },
+      { rect: [550, 0, 218, 256], foot: 244, anchorX: 112 },
+      { rect: [0, 256, 256, 256], foot: 227, anchorX: 136 },
+      { rect: [256, 256, 208, 256], foot: 227, anchorX: 106 },
+      { rect: [464, 256, 304, 256], foot: 226, anchorX: 160 },
+    ],
+  },
   catWalkAtlas: 'art/cat-walk.png',
   catWalkBack: 'art/cat-walk-back.png',
   catWalkLift: 'art/cat-walk-lift.png',

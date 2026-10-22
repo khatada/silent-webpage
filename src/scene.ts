@@ -15,7 +15,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -30,14 +30,15 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${generatedArt.catStretchAtlas}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.catStretchMid}`),
     Assets.load<Texture>(`${baseUrl}${curtainArt.image}`),
+    Assets.load<Texture>(`${baseUrl}${generatedArt.catTurnAtlas}`),
   ]);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
   portraitBackground.source.scaleMode = 'nearest';
   atlas.source.scaleMode = 'nearest';
   restAtlas.source.scaleMode = 'nearest';
-  for (const image of [walkAtlas, back, lift, groomAtlas, settleAtlas, stretchAtlas, stretchMid]) image.source.scaleMode = 'nearest';
-  const imageCat = createImageCat(atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, stretchAtlas, stretchMid);
+  for (const image of [walkAtlas, back, lift, groomAtlas, settleAtlas, stretchAtlas, stretchMid, turnAtlas]) image.source.scaleMode = 'nearest';
+  const imageCat = createImageCat(atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, stretchAtlas, stretchMid, turnAtlas);
   const imageStreetCar = createImageStreetCar(streetCar, [background, wideBackground, portraitBackground]);
   const imageCurtain = createImageCurtain(curtainAtlas);
   let curtain: Sprite | undefined;

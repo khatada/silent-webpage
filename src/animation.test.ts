@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { catPose, travelPosition, windowBrightness } from './animation';
+import { catLegDuration, catPeriod, catTurnStart, catPose, travelPosition, windowBrightness } from './animation';
 
 describe('city animation timing', () => {
   it('keeps vehicles continuous within the visible area and wraps beyond its edges', () => {
@@ -27,26 +27,26 @@ describe('city animation timing', () => {
     ];
     for (const [seconds, frame] of samples) {
       expect(catPose(seconds, 640).frame).toBe(frame);
-      expect(catPose(seconds + 32, 640).frame).toBe(frame);
+      expect(catPose(seconds + catLegDuration, 640).frame).toBe(frame);
     }
-    expect(catPose(32, 640).direction).toBe(-1);
-    expect(catPose(33, 640).x).toBeLessThan(catPose(32, 640).x);
+    expect(catPose(catLegDuration, 640).direction).toBe(-1);
+    expect(catPose(catLegDuration + 1, 640).x).toBeLessThan(catPose(catLegDuration, 640).x);
   });
   it('keeps the cat in place while resting and continuous through posture changes', () => {
     for (const width of [140, 185, 640, 1280]) {
-      for (const seconds of [18, 21, 25, 30, 32, 50, 53, 57, 62, 64]) {
+      for (const seconds of [18, 21, 25, 30, 32, 36, 54, 57, 61, 66, 68, 72]) {
         expect(Math.abs(catPose(seconds, width).x - catPose(seconds - 0.001, width).x)).toBeLessThanOrEqual(1);
       }
-      for (let seconds = 18; seconds < 32; seconds += 0.25) {
+      for (let seconds = 18; seconds < catLegDuration; seconds += 0.25) {
         expect(catPose(seconds, width).x).toBe(Math.round(width * 0.75));
-        expect(catPose(seconds + 32, width).x).toBe(Math.round(width * 0.25));
+        expect(catPose(seconds + catLegDuration, width).x).toBe(Math.round(width * 0.25));
       }
     }
   });
   it('moves through six grooming poses and lowers the paw before curled rest on both legs', () => {
     const phases = [[21, 0], [21.25, 1], [21.5, 2], [22.25, 3], [22.5, 4],
       [23, 5], [23.5, 3], [23.75, 1], [24, 0], [24.999, 0]];
-    for (const offset of [-64, 0, 32, 64]) {
+    for (const offset of [-catPeriod, 0, catLegDuration, catPeriod]) {
       phases.forEach(([seconds, phase], index) => {
         expect(catPose(seconds + offset, 640).groomFrame).toBe(phase);
         if (index > 0) expect(catPose(seconds + offset - 0.0001, 640).groomFrame).toBe(phases[index - 1][1]);
@@ -54,13 +54,13 @@ describe('city animation timing', () => {
       expect(catPose(20.999 + offset, 640)).not.toHaveProperty('groomFrame');
       expect(catPose(25 + offset, 640)).not.toHaveProperty('groomFrame');
     }
-    for (let seconds = 0; seconds < 64; seconds += 0.125) {
+    for (let seconds = 0; seconds < catPeriod; seconds += 0.125) {
       const pose = catPose(seconds, 640);
       if (pose.frame !== 5 && pose.frame !== 6) expect(pose).not.toHaveProperty('groomFrame');
     }
   });
   it('settles through six stages between grooming and the held curled pose', () => {
-    for (const offset of [-64, 0, 32, 64]) {
+    for (const offset of [-catPeriod, 0, catLegDuration, catPeriod]) {
       expect(catPose(24.999 + offset, 640)).not.toHaveProperty('settleFrame');
       for (let stage = 0; stage < 6; stage++) {
         const start = 25 + stage * 0.25 + offset;
@@ -74,14 +74,14 @@ describe('city animation timing', () => {
       expect(catPose(26.5 + offset, 640)).not.toHaveProperty('settleFrame');
       expect(catPose(26.5 + offset, 640).frame).toBe(7);
     }
-    for (let seconds = 0; seconds < 64; seconds += 0.125) {
+    for (let seconds = 0; seconds < catPeriod; seconds += 0.125) {
       const pose = catPose(seconds, 640);
-      const leg = seconds % 32;
+      const leg = seconds % catLegDuration;
       if (leg < 25 || leg >= 26.5) expect(pose).not.toHaveProperty('settleFrame');
     }
   });
   it('uncurls through six stretching stages and holds the exact stretched endpoint on both legs', () => {
-    for (const offset of [-64, 0, 32, 64]) {
+    for (const offset of [-catPeriod, 0, catLegDuration, catPeriod]) {
       expect(catPose(29.999 + offset, 640)).not.toHaveProperty('stretchFrame');
       for (let stage = 0; stage < 6; stage++) {
         const start = 30 + stage * 0.25 + offset;
@@ -96,11 +96,32 @@ describe('city animation timing', () => {
       }
       expect(catPose(31.5 + offset, 640)).not.toHaveProperty('stretchFrame');
       expect(catPose(31.999 + offset, 640).frame).toBe(8);
-      expect(catPose(32 + offset, 640).frame).toBe(0);
+      expect(catPose(catLegDuration + offset, 640).frame).toBe(0);
     }
-    for (let seconds = 0; seconds < 64; seconds += 0.125) {
-      const leg = seconds % 32;
+    for (let seconds = 0; seconds < catPeriod; seconds += 0.125) {
+      const leg = seconds % catLegDuration;
       if (leg < 30 || leg >= 31.5) expect(catPose(seconds, 640)).not.toHaveProperty('stretchFrame');
+    }
+  });
+  it('recovers and turns on both legs with a fixed root through every boundary', () => {
+    const ends = [32.25, 32.75, 33.25, 33.75, 34.25, 34.75, 35.75, catLegDuration];
+    for (const offset of [-catPeriod, 0, catLegDuration, catPeriod]) {
+      expect(catPose(catTurnStart - 0.001 + offset, 640)).not.toHaveProperty('turnFrame');
+      ends.forEach((end, stage) => {
+        const start = stage === 0 ? catTurnStart : ends[stage - 1];
+        for (const time of [start, end - 0.0001]) {
+          const pose = catPose(time + offset, 640);
+          expect(pose.turnFrame).toBe(stage);
+          expect(pose.frame).toBe(8);
+          expect(pose.x).toBe(catPose(catTurnStart + offset, 640).x);
+          expect(pose.direction).toBe(catPose(catTurnStart + offset, 640).direction);
+        }
+      });
+      const endpoint = catPose(catLegDuration + offset, 640);
+      expect(endpoint).not.toHaveProperty('turnFrame');
+      expect(endpoint.frame).toBe(0);
+      expect(endpoint.x).toBe(catPose(catLegDuration - 0.0001 + offset, 640).x);
+      expect(endpoint.direction).toBe(-catPose(catLegDuration - 0.0001 + offset, 640).direction);
     }
   });
   it('matches walking speed to body size and stops at the route endpoint', () => {
@@ -109,7 +130,7 @@ describe('city animation timing', () => {
       expect(catPose(1, width, scale).x - catPose(0, width, scale).x).toBe(32 * scale);
       expect(catPose(duration, width, scale).frame).toBe(4);
       expect(catPose(duration + 1, width, scale).x).toBe(catPose(duration, width, scale).x);
-      expect(catPose(33, width, scale).x - catPose(32, width, scale).x).toBe(-32 * scale);
+      expect(catPose(catLegDuration + 1, width, scale).x - catPose(catLegDuration, width, scale).x).toBe(-32 * scale);
     }
     expect(catPose(1, 640, 2).x - catPose(0, 640, 2).x)
       .toBe(2 * (catPose(1, 640, 1).x - catPose(0, 640, 1).x));
@@ -119,27 +140,27 @@ describe('city animation timing', () => {
   it('adds one small breath inside each curled rest, returning to neutral before stretching', () => {
     const samples = [[25, 0], [25.999, 0], [26, 0.5], [27.25, 0.5], [28.499, 0.5], [28.5, 0], [29.999, 0], [30, 0]];
     for (const [seconds, breath] of samples) {
-      for (const offset of [-64, -32, 0, 32, 64]) {
+      for (const offset of [-catPeriod, -catLegDuration, 0, catLegDuration, catPeriod]) {
         expect(catPose(seconds + offset, 640).breath).toBe(breath);
       }
     }
-    for (let seconds = 0; seconds < 64; seconds += 0.125) {
+    for (let seconds = 0; seconds < catPeriod; seconds += 0.125) {
       const pose = catPose(seconds, 640);
       expect([0, 0.5]).toContain(pose.breath);
       if (pose.frame !== 7) expect(pose.breath).toBe(0);
     }
   });
-  it('repeats every 64 seconds without taking the cat outside mobile roof bounds', () => {
+  it('repeats every 72 seconds without taking the cat outside mobile roof bounds', () => {
     for (const width of [140, 185, 640, 1280]) {
-      for (let seconds = 0; seconds < 64; seconds += 0.25) {
+      for (let seconds = 0; seconds < catPeriod; seconds += 0.25) {
         const pose = catPose(seconds, width);
-        expect(catPose(seconds + 64, width)).toEqual(pose);
+        expect(catPose(seconds + catPeriod, width)).toEqual(pose);
         expect(pose.x - 12).toBeGreaterThanOrEqual(0);
         expect(pose.x + 14).toBeLessThan(width);
         expect(pose.frame).toBeGreaterThanOrEqual(0);
         expect(pose.frame).toBeLessThanOrEqual(8);
       }
     }
-    expect(catPose(-1, 640)).toEqual(catPose(63, 640));
+    expect(catPose(-1, 640)).toEqual(catPose(catPeriod - 1, 640));
   });
 });

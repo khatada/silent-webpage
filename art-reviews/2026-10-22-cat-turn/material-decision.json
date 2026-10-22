@@ -1,0 +1,45 @@
+{
+  "decision": "accepted-as-material",
+  "reviewedBy": "LLM",
+  "date": "2026-10-22",
+  "image": "public/art/cat-turn.png",
+  "report": "public/art/cat-turn.png.json",
+  "reason": "親と独立LLMが2px補正後768x512画像を実閲覧し、6姿勢を素材採用。右向きの伸び回復→立位→後方斜め→後ろ→反対斜め→左立位を区別でき、濃紺/紫の毛色・琥珀眼・耳/尾は同じ猫として許容。後ろ姿は幅が狭まり、首/尾/毛並みに小差がある。素材採用のみで、左右の体格/接地・2倍率・実walking frameへの端点一致と最終全景は別途QAする。",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "original": "art-reviews/2026-10-22-cat-turn/original.png",
+    "originalSha256": "1c711b44ef48a4af271ba7c3255a54ca31b0773d85535e3ccb5fb02ae127cdd3",
+    "prompt": "Six poses of the same charcoal cat from generated walk and stretch references: right-facing recovery from stretch, right standing, rear three-quarter, rear view, opposite three-quarter, left standing; preserve identity and coherent fine pixel art on transparent background.",
+    "promptType": "summary",
+    "references": [
+      "art-reviews/2026-10-22-cat-turn/walk-reference.png",
+      "art-reviews/2026-10-22-cat-turn/stretch-reference.png"
+    ],
+    "referenceSource": "既存の採用済み画像生成による猫の歩行/伸び素材を参照。新原画はimagegenで制作し、コード描画しない。"
+  },
+  "correctedSha256": "667319cf81055427d16eeb8b517280382d20c9b91bc1947b55e1e8ea2446b5ee",
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "cropPlan": {
+    "topX": [
+      0,
+      280,
+      550,
+      768
+    ],
+    "bottomX": [
+      0,
+      256,
+      464,
+      768
+    ],
+    "reason": "ひげが等分256/512境界を越えるため不等cropを使う。",
+    "normalization": 0.5,
+    "alignment": "bboxごとの拡大を行わず、共通倍率で体の支持点を整列する。"
+  },
+  "scope": "素材採用済み。art-reviews/2026-10-22-cat-turn-motion の実表示と全景は未採用。"
+}
