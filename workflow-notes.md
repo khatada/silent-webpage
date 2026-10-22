@@ -66,4 +66,6 @@
 
 - 追加worktreeで依存関係を共有する場合も、最初に `npm run prepare` を実行してそのworktreeのHusky実体を用意する。node_modulesの共有だけでは無視対象の `.husky/_` が作られず、フックが動かないことがある。必須verifyは独立して実行し、フックの有無に依存して省略しない。
 
-- Ubuntu 24.04固定だけではAzureのaptミラー遅延は解消しない。PR #31初回ログのhttp://azure.archive.ubuntu.com/ubuntuは30秒再試行を繰り返し、公式archiveへのfallbackは成功した。Playwright導入前に既知のsources.list/ubuntu.sourcesだけを確認し、そのURIを公式HTTPS archiveへ置換する。TLS検証、依存導入、テスト、15分制限は維持し、存在する対応sourceがない場合は明示的に失敗させる。
+- Ubuntu 24.04固定だけではAzureのaptミラー遅延は解消しない。PR #31初回ログのhttp://azure.archive.ubuntu.com/ubuntuは30秒再試行を繰り返し、公式archiveへのfallbackは成功した。Playwright導入前に既知のsources.list/ubuntu.sourcesとapt-mirrors.txt/apt-mirrors-security.txtを確認し、そのURIを公式HTTPS archiveへ置換する。TLS検証、依存導入、テスト、15分制限は維持し、存在する対応sourceがない場合は明示的に失敗させる。
+
+- CI成功だけではミラー置換成功とは判断しない。PR #33成功ログの先頭はfile:/etc/apt/apt-mirrors.txtで、その後もAzure HTTPへ接続していた。mirror+file参照はsourcesのURI置換だけでは変わらないため、既知の参照先mirror listも対象にし、再CIのGet/Hitで実際のHTTPS接続先を確認する。

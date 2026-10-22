@@ -139,8 +139,13 @@
 - C023最終QA（2026-10-22）: 初期walkingの全景11サイズで構図・読み込み・猫の切れ/接地を確認し採用。C023自体は左右列atlasで評価した。最終atlasとtrialのbytes/hashは一致し、最終atlasを親も実閲覧して採用。端点左右4組のRGBA一致を最終証跡へ保持。manifestは27画像へ更新、必須verify成功（型・Lint・単体47件・採用27画像・build）。既記のmid頭/首・尾/腰・既存stretchとの差は残る。
 
 
+
 ## CIのUbuntu公式ミラー選択
 
-- 対象/実装: Playwright依存導入前に、存在する `/etc/apt/sources.list` と `/etc/apt/sources.list.d/ubuntu.sources` の既知Azure HTTP URIだけを公式HTTPS archiveへ置換する。対応sourceが1つもない場合は失敗させる。
+- 対象/実装: Playwright依存導入前に、存在する `/etc/apt/sources.list`、`/etc/apt/sources.list.d/ubuntu.sources`、`/etc/apt/apt-mirrors.txt`、`/etc/apt/apt-mirrors-security.txt` の既知Azure HTTP URIだけを公式HTTPS archiveへ置換する。対応sourceが1つもない場合は失敗させる。
 - 仮定と理由: 実ログでAzureミラーの30秒再試行と公式archiveの成功を確認したため、安定版runner固定に加えミラー経路を選択する。TLS検証・テスト範囲・時間制限は緩めない。
 - 実装後に見直す点: PRとPagesで依存導入が完了し、全ブラウザテストが成功するか。ホスト側のsource形式や公式archiveの可用性は今後も変わり得る。
+
+- 修正確認: PR #33の成功ログでも `file:/etc/apt/apt-mirrors.txt` からAzure HTTP archiveを取得していた。初回のsource直接置換だけではmirror+file参照先に届かず、ミラー変更の効果は未検証だった。既知mirror listも対象へ追加し、新CIのGet/Hitが対象archiveをHTTPSで取得することを確認してからマージする。
+
+- 修正版の確認結果: PR #34はCI 39774106648とjob 119808606726で公式HTTPS archiveからnoble/依存を取得し対象Azure HTTP URIなしと確認後、main 283a78bへマージ済み。

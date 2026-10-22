@@ -6,10 +6,11 @@
 
 - ブランチ: `feat/generated-cat-stretch`、worktree `/workspace/silent-webpage-stretch`。C023をmain a7e7eb0へrebase後、PR #34のCIミラー修正を統合し、描画sourceと採用画像を維持。保存stashは再popしない。
 - C023「丸まりから伸びへの中間姿勢」は素材4中間、左右各8コマ列、最終11サイズ全景とatlasを親/独立LLMが採用済み。端点左右4組RGBA完全一致。最終source `34cc745e33176b6a5582420b84c270f8aaefc246abc569ef8fe79cca231b8a94`、manifest27画像。必須verifyは型・Lint・単体47件・採用27画像・build成功。
-- C016はPR #31でCI 39771598524成功後mainへマージ済み（a7e7eb04aef7e7cbae2cda8988574a8aaccd524a）。車の最終15パネル/11サイズ全景は採用済み。Pagesは確認待ち。
-- CI復旧: PR #32はCI 39771025641成功後main 24b7d24へマージ済み。共有CIはubuntu-24.04。PR #31初回CI 39768849572はUbuntu resoluteの依存取得でtimeoutし、テスト未開始。修正統合後のCI成功で解消した。
+- C016はPR #31でCI 39771598524成功後mainへマージ済み（a7e7eb04aef7e7cbae2cda8988574a8aaccd524a）。車の最終15パネル/11サイズ全景は採用済み。Pages 39771950954も成功済み。
+- CI復旧: PR #32はCI 39771025641成功後main 24b7d24へマージ済み。共有CIはubuntu-24.04。Pages 39771312848も成功済み。PR #31初回CI 39768849572はUbuntu resoluteの依存取得でtimeoutし、テスト未開始。修正統合後のCI成功で解消した。
 - C022はPR #30でCI 39693202139成功後main 4bdeac6へマージ。Pages 39693505226成功。補正後中間4素材は共通.5倍率と支持帯で整列、端点左右4組RGBA一致。
-- CIミラー対策: PR #34（fix/official-ubuntu-mirror、abf26ea）をこのブランチへ統合。既知Azure apt URIを公式HTTPS archiveへ置換する。PR #34はCI 39772778913確認待ちでmain未マージ。先に #34をmainへ反映する予定。PR #33の旧CI 39772163427は依存導入で長時間待ちとなり、今回push後の新CIで再確認する（旧runはキャンセルされる場合がある）。Pages 39771312848の完了も確認待ち。
+- CIミラー対策: PR #34の修正版はCI 39774106648成功後main 283a78b2afcb3748be9998a3c3f9a015822cf44dへマージ済み。job 119808606726のGet/Hitでhttps://archive.ubuntu.comからnoble/依存を取得し、対象Azure HTTP URIが出ないことを確認。mirror+file先のapt-mirrors.txt/securityも対象にする修正を統合した。
+- C023: 旧HEADのCI 39773133577は成功。修正済みmain統合後の最終HEADは新CIの成功確認が必要で、PR #33は未マージ。
 - 添付: PR #33は1回呼び出し後60秒超無応答で中断し成否未確認。PR #34はNo handler registeredで添付できなかった。CI/マージは親が管理する。
 - C021はPR #29でCI 39691339838成功後mainマージ済み（0cd17ba）。単体42件/採用画像22件でverify成功。Pages 39691591549も成功し公開済み。PR29添付toolは無応答で成否未確認。
 - C020はPR #28でCI 39689614717成功後mainマージ済み（5307f96）。Pages 39689876290も成功し公開済み。PR28添付は無応答のため成功未確認。
