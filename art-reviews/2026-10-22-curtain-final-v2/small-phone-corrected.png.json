@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-22-curtain-final-v2/small-phone-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "380b311fb50ba5e62857cbdc66ea111d500aa93b228d223d0132b795f0e28721"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-22-curtain-final-v2/small-phone-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "f139b2434be699c69fcf06cd41447d96fb5fdf0ded3bfd77c51296d43d14a5f7"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

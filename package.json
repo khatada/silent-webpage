@@ -18,7 +18,8 @@
     "art:capture": "node --import tsx scripts/capture-art-review.ts",
     "art:preview-cat": "node --import tsx scripts/preview-generated-cat.ts",
     "art:preview-windows": "node --import tsx scripts/preview-generated-windows.ts",
-    "art:preview-street-car": "node --import tsx scripts/preview-generated-street-car.ts"
+    "art:preview-street-car": "node --import tsx scripts/preview-generated-street-car.ts",
+    "art:preview-curtain": "node --import tsx scripts/preview-generated-curtain.ts"
   },
   "dependencies": {
     "pixi.js": "^8.14.0"

@@ -1,0 +1,966 @@
+{
+  "sourceSha256": "2d735e7aa8a91567f3a618f00c6149e2b213d3484ea60b4aface57ac01c8c127",
+  "finalSourceSha256": "2d735e7aa8a91567f3a618f00c6149e2b213d3484ea60b4aface57ac01c8c127",
+  "metadata": {
+    "width": 1152,
+    "height": 768,
+    "samples": [
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 0,
+        "seconds": 0,
+        "lightSeconds": 2,
+        "alpha": 0,
+        "scale": 1,
+        "row": 0,
+        "column": 0,
+        "normalization": 0.03365384615384615,
+        "spriteX": 19,
+        "spriteY": 32
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 0,
+        "seconds": 0,
+        "lightSeconds": 0.45,
+        "alpha": 0.460000000000001,
+        "scale": 1,
+        "row": 0,
+        "column": 1,
+        "normalization": 0.03365384615384615,
+        "spriteX": 147,
+        "spriteY": 32
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 0,
+        "seconds": 0,
+        "lightSeconds": 20,
+        "alpha": 0.92,
+        "scale": 1,
+        "row": 0,
+        "column": 2,
+        "normalization": 0.03365384615384615,
+        "spriteX": 275,
+        "spriteY": 32
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 0,
+        "seconds": 0,
+        "lightSeconds": 2,
+        "alpha": 0,
+        "scale": 4,
+        "row": 1,
+        "column": 0,
+        "normalization": 0.03365384615384615,
+        "spriteX": 50,
+        "spriteY": 248
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 0,
+        "seconds": 0,
+        "lightSeconds": 0.45,
+        "alpha": 0.460000000000001,
+        "scale": 4,
+        "row": 1,
+        "column": 1,
+        "normalization": 0.03365384615384615,
+        "spriteX": 178,
+        "spriteY": 248
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 0,
+        "seconds": 0,
+        "lightSeconds": 20,
+        "alpha": 0.92,
+        "scale": 4,
+        "row": 1,
+        "column": 2,
+        "normalization": 0.03365384615384615,
+        "spriteX": 306,
+        "spriteY": 248
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 1,
+        "seconds": 4.5,
+        "lightSeconds": 2,
+        "alpha": 0,
+        "scale": 1,
+        "row": 0,
+        "column": 3,
+        "normalization": 0.03365384615384615,
+        "spriteX": 403,
+        "spriteY": 32
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 1,
+        "seconds": 4.5,
+        "lightSeconds": 0.45,
+        "alpha": 0.460000000000001,
+        "scale": 1,
+        "row": 0,
+        "column": 4,
+        "normalization": 0.03365384615384615,
+        "spriteX": 531,
+        "spriteY": 32
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 1,
+        "seconds": 4.5,
+        "lightSeconds": 20,
+        "alpha": 0.92,
+        "scale": 1,
+        "row": 0,
+        "column": 5,
+        "normalization": 0.03365384615384615,
+        "spriteX": 659,
+        "spriteY": 32
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 1,
+        "seconds": 4.5,
+        "lightSeconds": 2,
+        "alpha": 0,
+        "scale": 4,
+        "row": 1,
+        "column": 3,
+        "normalization": 0.03365384615384615,
+        "spriteX": 434,
+        "spriteY": 248
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 1,
+        "seconds": 4.5,
+        "lightSeconds": 0.45,
+        "alpha": 0.460000000000001,
+        "scale": 4,
+        "row": 1,
+        "column": 4,
+        "normalization": 0.03365384615384615,
+        "spriteX": 562,
+        "spriteY": 248
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 1,
+        "seconds": 4.5,
+        "lightSeconds": 20,
+        "alpha": 0.92,
+        "scale": 4,
+        "row": 1,
+        "column": 5,
+        "normalization": 0.03365384615384615,
+        "spriteX": 690,
+        "spriteY": 248
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 2,
+        "seconds": 6.5,
+        "lightSeconds": 2,
+        "alpha": 0,
+        "scale": 1,
+        "row": 0,
+        "column": 6,
+        "normalization": 0.03365384615384615,
+        "spriteX": 787,
+        "spriteY": 32
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 2,
+        "seconds": 6.5,
+        "lightSeconds": 0.45,
+        "alpha": 0.460000000000001,
+        "scale": 1,
+        "row": 0,
+        "column": 7,
+        "normalization": 0.03365384615384615,
+        "spriteX": 915,
+        "spriteY": 32
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 2,
+        "seconds": 6.5,
+        "lightSeconds": 20,
+        "alpha": 0.92,
+        "scale": 1,
+        "row": 0,
+        "column": 8,
+        "normalization": 0.03365384615384615,
+        "spriteX": 1043,
+        "spriteY": 32
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 2,
+        "seconds": 6.5,
+        "lightSeconds": 2,
+        "alpha": 0,
+        "scale": 4,
+        "row": 1,
+        "column": 6,
+        "normalization": 0.03365384615384615,
+        "spriteX": 818,
+        "spriteY": 248
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 2,
+        "seconds": 6.5,
+        "lightSeconds": 0.45,
+        "alpha": 0.460000000000001,
+        "scale": 4,
+        "row": 1,
+        "column": 7,
+        "normalization": 0.03365384615384615,
+        "spriteX": 946,
+        "spriteY": 248
+      },
+      {
+        "composition": "art/tokyo-night.png",
+        "index": 8,
+        "window": [
+          477,
+          352,
+          7,
+          7
+        ],
+        "context": [
+          469,
+          344,
+          23,
+          23
+        ],
+        "pose": 2,
+        "seconds": 6.5,
+        "lightSeconds": 20,
+        "alpha": 0.92,
+        "scale": 4,
+        "row": 1,
+        "column": 8,
+        "normalization": 0.03365384615384615,
+        "spriteX": 1074,
+        "spriteY": 248
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 0,
+        "seconds": 0,
+        "lightSeconds": 2,
+        "alpha": 0,
+        "scale": 1,
+        "row": 2,
+        "column": 0,
+        "normalization": 0.052884615384615384,
+        "spriteX": 18,
+        "spriteY": 416
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 0,
+        "seconds": 0,
+        "lightSeconds": 0.45,
+        "alpha": 0.460000000000001,
+        "scale": 1,
+        "row": 2,
+        "column": 1,
+        "normalization": 0.052884615384615384,
+        "spriteX": 146,
+        "spriteY": 416
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 0,
+        "seconds": 0,
+        "lightSeconds": 20,
+        "alpha": 0.92,
+        "scale": 1,
+        "row": 2,
+        "column": 2,
+        "normalization": 0.052884615384615384,
+        "spriteX": 274,
+        "spriteY": 416
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 0,
+        "seconds": 0,
+        "lightSeconds": 2,
+        "alpha": 0,
+        "scale": 4,
+        "row": 3,
+        "column": 0,
+        "normalization": 0.052884615384615384,
+        "spriteX": 50,
+        "spriteY": 632
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 0,
+        "seconds": 0,
+        "lightSeconds": 0.45,
+        "alpha": 0.460000000000001,
+        "scale": 4,
+        "row": 3,
+        "column": 1,
+        "normalization": 0.052884615384615384,
+        "spriteX": 178,
+        "spriteY": 632
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 0,
+        "seconds": 0,
+        "lightSeconds": 20,
+        "alpha": 0.92,
+        "scale": 4,
+        "row": 3,
+        "column": 2,
+        "normalization": 0.052884615384615384,
+        "spriteX": 306,
+        "spriteY": 632
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 1,
+        "seconds": 4.5,
+        "lightSeconds": 2,
+        "alpha": 0,
+        "scale": 1,
+        "row": 2,
+        "column": 3,
+        "normalization": 0.052884615384615384,
+        "spriteX": 402,
+        "spriteY": 416
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 1,
+        "seconds": 4.5,
+        "lightSeconds": 0.45,
+        "alpha": 0.460000000000001,
+        "scale": 1,
+        "row": 2,
+        "column": 4,
+        "normalization": 0.052884615384615384,
+        "spriteX": 530,
+        "spriteY": 416
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 1,
+        "seconds": 4.5,
+        "lightSeconds": 20,
+        "alpha": 0.92,
+        "scale": 1,
+        "row": 2,
+        "column": 5,
+        "normalization": 0.052884615384615384,
+        "spriteX": 658,
+        "spriteY": 416
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 1,
+        "seconds": 4.5,
+        "lightSeconds": 2,
+        "alpha": 0,
+        "scale": 4,
+        "row": 3,
+        "column": 3,
+        "normalization": 0.052884615384615384,
+        "spriteX": 434,
+        "spriteY": 632
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 1,
+        "seconds": 4.5,
+        "lightSeconds": 0.45,
+        "alpha": 0.460000000000001,
+        "scale": 4,
+        "row": 3,
+        "column": 4,
+        "normalization": 0.052884615384615384,
+        "spriteX": 562,
+        "spriteY": 632
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 1,
+        "seconds": 4.5,
+        "lightSeconds": 20,
+        "alpha": 0.92,
+        "scale": 4,
+        "row": 3,
+        "column": 5,
+        "normalization": 0.052884615384615384,
+        "spriteX": 690,
+        "spriteY": 632
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 2,
+        "seconds": 6.5,
+        "lightSeconds": 2,
+        "alpha": 0,
+        "scale": 1,
+        "row": 2,
+        "column": 6,
+        "normalization": 0.052884615384615384,
+        "spriteX": 786,
+        "spriteY": 416
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 2,
+        "seconds": 6.5,
+        "lightSeconds": 0.45,
+        "alpha": 0.460000000000001,
+        "scale": 1,
+        "row": 2,
+        "column": 7,
+        "normalization": 0.052884615384615384,
+        "spriteX": 914,
+        "spriteY": 416
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 2,
+        "seconds": 6.5,
+        "lightSeconds": 20,
+        "alpha": 0.92,
+        "scale": 1,
+        "row": 2,
+        "column": 8,
+        "normalization": 0.052884615384615384,
+        "spriteX": 1042,
+        "spriteY": 416
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 2,
+        "seconds": 6.5,
+        "lightSeconds": 2,
+        "alpha": 0,
+        "scale": 4,
+        "row": 3,
+        "column": 6,
+        "normalization": 0.052884615384615384,
+        "spriteX": 818,
+        "spriteY": 632
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 2,
+        "seconds": 6.5,
+        "lightSeconds": 0.45,
+        "alpha": 0.460000000000001,
+        "scale": 4,
+        "row": 3,
+        "column": 7,
+        "normalization": 0.052884615384615384,
+        "spriteX": 946,
+        "spriteY": 632
+      },
+      {
+        "composition": "art/tokyo-portrait.png",
+        "index": 6,
+        "window": [
+          735,
+          905,
+          8,
+          11
+        ],
+        "context": [
+          727,
+          897,
+          24,
+          27
+        ],
+        "pose": 2,
+        "seconds": 6.5,
+        "lightSeconds": 20,
+        "alpha": 0.92,
+        "scale": 4,
+        "row": 3,
+        "column": 8,
+        "normalization": 0.052884615384615384,
+        "spriteX": 1074,
+        "spriteY": 632
+      }
+    ],
+    "rows": [
+      "normal-native",
+      "normal-4x",
+      "portrait-native",
+      "portrait-4x"
+    ],
+    "columns": [
+      "pose0-on",
+      "pose0-mid",
+      "pose0-off",
+      "pose1-on",
+      "pose1-mid",
+      "pose1-off",
+      "pose2-on",
+      "pose2-mid",
+      "pose2-off"
+    ]
+  },
+  "method": "Image-generation textures composited by /scripts/generated-curtain-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}
