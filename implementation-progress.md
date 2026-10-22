@@ -4,6 +4,8 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
+- PR #34追加修正: PR #33の成功ログで `file:/etc/apt/apt-mirrors.txt` とAzure HTTP archiveの継続利用が判明。初回source直接置換はmirror+file形式で無効だった。既知のapt-mirrors.txtとapt-mirrors-security.txtも対象へ追加。PR #33成功はミラー修正の有効性を証明しない。新CIのGet/Hitが対象URIを公式HTTPSで取得するまでPR #34をマージしない。
+
 - CIミラー対策: `fix/official-ubuntu-mirror`をmain a7e7eb0から作成。PR #32のUbuntu24固定後もPages 39771312848とPR #33のCI 39772163427でPlaywright依存導入の長時間待ちを観測。既知のAzure apt URIだけを公式HTTPS archiveへ置換するstepを追加。アプリ・画像変更なし。必須verify→PR/CI確認待ち。
 - 先行状況: CI修正PR #32はCI 39771025641成功後main 24b7d24へ、車PR #31はCI 39771598524成功後main a7e7eb0へマージ済み。猫C023のPR #33は未マージ。Pagesの完了は確認待ち。
 
