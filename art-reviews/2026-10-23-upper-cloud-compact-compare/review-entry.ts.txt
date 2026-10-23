@@ -17,8 +17,10 @@ export async function renderGeneratedUpperCloudReview() {
   await app.init({ width, height, resolution: 1, antialias: false, background: '#171e30', preference: 'webgl', autoStart: false });
   document.body.append(app.canvas);
   const samples: unknown[] = [];
+  const reviewLayouts: Record<string, unknown> = {};
   views.forEach(([name, viewWidth, viewHeight], row) => {
     const layout = generatedLayout(viewWidth, viewHeight);
+    reviewLayouts[name] = { ...layout, composition: layout.portrait ? 'portrait' : layout.wide ? 'wide' : 'normal' };
     [0.2, 0.35].forEach((relativeScale, sizeIndex) => [0.08, 0.12, 0.16].forEach((alpha, alphaIndex) => {
       const column = sizeIndex * 3 + alphaIndex;
       const target = RenderTexture.create({ width: viewWidth, height: layout.skyBottom });
@@ -47,9 +49,11 @@ export async function renderGeneratedUpperCloudReview() {
       texture.source.scaleMode = 'nearest';
       const panel = new Sprite(texture); panel.position.set(column * 400, row * 350); app.stage.addChild(panel);
       samples.push({ name, viewWidth, viewHeight, row, column, alpha, relativeScale,
-        geometry: upperCloudGeometry(layout, relativeScale), layout, context: [contextX, contextY, contextWidth, contextHeight] });
+        geometry: upperCloudGeometry(layout, relativeScale), layoutRef: name, context: [contextX, contextY, contextWidth, contextHeight] });
     }));
   });
   app.renderer.render(app.stage); app.canvas.dataset.ready = 'true';
-  return { width, height, samples, rows: views.map(view => view[0]), columns: ['compact-.08', 'compact-.12', 'compact-.16', 'small-.08', 'small-.12', 'small-.16'] };
+  return { width, height, samples, layouts: reviewLayouts,
+    compositionDefinitions: { source: 'src/generated-art.ts', revision: 'sourceSha256',
+      keys: { normal: 'generatedArt', wide: 'generatedArt.wide', portrait: 'generatedArt.portrait' } }, rows: views.map(view => view[0]), columns: ['compact-.08', 'compact-.12', 'compact-.16', 'small-.08', 'small-.12', 'small-.16'] };
 }

@@ -34,8 +34,10 @@ export async function renderGeneratedUpperCloudReview() {
   await app.init({ width, height, resolution: 1, antialias: false, background: '#171e30', preference: 'webgl', autoStart: false });
   document.body.append(app.canvas);
   const samples: unknown[] = [];
+  const reviewLayouts: Record<string, unknown> = {};
   let rowY = 0;
   for (const { name, width: viewWidth, height: viewHeight, layout } of layouts) {
+    reviewLayouts[name] = { ...layout, composition: layout.portrait ? 'portrait' : layout.wide ? 'wide' : 'normal' };
     const geometry = upperCloudGeometry(layout);
     const times = [0,
       closestTime(viewWidth, layout.scale, geometry.width, 235 * layout.cloudScale, layout.scale * 1.2, viewWidth * 0.12),
@@ -65,7 +67,7 @@ export async function renderGeneratedUpperCloudReview() {
       const texture = new Texture({ source: target.source, frame: new Rectangle(...context) });
       texture.source.scaleMode = 'nearest';
       const panel = new Sprite(texture); panel.position.set(column * 350, rowY); app.stage.addChild(panel);
-      samples.push({ name, viewWidth, viewHeight, column, seconds, geometry, layout,
+      samples.push({ name, viewWidth, viewHeight, column, seconds, geometry, layoutRef: name,
         upper: { x: upper.x, y: upper.y, width: upper.width, alpha: upper.alpha, visible: upper.visible },
         lower: { x: lower.x, y: lower.y, width: lower.width }, plane: { x: plane.x, y: plane.y, width: plane.width },
         context, panel: [column * 350, rowY] });
@@ -73,5 +75,7 @@ export async function renderGeneratedUpperCloudReview() {
     rowY += layout.skyBottom + 8;
   }
   app.renderer.render(app.stage); app.canvas.dataset.ready = 'true';
-  return { width, height, samples, rows: views.map(view => view[0]), columns: ['initial', 'nearest-lower-cloud', 'nearest-aircraft'] };
+  return { width, height, samples, layouts: reviewLayouts,
+    compositionDefinitions: { source: 'src/generated-art.ts', revision: 'sourceSha256',
+      keys: { normal: 'generatedArt', wide: 'generatedArt.wide', portrait: 'generatedArt.portrait' } }, rows: views.map(view => view[0]), columns: ['initial', 'nearest-lower-cloud', 'nearest-aircraft'] };
 }

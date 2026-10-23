@@ -99,3 +99,5 @@
 - 半倍率QAはpanel座標から逆算した背景原点だけを整数化し、cropの表示座標には端数を保つ。本番と同じsampling phaseをnative-review-transform helperへ抽出した。QAパネルの行高は最大拡大cropより大きくし、最終atlasを再補正・実閲覧してから採用する。
 
 - 追加spriteの大きさは複数のnative構図で数値確認してから、最小の縮尺/alpha比較を撮る。縦構図で成立してもPC上空に収まらない場合があった。全景を量産する前に共通縮尺を実閲覧で決め、最終描画ソースを固定する。
+
+- PR前にgit diff --stat/--numstatで証跡JSONの行数も確認する。QA samplesへ背景定義や星/窓一覧を丸ごと反復出力せず、構図識別子と配置scalarを参照する。画像とsource hashを維持したまま重複情報を整理し、PRのレビュー負荷を抑える。
