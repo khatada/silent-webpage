@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "acdd68a59ea1de7112ea48c19e3f662007067a439cf56d11b115c97e897877a6",
+  "sourceSha256": "a58f0c165f4b0fcbc22e0fd05b4d41dfbd7bb5408c62de087c3ef74cc4d001e7",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,39 +129,39 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-23-upper-cloud-scenes/desktop-corrected.png",
-      "report": "art-reviews/2026-10-23-upper-cloud-scenes/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-23-skyline-lights-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-scenes/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11初期全景を分担実閲覧し採用。遠景窓は初期全点灯で既存の星・雲・交通・猫・住宅の構図を保持。wideは無変形2帯でも親実閲覧。点消灯中の見え方は局所3画像と本番12秒後2画面で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-upper-cloud-scenes/mobile-corrected.png",
-      "report": "art-reviews/2026-10-23-upper-cloud-scenes/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-23-skyline-lights-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-scenes/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11初期全景を分担実閲覧し採用。遠景窓は初期全点灯で既存の星・雲・交通・猫・住宅の構図を保持。wideは無変形2帯でも親実閲覧。点消灯中の見え方は局所3画像と本番12秒後2画面で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-upper-cloud-scenes/narrow-corrected.png",
-      "report": "art-reviews/2026-10-23-upper-cloud-scenes/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-23-skyline-lights-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-scenes/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11初期全景を分担実閲覧し採用。遠景窓は初期全点灯で既存の星・雲・交通・猫・住宅の構図を保持。wideは無変形2帯でも親実閲覧。点消灯中の見え方は局所3画像と本番12秒後2画面で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-upper-cloud-scenes/landscape-corrected.png",
-      "report": "art-reviews/2026-10-23-upper-cloud-scenes/landscape-corrected.png.json",
+      "image": "art-reviews/2026-10-23-skyline-lights-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-scenes/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11初期全景を分担実閲覧し採用。遠景窓は初期全点灯で既存の星・雲・交通・猫・住宅の構図を保持。wideは無変形2帯でも親実閲覧。点消灯中の見え方は局所3画像と本番12秒後2画面で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-upper-cloud-scenes/wide-corrected.png",
-      "report": "art-reviews/2026-10-23-upper-cloud-scenes/wide-corrected.png.json",
+      "image": "art-reviews/2026-10-23-skyline-lights-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-scenes/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11初期全景を分担実閲覧し採用。遠景窓は初期全点灯で既存の星・雲・交通・猫・住宅の構図を保持。wideは無変形2帯でも親実閲覧。点消灯中の見え方は局所3画像と本番12秒後2画面で別途確認した。"
     },
     {
       "image": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
@@ -171,46 +171,46 @@
       "reason": "親LLMが最終補正atlasを実閲覧して採用。独立LLMも同一bytesのtrial左右各8コマ列を実閲覧して採用済み（SHA256 fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04）。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯は概ね揃い切れ/浮きなし。端点左右4組はRGBA一致。midの頭/首がやや小さく尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差は残る。"
     },
     {
-      "image": "art-reviews/2026-10-23-upper-cloud-scenes/compact-corrected.png",
-      "report": "art-reviews/2026-10-23-upper-cloud-scenes/compact-corrected.png.json",
+      "image": "art-reviews/2026-10-23-skyline-lights-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-scenes/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11初期全景を分担実閲覧し採用。遠景窓は初期全点灯で既存の星・雲・交通・猫・住宅の構図を保持。wideは無変形2帯でも親実閲覧。点消灯中の見え方は局所3画像と本番12秒後2画面で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-upper-cloud-scenes/tall-corrected.png",
-      "report": "art-reviews/2026-10-23-upper-cloud-scenes/tall-corrected.png.json",
+      "image": "art-reviews/2026-10-23-skyline-lights-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-scenes/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11初期全景を分担実閲覧し採用。遠景窓は初期全点灯で既存の星・雲・交通・猫・住宅の構図を保持。wideは無変形2帯でも親実閲覧。点消灯中の見え方は局所3画像と本番12秒後2画面で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-upper-cloud-scenes/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-23-upper-cloud-scenes/portrait-large-corrected.png.json",
+      "image": "art-reviews/2026-10-23-skyline-lights-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-scenes/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11初期全景を分担実閲覧し採用。遠景窓は初期全点灯で既存の星・雲・交通・猫・住宅の構図を保持。wideは無変形2帯でも親実閲覧。点消灯中の見え方は局所3画像と本番12秒後2画面で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-upper-cloud-scenes/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-23-upper-cloud-scenes/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/2026-10-23-skyline-lights-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-scenes/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11初期全景を分担実閲覧し採用。遠景窓は初期全点灯で既存の星・雲・交通・猫・住宅の構図を保持。wideは無変形2帯でも親実閲覧。点消灯中の見え方は局所3画像と本番12秒後2画面で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-upper-cloud-scenes/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-23-upper-cloud-scenes/small-phone-corrected.png.json",
+      "image": "art-reviews/2026-10-23-skyline-lights-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-scenes/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11初期全景を分担実閲覧し採用。遠景窓は初期全点灯で既存の星・雲・交通・猫・住宅の構図を保持。wideは無変形2帯でも親実閲覧。点消灯中の見え方は局所3画像と本番12秒後2画面で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-upper-cloud-scenes/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-23-upper-cloud-scenes/small-mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-23-skyline-lights-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-scenes/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11初期全景を分担実閲覧し採用。遠景窓は初期全点灯で既存の星・雲・交通・猫・住宅の構図を保持。wideは無変形2帯でも親実閲覧。点消灯中の見え方は局所3画像と本番12秒後2画面で別途確認した。"
     },
     {
       "image": "public/art/street-car.png",
@@ -494,6 +494,41 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親/担当LLMが33パネル全域を無変形の帯で実閲覧。11構図×初期/低雲最接近/飛行機最接近で上空余白と既存雲との分離、月の周囲と晴れた印象を確認し採用。小雲*.2/alpha.12は事前の2回の縮尺・透明度比較で選択。月が暗くなる効果は採用範囲外。"
+    },
+    {
+      "image": "art-reviews/2026-10-23-skyline-lights-motion/normal/atlas-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-motion/normal/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後72パネル全域を実閲覧。6窓×半倍率/等倍/4倍×原画/点灯/中間/消灯を確認し、窓の芯だけの減光と枠・周囲の維持で採用。3構図合計162比較で窓外変更0、点灯54組は原画RGBA完全一致。半倍率の微細な芯の判別性には制約がある。"
+    },
+    {
+      "image": "art-reviews/2026-10-23-skyline-lights-motion/wide/atlas-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-motion/wide/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後72パネル全域を実閲覧。6窓×半倍率/等倍/4倍×原画/点灯/中間/消灯を確認し、窓の芯だけの減光と枠・周囲の維持で採用。3構図合計162比較で窓外変更0、点灯54組は原画RGBA完全一致。半倍率の微細な芯の判別性には制約がある。"
+    },
+    {
+      "image": "art-reviews/2026-10-23-skyline-lights-motion/portrait/atlas-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-motion/portrait/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後72パネル全域を実閲覧。6窓×半倍率/等倍/4倍×原画/点灯/中間/消灯を確認し、窓の芯だけの減光と枠・周囲の維持で採用。3構図合計162比較で窓外変更0、点灯54組は原画RGBA完全一致。半倍率の微細な芯の判別性には制約がある。"
+    },
+    {
+      "image": "art-reviews/2026-10-23-skyline-lights-active/desktop-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-active/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが本番12秒後の補正画面を実閲覧し採用。遠景の小さな灯りが減光し、夜景全体と既存の交通/猫/住宅の動作を保持。shared motionはrunning、実行時エラーなし。灯り周囲の微光は残る。"
+    },
+    {
+      "image": "art-reviews/2026-10-23-skyline-lights-active/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-23-skyline-lights-active/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが本番12秒後の補正画面を実閲覧し採用。遠景の小さな灯りが減光し、夜景全体と既存の交通/猫/住宅の動作を保持。shared motionはrunning、実行時エラーなし。灯り周囲の微光は残る。"
     }
   ]
 }

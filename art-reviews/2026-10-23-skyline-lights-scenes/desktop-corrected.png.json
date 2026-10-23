@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-skyline-lights-scenes/desktop-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "08aa44484755404bae92939efbfec092d55fe98924b3660a96c7f959b6a13578"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-skyline-lights-scenes/desktop-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "26056c799798da7176f9bfcee88c4a00ea5efb9ad7048163d68284d05cfb0334"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

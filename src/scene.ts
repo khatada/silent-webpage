@@ -12,6 +12,7 @@ import { createImageSteam, steamArt } from './image-steam';
 import { createImageMeteor, meteorArt } from './image-meteor';
 import { createImageLaundry, laundryArt } from './image-laundry';
 import { createImageUpperCloud } from './image-upper-cloud';
+import { createImageSkylineLights } from './image-skyline-lights';
 
 type Frame = readonly [number, number, number, number];
 
@@ -78,6 +79,8 @@ export async function createScene(host: HTMLElement): Promise<{
     cloud: crop(atlas, generatedArt.frames.cloud),
   };
   const imageUpperCloud = createImageUpperCloud(frames.cloud);
+  const imageSkylineLights = createImageSkylineLights([background, wideBackground, portraitBackground]);
+  let skylineLights: ReturnType<typeof imageSkylineLights.createSprite>;
   const railPoles = (source: Texture, frames: readonly Frame[]) =>
     frames.map(frame => ({ texture: crop(source, frame), frame }));
   const compositionTextures = [
@@ -159,6 +162,8 @@ export async function createScene(host: HTMLElement): Promise<{
     const backdrop = sprite(textures.background);
     backdrop.position.set(originX, originY);
     backdrop.scale.set(scale);
+    skylineLights = imageSkylineLights.createSprite(layout.portrait ? 2 : layout.wide ? 1 : 0, scale, originX, originY);
+    app.stage.addChild(skylineLights.root);
     stars = composition.stars.map(([x, y, w, h]) => {
       const art = sprite(textures.darkSky);
       art.position.set(sourceX(x), sourceY(y));
@@ -240,6 +245,7 @@ export async function createScene(host: HTMLElement): Promise<{
   }
 
   function animate() {
+    imageSkylineLights.update(skylineLights, elapsed);
     imageStreetCar.update(roadCar, elapsed);
     imageMeteor.update(meteor, elapsed, width, meteorSkyBottom);
     if (steam) imageSteam.update(steam, elapsed);
@@ -295,6 +301,7 @@ export async function createScene(host: HTMLElement): Promise<{
       imageSteam.destroy();
       imageMeteor.destroy();
       imageLaundry.destroy();
+      imageSkylineLights.destroy();
       // Assets owns the shared image sources; sprite/crop disposal must not destroy them.
     },
   };

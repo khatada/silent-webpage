@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-skyline-lights-active/portrait-large-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "dd9fe1e1abd0ecd1ce3df57b305cd0648fe584696fbfe72af2ac3303f32e2db7"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-skyline-lights-active/portrait-large-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "e1de4f34c0885a65fe886663a92f70fdec3e664af551a6fa1314343a4f40d915"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
