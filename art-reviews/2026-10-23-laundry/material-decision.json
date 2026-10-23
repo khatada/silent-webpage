@@ -18,7 +18,7 @@
       "art-reviews/2026-10-23-laundry/portrait-reference.png"
     ]
   },
-  "displayDecision": "pending-renderer-pr",
+  "displayDecision": "accepted",
   "correctedSha256": "deeb1f3251eb6fe04afc3fc7f1ccab303a3348f59655cab19f563e776124b1f5",
   "partialEditVerification": {
     "unchangedOutsidePixels": 1566768,
@@ -37,5 +37,6 @@
       "decision": "not-used",
       "reason": "親LLM実閲覧とalpha走査で上側の微小接続残留を確認し、4領域をy51..59へ拡張したv2を再補正・再実閲覧した。"
     }
-  ]
+  ],
+  "displayReason": "補正後30局所パネル・11初期全景・本番5秒後PC/縦画面を親/担当LLMが実閲覧して採用。採用証跡はmanifest参照。"
 }

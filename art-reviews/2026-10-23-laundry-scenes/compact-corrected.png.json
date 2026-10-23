@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-laundry-scenes/compact-source.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "5ab710311d816812a7796419382cfc1858437f3786f3600fa3065dc3c487120a"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-laundry-scenes/compact-corrected.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "34109561049be7609ff6be41352747f45048bc46713d14dce48b5101a0b7140e"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
