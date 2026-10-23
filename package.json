@@ -23,7 +23,8 @@
     "art:preview-cat-turn": "node --import tsx scripts/preview-generated-cat-turn.ts",
     "art:preview-fan": "node --import tsx scripts/preview-generated-fan.ts",
     "art:preview-resident": "node --import tsx scripts/preview-generated-resident.ts",
-    "art:preview-steam": "node --import tsx scripts/preview-generated-steam.ts"
+    "art:preview-steam": "node --import tsx scripts/preview-generated-steam.ts",
+    "art:preview-meteor": "node --import tsx scripts/preview-generated-meteor.ts"
   },
   "dependencies": {
     "pixi.js": "^8.14.0"

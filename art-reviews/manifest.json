@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "ce9ad8002af4e93680d53835ffaf347dfebd6baac32eef2d54a8b1ccf8794890",
+  "sourceSha256": "c90cc2032d30e278b9897cc1bd8fc409a015536419b1c4259a4a1c70b4c5a3e9",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,39 +129,39 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-23-steam-final/desktop-corrected.png",
-      "report": "art-reviews/2026-10-23-steam-final/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-23-meteor-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-23-meteor-scenes/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
+      "reason": "親/担当LLMが流れ星追加後の補正済み初期11全景を分担して実閲覧。空・街・屋上・猫の接地と既存車両、窓の構図と画面端を維持。初期時刻の流れ星は非表示で、表示時は11構図の空のQAと7秒後の本番全景で別途確認して採用。"
     },
     {
-      "image": "art-reviews/2026-10-23-steam-final/mobile-corrected.png",
-      "report": "art-reviews/2026-10-23-steam-final/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-23-meteor-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-23-meteor-scenes/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
+      "reason": "親/担当LLMが流れ星追加後の補正済み初期11全景を分担して実閲覧。空・街・屋上・猫の接地と既存車両、窓の構図と画面端を維持。初期時刻の流れ星は非表示で、表示時は11構図の空のQAと7秒後の本番全景で別途確認して採用。"
     },
     {
-      "image": "art-reviews/2026-10-23-steam-final/narrow-corrected.png",
-      "report": "art-reviews/2026-10-23-steam-final/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-23-meteor-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-23-meteor-scenes/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
+      "reason": "親/担当LLMが流れ星追加後の補正済み初期11全景を分担して実閲覧。空・街・屋上・猫の接地と既存車両、窓の構図と画面端を維持。初期時刻の流れ星は非表示で、表示時は11構図の空のQAと7秒後の本番全景で別途確認して採用。"
     },
     {
-      "image": "art-reviews/2026-10-23-steam-final/landscape-corrected.png",
-      "report": "art-reviews/2026-10-23-steam-final/landscape-corrected.png.json",
+      "image": "art-reviews/2026-10-23-meteor-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-23-meteor-scenes/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
+      "reason": "親/担当LLMが流れ星追加後の補正済み初期11全景を分担して実閲覧。空・街・屋上・猫の接地と既存車両、窓の構図と画面端を維持。初期時刻の流れ星は非表示で、表示時は11構図の空のQAと7秒後の本番全景で別途確認して採用。"
     },
     {
-      "image": "art-reviews/2026-10-23-steam-final/wide-corrected.png",
-      "report": "art-reviews/2026-10-23-steam-final/wide-corrected.png.json",
+      "image": "art-reviews/2026-10-23-meteor-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-23-meteor-scenes/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
+      "reason": "親/担当LLMが流れ星追加後の補正済み初期11全景を分担して実閲覧。空・街・屋上・猫の接地と既存車両、窓の構図と画面端を維持。初期時刻の流れ星は非表示で、表示時は11構図の空のQAと7秒後の本番全景で別途確認して採用。"
     },
     {
       "image": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
@@ -171,46 +171,46 @@
       "reason": "親LLMが最終補正atlasを実閲覧して採用。独立LLMも同一bytesのtrial左右各8コマ列を実閲覧して採用済み（SHA256 fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04）。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯は概ね揃い切れ/浮きなし。端点左右4組はRGBA一致。midの頭/首がやや小さく尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差は残る。"
     },
     {
-      "image": "art-reviews/2026-10-23-steam-final/compact-corrected.png",
-      "report": "art-reviews/2026-10-23-steam-final/compact-corrected.png.json",
+      "image": "art-reviews/2026-10-23-meteor-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-23-meteor-scenes/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
+      "reason": "親/担当LLMが流れ星追加後の補正済み初期11全景を分担して実閲覧。空・街・屋上・猫の接地と既存車両、窓の構図と画面端を維持。初期時刻の流れ星は非表示で、表示時は11構図の空のQAと7秒後の本番全景で別途確認して採用。"
     },
     {
-      "image": "art-reviews/2026-10-23-steam-final/tall-corrected.png",
-      "report": "art-reviews/2026-10-23-steam-final/tall-corrected.png.json",
+      "image": "art-reviews/2026-10-23-meteor-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-23-meteor-scenes/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
+      "reason": "親/担当LLMが流れ星追加後の補正済み初期11全景を分担して実閲覧。空・街・屋上・猫の接地と既存車両、窓の構図と画面端を維持。初期時刻の流れ星は非表示で、表示時は11構図の空のQAと7秒後の本番全景で別途確認して採用。"
     },
     {
-      "image": "art-reviews/2026-10-23-steam-final/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-23-steam-final/portrait-large-corrected.png.json",
+      "image": "art-reviews/2026-10-23-meteor-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-23-meteor-scenes/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
+      "reason": "親/担当LLMが流れ星追加後の補正済み初期11全景を分担して実閲覧。空・街・屋上・猫の接地と既存車両、窓の構図と画面端を維持。初期時刻の流れ星は非表示で、表示時は11構図の空のQAと7秒後の本番全景で別途確認して採用。"
     },
     {
-      "image": "art-reviews/2026-10-23-steam-final/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-23-steam-final/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/2026-10-23-meteor-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-23-meteor-scenes/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
+      "reason": "親/担当LLMが流れ星追加後の補正済み初期11全景を分担して実閲覧。空・街・屋上・猫の接地と既存車両、窓の構図と画面端を維持。初期時刻の流れ星は非表示で、表示時は11構図の空のQAと7秒後の本番全景で別途確認して採用。"
     },
     {
-      "image": "art-reviews/2026-10-23-steam-final/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-23-steam-final/small-phone-corrected.png.json",
+      "image": "art-reviews/2026-10-23-meteor-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-23-meteor-scenes/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
+      "reason": "親/担当LLMが流れ星追加後の補正済み初期11全景を分担して実閲覧。空・街・屋上・猫の接地と既存車両、窓の構図と画面端を維持。初期時刻の流れ星は非表示で、表示時は11構図の空のQAと7秒後の本番全景で別途確認して採用。"
     },
     {
-      "image": "art-reviews/2026-10-23-steam-final/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-23-steam-final/small-mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-23-meteor-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-23-meteor-scenes/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
+      "reason": "親/担当LLMが流れ星追加後の補正済み初期11全景を分担して実閲覧。空・街・屋上・猫の接地と既存車両、窓の構図と画面端を維持。初期時刻の流れ星は非表示で、表示時は11構図の空のQAと7秒後の本番全景で別途確認して採用。"
     },
     {
       "image": "public/art/street-car.png",
@@ -419,6 +419,32 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親LLMが実際の本番ビルドを仮想時計で2秒動かした補正後全景を実閲覧。カップの上の微細な湯気が既存位置にあり、縁/柵/構図/既存演出を維持。実行時エラー0。細部は局所QAで併せて確認し、全サイズで明瞭とは扱わない。"
+    },
+    {
+      "image": "public/art/meteor.png",
+      "report": "public/art/meteor.png.json",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが4px補正後481×204を実閲覧。短い灰紫の尾と右下の小さな先端、薄い左上の切れ端、広いグローがない輪郭を確認して素材採用。実寸の明度・頭の判別と空への配置は合成QAで判断する。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "d5242c2de4f2af95c212f501fbd7fe7b5cbf640f0976fdcb9bd6c2ca394078f5",
+        "prompt": "One quiet distant fine pixel-art meteor, transparent background, thin short tapered grey/lavender trail upper-left to tiny off-white head lower-right at roughly15degrees, no star cross/burst, fireball, broad halo, scenery, labels or blur. Intended small nativewidth24px."
+      },
+      "decision": "accepted"
+    },
+    {
+      "image": "art-reviews/2026-10-23-meteor/sky-qa-final/atlas-corrected.png",
+      "report": "art-reviews/2026-10-23-meteor/sky-qa-final/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが開始/中間/終了/休止×11構図の44パネルを補正後実閲覧。親は無変形の上下帯で全域を確認。native幅14〜28の短い灰紫の尾が空内に収まり、端で淡く休止時は残らない。小画面では微細だが判別でき、広いグローや建物への重なりなし。極端な低画面は回帰テストで別途省略を確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-23-meteor-active/desktop-corrected.png",
+      "report": "art-reviews/2026-10-23-meteor-active/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが本番ページを仮想時計で7秒動かした補正後全景を実閲覧。左寄り上空に短い斜めの尾があり、既存の雲・飛行機・街・猫と構図を維持。ページエラー0。初回表示の組み込みとして採用。"
     }
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-meteor-scenes/wide-source.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "fb060c50c423f1a5d68eb109f38694e1fbbff22cfa07d2067b62f59fb28cc2e3"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-meteor-scenes/wide-corrected.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "dd6c8e0eb69606654d7bae7aa8fdab8bd38e55de5cf7c1cbf53e4f23de9e9ef9"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

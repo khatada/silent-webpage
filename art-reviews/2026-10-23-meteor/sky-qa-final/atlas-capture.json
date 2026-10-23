@@ -1,0 +1,1880 @@
+{
+  "sourceSha256": "c90cc2032d30e278b9897cc1bd8fc409a015536419b1c4259a4a1c70b4c5a3e9",
+  "finalSourceSha256": "c90cc2032d30e278b9897cc1bd8fc409a015536419b1c4259a4a1c70b4c5a3e9",
+  "metadata": {
+    "width": 464,
+    "height": 2202,
+    "rows": [
+      "desktop",
+      "mobile",
+      "narrow",
+      "landscape",
+      "wide",
+      "compact",
+      "tall",
+      "portrait-large",
+      "portrait-boundary",
+      "small-phone",
+      "small-mobile"
+    ],
+    "columns": [
+      6.15,
+      7,
+      7.85,
+      8
+    ],
+    "samples": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "physicalScale": 1,
+          "worldScale": 2.25,
+          "cssWidth": 1440,
+          "cssHeight": 900,
+          "worldWidth": 640
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -48,
+          "originY": -76,
+          "skyBottom": 124
+        },
+        "path": {
+          "x": 317,
+          "y": 22,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 6.15,
+        "state": {
+          "progress": 0.07500000000000018,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          309,
+          0,
+          116,
+          124
+        ],
+        "panel": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "physicalScale": 1,
+          "worldScale": 2.25,
+          "cssWidth": 1440,
+          "cssHeight": 900,
+          "worldWidth": 640
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -48,
+          "originY": -76,
+          "skyBottom": 124
+        },
+        "path": {
+          "x": 317,
+          "y": 22,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 7,
+        "state": {
+          "progress": 0.5,
+          "alpha": 0.6
+        },
+        "context": [
+          309,
+          0,
+          116,
+          124
+        ],
+        "panel": [
+          116,
+          0
+        ]
+      },
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "physicalScale": 1,
+          "worldScale": 2.25,
+          "cssWidth": 1440,
+          "cssHeight": 900,
+          "worldWidth": 640
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -48,
+          "originY": -76,
+          "skyBottom": 124
+        },
+        "path": {
+          "x": 317,
+          "y": 22,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 7.85,
+        "state": {
+          "progress": 0.9249999999999998,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          309,
+          0,
+          116,
+          124
+        ],
+        "panel": [
+          232,
+          0
+        ]
+      },
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "physicalScale": 1,
+          "worldScale": 2.25,
+          "cssWidth": 1440,
+          "cssHeight": 900,
+          "worldWidth": 640
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -48,
+          "originY": -76,
+          "skyBottom": 124
+        },
+        "path": {
+          "x": 317,
+          "y": 22,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 8,
+        "state": {
+          "progress": 0,
+          "alpha": 0
+        },
+        "context": [
+          309,
+          0,
+          116,
+          124
+        ],
+        "panel": [
+          348,
+          0
+        ]
+      },
+      {
+        "name": "mobile",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "physicalScale": 2,
+          "worldScale": 2.11,
+          "cssWidth": 390,
+          "cssHeight": 844,
+          "worldWidth": 184.83412322274881
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -573,
+          "originY": -132,
+          "skyBottom": 68
+        },
+        "path": {
+          "x": 86,
+          "y": 12,
+          "dx": 70,
+          "dy": 17.5,
+          "width": 20,
+          "height": 5.391304347826087,
+          "visible": true
+        },
+        "seconds": 6.15,
+        "state": {
+          "progress": 0.07500000000000018,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          78,
+          0,
+          106,
+          68
+        ],
+        "panel": [
+          0,
+          132
+        ]
+      },
+      {
+        "name": "mobile",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "physicalScale": 2,
+          "worldScale": 2.11,
+          "cssWidth": 390,
+          "cssHeight": 844,
+          "worldWidth": 184.83412322274881
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -573,
+          "originY": -132,
+          "skyBottom": 68
+        },
+        "path": {
+          "x": 86,
+          "y": 12,
+          "dx": 70,
+          "dy": 17.5,
+          "width": 20,
+          "height": 5.391304347826087,
+          "visible": true
+        },
+        "seconds": 7,
+        "state": {
+          "progress": 0.5,
+          "alpha": 0.6
+        },
+        "context": [
+          78,
+          0,
+          106,
+          68
+        ],
+        "panel": [
+          116,
+          132
+        ]
+      },
+      {
+        "name": "mobile",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "physicalScale": 2,
+          "worldScale": 2.11,
+          "cssWidth": 390,
+          "cssHeight": 844,
+          "worldWidth": 184.83412322274881
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -573,
+          "originY": -132,
+          "skyBottom": 68
+        },
+        "path": {
+          "x": 86,
+          "y": 12,
+          "dx": 70,
+          "dy": 17.5,
+          "width": 20,
+          "height": 5.391304347826087,
+          "visible": true
+        },
+        "seconds": 7.85,
+        "state": {
+          "progress": 0.9249999999999998,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          78,
+          0,
+          106,
+          68
+        ],
+        "panel": [
+          232,
+          132
+        ]
+      },
+      {
+        "name": "mobile",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "physicalScale": 2,
+          "worldScale": 2.11,
+          "cssWidth": 390,
+          "cssHeight": 844,
+          "worldWidth": 184.83412322274881
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -573,
+          "originY": -132,
+          "skyBottom": 68
+        },
+        "path": {
+          "x": 86,
+          "y": 12,
+          "dx": 70,
+          "dy": 17.5,
+          "width": 20,
+          "height": 5.391304347826087,
+          "visible": true
+        },
+        "seconds": 8,
+        "state": {
+          "progress": 0,
+          "alpha": 0
+        },
+        "context": [
+          78,
+          0,
+          106,
+          68
+        ],
+        "panel": [
+          348,
+          132
+        ]
+      },
+      {
+        "name": "narrow",
+        "viewport": {
+          "width": 295,
+          "height": 844,
+          "physicalScale": 1,
+          "worldScale": 2.11,
+          "cssWidth": 295,
+          "cssHeight": 844,
+          "worldWidth": 139.81042654028437
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -620,
+          "originY": -132,
+          "skyBottom": 68
+        },
+        "path": {
+          "x": 65,
+          "y": 12,
+          "dx": 53,
+          "dy": 13.25,
+          "width": 15,
+          "height": 4.043478260869565,
+          "visible": true
+        },
+        "seconds": 6.15,
+        "state": {
+          "progress": 0.07500000000000018,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          57,
+          0,
+          84,
+          68
+        ],
+        "panel": [
+          0,
+          208
+        ]
+      },
+      {
+        "name": "narrow",
+        "viewport": {
+          "width": 295,
+          "height": 844,
+          "physicalScale": 1,
+          "worldScale": 2.11,
+          "cssWidth": 295,
+          "cssHeight": 844,
+          "worldWidth": 139.81042654028437
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -620,
+          "originY": -132,
+          "skyBottom": 68
+        },
+        "path": {
+          "x": 65,
+          "y": 12,
+          "dx": 53,
+          "dy": 13.25,
+          "width": 15,
+          "height": 4.043478260869565,
+          "visible": true
+        },
+        "seconds": 7,
+        "state": {
+          "progress": 0.5,
+          "alpha": 0.6
+        },
+        "context": [
+          57,
+          0,
+          84,
+          68
+        ],
+        "panel": [
+          116,
+          208
+        ]
+      },
+      {
+        "name": "narrow",
+        "viewport": {
+          "width": 295,
+          "height": 844,
+          "physicalScale": 1,
+          "worldScale": 2.11,
+          "cssWidth": 295,
+          "cssHeight": 844,
+          "worldWidth": 139.81042654028437
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -620,
+          "originY": -132,
+          "skyBottom": 68
+        },
+        "path": {
+          "x": 65,
+          "y": 12,
+          "dx": 53,
+          "dy": 13.25,
+          "width": 15,
+          "height": 4.043478260869565,
+          "visible": true
+        },
+        "seconds": 7.85,
+        "state": {
+          "progress": 0.9249999999999998,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          57,
+          0,
+          84,
+          68
+        ],
+        "panel": [
+          232,
+          208
+        ]
+      },
+      {
+        "name": "narrow",
+        "viewport": {
+          "width": 295,
+          "height": 844,
+          "physicalScale": 1,
+          "worldScale": 2.11,
+          "cssWidth": 295,
+          "cssHeight": 844,
+          "worldWidth": 139.81042654028437
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -620,
+          "originY": -132,
+          "skyBottom": 68
+        },
+        "path": {
+          "x": 65,
+          "y": 12,
+          "dx": 53,
+          "dy": 13.25,
+          "width": 15,
+          "height": 4.043478260869565,
+          "visible": true
+        },
+        "seconds": 8,
+        "state": {
+          "progress": 0,
+          "alpha": 0
+        },
+        "context": [
+          57,
+          0,
+          84,
+          68
+        ],
+        "panel": [
+          348,
+          208
+        ]
+      },
+      {
+        "name": "landscape",
+        "viewport": {
+          "width": 844,
+          "height": 390,
+          "physicalScale": 2,
+          "worldScale": 0.975,
+          "cssWidth": 844,
+          "cssHeight": 390,
+          "worldWidth": 865.6410256410256
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -302,
+          "originY": -70,
+          "skyBottom": 40
+        },
+        "path": {
+          "x": 186,
+          "y": 7,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 6.15,
+        "state": {
+          "progress": 0.07500000000000018,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          178,
+          0,
+          116,
+          40
+        ],
+        "panel": [
+          0,
+          284
+        ]
+      },
+      {
+        "name": "landscape",
+        "viewport": {
+          "width": 844,
+          "height": 390,
+          "physicalScale": 2,
+          "worldScale": 0.975,
+          "cssWidth": 844,
+          "cssHeight": 390,
+          "worldWidth": 865.6410256410256
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -302,
+          "originY": -70,
+          "skyBottom": 40
+        },
+        "path": {
+          "x": 186,
+          "y": 7,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 7,
+        "state": {
+          "progress": 0.5,
+          "alpha": 0.6
+        },
+        "context": [
+          178,
+          0,
+          116,
+          40
+        ],
+        "panel": [
+          116,
+          284
+        ]
+      },
+      {
+        "name": "landscape",
+        "viewport": {
+          "width": 844,
+          "height": 390,
+          "physicalScale": 2,
+          "worldScale": 0.975,
+          "cssWidth": 844,
+          "cssHeight": 390,
+          "worldWidth": 865.6410256410256
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -302,
+          "originY": -70,
+          "skyBottom": 40
+        },
+        "path": {
+          "x": 186,
+          "y": 7,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 7.85,
+        "state": {
+          "progress": 0.9249999999999998,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          178,
+          0,
+          116,
+          40
+        ],
+        "panel": [
+          232,
+          284
+        ]
+      },
+      {
+        "name": "landscape",
+        "viewport": {
+          "width": 844,
+          "height": 390,
+          "physicalScale": 2,
+          "worldScale": 0.975,
+          "cssWidth": 844,
+          "cssHeight": 390,
+          "worldWidth": 865.6410256410256
+        },
+        "layout": {
+          "scale": 2,
+          "originX": -302,
+          "originY": -70,
+          "skyBottom": 40
+        },
+        "path": {
+          "x": 186,
+          "y": 7,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 8,
+        "state": {
+          "progress": 0,
+          "alpha": 0
+        },
+        "context": [
+          178,
+          0,
+          116,
+          40
+        ],
+        "panel": [
+          348,
+          284
+        ]
+      },
+      {
+        "name": "wide",
+        "viewport": {
+          "width": 2560,
+          "height": 1080,
+          "physicalScale": 1,
+          "worldScale": 2.7,
+          "cssWidth": 2560,
+          "cssHeight": 1080,
+          "worldWidth": 948.148148148148
+        },
+        "layout": {
+          "scale": 5,
+          "originX": -530,
+          "originY": -70,
+          "skyBottom": 205
+        },
+        "path": {
+          "x": 563,
+          "y": 37,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 6.15,
+        "state": {
+          "progress": 0.07500000000000018,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          555,
+          0,
+          116,
+          205
+        ],
+        "panel": [
+          0,
+          332
+        ]
+      },
+      {
+        "name": "wide",
+        "viewport": {
+          "width": 2560,
+          "height": 1080,
+          "physicalScale": 1,
+          "worldScale": 2.7,
+          "cssWidth": 2560,
+          "cssHeight": 1080,
+          "worldWidth": 948.148148148148
+        },
+        "layout": {
+          "scale": 5,
+          "originX": -530,
+          "originY": -70,
+          "skyBottom": 205
+        },
+        "path": {
+          "x": 563,
+          "y": 37,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 7,
+        "state": {
+          "progress": 0.5,
+          "alpha": 0.6
+        },
+        "context": [
+          555,
+          0,
+          116,
+          205
+        ],
+        "panel": [
+          116,
+          332
+        ]
+      },
+      {
+        "name": "wide",
+        "viewport": {
+          "width": 2560,
+          "height": 1080,
+          "physicalScale": 1,
+          "worldScale": 2.7,
+          "cssWidth": 2560,
+          "cssHeight": 1080,
+          "worldWidth": 948.148148148148
+        },
+        "layout": {
+          "scale": 5,
+          "originX": -530,
+          "originY": -70,
+          "skyBottom": 205
+        },
+        "path": {
+          "x": 563,
+          "y": 37,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 7.85,
+        "state": {
+          "progress": 0.9249999999999998,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          555,
+          0,
+          116,
+          205
+        ],
+        "panel": [
+          232,
+          332
+        ]
+      },
+      {
+        "name": "wide",
+        "viewport": {
+          "width": 2560,
+          "height": 1080,
+          "physicalScale": 1,
+          "worldScale": 2.7,
+          "cssWidth": 2560,
+          "cssHeight": 1080,
+          "worldWidth": 948.148148148148
+        },
+        "layout": {
+          "scale": 5,
+          "originX": -530,
+          "originY": -70,
+          "skyBottom": 205
+        },
+        "path": {
+          "x": 563,
+          "y": 37,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 8,
+        "state": {
+          "progress": 0,
+          "alpha": 0
+        },
+        "context": [
+          555,
+          0,
+          116,
+          205
+        ],
+        "panel": [
+          348,
+          332
+        ]
+      },
+      {
+        "name": "compact",
+        "viewport": {
+          "width": 800,
+          "height": 600,
+          "physicalScale": 1,
+          "worldScale": 1.5,
+          "cssWidth": 800,
+          "cssHeight": 600,
+          "worldWidth": 533.3333333333334
+        },
+        "layout": {
+          "scale": 3,
+          "originX": -686,
+          "originY": -90,
+          "skyBottom": 75
+        },
+        "path": {
+          "x": 176,
+          "y": 14,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 6.15,
+        "state": {
+          "progress": 0.07500000000000018,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          168,
+          0,
+          116,
+          75
+        ],
+        "panel": [
+          0,
+          545
+        ]
+      },
+      {
+        "name": "compact",
+        "viewport": {
+          "width": 800,
+          "height": 600,
+          "physicalScale": 1,
+          "worldScale": 1.5,
+          "cssWidth": 800,
+          "cssHeight": 600,
+          "worldWidth": 533.3333333333334
+        },
+        "layout": {
+          "scale": 3,
+          "originX": -686,
+          "originY": -90,
+          "skyBottom": 75
+        },
+        "path": {
+          "x": 176,
+          "y": 14,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 7,
+        "state": {
+          "progress": 0.5,
+          "alpha": 0.6
+        },
+        "context": [
+          168,
+          0,
+          116,
+          75
+        ],
+        "panel": [
+          116,
+          545
+        ]
+      },
+      {
+        "name": "compact",
+        "viewport": {
+          "width": 800,
+          "height": 600,
+          "physicalScale": 1,
+          "worldScale": 1.5,
+          "cssWidth": 800,
+          "cssHeight": 600,
+          "worldWidth": 533.3333333333334
+        },
+        "layout": {
+          "scale": 3,
+          "originX": -686,
+          "originY": -90,
+          "skyBottom": 75
+        },
+        "path": {
+          "x": 176,
+          "y": 14,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 7.85,
+        "state": {
+          "progress": 0.9249999999999998,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          168,
+          0,
+          116,
+          75
+        ],
+        "panel": [
+          232,
+          545
+        ]
+      },
+      {
+        "name": "compact",
+        "viewport": {
+          "width": 800,
+          "height": 600,
+          "physicalScale": 1,
+          "worldScale": 1.5,
+          "cssWidth": 800,
+          "cssHeight": 600,
+          "worldWidth": 533.3333333333334
+        },
+        "layout": {
+          "scale": 3,
+          "originX": -686,
+          "originY": -90,
+          "skyBottom": 75
+        },
+        "path": {
+          "x": 176,
+          "y": 14,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 8,
+        "state": {
+          "progress": 0,
+          "alpha": 0
+        },
+        "context": [
+          168,
+          0,
+          116,
+          75
+        ],
+        "panel": [
+          348,
+          545
+        ]
+      },
+      {
+        "name": "tall",
+        "viewport": {
+          "width": 390,
+          "height": 1025,
+          "physicalScale": 2,
+          "worldScale": 2.5625,
+          "cssWidth": 390,
+          "cssHeight": 1025,
+          "worldWidth": 152.1951219512195
+        },
+        "layout": {
+          "scale": 1,
+          "originX": -317,
+          "originY": -363,
+          "skyBottom": 147
+        },
+        "path": {
+          "x": 86,
+          "y": 26,
+          "dx": 70,
+          "dy": 17.5,
+          "width": 20,
+          "height": 5.391304347826087,
+          "visible": true
+        },
+        "seconds": 6.15,
+        "state": {
+          "progress": 0.07500000000000018,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          78,
+          0,
+          106,
+          147
+        ],
+        "panel": [
+          0,
+          628
+        ]
+      },
+      {
+        "name": "tall",
+        "viewport": {
+          "width": 390,
+          "height": 1025,
+          "physicalScale": 2,
+          "worldScale": 2.5625,
+          "cssWidth": 390,
+          "cssHeight": 1025,
+          "worldWidth": 152.1951219512195
+        },
+        "layout": {
+          "scale": 1,
+          "originX": -317,
+          "originY": -363,
+          "skyBottom": 147
+        },
+        "path": {
+          "x": 86,
+          "y": 26,
+          "dx": 70,
+          "dy": 17.5,
+          "width": 20,
+          "height": 5.391304347826087,
+          "visible": true
+        },
+        "seconds": 7,
+        "state": {
+          "progress": 0.5,
+          "alpha": 0.6
+        },
+        "context": [
+          78,
+          0,
+          106,
+          147
+        ],
+        "panel": [
+          116,
+          628
+        ]
+      },
+      {
+        "name": "tall",
+        "viewport": {
+          "width": 390,
+          "height": 1025,
+          "physicalScale": 2,
+          "worldScale": 2.5625,
+          "cssWidth": 390,
+          "cssHeight": 1025,
+          "worldWidth": 152.1951219512195
+        },
+        "layout": {
+          "scale": 1,
+          "originX": -317,
+          "originY": -363,
+          "skyBottom": 147
+        },
+        "path": {
+          "x": 86,
+          "y": 26,
+          "dx": 70,
+          "dy": 17.5,
+          "width": 20,
+          "height": 5.391304347826087,
+          "visible": true
+        },
+        "seconds": 7.85,
+        "state": {
+          "progress": 0.9249999999999998,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          78,
+          0,
+          106,
+          147
+        ],
+        "panel": [
+          232,
+          628
+        ]
+      },
+      {
+        "name": "tall",
+        "viewport": {
+          "width": 390,
+          "height": 1025,
+          "physicalScale": 2,
+          "worldScale": 2.5625,
+          "cssWidth": 390,
+          "cssHeight": 1025,
+          "worldWidth": 152.1951219512195
+        },
+        "layout": {
+          "scale": 1,
+          "originX": -317,
+          "originY": -363,
+          "skyBottom": 147
+        },
+        "path": {
+          "x": 86,
+          "y": 26,
+          "dx": 70,
+          "dy": 17.5,
+          "width": 20,
+          "height": 5.391304347826087,
+          "visible": true
+        },
+        "seconds": 8,
+        "state": {
+          "progress": 0,
+          "alpha": 0
+        },
+        "context": [
+          78,
+          0,
+          106,
+          147
+        ],
+        "panel": [
+          348,
+          628
+        ]
+      },
+      {
+        "name": "portrait-large",
+        "viewport": {
+          "width": 900,
+          "height": 1600,
+          "physicalScale": 1,
+          "worldScale": 4,
+          "cssWidth": 900,
+          "cssHeight": 1600,
+          "worldWidth": 225
+        },
+        "layout": {
+          "scale": 1,
+          "originX": -62,
+          "originY": 32,
+          "skyBottom": 542
+        },
+        "path": {
+          "x": 198,
+          "y": 98,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 6.15,
+        "state": {
+          "progress": 0.07500000000000018,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          190,
+          0,
+          116,
+          542
+        ],
+        "panel": [
+          0,
+          783
+        ]
+      },
+      {
+        "name": "portrait-large",
+        "viewport": {
+          "width": 900,
+          "height": 1600,
+          "physicalScale": 1,
+          "worldScale": 4,
+          "cssWidth": 900,
+          "cssHeight": 1600,
+          "worldWidth": 225
+        },
+        "layout": {
+          "scale": 1,
+          "originX": -62,
+          "originY": 32,
+          "skyBottom": 542
+        },
+        "path": {
+          "x": 198,
+          "y": 98,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 7,
+        "state": {
+          "progress": 0.5,
+          "alpha": 0.6
+        },
+        "context": [
+          190,
+          0,
+          116,
+          542
+        ],
+        "panel": [
+          116,
+          783
+        ]
+      },
+      {
+        "name": "portrait-large",
+        "viewport": {
+          "width": 900,
+          "height": 1600,
+          "physicalScale": 1,
+          "worldScale": 4,
+          "cssWidth": 900,
+          "cssHeight": 1600,
+          "worldWidth": 225
+        },
+        "layout": {
+          "scale": 1,
+          "originX": -62,
+          "originY": 32,
+          "skyBottom": 542
+        },
+        "path": {
+          "x": 198,
+          "y": 98,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 7.85,
+        "state": {
+          "progress": 0.9249999999999998,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          190,
+          0,
+          116,
+          542
+        ],
+        "panel": [
+          232,
+          783
+        ]
+      },
+      {
+        "name": "portrait-large",
+        "viewport": {
+          "width": 900,
+          "height": 1600,
+          "physicalScale": 1,
+          "worldScale": 4,
+          "cssWidth": 900,
+          "cssHeight": 1600,
+          "worldWidth": 225
+        },
+        "layout": {
+          "scale": 1,
+          "originX": -62,
+          "originY": 32,
+          "skyBottom": 542
+        },
+        "path": {
+          "x": 198,
+          "y": 98,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 8,
+        "state": {
+          "progress": 0,
+          "alpha": 0
+        },
+        "context": [
+          190,
+          0,
+          116,
+          542
+        ],
+        "panel": [
+          348,
+          783
+        ]
+      },
+      {
+        "name": "portrait-boundary",
+        "viewport": {
+          "width": 1024,
+          "height": 1537,
+          "physicalScale": 1,
+          "worldScale": 3.8425,
+          "cssWidth": 1024,
+          "cssHeight": 1537,
+          "worldWidth": 266.4931685100846
+        },
+        "layout": {
+          "scale": 1,
+          "originX": 0,
+          "originY": 1,
+          "skyBottom": 511
+        },
+        "path": {
+          "x": 225,
+          "y": 92,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 6.15,
+        "state": {
+          "progress": 0.07500000000000018,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          217,
+          0,
+          116,
+          511
+        ],
+        "panel": [
+          0,
+          1333
+        ]
+      },
+      {
+        "name": "portrait-boundary",
+        "viewport": {
+          "width": 1024,
+          "height": 1537,
+          "physicalScale": 1,
+          "worldScale": 3.8425,
+          "cssWidth": 1024,
+          "cssHeight": 1537,
+          "worldWidth": 266.4931685100846
+        },
+        "layout": {
+          "scale": 1,
+          "originX": 0,
+          "originY": 1,
+          "skyBottom": 511
+        },
+        "path": {
+          "x": 225,
+          "y": 92,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 7,
+        "state": {
+          "progress": 0.5,
+          "alpha": 0.6
+        },
+        "context": [
+          217,
+          0,
+          116,
+          511
+        ],
+        "panel": [
+          116,
+          1333
+        ]
+      },
+      {
+        "name": "portrait-boundary",
+        "viewport": {
+          "width": 1024,
+          "height": 1537,
+          "physicalScale": 1,
+          "worldScale": 3.8425,
+          "cssWidth": 1024,
+          "cssHeight": 1537,
+          "worldWidth": 266.4931685100846
+        },
+        "layout": {
+          "scale": 1,
+          "originX": 0,
+          "originY": 1,
+          "skyBottom": 511
+        },
+        "path": {
+          "x": 225,
+          "y": 92,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 7.85,
+        "state": {
+          "progress": 0.9249999999999998,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          217,
+          0,
+          116,
+          511
+        ],
+        "panel": [
+          232,
+          1333
+        ]
+      },
+      {
+        "name": "portrait-boundary",
+        "viewport": {
+          "width": 1024,
+          "height": 1537,
+          "physicalScale": 1,
+          "worldScale": 3.8425,
+          "cssWidth": 1024,
+          "cssHeight": 1537,
+          "worldWidth": 266.4931685100846
+        },
+        "layout": {
+          "scale": 1,
+          "originX": 0,
+          "originY": 1,
+          "skyBottom": 511
+        },
+        "path": {
+          "x": 225,
+          "y": 92,
+          "dx": 72,
+          "dy": 18,
+          "width": 28,
+          "height": 7.547826086956522,
+          "visible": true
+        },
+        "seconds": 8,
+        "state": {
+          "progress": 0,
+          "alpha": 0
+        },
+        "context": [
+          217,
+          0,
+          116,
+          511
+        ],
+        "panel": [
+          348,
+          1333
+        ]
+      },
+      {
+        "name": "small-phone",
+        "viewport": {
+          "width": 320,
+          "height": 568,
+          "physicalScale": 2,
+          "worldScale": 1.42,
+          "cssWidth": 320,
+          "cssHeight": 568,
+          "worldWidth": 225.35211267605635
+        },
+        "layout": {
+          "scale": 0.5,
+          "originX": -96,
+          "originY": -126,
+          "skyBottom": 129
+        },
+        "path": {
+          "x": 70,
+          "y": 23,
+          "dx": 58,
+          "dy": 14.5,
+          "width": 16,
+          "height": 4.3130434782608695,
+          "visible": true
+        },
+        "seconds": 6.15,
+        "state": {
+          "progress": 0.07500000000000018,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          62,
+          0,
+          90,
+          129
+        ],
+        "panel": [
+          0,
+          1852
+        ]
+      },
+      {
+        "name": "small-phone",
+        "viewport": {
+          "width": 320,
+          "height": 568,
+          "physicalScale": 2,
+          "worldScale": 1.42,
+          "cssWidth": 320,
+          "cssHeight": 568,
+          "worldWidth": 225.35211267605635
+        },
+        "layout": {
+          "scale": 0.5,
+          "originX": -96,
+          "originY": -126,
+          "skyBottom": 129
+        },
+        "path": {
+          "x": 70,
+          "y": 23,
+          "dx": 58,
+          "dy": 14.5,
+          "width": 16,
+          "height": 4.3130434782608695,
+          "visible": true
+        },
+        "seconds": 7,
+        "state": {
+          "progress": 0.5,
+          "alpha": 0.6
+        },
+        "context": [
+          62,
+          0,
+          90,
+          129
+        ],
+        "panel": [
+          116,
+          1852
+        ]
+      },
+      {
+        "name": "small-phone",
+        "viewport": {
+          "width": 320,
+          "height": 568,
+          "physicalScale": 2,
+          "worldScale": 1.42,
+          "cssWidth": 320,
+          "cssHeight": 568,
+          "worldWidth": 225.35211267605635
+        },
+        "layout": {
+          "scale": 0.5,
+          "originX": -96,
+          "originY": -126,
+          "skyBottom": 129
+        },
+        "path": {
+          "x": 70,
+          "y": 23,
+          "dx": 58,
+          "dy": 14.5,
+          "width": 16,
+          "height": 4.3130434782608695,
+          "visible": true
+        },
+        "seconds": 7.85,
+        "state": {
+          "progress": 0.9249999999999998,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          62,
+          0,
+          90,
+          129
+        ],
+        "panel": [
+          232,
+          1852
+        ]
+      },
+      {
+        "name": "small-phone",
+        "viewport": {
+          "width": 320,
+          "height": 568,
+          "physicalScale": 2,
+          "worldScale": 1.42,
+          "cssWidth": 320,
+          "cssHeight": 568,
+          "worldWidth": 225.35211267605635
+        },
+        "layout": {
+          "scale": 0.5,
+          "originX": -96,
+          "originY": -126,
+          "skyBottom": 129
+        },
+        "path": {
+          "x": 70,
+          "y": 23,
+          "dx": 58,
+          "dy": 14.5,
+          "width": 16,
+          "height": 4.3130434782608695,
+          "visible": true
+        },
+        "seconds": 8,
+        "state": {
+          "progress": 0,
+          "alpha": 0
+        },
+        "context": [
+          62,
+          0,
+          90,
+          129
+        ],
+        "panel": [
+          348,
+          1852
+        ]
+      },
+      {
+        "name": "small-mobile",
+        "viewport": {
+          "width": 375,
+          "height": 667,
+          "physicalScale": 2,
+          "worldScale": 1.6675,
+          "cssWidth": 375,
+          "cssHeight": 667,
+          "worldWidth": 224.88755622188907
+        },
+        "layout": {
+          "scale": 0.5,
+          "originX": -68,
+          "originY": -50,
+          "skyBottom": 205
+        },
+        "path": {
+          "x": 83,
+          "y": 37,
+          "dx": 68,
+          "dy": 17,
+          "width": 19,
+          "height": 5.121739130434783,
+          "visible": true
+        },
+        "seconds": 6.15,
+        "state": {
+          "progress": 0.07500000000000018,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          75,
+          0,
+          103,
+          205
+        ],
+        "panel": [
+          0,
+          1989
+        ]
+      },
+      {
+        "name": "small-mobile",
+        "viewport": {
+          "width": 375,
+          "height": 667,
+          "physicalScale": 2,
+          "worldScale": 1.6675,
+          "cssWidth": 375,
+          "cssHeight": 667,
+          "worldWidth": 224.88755622188907
+        },
+        "layout": {
+          "scale": 0.5,
+          "originX": -68,
+          "originY": -50,
+          "skyBottom": 205
+        },
+        "path": {
+          "x": 83,
+          "y": 37,
+          "dx": 68,
+          "dy": 17,
+          "width": 19,
+          "height": 5.121739130434783,
+          "visible": true
+        },
+        "seconds": 7,
+        "state": {
+          "progress": 0.5,
+          "alpha": 0.6
+        },
+        "context": [
+          75,
+          0,
+          103,
+          205
+        ],
+        "panel": [
+          116,
+          1989
+        ]
+      },
+      {
+        "name": "small-mobile",
+        "viewport": {
+          "width": 375,
+          "height": 667,
+          "physicalScale": 2,
+          "worldScale": 1.6675,
+          "cssWidth": 375,
+          "cssHeight": 667,
+          "worldWidth": 224.88755622188907
+        },
+        "layout": {
+          "scale": 0.5,
+          "originX": -68,
+          "originY": -50,
+          "skyBottom": 205
+        },
+        "path": {
+          "x": 83,
+          "y": 37,
+          "dx": 68,
+          "dy": 17,
+          "width": 19,
+          "height": 5.121739130434783,
+          "visible": true
+        },
+        "seconds": 7.85,
+        "state": {
+          "progress": 0.9249999999999998,
+          "alpha": 0.15555555555555614
+        },
+        "context": [
+          75,
+          0,
+          103,
+          205
+        ],
+        "panel": [
+          232,
+          1989
+        ]
+      },
+      {
+        "name": "small-mobile",
+        "viewport": {
+          "width": 375,
+          "height": 667,
+          "physicalScale": 2,
+          "worldScale": 1.6675,
+          "cssWidth": 375,
+          "cssHeight": 667,
+          "worldWidth": 224.88755622188907
+        },
+        "layout": {
+          "scale": 0.5,
+          "originX": -68,
+          "originY": -50,
+          "skyBottom": 205
+        },
+        "path": {
+          "x": 83,
+          "y": 37,
+          "dx": 68,
+          "dy": 17,
+          "width": 19,
+          "height": 5.121739130434783,
+          "visible": true
+        },
+        "seconds": 8,
+        "state": {
+          "progress": 0,
+          "alpha": 0
+        },
+        "context": [
+          75,
+          0,
+          103,
+          205
+        ],
+        "panel": [
+          348,
+          1989
+        ]
+      }
+    ]
+  },
+  "method": "Image-generation textures composited by /scripts/generated-meteor-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}
