@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-laundry/source-cleaned-v2.png",
+    "width": 2172,
+    "height": 724,
+    "sha256": "7bb0723369c3e2d8327aa959b0ba86ff8337c40cf608e0951d1216c4220a8851"
+  },
+  "output": {
+    "path": "public/art/roof-towels.png",
+    "width": 543,
+    "height": 181,
+    "sha256": "deeb1f3251eb6fe04afc3fc7f1ccab303a3348f59655cab19f563e776124b1f5"
+  },
+  "grid": {
+    "cellSize": 4,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

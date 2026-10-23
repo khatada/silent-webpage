@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-laundry/source.png",
+    "width": 2172,
+    "height": 724,
+    "sha256": "221de3b2e207b9828e38276a1f93984fcc998c233c1304fc5155ffd9304460ad"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-laundry/candidate-corrected.png",
+    "width": 543,
+    "height": 181,
+    "sha256": "4af776af749402587185f81ffc8c61a14f8286f66f9847fde6407fabde04c5df"
+  },
+  "grid": {
+    "cellSize": 4,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
