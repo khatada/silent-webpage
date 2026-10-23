@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-laundry-runtime-shared/atlas-source.png",
+    "width": 1120,
+    "height": 1248,
+    "sha256": "d7f549d264e685c9fa44cfc967f84b3d40de8109d956df16fd38220e85a25c7c"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-laundry-runtime-shared/atlas-corrected.png",
+    "width": 1120,
+    "height": 1248,
+    "sha256": "0978b5fb424cabaecdbe14b82315b72678c823280975d8454c728f2161ec1f0d"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

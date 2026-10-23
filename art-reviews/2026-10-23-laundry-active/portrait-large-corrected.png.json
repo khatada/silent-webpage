@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-laundry-active/portrait-large-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "9dda5c8185af61b387e9eab30e204d1799f2ace9e59220e13239e7ca0c728ffc"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-laundry-active/portrait-large-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "2e74065712594f8bc99c8ad936a9523d6cf5b9872442e97c87de3594603f9083"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

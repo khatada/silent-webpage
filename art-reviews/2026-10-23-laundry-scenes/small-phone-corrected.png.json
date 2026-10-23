@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-laundry-scenes/small-phone-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "32e98532db9bb9436af3b66420737eeaa61fc23844832c17b1f87ce8d9941962"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-laundry-scenes/small-phone-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "f8aa24f0d24ff36823cadb36ca5991964947c374944112a97f696f46b911fd2f"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

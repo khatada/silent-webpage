@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-laundry-scenes/tall-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "5f43ca91a48584696c0d35eb692caba5d9785a19f16e17695280fdcce7a204ed"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-laundry-scenes/tall-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "013e2488b7cf81d6a44a5f98ae3852ace33d7382ffc0a5a618ba79b056e867b3"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

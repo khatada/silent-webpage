@@ -10,6 +10,7 @@ import { createImageFan, fanArt } from './image-fan';
 import { createImageResident, residentArt } from './image-resident';
 import { createImageSteam, steamArt } from './image-steam';
 import { createImageMeteor, meteorArt } from './image-meteor';
+import { createImageLaundry, laundryArt } from './image-laundry';
 
 type Frame = readonly [number, number, number, number];
 
@@ -19,7 +20,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -39,6 +40,7 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${residentArt.image}`),
     Assets.load<Texture>(`${baseUrl}${steamArt.image}`),
     Assets.load<Texture>(`${baseUrl}${meteorArt.image}`),
+    Assets.load<Texture>(`${baseUrl}${laundryArt.image}`),
   ]);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
@@ -59,6 +61,8 @@ export async function createScene(host: HTMLElement): Promise<{
   const imageMeteor = createImageMeteor(meteorAtlas);
   let meteor: Sprite;
   let meteorSkyBottom = 0;
+  const imageLaundry = createImageLaundry(laundryAtlas);
+  let laundry: ReturnType<typeof imageLaundry.createSprite> | undefined;
   let residentComposition: 0 | 1 = 0;
   let roadCar: ReturnType<typeof imageStreetCar.createSprite>;
   const crops: Texture[] = [];
@@ -164,6 +168,11 @@ export async function createScene(host: HTMLElement): Promise<{
       fan = imageFan.createSprite(layout.portrait ? 1 : 0, scale, originX, originY);
       app.stage.addChild(fan.root);
     }
+    laundry = undefined;
+    if (!layout.wide) {
+      laundry = imageLaundry.createSprite(layout.portrait ? 1 : 0, scale, originX, originY);
+      app.stage.addChild(laundry.root);
+    }
     curtain = undefined;
     resident = undefined;
     residentComposition = layout.portrait ? 1 : 0;
@@ -229,6 +238,7 @@ export async function createScene(host: HTMLElement): Promise<{
     imageStreetCar.update(roadCar, elapsed);
     imageMeteor.update(meteor, elapsed, width, meteorSkyBottom);
     if (steam) imageSteam.update(steam, elapsed);
+    if (laundry) imageLaundry.update(laundry, elapsed);
     if (curtain) imageCurtain.update(curtain, elapsed);
     if (fan) imageFan.update(fan, elapsed);
     if (resident) imageResident.update(resident, elapsed, residentComposition);
@@ -278,6 +288,7 @@ export async function createScene(host: HTMLElement): Promise<{
       imageResident.destroy();
       imageSteam.destroy();
       imageMeteor.destroy();
+      imageLaundry.destroy();
       // Assets owns the shared image sources; sprite/crop disposal must not destroy them.
     },
   };
