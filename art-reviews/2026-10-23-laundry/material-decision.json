@@ -1,0 +1,41 @@
+{
+  "image": "public/art/roof-towels.png",
+  "report": "public/art/roof-towels.png.json",
+  "decision": "accepted-as-material",
+  "reviewedBy": "LLM",
+  "reason": "親/担当LLMが4領域の接続部を部分削除して4px補正した543×181を実閲覧。灰青/灰褐色の2枚と裾の4姿勢、上端の折り返しを確認し素材として採用。範囲外1566768画素RGBA一致、描き足し0を親も独立再比較。微小な縁の色と笠木への配置は表示PRの合成QAで確認し、この段階では画面へ読み込まない。",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "originalSha256": "7bb0723369c3e2d8327aa959b0ba86ff8337c40cf608e0951d1216c4220a8851",
+    "correctionInputKind": "permitted-partial-edit-of-generated-image",
+    "generatedOriginal": "art-reviews/2026-10-23-laundry/source.png",
+    "generatedOriginalSha256": "221de3b2e207b9828e38276a1f93984fcc998c233c1304fc5155ffd9304460ad",
+    "partialEditScript": "art-reviews/2026-10-23-laundry/remove-connectors-v2.mjs",
+    "partialEditReport": "art-reviews/2026-10-23-laundry/connector-removal-v2.json",
+    "prompt": "Four poses of the same grey-blue long towel and grey-beige short towel, fixed upper folds and gently swaying lower hems, transparent pixel art referencing actual generated rooftop crops. Generated small connectors were undesired and deleted only in four declared regions. originalSha256 identifies correction input AFTER partial edit; generatedOriginalSha256 identifies unchanged imagegen output. No pixels/colors drawn.",
+    "references": [
+      "art-reviews/2026-10-23-laundry/normal-reference.png",
+      "art-reviews/2026-10-23-laundry/portrait-reference.png"
+    ]
+  },
+  "displayDecision": "pending-renderer-pr",
+  "correctedSha256": "deeb1f3251eb6fe04afc3fc7f1ccab303a3348f59655cab19f563e776124b1f5",
+  "partialEditVerification": {
+    "unchangedOutsidePixels": 1566768,
+    "removedVisiblePixels": 4594,
+    "newPixelsOrColors": 0,
+    "note": "Selected small connector rectangles may also remove adjoining border pixels; actual visual review found no apparent fabric-shape damage."
+  },
+  "priorCandidates": [
+    {
+      "image": "art-reviews/2026-10-23-laundry/candidate-corrected.png",
+      "decision": "not-used",
+      "reason": "生成された不要な接続部がある。単純な個別矩形cropでは一部姿勢の裾を保って除外できず、部分削除へ変更。"
+    },
+    {
+      "image": "art-reviews/2026-10-23-laundry/candidate-cleaned-corrected.png",
+      "decision": "not-used",
+      "reason": "親LLM実閲覧とalpha走査で上側の微小接続残留を確認し、4領域をy51..59へ拡張したv2を再補正・再実閲覧した。"
+    }
+  ]
+}

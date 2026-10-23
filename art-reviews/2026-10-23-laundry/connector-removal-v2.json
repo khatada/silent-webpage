@@ -1,0 +1,79 @@
+{
+  "method": "Partial deletion of generated connector pixels only; selected rectangles become transparent RGBA zero. No original artwork drawn. Minor adjoining top-border pixels may be removed; visual review required.",
+  "input": "source.png",
+  "output": "source-cleaned-v2.png",
+  "originalSha256": "221de3b2e207b9828e38276a1f93984fcc998c233c1304fc5155ffd9304460ad",
+  "cleanedSha256": "7bb0723369c3e2d8327aa959b0ba86ff8337c40cf608e0951d1216c4220a8851",
+  "correctedGridCellSize": 4,
+  "correctedRects": [
+    [
+      67,
+      51,
+      9,
+      9
+    ],
+    [
+      200,
+      51,
+      10,
+      9
+    ],
+    [
+      334,
+      51,
+      10,
+      9
+    ],
+    [
+      469,
+      51,
+      11,
+      9
+    ]
+  ],
+  "perRectangle": [
+    {
+      "rawRect": [
+        268,
+        204,
+        36,
+        36
+      ],
+      "deletedVisiblePixels": 989,
+      "changedPixels": 1013
+    },
+    {
+      "rawRect": [
+        800,
+        204,
+        40,
+        36
+      ],
+      "deletedVisiblePixels": 1194,
+      "changedPixels": 1202
+    },
+    {
+      "rawRect": [
+        1336,
+        204,
+        40,
+        36
+      ],
+      "deletedVisiblePixels": 1212,
+      "changedPixels": 1226
+    },
+    {
+      "rawRect": [
+        1876,
+        204,
+        44,
+        36
+      ],
+      "deletedVisiblePixels": 1199,
+      "changedPixels": 1220
+    }
+  ],
+  "keptPixels": 1566768,
+  "keptRGBAUnchanged": true,
+  "outsideChangedPixels": 0
+}
