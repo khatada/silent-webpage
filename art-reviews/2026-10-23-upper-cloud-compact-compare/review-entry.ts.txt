@@ -1,0 +1,59 @@
+import { Application, Assets, Container, Rectangle, RenderTexture, Sprite, Texture } from 'pixi.js';
+import { generatedArt } from '../src/generated-art';
+import { generatedLayout } from '../src/generated-layout';
+import { createImageUpperCloud, upperCloudGeometry } from '../src/image-upper-cloud';
+import { travelPosition } from '../src/animation';
+
+export async function renderGeneratedUpperCloudReview() {
+  const views = [['desktop', 1440, 900], ['portrait-large', 900, 1600], ['wide', 2560, 1080]] as const;
+  const materials = await Promise.all([generatedArt.atlas, generatedArt.background, generatedArt.wide.background,
+    generatedArt.portrait.background].map(path => Assets.load<Texture>(`/${path}`)));
+  materials.forEach(texture => { texture.source.scaleMode = 'nearest'; });
+  const cloudTexture = new Texture({ source: materials[0].source, frame: new Rectangle(...generatedArt.frames.cloud) });
+  const aircraftTexture = new Texture({ source: materials[0].source, frame: new Rectangle(...generatedArt.frames.aircraft) });
+  const factory = createImageUpperCloud(cloudTexture);
+  const app = new Application();
+  const width = 2400, height = 1050;
+  await app.init({ width, height, resolution: 1, antialias: false, background: '#171e30', preference: 'webgl', autoStart: false });
+  document.body.append(app.canvas);
+  const samples: unknown[] = [];
+  const reviewLayouts: Record<string, unknown> = {};
+  views.forEach(([name, viewWidth, viewHeight], row) => {
+    const layout = generatedLayout(viewWidth, viewHeight);
+    reviewLayouts[name] = { ...layout, composition: layout.portrait ? 'portrait' : layout.wide ? 'wide' : 'normal' };
+    [0.2, 0.35].forEach((relativeScale, sizeIndex) => [0.08, 0.12, 0.16].forEach((alpha, alphaIndex) => {
+      const column = sizeIndex * 3 + alphaIndex;
+      const target = RenderTexture.create({ width: viewWidth, height: layout.skyBottom });
+      const root = new Container();
+      const source = materials[layout.portrait ? 3 : layout.wide ? 2 : 1];
+      if (layout.originY > 0) {
+        const sky = new Sprite(new Texture({ source: source.source, frame: new Rectangle(...layout.composition.darkSky) }));
+        sky.width = viewWidth; sky.height = layout.originY; root.addChild(sky);
+      }
+      const background = new Sprite(source);
+      background.position.set(layout.originX, layout.originY); background.scale.set(layout.scale); root.addChild(background);
+      const upper = factory.createSprite(layout, { relativeScale, alpha });
+      factory.update(upper, 0, viewWidth, layout.scale); root.addChild(upper);
+      const lower = new Sprite(cloudTexture);
+      lower.scale.set(layout.cloudScale); lower.y = layout.cloudY; lower.alpha = 0.35;
+      lower.x = travelPosition(0, viewWidth, lower.width, layout.scale * 1.2, viewWidth * 0.12); root.addChild(lower);
+      const plane = new Sprite(aircraftTexture);
+      plane.scale.set(layout.aircraftScale); plane.y = layout.aircraftY;
+      plane.x = travelPosition(0, viewWidth, plane.width, layout.scale * 3.2, viewWidth * 0.7); root.addChild(plane);
+      app.renderer.render({ container: root, target });
+      const contextX = Math.max(0, Math.floor(viewWidth * 0.65 - 24));
+      const contextY = Math.max(0, Math.floor(upper.y - 8));
+      const contextWidth = Math.min(400, viewWidth - contextX);
+      const contextHeight = Math.min(340, layout.skyBottom - contextY);
+      const texture = new Texture({ source: target.source, frame: new Rectangle(contextX, contextY, contextWidth, contextHeight) });
+      texture.source.scaleMode = 'nearest';
+      const panel = new Sprite(texture); panel.position.set(column * 400, row * 350); app.stage.addChild(panel);
+      samples.push({ name, viewWidth, viewHeight, row, column, alpha, relativeScale,
+        geometry: upperCloudGeometry(layout, relativeScale), layoutRef: name, context: [contextX, contextY, contextWidth, contextHeight] });
+    }));
+  });
+  app.renderer.render(app.stage); app.canvas.dataset.ready = 'true';
+  return { width, height, samples, layouts: reviewLayouts,
+    compositionDefinitions: { source: 'src/generated-art.ts', revision: 'sourceSha256',
+      keys: { normal: 'generatedArt', wide: 'generatedArt.wide', portrait: 'generatedArt.portrait' } }, rows: views.map(view => view[0]), columns: ['compact-.08', 'compact-.12', 'compact-.16', 'small-.08', 'small-.12', 'small-.16'] };
+}

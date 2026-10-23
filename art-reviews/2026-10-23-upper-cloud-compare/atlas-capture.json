@@ -1,0 +1,58 @@
+{
+  "sourceSha256": "a180a555e26d4158f930befb4f34bef856e6d89673a63f0fb849a5439befcd01",
+  "finalSourceSha256": "a180a555e26d4158f930befb4f34bef856e6d89673a63f0fb849a5439befcd01",
+  "metadata": {
+    "width": 2400,
+    "height": 1050,
+    "samples": [
+      {"name":"desktop","viewWidth":1440,"viewHeight":900,"row":0,"column":0,"alpha":0.08,"relativeScale":0.35,"geometry":{"scale":0.48999999999999994,"y":4,"width":115.14999999999999,"top":4.9799999999999995,"bottom":38.3,"lowerTop":28.8,"visible":false},"context":[912,0,400,124],"layoutRef":"desktop"},
+      {"name":"desktop","viewWidth":1440,"viewHeight":900,"row":0,"column":1,"alpha":0.12,"relativeScale":0.35,"geometry":{"scale":0.48999999999999994,"y":4,"width":115.14999999999999,"top":4.9799999999999995,"bottom":38.3,"lowerTop":28.8,"visible":false},"context":[912,0,400,124],"layoutRef":"desktop"},
+      {"name":"desktop","viewWidth":1440,"viewHeight":900,"row":0,"column":2,"alpha":0.16,"relativeScale":0.35,"geometry":{"scale":0.48999999999999994,"y":4,"width":115.14999999999999,"top":4.9799999999999995,"bottom":38.3,"lowerTop":28.8,"visible":false},"context":[912,0,400,124],"layoutRef":"desktop"},
+      {"name":"desktop","viewWidth":1440,"viewHeight":900,"row":0,"column":3,"alpha":0.08,"relativeScale":0.7,"geometry":{"scale":0.9799999999999999,"y":3,"width":230.29999999999998,"top":4.96,"bottom":71.6,"lowerTop":28.8,"visible":false},"context":[912,0,400,124],"layoutRef":"desktop"},
+      {"name":"desktop","viewWidth":1440,"viewHeight":900,"row":0,"column":4,"alpha":0.12,"relativeScale":0.7,"geometry":{"scale":0.9799999999999999,"y":3,"width":230.29999999999998,"top":4.96,"bottom":71.6,"lowerTop":28.8,"visible":false},"context":[912,0,400,124],"layoutRef":"desktop"},
+      {"name":"desktop","viewWidth":1440,"viewHeight":900,"row":0,"column":5,"alpha":0.16,"relativeScale":0.7,"geometry":{"scale":0.9799999999999999,"y":3,"width":230.29999999999998,"top":4.96,"bottom":71.6,"lowerTop":28.8,"visible":false},"context":[912,0,400,124],"layoutRef":"desktop"},
+      {"name":"portrait-large","viewWidth":900,"viewHeight":1600,"row":1,"column":0,"alpha":0.08,"relativeScale":0.35,"geometry":{"scale":0.48999999999999994,"y":70,"width":115.14999999999999,"top":70.98,"bottom":104.3,"lowerTop":446.8,"visible":true},"context":[561,62,339,340],"layoutRef":"portrait-large"},
+      {"name":"portrait-large","viewWidth":900,"viewHeight":1600,"row":1,"column":1,"alpha":0.12,"relativeScale":0.35,"geometry":{"scale":0.48999999999999994,"y":70,"width":115.14999999999999,"top":70.98,"bottom":104.3,"lowerTop":446.8,"visible":true},"context":[561,62,339,340],"layoutRef":"portrait-large"},
+      {"name":"portrait-large","viewWidth":900,"viewHeight":1600,"row":1,"column":2,"alpha":0.16,"relativeScale":0.35,"geometry":{"scale":0.48999999999999994,"y":70,"width":115.14999999999999,"top":70.98,"bottom":104.3,"lowerTop":446.8,"visible":true},"context":[561,62,339,340],"layoutRef":"portrait-large"},
+      {"name":"portrait-large","viewWidth":900,"viewHeight":1600,"row":1,"column":3,"alpha":0.08,"relativeScale":0.7,"geometry":{"scale":0.9799999999999999,"y":70,"width":230.29999999999998,"top":71.96,"bottom":138.6,"lowerTop":446.8,"visible":true},"context":[561,62,339,340],"layoutRef":"portrait-large"},
+      {"name":"portrait-large","viewWidth":900,"viewHeight":1600,"row":1,"column":4,"alpha":0.12,"relativeScale":0.7,"geometry":{"scale":0.9799999999999999,"y":70,"width":230.29999999999998,"top":71.96,"bottom":138.6,"lowerTop":446.8,"visible":true},"context":[561,62,339,340],"layoutRef":"portrait-large"},
+      {"name":"portrait-large","viewWidth":900,"viewHeight":1600,"row":1,"column":5,"alpha":0.16,"relativeScale":0.7,"geometry":{"scale":0.9799999999999999,"y":70,"width":230.29999999999998,"top":71.96,"bottom":138.6,"lowerTop":446.8,"visible":true},"context":[561,62,339,340],"layoutRef":"portrait-large"},
+      {"name":"wide","viewWidth":2560,"viewHeight":1080,"row":2,"column":0,"alpha":0.08,"relativeScale":0.35,"geometry":{"scale":0.6124999999999999,"y":26,"width":143.93749999999997,"top":27.225,"bottom":68.875,"lowerTop":86.5,"visible":true},"context":[1640,18,400,187],"layoutRef":"wide"},
+      {"name":"wide","viewWidth":2560,"viewHeight":1080,"row":2,"column":1,"alpha":0.12,"relativeScale":0.35,"geometry":{"scale":0.6124999999999999,"y":26,"width":143.93749999999997,"top":27.225,"bottom":68.875,"lowerTop":86.5,"visible":true},"context":[1640,18,400,187],"layoutRef":"wide"},
+      {"name":"wide","viewWidth":2560,"viewHeight":1080,"row":2,"column":2,"alpha":0.16,"relativeScale":0.35,"geometry":{"scale":0.6124999999999999,"y":26,"width":143.93749999999997,"top":27.225,"bottom":68.875,"lowerTop":86.5,"visible":true},"context":[1640,18,400,187],"layoutRef":"wide"},
+      {"name":"wide","viewWidth":2560,"viewHeight":1080,"row":2,"column":3,"alpha":0.08,"relativeScale":0.7,"geometry":{"scale":1.2249999999999999,"y":2,"width":287.87499999999994,"top":4.449999999999999,"bottom":87.74999999999999,"lowerTop":86.5,"visible":false},"context":[1640,0,400,205],"layoutRef":"wide"},
+      {"name":"wide","viewWidth":2560,"viewHeight":1080,"row":2,"column":4,"alpha":0.12,"relativeScale":0.7,"geometry":{"scale":1.2249999999999999,"y":2,"width":287.87499999999994,"top":4.449999999999999,"bottom":87.74999999999999,"lowerTop":86.5,"visible":false},"context":[1640,0,400,205],"layoutRef":"wide"},
+      {"name":"wide","viewWidth":2560,"viewHeight":1080,"row":2,"column":5,"alpha":0.16,"relativeScale":0.7,"geometry":{"scale":1.2249999999999999,"y":2,"width":287.87499999999994,"top":4.449999999999999,"bottom":87.74999999999999,"lowerTop":86.5,"visible":false},"context":[1640,0,400,205],"layoutRef":"wide"}
+    ],
+    "rows": [
+      "desktop",
+      "portrait-large",
+      "wide"
+    ],
+    "columns": [
+      "small-.08",
+      "small-.12",
+      "small-.16",
+      "large-.08",
+      "large-.12",
+      "large-.16"
+    ],
+    "layouts": {
+      "desktop": {"wide":false,"portrait":false,"scale":2,"originX":-48,"originY":-76,"railBottom":372,"skyBottom":124,"aircraftScale":0.34,"cloudScale":1.4,"aircraftY":80,"cloudY":26,"catY":864,"composition":"normal"},
+      "portrait-large": {"wide":false,"portrait":true,"scale":1,"originX":-62,"originY":32,"railBottom":796,"skyBottom":542,"aircraftScale":0.34,"cloudScale":1.4,"aircraftY":452,"cloudY":444,"catY":1402,"composition":"portrait"},
+      "wide": {"wide":true,"portrait":false,"scale":5,"originX":-530,"originY":-70,"railBottom":540,"skyBottom":205,"aircraftScale":0.42500000000000004,"cloudScale":1.75,"aircraftY":105,"cloudY":83,"catY":1040,"composition":"wide"}
+    },
+    "compositionDefinitions": {
+      "source": "src/generated-art.ts",
+      "revision": "sourceSha256",
+      "keys": {
+        "normal": "generatedArt",
+        "wide": "generatedArt.wide",
+        "portrait": "generatedArt.portrait"
+      }
+    }
+  },
+  "method": "Image-generation textures composited by /scripts/generated-upper-cloud-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

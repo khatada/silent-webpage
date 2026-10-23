@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-upper-cloud-scenes/wide-source.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "13fb58d35826d539600e7ef192490a1559911c79bb76288d756adb7c35828832"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-upper-cloud-scenes/wide-corrected.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "0dd7a45da3fd9c69e6545482323aac48f619c3cf517e6984e735dae2b35c93eb"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,147 @@
+{
+  "checks": [
+    {
+      "name": "desktop",
+      "visible": true,
+      "bounds": [
+        936,
+        5,
+        1000,
+        25
+      ],
+      "changed": 562,
+      "outside": 0,
+      "omittedRgbaUnchanged": null
+    },
+    {
+      "name": "mobile",
+      "visible": false,
+      "bounds": [
+        506,
+        8,
+        590,
+        34
+      ],
+      "changed": 0,
+      "outside": 0,
+      "omittedRgbaUnchanged": true
+    },
+    {
+      "name": "narrow",
+      "visible": false,
+      "bounds": [
+        191,
+        4,
+        233,
+        17
+      ],
+      "changed": 0,
+      "outside": 0,
+      "omittedRgbaUnchanged": true
+    },
+    {
+      "name": "landscape",
+      "visible": false,
+      "bounds": [
+        1096,
+        8,
+        1143,
+        23
+      ],
+      "changed": 0,
+      "outside": 0,
+      "omittedRgbaUnchanged": true
+    },
+    {
+      "name": "wide",
+      "visible": true,
+      "bounds": [
+        1664,
+        26,
+        1744,
+        51
+      ],
+      "changed": 886,
+      "outside": 0,
+      "omittedRgbaUnchanged": null
+    },
+    {
+      "name": "compact",
+      "visible": false,
+      "bounds": [
+        520,
+        4,
+        565,
+        18
+      ],
+      "changed": 0,
+      "outside": 0,
+      "omittedRgbaUnchanged": true
+    },
+    {
+      "name": "tall",
+      "visible": true,
+      "bounds": [
+        506,
+        39,
+        634,
+        78
+      ],
+      "changed": 2228,
+      "outside": 0,
+      "omittedRgbaUnchanged": null
+    },
+    {
+      "name": "portrait-large",
+      "visible": true,
+      "bounds": [
+        585,
+        70,
+        649,
+        90
+      ],
+      "changed": 564,
+      "outside": 0,
+      "omittedRgbaUnchanged": null
+    },
+    {
+      "name": "portrait-boundary",
+      "visible": true,
+      "bounds": [
+        665,
+        66,
+        729,
+        86
+      ],
+      "changed": 562,
+      "outside": 0,
+      "omittedRgbaUnchanged": null
+    },
+    {
+      "name": "small-phone",
+      "visible": true,
+      "bounds": [
+        414,
+        32,
+        478,
+        52
+      ],
+      "changed": 552,
+      "outside": 0,
+      "omittedRgbaUnchanged": null
+    },
+    {
+      "name": "small-mobile",
+      "visible": true,
+      "bounds": [
+        486,
+        52,
+        550,
+        72
+      ],
+      "changed": 560,
+      "outside": 0,
+      "omittedRgbaUnchanged": null
+    }
+  ]
+}

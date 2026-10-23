@@ -11,6 +11,7 @@ import { createImageResident, residentArt } from './image-resident';
 import { createImageSteam, steamArt } from './image-steam';
 import { createImageMeteor, meteorArt } from './image-meteor';
 import { createImageLaundry, laundryArt } from './image-laundry';
+import { createImageUpperCloud } from './image-upper-cloud';
 
 type Frame = readonly [number, number, number, number];
 
@@ -76,6 +77,7 @@ export async function createScene(host: HTMLElement): Promise<{
     aircraft: crop(atlas, generatedArt.frames.aircraft),
     cloud: crop(atlas, generatedArt.frames.cloud),
   };
+  const imageUpperCloud = createImageUpperCloud(frames.cloud);
   const railPoles = (source: Texture, frames: readonly Frame[]) =>
     frames.map(frame => ({ texture: crop(source, frame), frame }));
   const compositionTextures = [
@@ -111,6 +113,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let trainInitialX = 0;
   let aircraft: Sprite;
   let cloud: Sprite;
+  let upperCloud: Sprite;
   let cat: Sprite;
   let windows: Sprite[] = [];
   let stars: Sprite[] = [];
@@ -197,6 +200,8 @@ export async function createScene(host: HTMLElement): Promise<{
     meteorSkyBottom = layout.skyBottom;
     meteor = imageMeteor.createSprite(width, meteorSkyBottom);
     app.stage.addChild(meteor);
+    upperCloud = imageUpperCloud.createSprite(layout);
+    app.stage.addChild(upperCloud);
     cloud = sprite(frames.cloud);
     cloud.scale.set(layout.cloudScale);
     cloud.y = layout.cloudY;
@@ -248,6 +253,7 @@ export async function createScene(host: HTMLElement): Promise<{
       art.alpha = 0.92 * (1 - brightness);
       if (resident && index === residentArt.placements[residentComposition].window) resident.alpha = brightness;
     });
+    imageUpperCloud.update(upperCloud, elapsed, width, scale);
     cloud.x = travelPosition(elapsed, width, cloud.width, scale * 1.2, width * 0.12);
     aircraft.x = travelPosition(elapsed, width, aircraft.width, scale * 3.2, width * 0.7);
     train.x = travelPosition(elapsed, width, train.width, scale * 8, trainInitialX);

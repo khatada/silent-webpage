@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-upper-cloud-motion/atlas-source.png",
+    "width": 1050,
+    "height": 2202,
+    "sha256": "831798c9c03be932af777d8fe5f6b8137ed7352718178f4bcff3cf9c1993a27e"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-upper-cloud-motion/atlas-corrected.png",
+    "width": 1050,
+    "height": 2202,
+    "sha256": "f595018156eeed536bad53b08a2946532c03559d39fa39fb8048a19015c133ff"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
