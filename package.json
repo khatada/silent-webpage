@@ -26,7 +26,8 @@
     "art:preview-steam": "node --import tsx scripts/preview-generated-steam.ts",
     "art:preview-meteor": "node --import tsx scripts/preview-generated-meteor.ts",
     "art:preview-laundry": "node --import tsx scripts/preview-generated-laundry.ts",
-    "art:preview-upper-cloud": "node --import tsx scripts/preview-generated-upper-cloud.ts"
+    "art:preview-upper-cloud": "node --import tsx scripts/preview-generated-upper-cloud.ts",
+    "art:preview-skyline-lights": "node --import tsx scripts/preview-generated-skyline-lights.ts"
   },
   "dependencies": {
     "pixi.js": "^8.14.0"

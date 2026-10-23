@@ -1,0 +1,29 @@
+{
+  "runtimeSourceSha256": "a58f0c165f4b0fcbc22e0fd05b4d41dfbd7bb5408c62de087c3ef74cc4d001e7",
+  "method": "Actual built production page; Playwright clock installed and paused before navigation, no-preference motion, runFor(12000ms) after ready. No production API or source modifications.",
+  "results": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "motion": "running",
+      "errors": [],
+      "input": "art-reviews/2026-10-23-skyline-lights-active/desktop-source.png",
+      "output": "art-reviews/2026-10-23-skyline-lights-active/desktop-corrected.png",
+      "sourceSha256": "e23febcd204546eb754523c978ba4c832a272ee392b9559a379953d965c78916"
+    },
+    {
+      "name": "portrait-large",
+      "width": 900,
+      "height": 1600,
+      "dpr": 1,
+      "motion": "running",
+      "errors": [],
+      "input": "art-reviews/2026-10-23-skyline-lights-active/portrait-large-source.png",
+      "output": "art-reviews/2026-10-23-skyline-lights-active/portrait-large-corrected.png",
+      "sourceSha256": "dd9fe1e1abd0ecd1ce3df57b305cd0648fe584696fbfe72af2ac3303f32e2db7"
+    }
+  ],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-skyline-lights-motion/normal/atlas-source.png",
+    "width": 448,
+    "height": 1728,
+    "sha256": "005968139ee6a02d387f1ace40a87bfc2755e9a3cfdd2307937ec72d07e71bf2"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-skyline-lights-motion/normal/atlas-corrected.png",
+    "width": 448,
+    "height": 1728,
+    "sha256": "76f3b668e68ddcc06f53566edc3be2a8c54e14e4664d1154ebc91e747dcf2b5f"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,13 @@
+{"checks":[
+{"name":"desktop","width":1440,"height":900,"rgbaUnchanged":true},
+{"name":"mobile","width":780,"height":1688,"rgbaUnchanged":true},
+{"name":"narrow","width":295,"height":844,"rgbaUnchanged":true},
+{"name":"landscape","width":1688,"height":780,"rgbaUnchanged":true},
+{"name":"wide","width":2560,"height":1080,"rgbaUnchanged":true},
+{"name":"compact","width":800,"height":600,"rgbaUnchanged":true},
+{"name":"tall","width":780,"height":2050,"rgbaUnchanged":true},
+{"name":"portrait-large","width":900,"height":1600,"rgbaUnchanged":true},
+{"name":"portrait-boundary","width":1024,"height":1537,"rgbaUnchanged":true},
+{"name":"small-phone","width":640,"height":1136,"rgbaUnchanged":true},
+{"name":"small-mobile","width":750,"height":1334,"rgbaUnchanged":true}
+]}
