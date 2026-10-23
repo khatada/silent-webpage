@@ -1,0 +1,14 @@
+{
+  "input": "art-reviews/2026-10-23-steam/rejected-halo-source.png",
+  "output": "art-reviews/2026-10-23-steam/source-cleaned.png",
+  "inputSha256": "e4b1ac795a6a1ad85a755e0fc3b0ca9cf8b45482f875596ac43496330ee80079",
+  "outputSha256": "9f1db5a76e8cc23a15777088e5080ab86ad21ba503d7f6a6876e239cffc88072",
+  "settings": {
+    "minimumAlpha": 128,
+    "minimumMaximumRgb": 96
+  },
+  "method": "Partial edit of imagegen artwork: retain original RGBA only at existing pixels satisfying both thresholds; clear all other pixels. No new pixels or colors.",
+  "kept": 14337,
+  "removed": 31774,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

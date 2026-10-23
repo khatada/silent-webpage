@@ -8,6 +8,7 @@ import { createImageStreetCar } from './image-street-car';
 import { createImageCurtain, curtainArt } from './image-curtain';
 import { createImageFan, fanArt } from './image-fan';
 import { createImageResident, residentArt } from './image-resident';
+import { createImageSteam, steamArt } from './image-steam';
 
 type Frame = readonly [number, number, number, number];
 
@@ -17,7 +18,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -35,6 +36,7 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${generatedArt.catTurnAtlas}`),
     Assets.load<Texture>(`${baseUrl}${fanArt.image}`),
     Assets.load<Texture>(`${baseUrl}${residentArt.image}`),
+    Assets.load<Texture>(`${baseUrl}${steamArt.image}`),
   ]);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
@@ -50,6 +52,8 @@ export async function createScene(host: HTMLElement): Promise<{
   let curtain: Sprite | undefined;
   const imageResident = createImageResident(residentAtlas);
   let resident: Sprite | undefined;
+  const imageSteam = createImageSteam(steamAtlas);
+  let steam: Sprite | undefined;
   let residentComposition: 0 | 1 = 0;
   let roadCar: ReturnType<typeof imageStreetCar.createSprite>;
   const crops: Texture[] = [];
@@ -201,6 +205,11 @@ export async function createScene(host: HTMLElement): Promise<{
         trainInitialX = center - train.width / 2;
       }
     }
+    steam = undefined;
+    if (!layout.wide) {
+      steam = imageSteam.createSprite(layout.portrait ? 1 : 0, scale, originX, originY);
+      app.stage.addChild(steam);
+    }
     cat = imageCat.createSprite();
     app.stage.addChild(cat);
     catY = layout.catY;
@@ -210,6 +219,7 @@ export async function createScene(host: HTMLElement): Promise<{
 
   function animate() {
     imageStreetCar.update(roadCar, elapsed);
+    if (steam) imageSteam.update(steam, elapsed);
     if (curtain) imageCurtain.update(curtain, elapsed);
     if (fan) imageFan.update(fan, elapsed);
     if (resident) imageResident.update(resident, elapsed, residentComposition);
@@ -257,6 +267,7 @@ export async function createScene(host: HTMLElement): Promise<{
       imageCurtain.destroy();
       imageFan.destroy();
       imageResident.destroy();
+      imageSteam.destroy();
       // Assets owns the shared image sources; sprite/crop disposal must not destroy them.
     },
   };

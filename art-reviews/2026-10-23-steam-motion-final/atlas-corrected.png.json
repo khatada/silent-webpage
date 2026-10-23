@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-steam-motion-final/atlas-source.png",
+    "width": 1344,
+    "height": 1440,
+    "sha256": "2591659c3a7b66d5829d227fbee471b4c341a6a0bb59906d281edffc7672d743"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-steam-motion-final/atlas-corrected.png",
+    "width": 1344,
+    "height": 1440,
+    "sha256": "25e08d82f4b1c25d78b40a48635e16056e77b46815c83f5b31cf929b254279f0"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,11 @@
+{
+  "decision": "rejected-without-cleanup",
+  "reviewedBy": "LLM",
+  "image": "art-reviews/2026-10-23-steam/rejected-halo-third-source.png",
+  "sha256": "e6c0a4843389dd16e00bba5a235099a09619a087333622cde9555a2e5d5af054",
+  "reason": "二値透過の新規生成でも親LLMが広いグローを実閲覧。無変更素材は不採用。生成を繰り返さず、ユーザーが許可した部分変更として初回原画のにじみ画素だけを除去し、補正と再確認で判断する。",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "prompt": "New6phase flatopaque grey-purple pixel steam threads with binarytransparency,nohalo/blur/glow."
+  }
+}

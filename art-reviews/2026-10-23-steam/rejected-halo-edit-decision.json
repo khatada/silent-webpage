@@ -1,0 +1,11 @@
+{
+  "decision": "rejected",
+  "reviewedBy": "LLM",
+  "image": "art-reviews/2026-10-23-steam/rejected-halo-edit-source.png",
+  "sha256": "eebac6c1cb1e071ccef1ea8a3593194262ba936eb34547f5a07f999e8bfffa83",
+  "reason": "親LLMが画像生成の修正版を実閲覧したが広い紫色グローが残った。採用せず、濃淡を原画に含めない二値透過の輪郭として新規生成し直す。",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "prompt": "Edit first6phase sheet to erase all glow and leave only crisp square steam pixels, fully transparent exterior."
+  }
+}

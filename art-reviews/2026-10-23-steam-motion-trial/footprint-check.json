@@ -1,0 +1,479 @@
+{
+  "method": "RGBA difference against original panel with same production transform and source sampling phase",
+  "reports": [
+    {
+      "composition": 0,
+      "scale": 1,
+      "phase": 0,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        15,
+        21,
+        15,
+        21
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "phase": 1,
+      "changed": 3,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        14,
+        17,
+        15,
+        19
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "phase": 2,
+      "changed": 7,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        14,
+        12,
+        16,
+        21
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "phase": 3,
+      "changed": 4,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        14,
+        12,
+        16,
+        21
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "phase": 4,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        17,
+        13,
+        17,
+        13
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "phase": 5,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        15,
+        21,
+        15,
+        21
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 0.5,
+      "phase": 0,
+      "changed": 0,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": null
+    },
+    {
+      "composition": 0,
+      "scale": 0.5,
+      "phase": 1,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        7,
+        11,
+        7,
+        11
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 0.5,
+      "phase": 2,
+      "changed": 3,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        7,
+        7,
+        8,
+        11
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 0.5,
+      "phase": 3,
+      "changed": 2,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        7,
+        8,
+        8,
+        11
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 0.5,
+      "phase": 4,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        7,
+        11,
+        7,
+        11
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 0.5,
+      "phase": 5,
+      "changed": 0,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": null
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "phase": 0,
+      "changed": 18,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        57,
+        80,
+        62,
+        95
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "phase": 1,
+      "changed": 52,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        56,
+        63,
+        64,
+        95
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "phase": 2,
+      "changed": 101,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        57,
+        38,
+        67,
+        95
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "phase": 3,
+      "changed": 72,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        55,
+        49,
+        68,
+        95
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "phase": 4,
+      "changed": 45,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        54,
+        43,
+        71,
+        95
+      ]
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "phase": 5,
+      "changed": 18,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        59,
+        54,
+        64,
+        95
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "phase": 0,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        20,
+        28,
+        20,
+        28
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "phase": 1,
+      "changed": 6,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        19,
+        23,
+        21,
+        30
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "phase": 2,
+      "changed": 12,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        19,
+        14,
+        22,
+        29
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "phase": 3,
+      "changed": 8,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        18,
+        16,
+        22,
+        28
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "phase": 4,
+      "changed": 5,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        20,
+        18,
+        23,
+        29
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "phase": 5,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        20,
+        28,
+        20,
+        28
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 0.5,
+      "phase": 0,
+      "changed": 0,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": null
+    },
+    {
+      "composition": 1,
+      "scale": 0.5,
+      "phase": 1,
+      "changed": 0,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": null
+    },
+    {
+      "composition": 1,
+      "scale": 0.5,
+      "phase": 2,
+      "changed": 0,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": null
+    },
+    {
+      "composition": 1,
+      "scale": 0.5,
+      "phase": 3,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        11,
+        12,
+        11,
+        12
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 0.5,
+      "phase": 4,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        10,
+        14,
+        10,
+        14
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 0.5,
+      "phase": 5,
+      "changed": 0,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": null
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "phase": 0,
+      "changed": 26,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        76,
+        107,
+        83,
+        127
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "phase": 1,
+      "changed": 93,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        75,
+        84,
+        85,
+        127
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "phase": 2,
+      "changed": 162,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        76,
+        51,
+        90,
+        127
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "phase": 3,
+      "changed": 102,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        73,
+        66,
+        91,
+        127
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "phase": 4,
+      "changed": 92,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        72,
+        58,
+        95,
+        127
+      ]
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "phase": 5,
+      "changed": 28,
+      "outsideSafe": 0,
+      "rimOrBelow": 0,
+      "bounds": [
+        79,
+        72,
+        85,
+        127
+      ]
+    }
+  ]
+}

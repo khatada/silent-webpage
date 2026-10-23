@@ -1,0 +1,293 @@
+{
+  "method": "RGBA comparison against same-transform original context; no independent source coordinate rounding.",
+  "reports": [
+    {
+      "composition": 0,
+      "scale": 1,
+      "phase": 0,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "phase": 1,
+      "changed": 3,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "phase": 2,
+      "changed": 7,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "phase": 3,
+      "changed": 4,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "phase": 4,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 1,
+      "phase": 5,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 0.5,
+      "phase": 0,
+      "changed": 0,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 0.5,
+      "phase": 1,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 0.5,
+      "phase": 2,
+      "changed": 3,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 0.5,
+      "phase": 3,
+      "changed": 2,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 0.5,
+      "phase": 4,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 0.5,
+      "phase": 5,
+      "changed": 0,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "phase": 0,
+      "changed": 18,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "phase": 1,
+      "changed": 52,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "phase": 2,
+      "changed": 101,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "phase": 3,
+      "changed": 72,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "phase": 4,
+      "changed": 45,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 0,
+      "scale": 4,
+      "phase": 5,
+      "changed": 18,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "phase": 0,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "phase": 1,
+      "changed": 6,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "phase": 2,
+      "changed": 12,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "phase": 3,
+      "changed": 8,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "phase": 4,
+      "changed": 5,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 1,
+      "phase": 5,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 0.5,
+      "phase": 0,
+      "changed": 0,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 0.5,
+      "phase": 1,
+      "changed": 0,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 0.5,
+      "phase": 2,
+      "changed": 0,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 0.5,
+      "phase": 3,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 0.5,
+      "phase": 4,
+      "changed": 1,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 0.5,
+      "phase": 5,
+      "changed": 0,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "phase": 0,
+      "changed": 26,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "phase": 1,
+      "changed": 93,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "phase": 2,
+      "changed": 162,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "phase": 3,
+      "changed": 102,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "phase": 4,
+      "changed": 92,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    },
+    {
+      "composition": 1,
+      "scale": 4,
+      "phase": 5,
+      "changed": 28,
+      "outsideSafe": 0,
+      "rimOrBelow": 0
+    }
+  ]
+}
