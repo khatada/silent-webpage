@@ -1,0 +1,51 @@
+{
+  "runtimeSourceSha256": "ce9ad8002af4e93680d53835ffaf347dfebd6baac32eef2d54a8b1ccf8794890",
+  "method": "Actual built production page; Playwright clock installed and paused before navigation, no-preference motion, runFor(2000ms) after ready. No production API or source modifications.",
+  "results": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "motion": "running",
+      "errors": [],
+      "input": "art-reviews/2026-10-23-steam-active/desktop-source.png",
+      "output": "art-reviews/2026-10-23-steam-active/desktop-corrected.png",
+      "sourceSha256": "3848d57713f0179aa2330ccb23383f3c159a0c76bd34ec1c960e5a06475bbbed"
+    },
+    {
+      "name": "portrait-large",
+      "width": 900,
+      "height": 1600,
+      "dpr": 1,
+      "motion": "running",
+      "errors": [],
+      "input": "art-reviews/2026-10-23-steam-active/portrait-large-source.png",
+      "output": "art-reviews/2026-10-23-steam-active/portrait-large-corrected.png",
+      "sourceSha256": "30a88abac27d3504dcd0b10f4be305edf455dbbd9f4706ce476a0ac80a0469f2"
+    },
+    {
+      "name": "portrait-boundary",
+      "width": 1024,
+      "height": 1537,
+      "dpr": 1,
+      "motion": "running",
+      "errors": [],
+      "input": "art-reviews/2026-10-23-steam-active/portrait-boundary-source.png",
+      "output": "art-reviews/2026-10-23-steam-active/portrait-boundary-corrected.png",
+      "sourceSha256": "3738387970f2062cee56c3fc44a2e6d2df9c1a73305447ae6dae465f831473eb"
+    },
+    {
+      "name": "small-mobile",
+      "width": 375,
+      "height": 667,
+      "dpr": 2,
+      "motion": "running",
+      "errors": [],
+      "input": "art-reviews/2026-10-23-steam-active/small-mobile-source.png",
+      "output": "art-reviews/2026-10-23-steam-active/small-mobile-corrected.png",
+      "sourceSha256": "432f90bc471bc331e168c47ad3616f76e908a025c3c22f1ab3e71957058ced57"
+    }
+  ],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

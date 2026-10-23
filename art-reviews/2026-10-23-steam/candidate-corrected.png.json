@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-steam/source-cleaned.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "9f1db5a76e8cc23a15777088e5080ab86ad21ba503d7f6a6876e239cffc88072"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-steam/candidate-corrected.png",
+    "width": 384,
+    "height": 256,
+    "sha256": "ba746ed217e18df5f884fda1258589cb08b1dec34a0c20cf3c2f1850fe74708f"
+  },
+  "grid": {
+    "cellSize": 4,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

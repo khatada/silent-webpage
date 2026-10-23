@@ -1,0 +1,11 @@
+{
+  "decision": "rejected",
+  "reviewedBy": "LLM",
+  "image": "art-reviews/2026-10-23-steam/rejected-halo-source.png",
+  "sha256": "e4b1ac795a6a1ad85a755e0fc3b0ca9cf8b45482f875596ac43496330ee80079",
+  "reason": "親LLMが生成ツール出力を実閲覧。細いピクセル輪郭の外側に広い紫色のグローが入り、静かな湯気の意図と異なるため素材採用せず画像生成で修正する。未採用の原本であり公開素材ではない。",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "prompt": "Six transparent pixel-art steam phases in3x2 sheet: tiny low wisp, rising, taller curl, drift, dispersal, faint disappearance. Same emission point, grey-lavender thin crisp squares, no scenery/cup/text/glow/blur."
+  }
+}

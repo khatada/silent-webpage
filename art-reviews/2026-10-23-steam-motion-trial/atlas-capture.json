@@ -1,0 +1,1524 @@
+{
+  "sourceSha256": "3f5badb27580de02891ed8c91fb65bdb7ddbd11549f7f33edb7984e26e63aeeb",
+  "finalSourceSha256": "3f5badb27580de02891ed8c91fb65bdb7ddbd11549f7f33edb7984e26e63aeeb",
+  "metadata": {
+    "width": 1344,
+    "height": 1440,
+    "samples": [
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 1,
+        "phase": -1,
+        "seconds": null,
+        "state": null,
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": -100,
+        "rootY": -374,
+        "contextX": 8,
+        "contextY": 8,
+        "panel": [
+          8,
+          8,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 1,
+        "phase": 0,
+        "seconds": 0.375,
+        "state": {
+          "frame": 0,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 92,
+        "rootY": -374,
+        "contextX": 200,
+        "contextY": 8,
+        "panel": [
+          200,
+          8,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 1,
+        "phase": 1,
+        "seconds": 1.125,
+        "state": {
+          "frame": 1,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 284,
+        "rootY": -374,
+        "contextX": 392,
+        "contextY": 8,
+        "panel": [
+          392,
+          8,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 1,
+        "phase": 2,
+        "seconds": 1.875,
+        "state": {
+          "frame": 2,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 476,
+        "rootY": -374,
+        "contextX": 584,
+        "contextY": 8,
+        "panel": [
+          584,
+          8,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 1,
+        "phase": 3,
+        "seconds": 2.625,
+        "state": {
+          "frame": 3,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 668,
+        "rootY": -374,
+        "contextX": 776,
+        "contextY": 8,
+        "panel": [
+          776,
+          8,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 1,
+        "phase": 4,
+        "seconds": 3.375,
+        "state": {
+          "frame": 4,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 860,
+        "rootY": -374,
+        "contextX": 968,
+        "contextY": 8,
+        "panel": [
+          968,
+          8,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 1,
+        "phase": 5,
+        "seconds": 4.125,
+        "state": {
+          "frame": 5,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 1052,
+        "rootY": -374,
+        "contextX": 1160,
+        "contextY": 8,
+        "panel": [
+          1160,
+          8,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 0.5,
+        "phase": -1,
+        "seconds": null,
+        "state": null,
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": -46,
+        "rootY": 57,
+        "contextX": 8,
+        "contextY": 248,
+        "panel": [
+          8,
+          248,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 0.5,
+        "phase": 0,
+        "seconds": 0.375,
+        "state": {
+          "frame": 0,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 146,
+        "rootY": 57,
+        "contextX": 200,
+        "contextY": 248,
+        "panel": [
+          200,
+          248,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 0.5,
+        "phase": 1,
+        "seconds": 1.125,
+        "state": {
+          "frame": 1,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 338,
+        "rootY": 57,
+        "contextX": 392,
+        "contextY": 248,
+        "panel": [
+          392,
+          248,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 0.5,
+        "phase": 2,
+        "seconds": 1.875,
+        "state": {
+          "frame": 2,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 530,
+        "rootY": 57,
+        "contextX": 584,
+        "contextY": 248,
+        "panel": [
+          584,
+          248,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 0.5,
+        "phase": 3,
+        "seconds": 2.625,
+        "state": {
+          "frame": 3,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 722,
+        "rootY": 57,
+        "contextX": 776,
+        "contextY": 248,
+        "panel": [
+          776,
+          248,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 0.5,
+        "phase": 4,
+        "seconds": 3.375,
+        "state": {
+          "frame": 4,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 914,
+        "rootY": 57,
+        "contextX": 968,
+        "contextY": 248,
+        "panel": [
+          968,
+          248,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 0.5,
+        "phase": 5,
+        "seconds": 4.125,
+        "state": {
+          "frame": 5,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 1106,
+        "rootY": 57,
+        "contextX": 1160,
+        "contextY": 248,
+        "panel": [
+          1160,
+          248,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 4,
+        "phase": -1,
+        "seconds": null,
+        "state": null,
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": -424,
+        "rootY": -1040,
+        "contextX": 8,
+        "contextY": 488,
+        "panel": [
+          8,
+          488,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 4,
+        "phase": 0,
+        "seconds": 0.375,
+        "state": {
+          "frame": 0,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": -232,
+        "rootY": -1040,
+        "contextX": 200,
+        "contextY": 488,
+        "panel": [
+          200,
+          488,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 4,
+        "phase": 1,
+        "seconds": 1.125,
+        "state": {
+          "frame": 1,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": -40,
+        "rootY": -1040,
+        "contextX": 392,
+        "contextY": 488,
+        "panel": [
+          392,
+          488,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 4,
+        "phase": 2,
+        "seconds": 1.875,
+        "state": {
+          "frame": 2,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 152,
+        "rootY": -1040,
+        "contextX": 584,
+        "contextY": 488,
+        "panel": [
+          584,
+          488,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 4,
+        "phase": 3,
+        "seconds": 2.625,
+        "state": {
+          "frame": 3,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 344,
+        "rootY": -1040,
+        "contextX": 776,
+        "contextY": 488,
+        "panel": [
+          776,
+          488,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 4,
+        "phase": 4,
+        "seconds": 3.375,
+        "state": {
+          "frame": 4,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 536,
+        "rootY": -1040,
+        "contextX": 968,
+        "contextY": 488,
+        "panel": [
+          968,
+          488,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 0,
+        "context": [
+          108,
+          382,
+          36,
+          48
+        ],
+        "scale": 4,
+        "phase": 5,
+        "seconds": 4.125,
+        "state": {
+          "frame": 5,
+          "alpha": 0.25
+        },
+        "emitter": [
+          123,
+          406
+        ],
+        "safe": [
+          117,
+          390,
+          12,
+          16
+        ],
+        "rootX": 728,
+        "rootY": -1040,
+        "contextX": 1160,
+        "contextY": 488,
+        "panel": [
+          1160,
+          488,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 1,
+        "phase": -1,
+        "seconds": null,
+        "state": null,
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": -156,
+        "rootY": -437,
+        "contextX": 8,
+        "contextY": 728,
+        "panel": [
+          8,
+          728,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 1,
+        "phase": 0,
+        "seconds": 0.375,
+        "state": {
+          "frame": 0,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 36,
+        "rootY": -437,
+        "contextX": 200,
+        "contextY": 728,
+        "panel": [
+          200,
+          728,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 1,
+        "phase": 1,
+        "seconds": 1.125,
+        "state": {
+          "frame": 1,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 228,
+        "rootY": -437,
+        "contextX": 392,
+        "contextY": 728,
+        "panel": [
+          392,
+          728,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 1,
+        "phase": 2,
+        "seconds": 1.875,
+        "state": {
+          "frame": 2,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 420,
+        "rootY": -437,
+        "contextX": 584,
+        "contextY": 728,
+        "panel": [
+          584,
+          728,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 1,
+        "phase": 3,
+        "seconds": 2.625,
+        "state": {
+          "frame": 3,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 612,
+        "rootY": -437,
+        "contextX": 776,
+        "contextY": 728,
+        "panel": [
+          776,
+          728,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 1,
+        "phase": 4,
+        "seconds": 3.375,
+        "state": {
+          "frame": 4,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 804,
+        "rootY": -437,
+        "contextX": 968,
+        "contextY": 728,
+        "panel": [
+          968,
+          728,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 1,
+        "phase": 5,
+        "seconds": 4.125,
+        "state": {
+          "frame": 5,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 996,
+        "rootY": -437,
+        "contextX": 1160,
+        "contextY": 728,
+        "panel": [
+          1160,
+          728,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 0.5,
+        "phase": -1,
+        "seconds": null,
+        "state": null,
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": -74,
+        "rootY": 386,
+        "contextX": 8,
+        "contextY": 968.5,
+        "panel": [
+          8,
+          968,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 0.5,
+        "phase": 0,
+        "seconds": 0.375,
+        "state": {
+          "frame": 0,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 118,
+        "rootY": 386,
+        "contextX": 200,
+        "contextY": 968.5,
+        "panel": [
+          200,
+          968,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 0.5,
+        "phase": 1,
+        "seconds": 1.125,
+        "state": {
+          "frame": 1,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 310,
+        "rootY": 386,
+        "contextX": 392,
+        "contextY": 968.5,
+        "panel": [
+          392,
+          968,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 0.5,
+        "phase": 2,
+        "seconds": 1.875,
+        "state": {
+          "frame": 2,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 502,
+        "rootY": 386,
+        "contextX": 584,
+        "contextY": 968.5,
+        "panel": [
+          584,
+          968,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 0.5,
+        "phase": 3,
+        "seconds": 2.625,
+        "state": {
+          "frame": 3,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 694,
+        "rootY": 386,
+        "contextX": 776,
+        "contextY": 968.5,
+        "panel": [
+          776,
+          968,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 0.5,
+        "phase": 4,
+        "seconds": 3.375,
+        "state": {
+          "frame": 4,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 886,
+        "rootY": 386,
+        "contextX": 968,
+        "contextY": 968.5,
+        "panel": [
+          968,
+          968,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 0.5,
+        "phase": 5,
+        "seconds": 4.125,
+        "state": {
+          "frame": 5,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 1078,
+        "rootY": 386,
+        "contextX": 1160,
+        "contextY": 968.5,
+        "panel": [
+          1160,
+          968,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 4,
+        "phase": -1,
+        "seconds": null,
+        "state": null,
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": -648,
+        "rootY": -3452,
+        "contextX": 8,
+        "contextY": 1208,
+        "panel": [
+          8,
+          1208,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 4,
+        "phase": 0,
+        "seconds": 0.375,
+        "state": {
+          "frame": 0,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": -456,
+        "rootY": -3452,
+        "contextX": 200,
+        "contextY": 1208,
+        "panel": [
+          200,
+          1208,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 4,
+        "phase": 1,
+        "seconds": 1.125,
+        "state": {
+          "frame": 1,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": -264,
+        "rootY": -3452,
+        "contextX": 392,
+        "contextY": 1208,
+        "panel": [
+          392,
+          1208,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 4,
+        "phase": 2,
+        "seconds": 1.875,
+        "state": {
+          "frame": 2,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": -72,
+        "rootY": -3452,
+        "contextX": 584,
+        "contextY": 1208,
+        "panel": [
+          584,
+          1208,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 4,
+        "phase": 3,
+        "seconds": 2.625,
+        "state": {
+          "frame": 3,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 120,
+        "rootY": -3452,
+        "contextX": 776,
+        "contextY": 1208,
+        "panel": [
+          776,
+          1208,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 4,
+        "phase": 4,
+        "seconds": 3.375,
+        "state": {
+          "frame": 4,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 312,
+        "rootY": -3452,
+        "contextX": 968,
+        "contextY": 1208,
+        "panel": [
+          968,
+          1208,
+          192,
+          240
+        ]
+      },
+      {
+        "composition": 1,
+        "context": [
+          164,
+          1165,
+          44,
+          56
+        ],
+        "scale": 4,
+        "phase": 5,
+        "seconds": 4.125,
+        "state": {
+          "frame": 5,
+          "alpha": 0.25
+        },
+        "emitter": [
+          184,
+          1197
+        ],
+        "safe": [
+          176,
+          1175,
+          16,
+          22
+        ],
+        "rootX": 504,
+        "rootY": -3452,
+        "contextX": 1160,
+        "contextY": 1208,
+        "panel": [
+          1160,
+          1208,
+          192,
+          240
+        ]
+      }
+    ],
+    "rows": [
+      "normal-native",
+      "normal-half",
+      "normal-4x",
+      "portrait-native",
+      "portrait-half",
+      "portrait-4x"
+    ],
+    "columns": [
+      "original",
+      "phase0",
+      "phase1",
+      "phase2",
+      "phase3",
+      "phase4",
+      "phase5"
+    ]
+  },
+  "method": "Image-generation textures composited by /scripts/generated-steam-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

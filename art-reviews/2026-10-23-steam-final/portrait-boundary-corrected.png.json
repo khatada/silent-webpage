@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-steam-final/portrait-boundary-source.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "09944d88efc23e7c562db75e6830e4630fcb19f905d4364c491c71696e670721"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-steam-final/portrait-boundary-corrected.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "f5acfbbc12250a5456fa2e1ed4e0482f83831195269aa5aebd92e2b7958e721c"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

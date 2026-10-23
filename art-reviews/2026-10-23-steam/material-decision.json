@@ -1,0 +1,39 @@
+{
+  "decision": "accepted-as-material",
+  "reviewedBy": "LLM",
+  "image": "public/art/cup-steam.png",
+  "report": "public/art/cup-steam.png.json",
+  "reason": "親/担当LLMが生成原画のにじみ削除後4px補正の384×256を実閲覧。6段階の細い曲線と上昇/分離が残り、広いグローがないため素材として採用。実寸で線が縮小消失する可能性があり、合成後の見え方は別途判断する。",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "originalSha256": "9f1db5a76e8cc23a15777088e5080ab86ad21ba503d7f6a6876e239cffc88072",
+    "correctionInputKind": "permitted-partial-edit-of-generated-image",
+    "generatedOriginal": "art-reviews/2026-10-23-steam/rejected-halo-source.png",
+    "generatedOriginalSha256": "e4b1ac795a6a1ad85a755e0fc3b0ca9cf8b45482f875596ac43496330ee80079",
+    "partialEditScript": "art-reviews/2026-10-23-steam/cleanup-generated-halo.mjs",
+    "partialEditReport": "art-reviews/2026-10-23-steam/cleanup-report.json",
+    "prompt": "Six generated steam phases3x2: low wisp/rising/tall curl/drift/dispersal/faint remainder. Same emitter, thin muted grey-lavender pixels, no cup/scenery/text. Generated raw had undesired halo; permitted temporary partial edit only deletes low-alpha/dark halo pixels and retains original RGBA, then4px correction. originalSha256 identifies correction input AFTER partial edit; generatedOriginalSha256 identifies actual unchanged imagegen output.",
+    "references": [
+      "art-reviews/2026-10-23-steam/normal-reference.png",
+      "art-reviews/2026-10-23-steam/portrait-reference.png"
+    ]
+  },
+  "independentPartialEditCheck": {
+    "retainedExactOriginalRgba": 14337,
+    "removedVisiblePixels": 31774,
+    "newPixelsOrColors": 0
+  },
+  "alphaComparison": {
+    "image": "art-reviews/2026-10-23-steam-alpha-trial/atlas-corrected.png",
+    "reviewedBy": "LLM",
+    "options": [
+      0.25,
+      0.4,
+      0.55
+    ],
+    "selected": 0.4,
+    "reason": "親/担当LLMが全体を無変形の上下2分割で実閲覧。0.25は薄すぎ、0.55は点列が目立つため0.4を選択。比較用画像は最終表示証跡ではなく、最終sourceのmotion-finalを別途確認した。"
+  },
+  "displayDecision": "accepted",
+  "displayReason": "親/担当LLMが最終局所42パネル・初期11全景を実閲覧し、親が表示中2秒後の本番4全景も補正後に実閲覧して採用。36比較で安全範囲外/カップ縁以下変更0。等倍は微細、半倍率の一部姿勢は消える。"
+}

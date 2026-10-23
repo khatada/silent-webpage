@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "8d60e357b99c1b0b618b8372392299b9032849e6ae04fe06db7b5bc62285082a",
+  "sourceSha256": "ce9ad8002af4e93680d53835ffaf347dfebd6baac32eef2d54a8b1ccf8794890",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,39 +129,39 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-22-resident-final/desktop-corrected.png",
-      "report": "art-reviews/2026-10-22-resident-final/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-23-steam-final/desktop-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-final/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
+      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
     },
     {
-      "image": "art-reviews/2026-10-22-resident-final/mobile-corrected.png",
-      "report": "art-reviews/2026-10-22-resident-final/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-23-steam-final/mobile-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-final/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
+      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
     },
     {
-      "image": "art-reviews/2026-10-22-resident-final/narrow-corrected.png",
-      "report": "art-reviews/2026-10-22-resident-final/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-23-steam-final/narrow-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-final/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
+      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
     },
     {
-      "image": "art-reviews/2026-10-22-resident-final/landscape-corrected.png",
-      "report": "art-reviews/2026-10-22-resident-final/landscape-corrected.png.json",
+      "image": "art-reviews/2026-10-23-steam-final/landscape-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-final/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
+      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
     },
     {
-      "image": "art-reviews/2026-10-22-resident-final/wide-corrected.png",
-      "report": "art-reviews/2026-10-22-resident-final/wide-corrected.png.json",
+      "image": "art-reviews/2026-10-23-steam-final/wide-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-final/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
+      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
     },
     {
       "image": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
@@ -171,46 +171,46 @@
       "reason": "親LLMが最終補正atlasを実閲覧して採用。独立LLMも同一bytesのtrial左右各8コマ列を実閲覧して採用済み（SHA256 fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04）。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯は概ね揃い切れ/浮きなし。端点左右4組はRGBA一致。midの頭/首がやや小さく尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差は残る。"
     },
     {
-      "image": "art-reviews/2026-10-22-resident-final/compact-corrected.png",
-      "report": "art-reviews/2026-10-22-resident-final/compact-corrected.png.json",
+      "image": "art-reviews/2026-10-23-steam-final/compact-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-final/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
+      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
     },
     {
-      "image": "art-reviews/2026-10-22-resident-final/tall-corrected.png",
-      "report": "art-reviews/2026-10-22-resident-final/tall-corrected.png.json",
+      "image": "art-reviews/2026-10-23-steam-final/tall-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-final/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
+      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
     },
     {
-      "image": "art-reviews/2026-10-22-resident-final/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-22-resident-final/portrait-large-corrected.png.json",
+      "image": "art-reviews/2026-10-23-steam-final/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-final/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
+      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
     },
     {
-      "image": "art-reviews/2026-10-22-resident-final/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-22-resident-final/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/2026-10-23-steam-final/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-final/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
+      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
     },
     {
-      "image": "art-reviews/2026-10-22-resident-final/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-22-resident-final/small-phone-corrected.png.json",
+      "image": "art-reviews/2026-10-23-steam-final/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-final/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
+      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
     },
     {
-      "image": "art-reviews/2026-10-22-resident-final/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-22-resident-final/small-mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-23-steam-final/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-final/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが人影追加後の補正済み11全景を分担して実閲覧。窓内の人影、窓枠・手すり、空・街・屋上、猫の接地と既存車両を確認し、構図と画面端の破損がないため採用。小型/半倍率では人影の細かな仕草を確実には読めない制約を別記。"
+      "reason": "親/担当LLMが湯気追加後の補正済み初期11全景を分担して実閲覧。窓・屋上・猫の足元と既存車両、画面端の構図を維持しており採用。初期時刻の湯気は透明で、表示中の実装は別途2秒後の本番4画面で確認した。"
     },
     {
       "image": "public/art/street-car.png",
@@ -363,6 +363,62 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親/担当LLMが半倍率24パネルを補正後実閲覧。窓外漏れや枠の破損、消灯時の残像がない描画として採用。約2×2pxの影では頭・肩・傾きを確実には読めず、詳細動作が明瞭とは扱わない。本番と同じ整数背景原点・cropのsampling phase・暗幕丸めで撮り直した最終画像を実閲覧した。"
+    },
+    {
+      "image": "public/art/cup-steam.png",
+      "report": "public/art/cup-steam.png.json",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが生成原画のにじみ削除後4px補正の384×256を実閲覧。6段階の細い曲線と上昇/分離が残り、広いグローがないため素材として採用。実寸で線が縮小消失する可能性があり、合成後の見え方は別途判断する。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "9f1db5a76e8cc23a15777088e5080ab86ad21ba503d7f6a6876e239cffc88072",
+        "correctionInputKind": "permitted-partial-edit-of-generated-image",
+        "generatedOriginal": "art-reviews/2026-10-23-steam/rejected-halo-source.png",
+        "generatedOriginalSha256": "e4b1ac795a6a1ad85a755e0fc3b0ca9cf8b45482f875596ac43496330ee80079",
+        "partialEditScript": "art-reviews/2026-10-23-steam/cleanup-generated-halo.mjs",
+        "partialEditReport": "art-reviews/2026-10-23-steam/cleanup-report.json",
+        "prompt": "Six generated steam phases3x2: low wisp/rising/tall curl/drift/dispersal/faint remainder. Same emitter, thin muted grey-lavender pixels, no cup/scenery/text. Generated raw had undesired halo; permitted temporary partial edit only deletes low-alpha/dark halo pixels and retains original RGBA, then4px correction. originalSha256 identifies correction input AFTER partial edit; generatedOriginalSha256 identifies actual unchanged imagegen output.",
+        "references": [
+          "art-reviews/2026-10-23-steam/normal-reference.png",
+          "art-reviews/2026-10-23-steam/portrait-reference.png"
+        ]
+      },
+      "decision": "accepted"
+    },
+    {
+      "image": "art-reviews/2026-10-23-steam-motion-final/atlas-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-motion-final/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが原画+6段階×標準/縦×1/.5/4倍の42パネルを補正後実閲覧。固定した発生点とカップ縁、細い上昇/分離を確認。36組を親も独立にRGBA比較して安全範囲外/縁以下の変更0。alpha0.4は比較採用、等倍は微細で半倍率の一部姿勢は消える制約を記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-23-steam-active/desktop-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-active/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが実際の本番ビルドを仮想時計で2秒動かした補正後全景を実閲覧。カップの上の微細な湯気が既存位置にあり、縁/柵/構図/既存演出を維持。実行時エラー0。細部は局所QAで併せて確認し、全サイズで明瞭とは扱わない。"
+    },
+    {
+      "image": "art-reviews/2026-10-23-steam-active/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-active/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが実際の本番ビルドを仮想時計で2秒動かした補正後全景を実閲覧。カップの上の微細な湯気が既存位置にあり、縁/柵/構図/既存演出を維持。実行時エラー0。細部は局所QAで併せて確認し、全サイズで明瞭とは扱わない。"
+    },
+    {
+      "image": "art-reviews/2026-10-23-steam-active/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-active/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが実際の本番ビルドを仮想時計で2秒動かした補正後全景を実閲覧。カップの上の微細な湯気が既存位置にあり、縁/柵/構図/既存演出を維持。実行時エラー0。細部は局所QAで併せて確認し、全サイズで明瞭とは扱わない。"
+    },
+    {
+      "image": "art-reviews/2026-10-23-steam-active/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-23-steam-active/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが実際の本番ビルドを仮想時計で2秒動かした補正後全景を実閲覧。カップの上の微細な湯気が既存位置にあり、縁/柵/構図/既存演出を維持。実行時エラー0。細部は局所QAで併せて確認し、全サイズで明瞭とは扱わない。"
     }
   ]
 }

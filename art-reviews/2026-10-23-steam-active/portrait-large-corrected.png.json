@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-steam-active/portrait-large-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "30a88abac27d3504dcd0b10f4be305edf455dbbd9f4706ce476a0ac80a0469f2"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-steam-active/portrait-large-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "473d764f721a4790b4d0d643c3a1ff6bbab57482f9a9c8fc99f0681626f74890"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
