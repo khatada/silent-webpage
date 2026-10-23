@@ -1,0 +1,22 @@
+{
+  "decision": "accepted-as-material",
+  "reviewedBy": "LLM",
+  "image": "public/art/meteor.png",
+  "report": "public/art/meteor.png.json",
+  "reason": "親/担当LLMが4px補正後481×204を実閲覧。短い灰紫の尾と右下の小さな先端、薄い左上の切れ端、広いグローがない輪郭を確認して素材採用。実寸の明度・頭の判別と空への配置は合成QAで判断する。",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "originalSha256": "d5242c2de4f2af95c212f501fbd7fe7b5cbf640f0976fdcb9bd6c2ca394078f5",
+    "prompt": "One quiet distant fine pixel-art meteor, transparent background, thin short tapered grey/lavender trail upper-left to tiny off-white head lower-right at roughly15degrees, no star cross/burst, fireball, broad halo, scenery, labels or blur. Intended small nativewidth24px."
+  },
+  "nonFinalQa": {
+    "paths": [
+      "art-reviews/2026-10-23-meteor/atlas-corrected.png",
+      "art-reviews/2026-10-23-meteor/sky-qa/atlas-corrected.png"
+    ],
+    "decision": "not-used-as-final-proof",
+    "reason": "最初のQAは上端のsky patch合成を本番と揃えて再撮影。次は極端に低い画面での非表示guardがない旧実行時ソースのため、修正後のsky-qa-finalを最終採否に使う。旧素材の採否とは別。"
+  },
+  "displayDecision": "accepted",
+  "displayReason": "親/担当LLMが最終44パネル・11初期全景を補正後実閲覧、親が本番7秒の表示中全景も実閲覧して採用。14〜28pxの尾と経路を空内に限定し、極端な低画面は非表示guardで省略。旧QAは最終証跡に使わない。"
+}

@@ -1,0 +1,18 @@
+{
+  "runtimeSourceSha256": "c90cc2032d30e278b9897cc1bd8fc409a015536419b1c4259a4a1c70b4c5a3e9",
+  "method": "Actual built production page; Playwright clock installed and paused before navigation, no-preference motion, runFor(7000ms) after ready. No production API or source modifications.",
+  "results": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "motion": "running",
+      "errors": [],
+      "input": "art-reviews/2026-10-23-meteor-active/desktop-source.png",
+      "output": "art-reviews/2026-10-23-meteor-active/desktop-corrected.png",
+      "sourceSha256": "8b3f928fd7a877ed18de103890f4a883bce474b138e9fddf17120d58bdc44a69"
+    }
+  ],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

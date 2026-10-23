@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-meteor/source.png",
+    "width": 1927,
+    "height": 816,
+    "sha256": "d5242c2de4f2af95c212f501fbd7fe7b5cbf640f0976fdcb9bd6c2ca394078f5"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-meteor/candidate-corrected.png",
+    "width": 481,
+    "height": 204,
+    "sha256": "13c73a11909b794c4d44f9a6e9fe6d99f110362dde829175d16383934375d2f2"
+  },
+  "grid": {
+    "cellSize": 4,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

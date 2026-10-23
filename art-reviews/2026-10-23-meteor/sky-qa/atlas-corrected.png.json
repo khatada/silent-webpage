@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-meteor/sky-qa/atlas-source.png",
+    "width": 464,
+    "height": 2202,
+    "sha256": "1cdfeb573e189fe2fe03b27a47d8b52753864c7e07b06b6612d98f58989916dd"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-meteor/sky-qa/atlas-corrected.png",
+    "width": 464,
+    "height": 2202,
+    "sha256": "f41b61e2d6d586de260c528dc6a83f20a546dba064ef09d94753733a1468d5e2"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
