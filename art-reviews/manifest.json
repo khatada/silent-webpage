@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "fac96a017eb3a57b60dcda3760d91dd3755f54df6f5b72d36e514bed6dbdebfa",
+  "sourceSha256": "acdd68a59ea1de7112ea48c19e3f662007067a439cf56d11b115c97e897877a6",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,39 +129,39 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-23-laundry-scenes/desktop-corrected.png",
-      "report": "art-reviews/2026-10-23-laundry-scenes/desktop-corrected.png.json",
+      "image": "art-reviews/2026-10-23-upper-cloud-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-23-upper-cloud-scenes/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧。夜景・屋上・既存の交通と猫を保持し、標準/縦構図の布が窓や植物を隠さないことを確認し採用。横背景では布を省く。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
     },
     {
-      "image": "art-reviews/2026-10-23-laundry-scenes/mobile-corrected.png",
-      "report": "art-reviews/2026-10-23-laundry-scenes/mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-23-upper-cloud-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-23-upper-cloud-scenes/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧。夜景・屋上・既存の交通と猫を保持し、標準/縦構図の布が窓や植物を隠さないことを確認し採用。横背景では布を省く。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
     },
     {
-      "image": "art-reviews/2026-10-23-laundry-scenes/narrow-corrected.png",
-      "report": "art-reviews/2026-10-23-laundry-scenes/narrow-corrected.png.json",
+      "image": "art-reviews/2026-10-23-upper-cloud-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-23-upper-cloud-scenes/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧。夜景・屋上・既存の交通と猫を保持し、標準/縦構図の布が窓や植物を隠さないことを確認し採用。横背景では布を省く。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
     },
     {
-      "image": "art-reviews/2026-10-23-laundry-scenes/landscape-corrected.png",
-      "report": "art-reviews/2026-10-23-laundry-scenes/landscape-corrected.png.json",
+      "image": "art-reviews/2026-10-23-upper-cloud-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-23-upper-cloud-scenes/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧。夜景・屋上・既存の交通と猫を保持し、標準/縦構図の布が窓や植物を隠さないことを確認し採用。横背景では布を省く。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
     },
     {
-      "image": "art-reviews/2026-10-23-laundry-scenes/wide-corrected.png",
-      "report": "art-reviews/2026-10-23-laundry-scenes/wide-corrected.png.json",
+      "image": "art-reviews/2026-10-23-upper-cloud-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-23-upper-cloud-scenes/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧。夜景・屋上・既存の交通と猫を保持し、標準/縦構図の布が窓や植物を隠さないことを確認し採用。横背景では布を省く。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
     },
     {
       "image": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
@@ -171,46 +171,46 @@
       "reason": "親LLMが最終補正atlasを実閲覧して採用。独立LLMも同一bytesのtrial左右各8コマ列を実閲覧して採用済み（SHA256 fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04）。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯は概ね揃い切れ/浮きなし。端点左右4組はRGBA一致。midの頭/首がやや小さく尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差は残る。"
     },
     {
-      "image": "art-reviews/2026-10-23-laundry-scenes/compact-corrected.png",
-      "report": "art-reviews/2026-10-23-laundry-scenes/compact-corrected.png.json",
+      "image": "art-reviews/2026-10-23-upper-cloud-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-23-upper-cloud-scenes/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧。夜景・屋上・既存の交通と猫を保持し、標準/縦構図の布が窓や植物を隠さないことを確認し採用。横背景では布を省く。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
     },
     {
-      "image": "art-reviews/2026-10-23-laundry-scenes/tall-corrected.png",
-      "report": "art-reviews/2026-10-23-laundry-scenes/tall-corrected.png.json",
+      "image": "art-reviews/2026-10-23-upper-cloud-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-23-upper-cloud-scenes/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧。夜景・屋上・既存の交通と猫を保持し、標準/縦構図の布が窓や植物を隠さないことを確認し採用。横背景では布を省く。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
     },
     {
-      "image": "art-reviews/2026-10-23-laundry-scenes/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-23-laundry-scenes/portrait-large-corrected.png.json",
+      "image": "art-reviews/2026-10-23-upper-cloud-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-23-upper-cloud-scenes/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧。夜景・屋上・既存の交通と猫を保持し、標準/縦構図の布が窓や植物を隠さないことを確認し採用。横背景では布を省く。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
     },
     {
-      "image": "art-reviews/2026-10-23-laundry-scenes/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-23-laundry-scenes/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/2026-10-23-upper-cloud-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-23-upper-cloud-scenes/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧。夜景・屋上・既存の交通と猫を保持し、標準/縦構図の布が窓や植物を隠さないことを確認し採用。横背景では布を省く。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
     },
     {
-      "image": "art-reviews/2026-10-23-laundry-scenes/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-23-laundry-scenes/small-phone-corrected.png.json",
+      "image": "art-reviews/2026-10-23-upper-cloud-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-23-upper-cloud-scenes/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧。夜景・屋上・既存の交通と猫を保持し、標準/縦構図の布が窓や植物を隠さないことを確認し採用。横背景では布を省く。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
     },
     {
-      "image": "art-reviews/2026-10-23-laundry-scenes/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-23-laundry-scenes/small-mobile-corrected.png.json",
+      "image": "art-reviews/2026-10-23-upper-cloud-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-23-upper-cloud-scenes/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧。夜景・屋上・既存の交通と猫を保持し、標準/縦構図の布が窓や植物を隠さないことを確認し採用。横背景では布を省く。"
+      "reason": "親/担当LLMが最終描画ソースの補正後11全景を分担して実閲覧し採用。小さな上空雲は既存低雲と離れ、星空・月・飛行機と街の構図を保持。狭空4構図では省略。旧全景と比較し雲の範囲外変更0、省略4構図は全RGBA一致。wideは無変形2帯でも親実閲覧。"
     },
     {
       "image": "public/art/street-car.png",
@@ -487,6 +487,13 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親LLMが本番5秒後の補正画像を実閲覧し採用。布は笠木へ接合し、窓・植物を隠さず夜景になじむ。稼働中、実行時エラーなし。"
+    },
+    {
+      "image": "art-reviews/2026-10-23-upper-cloud-motion/atlas-corrected.png",
+      "report": "art-reviews/2026-10-23-upper-cloud-motion/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが33パネル全域を無変形の帯で実閲覧。11構図×初期/低雲最接近/飛行機最接近で上空余白と既存雲との分離、月の周囲と晴れた印象を確認し採用。小雲*.2/alpha.12は事前の2回の縮尺・透明度比較で選択。月が暗くなる効果は採用範囲外。"
     }
   ]
 }

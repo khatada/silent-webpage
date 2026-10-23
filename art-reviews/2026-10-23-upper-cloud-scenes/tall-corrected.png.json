@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-upper-cloud-scenes/tall-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "1f5208ef83a273051ca1fe505a8f3e8d4212307fd2494f10a8344de51364a7d7"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-upper-cloud-scenes/tall-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "b02759208b3a6397723606d55a5c32a17807763679c7722397014d5482e210aa"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
