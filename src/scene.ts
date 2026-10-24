@@ -259,7 +259,7 @@ export async function createScene(host: HTMLElement): Promise<{
     imageUpperCloud.update(upperCloud, elapsed, width, scale);
     cloud.x = travelPosition(elapsed, width, cloud.width, scale * 1.2, width * 0.12);
     aircraft.x = travelPosition(elapsed, width, aircraft.width, scale * 3.2, width * 0.7);
-    train.x = travelPosition(elapsed, width, train.width, scale * 8, trainInitialX);
+    train.x = travelPosition(elapsed, width, train.width, scale * 16, trainInitialX);
     const pose = catPose(elapsed, width, scale * actorScale);
     imageCat.update(cat, pose, scale * actorScale, catY);
   }

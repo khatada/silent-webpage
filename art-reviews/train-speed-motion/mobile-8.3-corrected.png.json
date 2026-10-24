@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/train-speed-motion/mobile-8.3-source.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "c48ac9cd21fbe5e947abc40dd8f42d07f28e1f91d6374ce2ebdb5da369702dc1"
+  },
+  "output": {
+    "path": "art-reviews/train-speed-motion/mobile-8.3-corrected.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "bfceb88c27282fccd404124da2916adb3da2caec5280587a57ad203ef4cdd3ec"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

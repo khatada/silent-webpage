@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "e9a8d44dd0d9e35e3857c20c019ac31b7c8a7a0c986ba54f93bceffdb500e62b",
+  "sourceSha256": "729b81ccb069bdea11877f3ae27a8f7f4e33771d1c8e668e37d3f55d4073cba3",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,39 +129,39 @@
       }
     },
     {
-      "image": "art-reviews/2026-10-23-stars-scenes-final/desktop-corrected.png",
-      "report": "art-reviews/2026-10-23-stars-scenes-final/desktop-corrected.png.json",
+      "image": "art-reviews/train-speed-scenes/desktop-corrected.png",
+      "report": "art-reviews/train-speed-scenes/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧し採用。上空へ分散した星、街/交通/猫/窓の構図を保持。星の芯の明度と周囲の微光、sampling guardの制約は局所QAと本番6秒後で別途確認した。"
+      "reason": "親/担当LLMが速度変更後の補正11初期全景を分担実閲覧して採用。旧版と全RGBA一致、車体/線路/柱の前後関係と夜景の構図を保持。実際の移動と周回は本番動作10枚の線路帯で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-stars-scenes-final/mobile-corrected.png",
-      "report": "art-reviews/2026-10-23-stars-scenes-final/mobile-corrected.png.json",
+      "image": "art-reviews/train-speed-scenes/mobile-corrected.png",
+      "report": "art-reviews/train-speed-scenes/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧し採用。上空へ分散した星、街/交通/猫/窓の構図を保持。星の芯の明度と周囲の微光、sampling guardの制約は局所QAと本番6秒後で別途確認した。"
+      "reason": "親/担当LLMが速度変更後の補正11初期全景を分担実閲覧して採用。旧版と全RGBA一致、車体/線路/柱の前後関係と夜景の構図を保持。実際の移動と周回は本番動作10枚の線路帯で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-stars-scenes-final/narrow-corrected.png",
-      "report": "art-reviews/2026-10-23-stars-scenes-final/narrow-corrected.png.json",
+      "image": "art-reviews/train-speed-scenes/narrow-corrected.png",
+      "report": "art-reviews/train-speed-scenes/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧し採用。上空へ分散した星、街/交通/猫/窓の構図を保持。星の芯の明度と周囲の微光、sampling guardの制約は局所QAと本番6秒後で別途確認した。"
+      "reason": "親/担当LLMが速度変更後の補正11初期全景を分担実閲覧して採用。旧版と全RGBA一致、車体/線路/柱の前後関係と夜景の構図を保持。実際の移動と周回は本番動作10枚の線路帯で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-stars-scenes-final/landscape-corrected.png",
-      "report": "art-reviews/2026-10-23-stars-scenes-final/landscape-corrected.png.json",
+      "image": "art-reviews/train-speed-scenes/landscape-corrected.png",
+      "report": "art-reviews/train-speed-scenes/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧し採用。上空へ分散した星、街/交通/猫/窓の構図を保持。星の芯の明度と周囲の微光、sampling guardの制約は局所QAと本番6秒後で別途確認した。"
+      "reason": "親/担当LLMが速度変更後の補正11初期全景を分担実閲覧して採用。旧版と全RGBA一致、車体/線路/柱の前後関係と夜景の構図を保持。実際の移動と周回は本番動作10枚の線路帯で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-stars-scenes-final/wide-corrected.png",
-      "report": "art-reviews/2026-10-23-stars-scenes-final/wide-corrected.png.json",
+      "image": "art-reviews/train-speed-scenes/wide-corrected.png",
+      "report": "art-reviews/train-speed-scenes/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧し採用。上空へ分散した星、街/交通/猫/窓の構図を保持。星の芯の明度と周囲の微光、sampling guardの制約は局所QAと本番6秒後で別途確認した。"
+      "reason": "親/担当LLMが速度変更後の補正11初期全景を分担実閲覧して採用。旧版と全RGBA一致、車体/線路/柱の前後関係と夜景の構図を保持。実際の移動と周回は本番動作10枚の線路帯で別途確認した。"
     },
     {
       "image": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
@@ -171,46 +171,46 @@
       "reason": "親LLMが最終補正atlasを実閲覧して採用。独立LLMも同一bytesのtrial左右各8コマ列を実閲覧して採用済み（SHA256 fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04）。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯は概ね揃い切れ/浮きなし。端点左右4組はRGBA一致。midの頭/首がやや小さく尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差は残る。"
     },
     {
-      "image": "art-reviews/2026-10-23-stars-scenes-final/compact-corrected.png",
-      "report": "art-reviews/2026-10-23-stars-scenes-final/compact-corrected.png.json",
+      "image": "art-reviews/train-speed-scenes/compact-corrected.png",
+      "report": "art-reviews/train-speed-scenes/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧し採用。上空へ分散した星、街/交通/猫/窓の構図を保持。星の芯の明度と周囲の微光、sampling guardの制約は局所QAと本番6秒後で別途確認した。"
+      "reason": "親/担当LLMが速度変更後の補正11初期全景を分担実閲覧して採用。旧版と全RGBA一致、車体/線路/柱の前後関係と夜景の構図を保持。実際の移動と周回は本番動作10枚の線路帯で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-stars-scenes-final/tall-corrected.png",
-      "report": "art-reviews/2026-10-23-stars-scenes-final/tall-corrected.png.json",
+      "image": "art-reviews/train-speed-scenes/tall-corrected.png",
+      "report": "art-reviews/train-speed-scenes/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧し採用。上空へ分散した星、街/交通/猫/窓の構図を保持。星の芯の明度と周囲の微光、sampling guardの制約は局所QAと本番6秒後で別途確認した。"
+      "reason": "親/担当LLMが速度変更後の補正11初期全景を分担実閲覧して採用。旧版と全RGBA一致、車体/線路/柱の前後関係と夜景の構図を保持。実際の移動と周回は本番動作10枚の線路帯で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-stars-scenes-final/portrait-large-corrected.png",
-      "report": "art-reviews/2026-10-23-stars-scenes-final/portrait-large-corrected.png.json",
+      "image": "art-reviews/train-speed-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/train-speed-scenes/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧し採用。上空へ分散した星、街/交通/猫/窓の構図を保持。星の芯の明度と周囲の微光、sampling guardの制約は局所QAと本番6秒後で別途確認した。"
+      "reason": "親/担当LLMが速度変更後の補正11初期全景を分担実閲覧して採用。旧版と全RGBA一致、車体/線路/柱の前後関係と夜景の構図を保持。実際の移動と周回は本番動作10枚の線路帯で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-stars-scenes-final/portrait-boundary-corrected.png",
-      "report": "art-reviews/2026-10-23-stars-scenes-final/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/train-speed-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/train-speed-scenes/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧し採用。上空へ分散した星、街/交通/猫/窓の構図を保持。星の芯の明度と周囲の微光、sampling guardの制約は局所QAと本番6秒後で別途確認した。"
+      "reason": "親/担当LLMが速度変更後の補正11初期全景を分担実閲覧して採用。旧版と全RGBA一致、車体/線路/柱の前後関係と夜景の構図を保持。実際の移動と周回は本番動作10枚の線路帯で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-stars-scenes-final/small-phone-corrected.png",
-      "report": "art-reviews/2026-10-23-stars-scenes-final/small-phone-corrected.png.json",
+      "image": "art-reviews/train-speed-scenes/small-phone-corrected.png",
+      "report": "art-reviews/train-speed-scenes/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧し採用。上空へ分散した星、街/交通/猫/窓の構図を保持。星の芯の明度と周囲の微光、sampling guardの制約は局所QAと本番6秒後で別途確認した。"
+      "reason": "親/担当LLMが速度変更後の補正11初期全景を分担実閲覧して採用。旧版と全RGBA一致、車体/線路/柱の前後関係と夜景の構図を保持。実際の移動と周回は本番動作10枚の線路帯で別途確認した。"
     },
     {
-      "image": "art-reviews/2026-10-23-stars-scenes-final/small-mobile-corrected.png",
-      "report": "art-reviews/2026-10-23-stars-scenes-final/small-mobile-corrected.png.json",
+      "image": "art-reviews/train-speed-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/train-speed-scenes/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧し採用。上空へ分散した星、街/交通/猫/窓の構図を保持。星の芯の明度と周囲の微光、sampling guardの制約は局所QAと本番6秒後で別途確認した。"
+      "reason": "親/担当LLMが速度変更後の補正11初期全景を分担実閲覧して採用。旧版と全RGBA一致、車体/線路/柱の前後関係と夜景の構図を保持。実際の移動と周回は本番動作10枚の線路帯で別途確認した。"
     },
     {
       "image": "public/art/street-car.png",
@@ -627,6 +627,76 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親/担当LLMが本番6秒後の補正画面を実閲覧して採用。星の芯が自然に減光し、周囲の微光と夜景全体を維持。実行時エラーなし、他の動作も保持。"
+    },
+    {
+      "image": "art-reviews/train-speed-motion/desktop-0-corrected.png",
+      "report": "art-reviews/train-speed-motion/desktop-0-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後の本番動作画像のnative線路帯を実閲覧。PC/スマホ/横長の0→1秒の右移動と柱の遮蔽を保持し採用。スマホ8.1→8.3→8.5→9.3秒で右端退出/画面外/左端進入を確認、中央へ飛び戻らない。画像patch推定と計算上速度は区別して記録。"
+    },
+    {
+      "image": "art-reviews/train-speed-motion/desktop-1-corrected.png",
+      "report": "art-reviews/train-speed-motion/desktop-1-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後の本番動作画像のnative線路帯を実閲覧。PC/スマホ/横長の0→1秒の右移動と柱の遮蔽を保持し採用。スマホ8.1→8.3→8.5→9.3秒で右端退出/画面外/左端進入を確認、中央へ飛び戻らない。画像patch推定と計算上速度は区別して記録。"
+    },
+    {
+      "image": "art-reviews/train-speed-motion/mobile-0-corrected.png",
+      "report": "art-reviews/train-speed-motion/mobile-0-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後の本番動作画像のnative線路帯を実閲覧。PC/スマホ/横長の0→1秒の右移動と柱の遮蔽を保持し採用。スマホ8.1→8.3→8.5→9.3秒で右端退出/画面外/左端進入を確認、中央へ飛び戻らない。画像patch推定と計算上速度は区別して記録。"
+    },
+    {
+      "image": "art-reviews/train-speed-motion/mobile-1-corrected.png",
+      "report": "art-reviews/train-speed-motion/mobile-1-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後の本番動作画像のnative線路帯を実閲覧。PC/スマホ/横長の0→1秒の右移動と柱の遮蔽を保持し採用。スマホ8.1→8.3→8.5→9.3秒で右端退出/画面外/左端進入を確認、中央へ飛び戻らない。画像patch推定と計算上速度は区別して記録。"
+    },
+    {
+      "image": "art-reviews/train-speed-motion/mobile-8.1-corrected.png",
+      "report": "art-reviews/train-speed-motion/mobile-8.1-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後の本番動作画像のnative線路帯を実閲覧。PC/スマホ/横長の0→1秒の右移動と柱の遮蔽を保持し採用。スマホ8.1→8.3→8.5→9.3秒で右端退出/画面外/左端進入を確認、中央へ飛び戻らない。画像patch推定と計算上速度は区別して記録。"
+    },
+    {
+      "image": "art-reviews/train-speed-motion/mobile-8.3-corrected.png",
+      "report": "art-reviews/train-speed-motion/mobile-8.3-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後の本番動作画像のnative線路帯を実閲覧。PC/スマホ/横長の0→1秒の右移動と柱の遮蔽を保持し採用。スマホ8.1→8.3→8.5→9.3秒で右端退出/画面外/左端進入を確認、中央へ飛び戻らない。画像patch推定と計算上速度は区別して記録。"
+    },
+    {
+      "image": "art-reviews/train-speed-motion/mobile-8.5-corrected.png",
+      "report": "art-reviews/train-speed-motion/mobile-8.5-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後の本番動作画像のnative線路帯を実閲覧。PC/スマホ/横長の0→1秒の右移動と柱の遮蔽を保持し採用。スマホ8.1→8.3→8.5→9.3秒で右端退出/画面外/左端進入を確認、中央へ飛び戻らない。画像patch推定と計算上速度は区別して記録。"
+    },
+    {
+      "image": "art-reviews/train-speed-motion/mobile-9.3-corrected.png",
+      "report": "art-reviews/train-speed-motion/mobile-9.3-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後の本番動作画像のnative線路帯を実閲覧。PC/スマホ/横長の0→1秒の右移動と柱の遮蔽を保持し採用。スマホ8.1→8.3→8.5→9.3秒で右端退出/画面外/左端進入を確認、中央へ飛び戻らない。画像patch推定と計算上速度は区別して記録。"
+    },
+    {
+      "image": "art-reviews/train-speed-motion/wide-0-corrected.png",
+      "report": "art-reviews/train-speed-motion/wide-0-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後の本番動作画像のnative線路帯を実閲覧。PC/スマホ/横長の0→1秒の右移動と柱の遮蔽を保持し採用。スマホ8.1→8.3→8.5→9.3秒で右端退出/画面外/左端進入を確認、中央へ飛び戻らない。画像patch推定と計算上速度は区別して記録。"
+    },
+    {
+      "image": "art-reviews/train-speed-motion/wide-1-corrected.png",
+      "report": "art-reviews/train-speed-motion/wide-1-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後の本番動作画像のnative線路帯を実閲覧。PC/スマホ/横長の0→1秒の右移動と柱の遮蔽を保持し採用。スマホ8.1→8.3→8.5→9.3秒で右端退出/画面外/左端進入を確認、中央へ飛び戻らない。画像patch推定と計算上速度は区別して記録。"
     }
   ]
 }

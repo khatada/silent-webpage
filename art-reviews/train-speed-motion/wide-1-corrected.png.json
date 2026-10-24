@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/train-speed-motion/wide-1-source.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "38208afb2166e195cf9bbf4548585db8d5e8f4d52dd97316b3803e039e722078"
+  },
+  "output": {
+    "path": "art-reviews/train-speed-motion/wide-1-corrected.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "3ac38e53884881b09e9b07dd4e893b16c2d5bd4881bbf9f1491dbbc7a338ff6c"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -4,7 +4,8 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `feat/distributed-star-twinkle`、worktree `/workspace/silent-webpage-stars`。最新maind3e034cからユーザー指定の星の瞬き改善を開始。明るい孤立した星の候補は標準14/横16/縦15、上空へ分散し狭い構図でも残るものを選ぶ。背景共通rootと近傍暗空cropで半倍率の丸めずれを避ける。星の実装/QAで半縮小の1pxcoreが背景で間引かれたのにoverlayが隣を暗くする例を検出、sampling survival guardを追加中。独立レビューで375正方形/600x750等のwide中央cropに対象0の例も検出し、wide[412,54]追加/portrait[538,496]置換を実閲覧選定。45点のsampling QA405比較は範囲外/変更元core不一致0、17実描画coverageを確認。最大.75減光はportraitの中心抜けを理由に不採用。比較後.45を親/担当LLMが採用、最終10局所画像を親も無変形連結で全域実閲覧。sourcee9a8d44dd0d9e35e3857c20c019ac31b7c8a7a0c986ba54f93bceffdb500e62bで凍結、coverage17/11全景/本番2画面の証跡を再開。旧stars-motion/final/samplingは調査段階の証拠、最終10局所/17coverage/11全景/本番6秒後2画面を補正後LLM採用。405比較で芯外/非芯変更0、最明135組RGBA一致。型/Lint/単体82成功、最終verify/commit/push/PR/CI/merge/Pagesが残る。
+- ブランチ: `feat/faster-train`、worktree `/workspace/silent-webpage-train-speed`。最新mainf806184からユーザー指定の電車高速化を開始。scene.tsの速度scale*8→scale*16（2倍）のみ変更。経路/車幅/初期位置は維持。source729b81ccb069bdea11877f3ae27a8f7f4e33771d1c8e668e37d3f55d4073cba3で凍結。11初期全景と本番10動作画像のnative線路帯を補正後親/担当LLM採用。初期11は旧版RGBA一致、本番右移動/柱遮蔽/スマホ端周回を確認。verify/commit/push/PR/CI/merge/Pagesが残る。
+- 星はPR #45でCI40063437796/job120781615617成功後mainf8061840071ea0e5e6fd90afdd22ad9272b41300へマージ。verify82テスト/69画像成功。最終sourcee9a8d44dd0d9e35e3857c20c019ac31b7c8a7a0c986ba54f93bceffdb500e62b。45芯/13〜27秒周期/最大減光.45、sampling guard採用。最終10局所/17coverage/11全景/本番2画面を補正後LLM採用。405比較で芯外/非芯変更0、最明135組原画一致。極小100×100/100×150は減光差分0の制約。PR添付1回60秒超無応答で中断・成否未確認。Pages40063632249（verify120782183029/publish120782679290）成功で公開済み。
 - 遠景ビル窓はPR #44でCI39945488558/job120387001949成功後maind3e034c92ce73318c7f057c4606999aced5dbf32へマージ。verify78テスト/55画像成功。最終sourcea58f0c165f4b0fcbc22e0fd05b4d41dfbd7bb5408c62de087c3ef74cc4d001e7。局所3画像（162状態+54原画参照）/11初期全景/本番12秒後2全景を補正後LLM採用。162比較で窓外変更0、点灯54/初期11は原画/前版RGBA一致。PR添付1回60秒超無応答で中断し成否未確認。Pages39945980693（verify120388628534/publish120389611168）成功で公開済み。
 - C-004上空薄雲はPR #43 latesthead5235bec8f9cc17b4bda9b86d928b6fecbf761aa0のCI39943440096/job120380203717成功後main5fd1d0fbf0fb34ffb5b48b1b15fd946308bb5a43へマージ。verify76テスト/50画像成功。最終sourceacdd68a59ea1de7112ea48c19e3f662007067a439cf56d11b115c97e897877a6。補正後33局所/11全景LLM採用、窓外ではなく雲の範囲外変更0、省略4全RGBA一致。重複JSONを整理しPR全体1335追加行へ縮小。PR添付No handler registered。Pages39943853186（verify120381565919/publish120382586268）成功で公開済み。
 - C-005表示はPR #42でCI39907985438/job120264223421成功後main0528f30e063c718fb1322091d716e44a5dbcc239へマージ。verify74テスト/49画像成功。30局所パネル・11初期全景・5秒後PC/縦全景を補正後LLM採用、24比較で範囲外変更/固定上端差分0。描画sourcefac96a017eb3a57b60dcda3760d91dd3755f54df6f5b72d36e514bed6dbdebfa。PR添付No handler registered。Pages39908223631（verify120264970505/publish120265794483）成功で公開済み。
@@ -29,8 +30,8 @@
 - PR #26: 単体41件とverify成功、素材8枚＋全景11枚＋歩行/実移動atlasの20画像を補正・LLM採用。CI 39687474902成功。Pages 39687834998も成功、公開済み。
 - 画像生成の初回8枚は中間不足で不採用。v2の6枚と個別追加した後方支持・回収で8姿勢。原画・補正・部分参照編集・不採用理由も保存済み。
 - PR #26添付: codex_app.attach_artifactを親・補助とも呼び出したが長時間応答なく中断。GitHubのPR作成・マージは成功済み。添付成否は未確認で開発は妨げない。
-- ユーザー追加指示（2026-10-24）: 電車を今より速くする。requirementsへ記録し、星のPR後に速度変更を独立小PRで実装する。速度倍率はエージェントの仮定として選び、原画や経路を変えず連続出入りを確認する。
-- 次: 星の分布/明度/半倍率sampling修正を優先（住宅9窓は既に動作し、星には具体的な丸めずれリスクあり）。その後住宅の見え方/座標を点検し必要な改善を小PR化。ユーザー追加指示を優先、車の小休止案は保留。
+- ユーザー追加指示（2026-10-24）: 電車を今より速くする。requirementsへ記録し、星のPR後の独立小PRで速度2倍の検証を実施中。速度倍率はエージェントの仮定として選び、原画や経路を変えず連続出入りを確認する。
+- 次: 電車2倍速の本番確認/小PR/CI/公開。その後、住宅27窓の半倍率座標とカーテンの独立丸めを修正する。星の分布/明度はPR45で完了。ユーザー追加指示を優先し、車の小休止案は保留。
 - ユーザーの停止指示はなく継続改善は有効。旧stashは古いdocsを含むため一括適用しない。
 
 ## 決定事項
