@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/train-speed-scenes/portrait-boundary-source.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "f623e0b00761bb7acad6d919429e49bdd551c1f16e15f46d9a6653bb306a9ef3"
+  },
+  "output": {
+    "path": "art-reviews/train-speed-scenes/portrait-boundary-corrected.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "885f05eb4242caa2fb0c50132710dfd1906fd8033af86786d67d69b2ecdd0d7e"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

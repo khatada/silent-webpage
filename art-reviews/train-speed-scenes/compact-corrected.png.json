@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/train-speed-scenes/compact-source.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "5cde86a6a6bee9d991cc588c901a1757876a9863012f881c4f4db2eaad60cee2"
+  },
+  "output": {
+    "path": "art-reviews/train-speed-scenes/compact-corrected.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "3aa27477c490a9a661ae6d281a8dbb32a9c518ebce8bd2ac4c5ff162d1eae150"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

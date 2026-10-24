@@ -1,0 +1,72 @@
+{
+  "baseline": "art-reviews/2026-10-23-stars-scenes-final",
+  "method": "Full corrected PNG decoded RGBA equality",
+  "samples": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "changedPixels": 0
+    },
+    {
+      "name": "mobile",
+      "width": 780,
+      "height": 1688,
+      "changedPixels": 0
+    },
+    {
+      "name": "narrow",
+      "width": 295,
+      "height": 844,
+      "changedPixels": 0
+    },
+    {
+      "name": "landscape",
+      "width": 1688,
+      "height": 780,
+      "changedPixels": 0
+    },
+    {
+      "name": "wide",
+      "width": 2560,
+      "height": 1080,
+      "changedPixels": 0
+    },
+    {
+      "name": "compact",
+      "width": 800,
+      "height": 600,
+      "changedPixels": 0
+    },
+    {
+      "name": "tall",
+      "width": 780,
+      "height": 2050,
+      "changedPixels": 0
+    },
+    {
+      "name": "portrait-large",
+      "width": 900,
+      "height": 1600,
+      "changedPixels": 0
+    },
+    {
+      "name": "portrait-boundary",
+      "width": 1024,
+      "height": 1537,
+      "changedPixels": 0
+    },
+    {
+      "name": "small-phone",
+      "width": 640,
+      "height": 1136,
+      "changedPixels": 0
+    },
+    {
+      "name": "small-mobile",
+      "width": 750,
+      "height": 1334,
+      "changedPixels": 0
+    }
+  ]
+}
