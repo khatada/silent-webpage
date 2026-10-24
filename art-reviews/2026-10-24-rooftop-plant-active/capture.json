@@ -1,0 +1,32 @@
+{
+  "sourceSha256": "449e44a67b19bd8d066cefca04c9c937d4d7277f8bcf5788f57d90b05a0ed230",
+  "method": "Unmodified production page; paused clock before navigation, real settings UI pause/resume, runFor steps <=1000ms. Requested scene seconds and expected states are calculated, last 20fps RAF may precede the requested time. Native atlas panels only copy existing production screenshots. Cat occlusion may change plant-context pixels and is reviewed visually, not treated as a failure.",
+  "layouts": [
+    {"name":"desktop","native":[1440,900],"dpr":1,"geometry":{"x":720,"footY":784,"scale":0.5,"width":40,"height":56,"top":728.5,"bottom":784.5,"visible":true},"catFootY":864,"depthGap":80,"cropPhysical":{"x":652,"y":712,"width":136,"height":168},"times":[0,5.5,8,12,15]},
+    {"name":"mobile","native":[390,844],"dpr":2,"geometry":{"x":195,"footY":728,"scale":0.5,"width":40,"height":56,"top":672.5,"bottom":728.5,"visible":true},"catFootY":808,"depthGap":80,"cropPhysical":{"x":254,"y":1312,"width":272,"height":336},"times":[0,5.5,8,12,15]},
+    {"name":"landscape","native":[844,390],"dpr":2,"geometry":{"x":422,"footY":354,"scale":0.25,"width":20,"height":28,"top":326.25,"bottom":354.25,"visible":true},"catFootY":374,"depthGap":20,"cropPhysical":{"x":728,"y":620,"width":232,"height":160},"times":[0,5.5,6.6,8,12,15]}
+  ],
+  "samples": [
+    {"name":"desktop","panel":0,"requestedSceneSeconds":0,"calculatedPlantFrame":0,"calculatedCatX":360,"calculatedCatFrame":0,"overlapProbe":false},
+    {"name":"desktop","panel":1,"requestedSceneSeconds":5.5,"calculatedPlantFrame":1,"calculatedCatX":712,"calculatedCatFrame":2,"overlapProbe":false},
+    {"name":"desktop","panel":2,"requestedSceneSeconds":8,"calculatedPlantFrame":0,"calculatedCatX":872,"calculatedCatFrame":0,"overlapProbe":false},
+    {"name":"desktop","panel":3,"requestedSceneSeconds":12,"calculatedPlantFrame":2,"calculatedCatX":1080,"calculatedCatFrame":4,"overlapProbe":false},
+    {"name":"desktop","panel":4,"requestedSceneSeconds":15,"calculatedPlantFrame":0,"calculatedCatX":1080,"calculatedCatFrame":4,"overlapProbe":false},
+    {"name":"mobile","panel":0,"requestedSceneSeconds":0,"calculatedPlantFrame":0,"calculatedCatX":98,"calculatedCatFrame":0,"overlapProbe":false},
+    {"name":"mobile","panel":1,"requestedSceneSeconds":5.5,"calculatedPlantFrame":1,"calculatedCatX":293,"calculatedCatFrame":4,"overlapProbe":false},
+    {"name":"mobile","panel":2,"requestedSceneSeconds":8,"calculatedPlantFrame":0,"calculatedCatX":293,"calculatedCatFrame":4,"overlapProbe":false},
+    {"name":"mobile","panel":3,"requestedSceneSeconds":12,"calculatedPlantFrame":2,"calculatedCatX":293,"calculatedCatFrame":4,"overlapProbe":false},
+    {"name":"mobile","panel":4,"requestedSceneSeconds":15,"calculatedPlantFrame":0,"calculatedCatX":293,"calculatedCatFrame":4,"overlapProbe":false},
+    {"name":"landscape","panel":0,"requestedSceneSeconds":0,"calculatedPlantFrame":0,"calculatedCatX":211,"calculatedCatFrame":0,"overlapProbe":false},
+    {"name":"landscape","panel":1,"requestedSceneSeconds":5.5,"calculatedPlantFrame":1,"calculatedCatX":387,"calculatedCatFrame":2,"overlapProbe":false},
+    {"name":"landscape","panel":2,"requestedSceneSeconds":6.6,"calculatedPlantFrame":1,"calculatedCatX":422,"calculatedCatFrame":2,"overlapProbe":true},
+    {"name":"landscape","panel":3,"requestedSceneSeconds":8,"calculatedPlantFrame":0,"calculatedCatX":467,"calculatedCatFrame":0,"overlapProbe":false},
+    {"name":"landscape","panel":4,"requestedSceneSeconds":12,"calculatedPlantFrame":2,"calculatedCatX":595,"calculatedCatFrame":0,"overlapProbe":false},
+    {"name":"landscape","panel":5,"requestedSceneSeconds":15,"calculatedPlantFrame":0,"calculatedCatX":633,"calculatedCatFrame":4,"overlapProbe":false}
+  ],
+  "comparisons": [
+    {"name":"mobile","pausedWholeCanvasChangedPixels":0,"pausedWallSeconds":1,"requestedSceneSeconds":[5.5,5.5,6.5,7.5],"calculatedPlantFrames":[1,1,1,0],"changedPlantContextPausedVsResumedLeft":0,"changedPlantContextResumedLeftVsNeutral":1640},
+    {"name":"landscape","samePlantFrameComparisonSeconds":[5.5,6.6],"plantBoxWithinPanelPhysical":{"x":96,"y":32,"width":40,"height":58},"changedPixels":140,"changedLowerHalfPixels":140,"interpretation":"Cat passing in front changes the lower plant rectangle; this is occlusion evidence, not a fixed-pixel invariance claim."}
+  ],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

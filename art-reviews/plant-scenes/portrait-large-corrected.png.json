@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/plant-scenes/portrait-large-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "ed9825479380836b1eebc3d01a55a41a0019e0cd13bdfb96c6d5cc8695f24a15"
+  },
+  "output": {
+    "path": "art-reviews/plant-scenes/portrait-large-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "b754796ce290b339c23351e767ec2fd55b4ea0188c5360b6c6ebf39c41788246"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

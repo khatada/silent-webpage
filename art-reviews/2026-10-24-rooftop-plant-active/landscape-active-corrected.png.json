@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-24-rooftop-plant-active/landscape-active-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "2fdc8bd668e37761637c460abd6ebed82e64fec8bea10d1c9aff0446069b4792"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-24-rooftop-plant-active/landscape-active-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "dc75b5b15f308927b9911cd0a100aa7c08be464b2f37b55c56958b9689560c49"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

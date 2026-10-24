@@ -15,6 +15,7 @@ import { createImageUpperCloud } from './image-upper-cloud';
 import { createImageSkylineLights } from './image-skyline-lights';
 import { createImageStars } from './image-stars';
 import { createWindowCover } from './image-window-cover';
+import { createImagePlant, plantArt, plantGeometry } from './image-plant';
 
 type Frame = readonly [number, number, number, number];
 
@@ -24,7 +25,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas, lookAtlas] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas, lookAtlas, plantAtlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -46,6 +47,7 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${meteorArt.image}`),
     Assets.load<Texture>(`${baseUrl}${laundryArt.image}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.catLookAtlas}`),
+    Assets.load<Texture>(`${baseUrl}${plantArt.image}`),
   ]);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
@@ -102,6 +104,7 @@ export async function createScene(host: HTMLElement): Promise<{
     background: '#101326', preference: 'webgl', autoStart: false });
   const imageCat = createImageCat(atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas,
     stretchAtlas, stretchMid, turnAtlas, { atlas: lookAtlas, renderer: app.renderer });
+  const imagePlant = createImagePlant(plantAtlas, app.renderer);
   const canvas = app.canvas;
   canvas.setAttribute('role', 'img');
   canvas.setAttribute('aria-label', '星が瞬く東京の夜景。電車と飛行機がゆっくり行き交い、屋上で猫が歩き、毛づくろいをしたり丸くなって休んだりしながら、窓の灯りが移ろいます。');
@@ -124,6 +127,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let cloud: Sprite;
   let upperCloud: Sprite;
   let cat: Sprite;
+  let plant: Sprite;
   let windows: Sprite[] = [];
   const sprite = (texture: Texture) => {
     const art = new Sprite(texture);
@@ -235,6 +239,8 @@ export async function createScene(host: HTMLElement): Promise<{
       steam = imageSteam.createSprite(layout.portrait ? 1 : 0, scale, originX, originY);
       app.stage.addChild(steam);
     }
+    plant = imagePlant.createSprite(plantGeometry(layout, width, height));
+    app.stage.addChild(plant);
     cat = imageCat.createSprite();
     app.stage.addChild(cat);
     catY = layout.catY;
@@ -243,6 +249,7 @@ export async function createScene(host: HTMLElement): Promise<{
   }
 
   function animate() {
+    imagePlant.update(plant, elapsed);
     imageSkylineLights.update(skylineLights, elapsed);
     imageStreetCar.update(roadCar, elapsed);
     imageMeteor.update(meteor, elapsed, width, meteorSkyBottom);
@@ -292,6 +299,7 @@ export async function createScene(host: HTMLElement): Promise<{
       app.destroy(true, { children: true });
       for (const texture of crops) texture.destroy(false);
       imageCat.destroy();
+      imagePlant.destroy();
       imageStreetCar.destroy();
       imageCurtain.destroy();
       imageFan.destroy();

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/plant-scenes/tall-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "739797799fed8898d5dd1ebfc63697608f1b81e7b82647b034be05d6499fe514"
+  },
+  "output": {
+    "path": "art-reviews/plant-scenes/tall-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "b5cb2aaeba00b7c7e22bfe12e3d6dee4344f886300a2f5f56f26b01992825d54"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

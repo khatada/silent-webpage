@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "3c8bfecf58014cf9e4dccfdc5b3d331a4cba47c8bfbffdd78f16d7d21d0bec4f",
+  "sourceSha256": "449e44a67b19bd8d066cefca04c9c937d4d7277f8bcf5788f57d90b05a0ed230",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,39 +129,39 @@
       }
     },
     {
-      "image": "art-reviews/cat-look-scenes/desktop-corrected.png",
-      "report": "art-reviews/cat-look-scenes/desktop-corrected.png.json",
+      "image": "art-reviews/plant-scenes/desktop-corrected.png",
+      "report": "art-reviews/plant-scenes/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
+      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
     },
     {
-      "image": "art-reviews/cat-look-scenes/mobile-corrected.png",
-      "report": "art-reviews/cat-look-scenes/mobile-corrected.png.json",
+      "image": "art-reviews/plant-scenes/mobile-corrected.png",
+      "report": "art-reviews/plant-scenes/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
+      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
     },
     {
-      "image": "art-reviews/cat-look-scenes/narrow-corrected.png",
-      "report": "art-reviews/cat-look-scenes/narrow-corrected.png.json",
+      "image": "art-reviews/plant-scenes/narrow-corrected.png",
+      "report": "art-reviews/plant-scenes/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
+      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
     },
     {
-      "image": "art-reviews/cat-look-scenes/landscape-corrected.png",
-      "report": "art-reviews/cat-look-scenes/landscape-corrected.png.json",
+      "image": "art-reviews/plant-scenes/landscape-corrected.png",
+      "report": "art-reviews/plant-scenes/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
+      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
     },
     {
-      "image": "art-reviews/cat-look-scenes/wide-corrected.png",
-      "report": "art-reviews/cat-look-scenes/wide-corrected.png.json",
+      "image": "art-reviews/plant-scenes/wide-corrected.png",
+      "report": "art-reviews/plant-scenes/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
+      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
     },
     {
       "image": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
@@ -171,46 +171,46 @@
       "reason": "親LLMが最終補正atlasを実閲覧して採用。独立LLMも同一bytesのtrial左右各8コマ列を実閲覧して採用済み（SHA256 fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04）。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯は概ね揃い切れ/浮きなし。端点左右4組はRGBA一致。midの頭/首がやや小さく尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差は残る。"
     },
     {
-      "image": "art-reviews/cat-look-scenes/compact-corrected.png",
-      "report": "art-reviews/cat-look-scenes/compact-corrected.png.json",
+      "image": "art-reviews/plant-scenes/compact-corrected.png",
+      "report": "art-reviews/plant-scenes/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
+      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
     },
     {
-      "image": "art-reviews/cat-look-scenes/tall-corrected.png",
-      "report": "art-reviews/cat-look-scenes/tall-corrected.png.json",
+      "image": "art-reviews/plant-scenes/tall-corrected.png",
+      "report": "art-reviews/plant-scenes/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
+      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
     },
     {
-      "image": "art-reviews/cat-look-scenes/portrait-large-corrected.png",
-      "report": "art-reviews/cat-look-scenes/portrait-large-corrected.png.json",
+      "image": "art-reviews/plant-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/plant-scenes/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
+      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
     },
     {
-      "image": "art-reviews/cat-look-scenes/portrait-boundary-corrected.png",
-      "report": "art-reviews/cat-look-scenes/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/plant-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/plant-scenes/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
+      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
     },
     {
-      "image": "art-reviews/cat-look-scenes/small-phone-corrected.png",
-      "report": "art-reviews/cat-look-scenes/small-phone-corrected.png.json",
+      "image": "art-reviews/plant-scenes/small-phone-corrected.png",
+      "report": "art-reviews/plant-scenes/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
+      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
     },
     {
-      "image": "art-reviews/cat-look-scenes/small-mobile-corrected.png",
-      "report": "art-reviews/cat-look-scenes/small-mobile-corrected.png.json",
+      "image": "art-reviews/plant-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/plant-scenes/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
+      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
     },
     {
       "image": "public/art/street-car.png",
@@ -859,6 +859,62 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "補正後4倍率×3姿勢の生成済み床上比較を親/担当LLMが実閲覧し素材の可読性として採用。最小20×28でも外葉差を判別、鉢/茎固定、明るい縁や孤立ノイズなし。本番の位置/接地/猫との前後/実際のGPU切替は後続表示PRで採用する。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-plant-runtime/atlas-corrected.png",
+      "report": "art-reviews/2026-10-24-plant-runtime/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後60panelを親/担当LLMが全域実閲覧し採用。4倍率×整数/.375/.5位相で、同位置render/extractの48比較は鉢/主茎RGBA変更0、24neutral戻り全RGBA一致。接地と固定鉢を保持、葉端だけの控えめな変化が読める。PNG補正もRGBA unchanged。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-rooftop-plant-active/desktop-active-corrected.png",
+      "report": "art-reviews/2026-10-24-rooftop-plant-active/desktop-active-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の動作全景/連続native atlasとmobile停止再開atlas計7画像を補正後に親/担当LLMが実閲覧し採用。葉だけが左→中立→右→中立へ変化、鉢は床に接地。landscapeでは猫が鉢下部の手前を通過する。UI停止中の全canvasRGBA変更0、再開後も葉の位相を保持し中立復帰。猫通過による局所140px差分は遮蔽として扱い、植物のずれと混同しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-rooftop-plant-active/desktop-sequence-corrected.png",
+      "report": "art-reviews/2026-10-24-rooftop-plant-active/desktop-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の動作全景/連続native atlasとmobile停止再開atlas計7画像を補正後に親/担当LLMが実閲覧し採用。葉だけが左→中立→右→中立へ変化、鉢は床に接地。landscapeでは猫が鉢下部の手前を通過する。UI停止中の全canvasRGBA変更0、再開後も葉の位相を保持し中立復帰。猫通過による局所140px差分は遮蔽として扱い、植物のずれと混同しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-rooftop-plant-active/landscape-active-corrected.png",
+      "report": "art-reviews/2026-10-24-rooftop-plant-active/landscape-active-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の動作全景/連続native atlasとmobile停止再開atlas計7画像を補正後に親/担当LLMが実閲覧し採用。葉だけが左→中立→右→中立へ変化、鉢は床に接地。landscapeでは猫が鉢下部の手前を通過する。UI停止中の全canvasRGBA変更0、再開後も葉の位相を保持し中立復帰。猫通過による局所140px差分は遮蔽として扱い、植物のずれと混同しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-rooftop-plant-active/landscape-sequence-corrected.png",
+      "report": "art-reviews/2026-10-24-rooftop-plant-active/landscape-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の動作全景/連続native atlasとmobile停止再開atlas計7画像を補正後に親/担当LLMが実閲覧し採用。葉だけが左→中立→右→中立へ変化、鉢は床に接地。landscapeでは猫が鉢下部の手前を通過する。UI停止中の全canvasRGBA変更0、再開後も葉の位相を保持し中立復帰。猫通過による局所140px差分は遮蔽として扱い、植物のずれと混同しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-rooftop-plant-active/mobile-active-corrected.png",
+      "report": "art-reviews/2026-10-24-rooftop-plant-active/mobile-active-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の動作全景/連続native atlasとmobile停止再開atlas計7画像を補正後に親/担当LLMが実閲覧し採用。葉だけが左→中立→右→中立へ変化、鉢は床に接地。landscapeでは猫が鉢下部の手前を通過する。UI停止中の全canvasRGBA変更0、再開後も葉の位相を保持し中立復帰。猫通過による局所140px差分は遮蔽として扱い、植物のずれと混同しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-rooftop-plant-active/mobile-sequence-corrected.png",
+      "report": "art-reviews/2026-10-24-rooftop-plant-active/mobile-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の動作全景/連続native atlasとmobile停止再開atlas計7画像を補正後に親/担当LLMが実閲覧し採用。葉だけが左→中立→右→中立へ変化、鉢は床に接地。landscapeでは猫が鉢下部の手前を通過する。UI停止中の全canvasRGBA変更0、再開後も葉の位相を保持し中立復帰。猫通過による局所140px差分は遮蔽として扱い、植物のずれと混同しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-rooftop-plant-active/mobile-stop-resume-corrected.png",
+      "report": "art-reviews/2026-10-24-rooftop-plant-active/mobile-stop-resume-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の動作全景/連続native atlasとmobile停止再開atlas計7画像を補正後に親/担当LLMが実閲覧し採用。葉だけが左→中立→右→中立へ変化、鉢は床に接地。landscapeでは猫が鉢下部の手前を通過する。UI停止中の全canvasRGBA変更0、再開後も葉の位相を保持し中立復帰。猫通過による局所140px差分は遮蔽として扱い、植物のずれと混同しない。"
     }
   ]
 }
