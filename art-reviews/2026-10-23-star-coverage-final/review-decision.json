@@ -1,0 +1,93 @@
+{
+  "sourceSha256": "e9a8d44dd0d9e35e3857c20c019ac31b7c8a7a0c986ba54f93bceffdb500e62b",
+  "decision": "ACCEPT",
+  "llmActuallyViewed": true,
+  "reason": "Reviewed corrected 17-row before/after context atlas. Isolated star cores darken subtly; no displaced patch or neighbour change visible. Required first13 viewports all have measured changed pixels. At100x100 half-wide and100x150 tiny-discarded there are0 changed pixels; accept omission at these extreme reductions, with no overlay enlargement. Coordinate/guard predictions do not prove raster coverage.",
+  "changed": [
+    {
+      "name": "desktop",
+      "changed": 32,
+      "sampled": 8
+    },
+    {
+      "name": "mobile",
+      "changed": 12,
+      "sampled": 3
+    },
+    {
+      "name": "narrow",
+      "changed": 8,
+      "sampled": 2
+    },
+    {
+      "name": "landscape",
+      "changed": 20,
+      "sampled": 6
+    },
+    {
+      "name": "wide",
+      "changed": 250,
+      "sampled": 11
+    },
+    {
+      "name": "compact",
+      "changed": 45,
+      "sampled": 6
+    },
+    {
+      "name": "tall",
+      "changed": 5,
+      "sampled": 6
+    },
+    {
+      "name": "portrait-large",
+      "changed": 14,
+      "sampled": 15
+    },
+    {
+      "name": "portrait-boundary",
+      "changed": 14,
+      "sampled": 15
+    },
+    {
+      "name": "small-phone",
+      "changed": 2,
+      "sampled": 3
+    },
+    {
+      "name": "small-mobile",
+      "changed": 2,
+      "sampled": 3
+    },
+    {
+      "name": "square-boundary",
+      "changed": 4,
+      "sampled": 1
+    },
+    {
+      "name": "portrait-fallback-boundary",
+      "changed": 16,
+      "sampled": 1
+    },
+    {
+      "name": "very-narrow",
+      "changed": 2,
+      "sampled": 2
+    },
+    {
+      "name": "half-narrow",
+      "changed": 1,
+      "sampled": 1
+    },
+    {
+      "name": "half-wide",
+      "changed": 0,
+      "sampled": 1
+    },
+    {
+      "name": "tiny-discarded",
+      "changed": 0,
+      "sampled": 0
+    }
+  ]
+}

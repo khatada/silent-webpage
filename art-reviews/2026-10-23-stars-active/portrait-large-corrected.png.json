@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-stars-active/portrait-large-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "a6d6a9148a1ce67f97df6de6a1bfae136c326af45c984b410a2f93315321ad8c"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-stars-active/portrait-large-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "71fb5dd305a277c7adeccf3ec908b89c05fe11bd26175eaa7bee2f6558ea0b19"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

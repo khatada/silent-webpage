@@ -1,0 +1,29 @@
+{
+  "runtimeSourceSha256": "e9a8d44dd0d9e35e3857c20c019ac31b7c8a7a0c986ba54f93bceffdb500e62b",
+  "method": "Actual built production page; Playwright clock installed and paused before navigation, no-preference motion, runFor(6000ms) after ready. No production API or source modifications.",
+  "results": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "motion": "running",
+      "errors": [],
+      "input": "art-reviews/2026-10-23-stars-active/desktop-source.png",
+      "output": "art-reviews/2026-10-23-stars-active/desktop-corrected.png",
+      "sourceSha256": "f7aba190cb1d22599c58be49c01bbc843b41b3a4537edd2b451bd406a33b7eb7"
+    },
+    {
+      "name": "portrait-large",
+      "width": 900,
+      "height": 1600,
+      "dpr": 1,
+      "motion": "running",
+      "errors": [],
+      "input": "art-reviews/2026-10-23-stars-active/portrait-large-source.png",
+      "output": "art-reviews/2026-10-23-stars-active/portrait-large-corrected.png",
+      "sourceSha256": "a6d6a9148a1ce67f97df6de6a1bfae136c326af45c984b410a2f93315321ad8c"
+    }
+  ],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

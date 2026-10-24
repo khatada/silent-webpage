@@ -1,0 +1,25 @@
+{
+  "sourceSha256": "e9a8d44dd0d9e35e3857c20c019ac31b7c8a7a0c986ba54f93bceffdb500e62b",
+  "finalSourceSha256": "e9a8d44dd0d9e35e3857c20c019ac31b7c8a7a0c986ba54f93bceffdb500e62b",
+  "metadata": {
+    "width": 384,
+    "height": 240,
+    "samples": [
+      {"composition":1,"starIndex":15,"scale":0.5,"row":0,"column":0,"columnWidth":96,"rowHeight":80,"panelX":8,"panelY":6,"context":[315,25,17,17],"core":[323,33,1,1],"dark":[325,32,1,1],"originX":-149,"originY":-6,"contextX":8.5,"contextY":6.5,"seconds":null,"alpha":0},
+      {"composition":1,"starIndex":15,"scale":0.5,"row":0,"column":1,"columnWidth":96,"rowHeight":80,"panelX":104,"panelY":6,"context":[315,25,17,17],"core":[323,33,1,1],"dark":[325,32,1,1],"originX":-53,"originY":-6,"contextX":104.5,"contextY":6.5,"seconds":2.117647058823529,"alpha":0},
+      {"composition":1,"starIndex":15,"scale":0.5,"row":0,"column":2,"columnWidth":96,"rowHeight":80,"panelX":200,"panelY":6,"context":[315,25,17,17],"core":[323,33,1,1],"dark":[325,32,1,1],"originX":43,"originY":-6,"contextX":200.5,"contextY":6.5,"seconds":6.617647058823529,"alpha":0.22499999999999992},
+      {"composition":1,"starIndex":15,"scale":0.5,"row":0,"column":3,"columnWidth":96,"rowHeight":80,"panelX":296,"panelY":6,"context":[315,25,17,17],"core":[323,33,1,1],"dark":[325,32,1,1],"originX":139,"originY":-6,"contextX":296.5,"contextY":6.5,"seconds":11.117647058823529,"alpha":0.45},
+      {"composition":1,"starIndex":15,"scale":1,"row":1,"column":0,"columnWidth":96,"rowHeight":80,"panelX":8,"panelY":86,"context":[315,25,17,17],"core":[323,33,1,1],"dark":[325,32,1,1],"originX":-307,"originY":61,"contextX":8,"contextY":86,"seconds":null,"alpha":0},
+      {"composition":1,"starIndex":15,"scale":1,"row":1,"column":1,"columnWidth":96,"rowHeight":80,"panelX":104,"panelY":86,"context":[315,25,17,17],"core":[323,33,1,1],"dark":[325,32,1,1],"originX":-211,"originY":61,"contextX":104,"contextY":86,"seconds":2.117647058823529,"alpha":0},
+      {"composition":1,"starIndex":15,"scale":1,"row":1,"column":2,"columnWidth":96,"rowHeight":80,"panelX":200,"panelY":86,"context":[315,25,17,17],"core":[323,33,1,1],"dark":[325,32,1,1],"originX":-115,"originY":61,"contextX":200,"contextY":86,"seconds":6.617647058823529,"alpha":0.22499999999999992},
+      {"composition":1,"starIndex":15,"scale":1,"row":1,"column":3,"columnWidth":96,"rowHeight":80,"panelX":296,"panelY":86,"context":[315,25,17,17],"core":[323,33,1,1],"dark":[325,32,1,1],"originX":-19,"originY":61,"contextX":296,"contextY":86,"seconds":11.117647058823529,"alpha":0.45},
+      {"composition":1,"starIndex":15,"scale":4,"row":2,"column":0,"columnWidth":96,"rowHeight":80,"panelX":8,"panelY":166,"context":[315,25,17,17],"core":[323,33,1,1],"dark":[325,32,1,1],"originX":-1252,"originY":66,"contextX":8,"contextY":166,"seconds":null,"alpha":0},
+      {"composition":1,"starIndex":15,"scale":4,"row":2,"column":1,"columnWidth":96,"rowHeight":80,"panelX":104,"panelY":166,"context":[315,25,17,17],"core":[323,33,1,1],"dark":[325,32,1,1],"originX":-1156,"originY":66,"contextX":104,"contextY":166,"seconds":2.117647058823529,"alpha":0},
+      {"composition":1,"starIndex":15,"scale":4,"row":2,"column":2,"columnWidth":96,"rowHeight":80,"panelX":200,"panelY":166,"context":[315,25,17,17],"core":[323,33,1,1],"dark":[325,32,1,1],"originX":-1060,"originY":66,"contextX":200,"contextY":166,"seconds":6.617647058823529,"alpha":0.22499999999999992},
+      {"composition":1,"starIndex":15,"scale":4,"row":2,"column":3,"columnWidth":96,"rowHeight":80,"panelX":296,"panelY":166,"context":[315,25,17,17],"core":[323,33,1,1],"dark":[325,32,1,1],"originX":-964,"originY":66,"contextX":296,"contextY":166,"seconds":11.117647058823529,"alpha":0.45}
+    ]
+  },
+  "method": "Image-generation textures composited by /scripts/generated-stars-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-stars-final/portrait-2/atlas-source.png",
+    "width": 384,
+    "height": 1200,
+    "sha256": "6dcf652ecdad8b1d74f8fc337bc44bbefdbb5e4aea9348c91cd72899e3df0751"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-stars-final/portrait-2/atlas-corrected.png",
+    "width": 384,
+    "height": 1200,
+    "sha256": "92c9ad4700b51a590d939d23526f134044caaed355ac3e8e55c1657864b2fb86"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
