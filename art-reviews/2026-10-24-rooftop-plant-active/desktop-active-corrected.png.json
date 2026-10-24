@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-24-rooftop-plant-active/desktop-active-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "5a8b7a3bbae89d1ba17ddeb90458f98ec37d79556a014c38000b6cb73d18dedb"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-24-rooftop-plant-active/desktop-active-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "250330b95c0247698e4f27f598f7b2958c575188140d5260955578fbd9b446b7"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

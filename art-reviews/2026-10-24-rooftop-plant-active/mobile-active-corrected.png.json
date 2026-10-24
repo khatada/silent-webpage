@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-24-rooftop-plant-active/mobile-active-source.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "56e4113e1bb2fd214d732ed3bb8a26336cbd0a6f2828c1fd116c274f9075273c"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-24-rooftop-plant-active/mobile-active-corrected.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "783934c06138732d5313056cae69cd4cf230e913b6ba7f947c87bf94251327fe"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

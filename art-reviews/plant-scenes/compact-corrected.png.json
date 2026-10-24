@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/plant-scenes/compact-source.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "be078addbbae6c32e8b9f7c6e3209154ede891f558b16dc128d4c0f80b1ef252"
+  },
+  "output": {
+    "path": "art-reviews/plant-scenes/compact-corrected.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "12445cc22eb26381483e4d6a0319f0ac8276bb4fa18907670d4672b0aee635dc"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

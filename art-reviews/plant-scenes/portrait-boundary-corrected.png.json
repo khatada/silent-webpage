@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/plant-scenes/portrait-boundary-source.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "de4f2b6e4fc046c748426129e7623357efb9c6f285698b3a86fc89883447e1f6"
+  },
+  "output": {
+    "path": "art-reviews/plant-scenes/portrait-boundary-corrected.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "7d139c052a8d05bc9e50b86911d3b02e42c17140b73b0c202520793a93e7bec3"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

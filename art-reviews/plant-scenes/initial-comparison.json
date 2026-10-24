@@ -1,0 +1,126 @@
+{
+  "method": "Decoded RGBA comparison against C026 initial scenes. Bounds are full plant frame enlarged by 2 native pixels for anchor/rounding edges, then multiplied by DPR. This verifies no initial change outside the conservative plant region.",
+  "samples": [
+    {
+      "name": "desktop",
+      "physicalBounds": [
+        698,
+        726,
+        742,
+        787
+      ],
+      "changedPixels": 741,
+      "outsidePlantFrameChangedPixels": 0
+    },
+    {
+      "name": "mobile",
+      "physicalBounds": [
+        346,
+        1341,
+        434,
+        1461
+      ],
+      "changedPixels": 2952,
+      "outsidePlantFrameChangedPixels": 0
+    },
+    {
+      "name": "narrow",
+      "physicalBounds": [
+        125,
+        670,
+        170,
+        731
+      ],
+      "changedPixels": 738,
+      "outsidePlantFrameChangedPixels": 0
+    },
+    {
+      "name": "landscape",
+      "physicalBounds": [
+        820,
+        648,
+        868,
+        713
+      ],
+      "changedPixels": 728,
+      "outsidePlantFrameChangedPixels": 0
+    },
+    {
+      "name": "wide",
+      "physicalBounds": [
+        1253,
+        918,
+        1307,
+        993
+      ],
+      "changedPixels": 1145,
+      "outsidePlantFrameChangedPixels": 0
+    },
+    {
+      "name": "compact",
+      "physicalBounds": [
+        383,
+        502,
+        417,
+        549
+      ],
+      "changedPixels": 415,
+      "outsidePlantFrameChangedPixels": 0
+    },
+    {
+      "name": "tall",
+      "physicalBounds": [
+        346,
+        1679,
+        434,
+        1799
+      ],
+      "changedPixels": 2952,
+      "outsidePlantFrameChangedPixels": 0
+    },
+    {
+      "name": "portrait-large",
+      "physicalBounds": [
+        428,
+        1234,
+        472,
+        1295
+      ],
+      "changedPixels": 738,
+      "outsidePlantFrameChangedPixels": 0
+    },
+    {
+      "name": "portrait-boundary",
+      "physicalBounds": [
+        490,
+        1203,
+        534,
+        1264
+      ],
+      "changedPixels": 738,
+      "outsidePlantFrameChangedPixels": 0
+    },
+    {
+      "name": "small-phone",
+      "physicalBounds": [
+        296,
+        948,
+        344,
+        1013
+      ],
+      "changedPixels": 728,
+      "outsidePlantFrameChangedPixels": 0
+    },
+    {
+      "name": "small-mobile",
+      "physicalBounds": [
+        351,
+        1100,
+        399,
+        1165
+      ],
+      "changedPixels": 700,
+      "outsidePlantFrameChangedPixels": 0
+    }
+  ]
+}

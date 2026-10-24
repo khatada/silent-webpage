@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/plant-scenes/landscape-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "4a1f9c7b9c2b4e2d998a7fd320c4926b08b1c7ee75a62c629303c34389aa02f0"
+  },
+  "output": {
+    "path": "art-reviews/plant-scenes/landscape-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "0d3ceb7e81b6466d3504444190542295873a91d2cb6debf848f22ecbcee58dd6"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

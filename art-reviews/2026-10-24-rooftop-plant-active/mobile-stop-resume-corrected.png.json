@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-24-rooftop-plant-active/mobile-stop-resume-source.png",
+    "width": 1088,
+    "height": 336,
+    "sha256": "82d63863f35503d0ba9f9f69a13cf5d924340b5c662b45170379a8867263985b"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-24-rooftop-plant-active/mobile-stop-resume-corrected.png",
+    "width": 1088,
+    "height": 336,
+    "sha256": "82d63863f35503d0ba9f9f69a13cf5d924340b5c662b45170379a8867263985b"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
