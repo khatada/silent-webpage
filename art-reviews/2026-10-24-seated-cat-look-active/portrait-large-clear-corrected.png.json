@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-24-seated-cat-look-active/portrait-large-clear-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "f91e728f915ad348b7ece80915b5f209d7bfbb1112822ab6bc552df504ec3809"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-24-seated-cat-look-active/portrait-large-clear-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "a52b6785efa2949e056d80711dd949137b753fc446bde92093b7cb76129c9456"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

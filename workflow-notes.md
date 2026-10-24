@@ -109,3 +109,7 @@
 - 時計を1秒進めても最終RAFは1秒直前の描画になる場合がある。移動量は計算上のpx/秒とスクリーンショットのpatch推定を区別し、透過/遮蔽を含むmin-SAD推定をexact画像一致と呼ばない。
 
 - 半縮小QAは整数原点をそろえるだけでは十分でない。crop Texture自体を縮小するとUV境界のnearest結果がwhole背景と異なる場合がある。背景全体を対象倍率のRenderTextureへ描画し、整数canvas領域を1:1で切り出してactor/coverと比較する。[whole背景QA helper](scripts/window-review-background.ts)を以後の局所確認で利用する。
+
+- 原画で同じRGBAでも、別atlasのsubtextureではnearest縮小のUV境界で異なるpixelが選ばれることがある。切替対象すべて（既存の中立も含む）を同寸法native RenderTextureへ一度描画し、倍率.25/.375/.5/.625と左右で合成を比較してから全景を撮る。RenderTextureの所有と破棄は共有Assetsと分離する。
+
+- 同じTextureでも縮小nearestの境界は絶対描画位置で変わる場合があるため、並列panelの画像差をそのまま姿勢差と断定しない。固定位置でrender/extractしたsnapshot同士を比較してから、画像を1:1でatlasへ配置する。PNGのRGBA完全一致は全byteを比較し、alpha差0のImageChops.getbboxだけでRGB一致を断定しない。

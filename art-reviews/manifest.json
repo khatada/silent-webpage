@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "17e8a6a640d6f8966073ca9e099316acdf3019d3b4f1b0799053f36614ded69a",
+  "sourceSha256": "3c8bfecf58014cf9e4dccfdc5b3d331a4cba47c8bfbffdd78f16d7d21d0bec4f",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,39 +129,39 @@
       }
     },
     {
-      "image": "art-reviews/residential-window-scenes/desktop-corrected.png",
-      "report": "art-reviews/residential-window-scenes/desktop-corrected.png.json",
+      "image": "art-reviews/cat-look-scenes/desktop-corrected.png",
+      "report": "art-reviews/cat-look-scenes/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧して採用。窓の減光とカーテンが背景の枠へ一致し、星・交通・猫・空/床の構図を保持。半倍率と動作中は局所5画像および本番12秒後3画面でも確認した。"
+      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
     },
     {
-      "image": "art-reviews/residential-window-scenes/mobile-corrected.png",
-      "report": "art-reviews/residential-window-scenes/mobile-corrected.png.json",
+      "image": "art-reviews/cat-look-scenes/mobile-corrected.png",
+      "report": "art-reviews/cat-look-scenes/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧して採用。窓の減光とカーテンが背景の枠へ一致し、星・交通・猫・空/床の構図を保持。半倍率と動作中は局所5画像および本番12秒後3画面でも確認した。"
+      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
     },
     {
-      "image": "art-reviews/residential-window-scenes/narrow-corrected.png",
-      "report": "art-reviews/residential-window-scenes/narrow-corrected.png.json",
+      "image": "art-reviews/cat-look-scenes/narrow-corrected.png",
+      "report": "art-reviews/cat-look-scenes/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧して採用。窓の減光とカーテンが背景の枠へ一致し、星・交通・猫・空/床の構図を保持。半倍率と動作中は局所5画像および本番12秒後3画面でも確認した。"
+      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
     },
     {
-      "image": "art-reviews/residential-window-scenes/landscape-corrected.png",
-      "report": "art-reviews/residential-window-scenes/landscape-corrected.png.json",
+      "image": "art-reviews/cat-look-scenes/landscape-corrected.png",
+      "report": "art-reviews/cat-look-scenes/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧して採用。窓の減光とカーテンが背景の枠へ一致し、星・交通・猫・空/床の構図を保持。半倍率と動作中は局所5画像および本番12秒後3画面でも確認した。"
+      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
     },
     {
-      "image": "art-reviews/residential-window-scenes/wide-corrected.png",
-      "report": "art-reviews/residential-window-scenes/wide-corrected.png.json",
+      "image": "art-reviews/cat-look-scenes/wide-corrected.png",
+      "report": "art-reviews/cat-look-scenes/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧して採用。窓の減光とカーテンが背景の枠へ一致し、星・交通・猫・空/床の構図を保持。半倍率と動作中は局所5画像および本番12秒後3画面でも確認した。"
+      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
     },
     {
       "image": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
@@ -171,46 +171,46 @@
       "reason": "親LLMが最終補正atlasを実閲覧して採用。独立LLMも同一bytesのtrial左右各8コマ列を実閲覧して採用済み（SHA256 fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04）。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯は概ね揃い切れ/浮きなし。端点左右4組はRGBA一致。midの頭/首がやや小さく尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差は残る。"
     },
     {
-      "image": "art-reviews/residential-window-scenes/compact-corrected.png",
-      "report": "art-reviews/residential-window-scenes/compact-corrected.png.json",
+      "image": "art-reviews/cat-look-scenes/compact-corrected.png",
+      "report": "art-reviews/cat-look-scenes/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧して採用。窓の減光とカーテンが背景の枠へ一致し、星・交通・猫・空/床の構図を保持。半倍率と動作中は局所5画像および本番12秒後3画面でも確認した。"
+      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
     },
     {
-      "image": "art-reviews/residential-window-scenes/tall-corrected.png",
-      "report": "art-reviews/residential-window-scenes/tall-corrected.png.json",
+      "image": "art-reviews/cat-look-scenes/tall-corrected.png",
+      "report": "art-reviews/cat-look-scenes/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧して採用。窓の減光とカーテンが背景の枠へ一致し、星・交通・猫・空/床の構図を保持。半倍率と動作中は局所5画像および本番12秒後3画面でも確認した。"
+      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
     },
     {
-      "image": "art-reviews/residential-window-scenes/portrait-large-corrected.png",
-      "report": "art-reviews/residential-window-scenes/portrait-large-corrected.png.json",
+      "image": "art-reviews/cat-look-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/cat-look-scenes/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧して採用。窓の減光とカーテンが背景の枠へ一致し、星・交通・猫・空/床の構図を保持。半倍率と動作中は局所5画像および本番12秒後3画面でも確認した。"
+      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
     },
     {
-      "image": "art-reviews/residential-window-scenes/portrait-boundary-corrected.png",
-      "report": "art-reviews/residential-window-scenes/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/cat-look-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/cat-look-scenes/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧して採用。窓の減光とカーテンが背景の枠へ一致し、星・交通・猫・空/床の構図を保持。半倍率と動作中は局所5画像および本番12秒後3画面でも確認した。"
+      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
     },
     {
-      "image": "art-reviews/residential-window-scenes/small-phone-corrected.png",
-      "report": "art-reviews/residential-window-scenes/small-phone-corrected.png.json",
+      "image": "art-reviews/cat-look-scenes/small-phone-corrected.png",
+      "report": "art-reviews/cat-look-scenes/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧して採用。窓の減光とカーテンが背景の枠へ一致し、星・交通・猫・空/床の構図を保持。半倍率と動作中は局所5画像および本番12秒後3画面でも確認した。"
+      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
     },
     {
-      "image": "art-reviews/residential-window-scenes/small-mobile-corrected.png",
-      "report": "art-reviews/residential-window-scenes/small-mobile-corrected.png.json",
+      "image": "art-reviews/cat-look-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/cat-look-scenes/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "親/担当LLMが補正後11全景を分担実閲覧して採用。窓の減光とカーテンが背景の枠へ一致し、星・交通・猫・空/床の構図を保持。半倍率と動作中は局所5画像および本番12秒後3画面でも確認した。"
+      "reason": "最終sourceの補正後11初期全景を親5枚/独立LLM6枚が実閲覧して採用。猫の全身と接地、空・電車・窓枠・屋上の構図と配色を保持。11枚は前版の初期画像とdecoded RGBA byte一致。初期は歩行のため視線変化は別の局所/本番動作画像で確認する。"
     },
     {
       "image": "public/art/street-car.png",
@@ -781,6 +781,55 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親/担当LLMが元座位/浅い頭向き/横目を既存生成背景上の1/.5/.25/.125倍率で補正後実閲覧し素材として採用。頭の大きさと下半身/床位置を保ち、鼻/頬/両目の変化を確認。最小.125では細部判別が弱い制約。表示時間/左右/本番全景の採用は後続PR。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-cat-look-runtime-final/atlas-corrected.png",
+      "report": "art-reviews/2026-10-24-cat-look-runtime-final/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後80パネルを親/担当LLMが無変形上下帯で実閲覧。左右/倍率.25,.375,.5,.625/整数・端数phaseで頭の向きが順に変化、胴体・尾・足元を保持。固定座標render/extractで64比較の下半身変更0、16端点の全RGBA一致。最小倍率では細かな目線は弱いが輪郭が変わり、旧頭残像や目立つ首の継ぎ目なしとして採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-seated-cat-look-active/desktop-clear-corrected.png",
+      "report": "art-reviews/2026-10-24-seated-cat-look-active/desktop-clear-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番ページを実際のRAFで進めた3端末の全景/5コマnative atlasを補正後に親/担当LLMが実閲覧し採用。中立→浅向き→横目→浅向き→中立の順と腰・尾・後足の固定を確認。3端末とも元姿勢の前後と浅向き往復のRGBA全byte一致、atlas下半身12比較差分0。座標hookなし、最終RAFが要求時刻に先行する制約はmetadataへ明記。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-seated-cat-look-active/desktop-sequence-corrected.png",
+      "report": "art-reviews/2026-10-24-seated-cat-look-active/desktop-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番ページを実際のRAFで進めた3端末の全景/5コマnative atlasを補正後に親/担当LLMが実閲覧し採用。中立→浅向き→横目→浅向き→中立の順と腰・尾・後足の固定を確認。3端末とも元姿勢の前後と浅向き往復のRGBA全byte一致、atlas下半身12比較差分0。座標hookなし、最終RAFが要求時刻に先行する制約はmetadataへ明記。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-seated-cat-look-active/mobile-clear-corrected.png",
+      "report": "art-reviews/2026-10-24-seated-cat-look-active/mobile-clear-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番ページを実際のRAFで進めた3端末の全景/5コマnative atlasを補正後に親/担当LLMが実閲覧し採用。中立→浅向き→横目→浅向き→中立の順と腰・尾・後足の固定を確認。3端末とも元姿勢の前後と浅向き往復のRGBA全byte一致、atlas下半身12比較差分0。座標hookなし、最終RAFが要求時刻に先行する制約はmetadataへ明記。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-seated-cat-look-active/mobile-sequence-corrected.png",
+      "report": "art-reviews/2026-10-24-seated-cat-look-active/mobile-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番ページを実際のRAFで進めた3端末の全景/5コマnative atlasを補正後に親/担当LLMが実閲覧し採用。中立→浅向き→横目→浅向き→中立の順と腰・尾・後足の固定を確認。3端末とも元姿勢の前後と浅向き往復のRGBA全byte一致、atlas下半身12比較差分0。座標hookなし、最終RAFが要求時刻に先行する制約はmetadataへ明記。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-seated-cat-look-active/portrait-large-clear-corrected.png",
+      "report": "art-reviews/2026-10-24-seated-cat-look-active/portrait-large-clear-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番ページを実際のRAFで進めた3端末の全景/5コマnative atlasを補正後に親/担当LLMが実閲覧し採用。中立→浅向き→横目→浅向き→中立の順と腰・尾・後足の固定を確認。3端末とも元姿勢の前後と浅向き往復のRGBA全byte一致、atlas下半身12比較差分0。座標hookなし、最終RAFが要求時刻に先行する制約はmetadataへ明記。"
+    },
+    {
+      "image": "art-reviews/2026-10-24-seated-cat-look-active/portrait-large-sequence-corrected.png",
+      "report": "art-reviews/2026-10-24-seated-cat-look-active/portrait-large-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番ページを実際のRAFで進めた3端末の全景/5コマnative atlasを補正後に親/担当LLMが実閲覧し採用。中立→浅向き→横目→浅向き→中立の順と腰・尾・後足の固定を確認。3端末とも元姿勢の前後と浅向き往復のRGBA全byte一致、atlas下半身12比較差分0。座標hookなし、最終RAFが要求時刻に先行する制約はmetadataへ明記。"
     }
   ]
 }

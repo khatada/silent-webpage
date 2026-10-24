@@ -1,0 +1,27 @@
+{
+  "sourceSha256": "3c8bfecf58014cf9e4dccfdc5b3d331a4cba47c8bfbffdd78f16d7d21d0bec4f",
+  "method": "Unmodified production page on 4173. Paused clock before navigation, OS motion enabled after initialization, sequential runFor steps of at most 1000ms. Sample midpoints discovered via catPose. Five native cat-context crops are copied into each device sequence atlas; only clear full scenes are retained in the review directory. Other full scenes remain temporary. Requested seconds and expected poses are calculated; actual output is reviewed visually, with the last 20fps RAF potentially preceding the requested time.",
+  "samples": [
+    {"name":"desktop","label":"neutral-before","requestedSeconds":12.19,"expectedFrame":4,"expectedLookFrame":null,"native":[1440,900],"dpr":1,"sceneScale":2,"catX":1080,"footY":864,"atlasPanel":0,"cropPhysical":{"x":1037,"y":783,"width":86,"height":94}},
+    {"name":"desktop","label":"shallow-out","requestedSeconds":13.88,"expectedFrame":4,"expectedLookFrame":0,"native":[1440,900],"dpr":1,"sceneScale":2,"catX":1080,"footY":864,"atlasPanel":1,"cropPhysical":{"x":1037,"y":783,"width":86,"height":94}},
+    {"name":"desktop","label":"clear","requestedSeconds":16.13,"expectedFrame":4,"expectedLookFrame":1,"native":[1440,900],"dpr":1,"sceneScale":2,"catX":1080,"footY":864,"atlasPanel":2,"cropPhysical":{"x":1037,"y":783,"width":86,"height":94}},
+    {"name":"desktop","label":"shallow-back","requestedSeconds":18.38,"expectedFrame":4,"expectedLookFrame":0,"native":[1440,900],"dpr":1,"sceneScale":2,"catX":1080,"footY":864,"atlasPanel":3,"cropPhysical":{"x":1037,"y":783,"width":86,"height":94}},
+    {"name":"desktop","label":"neutral-after","requestedSeconds":20.065,"expectedFrame":4,"expectedLookFrame":null,"native":[1440,900],"dpr":1,"sceneScale":2,"catX":1080,"footY":864,"atlasPanel":4,"cropPhysical":{"x":1037,"y":783,"width":86,"height":94}},
+    {"name":"mobile","label":"neutral-before","requestedSeconds":6.04,"expectedFrame":4,"expectedLookFrame":null,"native":[390,844],"dpr":2,"sceneScale":2,"catX":293,"footY":808,"atlasPanel":0,"cropPhysical":{"x":498,"y":1454,"width":172,"height":188}},
+    {"name":"mobile","label":"shallow-out","requestedSeconds":9.78,"expectedFrame":4,"expectedLookFrame":0,"native":[390,844],"dpr":2,"sceneScale":2,"catX":293,"footY":808,"atlasPanel":1,"cropPhysical":{"x":498,"y":1454,"width":172,"height":188}},
+    {"name":"mobile","label":"clear","requestedSeconds":12.03,"expectedFrame":4,"expectedLookFrame":1,"native":[390,844],"dpr":2,"sceneScale":2,"catX":293,"footY":808,"atlasPanel":2,"cropPhysical":{"x":498,"y":1454,"width":172,"height":188}},
+    {"name":"mobile","label":"shallow-back","requestedSeconds":14.28,"expectedFrame":4,"expectedLookFrame":0,"native":[390,844],"dpr":2,"sceneScale":2,"catX":293,"footY":808,"atlasPanel":3,"cropPhysical":{"x":498,"y":1454,"width":172,"height":188}},
+    {"name":"mobile","label":"neutral-after","requestedSeconds":18.015,"expectedFrame":4,"expectedLookFrame":null,"native":[390,844],"dpr":2,"sceneScale":2,"catX":293,"footY":808,"atlasPanel":4,"cropPhysical":{"x":498,"y":1454,"width":172,"height":188}},
+    {"name":"portrait-large","label":"neutral-before","requestedSeconds":9.03,"expectedFrame":4,"expectedLookFrame":null,"native":[900,1600],"dpr":1,"sceneScale":2,"catX":675,"footY":1402,"atlasPanel":0,"cropPhysical":{"x":632,"y":1321,"width":86,"height":94}},
+    {"name":"portrait-large","label":"shallow-out","requestedSeconds":11.77,"expectedFrame":4,"expectedLookFrame":0,"native":[900,1600],"dpr":1,"sceneScale":2,"catX":675,"footY":1402,"atlasPanel":1,"cropPhysical":{"x":632,"y":1321,"width":86,"height":94}},
+    {"name":"portrait-large","label":"clear","requestedSeconds":14.02,"expectedFrame":4,"expectedLookFrame":1,"native":[900,1600],"dpr":1,"sceneScale":2,"catX":675,"footY":1402,"atlasPanel":2,"cropPhysical":{"x":632,"y":1321,"width":86,"height":94}},
+    {"name":"portrait-large","label":"shallow-back","requestedSeconds":16.27,"expectedFrame":4,"expectedLookFrame":0,"native":[900,1600],"dpr":1,"sceneScale":2,"catX":675,"footY":1402,"atlasPanel":3,"cropPhysical":{"x":632,"y":1321,"width":86,"height":94}},
+    {"name":"portrait-large","label":"neutral-after","requestedSeconds":19.01,"expectedFrame":4,"expectedLookFrame":null,"native":[900,1600],"dpr":1,"sceneScale":2,"catX":675,"footY":1402,"atlasPanel":4,"cropPhysical":{"x":632,"y":1321,"width":86,"height":94}}
+  ],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW",
+  "comparisons": [
+    {"name":"desktop","changedFromNeutral":[597,540,597,0],"changedLowerHalfFromNeutral":[0,0,0,0],"changedShallowOutVsBack":0},
+    {"name":"mobile","changedFromNeutral":[2360,2136,2360,0],"changedLowerHalfFromNeutral":[0,0,0,0],"changedShallowOutVsBack":0},
+    {"name":"portrait-large","changedFromNeutral":[600,544,600,0],"changedLowerHalfFromNeutral":[0,0,0,0],"changedShallowOutVsBack":0}
+  ]
+}

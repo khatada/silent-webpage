@@ -1,4 +1,4 @@
-import { Rectangle, Sprite, Texture } from 'pixi.js';
+import { Rectangle, RenderTexture, Sprite, Texture, type Renderer } from 'pixi.js';
 import type { CatPose } from './animation';
 import { generatedArt } from './generated-art';
 import { walkingFrame } from './walking-timing';
@@ -7,8 +7,10 @@ type Frame = readonly [number, number, number, number];
 
 /** Shared production/preview compositor. Every visible pixel comes from reviewed generated images. */
 export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Texture, back: Texture, lift: Texture,
-  groomAtlas?: Texture, settleAtlas?: Texture, stretchAtlas?: Texture, stretchMid?: Texture, turnAtlas?: Texture) {
+  groomAtlas?: Texture, settleAtlas?: Texture, stretchAtlas?: Texture, stretchMid?: Texture, turnAtlas?: Texture,
+  look?: { atlas: Texture; renderer: Renderer }) {
   const textures: Texture[] = [];
+  const ownedSeatedTextures: RenderTexture[] = [];
   const frame = (source: Texture, rectangle: Frame, foot: number, normalization = 1) => {
     const texture = new Texture({ source: source.source, frame: new Rectangle(...rectangle) });
     textures.push(texture);
@@ -22,7 +24,21 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
     selected.horizontalAnchor = (spec.nose - 90 / normalization) / spec.rect[2];
     return selected;
   });
-  const sitting = frame(atlas, generatedArt.frames.sitting, 138);
+  let sitting = frame(atlas, generatedArt.frames.sitting, 138);
+  const looking = look ? [sitting, frame(look.atlas, [0, 0, 108, 139], 138),
+    frame(look.atlas, [108, 0, 108, 139], 138)].map(selected => {
+    // Equal full-frame UVs prevent identical body pixels sampling differently
+    // when switching between the original atlas and the generated head poses.
+    const texture = RenderTexture.create({ width: 108, height: 139, resolution: 1 });
+    texture.source.scaleMode = 'nearest';
+    const source = new Sprite(selected.texture);
+    source.roundPixels = true;
+    look.renderer.render({ container: source, target: texture, clear: true });
+    source.destroy();
+    ownedSeatedTextures.push(texture);
+    return { ...selected, texture };
+  }) : [];
+  sitting = looking[0] ?? sitting;
   const rest = generatedArt.catRest;
   const groomOne = frame(restAtlas, rest.groomOne, 175, rest.normalization);
   const groomTwo = frame(restAtlas, rest.groomTwo, 172, rest.normalization);
@@ -68,7 +84,8 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
       const turnPose = pose.turnFrame === 7 ? walking[walkingFrame(pose.x, turnDirection, sceneScale)]
         : pose.turnFrame !== undefined ? turning[pose.turnFrame] : undefined;
       const selected = turnPose ?? (pose.frame < 4 ? walking[walkingFrame(pose.x, pose.direction, sceneScale)]
-        : (groomPose && pose.groomFrame !== undefined ? grooming[pose.groomFrame] : undefined)
+        : (pose.frame === 4 && pose.lookFrame !== undefined ? looking[pose.lookFrame + 1] : undefined)
+          ?? (groomPose && pose.groomFrame !== undefined ? grooming[pose.groomFrame] : undefined)
           ?? (pose.frame === 7 && pose.settleFrame !== undefined ? settling[pose.settleFrame] : undefined)
           ?? (pose.frame === 8 && pose.stretchFrame !== undefined ? stretching[pose.stretchFrame] : undefined)
           ?? poses[pose.frame] ?? sitting);
@@ -79,6 +96,9 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
       art.position.set(pose.x, footY);
       // No breathing deformation: the reviewed curled frame is held still.
     },
-    destroy() { for (const texture of textures) texture.destroy(false); },
+    destroy() {
+      for (const texture of textures) texture.destroy(false);
+      for (const texture of ownedSeatedTextures) texture.destroy(true);
+    },
   };
 }

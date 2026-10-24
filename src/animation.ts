@@ -21,6 +21,7 @@ export interface CatPose {
   groomFrame?: GroomFrame; settleFrame?: 0 | 1 | 2 | 3 | 4 | 5;
   turnFrame?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
   stretchFrame?: 0 | 1 | 2 | 3 | 4 | 5;
+  lookFrame?: 0 | 1;
 }
 
 // Passing poses are short; licking, wiping and the final lowered paw hold longer.
@@ -42,6 +43,11 @@ export function catPose(seconds: number, width: number, sceneScale = 1): CatPose
   const distance = width * 0.5;
   const walkDuration = Math.min(18, Math.max(2, distance / (32 * size)));
   const walking = leg < walkDuration;
+  const available = 21 - walkDuration;
+  const lookDuration = Math.min(6, available - 1.5);
+  const lookStart = walkDuration + (available - lookDuration) / 2;
+  const looking = lookDuration >= 3 && leg >= lookStart && leg < lookStart + lookDuration;
+  const lookProgress = (leg - lookStart) / lookDuration;
   const progress = outward ? Math.min(leg / walkDuration, 1) : 1 - Math.min(leg / walkDuration, 1);
   let frame: number;
   if (walking) frame = Math.floor(leg * 4) % 4;
@@ -53,6 +59,7 @@ export function catPose(seconds: number, width: number, sceneScale = 1): CatPose
     x: Math.round(width * (0.25 + 0.5 * progress)),
     direction: outward ? 1 : -1,
     frame,
+    ...(looking ? { lookFrame: lookProgress < 0.25 || lookProgress >= 0.75 ? 0 as const : 1 as const } : {}),
     ...(leg >= catTurnStart ? { turnFrame: turningSteps.find(([end]) => leg < end)![1] } : {}),
     breath: frame === 7 && leg >= 26 && leg < 28.5 ? 0.5 : 0,
     ...(leg >= 21 && leg < 25 ? { groomFrame: groomingSteps.find(([end]) => leg < end)![1] } : {}),

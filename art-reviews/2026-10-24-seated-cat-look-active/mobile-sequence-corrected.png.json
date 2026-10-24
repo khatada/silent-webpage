@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-24-seated-cat-look-active/mobile-sequence-source.png",
+    "width": 860,
+    "height": 188,
+    "sha256": "0845efef8c273442ade1cd31fb5f8154aa59cdf9c120bfe4909389f6b4a716b5"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-24-seated-cat-look-active/mobile-sequence-corrected.png",
+    "width": 860,
+    "height": 188,
+    "sha256": "0845efef8c273442ade1cd31fb5f8154aa59cdf9c120bfe4909389f6b4a716b5"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

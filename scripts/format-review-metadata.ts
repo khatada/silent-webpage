@@ -6,7 +6,7 @@ export async function formatReviewMetadata(path: string) {
   function format(value: unknown, depth = 0, location = ''): string {
     if (value === null || typeof value !== 'object') return JSON.stringify(value);
     const indent = '  '.repeat(depth), childIndent = `${indent}  `;
-    const compactChildren = location === 'metadata.samples' || location === 'metadata.layouts';
+    const compactChildren = location === 'metadata.samples' || location === 'metadata.layouts' || location === 'metadata.comparisons';
     const child = (entry: unknown, key: string) => compactChildren ? JSON.stringify(entry)
       : format(entry, depth + 1, location ? `${location}.${key}` : key);
     if (Array.isArray(value)) {
