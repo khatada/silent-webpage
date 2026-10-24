@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-24-rooftop-plant/composed-input.png",
+    "width": 240,
+    "height": 112,
+    "sha256": "724fedd080144f66958fd8ed72b20964f9e7cbc6320109870d4544477b79df89"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-24-rooftop-plant/candidate-corrected.png",
+    "width": 240,
+    "height": 112,
+    "sha256": "2cca41725d3dfa5b7f21773ad08aab72766b6d825002b7782691a6a99c942858"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

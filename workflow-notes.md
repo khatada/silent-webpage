@@ -113,3 +113,5 @@
 - 原画で同じRGBAでも、別atlasのsubtextureではnearest縮小のUV境界で異なるpixelが選ばれることがある。切替対象すべて（既存の中立も含む）を同寸法native RenderTextureへ一度描画し、倍率.25/.375/.5/.625と左右で合成を比較してから全景を撮る。RenderTextureの所有と破棄は共有Assetsと分離する。
 
 - 同じTextureでも縮小nearestの境界は絶対描画位置で変わる場合があるため、並列panelの画像差をそのまま姿勢差と断定しない。固定位置でrender/extractしたsnapshot同士を比較してから、画像を1:1でatlasへ配置する。PNGのRGBA完全一致は全byteを比較し、alpha差0のImageChops.getbboxだけでRGB一致を断定しない。
+
+- 新しい屋上小物は、端にある焼込み素材を動かす前に11構図の可視範囲と支持面を調べる。画面外の端鉢を修復するより、空いた床へ独立した生成素材を置く方が変更範囲を限定できる場合がある。preflightの寸法/足元/猫との間隔は最終合成の採用とは分けて記録する。

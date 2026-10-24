@@ -1,0 +1,30 @@
+{
+  "method": "Independent decoded pixel membership comparison against nearest sampled original and neutral base after declared alpha deletion; fixed pot/stem/third upper regions checked separately.",
+  "generatedSize": [
+    1836,
+    857
+  ],
+  "samples": [
+    {
+      "frame": 0,
+      "pixelsOutsideGeneratedOrBaseAtSameCoordinate": 0,
+      "fixedPotChanged": 0,
+      "fixedStemChanged": 0,
+      "thirdUpperChanged": 0
+    },
+    {
+      "frame": 1,
+      "pixelsOutsideGeneratedOrBaseAtSameCoordinate": 0,
+      "fixedPotChanged": 0,
+      "fixedStemChanged": 0,
+      "thirdUpperChanged": 0
+    },
+    {
+      "frame": 2,
+      "pixelsOutsideGeneratedOrBaseAtSameCoordinate": 0,
+      "fixedPotChanged": 0,
+      "fixedStemChanged": 0,
+      "thirdUpperChanged": 0
+    }
+  ]
+}

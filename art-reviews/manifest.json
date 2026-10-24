@@ -830,6 +830,35 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "本番ページを実際のRAFで進めた3端末の全景/5コマnative atlasを補正後に親/担当LLMが実閲覧し採用。中立→浅向き→横目→浅向き→中立の順と腰・尾・後足の固定を確認。3端末とも元姿勢の前後と浅向き往復のRGBA全byte一致、atlas下半身12比較差分0。座標hookなし、最終RAFが要求時刻に先行する制約はmetadataへ明記。"
+    },
+    {
+      "image": "public/art/rooftop-plant.png",
+      "report": "public/art/rooftop-plant.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後240×112の3姿勢と20×28/30×42/40×56/50×70の実寸4倍context全域を実閲覧し素材採用。暗い青緑の7葉、地味な鉢、固定した幹/枝/鉢を保持。追加葉、旧葉残像、孤立色ノイズ、明るいhaloを認めない。最小20×28では変化は微細だが外葉の輪郭が読める。大きな倍率では小さな葉先の違いが明確。原画全体の3姿勢は鉢/幹の微差と右の追加葉があるため採用せず、宣言した限定部分編集のみ採用。 素材のみ採用、本番表示は後続PRで別途検証。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "724fedd080144f66958fd8ed72b20964f9e7cbc6320109870d4544477b79df89",
+        "correctionInputKind": "permitted-partial-edit-of-generated-image",
+        "generatedOriginal": "art-reviews/2026-10-24-rooftop-plant/generated-source.png",
+        "generatedOriginalSha256": "aa0888ee36e42790b688691d4914d3a4419ae1670a6bff4c447bfa80bd5dcded",
+        "partialEditScript": "art-reviews/2026-10-24-rooftop-plant/compose-material.py",
+        "partialEditReport": "art-reviews/2026-10-24-rooftop-plant/partial-edit-report.json",
+        "prompt": "Create original fine PIXEL ART sprite material for a quiet Tokyo rooftop at night, matching the dark blue-green potted plants in the two attached style references. THREE equal cells side by side on fully transparent background, no labels or dividers. Each cell depicts the SAME small single potted houseplant at identical size and exact identical foot baseline. Pose order: still / very gentle breeze left / very gentle breeze right. Output a wide spritesheet, requested 960x448 pixels, three 320x448 cells. Plant center x=160 in each cell, flat pot bottom y=443, whole plant from y=8 to443, clear margins. The finished game sprite will be 80x112 pixels per cell, so use crisp 4x4 square pixels with broad readable leaf silhouettes, no smoothing. A modest compact charcoal-brown clay pot occupies bottom third y=312..443: slightly tapered sides, tiny rim, subtle vertical texture, NO pattern or text. An upright fixed main stem and 3 short branches support a small airy cluster of about 8 broad oval pointed leaves, blue-green/indigo, some overlap and clear gaps. No flowers. Same dark subdued palette as reference; low contrast soft blue-violet shading, tiny muted warm accent on one pot edge. NO bright highlights, NO glow, NO white edges, NO halo, NO cast shadow outside the sprite. The pot, soil, main stem and branch bases must be EXACTLY IDENTICAL in all three poses. Only leaf tips and outer halves of broad leaves move, by about 8 to12 image pixels (=2 to3 final logical pixels) left or right; no full plant translation, no scaling, no rotating pot or stem. All leaf bases attach to fixed branches. Calm natural breeze, leaf poses clearly differ in silhouette but very small displacement. Keep the full canopy inside each cell and all three pots exactly aligned. Reference images are style cues only: draw just one coherent small plant per cell, no railing, wall, ground, existing scene, extra pots, hanging vines, or light sources. Transparent RGBA.",
+        "references": [
+          "art-reviews/2026-10-24-rooftop-plant/normal-style-reference.png",
+          "art-reviews/2026-10-24-rooftop-plant/portrait-style-reference.png"
+        ],
+        "provenanceNote": "originalSha256 identifies the correction input after permitted partial editing; generatedOriginalSha256 identifies unchanged imagegen output. Selected leaf pixels, fixed neutral regions and alpha deletion are fully described by compose-material.py. No artwork or visible colors drawn."
+      }
+    },
+    {
+      "image": "art-reviews/2026-10-24-rooftop-plant/material-context-corrected.png",
+      "report": "art-reviews/2026-10-24-rooftop-plant/material-context-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後4倍率×3姿勢の生成済み床上比較を親/担当LLMが実閲覧し素材の可読性として採用。最小20×28でも外葉差を判別、鉢/茎固定、明るい縁や孤立ノイズなし。本番の位置/接地/猫との前後/実際のGPU切替は後続表示PRで採用する。"
     }
   ]
 }

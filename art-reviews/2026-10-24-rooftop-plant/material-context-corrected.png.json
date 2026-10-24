@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-24-rooftop-plant/material-context-input.png",
+    "width": 864,
+    "height": 1408,
+    "sha256": "f99a39c16535cb007755b07f58e628ccafe834c74cee50f40d4d8d947241ce9c"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-24-rooftop-plant/material-context-corrected.png",
+    "width": 864,
+    "height": 1408,
+    "sha256": "80b196f9daa0010742a61e0414651b54f4e8dc1294bc6c44727b20c8108cc855"
+  },
+  "grid": {
+    "cellSize": 4,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 4
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
