@@ -1,0 +1,71 @@
+{
+  "method": "Decoded RGBA byte comparison; initial scene remains walking, seated changes require separate motion QA.",
+  "samples": [
+    {
+      "image": "compact-corrected.png",
+      "previous": "art-reviews/residential-window-scenes/compact-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "07de2a359f0ef65837c0791bc234f675779b532a43dfeae663272afa13cdde22"
+    },
+    {
+      "image": "desktop-corrected.png",
+      "previous": "art-reviews/residential-window-scenes/desktop-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "28c3c2b1a09ea06bc5429b87903cb819a8696cec793e79814658f2c82f72c30e"
+    },
+    {
+      "image": "landscape-corrected.png",
+      "previous": "art-reviews/residential-window-scenes/landscape-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "d8d00fb784bae0113f66a2661af3325e760780f4a5a3b8443428107b8903118c"
+    },
+    {
+      "image": "mobile-corrected.png",
+      "previous": "art-reviews/residential-window-scenes/mobile-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "69f448d4e99df33dec921391463f8e68bc2fa821eac781db734a0f801a54e1a2"
+    },
+    {
+      "image": "narrow-corrected.png",
+      "previous": "art-reviews/residential-window-scenes/narrow-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "747e8aa65907f61501360e1b1fb5291275d5a559dffdcf2015c24e0581676eee"
+    },
+    {
+      "image": "portrait-boundary-corrected.png",
+      "previous": "art-reviews/residential-window-scenes/portrait-boundary-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "f557226e5dc2da5700fece3c2b2987087c1dbb3b9e28fd6a32f2150288408c0b"
+    },
+    {
+      "image": "portrait-large-corrected.png",
+      "previous": "art-reviews/residential-window-scenes/portrait-large-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "7897de2436efbc1e2fc308ace430ed269aa36175de38c878ad80f05463268a3f"
+    },
+    {
+      "image": "small-mobile-corrected.png",
+      "previous": "art-reviews/residential-window-scenes/small-mobile-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "d8c452213b9ee839ee7db9815ac6e0d142033642c99d6a314f03bc31105169f8"
+    },
+    {
+      "image": "small-phone-corrected.png",
+      "previous": "art-reviews/residential-window-scenes/small-phone-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "12137f76423c237b49e622e26015aa72c0c7ce0c11f719b6e92c7f89451b0acb"
+    },
+    {
+      "image": "tall-corrected.png",
+      "previous": "art-reviews/residential-window-scenes/tall-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "6f969c9562c53f7a3eb0c3d4cc78277f0c5430b43acd5611226b8cd72749e6fd"
+    },
+    {
+      "image": "wide-corrected.png",
+      "previous": "art-reviews/residential-window-scenes/wide-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "49a08b6a54a5b93f2108a4d1b9118493bf0f4a1a7a8900f4c42a0e8a7838249e"
+    }
+  ]
+}

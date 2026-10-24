@@ -2,6 +2,30 @@ import { describe, expect, it } from 'vitest';
 import { catLegDuration, catPeriod, catTurnStart, catPose, travelPosition, windowBrightness } from './animation';
 
 describe('city animation timing', () => {
+  it('looks around once while seated, holding the clear glance between two passing poses', () => {
+    // width 640 / scale 1 finishes walking at 10s: centered six-second glance starts at 12.5s.
+    for (const offset of [-catPeriod, 0, catLegDuration, catPeriod]) {
+      for (const [time, expected] of [[12.4999, undefined], [12.5, 0], [13.9999, 0],
+        [14, 1], [16.9999, 1], [17, 0], [18.4999, 0], [18.5, undefined]] as const) {
+        const pose = catPose(time + offset, 640);
+        expect(pose.lookFrame).toBe(expected);
+        expect(pose.frame).toBe(4);
+        expect(pose.x).toBe(catPose(12 + offset, 640).x);
+      }
+    }
+  });
+  it('shortens a glance to the seated time available and omits it when a calm pause cannot fit', () => {
+    // A 16s walk leaves 5s seated: 3.5s glance plus .75s of stillness on either side.
+    expect(catPose(16.7499, 1024).lookFrame).toBeUndefined();
+    expect(catPose(16.75, 1024).lookFrame).toBe(0);
+    expect(catPose(18.5, 1024).lookFrame).toBe(1);
+    expect(catPose(20.25, 1024).lookFrame).toBeUndefined();
+    for (let time = 0; time < catPeriod; time += 0.125) {
+      expect(catPose(time, 1280).lookFrame).toBeUndefined();
+      const pose = catPose(time, 640);
+      if (pose.frame !== 4) expect(pose.lookFrame).toBeUndefined();
+    }
+  });
   it('keeps vehicles continuous within the visible area and wraps beyond its edges', () => {
     expect(travelPosition(1, 640, 116, 10, 80) - travelPosition(0, 640, 116, 10, 80)).toBe(10);
     for (let seconds = 0; seconds < 1000; seconds++) {

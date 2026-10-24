@@ -4,6 +4,7 @@ export const generatedArt = {
   background: 'art/tokyo-night.png',
   atlas: 'art/night-sprites.png',
   catRestAtlas: 'art/cat-rest.png',
+  catLookAtlas: 'art/cat-look.png',
   catGroomAtlas: 'art/cat-groom.png',
   catSettleAtlas: 'art/cat-settle.png',
   catStretchAtlas: 'art/cat-stretch.png',

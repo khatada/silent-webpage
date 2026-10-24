@@ -24,7 +24,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas, lookAtlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -45,14 +45,14 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${steamArt.image}`),
     Assets.load<Texture>(`${baseUrl}${meteorArt.image}`),
     Assets.load<Texture>(`${baseUrl}${laundryArt.image}`),
+    Assets.load<Texture>(`${baseUrl}${generatedArt.catLookAtlas}`),
   ]);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
   portraitBackground.source.scaleMode = 'nearest';
   atlas.source.scaleMode = 'nearest';
   restAtlas.source.scaleMode = 'nearest';
-  for (const image of [walkAtlas, back, lift, groomAtlas, settleAtlas, stretchAtlas, stretchMid, turnAtlas]) image.source.scaleMode = 'nearest';
-  const imageCat = createImageCat(atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, stretchAtlas, stretchMid, turnAtlas);
+  for (const image of [walkAtlas, back, lift, groomAtlas, settleAtlas, stretchAtlas, stretchMid, turnAtlas, lookAtlas]) image.source.scaleMode = 'nearest';
   const imageStreetCar = createImageStreetCar(streetCar, [background, wideBackground, portraitBackground]);
   const imageCurtain = createImageCurtain(curtainAtlas);
   const imageFan = createImageFan(fanAtlas, [background, portraitBackground]);
@@ -100,6 +100,8 @@ export async function createScene(host: HTMLElement): Promise<{
   const app = new Application();
   await app.init({ width: 768, height: 512, antialias: false, resolution: 1,
     background: '#101326', preference: 'webgl', autoStart: false });
+  const imageCat = createImageCat(atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas,
+    stretchAtlas, stretchMid, turnAtlas, { atlas: lookAtlas, renderer: app.renderer });
   const canvas = app.canvas;
   canvas.setAttribute('role', 'img');
   canvas.setAttribute('aria-label', '星が瞬く東京の夜景。電車と飛行機がゆっくり行き交い、屋上で猫が歩き、毛づくろいをしたり丸くなって休んだりしながら、窓の灯りが移ろいます。');

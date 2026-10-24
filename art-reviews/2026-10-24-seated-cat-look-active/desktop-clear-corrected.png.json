@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-24-seated-cat-look-active/desktop-clear-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "db3fa2b63f06350abbac26eeda138e44dc205ea097f029c5afccb35c20ad2aca"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-24-seated-cat-look-active/desktop-clear-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "7711eb178ebdf2fbfe43d83976b8b103470d20034b1de3c75b92c80346b2086b"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
