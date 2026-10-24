@@ -1,0 +1,52 @@
+{
+  "sourceSha256": "17e8a6a640d6f8966073ca9e099316acdf3019d3b4f1b0799053f36614ded69a",
+  "method": "Corrected RGBA; each state against the same whole-background RenderTexture crop sampling phase. Actors use no-actor reference at the same light state.",
+  "curtainOff": "Existing 92% cover retains 8% curtain color inside the window; not a complete blackout.",
+  "results": [
+    {
+      "name": "normal",
+      "comparisons": 81,
+      "outsideChanges": 0,
+      "litChanges": 0,
+      "offChanges": 4812,
+      "offMaxChannelDelta": 195,
+      "changedPixels": 9624
+    },
+    {
+      "name": "wide",
+      "comparisons": 81,
+      "outsideChanges": 0,
+      "litChanges": 0,
+      "offChanges": 2592,
+      "offMaxChannelDelta": 218,
+      "changedPixels": 5184
+    },
+    {
+      "name": "portrait",
+      "comparisons": 81,
+      "outsideChanges": 0,
+      "litChanges": 0,
+      "offChanges": 7243,
+      "offMaxChannelDelta": 205,
+      "changedPixels": 14486
+    },
+    {
+      "name": "resident",
+      "comparisons": 54,
+      "outsideChanges": 0,
+      "litChanges": 0,
+      "offChanges": 0,
+      "offMaxChannelDelta": 0,
+      "changedPixels": 1851
+    },
+    {
+      "name": "curtain",
+      "comparisons": 54,
+      "outsideChanges": 0,
+      "litChanges": 0,
+      "offChanges": 2278,
+      "offMaxChannelDelta": 17,
+      "changedPixels": 7239
+    }
+  ]
+}

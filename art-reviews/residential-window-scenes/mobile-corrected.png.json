@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/residential-window-scenes/mobile-source.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "720899180b107d3b1cc66dbb6f8b25cd7c4d5b8f63c9bfdab95d481ee33fe9a8"
+  },
+  "output": {
+    "path": "art-reviews/residential-window-scenes/mobile-corrected.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "aa5cc108d795870a9a071deef7f0838ab825ae494e81276f72a4691141a835e3"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

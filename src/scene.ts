@@ -14,6 +14,7 @@ import { createImageLaundry, laundryArt } from './image-laundry';
 import { createImageUpperCloud } from './image-upper-cloud';
 import { createImageSkylineLights } from './image-skyline-lights';
 import { createImageStars } from './image-stars';
+import { createWindowCover } from './image-window-cover';
 
 type Frame = readonly [number, number, number, number];
 
@@ -191,10 +192,8 @@ export async function createScene(host: HTMLElement): Promise<{
         curtain = imageCurtain.createSprite([x, y, w, h], scale, originX, originY);
         app.stage.addChild(curtain);
       }
-      const art = sprite(textures.darkWall);
-      art.position.set(sourceX(x), sourceY(y));
-      art.width = w * scale;
-      art.height = h * scale;
+      const art = createWindowCover(textures.darkWall, [x, y, w, h], scale, originX, originY);
+      app.stage.addChild(art);
       return art;
     });
     roadCar = imageStreetCar.createSprite(layout.portrait ? 2 : layout.wide ? 1 : 0, scale, originX, originY);

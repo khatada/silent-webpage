@@ -1,0 +1,31 @@
+{
+  "sourceSha256": "17e8a6a640d6f8966073ca9e099316acdf3019d3b4f1b0799053f36614ded69a",
+  "method": "Unmodified production page; Playwright clock paused at0 then runFor12000ms with reduced motion disabled. No scene hooks or new artwork.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW",
+  "screens": [
+    {
+      "name": "desktop",
+      "viewport": [
+        1440,
+        900
+      ],
+      "dpr": 1
+    },
+    {
+      "name": "mobile",
+      "viewport": [
+        390,
+        844
+      ],
+      "dpr": 2
+    },
+    {
+      "name": "small-phone",
+      "viewport": [
+        320,
+        568
+      ],
+      "dpr": 2
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/residential-window-sampling/portrait/atlas-source.png",
+    "width": 1152,
+    "height": 1536,
+    "sha256": "b592c5e337b4a85073ac127193b3f15d4d4d4960abef21fdde049bdfd55e33d3"
+  },
+  "output": {
+    "path": "art-reviews/residential-window-sampling/portrait/atlas-corrected.png",
+    "width": 1152,
+    "height": 1536,
+    "sha256": "4bf828232ee3264fa973f0dd8754c149cf3a8467ceb717d4b190a3365c77f6a8"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
