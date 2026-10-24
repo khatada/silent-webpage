@@ -1,10 +1,11 @@
 # 実装の進行状況
 
-最終更新: 2026-10-23。別セッションの実装再開用。
+最終更新: 2026-10-24。別セッションの実装再開用。
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `feat/skyline-window-lights`、worktree `/workspace/silent-webpage-skyline-lights`。最新main5fd1d0fからユーザー指定の奥のビルの窓点消灯を開始。標準/横/縦で各6窓の灯りの芯を同建物の暗い室内cropで減光。初期全点灯後、時間差で穏やかに変わる方針。実装/局所3画像（162状態+54原画参照）を補正後親/担当LLM採用。162比較で窓外変更0、点灯54組は原画RGBA完全一致。sourcea58f0c165f4b0fcbc22e0fd05b4d41dfbd7bb5408c62de087c3ef74cc4d001e7。11初期全景と本番12秒後2画面も補正後LLM採用。初期11全RGBAは前版一致。verify/commit/push/PR/CI/merge/Pagesが残る。住宅の対象改善・星の分布は後続PRで対応する。
+- ブランチ: `feat/distributed-star-twinkle`、worktree `/workspace/silent-webpage-stars`。最新maind3e034cからユーザー指定の星の瞬き改善を開始。明るい孤立した星の候補は標準14/横16/縦15、上空へ分散し狭い構図でも残るものを選ぶ。背景共通rootと近傍暗空cropで半倍率の丸めずれを避ける。星の実装/QAで半縮小の1pxcoreが背景で間引かれたのにoverlayが隣を暗くする例を検出、sampling survival guardを追加中。独立レビューで375正方形/600x750等のwide中央cropに対象0の例も検出し、wide[412,54]追加/portrait[538,496]置換を実閲覧選定。45点のsampling QA405比較は範囲外/変更元core不一致0、17実描画coverageを確認。最大.75減光はportraitの中心抜けを理由に不採用。比較後.45を親/担当LLMが採用、最終10局所画像を親も無変形連結で全域実閲覧。sourcee9a8d44dd0d9e35e3857c20c019ac31b7c8a7a0c986ba54f93bceffdb500e62bで凍結、coverage17/11全景/本番2画面の証跡を再開。旧stars-motion/final/samplingは調査段階の証拠、最終10局所/17coverage/11全景/本番6秒後2画面を補正後LLM採用。405比較で芯外/非芯変更0、最明135組RGBA一致。型/Lint/単体82成功、最終verify/commit/push/PR/CI/merge/Pagesが残る。
+- 遠景ビル窓はPR #44でCI39945488558/job120387001949成功後maind3e034c92ce73318c7f057c4606999aced5dbf32へマージ。verify78テスト/55画像成功。最終sourcea58f0c165f4b0fcbc22e0fd05b4d41dfbd7bb5408c62de087c3ef74cc4d001e7。局所3画像（162状態+54原画参照）/11初期全景/本番12秒後2全景を補正後LLM採用。162比較で窓外変更0、点灯54/初期11は原画/前版RGBA一致。PR添付1回60秒超無応答で中断し成否未確認。Pages39945980693（verify120388628534/publish120389611168）成功で公開済み。
 - C-004上空薄雲はPR #43 latesthead5235bec8f9cc17b4bda9b86d928b6fecbf761aa0のCI39943440096/job120380203717成功後main5fd1d0fbf0fb34ffb5b48b1b15fd946308bb5a43へマージ。verify76テスト/50画像成功。最終sourceacdd68a59ea1de7112ea48c19e3f662007067a439cf56d11b115c97e897877a6。補正後33局所/11全景LLM採用、窓外ではなく雲の範囲外変更0、省略4全RGBA一致。重複JSONを整理しPR全体1335追加行へ縮小。PR添付No handler registered。Pages39943853186（verify120381565919/publish120382586268）成功で公開済み。
 - C-005表示はPR #42でCI39907985438/job120264223421成功後main0528f30e063c718fb1322091d716e44a5dbcc239へマージ。verify74テスト/49画像成功。30局所パネル・11初期全景・5秒後PC/縦全景を補正後LLM採用、24比較で範囲外変更/固定上端差分0。描画sourcefac96a017eb3a57b60dcda3760d91dd3755f54df6f5b72d36e514bed6dbdebfa。PR添付No handler registered。Pages39908223631（verify120264970505/publish120265794483）成功で公開済み。
 - C-005素材はPR #41でCI39906234505成功後main1f5c9da759890fa2c1e6073c7b560629998bc446へマージ。不要接続部の4小領域を削除し4px補正後に親/担当LLM素材採用、範囲外1566768画素RGBA一致/描き足し0を独立確認。最終素材SHAdeeb1f3251eb6fe04afc3fc7f1ccab303a3348f59655cab19f563e776124b1f5。verify72テスト/46画像成功。素材PRは23ファイル/403追加行。PR添付No handler registeredで失敗、Pages39906598876成功で素材公開済み。
@@ -28,7 +29,8 @@
 - PR #26: 単体41件とverify成功、素材8枚＋全景11枚＋歩行/実移動atlasの20画像を補正・LLM採用。CI 39687474902成功。Pages 39687834998も成功、公開済み。
 - 画像生成の初回8枚は中間不足で不採用。v2の6枚と個別追加した後方支持・回収で8姿勢。原画・補正・部分参照編集・不採用理由も保存済み。
 - PR #26添付: codex_app.attach_artifactを親・補助とも呼び出したが長時間応答なく中断。GitHubのPR作成・マージは成功済み。添付成否は未確認で開発は妨げない。
-- 次: 遠景ビル窓→住宅の対象/位相→星の対象分布と明度を小PRで対応。ユーザー追加指示を優先し、車の小休止案は保留。
+- ユーザー追加指示（2026-10-24）: 電車を今より速くする。requirementsへ記録し、星のPR後に速度変更を独立小PRで実装する。速度倍率はエージェントの仮定として選び、原画や経路を変えず連続出入りを確認する。
+- 次: 星の分布/明度/半倍率sampling修正を優先（住宅9窓は既に動作し、星には具体的な丸めずれリスクあり）。その後住宅の見え方/座標を点検し必要な改善を小PR化。ユーザー追加指示を優先、車の小休止案は保留。
 - ユーザーの停止指示はなく継続改善は有効。旧stashは古いdocsを含むため一括適用しない。
 
 ## 決定事項

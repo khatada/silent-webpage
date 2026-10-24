@@ -13,6 +13,7 @@ import { createImageMeteor, meteorArt } from './image-meteor';
 import { createImageLaundry, laundryArt } from './image-laundry';
 import { createImageUpperCloud } from './image-upper-cloud';
 import { createImageSkylineLights } from './image-skyline-lights';
+import { createImageStars } from './image-stars';
 
 type Frame = readonly [number, number, number, number];
 
@@ -79,6 +80,8 @@ export async function createScene(host: HTMLElement): Promise<{
     cloud: crop(atlas, generatedArt.frames.cloud),
   };
   const imageUpperCloud = createImageUpperCloud(frames.cloud);
+  const imageStars = createImageStars([background, wideBackground, portraitBackground]);
+  let stars: ReturnType<typeof imageStars.createSprite>;
   const imageSkylineLights = createImageSkylineLights([background, wideBackground, portraitBackground]);
   let skylineLights: ReturnType<typeof imageSkylineLights.createSprite>;
   const railPoles = (source: Texture, frames: readonly Frame[]) =>
@@ -119,7 +122,6 @@ export async function createScene(host: HTMLElement): Promise<{
   let upperCloud: Sprite;
   let cat: Sprite;
   let windows: Sprite[] = [];
-  let stars: Sprite[] = [];
   const sprite = (texture: Texture) => {
     const art = new Sprite(texture);
     art.roundPixels = true;
@@ -164,13 +166,8 @@ export async function createScene(host: HTMLElement): Promise<{
     backdrop.scale.set(scale);
     skylineLights = imageSkylineLights.createSprite(layout.portrait ? 2 : layout.wide ? 1 : 0, scale, originX, originY);
     app.stage.addChild(skylineLights.root);
-    stars = composition.stars.map(([x, y, w, h]) => {
-      const art = sprite(textures.darkSky);
-      art.position.set(sourceX(x), sourceY(y));
-      art.width = w * scale;
-      art.height = h * scale;
-      return art;
-    });
+    stars = imageStars.createSprite(layout.portrait ? 2 : layout.wide ? 1 : 0, scale, originX, originY);
+    app.stage.addChild(stars.root);
     fan = undefined;
     if (!layout.wide) {
       fan = imageFan.createSprite(layout.portrait ? 1 : 0, scale, originX, originY);
@@ -253,7 +250,7 @@ export async function createScene(host: HTMLElement): Promise<{
     if (curtain) imageCurtain.update(curtain, elapsed);
     if (fan) imageFan.update(fan, elapsed);
     if (resident) imageResident.update(resident, elapsed, residentComposition);
-    stars.forEach((art, index) => { art.alpha = 0.4 + Math.sin(elapsed * 0.24 + index * 1.7) * 0.35; });
+    imageStars.update(stars, elapsed);
     windows.forEach((art, index) => {
       const brightness = windowBrightness(elapsed, 5 + index * 11, 29 + index * 7);
       art.alpha = 0.92 * (1 - brightness);
@@ -302,6 +299,7 @@ export async function createScene(host: HTMLElement): Promise<{
       imageMeteor.destroy();
       imageLaundry.destroy();
       imageSkylineLights.destroy();
+      imageStars.destroy();
       // Assets owns the shared image sources; sprite/crop disposal must not destroy them.
     },
   };

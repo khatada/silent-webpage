@@ -1,0 +1,9 @@
+{
+  "sourceSha256": "e9a8d44dd0d9e35e3857c20c019ac31b7c8a7a0c986ba54f93bceffdb500e62b",
+  "decision": "ACCEPT",
+  "llmActuallyViewed": [
+    "desktop-corrected.png",
+    "portrait-large-corrected.png"
+  ],
+  "reason": "Actual built production page after6000ms, clock installed before navigation. Pixel alignment, sky, star cores, train, windows and cat remain intact. No stray dark patches or hollow centres observed. This two-frame check does not claim every instant of continuous motion."
+}

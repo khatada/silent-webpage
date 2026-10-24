@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-stars-final/normal-2/atlas-source.png",
+    "width": 384,
+    "height": 960,
+    "sha256": "33abbdf7a5df9b267333843e562993b4b506402109f2a25951b8371d33248537"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-stars-final/normal-2/atlas-corrected.png",
+    "width": 384,
+    "height": 960,
+    "sha256": "04e244e3dd30815983c884c260f470793701c0bbd9eef9031dbbbc9170474fad"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

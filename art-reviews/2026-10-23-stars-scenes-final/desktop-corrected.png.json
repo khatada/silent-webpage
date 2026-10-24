@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-stars-scenes-final/desktop-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "a563560c7bc2b270d15a1ab85a60f9a2f2cb01d057ef11ea873caaa2ac19e1d1"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-stars-scenes-final/desktop-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "54e40d92f8b8a6d62f963963254747440cad660d8ebb602bc6d0252b51d25ea5"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

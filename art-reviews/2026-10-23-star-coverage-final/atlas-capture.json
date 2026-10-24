@@ -1,0 +1,30 @@
+{
+  "sourceSha256": "e9a8d44dd0d9e35e3857c20c019ac31b7c8a7a0c986ba54f93bceffdb500e62b",
+  "finalSourceSha256": "e9a8d44dd0d9e35e3857c20c019ac31b7c8a7a0c986ba54f93bceffdb500e62b",
+  "metadata": {
+    "width": 192,
+    "height": 1700,
+    "samples": [
+      {"name":"desktop","viewWidth":1440,"viewHeight":900,"composition":0,"scale":2,"origin":[-48,-76],"skyBottom":124,"seconds":6,"sampled":[{"index":5,"x":660,"y":34},{"index":6,"x":844,"y":36},{"index":8,"x":196,"y":54},{"index":9,"x":532,"y":68},{"index":10,"x":720,"y":54},{"index":11,"x":1232,"y":50},{"index":12,"x":614,"y":108},{"index":13,"x":594,"y":90}],"changed":32,"context":[648,22,24,24],"row":0},
+      {"name":"mobile","viewWidth":390,"viewHeight":844,"composition":0,"scale":2,"origin":[-573,-132],"skyBottom":68,"seconds":6,"sampled":[{"index":9,"x":7,"y":12},{"index":12,"x":89,"y":52},{"index":13,"x":69,"y":34}],"changed":12,"context":[0,0,24,24],"row":1},
+      {"name":"narrow","viewWidth":295,"viewHeight":844,"composition":0,"scale":2,"origin":[-620,-132],"skyBottom":68,"seconds":6,"sampled":[{"index":12,"x":42,"y":52},{"index":13,"x":22,"y":34}],"changed":8,"context":[30,40,24,24],"row":2},
+      {"name":"landscape","viewWidth":844,"viewHeight":390,"composition":1,"scale":2,"origin":[-302,-70],"skyBottom":40,"seconds":6,"sampled":[{"index":6,"x":832,"y":2},{"index":7,"x":682,"y":22},{"index":8,"x":622,"y":18},{"index":9,"x":214,"y":20},{"index":11,"x":522,"y":38},{"index":14,"x":768,"y":16}],"changed":20,"context":[820,0,24,24],"row":3},
+      {"name":"wide","viewWidth":2560,"viewHeight":1080,"composition":1,"scale":5,"origin":[-530,-70],"skyBottom":205,"seconds":6,"sampled":[{"index":5,"x":2035,"y":60},{"index":6,"x":2305,"y":110},{"index":7,"x":1930,"y":160},{"index":8,"x":1780,"y":150},{"index":9,"x":760,"y":155},{"index":10,"x":1210,"y":95},{"index":11,"x":1530,"y":200},{"index":12,"x":5,"y":5},{"index":13,"x":155,"y":45},{"index":14,"x":2145,"y":145},{"index":15,"x":1085,"y":95}],"changed":250,"context":[2023,48,24,24],"row":4},
+      {"name":"compact","viewWidth":800,"viewHeight":600,"composition":1,"scale":3,"origin":[-686,-90],"skyBottom":75,"seconds":6,"sampled":[{"index":7,"x":790,"y":48},{"index":8,"x":700,"y":42},{"index":9,"x":88,"y":45},{"index":10,"x":358,"y":9},{"index":11,"x":550,"y":72},{"index":15,"x":283,"y":9}],"changed":45,"context":[776,36,24,24],"row":5},
+      {"name":"tall","viewWidth":390,"viewHeight":1025,"composition":2,"scale":1,"origin":[-317,-363],"skyBottom":147,"seconds":6,"sampled":[{"index":4,"x":221,"y":133},{"index":8,"x":182,"y":112},{"index":9,"x":107,"y":1},{"index":12,"x":221,"y":43},{"index":13,"x":86,"y":62},{"index":14,"x":263,"y":1}],"changed":5,"context":[209,121,24,24],"row":6},
+      {"name":"portrait-large","viewWidth":900,"viewHeight":1600,"composition":2,"scale":1,"origin":[-62,32],"skyBottom":542,"seconds":6,"sampled":[{"index":0,"x":148,"y":56},{"index":1,"x":424,"y":44},{"index":2,"x":561,"y":86},{"index":3,"x":718,"y":43},{"index":4,"x":476,"y":528},{"index":5,"x":240,"y":325},{"index":6,"x":511,"y":297},{"index":7,"x":724,"y":316},{"index":8,"x":437,"y":507},{"index":9,"x":362,"y":396},{"index":10,"x":567,"y":370},{"index":11,"x":861,"y":373},{"index":12,"x":476,"y":438},{"index":13,"x":341,"y":457},{"index":14,"x":518,"y":396}],"changed":14,"context":[136,44,24,24],"row":7},
+      {"name":"portrait-boundary","viewWidth":1024,"viewHeight":1537,"composition":2,"scale":1,"origin":[0,1],"skyBottom":511,"seconds":6,"sampled":[{"index":0,"x":210,"y":25},{"index":1,"x":486,"y":13},{"index":2,"x":623,"y":55},{"index":3,"x":780,"y":12},{"index":4,"x":538,"y":497},{"index":5,"x":302,"y":294},{"index":6,"x":573,"y":266},{"index":7,"x":786,"y":285},{"index":8,"x":499,"y":476},{"index":9,"x":424,"y":365},{"index":10,"x":629,"y":339},{"index":11,"x":923,"y":342},{"index":12,"x":538,"y":407},{"index":13,"x":403,"y":426},{"index":14,"x":580,"y":365}],"changed":14,"context":[198,13,24,24],"row":8},
+      {"name":"small-phone","viewWidth":320,"viewHeight":568,"composition":2,"scale":0.5,"origin":[-96,-126],"skyBottom":129,"seconds":6,"sampled":[{"index":6,"x":190.5,"y":6.5},{"index":8,"x":153.5,"y":111.5},{"index":13,"x":105.5,"y":86.5}],"changed":2,"context":[178,0,24,24],"row":9},
+      {"name":"small-mobile","viewWidth":375,"viewHeight":667,"composition":2,"scale":0.5,"origin":[-68,-50],"skyBottom":205,"seconds":6,"sampled":[{"index":6,"x":218.5,"y":82.5},{"index":8,"x":181.5,"y":187.5},{"index":13,"x":133.5,"y":162.5}],"changed":2,"context":[206,70,24,24],"row":10},
+      {"name":"square-boundary","viewWidth":375,"viewHeight":375,"composition":1,"scale":2,"origin":[-536,-85],"skyBottom":25,"seconds":6,"sampled":[{"index":11,"x":288,"y":23}],"changed":4,"context":[276,1,24,24],"row":11},
+      {"name":"portrait-fallback-boundary","viewWidth":600,"viewHeight":750,"composition":1,"scale":4,"origin":[-1148,-170],"skyBottom":50,"seconds":6,"sampled":[{"index":11,"x":500,"y":46}],"changed":16,"context":[488,26,24,24],"row":12},
+      {"name":"very-narrow","viewWidth":100,"viewHeight":925,"composition":2,"scale":1,"origin":[-462,-463],"skyBottom":47,"seconds":6,"sampled":[{"index":4,"x":76,"y":33},{"index":8,"x":37,"y":12}],"changed":2,"context":[64,21,24,24],"row":13},
+      {"name":"half-narrow","viewWidth":100,"viewHeight":525,"composition":2,"scale":0.5,"origin":[-206,-169],"skyBottom":86,"seconds":6,"sampled":[{"index":8,"x":43.5,"y":68.5}],"changed":1,"context":[31,56,24,24],"row":14},
+      {"name":"half-wide","viewWidth":100,"viewHeight":100,"composition":1,"scale":0.5,"origin":[-131,-15],"skyBottom":13,"seconds":6,"sampled":[{"index":15,"x":30.5,"y":1.5}],"changed":0,"context":[18,0,24,13],"row":15},
+      {"name":"tiny-discarded","viewWidth":100,"viewHeight":150,"composition":2,"scale":0.14285714285714285,"origin":[-23,-48],"skyBottom":25,"seconds":6,"sampled":[],"changed":0,"context":[0,0,24,24],"row":16}
+    ]
+  },
+  "method": "Image-generation textures composited by /scripts/generated-star-coverage-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

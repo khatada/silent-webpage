@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-23-star-strength-native/atlas-source.png",
+    "width": 480,
+    "height": 800,
+    "sha256": "47e0fdb0baa02914662e0a34420488d3a6768b54b8c482d0c0ec0a1557680b64"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-23-star-strength-native/atlas-corrected.png",
+    "width": 480,
+    "height": 800,
+    "sha256": "77ffa2839c4e95009763dc3a9c16899cd455640052d4472b1b54f7b819535936"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
