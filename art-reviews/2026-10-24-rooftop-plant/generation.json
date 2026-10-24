@@ -1,0 +1,44 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Create original fine PIXEL ART sprite material for a quiet Tokyo rooftop at night, matching the dark blue-green potted plants in the two attached style references. THREE equal cells side by side on fully transparent background, no labels or dividers. Each cell depicts the SAME small single potted houseplant at identical size and exact identical foot baseline. Pose order: still / very gentle breeze left / very gentle breeze right. Output a wide spritesheet, requested 960x448 pixels, three 320x448 cells. Plant center x=160 in each cell, flat pot bottom y=443, whole plant from y=8 to443, clear margins. The finished game sprite will be 80x112 pixels per cell, so use crisp 4x4 square pixels with broad readable leaf silhouettes, no smoothing. A modest compact charcoal-brown clay pot occupies bottom third y=312..443: slightly tapered sides, tiny rim, subtle vertical texture, NO pattern or text. An upright fixed main stem and 3 short branches support a small airy cluster of about 8 broad oval pointed leaves, blue-green/indigo, some overlap and clear gaps. No flowers. Same dark subdued palette as reference; low contrast soft blue-violet shading, tiny muted warm accent on one pot edge. NO bright highlights, NO glow, NO white edges, NO halo, NO cast shadow outside the sprite. The pot, soil, main stem and branch bases must be EXACTLY IDENTICAL in all three poses. Only leaf tips and outer halves of broad leaves move, by about 8 to12 image pixels (=2 to3 final logical pixels) left or right; no full plant translation, no scaling, no rotating pot or stem. All leaf bases attach to fixed branches. Calm natural breeze, leaf poses clearly differ in silhouette but very small displacement. Keep the full canopy inside each cell and all three pots exactly aligned. Reference images are style cues only: draw just one coherent small plant per cell, no railing, wall, ground, existing scene, extra pots, hanging vines, or light sources. Transparent RGBA.",
+  "references": [
+    "art-reviews/2026-10-24-rooftop-plant/normal-style-reference.png",
+    "art-reviews/2026-10-24-rooftop-plant/portrait-style-reference.png"
+  ],
+  "referencePreparation": [
+    {
+      "source": "public/art/tokyo-night.png",
+      "cropLTRB": [
+        596,
+        324,
+        664,
+        430
+      ],
+      "nearestEnlargement": 4
+    },
+    {
+      "source": "public/art/tokyo-portrait.png",
+      "cropLTRB": [
+        772,
+        1056,
+        886,
+        1244
+      ],
+      "nearestEnlargement": 4
+    }
+  ],
+  "requestedCanvas": [
+    960,
+    448
+  ],
+  "actualCanvas": [
+    1836,
+    857
+  ],
+  "original": "art-reviews/2026-10-24-rooftop-plant/generated-source.png",
+  "originalToolPath": "/workspace/generated_images/exec-39f9b634-b24e-422e-95d5-4804f2aefb24.png",
+  "partialEditScript": "art-reviews/2026-10-24-rooftop-plant/compose-material.py",
+  "note": "Actual imagegen result has extra upper leaf in third pose and small pot/stem differences. Only selected generated canopy differences are adopted. Pot, stem, branch network and third-pose upper canopy are copied exactly from neutral.",
+  "generatedOriginalSha256": "aa0888ee36e42790b688691d4914d3a4419ae1670a6bff4c447bfa80bd5dcded",
+  "correctionInputSha256": "724fedd080144f66958fd8ed72b20964f9e7cbc6320109870d4544477b79df89"
+}

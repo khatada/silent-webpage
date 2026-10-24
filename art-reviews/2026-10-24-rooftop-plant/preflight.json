@@ -1,0 +1,223 @@
+{
+  "status": "proposal-preflight-only-not-runtime-adoption",
+  "assumptions": "One new small pot on clear rooftop floor at viewport center. Existing edge plants are unchanged. Source floor roots normal430/portrait1260/wide212 are implementation assumptions, not requirements. Final alpha footprint/scene depth/shadow must be visually reviewed in runtime PR.",
+  "material": {
+    "frame": [
+      80,
+      112
+    ],
+    "foot": 111,
+    "anchorX": 40,
+    "baseLogicalSize": [
+      20,
+      28
+    ],
+    "displayScale": "backgroundScale * actorScale * .25"
+  },
+  "allInBounds": true,
+  "allBehindCat": true,
+  "minimumSize": [
+    20,
+    28
+  ],
+  "samples": [
+    {
+      "name": "desktop",
+      "viewport": [
+        1440,
+        900
+      ],
+      "composition": "normal",
+      "backgroundScale": 2,
+      "actorScale": 1,
+      "sourceFootY": 430,
+      "rootX": 720,
+      "footY": 784,
+      "width": 40,
+      "height": 56,
+      "catFootY": 864,
+      "catDepthGap": 80,
+      "inBounds": true
+    },
+    {
+      "name": "mobile",
+      "viewport": [
+        390,
+        844
+      ],
+      "composition": "normal",
+      "backgroundScale": 2,
+      "actorScale": 1,
+      "sourceFootY": 430,
+      "rootX": 195,
+      "footY": 728,
+      "width": 40,
+      "height": 56,
+      "catFootY": 808,
+      "catDepthGap": 80,
+      "inBounds": true
+    },
+    {
+      "name": "narrow",
+      "viewport": [
+        295,
+        844
+      ],
+      "composition": "normal",
+      "backgroundScale": 2,
+      "actorScale": 1,
+      "sourceFootY": 430,
+      "rootX": 147.5,
+      "footY": 728,
+      "width": 40,
+      "height": 56,
+      "catFootY": 808,
+      "catDepthGap": 80,
+      "inBounds": true
+    },
+    {
+      "name": "landscape",
+      "viewport": [
+        844,
+        390
+      ],
+      "composition": "wide",
+      "backgroundScale": 2,
+      "actorScale": 0.5,
+      "sourceFootY": 212,
+      "rootX": 422,
+      "footY": 354,
+      "width": 20,
+      "height": 28,
+      "catFootY": 374,
+      "catDepthGap": 20,
+      "inBounds": true
+    },
+    {
+      "name": "wide",
+      "viewport": [
+        2560,
+        1080
+      ],
+      "composition": "wide",
+      "backgroundScale": 5,
+      "actorScale": 0.5,
+      "sourceFootY": 212,
+      "rootX": 1280,
+      "footY": 990,
+      "width": 50,
+      "height": 70,
+      "catFootY": 1040,
+      "catDepthGap": 50,
+      "inBounds": true
+    },
+    {
+      "name": "compact",
+      "viewport": [
+        800,
+        600
+      ],
+      "composition": "wide",
+      "backgroundScale": 3,
+      "actorScale": 0.5,
+      "sourceFootY": 212,
+      "rootX": 400,
+      "footY": 546,
+      "width": 30,
+      "height": 42,
+      "catFootY": 576,
+      "catDepthGap": 30,
+      "inBounds": true
+    },
+    {
+      "name": "tall",
+      "viewport": [
+        390,
+        1025
+      ],
+      "composition": "portrait",
+      "backgroundScale": 1,
+      "actorScale": 2,
+      "sourceFootY": 1260,
+      "rootX": 195,
+      "footY": 897,
+      "width": 40,
+      "height": 56,
+      "catFootY": 1007,
+      "catDepthGap": 110,
+      "inBounds": true
+    },
+    {
+      "name": "portrait-large",
+      "viewport": [
+        900,
+        1600
+      ],
+      "composition": "portrait",
+      "backgroundScale": 1,
+      "actorScale": 2,
+      "sourceFootY": 1260,
+      "rootX": 450,
+      "footY": 1292,
+      "width": 40,
+      "height": 56,
+      "catFootY": 1402,
+      "catDepthGap": 110,
+      "inBounds": true
+    },
+    {
+      "name": "portrait-boundary",
+      "viewport": [
+        1024,
+        1537
+      ],
+      "composition": "portrait",
+      "backgroundScale": 1,
+      "actorScale": 2,
+      "sourceFootY": 1260,
+      "rootX": 512,
+      "footY": 1261,
+      "width": 40,
+      "height": 56,
+      "catFootY": 1371,
+      "catDepthGap": 110,
+      "inBounds": true
+    },
+    {
+      "name": "small-phone",
+      "viewport": [
+        320,
+        568
+      ],
+      "composition": "portrait",
+      "backgroundScale": 0.5,
+      "actorScale": 2,
+      "sourceFootY": 1260,
+      "rootX": 160,
+      "footY": 504,
+      "width": 20,
+      "height": 28,
+      "catFootY": 559,
+      "catDepthGap": 55,
+      "inBounds": true
+    },
+    {
+      "name": "small-mobile",
+      "viewport": [
+        375,
+        667
+      ],
+      "composition": "portrait",
+      "backgroundScale": 0.5,
+      "actorScale": 2,
+      "sourceFootY": 1260,
+      "rootX": 187.5,
+      "footY": 580,
+      "width": 20,
+      "height": 28,
+      "catFootY": 635,
+      "catDepthGap": 55,
+      "inBounds": true
+    }
+  ]
+}

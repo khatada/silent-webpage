@@ -1,0 +1,100 @@
+{
+  "method": "Nearest sampling and copying only existing imagegen pixels, with low-alpha deletion. No pixels or colors drawn.",
+  "generatedOriginal": "generated-source.png",
+  "generatedOriginalSha256": "aa0888ee36e42790b688691d4914d3a4419ae1670a6bff4c447bfa80bd5dcded",
+  "correctionInput": "composed-input.png",
+  "correctionInputSha256": "724fedd080144f66958fd8ed72b20964f9e7cbc6320109870d4544477b79df89",
+  "generatedCropLTRB": [
+    [
+      40,
+      -7,
+      640,
+      833
+    ],
+    [
+      652,
+      -7,
+      1252,
+      833
+    ],
+    [
+      1264,
+      -7,
+      1864,
+      833
+    ]
+  ],
+  "nearestTargetSize": [
+    80,
+    112
+  ],
+  "mask": {
+    "leafRegionInclusive": [
+      0,
+      0,
+      79,
+      69
+    ],
+    "fixedStemInclusive": [
+      37,
+      26,
+      43,
+      69
+    ],
+    "fixedPotRows": [
+      70,
+      111
+    ],
+    "branchProtection": "Neutral opaque pixels with R>1.15G and R>1.1B, plus 1px square boundary.",
+    "thirdPoseFixedUpperRows": [
+      0,
+      37
+    ],
+    "alphaDeletionThresholdExclusive": 32
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "maskOutsideChangedPixels": 0,
+      "potRows70Through111ChangedPixels": 0,
+      "mainStemChangedPixels": 0,
+      "lowAlphaSamplesDeletedBeforeComposition": 416
+    },
+    {
+      "frame": 1,
+      "maskOutsideChangedPixels": 0,
+      "potRows70Through111ChangedPixels": 0,
+      "mainStemChangedPixels": 0,
+      "lowAlphaSamplesDeletedBeforeComposition": 453
+    },
+    {
+      "frame": 2,
+      "maskOutsideChangedPixels": 0,
+      "potRows70Through111ChangedPixels": 0,
+      "mainStemChangedPixels": 0,
+      "lowAlphaSamplesDeletedBeforeComposition": 523
+    }
+  ],
+  "foot": 111,
+  "anchorX": 40,
+  "context": {
+    "scales": [
+      0.25,
+      0.375,
+      0.5,
+      0.625
+    ],
+    "displayEnlargement": 4,
+    "floorCrop": [
+      320,
+      424,
+      72,
+      88
+    ],
+    "meaning": "Material readability only; production layout and GPU fixed-pot adoption remain for the runtime PR."
+  },
+  "afterCorrection": {
+    "rgbaChangedFromInput": 0,
+    "visiblePixelsNotCopiedFromGeneratedOriginal": 0
+  }
+}
