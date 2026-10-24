@@ -19,10 +19,10 @@ export function createImageCurtain(source: Texture) {
     const [x, y, width, height] = window;
     const normalization = height / curtainArt.height;
     const sprite = new Sprite(textures[0]);
-    sprite.position.set(Math.round(originX + (x + (width - curtainArt.topWidth * normalization) / 2) * scale),
-      Math.round(originY + y * scale));
+    sprite.position.set(originX + (x + (width - curtainArt.topWidth * normalization) / 2) * scale,
+      originY + y * scale);
     sprite.scale.set(normalization * scale);
-    sprite.roundPixels = true;
+    sprite.roundPixels = false;
     return sprite;
   }
   function update(sprite: Sprite, seconds: number) { sprite.texture = textures[curtainFrame(seconds)]; }

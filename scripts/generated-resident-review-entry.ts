@@ -1,11 +1,14 @@
-import { Application, Assets, Rectangle, Sprite, Texture } from 'pixi.js';
+import { Application, Assets, Rectangle, Texture } from 'pixi.js';
 import { generatedArt } from '../src/generated-art';
+import { createWindowCover } from '../src/image-window-cover';
+import { nativeReviewTransform } from './native-review-transform';
+import { windowReviewBackground } from './window-review-background';
 import { windowBrightness } from '../src/animation';
 import { createImageResident, residentArt } from '../src/image-resident';
 import { residentFrame } from '../src/resident-timing';
 
 /** Compare original and three production poses beneath each actual window's light cycle. */
-export async function renderGeneratedResidentReview(scales: readonly number[] = [1, 4]) {
+export async function renderGeneratedResidentReview(scales: readonly number[] = [0.5, 1, 4]) {
   const compositions = [generatedArt, generatedArt.portrait];
   const [source, ...backgrounds] = await Promise.all([
     Assets.load<Texture>(`/${residentArt.image}`),
@@ -24,7 +27,7 @@ export async function renderGeneratedResidentReview(scales: readonly number[] = 
     const [x, y, w, h] = window;
     const context = [x - 8, y - 8, w + 16, h + 16] as const;
     const background = backgrounds[compositionIndex];
-    const texture = new Texture({ source: background.source, frame: new Rectangle(...context) });
+    const backgroundCrop = windowReviewBackground(app, background);
     const wall = new Texture({ source: background.source, frame: new Rectangle(...composition.darkWall) });
     const lightPhase = 5 + placement.window * 11, lightPeriod = 29 + placement.window * 7;
     const lights = [2 - lightPhase, 0.45 - lightPhase, lightPeriod * 0.57 + 2 - lightPhase];
@@ -33,11 +36,9 @@ export async function renderGeneratedResidentReview(scales: readonly number[] = 
         lights.forEach((lightSeconds, lightIndex) => {
           const column = poseColumn * 3 + lightIndex, row = compositionIndex * scales.length + scaleIndex;
           const panelX = column * 128 + 8, panelY = row * 192 + 24;
-          const rootX = Math.round(panelX - context[0] * scale), rootY = Math.round(panelY - context[1] * scale);
-          const contextX = rootX + context[0] * scale, contextY = rootY + context[1] * scale;
-          const surrounding = new Sprite(texture);
-          surrounding.position.set(contextX, contextY);
-          surrounding.scale.set(scale);
+          const { originX: rootX, originY: rootY, contextX, contextY } =
+            nativeReviewTransform(panelX, panelY, context, scale);
+          const surrounding = backgroundCrop(context, scale, rootX, rootY);
           app.stage.addChild(surrounding);
           const seconds = [0, 9.5, 12][Math.max(0, pose)] - placement.offset;
           const brightness = windowBrightness(lightSeconds, lightPhase, lightPeriod);
@@ -47,10 +48,7 @@ export async function renderGeneratedResidentReview(scales: readonly number[] = 
             sprite.alpha = brightness;
             app.stage.addChild(sprite);
           }
-          const cover = new Sprite(wall);
-          cover.position.set(Math.round(rootX + x * scale), Math.round(rootY + y * scale));
-          cover.width = w * scale;
-          cover.height = h * scale;
+          const cover = createWindowCover(wall, window, scale, rootX, rootY);
           cover.alpha = 0.92 * (1 - brightness);
           app.stage.addChild(cover);
           samples.push({ composition: compositionIndex, index: placement.window, window, context, scale,

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/residential-window-motion/desktop-12-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "abbd6f9deac58b5b43b6e41e9c584ccb8b27a01c87846ec1798fb9076fa2fe6a"
+  },
+  "output": {
+    "path": "art-reviews/residential-window-motion/desktop-12-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "04edd90bb154b7ebcc375e690256e1d5c2bcf031d722ac4900f270c645a4a39b"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

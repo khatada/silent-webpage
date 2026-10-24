@@ -1,61 +1,49 @@
-import { Application, Assets, Rectangle, Sprite, Texture } from 'pixi.js';
+import { Application, Assets, Rectangle, Texture } from 'pixi.js';
 import { windowBrightness } from '../src/animation';
 import { generatedArt } from '../src/generated-art';
+import { createWindowCover } from '../src/image-window-cover';
+import { nativeReviewTransform } from './native-review-transform';
+import { windowReviewBackground } from './window-review-background';
 
-/** Inspect only existing generated pixels and the production window fade; no original artwork is drawn. */
-export async function renderGeneratedWindowReview() {
-  const compositions = [generatedArt, generatedArt.wide, generatedArt.portrait];
-  const backgrounds = await Promise.all(compositions.map(composition =>
-    Assets.load<Texture>(`/${composition.background}`)));
-  for (const texture of backgrounds) texture.source.scaleMode = 'nearest';
+/** Existing generated background crops, with the production sampling phase and fade. */
+async function render(compositionIndex: 0 | 1 | 2) {
+  const composition = [generatedArt, generatedArt.wide, generatedArt.portrait][compositionIndex];
+  const background = await Assets.load<Texture>(`/${composition.background}`);
+  background.source.scaleMode = 'nearest';
+  const darkWall = new Texture({ source: background.source, frame: new Rectangle(...composition.darkWall) });
   const app = new Application();
-  const size = 1152;
-  const panelSize = 128;
-  const scale = 4;
-  const padding = 8;
-  await app.init({ width: size, height: size, resolution: 1, antialias: false,
+  const width = 1152, height = 1536, panelSize = 128, padding = 8;
+  await app.init({ width, height, resolution: 1, antialias: false,
     background: '#171e30', preference: 'webgl', autoStart: false });
   document.body.append(app.canvas);
   const states = [
-    { name: 'original', seconds: 2 },
-    { name: 'half', seconds: 0.45 },
-    { name: 'off', seconds: 20 },
+    { name: 'original', seconds: 2 }, { name: 'on', seconds: 2 },
+    { name: 'half', seconds: 0.45 }, { name: 'off', seconds: 20 },
   ].map(state => ({ ...state, alpha: 0.92 * (1 - windowBrightness(state.seconds, 0, 29)) }));
+  const backgroundCrop = windowReviewBackground(app, background);
   const samples: unknown[] = [];
-  compositions.forEach((composition, compositionIndex) => {
-    const background = backgrounds[compositionIndex];
-    const darkWall = new Texture({ source: background.source, frame: new Rectangle(...composition.darkWall) });
+  [0.5, 1, 4].forEach((scale, scaleIndex) => {
     composition.windows.forEach((window, column) => {
       const [x, y, w, h] = window;
       const context = [x - padding, y - padding, w + padding * 2, h + padding * 2] as const;
-      const contextTexture = new Texture({ source: background.source, frame: new Rectangle(...context) });
       states.forEach((state, stateIndex) => {
-        const row = compositionIndex * states.length + stateIndex;
-        const panelX = column * panelSize;
-        const panelY = row * panelSize;
-        const contextX = panelX + (panelSize - context[2] * scale) / 2;
-        const contextY = panelY + (panelSize - context[3] * scale) / 2;
-        const surrounding = new Sprite(contextTexture);
-        surrounding.roundPixels = true;
-        surrounding.position.set(contextX, contextY);
-        surrounding.scale.set(scale);
+        const row = scaleIndex * states.length + stateIndex;
+        const panelX = column * panelSize, panelY = row * panelSize;
+        const transform = nativeReviewTransform(panelX + 8, panelY + 8, context, scale);
+        const surrounding = backgroundCrop(context, scale, transform.originX, transform.originY);
         app.stage.addChild(surrounding);
-        const cover = new Sprite(darkWall);
-        cover.roundPixels = true;
-        cover.position.set(contextX + padding * scale, contextY + padding * scale);
-        cover.width = w * scale;
-        cover.height = h * scale;
-        cover.alpha = state.alpha;
+        const cover = createWindowCover(darkWall, window, scale, transform.originX, transform.originY);
+        cover.alpha = state.name === 'original' ? 0 : state.alpha;
         app.stage.addChild(cover);
-        samples.push({ row, column, background: composition.background, window, darkWall: composition.darkWall,
-          state: state.name, seconds: state.seconds, alpha: state.alpha, phase: 0, period: 29,
-          context, contextX, contextY, scale });
+        samples.push({ row, column, window, state: state.name, seconds: state.seconds, alpha: cover.alpha,
+          context, ...transform, scale });
       });
     });
   });
   app.renderer.render(app.stage);
   app.canvas.dataset.ready = 'true';
-  return { width: size, height: size, columns: 9, rows: 9, scale, contextPadding: padding,
-    rowOrder: ['normal-original', 'normal-half', 'normal-off', 'wide-original', 'wide-half', 'wide-off',
-      'portrait-original', 'portrait-half', 'portrait-off'], states, samples };
+  return { width, height, panelSize, composition: composition.background, states, samples };
 }
+export const renderNormalWindows = () => render(0);
+export const renderWideWindows = () => render(1);
+export const renderPortraitWindows = () => render(2);

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/residential-window-motion/small-phone-12-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "3847efb598fb236fc8ed00db6dc4b5f2db61e64848dc3f6a4af95ade3783a026"
+  },
+  "output": {
+    "path": "art-reviews/residential-window-motion/small-phone-12-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "561779c29cb95b70f8d68d21293634eebeca9240d8ad2acd1063cec0c9b9497e"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
