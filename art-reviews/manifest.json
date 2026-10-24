@@ -753,6 +753,34 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親/担当LLMが本番12秒後の補正画面を実閲覧し採用。枠内で点消灯し、人影/カーテン連動と周囲の瓦・壁を保持。small-phoneは半倍率の実動作確認。pageerror0、sourcehash一致。"
+    },
+    {
+      "image": "public/art/cat-look.png",
+      "report": "public/art/cat-look.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後216×139素材と既存生成背景上の元座位/浅向き/横目比較（1/.5/.25/.125倍率、4倍表示）を実閲覧。鼻・頬の向きと両目の違いを確認。首の接続に目立つ段差、旧頭残像、光る縁はない。下半身/前脚/尾/接地は元座位RGBA一致。小さな.125では耳や目の細差の判別が弱いため最終表示PRで再評価する。 親LLMも補正素材と背景上の全倍率比較を実閲覧して素材採用。独立再計算で各2frameのmask外/rows58以降RGBA一致、mask内の全画素がnearest生成原画と一致を確認。透明PNG単独表示のalpha0 RGB帯は背景上のalpha合成では表示されない。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "19bde742af37d3eba8516522ffc38bad3375dad7221fbfb6bcbbdce79da5d821",
+        "correctionInputKind": "permitted-partial-edit-of-generated-image",
+        "generatedOriginal": "art-reviews/2026-10-24-cat-look/generated-source.png",
+        "generatedOriginalSha256": "11d177f8ee48967d94e36404272758480231395f40834fd2dbe179c1c6b5496e",
+        "partialEditScript": "art-reviews/2026-10-24-cat-look/compose-heads.py",
+        "partialEditReport": "art-reviews/2026-10-24-cat-look/partial-edit-report.json",
+        "prompt": "Edit the attached seated dark blue-gray tabby cat pixel-art reference into TWO animation keyframes in a clean horizontal two-column spritesheet on transparent background. Each column must have the identical 432 x 556 canvas and identical cat scale, foot location, seated body, tail, front legs, chest and silhouette below the neck as the reference. Left frame: the cat gently turns ONLY its head 15 degrees toward the viewer from its original right-facing profile; nose still points right, one eye dominant, small hint of far eye. Right frame: head turned 40 degrees toward viewer, clear front-three-quarter face with two golden eyes, nose still slightly right. Calm alert curiosity, no opening mouth, no raised paws, no body rotation. Keep both ears upright with subtle natural change in ear facing. Intermediate turn must visibly affect muzzle/cheek silhouette, not just pupils. Head pivot and neck attachment stay precisely fixed, head size never grows. Head remains in the same upper-right area as reference, ears around y16, neck joins chest around y235. Preserve exact charcoal blue fur, subtle tabby texture, muted purple rim light, amber eyes, finely detailed crisp pixel art. No outlines or glow, no text or frame borders, no shadows outside cat. Do not draw any environment. Match reference's native logical pixels: 4 x 4 square pixels, no smoothing. Output canvas 864 wide by 556 high (two equal 432x556 cells), all paws and tails fully visible and identically aligned. Only head and upper neck can differ.",
+        "references": [
+          "art-reviews/2026-10-24-cat-look/sitting-reference.png"
+        ],
+        "provenanceNote": "originalSha256 means the correction input after the head-only partial edit; generatedOriginalSha256 means untouched imagegen output. Existing reviewed seated body is copied exactly."
+      }
+    },
+    {
+      "image": "art-reviews/2026-10-24-cat-look/material-scale-context-final.png",
+      "report": "art-reviews/2026-10-24-cat-look/material-scale-context-final.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが元座位/浅い頭向き/横目を既存生成背景上の1/.5/.25/.125倍率で補正後実閲覧し素材として採用。頭の大きさと下半身/床位置を保ち、鼻/頬/両目の変化を確認。最小.125では細部判別が弱い制約。表示時間/左右/本番全景の採用は後続PR。"
     }
   ]
 }

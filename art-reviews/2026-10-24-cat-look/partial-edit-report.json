@@ -1,0 +1,76 @@
+{
+  "method": "Nearest sampling of imagegen head/neck only, copied through a binary polygon onto the exact existing seated sprite. No generated body pixels adopted, no artwork drawn.",
+  "generatedOriginal": "generated-source.png",
+  "generatedOriginalSha256": "11d177f8ee48967d94e36404272758480231395f40834fd2dbe179c1c6b5496e",
+  "reference": "sitting-reference-native.png",
+  "referenceSha256": "92580e91c1fe336034e5ce9dfa2c75b1fedfa71c05b07da46eeb3988d1160500",
+  "output": "composed-input.png",
+  "correctionInputSha256": "19bde742af37d3eba8516522ffc38bad3375dad7221fbfb6bcbbdce79da5d821",
+  "generatedCropLTRB": [
+    [
+      0,
+      0,
+      800,
+      1006
+    ],
+    [
+      780,
+      0,
+      1563,
+      1006
+    ]
+  ],
+  "nearestTargetSize": [
+    108,
+    139
+  ],
+  "headMaskPolygon": [
+    [
+      40,
+      0
+    ],
+    [
+      107,
+      0
+    ],
+    [
+      107,
+      57
+    ],
+    [
+      60,
+      57
+    ],
+    [
+      41,
+      44
+    ]
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "outsideHeadMaskChangedPixels": 0,
+      "rows58Through138ChangedPixels": 0,
+      "unchangedLowerBodyPixels": 8748
+    },
+    {
+      "frame": 1,
+      "outsideHeadMaskChangedPixels": 0,
+      "rows58Through138ChangedPixels": 0,
+      "unchangedLowerBodyPixels": 8748
+    }
+  ],
+  "frameSize": [
+    108,
+    139
+  ],
+  "foot": 138,
+  "anchorX": 54,
+  "afterCorrection": {
+    "rgbaChangedFromInput": 0,
+    "eachFrameLowerRows58Through138ChangedFromOriginal": [
+      0,
+      0
+    ]
+  }
+}

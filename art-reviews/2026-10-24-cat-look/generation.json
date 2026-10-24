@@ -1,0 +1,20 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Edit the attached seated dark blue-gray tabby cat pixel-art reference into TWO animation keyframes in a clean horizontal two-column spritesheet on transparent background. Each column must have the identical 432 x 556 canvas and identical cat scale, foot location, seated body, tail, front legs, chest and silhouette below the neck as the reference. Left frame: the cat gently turns ONLY its head 15 degrees toward the viewer from its original right-facing profile; nose still points right, one eye dominant, small hint of far eye. Right frame: head turned 40 degrees toward viewer, clear front-three-quarter face with two golden eyes, nose still slightly right. Calm alert curiosity, no opening mouth, no raised paws, no body rotation. Keep both ears upright with subtle natural change in ear facing. Intermediate turn must visibly affect muzzle/cheek silhouette, not just pupils. Head pivot and neck attachment stay precisely fixed, head size never grows. Head remains in the same upper-right area as reference, ears around y16, neck joins chest around y235. Preserve exact charcoal blue fur, subtle tabby texture, muted purple rim light, amber eyes, finely detailed crisp pixel art. No outlines or glow, no text or frame borders, no shadows outside cat. Do not draw any environment. Match reference's native logical pixels: 4 x 4 square pixels, no smoothing. Output canvas 864 wide by 556 high (two equal 432x556 cells), all paws and tails fully visible and identically aligned. Only head and upper neck can differ.",
+  "references": [
+    "art-reviews/2026-10-24-cat-look/sitting-reference.png"
+  ],
+  "referencePreparation": "Exact crop [596,298,108,139] of reviewed public/art/night-sprites.png, nearest enlarged four times. Native crop also archived.",
+  "requestedCanvas": [
+    864,
+    556
+  ],
+  "actualCanvas": [
+    1563,
+    1006
+  ],
+  "original": "art-reviews/2026-10-24-cat-look/generated-source.png",
+  "originalToolPath": "/workspace/generated_images/exec-e9d3ce8e-4e67-40df-8e5d-9bc149673e20.png",
+  "partialEditScript": "art-reviews/2026-10-24-cat-look/compose-heads.py",
+  "note": "Generated body is not adopted. Generated head and upper-neck pixels are nearest resampled and copied into the fixed existing sprite; see partial-edit-report.json."
+}
