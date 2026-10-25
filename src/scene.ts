@@ -1,4 +1,4 @@
-import { Application, Assets, Rectangle, Sprite, Texture } from 'pixi.js';
+import { Application, Assets, Container, Rectangle, Sprite, Texture } from 'pixi.js';
 import { catPose, travelPosition, windowBrightness } from './animation';
 import { generatedArt } from './generated-art';
 import { generatedLayout } from './generated-layout';
@@ -14,7 +14,7 @@ import { createImageLaundry, laundryArt } from './image-laundry';
 import { createImageUpperCloud } from './image-upper-cloud';
 import { createImageSkylineLights } from './image-skyline-lights';
 import { createImageStars } from './image-stars';
-import { createWindowCover } from './image-window-cover';
+import { createImageRoomLights } from './image-room-lights';
 import { trainServiceOffsets } from './train-service';
 import { createImagePlant, plantArt, plantGeometry } from './image-plant';
 import { cityMotion, residentialLightCycle } from './city-motion';
@@ -87,6 +87,7 @@ export async function createScene(host: HTMLElement): Promise<{
     cloud: crop(atlas, generatedArt.frames.cloud),
   };
   const imageUpperCloud = createImageUpperCloud(frames.cloud);
+  const imageRoomLights = createImageRoomLights([background, wideBackground, portraitBackground]);
   const imageStars = createImageStars([background, wideBackground, portraitBackground]);
   let stars: ReturnType<typeof imageStars.createSprite>;
   const imageSkylineLights = createImageSkylineLights([background, wideBackground, portraitBackground]);
@@ -132,7 +133,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let upperCloud: Sprite;
   let cat: Sprite;
   let plant: Sprite;
-  let windows: Sprite[] = [];
+  let windows: Container[] = [];
   const sprite = (texture: Texture) => {
     const art = new Sprite(texture);
     art.roundPixels = true;
@@ -202,7 +203,8 @@ export async function createScene(host: HTMLElement): Promise<{
         curtain = imageCurtain.createSprite([x, y, w, h], scale, originX, originY);
         app.stage.addChild(curtain);
       }
-      const art = createWindowCover(textures.darkWall, [x, y, w, h], scale, originX, originY);
+      const art = imageRoomLights.createCover(layout.portrait ? 2 : layout.wide ? 1 : 0,
+        index, [x, y, w, h], textures.darkWall, scale, originX, originY);
       app.stage.addChild(art);
       return art;
     });
@@ -322,6 +324,7 @@ export async function createScene(host: HTMLElement): Promise<{
       imageLaundry.destroy();
       imageSkylineLights.destroy();
       imageStars.destroy();
+      imageRoomLights.destroy();
       // Assets owns the shared image sources; sprite/crop disposal must not destroy them.
     },
   };

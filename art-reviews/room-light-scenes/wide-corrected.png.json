@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/room-light-scenes/wide-source.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "f4535cef5d9fa588b30f42041f35fd4d1565cf9570fe10ad69f1b7078c5beb21"
+  },
+  "output": {
+    "path": "art-reviews/room-light-scenes/wide-corrected.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "e4dfdc4dbf4792be2ed475690090f59c7218a67f07a1ecc33fbcbd4717c4baa0"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

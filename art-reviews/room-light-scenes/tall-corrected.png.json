@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/room-light-scenes/tall-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "23c29343b4a24452b06ec9a90dab0d01876c7166823a02aa1f8ef4b30fe7e155"
+  },
+  "output": {
+    "path": "art-reviews/room-light-scenes/tall-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "3517d5d94c1b12f4af95fef6fbd4819a801de2e52e25ffa4561a56dc9627ce49"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
