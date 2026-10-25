@@ -7,9 +7,10 @@ export const meteorArt = { image: 'art/meteor.png', frame: [125, 83, 230, 62], s
 export function meteorGeometry(width: number, skyBottom: number) {
   const spriteWidth = Math.round(Math.max(14, Math.min(28, width * 0.05)));
   const spriteHeight = spriteWidth * meteorArt.frame[3] / meteorArt.frame[2];
-  const x = Math.round(width * 0.22);
+  // Enter through the open left sky, clear of the main cloud during the first flight.
+  const x = Math.round(Math.max(4, width * 0.025));
   const y = Math.round(Math.max(4, skyBottom * 0.18));
-  const dx = Math.max(0, Math.min(Math.round(width * 0.18), 72, width - 4 - x - spriteWidth,
+  const dx = Math.max(0, Math.min(Math.round(width * 0.12), 48, width - 4 - x - spriteWidth,
     Math.floor((skyBottom - 4 - y - spriteHeight) / meteorArt.slope)));
   const visible = y + spriteHeight <= skyBottom - 4 && dx >= 14;
   return { x, y, dx, dy: dx * meteorArt.slope, width: spriteWidth, height: spriteHeight, visible };

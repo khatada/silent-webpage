@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-visible-meteor-active/mobile-sky-source.png",
+    "width": 780,
+    "height": 408,
+    "sha256": "218ef2929cc3d0f8a0e54bef0182f34b4580f801fe4b3d260770ffd63dbd8e57"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-visible-meteor-active/mobile-sky-corrected.png",
+    "width": 780,
+    "height": 408,
+    "sha256": "218ef2929cc3d0f8a0e54bef0182f34b4580f801fe4b3d260770ffd63dbd8e57"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

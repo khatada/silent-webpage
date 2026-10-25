@@ -1,0 +1,71 @@
+{
+  "method": "Decoded RGBA all-byte comparison; alpha0 meteor is absent in initial scenes. Flight is reviewed separately at 3.3/4/4.7 seconds.",
+  "samples": [
+    {
+      "image": "compact-corrected.png",
+      "previous": "art-reviews/readable-motion-scenes/compact-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "17cdcbce9e7c6a970a5acb3bf210c22a6359ca198418c0f81aa8e33c8986eb27"
+    },
+    {
+      "image": "desktop-corrected.png",
+      "previous": "art-reviews/readable-motion-scenes/desktop-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "7c2a48965ab8a2acea925b9ccaf9ed05b85066813caa4d268fdfe2933ae93989"
+    },
+    {
+      "image": "landscape-corrected.png",
+      "previous": "art-reviews/readable-motion-scenes/landscape-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "1033f80bd379b29e4dc72b0fa719cecabbc930389343278f7f0b1529694e0bf9"
+    },
+    {
+      "image": "mobile-corrected.png",
+      "previous": "art-reviews/readable-motion-scenes/mobile-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "45eccf54083b4523445ff3ddd974f71105c26742254776efbc7ca059e737e3f4"
+    },
+    {
+      "image": "narrow-corrected.png",
+      "previous": "art-reviews/readable-motion-scenes/narrow-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "855c4f1aaaac54b76eea67bbfb2e25d57dc6d2490b6d976bf795be86efc1e80e"
+    },
+    {
+      "image": "portrait-boundary-corrected.png",
+      "previous": "art-reviews/readable-motion-scenes/portrait-boundary-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "2dfe5db16e1ffcbbb683cf54e9eabbf2849ab19a19a1e83f464826c9270ce516"
+    },
+    {
+      "image": "portrait-large-corrected.png",
+      "previous": "art-reviews/readable-motion-scenes/portrait-large-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "288131ce983f2db2e5862db9a6efd2b5e889e4acce66bf3a6488b99e85b9cec9"
+    },
+    {
+      "image": "small-mobile-corrected.png",
+      "previous": "art-reviews/readable-motion-scenes/small-mobile-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "10e265238fc5b6b76faba8b28cca9a084b76439313594290a6b1fcc2bdf781f5"
+    },
+    {
+      "image": "small-phone-corrected.png",
+      "previous": "art-reviews/readable-motion-scenes/small-phone-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "f130ff4f936fc39a28c97b3a0f83336d9eeaa0c3d89a9eb691906d5606a19481"
+    },
+    {
+      "image": "tall-corrected.png",
+      "previous": "art-reviews/readable-motion-scenes/tall-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "775163c0163cd6dcc5b05034c0e8211326b745198986699ad6b533806c396e4a"
+    },
+    {
+      "image": "wide-corrected.png",
+      "previous": "art-reviews/readable-motion-scenes/wide-corrected.png",
+      "rgbaEqual": true,
+      "rgbaSha256": "8006c343bb390be5e79a8c36868ee9e0b521c40b0d921e643e03a65f6a17d1ff"
+    }
+  ]
+}

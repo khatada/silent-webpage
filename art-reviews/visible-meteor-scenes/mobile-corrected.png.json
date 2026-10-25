@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/visible-meteor-scenes/mobile-source.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "28dfcde45e56a7a79e32bbf8a59a13fc68270e2eae5e65cdca021b1c2628f38c"
+  },
+  "output": {
+    "path": "art-reviews/visible-meteor-scenes/mobile-corrected.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "151b0b28323cfd9067de6d7df4930d7a855dddb6e659334194bf2f7e70350d22"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

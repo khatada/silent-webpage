@@ -2,6 +2,10 @@ import { describe, expect, it } from 'vitest';
 import { meteorArt, meteorGeometry } from './image-meteor';
 import { generatedLayout } from './generated-layout';
 import { pixelViewport } from './pixel-viewport';
+import { travelPosition } from './animation';
+import { cityMotion } from './city-motion';
+import { meteorTiming } from './meteor-timing';
+import { upperCloudArt } from './image-upper-cloud';
 
 export const meteorViewports = [
   ['desktop', 1440, 900, 1], ['mobile', 390, 844, 2], ['narrow', 295, 844, 1],
@@ -20,7 +24,7 @@ describe('generated meteor placement', () => {
     expect(path.width).toBeLessThanOrEqual(28);
     expect(Number.isInteger(path.width)).toBe(true);
     expect(path.height / path.width).toBeCloseTo(meteorArt.frame[3] / meteorArt.frame[2]);
-    expect(path.dx).toBeGreaterThan(0);
+    expect(path.dx).toBeGreaterThanOrEqual(14);
     expect(path.dy / path.dx).toBe(meteorArt.slope);
     for (const progress of [0, 0.075, 0.5, 0.925, 1]) {
       const x = Math.round(path.x + path.dx * progress), y = Math.round(path.y + path.dy * progress);
@@ -29,6 +33,25 @@ describe('generated meteor placement', () => {
       expect(x + path.width).toBeLessThanOrEqual(viewport.width - 4);
       expect(y + path.height).toBeLessThanOrEqual(sky - 3);
       expect(x + path.width).toBeLessThan(viewport.width * 0.7);
+    }
+  });
+  it.each(meteorViewports)('clears the main cloud during the first flight at %s', (_name, cssWidth, cssHeight, dpr) => {
+    const viewport = pixelViewport(cssWidth, cssHeight, dpr);
+    const layout = generatedLayout(viewport.width, viewport.height);
+    const path = meteorGeometry(viewport.width, layout.skyBottom);
+    // Both clouds use the same reviewed crop; its measured alpha bounds are shared.
+    const [left, top, right, bottom] = upperCloudArt.alphaBounds;
+    for (const progress of [0, 0.25, 0.5, 0.75, 0.995]) {
+      const seconds = meteorTiming.first + meteorTiming.duration * progress;
+      const cloudX = travelPosition(seconds, viewport.width, 235 * layout.cloudScale,
+        layout.scale * cityMotion.cloudSpeed, viewport.width * 0.12);
+      const meteorX = Math.round(path.x + path.dx * progress);
+      const meteorY = Math.round(path.y + path.dy * progress);
+      const separate = meteorX + path.width <= cloudX + left * layout.cloudScale
+        || meteorX >= cloudX + right * layout.cloudScale
+        || meteorY + path.height <= layout.cloudY + top * layout.cloudScale
+        || meteorY >= layout.cloudY + bottom * layout.cloudScale;
+      expect(separate).toBe(true);
     }
   });
   it('omits the event when a very short sky cannot contain a moving full tail', () => {
