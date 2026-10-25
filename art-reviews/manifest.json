@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "8ae347554c92aed9bdff070086d9eab88b7cafdefcf9391668c676b47e22565a",
+  "sourceSha256": "387562c47e2dbb8f3220a19aedbce47271eecfc8e797b84fd8667108a057e85a",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,39 +129,39 @@
       }
     },
     {
-      "image": "art-reviews/readable-motion-scenes/desktop-corrected.png",
-      "report": "art-reviews/readable-motion-scenes/desktop-corrected.png.json",
+      "image": "art-reviews/visible-meteor-scenes/desktop-corrected.png",
+      "report": "art-reviews/visible-meteor-scenes/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
+      "reason": "経路修正後の新規capture/補正11全景を担当LLM二者が5枚/6枚に分担して全域実閲覧し採用。構図/原画/接地/画面内収まりを保持。親の独立再計算で11枚すべて前版初期全景とdecoded RGBA一致。初期meteorはalpha0のため経路可視性は別の本番画像で確認。"
     },
     {
-      "image": "art-reviews/readable-motion-scenes/mobile-corrected.png",
-      "report": "art-reviews/readable-motion-scenes/mobile-corrected.png.json",
+      "image": "art-reviews/visible-meteor-scenes/mobile-corrected.png",
+      "report": "art-reviews/visible-meteor-scenes/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
+      "reason": "経路修正後の新規capture/補正11全景を担当LLM二者が5枚/6枚に分担して全域実閲覧し採用。構図/原画/接地/画面内収まりを保持。親の独立再計算で11枚すべて前版初期全景とdecoded RGBA一致。初期meteorはalpha0のため経路可視性は別の本番画像で確認。"
     },
     {
-      "image": "art-reviews/readable-motion-scenes/narrow-corrected.png",
-      "report": "art-reviews/readable-motion-scenes/narrow-corrected.png.json",
+      "image": "art-reviews/visible-meteor-scenes/narrow-corrected.png",
+      "report": "art-reviews/visible-meteor-scenes/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
+      "reason": "経路修正後の新規capture/補正11全景を担当LLM二者が5枚/6枚に分担して全域実閲覧し採用。構図/原画/接地/画面内収まりを保持。親の独立再計算で11枚すべて前版初期全景とdecoded RGBA一致。初期meteorはalpha0のため経路可視性は別の本番画像で確認。"
     },
     {
-      "image": "art-reviews/readable-motion-scenes/landscape-corrected.png",
-      "report": "art-reviews/readable-motion-scenes/landscape-corrected.png.json",
+      "image": "art-reviews/visible-meteor-scenes/landscape-corrected.png",
+      "report": "art-reviews/visible-meteor-scenes/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
+      "reason": "経路修正後の新規capture/補正11全景を担当LLM二者が5枚/6枚に分担して全域実閲覧し採用。構図/原画/接地/画面内収まりを保持。親の独立再計算で11枚すべて前版初期全景とdecoded RGBA一致。初期meteorはalpha0のため経路可視性は別の本番画像で確認。"
     },
     {
-      "image": "art-reviews/readable-motion-scenes/wide-corrected.png",
-      "report": "art-reviews/readable-motion-scenes/wide-corrected.png.json",
+      "image": "art-reviews/visible-meteor-scenes/wide-corrected.png",
+      "report": "art-reviews/visible-meteor-scenes/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
+      "reason": "経路修正後の新規capture/補正11全景を担当LLM二者が5枚/6枚に分担して全域実閲覧し採用。構図/原画/接地/画面内収まりを保持。親の独立再計算で11枚すべて前版初期全景とdecoded RGBA一致。初期meteorはalpha0のため経路可視性は別の本番画像で確認。"
     },
     {
       "image": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
@@ -171,46 +171,46 @@
       "reason": "親LLMが最終補正atlasを実閲覧して採用。独立LLMも同一bytesのtrial左右各8コマ列を実閲覧して採用済み（SHA256 fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04）。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯は概ね揃い切れ/浮きなし。端点左右4組はRGBA一致。midの頭/首がやや小さく尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差は残る。"
     },
     {
-      "image": "art-reviews/readable-motion-scenes/compact-corrected.png",
-      "report": "art-reviews/readable-motion-scenes/compact-corrected.png.json",
+      "image": "art-reviews/visible-meteor-scenes/compact-corrected.png",
+      "report": "art-reviews/visible-meteor-scenes/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
+      "reason": "経路修正後の新規capture/補正11全景を担当LLM二者が5枚/6枚に分担して全域実閲覧し採用。構図/原画/接地/画面内収まりを保持。親の独立再計算で11枚すべて前版初期全景とdecoded RGBA一致。初期meteorはalpha0のため経路可視性は別の本番画像で確認。"
     },
     {
-      "image": "art-reviews/readable-motion-scenes/tall-corrected.png",
-      "report": "art-reviews/readable-motion-scenes/tall-corrected.png.json",
+      "image": "art-reviews/visible-meteor-scenes/tall-corrected.png",
+      "report": "art-reviews/visible-meteor-scenes/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
+      "reason": "経路修正後の新規capture/補正11全景を担当LLM二者が5枚/6枚に分担して全域実閲覧し採用。構図/原画/接地/画面内収まりを保持。親の独立再計算で11枚すべて前版初期全景とdecoded RGBA一致。初期meteorはalpha0のため経路可視性は別の本番画像で確認。"
     },
     {
-      "image": "art-reviews/readable-motion-scenes/portrait-large-corrected.png",
-      "report": "art-reviews/readable-motion-scenes/portrait-large-corrected.png.json",
+      "image": "art-reviews/visible-meteor-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/visible-meteor-scenes/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
+      "reason": "経路修正後の新規capture/補正11全景を担当LLM二者が5枚/6枚に分担して全域実閲覧し採用。構図/原画/接地/画面内収まりを保持。親の独立再計算で11枚すべて前版初期全景とdecoded RGBA一致。初期meteorはalpha0のため経路可視性は別の本番画像で確認。"
     },
     {
-      "image": "art-reviews/readable-motion-scenes/portrait-boundary-corrected.png",
-      "report": "art-reviews/readable-motion-scenes/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/visible-meteor-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/visible-meteor-scenes/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
+      "reason": "経路修正後の新規capture/補正11全景を担当LLM二者が5枚/6枚に分担して全域実閲覧し採用。構図/原画/接地/画面内収まりを保持。親の独立再計算で11枚すべて前版初期全景とdecoded RGBA一致。初期meteorはalpha0のため経路可視性は別の本番画像で確認。"
     },
     {
-      "image": "art-reviews/readable-motion-scenes/small-phone-corrected.png",
-      "report": "art-reviews/readable-motion-scenes/small-phone-corrected.png.json",
+      "image": "art-reviews/visible-meteor-scenes/small-phone-corrected.png",
+      "report": "art-reviews/visible-meteor-scenes/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
+      "reason": "経路修正後の新規capture/補正11全景を担当LLM二者が5枚/6枚に分担して全域実閲覧し採用。構図/原画/接地/画面内収まりを保持。親の独立再計算で11枚すべて前版初期全景とdecoded RGBA一致。初期meteorはalpha0のため経路可視性は別の本番画像で確認。"
     },
     {
-      "image": "art-reviews/readable-motion-scenes/small-mobile-corrected.png",
-      "report": "art-reviews/readable-motion-scenes/small-mobile-corrected.png.json",
+      "image": "art-reviews/visible-meteor-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/visible-meteor-scenes/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
+      "reason": "経路修正後の新規capture/補正11全景を担当LLM二者が5枚/6枚に分担して全域実閲覧し採用。構図/原画/接地/画面内収まりを保持。親の独立再計算で11枚すべて前版初期全景とdecoded RGBA一致。初期meteorはalpha0のため経路可視性は別の本番画像で確認。"
     },
     {
       "image": "public/art/street-car.png",
@@ -985,6 +985,48 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "補正後4秒全景を親/担当LLMが実閲覧し構図/輪郭破損なしとして採用。ただし流星は主雲の縁と重なり独立した尾を判別しづらく、この画像を流星の視認性向上の証拠とは扱わない。全体の見えやすさは別の雲/飛行機/窓の時間差画像で確認済み。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-visible-meteor-active/desktop-4-corrected.png",
+      "report": "art-reviews/2026-10-25-visible-meteor-active/desktop-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番PC/mobile/landscapeの4秒全景と3.3/4/4.7秒native空atlas計6画像を補正後に親/担当LLMが実閲覧し採用。左上の暗い空へ独立した斜めの点列/尾が見え、主雲の縁に溶けず右下へ移動する。尾の切れ/画面外欠損なし。PCでは小さく控えめで、DPR2端末ではより明確。初回の改善として採用し全未来周期の雲非交差は主張しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-visible-meteor-active/desktop-sky-corrected.png",
+      "report": "art-reviews/2026-10-25-visible-meteor-active/desktop-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番PC/mobile/landscapeの4秒全景と3.3/4/4.7秒native空atlas計6画像を補正後に親/担当LLMが実閲覧し採用。左上の暗い空へ独立した斜めの点列/尾が見え、主雲の縁に溶けず右下へ移動する。尾の切れ/画面外欠損なし。PCでは小さく控えめで、DPR2端末ではより明確。初回の改善として採用し全未来周期の雲非交差は主張しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-visible-meteor-active/landscape-4-corrected.png",
+      "report": "art-reviews/2026-10-25-visible-meteor-active/landscape-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番PC/mobile/landscapeの4秒全景と3.3/4/4.7秒native空atlas計6画像を補正後に親/担当LLMが実閲覧し採用。左上の暗い空へ独立した斜めの点列/尾が見え、主雲の縁に溶けず右下へ移動する。尾の切れ/画面外欠損なし。PCでは小さく控えめで、DPR2端末ではより明確。初回の改善として採用し全未来周期の雲非交差は主張しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-visible-meteor-active/landscape-sky-corrected.png",
+      "report": "art-reviews/2026-10-25-visible-meteor-active/landscape-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番PC/mobile/landscapeの4秒全景と3.3/4/4.7秒native空atlas計6画像を補正後に親/担当LLMが実閲覧し採用。左上の暗い空へ独立した斜めの点列/尾が見え、主雲の縁に溶けず右下へ移動する。尾の切れ/画面外欠損なし。PCでは小さく控えめで、DPR2端末ではより明確。初回の改善として採用し全未来周期の雲非交差は主張しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-visible-meteor-active/mobile-4-corrected.png",
+      "report": "art-reviews/2026-10-25-visible-meteor-active/mobile-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番PC/mobile/landscapeの4秒全景と3.3/4/4.7秒native空atlas計6画像を補正後に親/担当LLMが実閲覧し採用。左上の暗い空へ独立した斜めの点列/尾が見え、主雲の縁に溶けず右下へ移動する。尾の切れ/画面外欠損なし。PCでは小さく控えめで、DPR2端末ではより明確。初回の改善として採用し全未来周期の雲非交差は主張しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-visible-meteor-active/mobile-sky-corrected.png",
+      "report": "art-reviews/2026-10-25-visible-meteor-active/mobile-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番PC/mobile/landscapeの4秒全景と3.3/4/4.7秒native空atlas計6画像を補正後に親/担当LLMが実閲覧し採用。左上の暗い空へ独立した斜めの点列/尾が見え、主雲の縁に溶けず右下へ移動する。尾の切れ/画面外欠損なし。PCでは小さく控えめで、DPR2端末ではより明確。初回の改善として採用し全未来周期の雲非交差は主張しない。"
     }
   ]
 }

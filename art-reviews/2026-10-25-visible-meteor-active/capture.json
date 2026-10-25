@@ -1,0 +1,21 @@
+{
+  "sourceSha256": "387562c47e2dbb8f3220a19aedbce47271eecfc8e797b84fd8667108a057e85a",
+  "method": "Unmodified production page with clock paused before navigation, OS motion enabled after initialization and runFor steps <=1000ms. 4s full scenes are retained; native sky strips at 3.3/4/4.7s are copied into per-device atlases. Other full scenes remain temporary. Computed state/geometry are expectations; actual last 20fps RAF may precede requested time. Meteor independence from clouds and visible tail/movement require actual LLM image review.",
+  "layouts": [
+    {"name":"desktop","native":[1440,900],"dpr":1,"skyHeight":124,"calculatedMeteorGeometry":{"x":36,"y":22,"dx":48,"dy":12,"width":28,"height":7.547826086956522,"visible":true},"atlasOrder":"Top to bottom: 3.3s, 4s, 4.7s full-width native sky strips"},
+    {"name":"mobile","native":[390,844],"dpr":2,"skyHeight":68,"calculatedMeteorGeometry":{"x":10,"y":12,"dx":47,"dy":11.75,"width":20,"height":5.391304347826087,"visible":true},"atlasOrder":"Top to bottom: 3.3s, 4s, 4.7s full-width native sky strips"},
+    {"name":"landscape","native":[844,390],"dpr":2,"skyHeight":40,"calculatedMeteorGeometry":{"x":21,"y":7,"dx":48,"dy":12,"width":28,"height":7.547826086956522,"visible":true},"atlasOrder":"Top to bottom: 3.3s, 4s, 4.7s full-width native sky strips"}
+  ],
+  "samples": [
+    {"name":"desktop","panel":0,"requestedSceneSeconds":3.3,"calculatedMeteorState":{"progress":0.1499999999999999,"alpha":0.5925925925925922}},
+    {"name":"desktop","panel":1,"requestedSceneSeconds":4,"calculatedMeteorState":{"progress":0.5,"alpha":0.8}},
+    {"name":"desktop","panel":2,"requestedSceneSeconds":4.7,"calculatedMeteorState":{"progress":0.8500000000000001,"alpha":0.5925925925925922}},
+    {"name":"mobile","panel":0,"requestedSceneSeconds":3.3,"calculatedMeteorState":{"progress":0.1499999999999999,"alpha":0.5925925925925922}},
+    {"name":"mobile","panel":1,"requestedSceneSeconds":4,"calculatedMeteorState":{"progress":0.5,"alpha":0.8}},
+    {"name":"mobile","panel":2,"requestedSceneSeconds":4.7,"calculatedMeteorState":{"progress":0.8500000000000001,"alpha":0.5925925925925922}},
+    {"name":"landscape","panel":0,"requestedSceneSeconds":3.3,"calculatedMeteorState":{"progress":0.1499999999999999,"alpha":0.5925925925925922}},
+    {"name":"landscape","panel":1,"requestedSceneSeconds":4,"calculatedMeteorState":{"progress":0.5,"alpha":0.8}},
+    {"name":"landscape","panel":2,"requestedSceneSeconds":4.7,"calculatedMeteorState":{"progress":0.8500000000000001,"alpha":0.5925925925925922}}
+  ],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}
