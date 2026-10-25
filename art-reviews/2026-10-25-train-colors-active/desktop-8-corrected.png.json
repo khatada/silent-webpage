@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-train-colors-active/desktop-8-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "adec2ff33dfd15e4cc2e19ce4e2b9dcf8c2491e679b5e99d9c0002361b7b89ed"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-train-colors-active/desktop-8-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "222a2809b948e43a19b7abe8780739f7478d49dd4ade03c0fcfa980065980c20"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

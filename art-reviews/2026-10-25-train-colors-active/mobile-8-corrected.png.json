@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-train-colors-active/mobile-8-source.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "63dffb28051dea3c44c4121af6613a1e1ba5435618ca54b12ce4c3153ccc125c"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-train-colors-active/mobile-8-corrected.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "9bc890b6c6322ace30279cbec17c8ed63bd9468ce67044dd888a9d342bb31fc7"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/train-color-final-scenes/portrait-large-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "d4422565819ec6e7c333b470d3c64295f500e0cdacaf27f34cdd1a15b4b611c5"
+  },
+  "output": {
+    "path": "art-reviews/train-color-final-scenes/portrait-large-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "fdb86d953e2c54900edb9a5425fac6a2aafc43990648a9dbfb76a54a2b8786bb"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

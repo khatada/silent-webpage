@@ -1,0 +1,19 @@
+{
+  "method": "All decoded RGBA bytes compared to PR54 initial scenes. Allowed bounds reused from reviewed PR54 second-train geometry: layout/offset/scale/y are unchanged in this PR. Two native pixel margin. Narrow must remain entirely unchanged.",
+  "sourceSha256": "027a6949885c03f1ed6fac854c8f2efc91e51a87b61e0340cfbc85467cdc5699",
+  "allOutsideUnchanged": true
+,
+  "samples": [
+    {"name":"desktop","physicalBoundsLTRB":[1181,338,1312,374],"changedPixels":2767,"outsideChangedPixels":0,"allRGBAEqual":false},
+    {"name":"mobile","physicalBoundsLTRB":[764,567,780,634],"changedPixels":236,"outsideChangedPixels":0,"allRGBAEqual":false},
+    {"name":"narrow","physicalBoundsLTRB":null,"changedPixels":0,"outsideChangedPixels":0,"allRGBAEqual":true},
+    {"name":"landscape","physicalBoundsLTRB":[1372,314,1503,350],"changedPixels":2856,"outsideChangedPixels":0,"allRGBAEqual":false},
+    {"name":"wide","physicalBoundsLTRB":[2166,499,2329,542],"changedPixels":4261,"outsideChangedPixels":0,"allRGBAEqual":false},
+    {"name":"compact","physicalBoundsLTRB":[563,250,663,278],"changedPixels":1374,"outsideChangedPixels":0,"allRGBAEqual":false},
+    {"name":"tall","physicalBoundsLTRB":[406,737,664,804],"changedPixels":11060,"outsideChangedPixels":0,"allRGBAEqual":false},
+    {"name":"portrait-large","physicalBoundsLTRB":[664,762,795,798],"changedPixels":2649,"outsideChangedPixels":0,"allRGBAEqual":false},
+    {"name":"portrait-boundary","physicalBoundsLTRB":[788,731,919,767],"changedPixels":2657,"outsideChangedPixels":0,"allRGBAEqual":false},
+    {"name":"small-phone","physicalBoundsLTRB":[452,478,583,514],"changedPixels":2772,"outsideChangedPixels":0,"allRGBAEqual":false},
+    {"name":"small-mobile","physicalBoundsLTRB":[562,630,693,666],"changedPixels":2772,"outsideChangedPixels":0,"allRGBAEqual":false}
+  ]
+}

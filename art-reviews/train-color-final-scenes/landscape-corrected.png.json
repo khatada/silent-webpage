@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/train-color-final-scenes/landscape-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "ff0e1d55bba79e94800c55730605e935f68010e0928f7f069395f12ecc30c609"
+  },
+  "output": {
+    "path": "art-reviews/train-color-final-scenes/landscape-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "03cdddcc4d8b951aebb454e9a0ce1d64cf1f127a287d7cd0c5021f0dbfcf9a4f"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -27,7 +27,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas, lookAtlas, plantAtlas] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas, lookAtlas, plantAtlas, alternateTrain] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -50,11 +50,13 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${laundryArt.image}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.catLookAtlas}`),
     Assets.load<Texture>(`${baseUrl}${plantArt.image}`),
+    Assets.load<Texture>(`${baseUrl}${generatedArt.alternateTrain}`),
   ]);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
   portraitBackground.source.scaleMode = 'nearest';
   atlas.source.scaleMode = 'nearest';
+  alternateTrain.source.scaleMode = 'nearest';
   restAtlas.source.scaleMode = 'nearest';
   for (const image of [walkAtlas, back, lift, groomAtlas, settleAtlas, stretchAtlas, stretchMid, turnAtlas, lookAtlas]) image.source.scaleMode = 'nearest';
   const imageStreetCar = createImageStreetCar(streetCar, [background, wideBackground, portraitBackground]);
@@ -222,7 +224,7 @@ export async function createScene(host: HTMLElement): Promise<{
     train.scale.set(scale * 0.24 * actorScale);
     train.y = layout.railBottom - train.height;
     trains = trainServiceOffsets(width, train.width).map((offset, index) => {
-      const art = index === 0 ? train : sprite(frames.train);
+      const art = index === 0 ? train : sprite(alternateTrain);
       art.scale.copyFrom(train.scale);
       art.y = train.y;
       return { art, offset };
