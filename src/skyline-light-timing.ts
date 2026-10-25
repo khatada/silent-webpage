@@ -1,12 +1,12 @@
-const firstChanges = [3, 7, 11, 5, 9, 12] as const;
+const firstChanges = [1, 2.5, 4, 1.75, 3.25, 5] as const;
 
 /** Initial changes and later periods use separate fixed sequences, never mutable randomness. */
 export function skylineLightCycle(index: number, composition: number) {
   return { delay: firstChanges[(index + composition * 2) % firstChanges.length],
-    period: 43 + ((index * 17 + composition * 23 + 19) % 56), fade: 1.2 };
+    period: 14 + ((index * 7 + composition * 11 + 3) % 16), fade: 0.7 };
 }
 
-/** All rooms start lit; long holds surround one gradual off/on pair per room. */
+/** Rooms start lit and change within seconds; steady holds separate gradual off/on fades. */
 export function skylineLightDarkness(seconds: number, index: number, composition: number): number {
   const { delay, period, fade } = skylineLightCycle(index, composition);
   if (seconds <= delay) return 0;

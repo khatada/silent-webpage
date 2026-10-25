@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/readable-motion-scenes/portrait-large-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "9afa6f903571629c53aa9086274484f4d51e440a22d2c965c8fcec90798b5e5f"
+  },
+  "output": {
+    "path": "art-reviews/readable-motion-scenes/portrait-large-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "b47027ea0560912d28bdcbeebdb03224135c4fffa2c68e4ee7c2638d21a307c0"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

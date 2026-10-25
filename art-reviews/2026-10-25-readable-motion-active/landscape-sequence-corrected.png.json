@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-readable-motion-active/landscape-sequence-source.png",
+    "width": 1688,
+    "height": 1072,
+    "sha256": "98261c9b5608133e76ab5b1c9f3b40530f285f564e55e8e28cd0f04ecc3218e1"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-readable-motion-active/landscape-sequence-corrected.png",
+    "width": 1688,
+    "height": 1072,
+    "sha256": "98261c9b5608133e76ab5b1c9f3b40530f285f564e55e8e28cd0f04ecc3218e1"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

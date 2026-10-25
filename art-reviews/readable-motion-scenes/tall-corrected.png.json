@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/readable-motion-scenes/tall-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "82cc389d1c48cddd07425651757f063d9effd077dd1179d9ae3376ae9f98a099"
+  },
+  "output": {
+    "path": "art-reviews/readable-motion-scenes/tall-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "71afd728f68cb9db8081fcaaa6eda0e11c408edc78173dd264abf1b86fd68b06"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

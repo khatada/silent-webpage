@@ -2,7 +2,7 @@ export const maximumStarDarkness = 0.45;
 
 /** Different fixed periods and phases keep stars from pulsing together. */
 export function starCycle(index: number, composition: number) {
-  const period = 13 + ((index * 7 + composition * 5) % 15);
+  const period = 3 + ((index * 7 + composition * 5) % 15) * 4 / 14;
   return { period, phase: ((index * 11 + composition * 3) % 17) / 17 * period };
 }
 

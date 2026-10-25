@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "449e44a67b19bd8d066cefca04c9c937d4d7277f8bcf5788f57d90b05a0ed230",
+  "sourceSha256": "8ae347554c92aed9bdff070086d9eab88b7cafdefcf9391668c676b47e22565a",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -129,39 +129,39 @@
       }
     },
     {
-      "image": "art-reviews/plant-scenes/desktop-corrected.png",
-      "report": "art-reviews/plant-scenes/desktop-corrected.png.json",
+      "image": "art-reviews/readable-motion-scenes/desktop-corrected.png",
+      "report": "art-reviews/readable-motion-scenes/desktop-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
+      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
     },
     {
-      "image": "art-reviews/plant-scenes/mobile-corrected.png",
-      "report": "art-reviews/plant-scenes/mobile-corrected.png.json",
+      "image": "art-reviews/readable-motion-scenes/mobile-corrected.png",
+      "report": "art-reviews/readable-motion-scenes/mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
+      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
     },
     {
-      "image": "art-reviews/plant-scenes/narrow-corrected.png",
-      "report": "art-reviews/plant-scenes/narrow-corrected.png.json",
+      "image": "art-reviews/readable-motion-scenes/narrow-corrected.png",
+      "report": "art-reviews/readable-motion-scenes/narrow-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
+      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
     },
     {
-      "image": "art-reviews/plant-scenes/landscape-corrected.png",
-      "report": "art-reviews/plant-scenes/landscape-corrected.png.json",
+      "image": "art-reviews/readable-motion-scenes/landscape-corrected.png",
+      "report": "art-reviews/readable-motion-scenes/landscape-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
+      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
     },
     {
-      "image": "art-reviews/plant-scenes/wide-corrected.png",
-      "report": "art-reviews/plant-scenes/wide-corrected.png.json",
+      "image": "art-reviews/readable-motion-scenes/wide-corrected.png",
+      "report": "art-reviews/readable-motion-scenes/wide-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
+      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
     },
     {
       "image": "art-reviews/2026-10-22-stretch-sequence-final/atlas-corrected.png",
@@ -171,46 +171,46 @@
       "reason": "親LLMが最終補正atlasを実閲覧して採用。独立LLMも同一bytesのtrial左右各8コマ列を実閲覧して採用済み（SHA256 fcc36344f0ca6505d9992211271bd0cc024adfe3fa578b76ef28db38f21bdd04）。頭上げ→胸上げ→前脚送り/腰上げ→伸びが読め、支持帯は概ね揃い切れ/浮きなし。端点左右4組はRGBA一致。midの頭/首がやや小さく尾/腰の段差、生成中間→既存stretchの背/顔/尾の小差は残る。"
     },
     {
-      "image": "art-reviews/plant-scenes/compact-corrected.png",
-      "report": "art-reviews/plant-scenes/compact-corrected.png.json",
+      "image": "art-reviews/readable-motion-scenes/compact-corrected.png",
+      "report": "art-reviews/readable-motion-scenes/compact-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
+      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
     },
     {
-      "image": "art-reviews/plant-scenes/tall-corrected.png",
-      "report": "art-reviews/plant-scenes/tall-corrected.png.json",
+      "image": "art-reviews/readable-motion-scenes/tall-corrected.png",
+      "report": "art-reviews/readable-motion-scenes/tall-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
+      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
     },
     {
-      "image": "art-reviews/plant-scenes/portrait-large-corrected.png",
-      "report": "art-reviews/plant-scenes/portrait-large-corrected.png.json",
+      "image": "art-reviews/readable-motion-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/readable-motion-scenes/portrait-large-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
+      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
     },
     {
-      "image": "art-reviews/plant-scenes/portrait-boundary-corrected.png",
-      "report": "art-reviews/plant-scenes/portrait-boundary-corrected.png.json",
+      "image": "art-reviews/readable-motion-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/readable-motion-scenes/portrait-boundary-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
+      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
     },
     {
-      "image": "art-reviews/plant-scenes/small-phone-corrected.png",
-      "report": "art-reviews/plant-scenes/small-phone-corrected.png.json",
+      "image": "art-reviews/readable-motion-scenes/small-phone-corrected.png",
+      "report": "art-reviews/readable-motion-scenes/small-phone-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
+      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
     },
     {
-      "image": "art-reviews/plant-scenes/small-mobile-corrected.png",
-      "report": "art-reviews/plant-scenes/small-mobile-corrected.png.json",
+      "image": "art-reviews/readable-motion-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/readable-motion-scenes/small-mobile-corrected.png.json",
       "decision": "accepted",
       "reviewedBy": "LLM",
-      "reason": "最終sourceの補正後11全景を親5枚/独立LLM6枚が実閲覧して採用。鉢底が床上に収まり、猫より奥で全身/動線を圧迫せず、最小構図でも鉢と葉を識別。空/列車/窓/屋上の輪郭と配色を保持。前版とのdecoded RGBA比較で小鉢の保守的frame領域外変更0、葉の動きは別局所/本番QAで確認。"
+      "reason": "全体視認性調整の最終sourceで再撮影した補正後11全景を親5枚/独立LLM6枚が実閲覧し採用。初期消灯は窓枠内、上雲の明度増加は星/航空機を隠さず、猫/小鉢の接地・原画の輪郭・構図を保持。動きの分かりやすさは別の本番時間差画像で評価。"
     },
     {
       "image": "public/art/street-car.png",
@@ -915,6 +915,76 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "本番3端末の動作全景/連続native atlasとmobile停止再開atlas計7画像を補正後に親/担当LLMが実閲覧し採用。葉だけが左→中立→右→中立へ変化、鉢は床に接地。landscapeでは猫が鉢下部の手前を通過する。UI停止中の全canvasRGBA変更0、再開後も葉の位相を保持し中立復帰。猫通過による局所140px差分は遮蔽として扱い、植物のずれと混同しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-readable-motion-active/desktop-0-corrected.png",
+      "report": "art-reviews/2026-10-25-readable-motion-active/desktop-0-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の0/8秒全景6枚と2/5秒native帯3枚を補正後に親/担当LLMが実閲覧して採用。3秒間で雲/飛行機の右移動と住宅窓の点消灯を明瞭に確認。絵の輪郭や夜景の配色を保持。0秒3枚は採用済み初期全景とdecoded RGBA一致。UI停止wall1秒の全canvas差分0を各端末で確認。移動量は計算値としてmetadataに記録し画素測定とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-readable-motion-active/desktop-8-corrected.png",
+      "report": "art-reviews/2026-10-25-readable-motion-active/desktop-8-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の0/8秒全景6枚と2/5秒native帯3枚を補正後に親/担当LLMが実閲覧して採用。3秒間で雲/飛行機の右移動と住宅窓の点消灯を明瞭に確認。絵の輪郭や夜景の配色を保持。0秒3枚は採用済み初期全景とdecoded RGBA一致。UI停止wall1秒の全canvas差分0を各端末で確認。移動量は計算値としてmetadataに記録し画素測定とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-readable-motion-active/desktop-sequence-corrected.png",
+      "report": "art-reviews/2026-10-25-readable-motion-active/desktop-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の0/8秒全景6枚と2/5秒native帯3枚を補正後に親/担当LLMが実閲覧して採用。3秒間で雲/飛行機の右移動と住宅窓の点消灯を明瞭に確認。絵の輪郭や夜景の配色を保持。0秒3枚は採用済み初期全景とdecoded RGBA一致。UI停止wall1秒の全canvas差分0を各端末で確認。移動量は計算値としてmetadataに記録し画素測定とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-readable-motion-active/landscape-0-corrected.png",
+      "report": "art-reviews/2026-10-25-readable-motion-active/landscape-0-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の0/8秒全景6枚と2/5秒native帯3枚を補正後に親/担当LLMが実閲覧して採用。3秒間で雲/飛行機の右移動と住宅窓の点消灯を明瞭に確認。絵の輪郭や夜景の配色を保持。0秒3枚は採用済み初期全景とdecoded RGBA一致。UI停止wall1秒の全canvas差分0を各端末で確認。移動量は計算値としてmetadataに記録し画素測定とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-readable-motion-active/landscape-8-corrected.png",
+      "report": "art-reviews/2026-10-25-readable-motion-active/landscape-8-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の0/8秒全景6枚と2/5秒native帯3枚を補正後に親/担当LLMが実閲覧して採用。3秒間で雲/飛行機の右移動と住宅窓の点消灯を明瞭に確認。絵の輪郭や夜景の配色を保持。0秒3枚は採用済み初期全景とdecoded RGBA一致。UI停止wall1秒の全canvas差分0を各端末で確認。移動量は計算値としてmetadataに記録し画素測定とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-readable-motion-active/landscape-sequence-corrected.png",
+      "report": "art-reviews/2026-10-25-readable-motion-active/landscape-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の0/8秒全景6枚と2/5秒native帯3枚を補正後に親/担当LLMが実閲覧して採用。3秒間で雲/飛行機の右移動と住宅窓の点消灯を明瞭に確認。絵の輪郭や夜景の配色を保持。0秒3枚は採用済み初期全景とdecoded RGBA一致。UI停止wall1秒の全canvas差分0を各端末で確認。移動量は計算値としてmetadataに記録し画素測定とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-readable-motion-active/mobile-0-corrected.png",
+      "report": "art-reviews/2026-10-25-readable-motion-active/mobile-0-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の0/8秒全景6枚と2/5秒native帯3枚を補正後に親/担当LLMが実閲覧して採用。3秒間で雲/飛行機の右移動と住宅窓の点消灯を明瞭に確認。絵の輪郭や夜景の配色を保持。0秒3枚は採用済み初期全景とdecoded RGBA一致。UI停止wall1秒の全canvas差分0を各端末で確認。移動量は計算値としてmetadataに記録し画素測定とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-readable-motion-active/mobile-8-corrected.png",
+      "report": "art-reviews/2026-10-25-readable-motion-active/mobile-8-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の0/8秒全景6枚と2/5秒native帯3枚を補正後に親/担当LLMが実閲覧して採用。3秒間で雲/飛行機の右移動と住宅窓の点消灯を明瞭に確認。絵の輪郭や夜景の配色を保持。0秒3枚は採用済み初期全景とdecoded RGBA一致。UI停止wall1秒の全canvas差分0を各端末で確認。移動量は計算値としてmetadataに記録し画素測定とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-readable-motion-active/mobile-sequence-corrected.png",
+      "report": "art-reviews/2026-10-25-readable-motion-active/mobile-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "本番3端末の0/8秒全景6枚と2/5秒native帯3枚を補正後に親/担当LLMが実閲覧して採用。3秒間で雲/飛行機の右移動と住宅窓の点消灯を明瞭に確認。絵の輪郭や夜景の配色を保持。0秒3枚は採用済み初期全景とdecoded RGBA一致。UI停止wall1秒の全canvas差分0を各端末で確認。移動量は計算値としてmetadataに記録し画素測定とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-readable-meteor/desktop-4-corrected.png",
+      "report": "art-reviews/2026-10-25-readable-meteor/desktop-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後4秒全景を親/担当LLMが実閲覧し構図/輪郭破損なしとして採用。ただし流星は主雲の縁と重なり独立した尾を判別しづらく、この画像を流星の視認性向上の証拠とは扱わない。全体の見えやすさは別の雲/飛行機/窓の時間差画像で確認済み。"
     }
   ]
 }

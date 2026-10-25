@@ -1,0 +1,15 @@
+{
+  "sourceSha256": "8ae347554c92aed9bdff070086d9eab88b7cafdefcf9391668c676b47e22565a",
+  "method": "Unmodified production page, clock paused before navigation, OS motion enabled after initialization; runFor steps <=1000ms. Requested 0/2/5/8s sample times can follow the last 20fps RAF. Speed/travel metadata are calculated expectations, not pixel-measured motion. 2/5s strip atlases and 0/8s full scenes are corrected for visual review. Real settings UI stops the whole scene and is checked against a second full-canvas RGBA snapshot after 1s; temporary stop snapshots are not added to the PR.",
+  "layouts": [
+    {"name":"desktop","native":[1440,900],"dpr":1,"scale":2,"bands":[{"name":"sky","y":0,"height":132},{"name":"city-windows","y":412,"height":246},{"name":"cat","y":720,"height":160}],"atlasOrder":"2s sky/city-windows/cat, then 5s sky/city-windows/cat; all strips retain native pixels","calculatedNativePixelsPerSecond":{"cloud":9.6,"aircraft":20,"train":32},"calculatedUnwrappedNativeTravel2To5Seconds":{"cloud":28.799999999999997,"aircraft":60,"train":96}},
+    {"name":"mobile","native":[390,844],"dpr":2,"scale":2,"bands":[{"name":"sky","y":0,"height":76},{"name":"city-windows","y":356,"height":246},{"name":"cat","y":664,"height":160}],"atlasOrder":"2s sky/city-windows/cat, then 5s sky/city-windows/cat; all strips retain native pixels","calculatedNativePixelsPerSecond":{"cloud":9.6,"aircraft":20,"train":32},"calculatedUnwrappedNativeTravel2To5Seconds":{"cloud":28.799999999999997,"aircraft":60,"train":96}},
+    {"name":"landscape","native":[844,390],"dpr":2,"scale":2,"bands":[{"name":"sky","y":0,"height":48},{"name":"city-windows","y":178,"height":132},{"name":"cat","y":302,"height":88}],"atlasOrder":"2s sky/city-windows/cat, then 5s sky/city-windows/cat; all strips retain native pixels","calculatedNativePixelsPerSecond":{"cloud":9.6,"aircraft":20,"train":32},"calculatedUnwrappedNativeTravel2To5Seconds":{"cloud":28.799999999999997,"aircraft":60,"train":96}}
+  ],
+  "comparisons": [
+    {"name":"desktop","requestedPauseSceneSeconds":8,"pausedWallSeconds":1,"changedPixels":0,"beforeRgbaSha256":"e2a2ba3b08cb01fec6c31ff860c0a89d1b9043667ccf39fe5bfc5ae5a2f2e139","afterRgbaSha256":"e2a2ba3b08cb01fec6c31ff860c0a89d1b9043667ccf39fe5bfc5ae5a2f2e139"},
+    {"name":"mobile","requestedPauseSceneSeconds":8,"pausedWallSeconds":1,"changedPixels":0,"beforeRgbaSha256":"fac9da2ae80344542a7ae3eb2f26bb548311013fb049a74f84b4124012ba8941","afterRgbaSha256":"fac9da2ae80344542a7ae3eb2f26bb548311013fb049a74f84b4124012ba8941"},
+    {"name":"landscape","requestedPauseSceneSeconds":8,"pausedWallSeconds":1,"changedPixels":0,"beforeRgbaSha256":"81ada0206d7a1461b6a74f0510a4e896a22c1571a8e00cb2d688e6a2dd9954db","afterRgbaSha256":"81ada0206d7a1461b6a74f0510a4e896a22c1571a8e00cb2d688e6a2dd9954db"}
+  ],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

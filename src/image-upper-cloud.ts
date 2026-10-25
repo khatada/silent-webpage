@@ -3,7 +3,7 @@ import { travelPosition } from './animation';
 import type { generatedLayout } from './generated-layout';
 
 type Layout = ReturnType<typeof generatedLayout>;
-export const upperCloudArt = { alpha: 0.12, relativeScale: 0.2,
+export const upperCloudArt = { alpha: 0.22, relativeScale: 0.2,
   // Measured alpha bounds of the reviewed cloud crop, with exclusive right/bottom.
   alphaBounds: [0, 2, 228, 70], margin: 4 } as const;
 
@@ -31,7 +31,7 @@ export function createImageUpperCloud(texture: Texture) {
     return sprite;
   }
   function update(sprite: Sprite, seconds: number, width: number, scale: number) {
-    sprite.x = travelPosition(seconds, width, sprite.width, scale * 0.35, width * 0.65);
+    sprite.x = travelPosition(seconds, width, sprite.width, scale * 1.2, width * 0.65);
   }
   return { createSprite, update };
 }
