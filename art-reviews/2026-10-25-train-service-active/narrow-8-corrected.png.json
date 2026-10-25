@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-train-service-active/narrow-8-source.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "59fc762f80877ae385e97b251bba8b22060084c19a2b8352e07f68a517bc89cd"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-train-service-active/narrow-8-corrected.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "1a1396b2ddea3df986959b61f9263cb285b53fdc57f8ab1c6ed6580a1733f0f9"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

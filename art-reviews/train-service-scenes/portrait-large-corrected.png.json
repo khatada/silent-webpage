@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/train-service-scenes/portrait-large-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "72b36d7dd8b0ed72a71e77bbc0f532fb33942d1478605c701c759e456e2183ff"
+  },
+  "output": {
+    "path": "art-reviews/train-service-scenes/portrait-large-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "6f66f2e3d402356a8e343f82f413168fd1e3724cba937e0f575ba117b53a3999"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

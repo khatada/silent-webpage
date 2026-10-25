@@ -1,0 +1,24 @@
+{
+  "sourceSha256": "41d7ce896b9bfba8dd33780891de3d4b16369fca41f019b1108de05cc18b3106",
+  "method": "Unmodified production page; clock paused before navigation, motion enabled after initialization, runFor steps <=1000ms. Train counts/positions/speed and wrap timing are calculated expectations, not pixel measurements. Actual last 20fps RAF may precede requested time. Native rail-strip atlases show initial movement, mobile second-train wrap and pole occlusion; full scenes are retained only at 8 seconds. LLM visual review decides adoption.",
+  "layouts": [
+    {"name":"desktop","native":[1440,900],"dpr":1,"trainWidth":126.72,"trainHeight":31.2,"calculatedNativeSpeed":32,"leadInitialX":399.64,"offsets":[0,783.36],"calculatedTrainCount":2,"secondFirstWrapSeconds":null,"visiblePoles":[{"x":136,"width":10,"center":141},{"x":458,"width":10,"center":463},{"x":708,"width":10,"center":713},{"x":1034,"width":10,"center":1039},{"x":1314,"width":10,"center":1319}],"railTop":316,"railHeight":80,"atlasTimes":[0,1,8]},
+    {"name":"mobile","native":[390,844],"dpr":2,"trainWidth":126.72,"trainHeight":31.2,"calculatedNativeSpeed":32,"leadInitialX":124.64,"offsets":[0,258.36],"calculatedTrainCount":2,"secondFirstWrapSeconds":0.21875,"visiblePoles":[{"x":183,"width":10,"center":188}],"railTop":260,"railHeight":80,"atlasTimes":[0,0.069,0.369,1,1.219,8]},
+    {"name":"narrow","native":[295,844],"dpr":1,"trainWidth":126.72,"trainHeight":31.2,"calculatedNativeSpeed":32,"leadInitialX":77.64,"offsets":[0],"calculatedTrainCount":1,"secondFirstWrapSeconds":null,"visiblePoles":[{"x":136,"width":10,"center":141}],"railTop":260,"railHeight":80,"atlasTimes":[0,1,8]}
+  ],
+  "samples": [
+    {"name":"desktop","panel":0,"requestedSceneSeconds":0,"calculatedTrainXs":[399,1183]},
+    {"name":"desktop","panel":1,"requestedSceneSeconds":1,"calculatedTrainXs":[431,1215]},
+    {"name":"desktop","panel":2,"requestedSceneSeconds":8,"calculatedTrainXs":[655,1439]},
+    {"name":"mobile","panel":0,"requestedSceneSeconds":0,"calculatedTrainXs":[124,383]},
+    {"name":"mobile","panel":1,"requestedSceneSeconds":0.069,"calculatedTrainXs":[126,385]},
+    {"name":"mobile","panel":2,"requestedSceneSeconds":0.369,"calculatedTrainXs":[136,-122]},
+    {"name":"mobile","panel":3,"requestedSceneSeconds":1,"calculatedTrainXs":[156,-102]},
+    {"name":"mobile","panel":4,"requestedSceneSeconds":1.219,"calculatedTrainXs":[163,-95]},
+    {"name":"mobile","panel":5,"requestedSceneSeconds":8,"calculatedTrainXs":[380,122]},
+    {"name":"narrow","panel":0,"requestedSceneSeconds":0,"calculatedTrainXs":[77]},
+    {"name":"narrow","panel":1,"requestedSceneSeconds":1,"calculatedTrainXs":[109]},
+    {"name":"narrow","panel":2,"requestedSceneSeconds":8,"calculatedTrainXs":[-89]}
+  ],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

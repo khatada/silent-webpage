@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-train-service-active/desktop-8-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "b6aaa206882e3a47ebc934e9746a936d246a53ab77e6b5a13883a5fb19b912d3"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-train-service-active/desktop-8-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "57b30be21feb07b6a0a87aae86b9f51fb966240b293fb685761211fd75adf5d8"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
