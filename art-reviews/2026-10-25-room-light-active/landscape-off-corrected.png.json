@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-room-light-active/landscape-off-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "e7c3a75fe4497d4a26a71aeb7c83773c2f7e73f8fbd3d07396198af86104e040"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-room-light-active/landscape-off-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "8b11a3ab17cf470b8cca8d6ff43ded39b08614b6f0bcdca742c3f7dc2be524ec"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,25 @@
+{
+  "sourceSha256": "8504b87eafa4fbd0c7ff2632a78c3d11facd4945569c7ec062dc5041aba7b02f",
+  "method": "Unmodified production page; clock paused before navigation, motion enabled after initialization, runFor steps <=1000ms. On/off samples include 0.3s fade hold margin; intermediate brightness is calculated at the requested time, not measured exact RAF state. The final 20fps RAF may precede the requested time. Native screenshot crops show the room and surrounding frame/railing at three states; the off-state whole scene is retained. These are rendered screenshot copies, not generated original artwork. LLM visual review decides adoption.",
+  "layouts": [
+    {"name":"desktop","composition":"normal","native":[1440,900],"dpr":1,"scale":2,"roomCycleIndex":1,"phase":3.75,"period":13.5,"sourceRect":[380,288,30,28],"physicalCrop":{"x":712,"y":500,"width":60,"height":56},"atlasOrder":["on","mid","off"]},
+    {"name":"mobile","composition":"normal","native":[390,844],"dpr":2,"scale":2,"roomCycleIndex":1,"phase":3.75,"period":13.5,"sourceRect":[380,288,30,28],"physicalCrop":{"x":374,"y":888,"width":120,"height":112},"atlasOrder":["on","mid","off"]},
+    {"name":"landscape","composition":"wide","native":[844,390],"dpr":2,"scale":2,"roomCycleIndex":6,"phase":12.5,"period":21,"sourceRect":[478,169,18,24],"physicalCrop":{"x":1308,"y":536,"width":72,"height":96},"atlasOrder":["off","mid","on"]},
+    {"name":"portrait-large","composition":"portrait","native":[900,1600],"dpr":1,"scale":1,"roomCycleIndex":0,"phase":2,"period":12,"sourceRect":[514,932,47,38],"physicalCrop":{"x":452,"y":964,"width":47,"height":38},"atlasOrder":["on","mid","off"]}
+  ],
+  "samples": [
+    {"name":"desktop","panel":0,"state":"on","requestedSceneSeconds":0,"calculatedRoomBrightness":1},
+    {"name":"desktop","panel":1,"state":"mid","requestedSceneSeconds":4.395,"calculatedRoomBrightness":0.49999999999999967},
+    {"name":"desktop","panel":2,"state":"off","requestedSceneSeconds":5.145,"calculatedRoomBrightness":0},
+    {"name":"mobile","panel":0,"state":"on","requestedSceneSeconds":0,"calculatedRoomBrightness":1},
+    {"name":"mobile","panel":1,"state":"mid","requestedSceneSeconds":4.395,"calculatedRoomBrightness":0.49999999999999967},
+    {"name":"mobile","panel":2,"state":"off","requestedSceneSeconds":5.145,"calculatedRoomBrightness":0},
+    {"name":"landscape","panel":0,"state":"off","requestedSceneSeconds":0.67,"calculatedRoomBrightness":0},
+    {"name":"landscape","panel":1,"state":"mid","requestedSceneSeconds":8.95,"calculatedRoomBrightness":0.4999999999999989},
+    {"name":"landscape","panel":2,"state":"on","requestedSceneSeconds":9.7,"calculatedRoomBrightness":1},
+    {"name":"portrait-large","panel":0,"state":"on","requestedSceneSeconds":0,"calculatedRoomBrightness":1},
+    {"name":"portrait-large","panel":1,"state":"mid","requestedSceneSeconds":5.29,"calculatedRoomBrightness":0.5000000000000011},
+    {"name":"portrait-large","panel":2,"state":"off","requestedSceneSeconds":6.04,"calculatedRoomBrightness":0}
+  ],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

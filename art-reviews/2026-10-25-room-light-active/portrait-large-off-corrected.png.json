@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-room-light-active/portrait-large-off-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "27dfe2044e76144e69ef56c89f3ca64fbfe24e5c84235610976044aad7be050c"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-room-light-active/portrait-large-off-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "3df8f1c8c65e9cb9f23450ae7affbbe110315a5fe8135ad0a386d6b264c55bb7"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-room-light-active/mobile-off-source.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "13c4078908e9655e5a8d9a3492fc523e7826cda68fa6d037f7e90707445300eb"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-room-light-active/mobile-off-corrected.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "ee42df3c8ee91e5e6f5fc6f54a637b3061abda26695dcb867d0dd3427fe11273"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

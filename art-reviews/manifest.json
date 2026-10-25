@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "027a6949885c03f1ed6fac854c8f2efc91e51a87b61e0340cfbc85467cdc5699",
+  "sourceSha256": "8504b87eafa4fbd0c7ff2632a78c3d11facd4945569c7ec062dc5041aba7b02f",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -1231,6 +1231,146 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親LLMが補正後画像を実閲覧。青と銅赤の同方向列車が同じ線路と車輪高さで走り、柱の遮蔽と間隔が自然。猫・鉢・街並みを保つ。 PCの0/1/8秒およびmobileの周回境界を含む連続rail帯で移動と出入りを確認。mobile8秒では銅帯が中央で明瞭、narrowは青1のみ。位置/速度の数値は計算値であり実測と区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-room-light-local/atlas-corrected.png",
+      "report": "art-reviews/2026-10-25-room-light-local/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後36パネル（3構図×.5/1/4倍率×original/on/mid/off）を全域実閲覧。追加ガラスの暗い室内陰影と枠/柵/植物保持を確認。27比較でstrictガラス外RGBA変更0、on9組は原画完全一致。既存左小矩形coverは従来どおりで、窓全体消灯とは呼ばない。"
+    },
+    {
+      "image": "art-reviews/room-light-scenes/compact-corrected.png",
+      "report": "art-reviews/room-light-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で全域実閲覧、wide/tallは無変形帯も閲覧し採用。枠/人影位置/猫/鉢/列車と構図を維持。初期のnormal/portrait8構図は前版RGBA完全一致、wide3構図も旧新cover領域外変更0。動作視認性は時系列QAで別確認。"
+    },
+    {
+      "image": "art-reviews/room-light-scenes/desktop-corrected.png",
+      "report": "art-reviews/room-light-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で全域実閲覧、wide/tallは無変形帯も閲覧し採用。枠/人影位置/猫/鉢/列車と構図を維持。初期のnormal/portrait8構図は前版RGBA完全一致、wide3構図も旧新cover領域外変更0。動作視認性は時系列QAで別確認。"
+    },
+    {
+      "image": "art-reviews/room-light-scenes/landscape-corrected.png",
+      "report": "art-reviews/room-light-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で全域実閲覧、wide/tallは無変形帯も閲覧し採用。枠/人影位置/猫/鉢/列車と構図を維持。初期のnormal/portrait8構図は前版RGBA完全一致、wide3構図も旧新cover領域外変更0。動作視認性は時系列QAで別確認。"
+    },
+    {
+      "image": "art-reviews/room-light-scenes/mobile-corrected.png",
+      "report": "art-reviews/room-light-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で全域実閲覧、wide/tallは無変形帯も閲覧し採用。枠/人影位置/猫/鉢/列車と構図を維持。初期のnormal/portrait8構図は前版RGBA完全一致、wide3構図も旧新cover領域外変更0。動作視認性は時系列QAで別確認。"
+    },
+    {
+      "image": "art-reviews/room-light-scenes/narrow-corrected.png",
+      "report": "art-reviews/room-light-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で全域実閲覧、wide/tallは無変形帯も閲覧し採用。枠/人影位置/猫/鉢/列車と構図を維持。初期のnormal/portrait8構図は前版RGBA完全一致、wide3構図も旧新cover領域外変更0。動作視認性は時系列QAで別確認。"
+    },
+    {
+      "image": "art-reviews/room-light-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/room-light-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で全域実閲覧、wide/tallは無変形帯も閲覧し採用。枠/人影位置/猫/鉢/列車と構図を維持。初期のnormal/portrait8構図は前版RGBA完全一致、wide3構図も旧新cover領域外変更0。動作視認性は時系列QAで別確認。"
+    },
+    {
+      "image": "art-reviews/room-light-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/room-light-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で全域実閲覧、wide/tallは無変形帯も閲覧し採用。枠/人影位置/猫/鉢/列車と構図を維持。初期のnormal/portrait8構図は前版RGBA完全一致、wide3構図も旧新cover領域外変更0。動作視認性は時系列QAで別確認。"
+    },
+    {
+      "image": "art-reviews/room-light-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/room-light-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で全域実閲覧、wide/tallは無変形帯も閲覧し採用。枠/人影位置/猫/鉢/列車と構図を維持。初期のnormal/portrait8構図は前版RGBA完全一致、wide3構図も旧新cover領域外変更0。動作視認性は時系列QAで別確認。"
+    },
+    {
+      "image": "art-reviews/room-light-scenes/small-phone-corrected.png",
+      "report": "art-reviews/room-light-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で全域実閲覧、wide/tallは無変形帯も閲覧し採用。枠/人影位置/猫/鉢/列車と構図を維持。初期のnormal/portrait8構図は前版RGBA完全一致、wide3構図も旧新cover領域外変更0。動作視認性は時系列QAで別確認。"
+    },
+    {
+      "image": "art-reviews/room-light-scenes/tall-corrected.png",
+      "report": "art-reviews/room-light-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で全域実閲覧、wide/tallは無変形帯も閲覧し採用。枠/人影位置/猫/鉢/列車と構図を維持。初期のnormal/portrait8構図は前版RGBA完全一致、wide3構図も旧新cover領域外変更0。動作視認性は時系列QAで別確認。"
+    },
+    {
+      "image": "art-reviews/room-light-scenes/wide-corrected.png",
+      "report": "art-reviews/room-light-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で全域実閲覧、wide/tallは無変形帯も閲覧し採用。枠/人影位置/猫/鉢/列車と構図を維持。初期のnormal/portrait8構図は前版RGBA完全一致、wide3構図も旧新cover領域外変更0。動作視認性は時系列QAで別確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-room-light-active/desktop-off-corrected.png",
+      "report": "art-reviews/2026-10-25-room-light-active/desktop-off-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後4端末の3状態atlasとoff全景8画像を全域実閲覧。親も4atlasを実閲覧。normal/portraitはon→mid→offで右ガラス上部が同室phaseで暖光から暗い室内へ、wideはoff→mid→onで左ガラスが明るくなる。枠/柵/植物と全景は保持。下部の灯りと旧左cover境界は残るため窓全体消灯ではなく上部ガラス明暗拡張として採用。計算brightnessと実RAF時刻を区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-room-light-active/desktop-room-corrected.png",
+      "report": "art-reviews/2026-10-25-room-light-active/desktop-room-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後4端末の3状態atlasとoff全景8画像を全域実閲覧。親も4atlasを実閲覧。normal/portraitはon→mid→offで右ガラス上部が同室phaseで暖光から暗い室内へ、wideはoff→mid→onで左ガラスが明るくなる。枠/柵/植物と全景は保持。下部の灯りと旧左cover境界は残るため窓全体消灯ではなく上部ガラス明暗拡張として採用。計算brightnessと実RAF時刻を区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-room-light-active/landscape-off-corrected.png",
+      "report": "art-reviews/2026-10-25-room-light-active/landscape-off-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後4端末の3状態atlasとoff全景8画像を全域実閲覧。親も4atlasを実閲覧。normal/portraitはon→mid→offで右ガラス上部が同室phaseで暖光から暗い室内へ、wideはoff→mid→onで左ガラスが明るくなる。枠/柵/植物と全景は保持。下部の灯りと旧左cover境界は残るため窓全体消灯ではなく上部ガラス明暗拡張として採用。計算brightnessと実RAF時刻を区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-room-light-active/landscape-room-corrected.png",
+      "report": "art-reviews/2026-10-25-room-light-active/landscape-room-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後4端末の3状態atlasとoff全景8画像を全域実閲覧。親も4atlasを実閲覧。normal/portraitはon→mid→offで右ガラス上部が同室phaseで暖光から暗い室内へ、wideはoff→mid→onで左ガラスが明るくなる。枠/柵/植物と全景は保持。下部の灯りと旧左cover境界は残るため窓全体消灯ではなく上部ガラス明暗拡張として採用。計算brightnessと実RAF時刻を区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-room-light-active/mobile-off-corrected.png",
+      "report": "art-reviews/2026-10-25-room-light-active/mobile-off-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後4端末の3状態atlasとoff全景8画像を全域実閲覧。親も4atlasを実閲覧。normal/portraitはon→mid→offで右ガラス上部が同室phaseで暖光から暗い室内へ、wideはoff→mid→onで左ガラスが明るくなる。枠/柵/植物と全景は保持。下部の灯りと旧左cover境界は残るため窓全体消灯ではなく上部ガラス明暗拡張として採用。計算brightnessと実RAF時刻を区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-room-light-active/mobile-room-corrected.png",
+      "report": "art-reviews/2026-10-25-room-light-active/mobile-room-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後4端末の3状態atlasとoff全景8画像を全域実閲覧。親も4atlasを実閲覧。normal/portraitはon→mid→offで右ガラス上部が同室phaseで暖光から暗い室内へ、wideはoff→mid→onで左ガラスが明るくなる。枠/柵/植物と全景は保持。下部の灯りと旧左cover境界は残るため窓全体消灯ではなく上部ガラス明暗拡張として採用。計算brightnessと実RAF時刻を区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-room-light-active/portrait-large-off-corrected.png",
+      "report": "art-reviews/2026-10-25-room-light-active/portrait-large-off-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後4端末の3状態atlasとoff全景8画像を全域実閲覧。親も4atlasを実閲覧。normal/portraitはon→mid→offで右ガラス上部が同室phaseで暖光から暗い室内へ、wideはoff→mid→onで左ガラスが明るくなる。枠/柵/植物と全景は保持。下部の灯りと旧左cover境界は残るため窓全体消灯ではなく上部ガラス明暗拡張として採用。計算brightnessと実RAF時刻を区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-room-light-active/portrait-large-room-corrected.png",
+      "report": "art-reviews/2026-10-25-room-light-active/portrait-large-room-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後4端末の3状態atlasとoff全景8画像を全域実閲覧。親も4atlasを実閲覧。normal/portraitはon→mid→offで右ガラス上部が同室phaseで暖光から暗い室内へ、wideはoff→mid→onで左ガラスが明るくなる。枠/柵/植物と全景は保持。下部の灯りと旧左cover境界は残るため窓全体消灯ではなく上部ガラス明暗拡張として採用。計算brightnessと実RAF時刻を区別。"
     }
   ]
 }

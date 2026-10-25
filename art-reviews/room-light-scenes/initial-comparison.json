@@ -1,0 +1,19 @@
+{
+  "method": "Decoded allRGBA comparison to PR56. Bounds computed from current layout/pixelViewport and old/new cover union with two native pixel margins. Normal/portrait initial shared brightness1 must be entirely identical; only wide replacement can differ.",
+  "sourceSha256": "8504b87eafa4fbd0c7ff2632a78c3d11facd4945569c7ec062dc5041aba7b02f",
+  "allOutsideUnchanged": true
+,
+  "samples": [
+    {"name":"desktop","composition":0,"physicalAllowedRects":[[728,506,748,526]],"changedPixels":0,"outsideChangedPixels":0,"allRGBAEqual":true},
+    {"name":"mobile","composition":0,"physicalAllowedRects":[[406,900,446,940]],"changedPixels":0,"outsideChangedPixels":0,"allRGBAEqual":true},
+    {"name":"narrow","composition":0,"physicalAllowedRects":[[156,450,176,470]],"changedPixels":0,"outsideChangedPixels":0,"allRGBAEqual":true},
+    {"name":"landscape","composition":1,"physicalAllowedRects":[[1324,556,1352,608],[1320,560,1344,592]],"changedPixels":976,"outsideChangedPixels":0,"allRGBAEqual":false},
+    {"name":"wide","composition":1,"physicalAllowedRects":[[1883,803,1912,862],[1878,808,1902,842]],"changedPixels":1525,"outsideChangedPixels":0,"allRGBAEqual":false},
+    {"name":"compact","composition":1,"physicalAllowedRects":[[761,433,780,470],[758,436,774,458]],"changedPixels":549,"outsideChangedPixels":0,"allRGBAEqual":false},
+    {"name":"tall","composition":2,"physicalAllowedRects":[[424,1142,456,1178]],"changedPixels":0,"outsideChangedPixels":0,"allRGBAEqual":true},
+    {"name":"portrait-large","composition":2,"physicalAllowedRects":[[467,966,483,984]],"changedPixels":0,"outsideChangedPixels":0,"allRGBAEqual":true},
+    {"name":"portrait-boundary","composition":2,"physicalAllowedRects":[[529,935,545,953]],"changedPixels":0,"outsideChangedPixels":0,"allRGBAEqual":true},
+    {"name":"small-phone","composition":2,"physicalAllowedRects":[[335,680,355,702]],"changedPixels":0,"outsideChangedPixels":0,"allRGBAEqual":true},
+    {"name":"small-mobile","composition":2,"physicalAllowedRects":[[391,832,411,854]],"changedPixels":0,"outsideChangedPixels":0,"allRGBAEqual":true}
+  ]
+}
