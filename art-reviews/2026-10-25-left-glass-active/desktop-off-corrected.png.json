@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-left-glass-active/desktop-off-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "dba6eb89835cb51acc3829195005b9c3301d807f9e771858265680f16a50e63e"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-left-glass-active/desktop-off-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "b583d8a538bf7005015791798f609bfd61a996c8d2d521b2e3c9b63bde0e8e3b"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

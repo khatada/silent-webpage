@@ -1,0 +1,61 @@
+{
+  "method": "All decoded RGBA bytes and dimensions compared against PR57 initial scenes. All 11 must be identical: normal/portrait room brightness1 initially, wide rendering unchanged.",
+  "sourceSha256": "ee967a32cf0cdb6edd5498123a60c653a06d63d50282d4648b262d31dc213bd3",
+  "samples": [
+    {
+      "name": "compact-corrected.png",
+      "allRGBAEqual": true,
+      "changedPixels": 0
+    },
+    {
+      "name": "desktop-corrected.png",
+      "allRGBAEqual": true,
+      "changedPixels": 0
+    },
+    {
+      "name": "landscape-corrected.png",
+      "allRGBAEqual": true,
+      "changedPixels": 0
+    },
+    {
+      "name": "mobile-corrected.png",
+      "allRGBAEqual": true,
+      "changedPixels": 0
+    },
+    {
+      "name": "narrow-corrected.png",
+      "allRGBAEqual": true,
+      "changedPixels": 0
+    },
+    {
+      "name": "portrait-boundary-corrected.png",
+      "allRGBAEqual": true,
+      "changedPixels": 0
+    },
+    {
+      "name": "portrait-large-corrected.png",
+      "allRGBAEqual": true,
+      "changedPixels": 0
+    },
+    {
+      "name": "small-mobile-corrected.png",
+      "allRGBAEqual": true,
+      "changedPixels": 0
+    },
+    {
+      "name": "small-phone-corrected.png",
+      "allRGBAEqual": true,
+      "changedPixels": 0
+    },
+    {
+      "name": "tall-corrected.png",
+      "allRGBAEqual": true,
+      "changedPixels": 0
+    },
+    {
+      "name": "wide-corrected.png",
+      "allRGBAEqual": true,
+      "changedPixels": 0
+    }
+  ]
+}

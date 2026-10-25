@@ -1,4 +1,4 @@
-import { Texture, TextureSource } from 'pixi.js';
+import { Sprite, Texture, TextureSource } from 'pixi.js';
 import { describe, expect, it } from 'vitest';
 import { generatedArt } from './generated-art';
 import { generatedLayout } from './generated-layout';
@@ -15,13 +15,27 @@ describe('room glass coverage', () => {
       composition.windows.forEach((window, index) => {
         const group = covers.createCover(compositionId, index, window, sources[compositionId], 0.5, -17, 23);
         const selected = index === area.windowIndex;
-        expect(group.children.length).toBe(selected && !area.replace ? 2 : 1);
+        expect(group.children.length).toBe(selected && area.leftGlass ? 2 : 1);
         const original = group.children[0];
-        if (!selected || !area.replace) {
+        if (!selected) {
           expect(original.x).toBe(-17 + window[0] * 0.5);
           expect(original.y).toBe(23 + window[1] * 0.5);
           expect(original.width).toBe(window[2] * 0.5);
           expect(original.height).toBe(window[3] * 0.5);
+        }
+        if (selected && area.leftGlass) {
+          const left = group.children[0] as Sprite;
+          const right = group.children[1] as Sprite;
+          expect(left.x).toBe(-17 + area.leftGlass[0] * 0.5);
+          expect(left.y).toBe(23 + area.leftGlass[1] * 0.5);
+          expect(left.width).toBe(area.leftGlass[2] * 0.5);
+          expect(left.height).toBe(area.leftGlass[3] * 0.5);
+          expect(left.texture).toBe(right.texture);
+          // The actor's old anchor remains within the new cover, without a second wall overlay.
+          expect(area.leftGlass[0]).toBeLessThanOrEqual(window[0]);
+          expect(area.leftGlass[1]).toBeLessThanOrEqual(window[1]);
+          expect(area.leftGlass[0] + area.leftGlass[2]).toBeGreaterThanOrEqual(window[0] + window[2]);
+          expect(area.leftGlass[1] + area.leftGlass[3]).toBeGreaterThanOrEqual(window[1] + window[3]);
         }
         if (selected) {
           const extra = group.children.at(-1)!;

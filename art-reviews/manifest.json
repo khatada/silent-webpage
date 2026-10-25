@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "8504b87eafa4fbd0c7ff2632a78c3d11facd4945569c7ec062dc5041aba7b02f",
+  "sourceSha256": "ee967a32cf0cdb6edd5498123a60c653a06d63d50282d4648b262d31dc213bd3",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -1371,6 +1371,132 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが補正後4端末の3状態atlasとoff全景8画像を全域実閲覧。親も4atlasを実閲覧。normal/portraitはon→mid→offで右ガラス上部が同室phaseで暖光から暗い室内へ、wideはoff→mid→onで左ガラスが明るくなる。枠/柵/植物と全景は保持。下部の灯りと旧左cover境界は残るため窓全体消灯ではなく上部ガラス明暗拡張として採用。計算brightnessと実RAF時刻を区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-left-glass-local/atlas-corrected.png",
+      "report": "art-reviews/2026-10-25-left-glass-local/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後36panelを実閲覧。左右の上部ガラスが自然な暗室へ変化し、旧左coverの明るい小矩形縁が解消。外枠/中央桟/柵は保持。27比較でstrict両glass外変更0、on9原画RGBA一致。wide12panelは前版完全一致。"
+    },
+    {
+      "image": "art-reviews/left-glass-scenes/compact-corrected.png",
+      "report": "art-reviews/left-glass-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で実閲覧し、wide/tallは無変形帯も全域確認。窓枠/人影位置/猫/鉢/列車と構図を保持。11全景とも前版RGBA完全一致。明暗時の範囲は局所/本番時系列で別確認。"
+    },
+    {
+      "image": "art-reviews/left-glass-scenes/desktop-corrected.png",
+      "report": "art-reviews/left-glass-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で実閲覧し、wide/tallは無変形帯も全域確認。窓枠/人影位置/猫/鉢/列車と構図を保持。11全景とも前版RGBA完全一致。明暗時の範囲は局所/本番時系列で別確認。"
+    },
+    {
+      "image": "art-reviews/left-glass-scenes/landscape-corrected.png",
+      "report": "art-reviews/left-glass-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で実閲覧し、wide/tallは無変形帯も全域確認。窓枠/人影位置/猫/鉢/列車と構図を保持。11全景とも前版RGBA完全一致。明暗時の範囲は局所/本番時系列で別確認。"
+    },
+    {
+      "image": "art-reviews/left-glass-scenes/mobile-corrected.png",
+      "report": "art-reviews/left-glass-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で実閲覧し、wide/tallは無変形帯も全域確認。窓枠/人影位置/猫/鉢/列車と構図を保持。11全景とも前版RGBA完全一致。明暗時の範囲は局所/本番時系列で別確認。"
+    },
+    {
+      "image": "art-reviews/left-glass-scenes/narrow-corrected.png",
+      "report": "art-reviews/left-glass-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で実閲覧し、wide/tallは無変形帯も全域確認。窓枠/人影位置/猫/鉢/列車と構図を保持。11全景とも前版RGBA完全一致。明暗時の範囲は局所/本番時系列で別確認。"
+    },
+    {
+      "image": "art-reviews/left-glass-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/left-glass-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で実閲覧し、wide/tallは無変形帯も全域確認。窓枠/人影位置/猫/鉢/列車と構図を保持。11全景とも前版RGBA完全一致。明暗時の範囲は局所/本番時系列で別確認。"
+    },
+    {
+      "image": "art-reviews/left-glass-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/left-glass-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で実閲覧し、wide/tallは無変形帯も全域確認。窓枠/人影位置/猫/鉢/列車と構図を保持。11全景とも前版RGBA完全一致。明暗時の範囲は局所/本番時系列で別確認。"
+    },
+    {
+      "image": "art-reviews/left-glass-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/left-glass-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で実閲覧し、wide/tallは無変形帯も全域確認。窓枠/人影位置/猫/鉢/列車と構図を保持。11全景とも前版RGBA完全一致。明暗時の範囲は局所/本番時系列で別確認。"
+    },
+    {
+      "image": "art-reviews/left-glass-scenes/small-phone-corrected.png",
+      "report": "art-reviews/left-glass-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で実閲覧し、wide/tallは無変形帯も全域確認。窓枠/人影位置/猫/鉢/列車と構図を保持。11全景とも前版RGBA完全一致。明暗時の範囲は局所/本番時系列で別確認。"
+    },
+    {
+      "image": "art-reviews/left-glass-scenes/tall-corrected.png",
+      "report": "art-reviews/left-glass-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で実閲覧し、wide/tallは無変形帯も全域確認。窓枠/人影位置/猫/鉢/列車と構図を保持。11全景とも前版RGBA完全一致。明暗時の範囲は局所/本番時系列で別確認。"
+    },
+    {
+      "image": "art-reviews/left-glass-scenes/wide-corrected.png",
+      "report": "art-reviews/left-glass-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を親5/独立6で実閲覧し、wide/tallは無変形帯も全域確認。窓枠/人影位置/猫/鉢/列車と構図を保持。11全景とも前版RGBA完全一致。明暗時の範囲は局所/本番時系列で別確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-left-glass-active/desktop-off-corrected.png",
+      "report": "art-reviews/2026-10-25-left-glass-active/desktop-off-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3端末の3状態atlas+off全景6画像を全域実閲覧、親もatlas3を実閲覧。左右上部glassが同期して自然に暗くなり、旧左coverの小矩形縁が解消。枠/桟/柵/人影位置と全景は保持。下部の灯りは残るため窓全体消灯とは呼ばない。active前版比較はPC/mobile領域外0、portraitは星1pxのRGB各1差が残り厳密全景一致とは扱わない。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-left-glass-active/desktop-room-corrected.png",
+      "report": "art-reviews/2026-10-25-left-glass-active/desktop-room-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3端末の3状態atlas+off全景6画像を全域実閲覧、親もatlas3を実閲覧。左右上部glassが同期して自然に暗くなり、旧左coverの小矩形縁が解消。枠/桟/柵/人影位置と全景は保持。下部の灯りは残るため窓全体消灯とは呼ばない。active前版比較はPC/mobile領域外0、portraitは星1pxのRGB各1差が残り厳密全景一致とは扱わない。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-left-glass-active/mobile-off-corrected.png",
+      "report": "art-reviews/2026-10-25-left-glass-active/mobile-off-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3端末の3状態atlas+off全景6画像を全域実閲覧、親もatlas3を実閲覧。左右上部glassが同期して自然に暗くなり、旧左coverの小矩形縁が解消。枠/桟/柵/人影位置と全景は保持。下部の灯りは残るため窓全体消灯とは呼ばない。active前版比較はPC/mobile領域外0、portraitは星1pxのRGB各1差が残り厳密全景一致とは扱わない。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-left-glass-active/mobile-room-corrected.png",
+      "report": "art-reviews/2026-10-25-left-glass-active/mobile-room-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3端末の3状態atlas+off全景6画像を全域実閲覧、親もatlas3を実閲覧。左右上部glassが同期して自然に暗くなり、旧左coverの小矩形縁が解消。枠/桟/柵/人影位置と全景は保持。下部の灯りは残るため窓全体消灯とは呼ばない。active前版比較はPC/mobile領域外0、portraitは星1pxのRGB各1差が残り厳密全景一致とは扱わない。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-left-glass-active/portrait-large-off-corrected.png",
+      "report": "art-reviews/2026-10-25-left-glass-active/portrait-large-off-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3端末の3状態atlas+off全景6画像を全域実閲覧、親もatlas3を実閲覧。左右上部glassが同期して自然に暗くなり、旧左coverの小矩形縁が解消。枠/桟/柵/人影位置と全景は保持。下部の灯りは残るため窓全体消灯とは呼ばない。active前版比較はPC/mobile領域外0、portraitは星1pxのRGB各1差が残り厳密全景一致とは扱わない。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-left-glass-active/portrait-large-room-corrected.png",
+      "report": "art-reviews/2026-10-25-left-glass-active/portrait-large-room-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3端末の3状態atlas+off全景6画像を全域実閲覧、親もatlas3を実閲覧。左右上部glassが同期して自然に暗くなり、旧左coverの小矩形縁が解消。枠/桟/柵/人影位置と全景は保持。下部の灯りは残るため窓全体消灯とは呼ばない。active前版比較はPC/mobile領域外0、portraitは星1pxのRGB各1差が残り厳密全景一致とは扱わない。"
     }
   ]
 }

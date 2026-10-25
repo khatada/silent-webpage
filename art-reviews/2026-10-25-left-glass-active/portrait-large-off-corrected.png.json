@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-left-glass-active/portrait-large-off-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "6720e33c759a557da257e22fc783ebc594344755c951ab6a8cab4168c22fe9f9"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-left-glass-active/portrait-large-off-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "857eee65d0349d90ef02f2bf1ee521f679389cbc0e5ce6c6aa28fe0fb4faaff8"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

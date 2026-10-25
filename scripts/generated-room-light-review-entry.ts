@@ -22,7 +22,7 @@ export async function renderGeneratedRoomLightReview() {
     const compositionId = compositionIndex as 0 | 1 | 2;
     const area = roomLightAreas[compositionId];
     const window = composition.windows[area.windowIndex];
-    const rectangles = area.replace ? [area.glass] : [window, area.glass];
+    const rectangles = area.leftGlass ? [area.leftGlass, area.glass] : [area.glass];
     const x = Math.min(...rectangles.map(rect => rect[0])) - 4;
     const y = Math.min(...rectangles.map(rect => rect[1])) - 4;
     const right = Math.max(...rectangles.map(rect => rect[0] + rect[2])) + 4;

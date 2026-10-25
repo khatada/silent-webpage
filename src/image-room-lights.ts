@@ -5,9 +5,9 @@ type Rect = readonly [number, number, number, number];
 
 /** Glass interiors only: frames, balcony rails and plants stay in the generated backdrop. */
 export const roomLightAreas = [
-  { windowIndex: 1, glass: [389, 292, 8, 8], dark: [400, 292, 8, 8], replace: false },
-  { windowIndex: 6, glass: [483, 175, 5, 11], dark: [263, 169, 4, 6], replace: true },
-  { windowIndex: 0, glass: [531, 936, 12, 14], dark: [548, 936, 12, 14], replace: false },
+  { windowIndex: 1, glass: [389, 292, 8, 8], leftGlass: [379, 292, 8, 8], dark: [400, 292, 8, 8], replace: true },
+  { windowIndex: 6, glass: [483, 175, 5, 11], leftGlass: undefined, dark: [263, 169, 4, 6], replace: true },
+  { windowIndex: 0, glass: [531, 936, 12, 14], leftGlass: [516, 936, 12, 14], dark: [548, 936, 12, 14], replace: true },
 ] as const;
 
 /** Keep the original room index/alpha and actor anchor while extending its covered glass. */
@@ -22,6 +22,7 @@ export function createImageRoomLights(backgrounds: readonly Texture[]) {
       const area = roomLightAreas[composition];
       const selected = index === area.windowIndex;
       if (!selected || !area.replace) group.addChild(createWindowCover(wall, window, scale, originX, originY));
+      if (selected && area.leftGlass) group.addChild(createWindowCover(interiors[composition], area.leftGlass, scale, originX, originY));
       if (selected) group.addChild(createWindowCover(interiors[composition], area.glass, scale, originX, originY));
       return group;
     },

@@ -1,0 +1,60 @@
+{
+  "method": "All decoded RGBA bytes in production off snapshots compared to PR57 at identical requested scene times. Actual RAF can precede requested time; this is supplemental full-scene evidence, not the same-position local factory assertion.",
+  "allOutsideUnchanged": false,
+  "limitation": "Portrait-large has one star pixel (148,56), RGB each differs by1; no claim of exact whole-scene equality outside glass at active times. Local glass-only comparisons and all11 initial comparisons are exact.",
+  "samples": [
+    {
+      "name": "desktop",
+      "physicalAllowedLTRB": [
+        708,
+        506,
+        728,
+        526
+      ],
+      "changedPixels": 256,
+      "outsideChangedPixels": 0,
+      "outsideSamples": []
+    },
+    {
+      "name": "mobile",
+      "physicalAllowedLTRB": [
+        366,
+        900,
+        406,
+        940
+      ],
+      "changedPixels": 1024,
+      "outsideChangedPixels": 0,
+      "outsideSamples": []
+    },
+    {
+      "name": "portrait-large",
+      "physicalAllowedLTRB": [
+        452,
+        966,
+        468,
+        984
+      ],
+      "changedPixels": 169,
+      "outsideChangedPixels": 1,
+      "outsideSamples": [
+        {
+          "x": 148,
+          "y": 56,
+          "before": [
+            148,
+            154,
+            175,
+            255
+          ],
+          "after": [
+            147,
+            153,
+            174,
+            255
+          ]
+        }
+      ]
+    }
+  ]
+}
