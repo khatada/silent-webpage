@@ -4,7 +4,8 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- 現在ブランチ `feat/larger-room-light-changes`、worktree `/workspace/silent-webpage-room-lights`。C029「目立つ部屋の明暗範囲を拡張」を開始。normal/portrait既存resident室の右ガラス上部を同phaseで追加、wide既存index6のcoverのみ左ガラスへ拡張。人影anchor/窓枠/rail/植栽を維持。runtime/局所helperはtrain_variant_preflight、docs/manifest/Git/11全景は親。新原画は不要、既存生成素材のcrop表示。source8504b87eafa4fbd0c7ff2632a78c3d11facd4945569c7ec062dc5041aba7b02fで凍結。106unit/型lint成功、補正局所36panel/11初期全景/4端末8動作画像をLLM採用。局所27比較ガラス外0/on9原画一致、初期8構図全RGBA一致/wide3構図旧新cover外0。verify/commit/PR/CI/公開が残る。
+- 現在ブランチ `fix/room-glass-darkening-bounds`、worktree `/workspace/silent-webpage-glass-bounds`。C030「左ガラスの消灯範囲を自然に整える」。既存left小矩形を標準[379,292,8,8]/縦[516,936,12,14]へ広げ、右と同じ暗室cropで置換。人影anchor/phase/rightglass/wide/枠/柵不変。runtime+局所QAはtrain_variant_preflight、docs/manifest/11初期/active/Gitは親。sourceee967a32cf0cdb6edd5498123a60c653a06d63d50282d4648b262d31dc213bd3で凍結。106unit/型Lint、補正局所36panel/11初期/本番6画像をLLM採用。局所27glass外0/on9一致、初期11全RGBA一致。activePC/mobile領域外0、portrait星1pxRGB各1差は補助比較の限界として記録。verify/commit/PR/CI/公開が残る。
+- C029 PR #57はverify106テスト/167画像とhook・CI40191137554/job121162207330成功後main edd1f97c4b3d53b3f5c0e3bed9b427e129408775へマージ。Pages40191454844（verify121163135832/publish121163739954）成功で公開済み。局所36panel/11初期/本番8画像を補正後LLM採用。27局所比較ガラス外0/on9原画一致、初期8構図全RGBA一致/wide3構図領域外0。PR添付1回無応答中断・成否未確認。
 - C028表示PR #56はverify104テスト/147画像とhook・CI40190142352/job121159194246成功後main1373f1d69829af08165785810d3ad848fd196dcdへマージ。Pages40190362842（verify121159868853/publish121160473486）成功で公開済み。PR添付は1回無応答で中断・成否未確認。11初期全景と本番6画像を補正後LLM採用、第2編成範囲外11構図変更0/narrow全RGBA一致。
 
 - 素材PR #55はverify104テスト/130画像とhook・CI40189495075/job121157257539成功後main bfcb873365fd77064838a31138b63d6d1ebe91c5へマージ済み。Pages40189725205（verify121157947185/publish121158574108）成功で素材公開済み。PR添付1回無応答で中断し成否未確認。素材SHA42d4f1c507a235d7c7f59d34607d0bb4a9541f98ec9081e2a08d182346ce78e5。

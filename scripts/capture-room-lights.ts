@@ -11,7 +11,7 @@ import { generatedLayout } from '../src/generated-layout';
 import { pixelViewport } from '../src/pixel-viewport';
 import { artSourceHash } from './art-source-hash';
 
-const { values } = parseArgs({ options: { output: { type: 'string' } } });
+const { values } = parseArgs({ options: { output: { type: 'string' }, 'skip-wide': { type: 'boolean', default: false } } });
 if (!values.output) throw new Error('Provide a new --output directory and serve the frozen production build on 4173.');
 const output = values.output;
 const sourceSha256 = await artSourceHash();
@@ -31,6 +31,7 @@ try {
     const viewport = pixelViewport(cssWidth, cssHeight, dpr);
     const layout = generatedLayout(viewport.width, viewport.height);
     const composition = layout.portrait ? 'portrait' : layout.wide ? 'wide' : 'normal';
+    if (values['skip-wide'] && composition === 'wide') continue;
     const sourceRect = layout.portrait ? [514, 932, 47, 38] : layout.wide ? [478, 169, 18, 24] : [380, 288, 30, 28];
     const index = layout.portrait ? 0 : layout.wide ? 6 : 1;
     const { phase, period } = residentialLightCycle(index);

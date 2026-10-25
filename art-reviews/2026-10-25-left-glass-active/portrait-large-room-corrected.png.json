@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-left-glass-active/portrait-large-room-source.png",
+    "width": 47,
+    "height": 114,
+    "sha256": "f7792e3c3d86dd5b01145a7b06c54cec4b624931ed8ddd686a1b72694a300144"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-left-glass-active/portrait-large-room-corrected.png",
+    "width": 47,
+    "height": 114,
+    "sha256": "f7792e3c3d86dd5b01145a7b06c54cec4b624931ed8ddd686a1b72694a300144"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

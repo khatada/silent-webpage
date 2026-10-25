@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/left-glass-scenes/portrait-boundary-source.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "3f4f5419ac6f20667623733147b7be7adbf33f3ad7161ef26466004b812abcce"
+  },
+  "output": {
+    "path": "art-reviews/left-glass-scenes/portrait-boundary-corrected.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "dfbfaca0a5318e861df4d53c465b319a5c4d28cb0cf9560c6f6f50abd24376d7"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

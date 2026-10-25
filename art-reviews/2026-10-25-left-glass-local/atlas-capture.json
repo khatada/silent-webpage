@@ -1,0 +1,57 @@
+{
+  "sourceSha256": "ee967a32cf0cdb6edd5498123a60c653a06d63d50282d4648b262d31dc213bd3",
+  "finalSourceSha256": "ee967a32cf0cdb6edd5498123a60c653a06d63d50282d4648b262d31dc213bd3",
+  "metadata": {
+    "panels": 36,
+    "states": [
+      "original",
+      "on",
+      "mid",
+      "off"
+    ],
+    "samples": [
+      {"row":0,"compositionIndex":0,"windowIndex":1,"scale":0.5,"context":[375,288,26,16],"rectangles":[[379,292,8,8],[389,292,8,8]],"originX":-179,"originY":-136,"contextX":8.5,"contextY":8},
+      {"row":1,"compositionIndex":0,"windowIndex":1,"scale":1,"context":[375,288,26,16],"rectangles":[[379,292,8,8],[389,292,8,8]],"originX":-367,"originY":-280,"contextX":8,"contextY":8},
+      {"row":2,"compositionIndex":0,"windowIndex":1,"scale":4,"context":[375,288,26,16],"rectangles":[[379,292,8,8],[389,292,8,8]],"originX":-1492,"originY":-1144,"contextX":8,"contextY":8},
+      {"row":3,"compositionIndex":1,"windowIndex":6,"scale":0.5,"context":[479,171,13,19],"rectangles":[[483,175,5,11]],"originX":-231,"originY":-77,"contextX":8.5,"contextY":8.5},
+      {"row":4,"compositionIndex":1,"windowIndex":6,"scale":1,"context":[479,171,13,19],"rectangles":[[483,175,5,11]],"originX":-471,"originY":-163,"contextX":8,"contextY":8},
+      {"row":5,"compositionIndex":1,"windowIndex":6,"scale":4,"context":[479,171,13,19],"rectangles":[[483,175,5,11]],"originX":-1908,"originY":-676,"contextX":8,"contextY":8},
+      {"row":6,"compositionIndex":2,"windowIndex":0,"scale":0.5,"context":[512,932,35,22],"rectangles":[[516,936,12,14],[531,936,12,14]],"originX":-248,"originY":-458,"contextX":8,"contextY":8},
+      {"row":7,"compositionIndex":2,"windowIndex":0,"scale":1,"context":[512,932,35,22],"rectangles":[[516,936,12,14],[531,936,12,14]],"originX":-504,"originY":-924,"contextX":8,"contextY":8},
+      {"row":8,"compositionIndex":2,"windowIndex":0,"scale":4,"context":[512,932,35,22],"rectangles":[[516,936,12,14],[531,936,12,14]],"originX":-2040,"originY":-3720,"contextX":8,"contextY":8}
+    ],
+    "comparisons": [
+      {"row":0,"column":1,"changedInsidePixels":0,"changedOutsidePixels":0},
+      {"row":0,"column":2,"changedInsidePixels":32,"changedOutsidePixels":0},
+      {"row":0,"column":3,"changedInsidePixels":32,"changedOutsidePixels":0},
+      {"row":1,"column":1,"changedInsidePixels":0,"changedOutsidePixels":0},
+      {"row":1,"column":2,"changedInsidePixels":128,"changedOutsidePixels":0},
+      {"row":1,"column":3,"changedInsidePixels":128,"changedOutsidePixels":0},
+      {"row":2,"column":1,"changedInsidePixels":0,"changedOutsidePixels":0},
+      {"row":2,"column":2,"changedInsidePixels":2048,"changedOutsidePixels":0},
+      {"row":2,"column":3,"changedInsidePixels":2048,"changedOutsidePixels":0},
+      {"row":3,"column":1,"changedInsidePixels":0,"changedOutsidePixels":0},
+      {"row":3,"column":2,"changedInsidePixels":18,"changedOutsidePixels":0},
+      {"row":3,"column":3,"changedInsidePixels":18,"changedOutsidePixels":0},
+      {"row":4,"column":1,"changedInsidePixels":0,"changedOutsidePixels":0},
+      {"row":4,"column":2,"changedInsidePixels":55,"changedOutsidePixels":0},
+      {"row":4,"column":3,"changedInsidePixels":55,"changedOutsidePixels":0},
+      {"row":5,"column":1,"changedInsidePixels":0,"changedOutsidePixels":0},
+      {"row":5,"column":2,"changedInsidePixels":880,"changedOutsidePixels":0},
+      {"row":5,"column":3,"changedInsidePixels":880,"changedOutsidePixels":0},
+      {"row":6,"column":1,"changedInsidePixels":0,"changedOutsidePixels":0},
+      {"row":6,"column":2,"changedInsidePixels":84,"changedOutsidePixels":0},
+      {"row":6,"column":3,"changedInsidePixels":84,"changedOutsidePixels":0},
+      {"row":7,"column":1,"changedInsidePixels":0,"changedOutsidePixels":0},
+      {"row":7,"column":2,"changedInsidePixels":336,"changedOutsidePixels":0},
+      {"row":7,"column":3,"changedInsidePixels":336,"changedOutsidePixels":0},
+      {"row":8,"column":1,"changedInsidePixels":0,"changedOutsidePixels":0},
+      {"row":8,"column":2,"changedInsidePixels":5376,"changedOutsidePixels":0},
+      {"row":8,"column":3,"changedInsidePixels":5376,"changedOutsidePixels":0}
+    ],
+    "method": "Three backgrounds at .5/1/4. Each state rendered/extracted at identical absolute coordinates; whole-background RenderTexture crop preserves nearest sampling. Snapshots placed unchanged at 1:1. Strict pixel-center rectangle mask; outside glass changes must be zero, on must equal original."
+  },
+  "method": "Image-generation textures composited by /scripts/generated-room-light-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}
