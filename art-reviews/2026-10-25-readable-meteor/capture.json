@@ -1,0 +1,31 @@
+{
+  "sourceSha256": "8ae347554c92aed9bdff070086d9eab88b7cafdefcf9391668c676b47e22565a",
+  "mode": "desktop-meteor-at-4-seconds",
+  "method": "Unmodified production desktop page at requested 4 seconds (last RAF may precede requested time), clock paused before navigation and runFor steps <=1000ms. Corrected full-scene screenshot; computed geometry/state do not prove visual salience or lack of occlusion.",
+  "layouts": [
+    {
+      "name": "desktop",
+      "native": [
+        1440,
+        900
+      ],
+      "dpr": 1,
+      "requestedSceneSeconds": 4,
+      "calculatedMeteorState": {
+        "progress": 0.5,
+        "alpha": 0.8
+      },
+      "calculatedMeteorGeometry": {
+        "x": 317,
+        "y": 22,
+        "dx": 72,
+        "dy": 18,
+        "width": 28,
+        "height": 7.547826086956522,
+        "visible": true
+      }
+    }
+  ],
+  "comparisons": [],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

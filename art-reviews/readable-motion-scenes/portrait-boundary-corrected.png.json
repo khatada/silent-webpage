@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/readable-motion-scenes/portrait-boundary-source.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "19c6136ada48ace28fe20f54bf3cb0dfa81926639631d165adb6f251a737ca20"
+  },
+  "output": {
+    "path": "art-reviews/readable-motion-scenes/portrait-boundary-corrected.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "44cab2fab41c87012a70f9273ca077ba7176404da006ee8ede59a7301ea4dd11"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

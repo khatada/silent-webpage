@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-readable-motion-active/landscape-8-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "a571ee2aecf90056c72abb24905b061c9e14c5dcc525fba3dc515384270551b2"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-readable-motion-active/landscape-8-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "05b6bb24031e0f91474666e8db2b8ee70fccf537ece6c446922cb5940e2a6fec"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

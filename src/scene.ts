@@ -16,6 +16,7 @@ import { createImageSkylineLights } from './image-skyline-lights';
 import { createImageStars } from './image-stars';
 import { createWindowCover } from './image-window-cover';
 import { createImagePlant, plantArt, plantGeometry } from './image-plant';
+import { cityMotion, residentialLightCycle } from './city-motion';
 
 type Frame = readonly [number, number, number, number];
 
@@ -260,13 +261,14 @@ export async function createScene(host: HTMLElement): Promise<{
     if (resident) imageResident.update(resident, elapsed, residentComposition);
     imageStars.update(stars, elapsed);
     windows.forEach((art, index) => {
-      const brightness = windowBrightness(elapsed, 5 + index * 11, 29 + index * 7);
+      const cycle = residentialLightCycle(index);
+      const brightness = windowBrightness(elapsed, cycle.phase, cycle.period);
       art.alpha = 0.92 * (1 - brightness);
       if (resident && index === residentArt.placements[residentComposition].window) resident.alpha = brightness;
     });
     imageUpperCloud.update(upperCloud, elapsed, width, scale);
-    cloud.x = travelPosition(elapsed, width, cloud.width, scale * 1.2, width * 0.12);
-    aircraft.x = travelPosition(elapsed, width, aircraft.width, scale * 3.2, width * 0.7);
+    cloud.x = travelPosition(elapsed, width, cloud.width, scale * cityMotion.cloudSpeed, width * 0.12);
+    aircraft.x = travelPosition(elapsed, width, aircraft.width, scale * cityMotion.aircraftSpeed, width * 0.7);
     train.x = travelPosition(elapsed, width, train.width, scale * 16, trainInitialX);
     const pose = catPose(elapsed, width, scale * actorScale);
     imageCat.update(cat, pose, scale * actorScale, catY);

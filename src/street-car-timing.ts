@@ -1,8 +1,8 @@
-export const streetCarPeriod = 60;
+export const streetCarPeriod = 28;
 export const streetCarTravel = 20;
 export const streetCarInitialOffset = 5;
 
-/** Shared scene time; the remaining forty seconds contain no car. */
+/** Shared scene time; the remaining eight seconds contain no car. */
 export function streetCarTiming(seconds: number) {
   const time = ((seconds + streetCarInitialOffset) % streetCarPeriod + streetCarPeriod) % streetCarPeriod;
   const progress = Math.min(time / streetCarTravel, 1);

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/readable-motion-scenes/wide-source.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "509e366c484d9afeb284bccec2911fa5de8f049e625528f12c04c9b45bc6fc16"
+  },
+  "output": {
+    "path": "art-reviews/readable-motion-scenes/wide-corrected.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "630476dd5c894478569bbe6526a91e52029965561c0c9c9f2296b08113394edb"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

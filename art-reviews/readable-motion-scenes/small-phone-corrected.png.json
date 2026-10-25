@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/readable-motion-scenes/small-phone-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "16479f7bb1fa9e47e4cd1e16f75e4e79fe479249a1341ddd06b810b8af85457b"
+  },
+  "output": {
+    "path": "art-reviews/readable-motion-scenes/small-phone-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "56fa3b125182cc1c3cc53001bbb28d091e2559fd90c9443909d9e2636187b6be"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-readable-meteor/desktop-4-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "c9a39c08a0348f20a1bb48410ec72bd875858a0a9c7831e3c6a6d0af6016f8a0"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-readable-meteor/desktop-4-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "05ee2bffb2bd7d6acf96118c69322f9723604259461837e67e8221b682dd058e"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

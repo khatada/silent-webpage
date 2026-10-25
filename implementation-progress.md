@@ -1,10 +1,11 @@
 # 実装の進行状況
 
-最終更新: 2026-10-24。別セッションの実装再開用。
+最終更新: 2026-10-25。別セッションの実装再開用。
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `feat/rooftop-plant-breeze`、worktree `/workspace/silent-webpage-plant`。最新main5f74e7aからC-001小鉢の表示を開始。next_contentがruntime/局所QA、train_planが本番動作QA helper、親がdocs/manifest/Git担当。既存elapsedで18秒周期0→左→0→右→0、nativeRT3枚で鉢/茎samplingを統一。中央x・sourcefoot normal430/portrait1260/wide212・基準20×28へactorScale/背景倍率を掛け、猫より奥に配置。11構図を維持し極小/支持範囲外は省略。source449e44a67b19bd8d066cefca04c9c937d4d7277f8bcf5788f57d90b05a0ed230で凍結。局所60panel/11全景を補正後親/担当LLM採用、48鉢/茎比較0/24neutral一致。11全景の鉢領域外変更0。型/Lint/87単体成功、独立runtimeレビュー重大指摘なし。本番3端末7補正画像も親/担当LLM採用。UI停止全canvas差0・再開位相保持、landscape猫が鉢の手前を通る140px遮蔽を確認。最終verify/commit/push/PR/CI/公開が残る。
+- ブランチ: `feat/readable-city-motion`、worktree `/workspace/silent-webpage-readable-motion`。2026-10-25ユーザー新指示「全体の変化/動きを注視せず気づけるように」を最優先。未実装ガラス戸案は保留。雲/飛行機の移動量、星/窓周期、車/流星頻度を調整。型/Lint/90単体成功、描画sourceはfreeze。最終source8ae347554c92aed9bdff070086d9eab88b7cafdefcf9391668c676b47e22565a。補正後11全景/3端末9動作画像を親/担当LLMが採用。2→5秒で空/街の変化が明瞭、UI停止3端末全canvas差0。流星4秒補正全景も採用（雲との重なりで尾の視認性は弱い制約を記録）。最終LLM採用/verify/commit/push/PR/CI/公開が残る。
+- 小鉢表示PR #51は87テスト/106画像のverify/hook・CI40105542389/job120906350011成功後maine134db68621c91f6e6cadd502aa26aceabd45b70へマージ済み。Pages40105803823（verify120907120469/publish120907804461）成功で公開済み。PR添付は60秒超無応答で中断、成否未確認。
 - 小鉢素材PR #50はverify84テスト/98画像とhook・CI40104512755/job120903299950成功後main5f74e7a03ee7fc7f0cb9b3d1ad955c18e2d13c4eへマージ済み。素材SHA2cca41725d3dfa5b7f21773ad08aab72766b6d825002b7782691a6a99c942858、80×112×3/foot111/anchor40。親/担当/独立LLMが補正素材/4倍率contextを採用、同座標生成/base由来以外0、固定pot/stem等変更0。PR添付No handler registered。Pages40104702741（verify120903867207/publish120904459068）成功で素材公開済み。
 - C026表示はPR #49でCI40103130556/job120899193951成功後main846fa45b11efaaaed7c42fa7cce9a8f109304083へマージ済み。verify84テスト/96画像とコミットhook成功。source3c8bfecf58014cf9e4dccfdc5b3d331a4cba47c8bfbffdd78f16d7d21d0bec4f。補正後80panel/11初期全景/本番3全景+3atlasを親/担当LLMが採用。64body変更0/16端点RGBA一致、本番往復一致/下半身12比較0。PR添付はNo handler registered。Pages40103408755（verify120900015752/publish120900664665）成功で公開済み。
 - C026素材PR #48は82テスト/89画像とCI40067036854/job120792360091成功後mainafdb211e884f9d49c50d99311c622e1522de1f7dへマージ。Pages40102232005（verify120896571312/publish120897070593）成功で素材公開済み。PR添付は60秒超無応答で中断し成否未確認。

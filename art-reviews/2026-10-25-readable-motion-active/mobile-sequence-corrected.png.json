@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-readable-motion-active/mobile-sequence-source.png",
+    "width": 780,
+    "height": 1928,
+    "sha256": "17406cbd2b1a8ace2f5ca924005ac67a7e232a314576ea866c5b3404ac63cda0"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-readable-motion-active/mobile-sequence-corrected.png",
+    "width": 780,
+    "height": 1928,
+    "sha256": "17406cbd2b1a8ace2f5ca924005ac67a7e232a314576ea866c5b3404ac63cda0"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

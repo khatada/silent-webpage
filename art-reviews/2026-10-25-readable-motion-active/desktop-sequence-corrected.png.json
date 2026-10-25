@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-readable-motion-active/desktop-sequence-source.png",
+    "width": 1440,
+    "height": 1076,
+    "sha256": "e99226a142b0e89096b6284e37691ba8a3defd92ecae2bf7b44a8449ce5b218e"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-readable-motion-active/desktop-sequence-corrected.png",
+    "width": 1440,
+    "height": 1076,
+    "sha256": "e99226a142b0e89096b6284e37691ba8a3defd92ecae2bf7b44a8449ce5b218e"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

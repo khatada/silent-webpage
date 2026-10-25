@@ -10,12 +10,21 @@ describe('star twinkle timing', () => {
       expect(new Set(cycles.map(cycle => `${cycle.period}/${cycle.phase}`)).size).toBe(cycles.length);
       expect(new Set(cycles.map(cycle => cycle.phase / cycle.period)).size).toBe(cycles.length);
       cycles.forEach(({ period, phase }, index) => {
-        expect(period).toBeGreaterThanOrEqual(13);
-        expect(period).toBeLessThanOrEqual(27);
+        expect(period).toBeGreaterThanOrEqual(3);
+        expect(period).toBeLessThanOrEqual(7);
         expect(starDarkness(-phase, index, composition)).toBe(0);
         expect(starDarkness(period / 2 - phase, index, composition)).toBeCloseTo(maximumStarDarkness);
-        expect(maximumStarDarkness).toBeLessThan(1);
+        expect(maximumStarDarkness).toBe(0.45);
       });
+    }
+  });
+  it('makes each core visibly vary within a short look without deepening the dim state', () => {
+    for (let composition = 0; composition < 3; composition++) {
+      for (let index = 0; index < starScenes[composition].length; index++) {
+        const samples = Array.from({ length: 71 }, (_, step) => starDarkness(step * 0.05, index, composition));
+        expect(Math.max(...samples) - Math.min(...samples)).toBeGreaterThan(0.22);
+        expect(Math.max(...samples)).toBeLessThanOrEqual(0.45);
+      }
     }
   });
   it('is smooth and periodic across bright and dim turnarounds', () => {
