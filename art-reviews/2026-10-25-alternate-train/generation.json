@@ -1,0 +1,29 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Edit this exact pixel-art Tokyo commuter train sprite into an alternate line livery. Preserve the exact four coaches, all proportions, right-facing cab, pantographs, roof equipment, warm amber window arrangement, silver metal body, wheels, silhouette and transparent background. Change ONLY the existing blue horizontal livery bands and blue lower body trim into a clearly readable muted copper / brick red color (warm restrained red, not neon or glow). Do not add scenery, track, ground, text, logos, shadows or bloom. Single train centered horizontal side view, same pose and dimensions as reference, sharp fine pixel art consistent with original. Transparency must remain around the entire train.",
+  "originalSha256": "5a72fddfcb75dfd031b9263c1c5688f5698281ebe941c2f14a97bd9c1966e03a",
+  "generatedOriginal": "art-reviews/2026-10-25-alternate-train/generated-source.png",
+  "generatedOriginalSha256": "a46088a11d0a0643b69e01907c956fdfa12f1f7406544ae06e6b4a97e774365a",
+  "originalToolPath": "/workspace/generated_images/exec-7518730d-f154-49bf-a866-56fa54b92405.png",
+  "references": [
+    "art-reviews/2026-10-25-alternate-train/reference-4x.png"
+  ],
+  "referencePreparation": {
+    "source": "public/art/night-sprites.png",
+    "cropXYWH": [
+      10,
+      112,
+      264,
+      65
+    ],
+    "nearestEnlargement": 4
+  },
+  "actualCanvas": [
+    2172,
+    724
+  ],
+  "correctionInputKind": "permitted-crop-nearest-registration-alpha-deletion",
+  "partialEditScript": "art-reviews/2026-10-25-alternate-train/fit-material.py",
+  "partialEditReport": "art-reviews/2026-10-25-alternate-train/partial-edit-report.json",
+  "provenanceNote": "originalSha256 is fitted correction input; generatedOriginalSha256 is unchanged imagegen original. Visible RGBA samples all come from imagegen. No pixel colors painted or recolored."
+}

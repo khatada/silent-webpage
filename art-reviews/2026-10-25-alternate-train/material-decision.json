@@ -1,0 +1,57 @@
+{
+  "image": "public/art/train-copper.png",
+  "report": "public/art/train-copper.png.json",
+  "decision": "accepted-as-material",
+  "reviewedBy": "parent-and-author-LLM",
+  "reason": "担当LLMが補正後264×65素材と.24/.36/.48/.6の既存青帯との実寸比較全域を実閲覧し採用。銀色4両、右向き先頭車、2基のパンタグラフと暖色窓を保持。銅赤色の上下帯が青帯と異なり、最小63×16でも暖色の車体帯を識別できる。目立つhalo/輪郭破綻なし。別編成として自然な生成車体全体を採用し、元車体と同一画素とは扱わない。scene合成後の前後関係・足元・移動は表示PRで確認する。",
+  "correctedSha256": "42d4f1c507a235d7c7f59d34607d0bb4a9541f98ec9081e2a08d182346ce78e5",
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "prompt": "Edit this exact pixel-art Tokyo commuter train sprite into an alternate line livery. Preserve the exact four coaches, all proportions, right-facing cab, pantographs, roof equipment, warm amber window arrangement, silver metal body, wheels, silhouette and transparent background. Change ONLY the existing blue horizontal livery bands and blue lower body trim into a clearly readable muted copper / brick red color (warm restrained red, not neon or glow). Do not add scenery, track, ground, text, logos, shadows or bloom. Single train centered horizontal side view, same pose and dimensions as reference, sharp fine pixel art consistent with original. Transparency must remain around the entire train.",
+    "originalSha256": "5a72fddfcb75dfd031b9263c1c5688f5698281ebe941c2f14a97bd9c1966e03a",
+    "generatedOriginal": "art-reviews/2026-10-25-alternate-train/generated-source.png",
+    "generatedOriginalSha256": "a46088a11d0a0643b69e01907c956fdfa12f1f7406544ae06e6b4a97e774365a",
+    "originalToolPath": "/workspace/generated_images/exec-7518730d-f154-49bf-a866-56fa54b92405.png",
+    "references": [
+      "art-reviews/2026-10-25-alternate-train/reference-4x.png"
+    ],
+    "referencePreparation": {
+      "source": "public/art/night-sprites.png",
+      "cropXYWH": [
+        10,
+        112,
+        264,
+        65
+      ],
+      "nearestEnlargement": 4
+    },
+    "actualCanvas": [
+      2172,
+      724
+    ],
+    "correctionInputKind": "permitted-crop-nearest-registration-alpha-deletion",
+    "partialEditScript": "art-reviews/2026-10-25-alternate-train/fit-material.py",
+    "partialEditReport": "art-reviews/2026-10-25-alternate-train/partial-edit-report.json",
+    "provenanceNote": "originalSha256 is fitted correction input; generatedOriginalSha256 is unchanged imagegen original. Visible RGBA samples all come from imagegen. No pixel colors painted or recolored."
+  },
+  "canvas": [
+    264,
+    65
+  ],
+  "visibleAlphaBoundsLTRB": [
+    9,
+    5,
+    261,
+    63
+  ],
+  "wheelSupportYExclusive": 63,
+  "reviewImages": [
+    "art-reviews/2026-10-25-alternate-train/candidate-corrected.png",
+    "art-reviews/2026-10-25-alternate-train/material-context-corrected.png"
+  ],
+  "contextMeaning": "Left existing blue, right new copper; rows .24/.36/.48/.6 nearest RGBA samples, integer rounded63×16/95×23/127×31/158×39. Not runtime GPU or final scene QA.",
+  "correctionRGBAChanges": 0,
+  "displayDecision": "pending-runtime-integration",
+  "designDifference": "Generated roof/windows/coach spacing differ slightly; accepted as separate vehicle, not exact livery-only edit. Canvas and strongest-alpha old bounds retained.",
+  "parentReview": "親LLMも補正素材と4倍率比較を実閲覧。4両/右向き/パンタグラフ/暖窓/銅赤帯を読み取れ、最小段でも青との差あり。ドット輪郭明確でhalo/地面なし。素材採用可。合成採用は表示PRへ分離。"
+}

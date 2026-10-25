@@ -4,7 +4,8 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ: `feat/more-visible-train-service`、worktree `/workspace/silent-webpage-train-service`。最新main6d67390からC027「列車の存在感を増やす」を開始。既存生成列車を同方向2編成にし、十分狭い画面は1編成。width>=3*trainWidth+4で2、span/2位相、速度16*bgScale/lead初期位置/既存柱遮蔽を維持。11構図中narrowのみ1編成となるpreflight。runtime/helper/testはnext_content、本番railQA helperはtrain_plan、docs/manifest/Gitは親担当。source41d7ce896b9bfba8dd33780891de3d4b16369fca41f019b1108de05cc18b3106で凍結。104単体/型/Lint成功、runtime独立レビュー重大指摘なし。補正後11初期全景を担当二者、本番3端末6画像を親/担当LLM採用、両列車の柱背後/周回/guardを確認。初期追加train範囲外変更は11/11で0、narrow全RGBA一致を独立確認。最終verify/commit/PR/CI/公開が残る。
+- 現在ブランチ `feat/alternate-train-art`、worktree `/workspace/silent-webpage-train-variant`。C028「別色の列車」を選択。既存の青帯に対し銅赤帯の4両編成を生成・補正し親/担当LLMが実閲覧採用済み。public/art/train-copper.png（264×65、SHA42d4f1c507a235d7c7f59d34607d0bb4a9541f98ec9081e2a08d182346ce78e5）。素材のみのため本番描画は未変更。verify/commit/PRが次。素材PRと表示PRを分け、補正後LLM実閲覧と縮小表示比較を必須とする。requirementsは変更しない。
+- C027列車増便PR #54はverify104テスト/128画像・hook・CI40158632822/job121065265073成功後、main f238344d4742d9e22987e0e63f31a6dd5a63da52へマージ済み。Pages40189045532（verify121155918664/publish121156566649）成功で公開済み。PR添付は前セッション1回呼出し無応答、成否未確認。
 - 初回流星の経路修正PR #53は101テスト/122画像のverify/hook・CI40157202551/job121061011034成功後main6d67390551b0174149dc1d636d0b95fc53b3e514へマージ。Pages40157432030（verify121061705026/publish121062257242）成功で公開済み。補正後11初期全景を担当二者/3端末6動作画像を親/担当LLM採用。尾と右下移動が雲から独立して見えることを確認。PR添付60秒超無応答中断、成否未確認。
 - 全体視認性調整PR #52は90テスト/116画像のverify/hook・CI40156277396/job121058250892成功後mainae9cabcd95d2e9edb56dc7eb415ba6529c3a3f55へマージ。Pages40156512595（verify121058952777/publish121059520816）成功で公開済み。雲4倍/飛行機約3倍/窓・星・車・流星の周期を調整し、3端末の3秒差で空と街の変化を明瞭に確認。PR添付60秒超無応答中断、成否未確認。
 - 小鉢表示PR #51は87テスト/106画像のverify/hook・CI40105542389/job120906350011成功後maine134db68621c91f6e6cadd502aa26aceabd45b70へマージ済み。Pages40105803823（verify120907120469/publish120907804461）成功で公開済み。PR添付は60秒超無応答で中断、成否未確認。

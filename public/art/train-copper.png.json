@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-alternate-train/fitted-input.png",
+    "width": 264,
+    "height": 65,
+    "sha256": "5a72fddfcb75dfd031b9263c1c5688f5698281ebe941c2f14a97bd9c1966e03a"
+  },
+  "output": {
+    "path": "public/art/train-copper.png",
+    "width": 264,
+    "height": 65,
+    "sha256": "42d4f1c507a235d7c7f59d34607d0bb4a9541f98ec9081e2a08d182346ce78e5"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,36 @@
+{
+  "generatedOriginalSha256": "a46088a11d0a0643b69e01907c956fdfa12f1f7406544ae06e6b4a97e774365a",
+  "generatedSize": [
+    2172,
+    724
+  ],
+  "alphaDeletionThreshold": 32,
+  "removedLowAlphaPixels": 31396,
+  "cropLTRB": [
+    75,
+    139,
+    2131,
+    609
+  ],
+  "nearestSize": [
+    252,
+    58
+  ],
+  "canvasSize": [
+    264,
+    65
+  ],
+  "pasteXY": [
+    9,
+    5
+  ],
+  "wheelSupportYExclusive": 63,
+  "fittedSha256": "5a72fddfcb75dfd031b9263c1c5688f5698281ebe941c2f14a97bd9c1966e03a",
+  "visibleAlphaBoundsLTRB": [
+    9,
+    5,
+    261,
+    63
+  ],
+  "operation": "Only delete alpha<32, crop, nearest-resample generated RGBA, paste into transparent common canvas. No drawn colors or programmatic recoloring."
+}

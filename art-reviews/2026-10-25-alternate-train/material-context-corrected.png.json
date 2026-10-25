@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-alternate-train/material-context-input.png",
+    "width": 360,
+    "height": 184,
+    "sha256": "6b3bbabf05507112478c955b859319fdbdc50c1ee160aff74a2cad06a624009b"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-alternate-train/material-context-corrected.png",
+    "width": 360,
+    "height": 184,
+    "sha256": "427466b221ebac7796f7cdb6a83b23492ad34a2c5b0c866ae1a18744a02b2591"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
