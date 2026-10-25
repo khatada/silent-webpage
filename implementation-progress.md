@@ -4,7 +4,8 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- 現在ブランチ `feat/alternate-train-art`、worktree `/workspace/silent-webpage-train-variant`。C028「別色の列車」を選択。既存の青帯に対し銅赤帯の4両編成を生成・補正し親/担当LLMが実閲覧採用済み。public/art/train-copper.png（264×65、SHA42d4f1c507a235d7c7f59d34607d0bb4a9541f98ec9081e2a08d182346ce78e5）。素材のみのため本番描画は未変更。verify/commit/PRが次。素材PRと表示PRを分け、補正後LLM実閲覧と縮小表示比較を必須とする。requirementsは変更しない。
+- 現在ブランチ `feat/alternate-train-service`、worktree `/workspace/silent-webpage-train-colors`。C028表示: 2編成目のみ銅赤帯の生成素材へ変更。速度/幅/足元/headway/柱遮蔽/狭幅1編成は維持。runtimeはtrain_variant_preflight担当、QA/docs/Gitは親。source027a6949885c03f1ed6fac854c8f2efc91e51a87b61e0340cfbc85467cdc5699で凍結。11初期全景を親5/独立6、本番rail/full6画像を親が補正後実閲覧採用。第2編成範囲外11/11変更0、narrow全RGBA一致。verify/commit/PR/CI/公開が残る。
+- 素材PR #55はverify104テスト/130画像とhook・CI40189495075/job121157257539成功後main bfcb873365fd77064838a31138b63d6d1ebe91c5へマージ済み。Pages確認待ち。PR添付1回無応答で中断し成否未確認。素材SHA42d4f1c507a235d7c7f59d34607d0bb4a9541f98ec9081e2a08d182346ce78e5。
 - C027列車増便PR #54はverify104テスト/128画像・hook・CI40158632822/job121065265073成功後、main f238344d4742d9e22987e0e63f31a6dd5a63da52へマージ済み。Pages40189045532（verify121155918664/publish121156566649）成功で公開済み。PR添付は前セッション1回呼出し無応答、成否未確認。
 - 初回流星の経路修正PR #53は101テスト/122画像のverify/hook・CI40157202551/job121061011034成功後main6d67390551b0174149dc1d636d0b95fc53b3e514へマージ。Pages40157432030（verify121061705026/publish121062257242）成功で公開済み。補正後11初期全景を担当二者/3端末6動作画像を親/担当LLM採用。尾と右下移動が雲から独立して見えることを確認。PR添付60秒超無応答中断、成否未確認。
 - 全体視認性調整PR #52は90テスト/116画像のverify/hook・CI40156277396/job121058250892成功後mainae9cabcd95d2e9edb56dc7eb415ba6529c3a3f55へマージ。Pages40156512595（verify121058952777/publish121059520816）成功で公開済み。雲4倍/飛行機約3倍/窓・星・車・流星の周期を調整し、3端末の3秒差で空と街の変化を明瞭に確認。PR添付60秒超無応答中断、成否未確認。

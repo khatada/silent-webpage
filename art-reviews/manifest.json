@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "41d7ce896b9bfba8dd33780891de3d4b16369fca41f019b1108de05cc18b3106",
+  "sourceSha256": "027a6949885c03f1ed6fac854c8f2efc91e51a87b61e0340cfbc85467cdc5699",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -1112,6 +1112,125 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが補正後360×184比較画像を実寸とnearest4倍で全域実閲覧。4行の倍率で既存青帯と銅赤帯の違い、4両・窓・車輪・屋根の連続を確認し素材contextとして採用。実シーン/GPU描画の採用とは分ける。"
+    },
+    {
+      "image": "art-reviews/train-color-final-scenes/compact-corrected.png",
+      "report": "art-reviews/train-color-final-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11構図を親5/独立担当6で全域実閲覧し採用。銅赤の第2編成と既存青編成の支持面・柱遮蔽が自然。narrowは青1編成、mobile初期の銅色は端の微小部分なので色判別は動作画像で確認。wide/tallは無変形帯でも全域閲覧。"
+    },
+    {
+      "image": "art-reviews/train-color-final-scenes/desktop-corrected.png",
+      "report": "art-reviews/train-color-final-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11構図を親5/独立担当6で全域実閲覧し採用。銅赤の第2編成と既存青編成の支持面・柱遮蔽が自然。narrowは青1編成、mobile初期の銅色は端の微小部分なので色判別は動作画像で確認。wide/tallは無変形帯でも全域閲覧。"
+    },
+    {
+      "image": "art-reviews/train-color-final-scenes/landscape-corrected.png",
+      "report": "art-reviews/train-color-final-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11構図を親5/独立担当6で全域実閲覧し採用。銅赤の第2編成と既存青編成の支持面・柱遮蔽が自然。narrowは青1編成、mobile初期の銅色は端の微小部分なので色判別は動作画像で確認。wide/tallは無変形帯でも全域閲覧。"
+    },
+    {
+      "image": "art-reviews/train-color-final-scenes/mobile-corrected.png",
+      "report": "art-reviews/train-color-final-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11構図を親5/独立担当6で全域実閲覧し採用。銅赤の第2編成と既存青編成の支持面・柱遮蔽が自然。narrowは青1編成、mobile初期の銅色は端の微小部分なので色判別は動作画像で確認。wide/tallは無変形帯でも全域閲覧。"
+    },
+    {
+      "image": "art-reviews/train-color-final-scenes/narrow-corrected.png",
+      "report": "art-reviews/train-color-final-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11構図を親5/独立担当6で全域実閲覧し採用。銅赤の第2編成と既存青編成の支持面・柱遮蔽が自然。narrowは青1編成、mobile初期の銅色は端の微小部分なので色判別は動作画像で確認。wide/tallは無変形帯でも全域閲覧。"
+    },
+    {
+      "image": "art-reviews/train-color-final-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/train-color-final-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11構図を親5/独立担当6で全域実閲覧し採用。銅赤の第2編成と既存青編成の支持面・柱遮蔽が自然。narrowは青1編成、mobile初期の銅色は端の微小部分なので色判別は動作画像で確認。wide/tallは無変形帯でも全域閲覧。"
+    },
+    {
+      "image": "art-reviews/train-color-final-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/train-color-final-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11構図を親5/独立担当6で全域実閲覧し採用。銅赤の第2編成と既存青編成の支持面・柱遮蔽が自然。narrowは青1編成、mobile初期の銅色は端の微小部分なので色判別は動作画像で確認。wide/tallは無変形帯でも全域閲覧。"
+    },
+    {
+      "image": "art-reviews/train-color-final-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/train-color-final-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11構図を親5/独立担当6で全域実閲覧し採用。銅赤の第2編成と既存青編成の支持面・柱遮蔽が自然。narrowは青1編成、mobile初期の銅色は端の微小部分なので色判別は動作画像で確認。wide/tallは無変形帯でも全域閲覧。"
+    },
+    {
+      "image": "art-reviews/train-color-final-scenes/small-phone-corrected.png",
+      "report": "art-reviews/train-color-final-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11構図を親5/独立担当6で全域実閲覧し採用。銅赤の第2編成と既存青編成の支持面・柱遮蔽が自然。narrowは青1編成、mobile初期の銅色は端の微小部分なので色判別は動作画像で確認。wide/tallは無変形帯でも全域閲覧。"
+    },
+    {
+      "image": "art-reviews/train-color-final-scenes/tall-corrected.png",
+      "report": "art-reviews/train-color-final-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11構図を親5/独立担当6で全域実閲覧し採用。銅赤の第2編成と既存青編成の支持面・柱遮蔽が自然。narrowは青1編成、mobile初期の銅色は端の微小部分なので色判別は動作画像で確認。wide/tallは無変形帯でも全域閲覧。"
+    },
+    {
+      "image": "art-reviews/train-color-final-scenes/wide-corrected.png",
+      "report": "art-reviews/train-color-final-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11構図を親5/独立担当6で全域実閲覧し採用。銅赤の第2編成と既存青編成の支持面・柱遮蔽が自然。narrowは青1編成、mobile初期の銅色は端の微小部分なので色判別は動作画像で確認。wide/tallは無変形帯でも全域閲覧。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-train-colors-active/desktop-8-corrected.png",
+      "report": "art-reviews/2026-10-25-train-colors-active/desktop-8-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが補正後画像を実閲覧。青と銅赤の同方向列車が同じ線路と車輪高さで走り、柱の遮蔽と間隔が自然。猫・鉢・街並みを保つ。 PCの0/1/8秒およびmobileの周回境界を含む連続rail帯で移動と出入りを確認。mobile8秒では銅帯が中央で明瞭、narrowは青1のみ。位置/速度の数値は計算値であり実測と区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-train-colors-active/desktop-rail-corrected.png",
+      "report": "art-reviews/2026-10-25-train-colors-active/desktop-rail-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが補正後画像を実閲覧。青と銅赤の同方向列車が同じ線路と車輪高さで走り、柱の遮蔽と間隔が自然。猫・鉢・街並みを保つ。 PCの0/1/8秒およびmobileの周回境界を含む連続rail帯で移動と出入りを確認。mobile8秒では銅帯が中央で明瞭、narrowは青1のみ。位置/速度の数値は計算値であり実測と区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-train-colors-active/mobile-8-corrected.png",
+      "report": "art-reviews/2026-10-25-train-colors-active/mobile-8-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが補正後画像を実閲覧。青と銅赤の同方向列車が同じ線路と車輪高さで走り、柱の遮蔽と間隔が自然。猫・鉢・街並みを保つ。 PCの0/1/8秒およびmobileの周回境界を含む連続rail帯で移動と出入りを確認。mobile8秒では銅帯が中央で明瞭、narrowは青1のみ。位置/速度の数値は計算値であり実測と区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-train-colors-active/mobile-rail-corrected.png",
+      "report": "art-reviews/2026-10-25-train-colors-active/mobile-rail-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが補正後画像を実閲覧。青と銅赤の同方向列車が同じ線路と車輪高さで走り、柱の遮蔽と間隔が自然。猫・鉢・街並みを保つ。 PCの0/1/8秒およびmobileの周回境界を含む連続rail帯で移動と出入りを確認。mobile8秒では銅帯が中央で明瞭、narrowは青1のみ。位置/速度の数値は計算値であり実測と区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-train-colors-active/narrow-8-corrected.png",
+      "report": "art-reviews/2026-10-25-train-colors-active/narrow-8-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが補正後画像を実閲覧。青と銅赤の同方向列車が同じ線路と車輪高さで走り、柱の遮蔽と間隔が自然。猫・鉢・街並みを保つ。 PCの0/1/8秒およびmobileの周回境界を含む連続rail帯で移動と出入りを確認。mobile8秒では銅帯が中央で明瞭、narrowは青1のみ。位置/速度の数値は計算値であり実測と区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-25-train-colors-active/narrow-rail-corrected.png",
+      "report": "art-reviews/2026-10-25-train-colors-active/narrow-rail-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親LLMが補正後画像を実閲覧。青と銅赤の同方向列車が同じ線路と車輪高さで走り、柱の遮蔽と間隔が自然。猫・鉢・街並みを保つ。 PCの0/1/8秒およびmobileの周回境界を含む連続rail帯で移動と出入りを確認。mobile8秒では銅帯が中央で明瞭、narrowは青1のみ。位置/速度の数値は計算値であり実測と区別。"
     }
   ]
 }

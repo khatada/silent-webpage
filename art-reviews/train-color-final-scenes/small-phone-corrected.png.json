@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/train-color-final-scenes/small-phone-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "a6344c5a281b901351e106070d965faee05a46936210cf356cd8044b73eacbc5"
+  },
+  "output": {
+    "path": "art-reviews/train-color-final-scenes/small-phone-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "778a7462bc65a9df7e7b6afc600ef8004be4f9d6be5ce4d00fa05883bbb96ed6"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

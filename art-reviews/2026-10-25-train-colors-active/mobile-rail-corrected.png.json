@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-25-train-colors-active/mobile-rail-source.png",
+    "width": 780,
+    "height": 960,
+    "sha256": "ec67faab13e579948bd48832f47843b544a71e9e84233c499379b9c38ea7c858"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-25-train-colors-active/mobile-rail-corrected.png",
+    "width": 780,
+    "height": 960,
+    "sha256": "ec67faab13e579948bd48832f47843b544a71e9e84233c499379b9c38ea7c858"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

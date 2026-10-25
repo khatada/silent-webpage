@@ -3,6 +3,7 @@ export const generatedArt = {
   streetCar: { image: 'art/street-car.png', frame: [190, 128, 256, 368] },
   background: 'art/tokyo-night.png',
   atlas: 'art/night-sprites.png',
+  alternateTrain: 'art/train-copper.png',
   catRestAtlas: 'art/cat-rest.png',
   catLookAtlas: 'art/cat-look.png',
   catGroomAtlas: 'art/cat-groom.png',
