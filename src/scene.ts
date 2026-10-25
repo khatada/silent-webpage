@@ -15,6 +15,7 @@ import { createImageUpperCloud } from './image-upper-cloud';
 import { createImageSkylineLights } from './image-skyline-lights';
 import { createImageStars } from './image-stars';
 import { createWindowCover } from './image-window-cover';
+import { trainServiceOffsets } from './train-service';
 import { createImagePlant, plantArt, plantGeometry } from './image-plant';
 import { cityMotion, residentialLightCycle } from './city-motion';
 
@@ -122,7 +123,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let originY = 0;
   let catY = 470;
   let actorScale = 1;
-  let train: Sprite;
+  let trains: { art: Sprite; offset: number }[] = [];
   let trainInitialX = 0;
   let aircraft: Sprite;
   let cloud: Sprite;
@@ -217,9 +218,15 @@ export async function createScene(host: HTMLElement): Promise<{
     aircraft = sprite(frames.aircraft);
     aircraft.scale.set(layout.aircraftScale);
     aircraft.y = layout.aircraftY;
-    train = sprite(frames.train);
+    const train = sprite(frames.train);
     train.scale.set(scale * 0.24 * actorScale);
     train.y = layout.railBottom - train.height;
+    trains = trainServiceOffsets(width, train.width).map((offset, index) => {
+      const art = index === 0 ? train : sprite(frames.train);
+      art.scale.copyFrom(train.scale);
+      art.y = train.y;
+      return { art, offset };
+    });
     trainInitialX = width * 0.1;
     let nearestPoleDistance = Infinity;
     // Restore only the reviewed background's pole pixels over the passing train.
@@ -269,7 +276,9 @@ export async function createScene(host: HTMLElement): Promise<{
     imageUpperCloud.update(upperCloud, elapsed, width, scale);
     cloud.x = travelPosition(elapsed, width, cloud.width, scale * cityMotion.cloudSpeed, width * 0.12);
     aircraft.x = travelPosition(elapsed, width, aircraft.width, scale * cityMotion.aircraftSpeed, width * 0.7);
-    train.x = travelPosition(elapsed, width, train.width, scale * 16, trainInitialX);
+    for (const { art, offset } of trains) {
+      art.x = travelPosition(elapsed, width, art.width, scale * 16, trainInitialX + offset);
+    }
     const pose = catPose(elapsed, width, scale * actorScale);
     imageCat.update(cat, pose, scale * actorScale, catY);
   }

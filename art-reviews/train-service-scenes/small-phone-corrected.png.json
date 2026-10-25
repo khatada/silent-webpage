@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/train-service-scenes/small-phone-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "df60dfadc7a3335e361164a5319b3f90e6f771af68d6f2cf6b5bafe916a674f6"
+  },
+  "output": {
+    "path": "art-reviews/train-service-scenes/small-phone-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "227d966ddbc873fa5e621bad5cb3b2d357c7a4011ee9c1fa1b2d837c8f6c2c7e"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

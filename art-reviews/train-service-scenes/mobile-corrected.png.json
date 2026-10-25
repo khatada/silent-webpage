@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/train-service-scenes/mobile-source.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "a200cad67ce93179df4a2a9bb79f7e5d8171074bf238e363062f8ed86f9b8695"
+  },
+  "output": {
+    "path": "art-reviews/train-service-scenes/mobile-corrected.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "1642a67e763938c4b391c3fb5613b2ddb504b29a52be2b4312075ac216e64fd4"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

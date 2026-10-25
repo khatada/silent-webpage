@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/train-service-scenes/landscape-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "f57e069caaf4e07d7c58f0046e61f261d48303b84925b271caf7b732bc7f9568"
+  },
+  "output": {
+    "path": "art-reviews/train-service-scenes/landscape-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "8eae609dbec23acd19d2ba79204c10e47b7edeffce3d20cc7bb1b1e3dccd67b0"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/train-service-scenes/portrait-boundary-source.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "b5604e52caa9c2be4fe0754e252b5f827efc2ce36577c5cc04291f4bb424e6f5"
+  },
+  "output": {
+    "path": "art-reviews/train-service-scenes/portrait-boundary-corrected.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "fcc46ad10c66a5ec138c6a5b7e28f59391a59c43f87b3b8bccac0da6630740b9"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

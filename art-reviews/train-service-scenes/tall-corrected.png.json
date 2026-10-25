@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/train-service-scenes/tall-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "270e576a749a85bfc8c7035b98f9543921e7c12100883a237b89a21c45d9c2b0"
+  },
+  "output": {
+    "path": "art-reviews/train-service-scenes/tall-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "9d23d3ae2d3397fec320e84a8f6fd3845fc32b344b82de8bd66b850829c64311"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
