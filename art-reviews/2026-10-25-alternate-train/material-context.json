@@ -1,0 +1,109 @@
+{
+  "description": "Left existing blue / right generated red, top to bottom .24/.36/.48/.6 nearest image samples. Actual generated sky crop as background. Not runtime GPU rendering.",
+  "samples": [
+    {
+      "row": 0,
+      "material": "existing-blue",
+      "nominalScale": 0.24,
+      "roundedSize": [
+        63,
+        16
+      ],
+      "xy": [
+        10,
+        4
+      ]
+    },
+    {
+      "row": 0,
+      "material": "generated-red",
+      "nominalScale": 0.24,
+      "roundedSize": [
+        63,
+        16
+      ],
+      "xy": [
+        190,
+        4
+      ]
+    },
+    {
+      "row": 1,
+      "material": "existing-blue",
+      "nominalScale": 0.36,
+      "roundedSize": [
+        95,
+        23
+      ],
+      "xy": [
+        10,
+        49
+      ]
+    },
+    {
+      "row": 1,
+      "material": "generated-red",
+      "nominalScale": 0.36,
+      "roundedSize": [
+        95,
+        23
+      ],
+      "xy": [
+        190,
+        49
+      ]
+    },
+    {
+      "row": 2,
+      "material": "existing-blue",
+      "nominalScale": 0.48,
+      "roundedSize": [
+        127,
+        31
+      ],
+      "xy": [
+        10,
+        94
+      ]
+    },
+    {
+      "row": 2,
+      "material": "generated-red",
+      "nominalScale": 0.48,
+      "roundedSize": [
+        127,
+        31
+      ],
+      "xy": [
+        190,
+        94
+      ]
+    },
+    {
+      "row": 3,
+      "material": "existing-blue",
+      "nominalScale": 0.6,
+      "roundedSize": [
+        158,
+        39
+      ],
+      "xy": [
+        10,
+        139
+      ]
+    },
+    {
+      "row": 3,
+      "material": "generated-red",
+      "nominalScale": 0.6,
+      "roundedSize": [
+        158,
+        39
+      ],
+      "xy": [
+        190,
+        139
+      ]
+    }
+  ]
+}
