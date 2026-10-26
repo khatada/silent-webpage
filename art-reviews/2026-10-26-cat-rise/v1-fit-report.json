@@ -1,0 +1,23 @@
+{
+  "generatedOriginalSha256": "47cfdf40aedaec81d2df927291de1ffd4e866b624c8295c65d7427bb3fba6365",
+  "commonCell": [320,224],
+  "anchorX": 192,
+  "foot": 208,
+  "neutralSource": "sitting-reference.png",
+  "neutralPasteXY": [64,0],
+  "uniformScale": 0.3901734104046243,
+  "scaleBasis": "existing seated alpha>=128 height135 / generated pose0 corresponding height346",
+  "alphaDeletionThreshold": 32,
+  "operation": "Only original generated RGBA crop, one shared affine-nearest scale, translation and lowalpha deletion. Existing neutral endpoint copied unchanged. No drawing/recoloring/pose morphing.",
+  "poses": [
+    {"pose":1,"cropLTRB":[547,0,1048,510],"sourceFrontSupport":[929,456],"sharedScale":0.3901734104046243,"targetFrontSupport":[214,190],"visibleBounds":[105,70,237,201]},
+    {"pose":2,"cropLTRB":[1048,0,1641,510],"sourceFrontSupport":[1518,457],"sharedScale":0.3901734104046243,"targetFrontSupport":[214,190],"visibleBounds":[44,74,241,191]},
+    {"pose":3,"cropLTRB":[0,510,547,958],"sourceFrontSupport":[444,889],"sharedScale":0.3901734104046243,"targetFrontSupport":[214,190],"visibleBounds":[74,56,242,192]},
+    {"pose":4,"cropLTRB":[547,510,1094,958],"sourceFrontSupport":[984,889],"sharedScale":0.3901734104046243,"targetFrontSupport":[214,190],"visibleBounds":[68,57,243,192]},
+    {"pose":5,"cropLTRB":[1094,510,1641,958],"sourceFrontSupport":[1518,890],"sharedScale":0.3901734104046243,"targetFrontSupport":[214,190],"visibleBounds":[67,55,244,191]}
+  ],
+  "status": "reference-registration-only-not-public-adoption",
+  "neutralEndpointRGBAEqual": true,
+  "supportNote": "foot208 is the inherited seated/tail anchor, not the lowest visible pixel of each standing pose. Forepaw support near214,190 remains fixed as the tail lifts; never align every frame by bbox bottom.",
+  "correctedReferenceSha256": "0a20c54ff972ecace4177135cdfd1b65a7826bb01052b5d365bb7e0b6ee9490d"
+}

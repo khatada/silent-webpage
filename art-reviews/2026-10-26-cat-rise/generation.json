@@ -1,0 +1,32 @@
+{
+  "tool": "image_gen.imagegen",
+  "originalSha256": "49c8a90043e84da8312b838e95cffcd5ee3a7987af1edb701728142dc7246850",
+  "prompt": "Two-pass imagegen generation: six charcoal-cat rising poses, then two missing low-haunch/tail bridges. Exact unabridged prompts and reference lists are retained in generation-v1.json/generation-v2.json and generation-prompt*.txt.",
+  "correctionInputKind": "permitted-assembly-and-registration-of-retained-generated-images-with-existing-generated-neutral",
+  "correctionInput": "art-reviews/2026-10-26-cat-rise/composed-input.png",
+  "actualGeneratedOriginals": [
+    {
+      "image": "art-reviews/2026-10-26-cat-rise/generated-source-v1.png",
+      "sha256": "47cfdf40aedaec81d2df927291de1ffd4e866b624c8295c65d7427bb3fba6365",
+      "generationEvidence": "art-reviews/2026-10-26-cat-rise/generation-v1.json"
+    },
+    {
+      "image": "art-reviews/2026-10-26-cat-rise/generated-source-v2.png",
+      "sha256": "0f5852c15b5eb2752e4f357e129f9d121af5e178759e6bca637164ed211bfbea",
+      "generationEvidence": "art-reviews/2026-10-26-cat-rise/generation-v2.json"
+    }
+  ],
+  "existingNeutral": {
+    "source": "public/art/night-sprites.png",
+    "sourceSha256": "a4dee349f33ffd3df2388f7a28f11ce09b826d223158201bf216d8b34a3fd467",
+    "rectXYWH": [596,298,108,139],
+    "pasteXY": [138,70],
+    "fullEndpointRGBAEqual": true
+  },
+  "partialEditScript": "art-reviews/2026-10-26-cat-rise/compose-material.py",
+  "partialEditReport": "art-reviews/2026-10-26-cat-rise/partial-edit-report.json",
+  "provenanceCheck": "art-reviews/2026-10-26-cat-rise/provenance-check.json",
+  "rejectedWholeSheetReview": "art-reviews/2026-10-26-cat-rise/v1-review.json",
+  "note": "originalSha256 identifies the composed correction input, not either untouched imagegen original. Both true raw hashes are separately recorded. No code-created anatomical pixels.",
+  "independentParentProvenanceCheck": "art-reviews/2026-10-26-cat-rise/parent-provenance-check.json"
+}

@@ -1,0 +1,39 @@
+{
+  "canvas": [320,224],
+  "cells": 6,
+  "anchorX": 192,
+  "inheritedFootAnchorY": 208,
+  "frontPawLandmark": [218,190],
+  "frontPawLandmarkMeaning": "Near forepaw pad lower-right contact. Approximate original reference support region; tiny initial weight transfer is allowed, no whole-body sliding.",
+  "neutralSource": "sitting-reference.png",
+  "neutralPasteXY": [64,0],
+  "neutralFullRGBAEqual": true,
+  "alphaDeletionThreshold": 32,
+  "uniformScaleBySource": {
+    "v1": 0.3901734104046243,
+    "v2": 0.24
+  },
+  "scaleBasis": {
+    "v1": "Existing seated strong-alpha height135 / generated neutral strong-alpha height346",
+    "v2": "One factor .24 matches head/ear-to-support span of both poses to the registered v1 family; no per-pose resizing"
+  },
+  "poses": [
+    {"cell":1,"source":"v1","rawPose":1,"name":"lean","crop":[547,0,1048,510],"point":[921,459],"scale":0.3901734104046243,"targetForepawSupport":[218,190],"registeredAlphaBounds":[112,69,244,199]},
+    {"cell":2,"source":"v2","rawPose":0,"name":"low-haunch","crop":[0,0,1060,742],"point":[887,651],"scale":0.24,"targetForepawSupport":[218,190],"registeredAlphaBounds":[36,75,246,190]},
+    {"cell":3,"source":"v1","rawPose":2,"name":"high-crouch","crop":[1048,0,1641,510],"point":[1516,457],"scale":0.3901734104046243,"targetForepawSupport":[218,190],"registeredAlphaBounds":[49,74,246,191]},
+    {"cell":4,"source":"v2","rawPose":1,"name":"tail-bridge","crop":[1060,0,2120,742],"point":[1902,651],"scale":0.24,"targetForepawSupport":[218,190],"registeredAlphaBounds":[55,75,248,190]},
+    {"cell":5,"source":"v1","rawPose":5,"name":"neutral-standing","crop":[1094,510,1641,958],"point":[1513,891],"scale":0.3901734104046243,"targetForepawSupport":[218,190],"registeredAlphaBounds":[72,54,250,191]}
+  ],
+  "generatedOriginals": {
+    "v1": {
+      "path": "art-reviews/2026-10-26-cat-rise/generated-source-v1.png",
+      "sha256": "47cfdf40aedaec81d2df927291de1ffd4e866b624c8295c65d7427bb3fba6365"
+    },
+    "v2": {
+      "path": "art-reviews/2026-10-26-cat-rise/generated-source-v2.png",
+      "sha256": "0f5852c15b5eb2752e4f357e129f9d121af5e178759e6bca637164ed211bfbea"
+    }
+  },
+  "inputSha256": "49c8a90043e84da8312b838e95cffcd5ee3a7987af1edb701728142dc7246850",
+  "operation": "Only existing neutral RGBA copy, generated source crop, alpha<32 deletion, shared affine-nearest scale per source, and support translation. No drawn/recolored/warped anatomical pixels."
+}

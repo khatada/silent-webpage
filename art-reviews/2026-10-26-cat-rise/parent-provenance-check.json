@@ -1,0 +1,14 @@
+{
+  "method": "Parent independently replayed declared crop/alpha deletion/nearest uniform affine/translation parameters from archived generated originals, without running compose script. Compared allRGBA against corrected cells; neutral constructed directly from reviewed public night-sprites atlas crop596,298,108,139 and pasted at138,70. This verifies provenance and endpoint bytes, not anatomical or timed-motion quality.",
+  "neutralDirectAtlasRGBAEqual": true,
+  "allGeneratedCellsMatchAllowedTransform": true,
+  "correctionAllRGBAEqual": true,
+  "sourceHashesMatch": true,
+  "samples": [
+    {"cell":1,"source":"v1","allRGBAEqualToDeclaredTransform":true},
+    {"cell":2,"source":"v2","allRGBAEqualToDeclaredTransform":true},
+    {"cell":3,"source":"v1","allRGBAEqualToDeclaredTransform":true},
+    {"cell":4,"source":"v2","allRGBAEqualToDeclaredTransform":true},
+    {"cell":5,"source":"v1","allRGBAEqualToDeclaredTransform":true}
+  ]
+}

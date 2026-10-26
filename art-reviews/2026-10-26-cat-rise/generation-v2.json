@@ -1,0 +1,12 @@
+{
+  "tool": "image_gen.imagegen",
+  "generatedOriginal": "art-reviews/2026-10-26-cat-rise/generated-source-v2.png",
+  "generatedOriginalSha256": "0f5852c15b5eb2752e4f357e129f9d121af5e178759e6bca637164ed211bfbea",
+  "originalToolPath": "/workspace/generated_images/exec-7c56b759-7d6c-4b80-b6a7-eb20c79db052.png",
+  "actualSize": [2120,742],
+  "promptFile": "art-reviews/2026-10-26-cat-rise/generation-prompt-v2.txt",
+  "references": ["art-reviews/2026-10-26-cat-rise/lean-reference.png","art-reviews/2026-10-26-cat-rise/crouch-reference.png","art-reviews/2026-10-26-cat-rise/stand-reference.png"],
+  "status": "selected-bridges-in-corrected-and-LLM-reviewed-material",
+  "note": "Two missing bridges: low-haunch A and half-raised-tail B. Parent and author viewed raw; final chain adoption pending correction/nativecontext.",
+  "finalMaterialDecision": "art-reviews/2026-10-26-cat-rise/material-decision.json"
+}

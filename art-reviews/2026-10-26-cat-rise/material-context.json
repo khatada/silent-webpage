@@ -1,0 +1,28 @@
+{
+  "description": "Corrected sixposes on copied previously reviewed rooftop floor, top to bottom .25/.375/.5/.625 native nearest samples; not runtime GPU rendering. Every row reads neutral/lean/lowhaunch/crouch/tailbridge/stand.",
+  "backgroundSource": "art-reviews/left-glass-scenes/portrait-large-corrected.png",
+  "backgroundCropLTRB": [560,1320,880,1544],
+  "rows": [
+    {
+      "scale": 0.25,
+      "cellPixels": [80,56],
+      "rowY": 0
+    },
+    {
+      "scale": 0.375,
+      "cellPixels": [120,84],
+      "rowY": 64
+    },
+    {
+      "scale": 0.5,
+      "cellPixels": [160,112],
+      "rowY": 156
+    },
+    {
+      "scale": 0.625,
+      "cellPixels": [200,140],
+      "rowY": 276
+    }
+  ],
+  "poseOrder": ["old-neutral","lean","low-haunch","crouch","tail-bridge","stand"]
+}

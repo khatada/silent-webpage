@@ -1,0 +1,14 @@
+{
+  "tool": "image_gen.imagegen",
+  "generatedOriginal": "art-reviews/2026-10-26-cat-rise/generated-source-v1.png",
+  "originalToolPath": "/workspace/generated_images/exec-71cce567-09cf-4a1b-b89d-ece2b932d1cb.png",
+  "generatedOriginalSha256": "47cfdf40aedaec81d2df927291de1ffd4e866b624c8295c65d7427bb3fba6365",
+  "actualSize": [1641,958],
+  "promptFile": "art-reviews/2026-10-26-cat-rise/generation-prompt.txt",
+  "references": ["art-reviews/2026-10-26-cat-rise/sitting-reference.png","art-reviews/2026-10-26-cat-rise/walk-style-reference.png"],
+  "status": "rejected-as-complete-animation",
+  "note": "First generated sheet; nominal grid is3x2 but seated tail crosses nominal row boundary. No public adoption.",
+  "rejectionReason": "Raw sheet and uniformly fitted corrected reference viewed by LLM. Poses3/4/5 are already four-legged stands with mostly hindpaw differences; lack four distinct anatomical rising intermediates. Pose1lean/pose2highcrouch/pose5stand remain only partial candidates. Tail also jumps from low in2 to raised in3.",
+  "finalSelectedRawPoses": [1,2,5],
+  "finalMaterialDecision": "art-reviews/2026-10-26-cat-rise/material-decision.json"
+}
