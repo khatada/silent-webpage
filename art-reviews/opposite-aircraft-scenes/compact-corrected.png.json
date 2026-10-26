@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/opposite-aircraft-scenes/compact-source.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "48ff5dea8c3250c6fe7de6e8712243182f2acacda37b0273637bdf7ab8fca032"
+  },
+  "output": {
+    "path": "art-reviews/opposite-aircraft-scenes/compact-corrected.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "9410f958b05b94090594acd88af7f334e0db68e36bdcf059b9ba6d2b692908de"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

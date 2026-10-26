@@ -1,10 +1,11 @@
 # 実装の進行状況
 
-最終更新: 2026-10-25。別セッションの実装再開用。
+最終更新: 2026-10-26。別セッションの実装再開用。
 
 ## 現在の作業（再開時はまずここを参照）
 
-- 現在ブランチ `fix/room-glass-darkening-bounds`、worktree `/workspace/silent-webpage-glass-bounds`。C030「左ガラスの消灯範囲を自然に整える」。既存left小矩形を標準[379,292,8,8]/縦[516,936,12,14]へ広げ、右と同じ暗室cropで置換。人影anchor/phase/rightglass/wide/枠/柵不変。runtime+局所QAはtrain_variant_preflight、docs/manifest/11初期/active/Gitは親。sourceee967a32cf0cdb6edd5498123a60c653a06d63d50282d4648b262d31dc213bd3で凍結。106unit/型Lint、補正局所36panel/11初期/本番6画像をLLM採用。局所27glass外0/on9一致、初期11全RGBA一致。activePC/mobile領域外0、portrait星1pxRGB各1差は補助比較の限界として記録。verify/commit/PR/CI/公開が残る。
+- 現在ブランチ `feat/opposite-aircraft-service`、worktree `/workspace/silent-webpage-glass-bounds`（完了済みディレクトリ再利用、branchは別）。最新origin/main c185f0fからC031「逆方向の別航路便」。主機を変えず既存生成機*.8を上laneへ鏡像表示、空不足4構図は1機維持、7構図で2機見込み。runtimeはnext_motion_ideas、productionQA helperはtrain_variant_preflight、docs/manifest/撮影/Gitは親。source473419ce92c6adf1307e9ed4022641c090c08d1b627088251b1e88c064f91ef0で凍結。独立コードreview重大指摘なし、109unit/型Lint成功。補正後11初期を独立5+6、final8動作を担当/親LLM実閲覧採用。全11新機体frame外0、4省略全RGBA一致。wrap後fullframe再入まで確認。旧active試行は未採用/未stage、final-activeのみ採用。verify/commit/PR/CI/公開が残る。
+- C030 PR #58はverify106テスト/185画像とhook・CI40192318778/job121165736794成功後main c185f0f1f0ddbe17b44e26357bcb81c7485d5ea1へマージ。Pages40192619743（verify121166669121/publish121167378437）成功で公開済み。補正後局所36panel/11初期/本番6画像をLLM採用。局所27glass外0/on9一致、初期11全RGBA一致。本番補助比較はportrait星1pxのRGB各1差を隠さず記録。PR添付1回無応答中断・成否未確認。
 - C029 PR #57はverify106テスト/167画像とhook・CI40191137554/job121162207330成功後main edd1f97c4b3d53b3f5c0e3bed9b427e129408775へマージ。Pages40191454844（verify121163135832/publish121163739954）成功で公開済み。局所36panel/11初期/本番8画像を補正後LLM採用。27局所比較ガラス外0/on9原画一致、初期8構図全RGBA一致/wide3構図領域外0。PR添付1回無応答中断・成否未確認。
 - C028表示PR #56はverify104テスト/147画像とhook・CI40190142352/job121159194246成功後main1373f1d69829af08165785810d3ad848fd196dcdへマージ。Pages40190362842（verify121159868853/publish121160473486）成功で公開済み。PR添付は1回無応答で中断・成否未確認。11初期全景と本番6画像を補正後LLM採用、第2編成範囲外11構図変更0/narrow全RGBA一致。
 

@@ -1,0 +1,38 @@
+{
+  "sourceSha256": "473419ce92c6adf1307e9ed4022641c090c08d1b627088251b1e88c064f91ef0",
+  "finalSourceSha256": "473419ce92c6adf1307e9ed4022641c090c08d1b627088251b1e88c064f91ef0",
+  "method": "Unmodified production page. Clock paused before navigation; OS motion enabled after initialization; runFor steps <=1000ms. Full-width native sky strips include primary and opposite lanes at requested 0/1/4s plus first-left-wrap -.1/+.1/+1s and full-width/speed+.5s after reentry when visible. 4s full scenes are retained for all four devices. Geometry, visibility, wrap timing and positions are calculated expectations, not pixel-measured motion. The actual last 20fps RAF may precede requested time. Mirrored anchor1/-scale uses the left bound as x. Mobile omission, leftward movement, lane separation and edge-only reentry require actual LLM image review.",
+  "layouts": [
+    {"name":"desktop","native":[1440,900],"dpr":1,"calculatedPrimary":{"width":74.46000000000001,"height":34,"y":80,"speed":20,"initialX":1007.9999999999999},"calculatedOpposite":{"scale":0.272,"width":59.568000000000005,"height":27.200000000000003,"y":31,"margin":4,"gap":6,"visible":true,"speed":-20,"initialX":604.8},"firstLeftWrapSeconds":33.218399999999995,"cropNative":[0,23,1440,99],"atlasTimes":[0,1,4,33.118,33.318,34.218,36.697],"atlasPhysical":[1440,693]},
+    {"name":"tall","native":[390,1025],"dpr":2,"calculatedPrimary":{"width":74.46000000000001,"height":34,"y":57,"speed":10,"initialX":273},"calculatedOpposite":{"scale":0.272,"width":59.568000000000005,"height":27.200000000000003,"y":25,"margin":2,"gap":4,"visible":true,"speed":-10,"initialX":163.79999999999998},"firstLeftWrapSeconds":22.3368,"cropNative":[0,17,390,82],"atlasTimes":[0,1,4,22.237,22.437,23.337,28.794],"atlasPhysical":[780,1148]},
+    {"name":"small-phone","native":[320,568],"dpr":2,"calculatedPrimary":{"width":37.230000000000004,"height":17,"y":84,"speed":5,"initialX":224},"calculatedOpposite":{"scale":0.136,"width":29.784000000000002,"height":13.600000000000001,"y":32,"margin":1,"gap":4,"visible":true,"speed":-5,"initialX":134.4},"firstLeftWrapSeconds":32.8368,"cropNative":[0,24,320,85],"atlasTimes":[0,1,4,32.737,32.937,33.837,39.294],"atlasPhysical":[640,1190]},
+    {"name":"mobile","native":[390,844],"dpr":2,"calculatedPrimary":{"width":74.46000000000001,"height":34,"y":24,"speed":20,"initialX":273},"calculatedOpposite":{"scale":0.272,"width":59.568000000000005,"height":27.200000000000003,"y":4,"margin":4,"gap":6,"visible":false,"speed":-20,"initialX":163.79999999999998},"firstLeftWrapSeconds":null,"cropNative":[0,16,390,50],"atlasTimes":[0,1,4],"atlasPhysical":[780,300]}
+  ],
+  "samples": [
+    {"name":"desktop","panel":0,"requestedSceneSeconds":0,"calculatedPrimaryLeftX":1008,"calculatedOppositeLeftX":604},
+    {"name":"desktop","panel":1,"requestedSceneSeconds":1,"calculatedPrimaryLeftX":1028,"calculatedOppositeLeftX":584},
+    {"name":"desktop","panel":2,"requestedSceneSeconds":4,"calculatedPrimaryLeftX":1088,"calculatedOppositeLeftX":524},
+    {"name":"desktop","panel":3,"requestedSceneSeconds":33.118,"calculatedPrimaryLeftX":155,"calculatedOppositeLeftX":-58},
+    {"name":"desktop","panel":4,"requestedSceneSeconds":33.318,"calculatedPrimaryLeftX":159,"calculatedOppositeLeftX":1438},
+    {"name":"desktop","panel":5,"requestedSceneSeconds":34.218,"calculatedPrimaryLeftX":177,"calculatedOppositeLeftX":1420},
+    {"name":"desktop","panel":6,"requestedSceneSeconds":36.697,"calculatedPrimaryLeftX":227,"calculatedOppositeLeftX":1370},
+    {"name":"tall","panel":0,"requestedSceneSeconds":0,"calculatedPrimaryLeftX":273,"calculatedOppositeLeftX":163},
+    {"name":"tall","panel":1,"requestedSceneSeconds":1,"calculatedPrimaryLeftX":283,"calculatedOppositeLeftX":153},
+    {"name":"tall","panel":2,"requestedSceneSeconds":4,"calculatedPrimaryLeftX":313,"calculatedOppositeLeftX":123},
+    {"name":"tall","panel":3,"requestedSceneSeconds":22.237,"calculatedPrimaryLeftX":30,"calculatedOppositeLeftX":-59},
+    {"name":"tall","panel":4,"requestedSceneSeconds":22.437,"calculatedPrimaryLeftX":32,"calculatedOppositeLeftX":388},
+    {"name":"tall","panel":5,"requestedSceneSeconds":23.337,"calculatedPrimaryLeftX":41,"calculatedOppositeLeftX":379},
+    {"name":"tall","panel":6,"requestedSceneSeconds":28.794,"calculatedPrimaryLeftX":96,"calculatedOppositeLeftX":325},
+    {"name":"small-phone","panel":0,"requestedSceneSeconds":0,"calculatedPrimaryLeftX":224,"calculatedOppositeLeftX":134},
+    {"name":"small-phone","panel":1,"requestedSceneSeconds":1,"calculatedPrimaryLeftX":229,"calculatedOppositeLeftX":129},
+    {"name":"small-phone","panel":2,"requestedSceneSeconds":4,"calculatedPrimaryLeftX":244,"calculatedOppositeLeftX":114},
+    {"name":"small-phone","panel":3,"requestedSceneSeconds":32.737,"calculatedPrimaryLeftX":30,"calculatedOppositeLeftX":-30},
+    {"name":"small-phone","panel":4,"requestedSceneSeconds":32.937,"calculatedPrimaryLeftX":31,"calculatedOppositeLeftX":319},
+    {"name":"small-phone","panel":5,"requestedSceneSeconds":33.837,"calculatedPrimaryLeftX":35,"calculatedOppositeLeftX":314},
+    {"name":"small-phone","panel":6,"requestedSceneSeconds":39.294,"calculatedPrimaryLeftX":63,"calculatedOppositeLeftX":287},
+    {"name":"mobile","panel":0,"requestedSceneSeconds":0,"calculatedPrimaryLeftX":273,"calculatedOppositeLeftX":null},
+    {"name":"mobile","panel":1,"requestedSceneSeconds":1,"calculatedPrimaryLeftX":293,"calculatedOppositeLeftX":null},
+    {"name":"mobile","panel":2,"requestedSceneSeconds":4,"calculatedPrimaryLeftX":353,"calculatedOppositeLeftX":null}
+  ],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

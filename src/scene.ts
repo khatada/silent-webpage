@@ -18,6 +18,7 @@ import { createImageRoomLights } from './image-room-lights';
 import { trainServiceOffsets } from './train-service';
 import { createImagePlant, plantArt, plantGeometry } from './image-plant';
 import { cityMotion, residentialLightCycle } from './city-motion';
+import { oppositeAircraftArt, oppositeAircraftGeometry } from './opposite-aircraft';
 
 type Frame = readonly [number, number, number, number];
 
@@ -129,6 +130,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let trains: { art: Sprite; offset: number }[] = [];
   let trainInitialX = 0;
   let aircraft: Sprite;
+  let oppositeAircraft: Sprite | undefined;
   let cloud: Sprite;
   let upperCloud: Sprite;
   let cat: Sprite;
@@ -222,6 +224,15 @@ export async function createScene(host: HTMLElement): Promise<{
     aircraft = sprite(frames.aircraft);
     aircraft.scale.set(layout.aircraftScale);
     aircraft.y = layout.aircraftY;
+    oppositeAircraft = undefined;
+    const oppositeFlight = oppositeAircraftGeometry(width, layout);
+    if (oppositeFlight.visible) {
+      oppositeAircraft = sprite(frames.aircraft);
+      // Negative scale with a right-edge anchor keeps x at the mirrored image's left bound.
+      oppositeAircraft.anchor.set(1, 0);
+      oppositeAircraft.scale.set(-oppositeFlight.scale, oppositeFlight.scale);
+      oppositeAircraft.y = oppositeFlight.y;
+    }
     const train = sprite(frames.train);
     train.scale.set(scale * 0.24 * actorScale);
     train.y = layout.railBottom - train.height;
@@ -280,6 +291,8 @@ export async function createScene(host: HTMLElement): Promise<{
     imageUpperCloud.update(upperCloud, elapsed, width, scale);
     cloud.x = travelPosition(elapsed, width, cloud.width, scale * cityMotion.cloudSpeed, width * 0.12);
     aircraft.x = travelPosition(elapsed, width, aircraft.width, scale * cityMotion.aircraftSpeed, width * 0.7);
+    if (oppositeAircraft) oppositeAircraft.x = travelPosition(elapsed, width, oppositeAircraft.width,
+      -scale * cityMotion.aircraftSpeed, width * oppositeAircraftArt.initialFraction);
     for (const { art, offset } of trains) {
       art.x = travelPosition(elapsed, width, art.width, scale * 16, trainInitialX + offset);
     }
