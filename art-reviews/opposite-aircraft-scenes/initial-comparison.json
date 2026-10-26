@@ -1,0 +1,19 @@
+{
+  "method": "All decoded RGBA bytes compared with PR58 initial scenes. Added mirrored aircraft bounds computed using current pixelViewport/layout/geometry/travelPosition at0; two native pixel margins. Omitted layouts must match entirely.",
+  "sourceSha256": "473419ce92c6adf1307e9ed4022641c090c08d1b627088251b1e88c064f91ef0",
+  "allOutsideUnchanged": true
+,
+  "samples": [
+    {"name":"desktop","visible":true,"geometry":{"scale":0.272,"width":59.568000000000005,"height":27.200000000000003,"y":31,"margin":4,"gap":6,"visible":true},"physicalAllowedLTRB":[602,29,666,61],"changedPixels":671,"outsideChangedPixels":0},
+    {"name":"mobile","visible":false,"geometry":{"scale":0.272,"width":59.568000000000005,"height":27.200000000000003,"y":4,"margin":4,"gap":6,"visible":false},"physicalAllowedLTRB":null,"changedPixels":0,"outsideChangedPixels":0},
+    {"name":"narrow","visible":false,"geometry":{"scale":0.272,"width":59.568000000000005,"height":27.200000000000003,"y":4,"margin":4,"gap":6,"visible":false},"physicalAllowedLTRB":null,"changedPixels":0,"outsideChangedPixels":0},
+    {"name":"landscape","visible":false,"geometry":{"scale":0.136,"width":29.784000000000002,"height":13.600000000000001,"y":4,"margin":4,"gap":6,"visible":false},"physicalAllowedLTRB":null,"changedPixels":0,"outsideChangedPixels":0},
+    {"name":"wide","visible":true,"geometry":{"scale":0.3400000000000001,"width":74.46000000000002,"height":34.00000000000001,"y":51,"margin":10,"gap":15,"visible":true},"physicalAllowedLTRB":[1073,49,1152,87],"changedPixels":1075,"outsideChangedPixels":0},
+    {"name":"compact","visible":false,"geometry":{"scale":0.20400000000000001,"width":44.676,"height":20.400000000000002,"y":6,"margin":6,"gap":9,"visible":false},"physicalAllowedLTRB":null,"changedPixels":0,"outsideChangedPixels":0},
+    {"name":"tall","visible":true,"geometry":{"scale":0.272,"width":59.568000000000005,"height":27.200000000000003,"y":25,"margin":2,"gap":4,"visible":true},"physicalAllowedLTRB":[322,46,450,109],"changedPixels":2680,"outsideChangedPixels":0},
+    {"name":"portrait-large","visible":true,"geometry":{"scale":0.272,"width":59.568000000000005,"height":27.200000000000003,"y":136,"margin":2,"gap":4,"visible":true},"physicalAllowedLTRB":[376,134,440,166],"changedPixels":684,"outsideChangedPixels":0},
+    {"name":"portrait-boundary","visible":true,"geometry":{"scale":0.272,"width":59.568000000000005,"height":27.200000000000003,"y":128,"margin":2,"gap":4,"visible":true},"physicalAllowedLTRB":[428,126,492,158],"changedPixels":685,"outsideChangedPixels":0},
+    {"name":"small-phone","visible":true,"geometry":{"scale":0.136,"width":29.784000000000002,"height":13.600000000000001,"y":32,"margin":1,"gap":4,"visible":true},"physicalAllowedLTRB":[264,60,332,96],"changedPixels":716,"outsideChangedPixels":0},
+    {"name":"small-mobile","visible":true,"geometry":{"scale":0.136,"width":29.784000000000002,"height":13.600000000000001,"y":51,"margin":1,"gap":4,"visible":true},"physicalAllowedLTRB":[310,98,378,134],"changedPixels":720,"outsideChangedPixels":0}
+  ]
+}

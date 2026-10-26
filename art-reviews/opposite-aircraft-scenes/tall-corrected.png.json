@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/opposite-aircraft-scenes/tall-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "735fdda854fb53929083443b7bcd27e9a67d88fd46b60a3d1c34a4e0e17d0b4c"
+  },
+  "output": {
+    "path": "art-reviews/opposite-aircraft-scenes/tall-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "5bbdcdbb862f2d449669297f28bc53508d1ab9a014a911276296352c94551d49"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

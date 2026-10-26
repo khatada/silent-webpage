@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "ee967a32cf0cdb6edd5498123a60c653a06d63d50282d4648b262d31dc213bd3",
+  "sourceSha256": "473419ce92c6adf1307e9ed4022641c090c08d1b627088251b1e88c064f91ef0",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -1497,6 +1497,139 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが3端末の3状態atlas+off全景6画像を全域実閲覧、親もatlas3を実閲覧。左右上部glassが同期して自然に暗くなり、旧左coverの小矩形縁が解消。枠/桟/柵/人影位置と全景は保持。下部の灯りは残るため窓全体消灯とは呼ばない。active前版比較はPC/mobile領域外0、portraitは星1pxのRGB各1差が残り厳密全景一致とは扱わない。"
+    },
+    {
+      "image": "art-reviews/opposite-aircraft-scenes/compact-corrected.png",
+      "report": "art-reviews/opposite-aircraft-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を独立担当5+6で実閲覧。wide/tallは無変形帯で全域確認。7構図の上側逆向き機体が読め、既存機と別高さ・別位置で混雑なし。mobile/narrow/landscape/compactは主機のみ。全構図で新機体frame外変更0、4省略構図は前版全RGBA一致。初期採用であり動作は別QA。"
+    },
+    {
+      "image": "art-reviews/opposite-aircraft-scenes/desktop-corrected.png",
+      "report": "art-reviews/opposite-aircraft-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を独立担当5+6で実閲覧。wide/tallは無変形帯で全域確認。7構図の上側逆向き機体が読め、既存機と別高さ・別位置で混雑なし。mobile/narrow/landscape/compactは主機のみ。全構図で新機体frame外変更0、4省略構図は前版全RGBA一致。初期採用であり動作は別QA。"
+    },
+    {
+      "image": "art-reviews/opposite-aircraft-scenes/landscape-corrected.png",
+      "report": "art-reviews/opposite-aircraft-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を独立担当5+6で実閲覧。wide/tallは無変形帯で全域確認。7構図の上側逆向き機体が読め、既存機と別高さ・別位置で混雑なし。mobile/narrow/landscape/compactは主機のみ。全構図で新機体frame外変更0、4省略構図は前版全RGBA一致。初期採用であり動作は別QA。"
+    },
+    {
+      "image": "art-reviews/opposite-aircraft-scenes/mobile-corrected.png",
+      "report": "art-reviews/opposite-aircraft-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を独立担当5+6で実閲覧。wide/tallは無変形帯で全域確認。7構図の上側逆向き機体が読め、既存機と別高さ・別位置で混雑なし。mobile/narrow/landscape/compactは主機のみ。全構図で新機体frame外変更0、4省略構図は前版全RGBA一致。初期採用であり動作は別QA。"
+    },
+    {
+      "image": "art-reviews/opposite-aircraft-scenes/narrow-corrected.png",
+      "report": "art-reviews/opposite-aircraft-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を独立担当5+6で実閲覧。wide/tallは無変形帯で全域確認。7構図の上側逆向き機体が読め、既存機と別高さ・別位置で混雑なし。mobile/narrow/landscape/compactは主機のみ。全構図で新機体frame外変更0、4省略構図は前版全RGBA一致。初期採用であり動作は別QA。"
+    },
+    {
+      "image": "art-reviews/opposite-aircraft-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/opposite-aircraft-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を独立担当5+6で実閲覧。wide/tallは無変形帯で全域確認。7構図の上側逆向き機体が読め、既存機と別高さ・別位置で混雑なし。mobile/narrow/landscape/compactは主機のみ。全構図で新機体frame外変更0、4省略構図は前版全RGBA一致。初期採用であり動作は別QA。"
+    },
+    {
+      "image": "art-reviews/opposite-aircraft-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/opposite-aircraft-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を独立担当5+6で実閲覧。wide/tallは無変形帯で全域確認。7構図の上側逆向き機体が読め、既存機と別高さ・別位置で混雑なし。mobile/narrow/landscape/compactは主機のみ。全構図で新機体frame外変更0、4省略構図は前版全RGBA一致。初期採用であり動作は別QA。"
+    },
+    {
+      "image": "art-reviews/opposite-aircraft-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/opposite-aircraft-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を独立担当5+6で実閲覧。wide/tallは無変形帯で全域確認。7構図の上側逆向き機体が読め、既存機と別高さ・別位置で混雑なし。mobile/narrow/landscape/compactは主機のみ。全構図で新機体frame外変更0、4省略構図は前版全RGBA一致。初期採用であり動作は別QA。"
+    },
+    {
+      "image": "art-reviews/opposite-aircraft-scenes/small-phone-corrected.png",
+      "report": "art-reviews/opposite-aircraft-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を独立担当5+6で実閲覧。wide/tallは無変形帯で全域確認。7構図の上側逆向き機体が読め、既存機と別高さ・別位置で混雑なし。mobile/narrow/landscape/compactは主機のみ。全構図で新機体frame外変更0、4省略構図は前版全RGBA一致。初期採用であり動作は別QA。"
+    },
+    {
+      "image": "art-reviews/opposite-aircraft-scenes/tall-corrected.png",
+      "report": "art-reviews/opposite-aircraft-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を独立担当5+6で実閲覧。wide/tallは無変形帯で全域確認。7構図の上側逆向き機体が読め、既存機と別高さ・別位置で混雑なし。mobile/narrow/landscape/compactは主機のみ。全構図で新機体frame外変更0、4省略構図は前版全RGBA一致。初期採用であり動作は別QA。"
+    },
+    {
+      "image": "art-reviews/opposite-aircraft-scenes/wide-corrected.png",
+      "report": "art-reviews/opposite-aircraft-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11初期全景を独立担当5+6で実閲覧。wide/tallは無変形帯で全域確認。7構図の上側逆向き機体が読め、既存機と別高さ・別位置で混雑なし。mobile/narrow/landscape/compactは主機のみ。全構図で新機体frame外変更0、4省略構図は前版全RGBA一致。初期採用であり動作は別QA。"
+    },
+    {
+      "image": "art-reviews/2026-10-26-opposite-aircraft-final-active/desktop-4-corrected.png",
+      "report": "art-reviews/2026-10-26-opposite-aircraft-final-active/desktop-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMがfinal8補正画像（4端末のsky時系列+4秒全景）を全域実閲覧、tall全景は無変形帯も確認。親も4skyatlasを実閲覧。PC/tall/smallphoneで上機は左・主機は右へ移動し、wrap前後とlastpanelの全機体再入が自然。mobileは主機1。機体形・lane分離・街/猫/鉢/列車を保持し混雑/中心teleport/切断なし。位置/速度は計算値で実測と区別。旧active試行は採用せずfinalだけ採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-26-opposite-aircraft-final-active/desktop-sky-corrected.png",
+      "report": "art-reviews/2026-10-26-opposite-aircraft-final-active/desktop-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMがfinal8補正画像（4端末のsky時系列+4秒全景）を全域実閲覧、tall全景は無変形帯も確認。親も4skyatlasを実閲覧。PC/tall/smallphoneで上機は左・主機は右へ移動し、wrap前後とlastpanelの全機体再入が自然。mobileは主機1。機体形・lane分離・街/猫/鉢/列車を保持し混雑/中心teleport/切断なし。位置/速度は計算値で実測と区別。旧active試行は採用せずfinalだけ採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-26-opposite-aircraft-final-active/mobile-4-corrected.png",
+      "report": "art-reviews/2026-10-26-opposite-aircraft-final-active/mobile-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMがfinal8補正画像（4端末のsky時系列+4秒全景）を全域実閲覧、tall全景は無変形帯も確認。親も4skyatlasを実閲覧。PC/tall/smallphoneで上機は左・主機は右へ移動し、wrap前後とlastpanelの全機体再入が自然。mobileは主機1。機体形・lane分離・街/猫/鉢/列車を保持し混雑/中心teleport/切断なし。位置/速度は計算値で実測と区別。旧active試行は採用せずfinalだけ採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-26-opposite-aircraft-final-active/mobile-sky-corrected.png",
+      "report": "art-reviews/2026-10-26-opposite-aircraft-final-active/mobile-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMがfinal8補正画像（4端末のsky時系列+4秒全景）を全域実閲覧、tall全景は無変形帯も確認。親も4skyatlasを実閲覧。PC/tall/smallphoneで上機は左・主機は右へ移動し、wrap前後とlastpanelの全機体再入が自然。mobileは主機1。機体形・lane分離・街/猫/鉢/列車を保持し混雑/中心teleport/切断なし。位置/速度は計算値で実測と区別。旧active試行は採用せずfinalだけ採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-26-opposite-aircraft-final-active/small-phone-4-corrected.png",
+      "report": "art-reviews/2026-10-26-opposite-aircraft-final-active/small-phone-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMがfinal8補正画像（4端末のsky時系列+4秒全景）を全域実閲覧、tall全景は無変形帯も確認。親も4skyatlasを実閲覧。PC/tall/smallphoneで上機は左・主機は右へ移動し、wrap前後とlastpanelの全機体再入が自然。mobileは主機1。機体形・lane分離・街/猫/鉢/列車を保持し混雑/中心teleport/切断なし。位置/速度は計算値で実測と区別。旧active試行は採用せずfinalだけ採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-26-opposite-aircraft-final-active/small-phone-sky-corrected.png",
+      "report": "art-reviews/2026-10-26-opposite-aircraft-final-active/small-phone-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMがfinal8補正画像（4端末のsky時系列+4秒全景）を全域実閲覧、tall全景は無変形帯も確認。親も4skyatlasを実閲覧。PC/tall/smallphoneで上機は左・主機は右へ移動し、wrap前後とlastpanelの全機体再入が自然。mobileは主機1。機体形・lane分離・街/猫/鉢/列車を保持し混雑/中心teleport/切断なし。位置/速度は計算値で実測と区別。旧active試行は採用せずfinalだけ採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-26-opposite-aircraft-final-active/tall-4-corrected.png",
+      "report": "art-reviews/2026-10-26-opposite-aircraft-final-active/tall-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMがfinal8補正画像（4端末のsky時系列+4秒全景）を全域実閲覧、tall全景は無変形帯も確認。親も4skyatlasを実閲覧。PC/tall/smallphoneで上機は左・主機は右へ移動し、wrap前後とlastpanelの全機体再入が自然。mobileは主機1。機体形・lane分離・街/猫/鉢/列車を保持し混雑/中心teleport/切断なし。位置/速度は計算値で実測と区別。旧active試行は採用せずfinalだけ採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-26-opposite-aircraft-final-active/tall-sky-corrected.png",
+      "report": "art-reviews/2026-10-26-opposite-aircraft-final-active/tall-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMがfinal8補正画像（4端末のsky時系列+4秒全景）を全域実閲覧、tall全景は無変形帯も確認。親も4skyatlasを実閲覧。PC/tall/smallphoneで上機は左・主機は右へ移動し、wrap前後とlastpanelの全機体再入が自然。mobileは主機1。機体形・lane分離・街/猫/鉢/列車を保持し混雑/中心teleport/切断なし。位置/速度は計算値で実測と区別。旧active試行は採用せずfinalだけ採用。"
     }
   ]
 }

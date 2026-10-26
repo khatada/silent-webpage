@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-26-opposite-aircraft-final-active/tall-sky-source.png",
+    "width": 780,
+    "height": 1148,
+    "sha256": "6b14876e9a460adb5f226958835c68106c56e5e5518ad95385400d159066616d"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-26-opposite-aircraft-final-active/tall-sky-corrected.png",
+    "width": 780,
+    "height": 1148,
+    "sha256": "6b14876e9a460adb5f226958835c68106c56e5e5518ad95385400d159066616d"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/opposite-aircraft-scenes/portrait-large-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "b9b7bed3f96b6db3667685ebce1486e3e487ac119884828a90b1325ef17edb37"
+  },
+  "output": {
+    "path": "art-reviews/opposite-aircraft-scenes/portrait-large-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "d80a32647dfda205e5772e62bc33365423ace2432f44073902df9952e54a1a59"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

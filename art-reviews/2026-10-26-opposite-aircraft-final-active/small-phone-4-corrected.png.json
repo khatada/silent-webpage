@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-26-opposite-aircraft-final-active/small-phone-4-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "5d676decc897257cbc83146144b67b1e612f6e97c9566a301c418fdfaaae729b"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-26-opposite-aircraft-final-active/small-phone-4-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "fb366f5f0d95390fd18c3d67efa1405a0b5aca9774b653ada6150cf4ec664202"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

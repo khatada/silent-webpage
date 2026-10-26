@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-26-opposite-aircraft-final-active/mobile-4-source.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "29e4244c1aeeb1ca3bc0aec896fb3b9e3c7b74c1b21d0a1f8b00d3b3ba477699"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-26-opposite-aircraft-final-active/mobile-4-corrected.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "a2b14b057473a3509f2a6e10e3b069962ba5bb9340ca4b9a08947cb6c3347e85"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
