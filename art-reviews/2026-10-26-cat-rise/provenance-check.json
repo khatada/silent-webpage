@@ -1,0 +1,14 @@
+{
+  "correctedRGBAEqualInput": true,
+  "neutralEndpointAllRGBAEqual": true,
+  "neutralCropRGBAEqualOriginalAtlas": true,
+  "generatedPixelColorsOnly": true,
+  "provenanceMeaning": "All candidate visible pixels are either the unchanged existing neutral reference or nearest-selected RGBA from retained v1/v2 raw originals after alpha<32 deletion. See reproducible compose-material.py for exact inverse affine sampling; no paints, recolors or anatomical morphs.",
+  "rawSources": {
+    "v1": "47cfdf40aedaec81d2df927291de1ffd4e866b624c8295c65d7427bb3fba6365",
+    "v2": "0f5852c15b5eb2752e4f357e129f9d121af5e178759e6bca637164ed211bfbea"
+  },
+  "correctedSha256": "8cfa4dc74e7f06258384a2b230396859c5d422f428a2d60a6a879aee7bc54536",
+  "unexpectedGeneratedPoseRGBAColors": 0,
+  "colorCheckLimitation": "Source-color membership alone does not prove pose geometry; exact crop/nearest/translation derivation is retained in compose-material.py and partial-edit-report."
+}

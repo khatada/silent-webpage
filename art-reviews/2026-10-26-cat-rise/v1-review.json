@@ -1,0 +1,55 @@
+{
+  "decision": "rejected-as-complete-animation",
+  "reviewedBy": "LLM",
+  "rawImage": "art-reviews/2026-10-26-cat-rise/generated-source-v1.png",
+  "rawSha256": "47cfdf40aedaec81d2df927291de1ffd4e866b624c8295c65d7427bb3fba6365",
+  "correctedReference": "art-reviews/2026-10-26-cat-rise/v1-fit-corrected.png",
+  "correctedReferenceSha256": "0a20c54ff972ecace4177135cdfd1b65a7826bb01052b5d365bb7e0b6ee9490d",
+  "viewed": "Full raw sheet, individual rawposes1/2/3/4/5 and uniform-fitted corrected1920x224 reference sheet actually viewed by author LLM; parent viewed raw and candidate reference1/2/5.",
+  "reason": "The sheet does not provide four distinct rising intermediates: raw3/4/5 are already four-legged stands with mainly hindpaw differences. Raw2 to stand also moves the tail top from roughly145 to57 logical pixels, too large for the intended sequence. Uniform scale preserves head/body proportions, so missing anatomy cannot be repaired by fitting or per-pose zoom.",
+  "selectedCandidates": [
+    {
+      "rawPose": 1,
+      "use": "seated-lean",
+      "status": "reviewed-reference-only-candidate",
+      "image": "art-reviews/2026-10-26-cat-rise/lean-reference.png"
+    },
+    {
+      "rawPose": 2,
+      "use": "raised-haunch-crouch",
+      "status": "reviewed-reference-only-candidate",
+      "image": "art-reviews/2026-10-26-cat-rise/crouch-reference.png"
+    },
+    {
+      "rawPose": 5,
+      "use": "neutral-four-legged-standing",
+      "status": "reviewed-reference-only-candidate",
+      "image": "art-reviews/2026-10-26-cat-rise/stand-reference.png"
+    }
+  ],
+  "unused": [
+    {
+      "rawPose": 0,
+      "reason": "Existing seated neutral remains exact endpoint; generated substitute is not adopted."
+    },
+    {
+      "rawPose": 3,
+      "reason": "Already standing, not the missing half-rise."
+    },
+    {
+      "rawPose": 4,
+      "reason": "Near-duplicate standing; hindpaw difference does not supply a rising intermediate."
+    }
+  ],
+  "plannedFinalOrder": ["existing-neutral","v1pose1lean","newA-low-haunch-bridge","v1pose2crouch","newB-half-raised-tail-bridge","v1pose5stand"],
+  "registration": {
+    "cell": [320,224],
+    "anchorX": 192,
+    "inheritedFootAnchorY": 208,
+    "frontPawSupport": [214,190],
+    "uniformV1Scale": 0.3901734104046243,
+    "endpointRGBAEqual": true,
+    "note": "Use support landmarks, not lowest tail/bbox; expanded common canvas avoids clipping raw2tail. No per-pose scaling or programmatic pose painting."
+  },
+  "finalMaterialAdoption": "After generating the missing v2 bridges, only rawv1poses1/2/5 were selected into the corrected sixcell material. See material-decision.json; completev1sheet remains rejected."
+}

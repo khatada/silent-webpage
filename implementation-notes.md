@@ -394,3 +394,12 @@
 - source473419ce92c6adf1307e9ed4022641c090c08d1b627088251b1e88c064f91ef0。独立コードreview重大問題なし、型/Lint/109unit成功。補正後11初期を独立担当5+6で全域実閲覧し採用。全11の新機体frame外変更0、4省略構図は全RGBA一致。
 - 本番4端末final8画像を担当LLM、skyatlas4を親も実閲覧して採用。0/1/4秒の逆移動/別lane、周回前後と全機体の右端再入を確認。先頭だけのwrap+1秒では十分でないため、width/speed+.5秒後も追加した。旧2026-10-26-opposite-aircraft-activeは試行で採用対象外、final-activeだけが採用/PR対象。
 - 見直し点: 航空便の密度がリラックス感に合うか、雲/流星との重なりが見やすさを損なう場面がないか。全周期で非重複は保証せず、初回と周回の実画像で確認した範囲。回答を完了条件にしない。
+
+## C032: 猫の座位から起立する中間素材（2026-10-26）
+
+- 独自案: 猫の全身起立/横長背景の精細化/大きな風見布を比較し、既存の大きな前景と長い座位期間へ使える起立素材を優先。まず素材PRのみとし、歩行回数を増やしたとは扱わない。requirementsは変更しない。
+- imagegen v1は6姿勢を生成したが3/4/5が既に立位で中間不足のため全sheetは不採用。1lean/2crouch/5standだけを参考候補として残し、v2で低haunchと半上げtailの2橋渡しを生成。最終6cellsは旧neutral→v1lean→v2低haunch→v1crouch→v2尾bridge→v1四足立位。原本2つとexactprompt/refs/不採用理由を保存。
+- 共通cell320×224、anchorX192、旧座位基準foot208、normalization1。初案256幅ではcrouchの尾が収まらず、個別縮小せず全cellを拡張。旧座位crop[596,298,108,139]を(138,70)へRGBAのまま置き端点を維持。frontpawは尾のbbox底でなく近い前足padの接地点付近(218,190)を基準に登録。foot208は旧尾の下端を含むanchorで、全姿勢の最下部を208へ強制しない。
+- v1は全選択poseへ共通135/346倍率、v2は2poseへ共通.24倍率。異なるraw解像度を同じ解剖学的寸法へ合わせ、pose単独のzoomはしない。crop/同倍率nearest/translation/alpha32未満削除と既存neutralコピーのみ。プログラムによる原画描画、色置換、解剖学的warpはなし。出典pathはrepo-relative、実tool出力pathは別に保存。
+- public/art/cat-rise.pngは1920×224、SHA8cfa4dc74e7f06258384a2b230396859c5d422f428a2d60a6a879aee7bc54536。1px補正後の6姿勢と4倍率nativecontextを親/担当/独立LLMが全域実閲覧して素材採用。最小倍率でも全身の段階が区別でき、頭/四肢/支持領域を保つ。補正入出力RGBA一致、旧neutral全cell/元atlascrop一致、generatedposeのraw由来外RGBA色0を確認。色membershipだけでposegeometryを証明しない限界と、正確な変換scriptを分けて記録。親のparent-provenance-check.jsonでも5pose登録変換を独立replayし全RGBA一致、旧atlasから直接構築したneutral一致を確認。
+- 見直し点: crouch→尾bridgeは尾上端に約66logicalpxの差が残り、指定y100より早く高くなる。素材として中間は読めるが、滑らかなanimationは未採用。表示PRでactualGPUのhalfscale/端点RGBA/支持位置/往復とtimingを確認し、必要なら尾の追加中間を画像生成する。起立→座り直しを予定し、歩行頻度改善や滑らかさを素材だけで保証しない。ユーザー回答は待たない。

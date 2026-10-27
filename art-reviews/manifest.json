@@ -1630,6 +1630,26 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMがfinal8補正画像（4端末のsky時系列+4秒全景）を全域実閲覧、tall全景は無変形帯も確認。親も4skyatlasを実閲覧。PC/tall/smallphoneで上機は左・主機は右へ移動し、wrap前後とlastpanelの全機体再入が自然。mobileは主機1。機体形・lane分離・街/猫/鉢/列車を保持し混雑/中心teleport/切断なし。位置/速度は計算値で実測と区別。旧active試行は採用せずfinalだけ採用。"
+    },
+    {
+      "image": "public/art/cat-rise.png",
+      "report": "public/art/cat-rise.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当/独立LLMが補正後1920×224の6姿勢と.25/.375/.5/.625 nativecontextを実閲覧し素材採用。既存neutral→lean→低haunch→crouch→尾bridge→四足立位で全身段階が異なり、頭/体格/四肢/支持領域を保つ。旧neutral端点は元atlasから全RGBA一致。v1全sheetは中間不足で不採用、1/2/5のみ候補として再利用しv2の2橋渡しを追加。crouch→bridgeの尾約66logicalpx差は残り、表示QAで追加中間やtimingを判断。素材だけで滑らかさ/歩行頻度改善を保証しない。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "49c8a90043e84da8312b838e95cffcd5ee3a7987af1edb701728142dc7246850",
+        "prompt": "Two-pass imagegen generation: six charcoal-cat rising poses, then two missing low-haunch/tail bridges. Exact unabridged prompts and reference lists are retained in generation-v1.json/generation-v2.json and generation-prompt*.txt.",
+        "generationEvidence": "art-reviews/2026-10-26-cat-rise/generation.json"
+      }
+    },
+    {
+      "image": "art-reviews/2026-10-26-cat-rise/material-context-corrected.png",
+      "report": "art-reviews/2026-10-26-cat-rise/material-context-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当/独立LLMが6姿勢×4倍率の補正後nativecontextを全域実閲覧。最小.25でも座位/低haunch/crouch/立位の全身差を読み取れ、顔と支持足に明白な破綻なし。既存生成済み屋上floorcropへnearestの表示参考として合成、原画のコード生成ではない。本番GPUのsampling/端点/往復/timingの採用は表示PRへ分離。"
     }
   ]
 }
