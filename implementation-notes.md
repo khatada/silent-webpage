@@ -413,3 +413,13 @@
 - 本番撮影: emulateMedia完了時点ではpausedのことがあり、初回trialで約180msの開始遅延が生じ短い姿勢が前段に写った。runningを待って再撮影し13段階を確認。旧trialは /workspace/art-review-trials/c032 に保持し非採用。最終はcat-rise-synced-active。計算上の時刻/geometryと実画面の採否を区別し、背景込みのcrop差分を猫単独の厳密端点一致と扱わない。
 - 停止/再開/resize: 起立中にOS停止して1秒進めてもPNG/RGBA完全一致、解除後.5秒で背景込み変化。PC→mobile resizeは両方running、例外0。visibilityは既存コード確認のみで実動作シミュレートとは区別。
 - 見直し点: 起立をもっと広い画面へ加えるか、4秒の間合い/尾や足の離散切替が好みに合うか。独自仮定でありユーザー確認待ちは設けず、要求事項へ追加しない。
+
+## C033素材: 横長背景の精細化（2026-10-27）
+
+- 対象: 横長背景の粗さへの対応。大きな布/PC猫の時間配分と比較し、高精細背景を優先した独自実装案。ユーザー要求へresolutionや素材寸法の仮定は追加しない。
+- imagegenで既存wide参照から細部を新しく生成。raw2170×725、SHA70f0babb87b4a66f9a5eb8c8f15129c68119007412391e690f5326df845a1b01。右1列/下2行だけcrop2169×723、1px補正(RGBA不変)、nearest1446×482へサイズ調整、最終1px補正(RGBA不変)。SHA7f8cb65ed578188d66e1dbe929e86060f14e44df5cda54abd1484f4446d932bd。拡大で細部を生成したとは扱わない。細部は画像生成由来で、縮小により一部1pxの情報は失う。
+- 補正の仮定: cell1.5は1446×482に一致するが、rawのnative窓/屋根/空には1px細部と混合clusterがあり、均一1.5格子とする根拠がなく不採用。1pxの記録とサイズ調整を分けて保持。親/担当が最終全景とnative住宅細部を実閲覧し、窓/屋根/線路の細部と輪郭、静かな紺紫/暖色、空いた床と線路を確認し素材採用。
+- 親が独立にcrop/nearest変換をreplayし各補正の全RGBA一致を確認、parent-provenance-check.jsonへ記録。public/art/tokyo-wide-fine.pngとして素材採用、描画はまだ既存背景のまま。
+- 表示は次PR: 新nativeをlogical723×241/resolution2で扱う案は未採用。旧724幅との差、wide倍率5→4/compact3→2での構図・上下余白・ドット均一性を局所GPUと全景で判定する。scale1以下へ0量子化しない。Textureのframe/origとsourceのresolutionを正しく組み合わせ、共有Assetsと専用Textureの所有を分ける必要がある。
+- 再登録予定: 住宅窓9/暗室/星coreとdark16/遠景窓6/線路柱5/railBottom/floor/skyBottom/飛行機と雲の高さ/skyとfloorpatch/街路車のrouteと遮蔽/小鉢の支持面。旧画像の座標とoverlayをそのまま新背景へ重ねて済ませない。fan/resident等はwideで省略済み。
+- 見直し点: 新しい背景の細部と雰囲気、表示倍率変更時の構図が好みに合うか。素材採用だけで本番の粗さが解消したとは扱わず、表示の検証後に評価する。回答待ちは設けない。

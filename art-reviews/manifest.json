@@ -1810,6 +1810,19 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが4立位全景（tallは無変形帯）を実閲覧、親が4端末13panel連続PNGを無変形4列再配置で全域実閲覧。起立1〜6/逆順/旧座位復帰が読め、追加尾中間により急上昇gapを改善。全身/支持足/鉢との間隔を保持。canvas running待機後に撮影し旧非同期trialは不採用。時間/geometryは計算値、比較は背景込みで猫単独端点証明とは区別。"
+    },
+    {
+      "image": "public/art/tokyo-wide-fine.png",
+      "report": "public/art/tokyo-wide-fine.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後1446×482全景とnative住宅/屋根/空の細部を実閲覧し素材採用。新しい窓/屋根/線路の細部、深紺紫と暖色、空の床/線路を保持。細部はimagegen由来で単なる旧画像の拡大ではない。1.5格子は根拠不足で不採用、1px補正/許可nearest縮小/最終1px補正を分離記録。親がcrop/resize/correctionの全RGBAを独立replay一致。本番resolution/座標/構図の採用は次PRへ分離。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "1f07a946f275b05fcb6733bff990e183099eaf53f1c2293829cb238228ba37a6",
+        "prompt": "Regenerate referenced wide Tokyo night rooftop with finer pixel-art detail. Exact unabridged prompt retained in promptFile.",
+        "generationEvidence": "art-reviews/2026-10-27-wide-fine/generation.json"
+      }
     }
   ]
 }

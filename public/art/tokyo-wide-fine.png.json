@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-wide-fine/nearest-resized-input.png",
+    "width": 1446,
+    "height": 482,
+    "sha256": "1f07a946f275b05fcb6733bff990e183099eaf53f1c2293829cb238228ba37a6"
+  },
+  "output": {
+    "path": "public/art/tokyo-wide-fine.png",
+    "width": 1446,
+    "height": 482,
+    "sha256": "7f8cb65ed578188d66e1dbe929e86060f14e44df5cda54abd1484f4446d932bd"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

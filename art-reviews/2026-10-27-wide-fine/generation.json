@@ -1,0 +1,20 @@
+{
+  "tool": "image_gen.imagegen",
+  "originalSha256": "1f07a946f275b05fcb6733bff990e183099eaf53f1c2293829cb238228ba37a6",
+  "promptFile": "art-reviews/2026-10-27-wide-fine/generation-prompt.txt",
+  "prompt": "Regenerate referenced wide Tokyo night rooftop with finer pixel-art detail. Exact unabridged prompt retained in promptFile.",
+  "references": ["art-reviews/2026-10-27-wide-fine/previous-wide-reference.png"],
+  "actualGeneratedOriginal": {
+    "path": "art-reviews/2026-10-27-wide-fine/generated-source.png",
+    "sha256": "70f0babb87b4a66f9a5eb8c8f15129c68119007412391e690f5326df845a1b01",
+    "actualSize": [2170, 725],
+    "toolOriginalPath": "/workspace/generated_images/exec-8a2a073c-58ef-4df8-b5d3-08da64ad6c66.png"
+  },
+  "correctionInputKind": "permitted-crop-and-nearest-size-adjustment-of-imagegen-source",
+  "correctionInput": "art-reviews/2026-10-27-wide-fine/nearest-resized-input.png",
+  "partialEditReport": "art-reviews/2026-10-27-wide-fine/partial-edit-report.json",
+  "partialEditScript": "art-reviews/2026-10-27-wide-fine/prepare-material.py",
+  "comparisonReview": "art-reviews/2026-10-27-wide-fine/comparison-review.json",
+  "materialDecision": "art-reviews/2026-10-27-wide-fine/material-decision.json",
+  "note": "originalSha256 identifies final correction input after disclosed crop/cell1 correction/nearest size adjustment, not untouched imagegen raw. Raw hash is separately retained. Fine detail originated in imagegen, not a programmatic redraw."
+}

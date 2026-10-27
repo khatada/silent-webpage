@@ -1,0 +1,30 @@
+{
+  "reviewer": "/root/rise_qa",
+  "actualVisualReview": true,
+  "status": "retained-material-experiment-review",
+  "raw": {
+    "path": "art-reviews/2026-10-27-wide-fine/generated-source.png",
+    "size": [2170, 725],
+    "sha256": "70f0babb87b4a66f9a5eb8c8f15129c68119007412391e690f5326df845a1b01"
+  },
+  "reference": {
+    "path": "art-reviews/2026-10-27-wide-fine/previous-wide-reference.png",
+    "size": [724, 241],
+    "sha256": "35420fba55274f95d4cb757955a4467088d6ea941f6841350294619899d3f535"
+  },
+  "promptFile": "art-reviews/2026-10-27-wide-fine/generation-prompt.txt",
+  "trials": [
+    {"path": "art-reviews/2026-10-27-wide-fine/corrected-cell1.png", "cellSize": 1, "size": [2169, 723], "rgbaUnchangedFromCrop": true, "decision": "accepted-source-grid-conservation"},
+    {"path": "art-reviews/2026-10-27-wide-fine/corrected-cell1_5.png", "cellSize": 1.5, "size": [1446, 482], "decision": "not-adopted-as-grid-correction", "reason": "Raw native skyline/window/roof crops contain 1px details and mixed cluster sizes; no uniform1.5px lattice is established. Target dimensions alone do not justify source-grid width."},
+    {"path": "art-reviews/2026-10-27-wide-fine/nearest-final-corrected.png", "cellSize": 1, "size": [1446, 482], "sha256": "7f8cb65ed578188d66e1dbe929e86060f14e44df5cda54abd1484f4446d932bd", "decision": "recommended-material-candidate-pending-parent-review", "chain": "raw2170x725 -> crop2169x723 -> cell1 correction preserving RGBA -> permitted whole-image nearest size adjustment1446x482 -> cell1 final correction preserving RGBA", "rgbaUnchangedAfterFinalCorrection": true, "outputRGBAOutsideSourceColors": 0}
+  ],
+  "viewedNativeRegions": [
+    {"name": "sky-city", "rawLTRB": [720, 120, 1320, 420], "finalLTRB": [480, 80, 880, 280]},
+    {"name": "residential", "rawLTRB": [270, 360, 870, 660], "finalLTRB": [180, 240, 580, 440]},
+    {"name": "rooftop", "rawLTRB": [1260, 420, 1860, 720], "finalLTRB": [840, 280, 1240, 480]}
+  ],
+  "actualViewed": ["Raw2170x725 tool-resized overview; sky/city, housing and roof native600x300 crops retained in original trial outside this repository (crop rectangles recorded below).", "Three cell1.5 native400x200 crops plus full1446x482 result; three nearest final native400x200 crops plus full1446x482 result.", "Previous wide reference native724x241."],
+  "reasons": ["Nearest candidate preserves crisp edges and fine window/roof/rail details; greater authored detail comes from the generated source, not algorithmic upscaling.", "Full scene keeps skyline, rail, housing, roof support and calm palette; no new painting or anatomy/structure programmatic drawing.", "Both resampling trials lose some 1px details; nearest chain states this explicitly instead of claiming recovery of a nonexistent proven1.5 grid."],
+  "limitations": ["Material trial only; resolution2 mapping/physical-scale quantization, actor geometry, window coordinates and production GPU compositions remain unverified.", "New logical723x241 is1px narrower than previous724x241; coordinate migration cannot be assumed identical."],
+  "note": "Historical pre-adoption comparison retained. Original source/candidates/correction reports are archived here; transient native viewing crops are reproducible from viewedNativeRegions. Public material adoption is recorded separately in material-decision.json."
+}

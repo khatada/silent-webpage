@@ -1,0 +1,37 @@
+{
+  "generatedOriginal": {
+    "path": "art-reviews/2026-10-27-wide-fine/generated-source.png",
+    "sha256": "70f0babb87b4a66f9a5eb8c8f15129c68119007412391e690f5326df845a1b01",
+    "actualSize": [2170, 725],
+    "toolOriginalPath": "/workspace/generated_images/exec-8a2a073c-58ef-4df8-b5d3-08da64ad6c66.png"
+  },
+  "reference": {
+    "path": "art-reviews/2026-10-27-wide-fine/previous-wide-reference.png",
+    "originalPublicPath": "public/art/tokyo-wide.png",
+    "sha256": "35420fba55274f95d4cb757955a4467088d6ea941f6841350294619899d3f535"
+  },
+  "crop": {
+    "output": "art-reviews/2026-10-27-wide-fine/cropped-input.png",
+    "LTRB": [0, 0, 2169, 723],
+    "sha256": "1cc5f744f98d64b4f0cd5f72f6ca2bc0d7baeb4058573d22b1a2679b66a597ba",
+    "reason": "Remove1 right column and2 bottom rows to obtain exact3:1 crop; no content painted."
+  },
+  "firstCorrectionReport": "art-reviews/2026-10-27-wide-fine/corrected-cell1.png.json",
+  "sizeAdjustment": {
+    "input": "art-reviews/2026-10-27-wide-fine/corrected-cell1.png",
+    "inputSize": [2169, 723],
+    "output": "art-reviews/2026-10-27-wide-fine/nearest-resized-input.png",
+    "outputSize": [1446, 482],
+    "method": "Pillow Image.Resampling.NEAREST whole-image resize",
+    "outputSha256": "1f07a946f275b05fcb6733bff990e183099eaf53f1c2293829cb238228ba37a6",
+    "reason": "Keep generated fine detail at2x the intended723x241 logical size. This is an explicitly disclosed permitted size adjustment, not an inferred1.5px grid correction."
+  },
+  "finalCorrectionReport": "art-reviews/2026-10-27-wide-fine/nearest-final-corrected.png.json",
+  "script": "art-reviews/2026-10-27-wide-fine/prepare-material.py",
+  "rejectedGridTrial": {
+    "image": "art-reviews/2026-10-27-wide-fine/corrected-cell1_5.png",
+    "correctionReport": "art-reviews/2026-10-27-wide-fine/corrected-cell1_5.png.json",
+    "reason": "No uniform1.5px lattice established in raw. Target dimensions cannot justify source grid width."
+  },
+  "operation": "Existing generated-image rectangular crop, cell1 corrections and uniform nearest size adjustment only. No original artwork drawn, no recolor or structure repaint."
+}
