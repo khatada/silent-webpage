@@ -2,6 +2,57 @@ import { describe, expect, it } from 'vitest';
 import { catLegDuration, catPeriod, catTurnStart, catPose, travelPosition, windowBrightness } from './animation';
 
 describe('city animation timing', () => {
+  it('rises and sits through every generated intermediate with a held stand on both legs', () => {
+    // A 5s walk leaves exactly enough room: half a second seated, 4s rising, half a second seated.
+    const stages = [[0, 0.25, 1], [0.25, 0.5, 2], [0.5, 0.75, 3], [0.75, 1, 4],
+      [1, 1.25, 5], [1.25, 2.75, 6], [2.75, 3, 5], [3, 3.25, 4],
+      [3.25, 3.5, 3], [3.5, 3.75, 2], [3.75, 4, 1]] as const;
+    for (const offset of [-catPeriod, 0, catLegDuration, catPeriod]) {
+      const start = 5.5 + offset;
+      expect(catPose(start - 0.0001, 320)).not.toHaveProperty('riseFrame');
+      expect(catPose(start, 320).riseFrame).toBe(1);
+      for (const [from, to, frame] of stages) {
+        for (const time of [start + from + 0.0001, start + to - 0.0001]) {
+          const pose = catPose(time, 320);
+          expect(pose.riseFrame).toBe(frame);
+          expect(pose.frame).toBe(4);
+          expect(pose.x).toBe(catPose(5 + offset, 320).x);
+          expect(pose.direction).toBe(catPose(5 + offset, 320).direction);
+          expect(pose).not.toHaveProperty('lookFrame');
+          expect(pose).not.toHaveProperty('groomFrame');
+          expect(pose).not.toHaveProperty('settleFrame');
+          expect(pose).not.toHaveProperty('stretchFrame');
+          expect(pose).not.toHaveProperty('turnFrame');
+        }
+      }
+      expect(catPose(start + 4, 320)).not.toHaveProperty('riseFrame');
+      expect(catPose(start + 4.4999, 320)).not.toHaveProperty('lookFrame');
+      expect(catPose(start + 4.5, 320).lookFrame).toBe(0);
+    }
+  });
+  it('only adds the rise when the seated interval fits it, preserving the existing route and later actions', () => {
+    for (const [width, scale, enabled] of [[320, 1, true], [640, 2, true],
+      [320.0064, 1, false], [640, 1, false], [1280, 1, false]] as const) {
+      let seen = false;
+      for (let time = 0; time < catPeriod; time += 0.125) {
+        const pose = catPose(time, width, scale);
+        if (pose.riseFrame !== undefined) {
+          seen = true;
+          expect(pose.frame).toBe(4);
+          expect(pose.lookFrame).toBeUndefined();
+          expect(time % catLegDuration).toBeLessThan(21);
+        }
+        expect(catPose(time + catPeriod, width, scale)).toEqual(pose);
+      }
+      expect(seen).toBe(enabled);
+    }
+    // Shortest walks retain .5s+ of neutral seating; first frame and every later phase stay unchanged.
+    expect(catPose(3.9999, 140, 4)).not.toHaveProperty('riseFrame');
+    expect(catPose(4, 140, 4).riseFrame).toBe(1);
+    for (const time of [0, 1, 2, 21, 22, 25, 26, 30, 32, 35.9]) {
+      expect(catPose(time, 320)).not.toHaveProperty('riseFrame');
+    }
+  });
   it('looks around once while seated, holding the clear glance between two passing poses', () => {
     // width 640 / scale 1 finishes walking at 10s: centered six-second glance starts at 12.5s.
     for (const offset of [-catPeriod, 0, catLegDuration, catPeriod]) {

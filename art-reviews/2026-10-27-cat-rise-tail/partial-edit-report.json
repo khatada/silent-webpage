@@ -1,0 +1,82 @@
+{
+  "generatedOriginal": {
+    "path": "art-reviews/2026-10-27-cat-rise-tail/generated-source.png",
+    "toolOriginalPath": "/workspace/generated_images/exec-c8df2baa-6890-4761-bce5-6ff83f26d349.png",
+    "sha256": "e49b00668218e282bf4aab3c58bb747ea3d1e91437ebae31dc0997cb0f81f452",
+    "dimensions": [
+      1499,
+      1049
+    ]
+  },
+  "previousAtlas": {
+    "path": "public/art/cat-rise.png",
+    "sha256": "8cfa4dc74e7f06258384a2b230396859c5d422f428a2d60a6a879aee7bc54536"
+  },
+  "canvas": [
+    320,
+    224
+  ],
+  "cells": 7,
+  "anchorX": 192,
+  "inheritedFootAnchorY": 208,
+  "newCell": 4,
+  "alphaDeletionThreshold": 32,
+  "cropLTRB": [
+    259,
+    353,
+    1201,
+    910
+  ],
+  "rawNearForepawPoint": [
+    1040,
+    909
+  ],
+  "targetNearForepawSupport": [
+    218,
+    190
+  ],
+  "uniformScale": 0.21,
+  "scaleBasis": "Generated strong-alpha ear-top353 to forepaw909 span556; one factor .21 yields116.76 source pixels, matching neighboring crouch/bridge ear-to-support span115-117. No per-part scale or warp.",
+  "registeredAlphaBounds": [
+    54,
+    73,
+    252,
+    190
+  ],
+  "tailUpperYApprox": 103,
+  "oldCellComparisons": [
+    {
+      "oldCell": 0,
+      "newCell": 0,
+      "rgbaEqual": true
+    },
+    {
+      "oldCell": 1,
+      "newCell": 1,
+      "rgbaEqual": true
+    },
+    {
+      "oldCell": 2,
+      "newCell": 2,
+      "rgbaEqual": true
+    },
+    {
+      "oldCell": 3,
+      "newCell": 3,
+      "rgbaEqual": true
+    },
+    {
+      "oldCell": 4,
+      "newCell": 5,
+      "rgbaEqual": true
+    },
+    {
+      "oldCell": 5,
+      "newCell": 6,
+      "rgbaEqual": true
+    }
+  ],
+  "newOpaqueRGBAOutsideGeneratedColors": 0,
+  "inputSha256": "1f8cee62781350f5c0bcf432b4288df33c167a6f6b978592921a2d7b92b90262",
+  "operation": "Whole original RGBA retained; delete alpha<32 only, crop, one uniform affine nearest registration, translation, exact old-cell copy. No repaint, recolor, interpolation or anatomy warp."
+}

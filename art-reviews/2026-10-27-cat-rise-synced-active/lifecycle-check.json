@@ -1,0 +1,52 @@
+{
+  "method": "Unmodified production page. Paused clock before navigation; reduced motion disabled and canvas running awaited before runFor steps <=1000ms. At requested ~6.5s motion paused through OS reduced-motion; observed paused before screenshots. Raw debug screenshots remain /tmp and are not adopted artwork. Resume observed running before 500ms advance. Resize adapts geometry; pose continuity is not asserted. Visibility handled by existing motion && !document.hidden code; reviewed, not simulated.",
+  "virtualAtPauseRequest": 6538,
+  "paused": {
+    "advanceMilliseconds": 1000,
+    "pngBytesEqual": true,
+    "rgbaChangedPixels": 0,
+    "beforeSha256": "26e7588e9270959807637868b0416df9abaab638f199287259e4f50e04182dd9",
+    "afterSha256": "26e7588e9270959807637868b0416df9abaab638f199287259e4f50e04182dd9"
+  },
+  "resume": {
+    "advanceMilliseconds": 500,
+    "pngBytesChanged": true,
+    "rgbaChangedPixels": 46408,
+    "note": "Full canvas includes moving background; this is a lifecycle check, not cat-only pixel evidence."
+  },
+  "resize": [
+    {
+      "label": "desktop",
+      "viewport": [
+        1440,
+        900
+      ],
+      "motion": "running",
+      "canvas": [
+        1440,
+        900
+      ],
+      "css": [
+        1440,
+        900
+      ]
+    },
+    {
+      "label": "mobile",
+      "viewport": [
+        390,
+        844
+      ],
+      "motion": "running",
+      "canvas": [
+        390,
+        844
+      ],
+      "css": [
+        390,
+        844
+      ]
+    }
+  ],
+  "pageErrors": []
+}

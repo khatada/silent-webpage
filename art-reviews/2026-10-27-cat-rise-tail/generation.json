@@ -1,0 +1,35 @@
+{
+  "tool": "image_gen.imagegen",
+  "originalSha256": "1f8cee62781350f5c0bcf432b4288df33c167a6f6b978592921a2d7b92b90262",
+  "prompt": "One additional generated tail midpoint between the retained lower crouch and raised-tail bridge; exact prompt retained in promptFile.",
+  "promptFile": "art-reviews/2026-10-27-cat-rise-tail/generation-prompt.txt",
+  "references": [
+    "art-reviews/2026-10-27-cat-rise-tail/low-tail-reference.png",
+    "art-reviews/2026-10-27-cat-rise-tail/high-tail-reference.png"
+  ],
+  "correctionInputKind": "permitted-generated-image-registration-and-exact-existing-generated-cell-copy",
+  "correctionInput": "art-reviews/2026-10-27-cat-rise-tail/composed-input.png",
+  "actualGeneratedOriginal": {
+    "path": "art-reviews/2026-10-27-cat-rise-tail/generated-source.png",
+    "toolOriginalPath": "/workspace/generated_images/exec-c8df2baa-6890-4761-bce5-6ff83f26d349.png",
+    "sha256": "e49b00668218e282bf4aab3c58bb747ea3d1e91437ebae31dc0997cb0f81f452",
+    "dimensions": [
+      1499,
+      1049
+    ]
+  },
+  "retainedPreviousAtlas": {
+    "path": "public/art/cat-rise.png",
+    "sha256": "8cfa4dc74e7f06258384a2b230396859c5d422f428a2d60a6a879aee7bc54536"
+  },
+  "retainedPreviousGenerationEvidence": "art-reviews/2026-10-26-cat-rise/generation.json",
+  "partialEditScript": "art-reviews/2026-10-27-cat-rise-tail/compose-material.py",
+  "partialEditReport": "art-reviews/2026-10-27-cat-rise-tail/partial-edit-report.json",
+  "correctionReport": "art-reviews/2026-10-27-cat-rise-tail/candidate-corrected.png.json",
+  "materialDecision": "art-reviews/2026-10-27-cat-rise-tail/material-decision.json",
+  "reviewers": {
+    "author": "/root/rise_qa actually viewed corrected atlas via two unscaled bands and full 4-scale context; accepted as material.",
+    "parent": "/root actually viewed corrected atlas and full 4-scale context; accepted as material (message to author)."
+  },
+  "note": "originalSha256 is the composed correction input SHA, not the raw original SHA. Raw original and tool path retained separately. Only alpha deletion, crop, uniform nearest registration, translation and old-cell copy; no programmatic artwork generation. Production motion adoption is separate."
+}

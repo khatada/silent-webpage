@@ -403,3 +403,13 @@
 - v1は全選択poseへ共通135/346倍率、v2は2poseへ共通.24倍率。異なるraw解像度を同じ解剖学的寸法へ合わせ、pose単独のzoomはしない。crop/同倍率nearest/translation/alpha32未満削除と既存neutralコピーのみ。プログラムによる原画描画、色置換、解剖学的warpはなし。出典pathはrepo-relative、実tool出力pathは別に保存。
 - public/art/cat-rise.pngは1920×224、SHA8cfa4dc74e7f06258384a2b230396859c5d422f428a2d60a6a879aee7bc54536。1px補正後の6姿勢と4倍率nativecontextを親/担当/独立LLMが全域実閲覧して素材採用。最小倍率でも全身の段階が区別でき、頭/四肢/支持領域を保つ。補正入出力RGBA一致、旧neutral全cell/元atlascrop一致、generatedposeのraw由来外RGBA色0を確認。色membershipだけでposegeometryを証明しない限界と、正確な変換scriptを分けて記録。親のparent-provenance-check.jsonでも5pose登録変換を独立replayし全RGBA一致、旧atlasから直接構築したneutral一致を確認。
 - 見直し点: crouch→尾bridgeは尾上端に約66logicalpxの差が残り、指定y100より早く高くなる。素材として中間は読めるが、滑らかなanimationは未採用。表示PRでactualGPUのhalfscale/端点RGBA/支持位置/往復とtimingを確認し、必要なら尾の追加中間を画像生成する。起立→座り直しを予定し、歩行頻度改善や滑らかさを素材だけで保証しない。ユーザー回答は待たない。
+
+## C032表示: 猫の起立と座り直し（2026-10-27）
+
+- 対象: 小型/縦画面の長い座位で全身の変化を読みやすくする独自案。既存72秒周期/往復/歩行速度/首振り/後半のしぐさを保持し、lookStartと歩行終了の間が5秒以上あるときだけ4秒の起立→立位1.5秒→逆順着座を追加。11代表のうちmobile/tall/narrow/small-phoneで有効。他7構図は時間不足のため省略。画面名でなく実際の時間余裕で判定する。
+- 実装: 旧neutral/lookは108×139 RenderTextureをそのまま保持。新しい6姿勢だけ320×224の専用RT、anchor192/foot208/normalization1へ登録。共有Assetsの破棄と専用RTの破棄を分ける。scene共有elapsedを使用し追加時計を持たない。resizeはelapsedを保つが構図のgate変更による姿勢切替まで連続とは主張しない。
+- 最初の素材PR #60はCI/Pages成功で公開。表示QAで尾3↔4のgapが大きかったため動作採用を保留し、中間をimagegenで追加。raw e49b00668218e282bf4aab3c58bb747ea3d1e91437ebae31dc0997cb0f81f452、crop259,353,1201,910、前足(1040,909)→(218,190)、一律.21nearest。顔/体格の耳〜支持足spanを旧隣接poseへ合わせ、部位warp/描き足し/色変更なし。旧6cellをRGBAのまま保持し新7cell cat-rise-complete.pngへ構成。SHA51bd2fd138213d2a0e83507f87309ba5b6c05517eeb08475bd5180daa09cd40b。
+- 補正/採用: 親/担当が7素材/4倍率contextを実閲覧、担当が104panel局所を無変形帯で実閲覧。旧neutral/look48組は同絶対位置で全RGBA一致、初期11全景も前版と全RGBA一致。独立LLM二者が11全景を実閲覧。担当が本番4立位全景、親が4端末の補正13panelを無変形再配置で実閲覧し採用。尾は低い→水平→上向きへ分割され全身起立が読める。連続的な形状補間ではなく生成中間姿勢の離散切替。
+- 本番撮影: emulateMedia完了時点ではpausedのことがあり、初回trialで約180msの開始遅延が生じ短い姿勢が前段に写った。runningを待って再撮影し13段階を確認。旧trialは /workspace/art-review-trials/c032 に保持し非採用。最終はcat-rise-synced-active。計算上の時刻/geometryと実画面の採否を区別し、背景込みのcrop差分を猫単独の厳密端点一致と扱わない。
+- 停止/再開/resize: 起立中にOS停止して1秒進めてもPNG/RGBA完全一致、解除後.5秒で背景込み変化。PC→mobile resizeは両方running、例外0。visibilityは既存コード確認のみで実動作シミュレートとは区別。
+- 見直し点: 起立をもっと広い画面へ加えるか、4秒の間合い/尾や足の離散切替が好みに合うか。独自仮定でありユーザー確認待ちは設けず、要求事項へ追加しない。

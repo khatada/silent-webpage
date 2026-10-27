@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-cat-rise-tail/material-context-input.png",
+    "width": 1400,
+    "height": 424,
+    "sha256": "ecadcdf09d9e3c499b658ed02ff53194c31397cbbd2501208d2b521d856dd773"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-27-cat-rise-tail/material-context-corrected.png",
+    "width": 1400,
+    "height": 424,
+    "sha256": "201a6c70d324aa109a15113d6e485e91853da66c0380f4e0b93ad10a5233f8cf"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

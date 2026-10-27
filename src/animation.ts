@@ -22,11 +22,16 @@ export interface CatPose {
   turnFrame?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
   stretchFrame?: 0 | 1 | 2 | 3 | 4 | 5;
   lookFrame?: 0 | 1;
+  riseFrame?: 1 | 2 | 3 | 4 | 5 | 6;
 }
 
 // Passing poses are short; licking, wiping and the final lowered paw hold longer.
 const groomingSteps = [[21.25, 0], [21.5, 1], [22.25, 2], [22.5, 3], [23, 4],
   [23.5, 5], [23.75, 3], [24, 1], [25, 0]] as const;
+
+// Pause on all four paws, then reverse the generated poses into the original seated endpoint.
+const risingSteps = [[0.25, 1], [0.5, 2], [0.75, 3], [1, 4], [1.25, 5], [2.75, 6],
+  [3, 5], [3.25, 4], [3.5, 3], [3.75, 2], [4, 1]] as const;
 
 export const catLegDuration = 36;
 export const catPeriod = catLegDuration * 2;
@@ -46,6 +51,10 @@ export function catPose(seconds: number, width: number, sceneScale = 1): CatPose
   const available = 21 - walkDuration;
   const lookDuration = Math.min(6, available - 1.5);
   const lookStart = walkDuration + (available - lookDuration) / 2;
+  const riseStart = lookStart - 4.5;
+  // Keep at least half a second seated on either side; shorter waits retain the old sequence.
+  const rising = lookStart - walkDuration >= 5 && leg >= riseStart && leg < riseStart + 4;
+  const riseProgress = leg - riseStart;
   const looking = lookDuration >= 3 && leg >= lookStart && leg < lookStart + lookDuration;
   const lookProgress = (leg - lookStart) / lookDuration;
   const progress = outward ? Math.min(leg / walkDuration, 1) : 1 - Math.min(leg / walkDuration, 1);
@@ -59,6 +68,7 @@ export function catPose(seconds: number, width: number, sceneScale = 1): CatPose
     x: Math.round(width * (0.25 + 0.5 * progress)),
     direction: outward ? 1 : -1,
     frame,
+    ...(rising ? { riseFrame: risingSteps.find(([end]) => riseProgress < end)![1] } : {}),
     ...(looking ? { lookFrame: lookProgress < 0.25 || lookProgress >= 0.75 ? 0 as const : 1 as const } : {}),
     ...(leg >= catTurnStart ? { turnFrame: turningSteps.find(([end]) => leg < end)![1] } : {}),
     breath: frame === 7 && leg >= 26 && leg < 28.5 ? 0.5 : 0,

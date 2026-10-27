@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/cat-rise-final-scenes/portrait-boundary-source.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "69b6d747301f89385dcbaff72322d5703eca90ec77115e9175430e41c24c7682"
+  },
+  "output": {
+    "path": "art-reviews/cat-rise-final-scenes/portrait-boundary-corrected.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "08567221a4082320dbb200f42a7500dff56ed5b371ccfd0d1d9c917dce497129"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

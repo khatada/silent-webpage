@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-cat-rise-synced-active/narrow-stand-source.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "14711aeb355c7602ec7f40edb6bc47247484f75f134f88bbae5154cc53674bf5"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-27-cat-rise-synced-active/narrow-stand-corrected.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "192bf53512db801ffabf37a8e9758c7a7b5cc9a1405a5a46f519d1b7011820dc"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
