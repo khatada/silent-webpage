@@ -1,0 +1,21 @@
+{
+  "reviewer": "/root/rise_qa",
+  "actualVisualReview": true,
+  "decision": "accepted_local_gpu_composition",
+  "viewed": "atlas-corrected.png full area via three unscaled 1040x1200 bands",
+  "sourceSha256": "686d02f9bd4d0df22fbeaf8fef54b623502a0217f4b74bba98bace62e2c66e5b",
+  "correctedSha256": "210f4f239d7e46b6f81ef0bdfb2960f51a74ba79759fa91306a998d33bde1ebb",
+  "panels": 104,
+  "existingPoseComparisons": 48,
+  "allExistingNeutralLookRGBAEqual": true,
+  "correctionRGBAUnchanged": true,
+  "reasons": [
+    "Four native production scales and both directions preserve front support, body proportions and intact fine-pixel edges.",
+    "The added generated tail midpoint divides low crouch to high tail into low, intermediate horizontal and raised stages; the prior broad gap is reduced.",
+    "Reverse sequence returns through the same intermediate silhouettes to unchanged original neutral."
+  ],
+  "limitations": [
+    "Static sampled GPU sequence only; production timed playback and pause/resume behavior require separate review.",
+    "Discrete-frame motion remains; no claim of continuous anatomical interpolation."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-cat-rise-final-local/atlas-source.png",
+    "width": 3120,
+    "height": 1200,
+    "sha256": "e04c11fae030d12820c02f484615b5344ddfaecfa258f90f647c2bb3154f3aa9"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-27-cat-rise-final-local/atlas-corrected.png",
+    "width": 3120,
+    "height": 1200,
+    "sha256": "210f4f239d7e46b6f81ef0bdfb2960f51a74ba79759fa91306a998d33bde1ebb"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

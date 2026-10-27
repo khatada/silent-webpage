@@ -6,6 +6,8 @@ export const generatedArt = {
   alternateTrain: 'art/train-copper.png',
   catRestAtlas: 'art/cat-rest.png',
   catLookAtlas: 'art/cat-look.png',
+  catRiseAtlas: 'art/cat-rise-complete.png',
+  catRise: { width: 320, height: 224, anchorX: 192, foot: 208, normalization: 1 },
   catGroomAtlas: 'art/cat-groom.png',
   catSettleAtlas: 'art/cat-settle.png',
   catStretchAtlas: 'art/cat-stretch.png',

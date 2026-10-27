@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/cat-rise-final-scenes/desktop-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "323c981dba210ed3f84ae7215e2ea705f6956d69cef5779ea91f2409b930ad49"
+  },
+  "output": {
+    "path": "art-reviews/cat-rise-final-scenes/desktop-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "563406432891aebd82b74740a0ed18e1794bbb57a1908be9a56997f45f3973ce"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

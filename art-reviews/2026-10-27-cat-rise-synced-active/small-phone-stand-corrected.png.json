@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-cat-rise-synced-active/small-phone-stand-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "a37dd3178228cd53e6986e6a8558fc07a8e3852d06fe4476909159cdd565f921"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-27-cat-rise-synced-active/small-phone-stand-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "00860328f8108f015b934204b874d4cd0cf3da1bd0a831dc0fb8c450aea8ce74"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

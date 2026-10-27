@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-cat-rise-tail/composed-input.png",
+    "width": 2240,
+    "height": 224,
+    "sha256": "1f8cee62781350f5c0bcf432b4288df33c167a6f6b978592921a2d7b92b90262"
+  },
+  "output": {
+    "path": "public/art/cat-rise-complete.png",
+    "width": 2240,
+    "height": 224,
+    "sha256": "51bd2fd138213d2a0e83507f87309ba5b6c05517eeb08475bd5180daa09cd40b"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

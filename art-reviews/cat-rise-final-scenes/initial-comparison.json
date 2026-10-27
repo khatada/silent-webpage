@@ -1,0 +1,49 @@
+{
+  "baseline": "art-reviews/opposite-aircraft-scenes",
+  "comparisons": [
+    {
+      "name": "small-mobile-corrected.png",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "tall-corrected.png",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "portrait-large-corrected.png",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "landscape-corrected.png",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "wide-corrected.png",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "desktop-corrected.png",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "portrait-boundary-corrected.png",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "small-phone-corrected.png",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "compact-corrected.png",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "narrow-corrected.png",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "mobile-corrected.png",
+      "allRGBAEqual": true
+    }
+  ]
+}

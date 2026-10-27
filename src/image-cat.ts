@@ -8,9 +8,10 @@ type Frame = readonly [number, number, number, number];
 /** Shared production/preview compositor. Every visible pixel comes from reviewed generated images. */
 export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Texture, back: Texture, lift: Texture,
   groomAtlas?: Texture, settleAtlas?: Texture, stretchAtlas?: Texture, stretchMid?: Texture, turnAtlas?: Texture,
-  look?: { atlas: Texture; renderer: Renderer }) {
+  look?: { atlas: Texture; renderer: Renderer }, rise?: { atlas: Texture; renderer: Renderer }) {
   const textures: Texture[] = [];
   const ownedSeatedTextures: RenderTexture[] = [];
+  const ownedRisingTextures: RenderTexture[] = [];
   const frame = (source: Texture, rectangle: Frame, foot: number, normalization = 1) => {
     const texture = new Texture({ source: source.source, frame: new Rectangle(...rectangle) });
     textures.push(texture);
@@ -39,6 +40,22 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
     return { ...selected, texture };
   }) : [];
   sitting = looking[0] ?? sitting;
+  const riseSpec = generatedArt.catRise;
+  const rising = rise ? Array.from({ length: 6 }, (_, index) => {
+    const selected = frame(rise.atlas,
+      [(index + 1) * riseSpec.width, 0, riseSpec.width, riseSpec.height], riseSpec.foot, riseSpec.normalization);
+    selected.horizontalAnchor = riseSpec.anchorX / riseSpec.width;
+    // Equal native-sized UVs keep the generated intermediates stable when nearest-scaled.
+    // The original seated/look textures stay untouched; atlas cell 0 is a material QA endpoint only.
+    const texture = RenderTexture.create({ width: riseSpec.width, height: riseSpec.height, resolution: 1 });
+    texture.source.scaleMode = 'nearest';
+    const source = new Sprite(selected.texture);
+    source.roundPixels = true;
+    rise.renderer.render({ container: source, target: texture, clear: true });
+    source.destroy();
+    ownedRisingTextures.push(texture);
+    return { ...selected, texture };
+  }) : [];
   const rest = generatedArt.catRest;
   const groomOne = frame(restAtlas, rest.groomOne, 175, rest.normalization);
   const groomTwo = frame(restAtlas, rest.groomTwo, 172, rest.normalization);
@@ -84,7 +101,8 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
       const turnPose = pose.turnFrame === 7 ? walking[walkingFrame(pose.x, turnDirection, sceneScale)]
         : pose.turnFrame !== undefined ? turning[pose.turnFrame] : undefined;
       const selected = turnPose ?? (pose.frame < 4 ? walking[walkingFrame(pose.x, pose.direction, sceneScale)]
-        : (pose.frame === 4 && pose.lookFrame !== undefined ? looking[pose.lookFrame + 1] : undefined)
+        : (pose.frame === 4 && pose.riseFrame !== undefined ? rising[pose.riseFrame - 1] : undefined)
+          ?? (pose.frame === 4 && pose.lookFrame !== undefined ? looking[pose.lookFrame + 1] : undefined)
           ?? (groomPose && pose.groomFrame !== undefined ? grooming[pose.groomFrame] : undefined)
           ?? (pose.frame === 7 && pose.settleFrame !== undefined ? settling[pose.settleFrame] : undefined)
           ?? (pose.frame === 8 && pose.stretchFrame !== undefined ? stretching[pose.stretchFrame] : undefined)
@@ -99,6 +117,7 @@ export function createImageCat(atlas: Texture, restAtlas: Texture, walkAtlas: Te
     destroy() {
       for (const texture of textures) texture.destroy(false);
       for (const texture of ownedSeatedTextures) texture.destroy(true);
+      for (const texture of ownedRisingTextures) texture.destroy(true);
     },
   };
 }

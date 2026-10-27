@@ -28,7 +28,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas, lookAtlas, plantAtlas, alternateTrain] = await Promise.all([
+  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas, lookAtlas, plantAtlas, alternateTrain, riseAtlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -52,6 +52,7 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${generatedArt.catLookAtlas}`),
     Assets.load<Texture>(`${baseUrl}${plantArt.image}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.alternateTrain}`),
+    Assets.load<Texture>(`${baseUrl}${generatedArt.catRiseAtlas}`),
   ]);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
@@ -59,7 +60,7 @@ export async function createScene(host: HTMLElement): Promise<{
   atlas.source.scaleMode = 'nearest';
   alternateTrain.source.scaleMode = 'nearest';
   restAtlas.source.scaleMode = 'nearest';
-  for (const image of [walkAtlas, back, lift, groomAtlas, settleAtlas, stretchAtlas, stretchMid, turnAtlas, lookAtlas]) image.source.scaleMode = 'nearest';
+  for (const image of [walkAtlas, back, lift, groomAtlas, settleAtlas, stretchAtlas, stretchMid, turnAtlas, lookAtlas, riseAtlas]) image.source.scaleMode = 'nearest';
   const imageStreetCar = createImageStreetCar(streetCar, [background, wideBackground, portraitBackground]);
   const imageCurtain = createImageCurtain(curtainAtlas);
   const imageFan = createImageFan(fanAtlas, [background, portraitBackground]);
@@ -109,7 +110,7 @@ export async function createScene(host: HTMLElement): Promise<{
   await app.init({ width: 768, height: 512, antialias: false, resolution: 1,
     background: '#101326', preference: 'webgl', autoStart: false });
   const imageCat = createImageCat(atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas,
-    stretchAtlas, stretchMid, turnAtlas, { atlas: lookAtlas, renderer: app.renderer });
+    stretchAtlas, stretchMid, turnAtlas, { atlas: lookAtlas, renderer: app.renderer }, { atlas: riseAtlas, renderer: app.renderer });
   const imagePlant = createImagePlant(plantAtlas, app.renderer);
   const canvas = app.canvas;
   canvas.setAttribute('role', 'img');

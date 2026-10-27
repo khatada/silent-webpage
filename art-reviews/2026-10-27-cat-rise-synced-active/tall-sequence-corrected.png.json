@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-cat-rise-synced-active/tall-sequence-source.png",
+    "width": 4602,
+    "height": 256,
+    "sha256": "6f296ed92e96fe72f14e15806894413e5a38b504b5a7c318bfff989088d78c33"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-27-cat-rise-synced-active/tall-sequence-corrected.png",
+    "width": 4602,
+    "height": 256,
+    "sha256": "6f296ed92e96fe72f14e15806894413e5a38b504b5a7c318bfff989088d78c33"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

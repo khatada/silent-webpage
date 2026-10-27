@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "473419ce92c6adf1307e9ed4022641c090c08d1b627088251b1e88c064f91ef0",
+  "sourceSha256": "686d02f9bd4d0df22fbeaf8fef54b623502a0217f4b74bba98bace62e2c66e5b",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -1650,6 +1650,166 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "親/担当/独立LLMが6姿勢×4倍率の補正後nativecontextを全域実閲覧。最小.25でも座位/低haunch/crouch/立位の全身差を読み取れ、顔と支持足に明白な破綻なし。既存生成済み屋上floorcropへnearestの表示参考として合成、原画のコード生成ではない。本番GPUのsampling/端点/往復/timingの採用は表示PRへ分離。"
+    },
+    {
+      "image": "public/art/cat-rise-complete.png",
+      "report": "public/art/cat-rise-complete.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後7姿勢と4倍率nativecontextを実閲覧し素材採用。追加尾中間により旧145→103→79→54の段階が読め、頭/体格/支持足を保持。親の独立変換replayで新cell全RGBAと旧6cellの完全一致を確認。原画はimagegen、alpha除去/単一nearest登録/旧cell copyのみ。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "1f8cee62781350f5c0bcf432b4288df33c167a6f6b978592921a2d7b92b90262",
+        "prompt": "One additional generated tail midpoint between the retained lower crouch and raised-tail bridge; exact prompt retained in promptFile.",
+        "generationEvidence": "art-reviews/2026-10-27-cat-rise-tail/generation.json"
+      }
+    },
+    {
+      "image": "art-reviews/2026-10-27-cat-rise-tail/material-context-corrected.png",
+      "report": "art-reviews/2026-10-27-cat-rise-tail/material-context-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが全7姿勢×4倍率contextを実閲覧。低い尾/水平/上向きが分かれ、最小倍率でも全身差を保持。生成済み床へRGBA配置した素材参考として採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-cat-rise-final-local/atlas-corrected.png",
+      "report": "art-reviews/2026-10-27-cat-rise-final-local/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後3120×1200を無変形1040幅3帯で全域実閲覧。左右4倍率104panelの起立/着座で全身と支持位置が自然、尾中間が旧gapを分割。48組の旧neutral/lookを同絶対座標render/extractし全RGBA一致。補正前後RGBA一致。"
+    },
+    {
+      "image": "art-reviews/cat-rise-final-scenes/compact-corrected.png",
+      "report": "art-reviews/cat-rise-final-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立LLM二者が11初期全景を5/6構図へ分担して実閲覧。wide/tallは無変形帯も確認。猫の初期歩行/足元と鉢、空と街の構図に新しい破損なし。initial-comparison.jsonで前版11全景全RGBA一致。起立動作は別の本番時間差QAで確認。"
+    },
+    {
+      "image": "art-reviews/cat-rise-final-scenes/desktop-corrected.png",
+      "report": "art-reviews/cat-rise-final-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立LLM二者が11初期全景を5/6構図へ分担して実閲覧。wide/tallは無変形帯も確認。猫の初期歩行/足元と鉢、空と街の構図に新しい破損なし。initial-comparison.jsonで前版11全景全RGBA一致。起立動作は別の本番時間差QAで確認。"
+    },
+    {
+      "image": "art-reviews/cat-rise-final-scenes/landscape-corrected.png",
+      "report": "art-reviews/cat-rise-final-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立LLM二者が11初期全景を5/6構図へ分担して実閲覧。wide/tallは無変形帯も確認。猫の初期歩行/足元と鉢、空と街の構図に新しい破損なし。initial-comparison.jsonで前版11全景全RGBA一致。起立動作は別の本番時間差QAで確認。"
+    },
+    {
+      "image": "art-reviews/cat-rise-final-scenes/mobile-corrected.png",
+      "report": "art-reviews/cat-rise-final-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立LLM二者が11初期全景を5/6構図へ分担して実閲覧。wide/tallは無変形帯も確認。猫の初期歩行/足元と鉢、空と街の構図に新しい破損なし。initial-comparison.jsonで前版11全景全RGBA一致。起立動作は別の本番時間差QAで確認。"
+    },
+    {
+      "image": "art-reviews/cat-rise-final-scenes/narrow-corrected.png",
+      "report": "art-reviews/cat-rise-final-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立LLM二者が11初期全景を5/6構図へ分担して実閲覧。wide/tallは無変形帯も確認。猫の初期歩行/足元と鉢、空と街の構図に新しい破損なし。initial-comparison.jsonで前版11全景全RGBA一致。起立動作は別の本番時間差QAで確認。"
+    },
+    {
+      "image": "art-reviews/cat-rise-final-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/cat-rise-final-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立LLM二者が11初期全景を5/6構図へ分担して実閲覧。wide/tallは無変形帯も確認。猫の初期歩行/足元と鉢、空と街の構図に新しい破損なし。initial-comparison.jsonで前版11全景全RGBA一致。起立動作は別の本番時間差QAで確認。"
+    },
+    {
+      "image": "art-reviews/cat-rise-final-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/cat-rise-final-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立LLM二者が11初期全景を5/6構図へ分担して実閲覧。wide/tallは無変形帯も確認。猫の初期歩行/足元と鉢、空と街の構図に新しい破損なし。initial-comparison.jsonで前版11全景全RGBA一致。起立動作は別の本番時間差QAで確認。"
+    },
+    {
+      "image": "art-reviews/cat-rise-final-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/cat-rise-final-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立LLM二者が11初期全景を5/6構図へ分担して実閲覧。wide/tallは無変形帯も確認。猫の初期歩行/足元と鉢、空と街の構図に新しい破損なし。initial-comparison.jsonで前版11全景全RGBA一致。起立動作は別の本番時間差QAで確認。"
+    },
+    {
+      "image": "art-reviews/cat-rise-final-scenes/small-phone-corrected.png",
+      "report": "art-reviews/cat-rise-final-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立LLM二者が11初期全景を5/6構図へ分担して実閲覧。wide/tallは無変形帯も確認。猫の初期歩行/足元と鉢、空と街の構図に新しい破損なし。initial-comparison.jsonで前版11全景全RGBA一致。起立動作は別の本番時間差QAで確認。"
+    },
+    {
+      "image": "art-reviews/cat-rise-final-scenes/tall-corrected.png",
+      "report": "art-reviews/cat-rise-final-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立LLM二者が11初期全景を5/6構図へ分担して実閲覧。wide/tallは無変形帯も確認。猫の初期歩行/足元と鉢、空と街の構図に新しい破損なし。initial-comparison.jsonで前版11全景全RGBA一致。起立動作は別の本番時間差QAで確認。"
+    },
+    {
+      "image": "art-reviews/cat-rise-final-scenes/wide-corrected.png",
+      "report": "art-reviews/cat-rise-final-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "独立LLM二者が11初期全景を5/6構図へ分担して実閲覧。wide/tallは無変形帯も確認。猫の初期歩行/足元と鉢、空と街の構図に新しい破損なし。initial-comparison.jsonで前版11全景全RGBA一致。起立動作は別の本番時間差QAで確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-cat-rise-synced-active/mobile-sequence-corrected.png",
+      "report": "art-reviews/2026-10-27-cat-rise-synced-active/mobile-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが4立位全景（tallは無変形帯）を実閲覧、親が4端末13panel連続PNGを無変形4列再配置で全域実閲覧。起立1〜6/逆順/旧座位復帰が読め、追加尾中間により急上昇gapを改善。全身/支持足/鉢との間隔を保持。canvas running待機後に撮影し旧非同期trialは不採用。時間/geometryは計算値、比較は背景込みで猫単独端点証明とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-cat-rise-synced-active/mobile-stand-corrected.png",
+      "report": "art-reviews/2026-10-27-cat-rise-synced-active/mobile-stand-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが4立位全景（tallは無変形帯）を実閲覧、親が4端末13panel連続PNGを無変形4列再配置で全域実閲覧。起立1〜6/逆順/旧座位復帰が読め、追加尾中間により急上昇gapを改善。全身/支持足/鉢との間隔を保持。canvas running待機後に撮影し旧非同期trialは不採用。時間/geometryは計算値、比較は背景込みで猫単独端点証明とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-cat-rise-synced-active/narrow-sequence-corrected.png",
+      "report": "art-reviews/2026-10-27-cat-rise-synced-active/narrow-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが4立位全景（tallは無変形帯）を実閲覧、親が4端末13panel連続PNGを無変形4列再配置で全域実閲覧。起立1〜6/逆順/旧座位復帰が読め、追加尾中間により急上昇gapを改善。全身/支持足/鉢との間隔を保持。canvas running待機後に撮影し旧非同期trialは不採用。時間/geometryは計算値、比較は背景込みで猫単独端点証明とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-cat-rise-synced-active/narrow-stand-corrected.png",
+      "report": "art-reviews/2026-10-27-cat-rise-synced-active/narrow-stand-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが4立位全景（tallは無変形帯）を実閲覧、親が4端末13panel連続PNGを無変形4列再配置で全域実閲覧。起立1〜6/逆順/旧座位復帰が読め、追加尾中間により急上昇gapを改善。全身/支持足/鉢との間隔を保持。canvas running待機後に撮影し旧非同期trialは不採用。時間/geometryは計算値、比較は背景込みで猫単独端点証明とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-cat-rise-synced-active/small-phone-sequence-corrected.png",
+      "report": "art-reviews/2026-10-27-cat-rise-synced-active/small-phone-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが4立位全景（tallは無変形帯）を実閲覧、親が4端末13panel連続PNGを無変形4列再配置で全域実閲覧。起立1〜6/逆順/旧座位復帰が読め、追加尾中間により急上昇gapを改善。全身/支持足/鉢との間隔を保持。canvas running待機後に撮影し旧非同期trialは不採用。時間/geometryは計算値、比較は背景込みで猫単独端点証明とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-cat-rise-synced-active/small-phone-stand-corrected.png",
+      "report": "art-reviews/2026-10-27-cat-rise-synced-active/small-phone-stand-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが4立位全景（tallは無変形帯）を実閲覧、親が4端末13panel連続PNGを無変形4列再配置で全域実閲覧。起立1〜6/逆順/旧座位復帰が読め、追加尾中間により急上昇gapを改善。全身/支持足/鉢との間隔を保持。canvas running待機後に撮影し旧非同期trialは不採用。時間/geometryは計算値、比較は背景込みで猫単独端点証明とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-cat-rise-synced-active/tall-sequence-corrected.png",
+      "report": "art-reviews/2026-10-27-cat-rise-synced-active/tall-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが4立位全景（tallは無変形帯）を実閲覧、親が4端末13panel連続PNGを無変形4列再配置で全域実閲覧。起立1〜6/逆順/旧座位復帰が読め、追加尾中間により急上昇gapを改善。全身/支持足/鉢との間隔を保持。canvas running待機後に撮影し旧非同期trialは不採用。時間/geometryは計算値、比較は背景込みで猫単独端点証明とは区別。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-cat-rise-synced-active/tall-stand-corrected.png",
+      "report": "art-reviews/2026-10-27-cat-rise-synced-active/tall-stand-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが4立位全景（tallは無変形帯）を実閲覧、親が4端末13panel連続PNGを無変形4列再配置で全域実閲覧。起立1〜6/逆順/旧座位復帰が読め、追加尾中間により急上昇gapを改善。全身/支持足/鉢との間隔を保持。canvas running待機後に撮影し旧非同期trialは不採用。時間/geometryは計算値、比較は背景込みで猫単独端点証明とは区別。"
     }
   ]
 }

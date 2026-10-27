@@ -1,0 +1,21 @@
+{
+  "reviewer": "/root/rise_qa",
+  "actualVisualReview": true,
+  "decision": "accepted_as_material",
+  "viewed": [
+    "candidate-corrected.png via two unscaled full-height bands",
+    "material-context-corrected.png full 1400x424"
+  ],
+  "reasons": [
+    "New whole-body pose matches adjacent generated poses in ear-to-support span with one common uniform source scale.",
+    "Existing six cells retain every RGBA byte. New low-horizontal tail fills the formerly large low-to-raised gap.",
+    "Four native scales retain readable silhouette, forepaw support and crisp generated pixels. No anatomy or color was redrawn."
+  ],
+  "limitations": [
+    "Material adoption only; production GPU and timed forward/reverse review remains necessary.",
+    "Tail progression still uses discrete generated poses, not continuous deformation."
+  ],
+  "correctedSha256": "51bd2fd138213d2a0e83507f87309ba5b6c05517eeb08475bd5180daa09cd40b",
+  "contextCorrectedSha256": "201a6c70d324aa109a15113d6e485e91853da66c0380f4e0b93ad10a5233f8cf",
+  "correctionRGBAUnchanged": true
+}

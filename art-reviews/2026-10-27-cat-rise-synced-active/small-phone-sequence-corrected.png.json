@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-cat-rise-synced-active/small-phone-sequence-source.png",
+    "width": 2496,
+    "height": 138,
+    "sha256": "cae6979211522183a06b9686d25faf208ea668e730e1e4a0af8fc591b6fdcb69"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-27-cat-rise-synced-active/small-phone-sequence-corrected.png",
+    "width": 2496,
+    "height": 138,
+    "sha256": "cae6979211522183a06b9686d25faf208ea668e730e1e4a0af8fc591b6fdcb69"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

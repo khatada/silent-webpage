@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-cat-rise-synced-active/narrow-sequence-source.png",
+    "width": 2301,
+    "height": 128,
+    "sha256": "1d4880062e9bcd9403ea796373b8a223127cc02b0439aad8a1c3db6aad11f476"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-27-cat-rise-synced-active/narrow-sequence-corrected.png",
+    "width": 2301,
+    "height": 128,
+    "sha256": "1d4880062e9bcd9403ea796373b8a223127cc02b0439aad8a1c3db6aad11f476"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

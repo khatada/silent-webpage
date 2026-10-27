@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-cat-rise-synced-active/mobile-stand-source.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "c68a95de06e34463e1308481488114f30de0961a482d5751591e59b345835260"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-27-cat-rise-synced-active/mobile-stand-corrected.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "ecad482a87093fd622738a683d81716887ed0629736c61f5968c02b6b28ea663"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
