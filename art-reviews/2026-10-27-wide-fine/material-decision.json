@@ -1,0 +1,14 @@
+{
+  "decision": "accepted_as_material",
+  "actualVisualReview": true,
+  "image": "art-reviews/2026-10-27-wide-fine/nearest-final-corrected.png",
+  "sha256": "7f8cb65ed578188d66e1dbe929e86060f14e44df5cda54abd1484f4446d932bd",
+  "intendedPublicPath": "public/art/tokyo-wide-fine.png",
+  "actualSize": [1446, 482],
+  "reviewers": [
+    {"agent": "/root/rise_qa", "viewed": "Full final1446x482 plus native sky/city, housing and roof400x200 crops. Raw native600x300 and cell1.5 comparison also viewed.", "judgment": "Accepted as material candidate; fine window/roof/rail details and crisp edges maintained.1.5 grid correction rejected because raw lattice was not established."},
+    {"agent": "/root", "viewed": "Full final1446x482 and residential native crop.", "judgment": "Accepted as material; details, edges and wide composition maintained."}
+  ],
+  "reasons": ["Detailed navy/purple skyline, warm housing lights, rail and clear rooftop support are retained without procedural artwork generation.", "Nearest adjustment and both1px correction passes disclosed; no claim to reconstruct an inferred1.5px grid."],
+  "limitations": ["Material adoption only; runtime resolution2, physical scale quantization, changed logical width723 instead of724 and new window/star coordinates require separate implementation and GPU review.", "Nearest size adjustment can discard raw1px details; increased authored detail comes from the generated source."]
+}
