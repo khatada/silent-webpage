@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "1c020eb2efcb96b0d27353a79cf6cd0b12cfe926f35655d8aa81b82383eb1ca0",
+  "sourceSha256": "96878cc7003050bdf3becc01dc8bbc91f1309c4400af3012efd1b31f032da4fc",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -1963,6 +1963,370 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが最終8補正画像を全域実閲覧。4秒全景4枚と9時刻×4構図の全幅native帯36枚、全可視coreの無変形matrixを確認。親も4端末の可視core時間差cropを実閲覧。窓と星が独立に明暗変化し、周辺/構図の新破損なし。親の実画素RGB計測は計算alphaと区別。有限sample/遮蔽/小さい遠景core/最終RAFずれを限界としてvisual-decisionへ記録。"
+    },
+    {
+      "image": "art-reviews/wide-fine-final-scenes/compact-corrected.png",
+      "report": "art-reviews/wide-fine-final-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の全景をLLMが実際に閲覧。構図、猫の接地、列車と背景の重なりを確認し採用。"
+    },
+    {
+      "image": "art-reviews/wide-fine-final-scenes/desktop-corrected.png",
+      "report": "art-reviews/wide-fine-final-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の全景をLLMが実際に閲覧。構図、猫の接地、列車と背景の重なりを確認し採用。"
+    },
+    {
+      "image": "art-reviews/wide-fine-final-scenes/landscape-corrected.png",
+      "report": "art-reviews/wide-fine-final-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の全景をLLMが実際に閲覧。構図、猫の接地、列車と背景の重なりを確認し採用。"
+    },
+    {
+      "image": "art-reviews/wide-fine-final-scenes/mobile-corrected.png",
+      "report": "art-reviews/wide-fine-final-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の全景をLLMが実際に閲覧。構図、猫の接地、列車と背景の重なりを確認し採用。"
+    },
+    {
+      "image": "art-reviews/wide-fine-final-scenes/narrow-corrected.png",
+      "report": "art-reviews/wide-fine-final-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の全景をLLMが実際に閲覧。構図、猫の接地、列車と背景の重なりを確認し採用。"
+    },
+    {
+      "image": "art-reviews/wide-fine-final-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/wide-fine-final-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の全景をLLMが実際に閲覧。構図、猫の接地、列車と背景の重なりを確認し採用。"
+    },
+    {
+      "image": "art-reviews/wide-fine-final-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/wide-fine-final-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の全景をLLMが実際に閲覧。構図、猫の接地、列車と背景の重なりを確認し採用。"
+    },
+    {
+      "image": "art-reviews/wide-fine-final-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/wide-fine-final-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の全景をLLMが実際に閲覧。構図、猫の接地、列車と背景の重なりを確認し採用。"
+    },
+    {
+      "image": "art-reviews/wide-fine-final-scenes/small-phone-corrected.png",
+      "report": "art-reviews/wide-fine-final-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の全景をLLMが実際に閲覧。構図、猫の接地、列車と背景の重なりを確認し採用。"
+    },
+    {
+      "image": "art-reviews/wide-fine-final-scenes/tall-corrected.png",
+      "report": "art-reviews/wide-fine-final-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の全景をLLMが実際に閲覧。構図、猫の接地、列車と背景の重なりを確認し採用。"
+    },
+    {
+      "image": "art-reviews/wide-fine-final-scenes/wide-corrected.png",
+      "report": "art-reviews/wide-fine-final-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の全景をLLMが実際に閲覧。構図、猫の接地、列車と背景の重なりを確認し採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-local/skyline-four/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-local/skyline-four/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の局所アトラスをLLMが全域閲覧。窓、星、建物と柱の境界を確認し採用。小さい画面では一部が縮小時の標本化で見えない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-local/skyline-half/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-local/skyline-half/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の局所アトラスをLLMが全域閲覧。窓、星、建物と柱の境界を確認し採用。小さい画面では一部が縮小時の標本化で見えない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-local/skyline-one/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-local/skyline-one/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の局所アトラスをLLMが全域閲覧。窓、星、建物と柱の境界を確認し採用。小さい画面では一部が縮小時の標本化で見えない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-local/skyline-two/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-local/skyline-two/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の局所アトラスをLLMが全域閲覧。窓、星、建物と柱の境界を確認し採用。小さい画面では一部が縮小時の標本化で見えない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-local/stars-four/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-local/stars-four/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の局所アトラスをLLMが全域閲覧。窓、星、建物と柱の境界を確認し採用。小さい画面では一部が縮小時の標本化で見えない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-local/stars-half/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-local/stars-half/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の局所アトラスをLLMが全域閲覧。窓、星、建物と柱の境界を確認し採用。小さい画面では一部が縮小時の標本化で見えない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-local/stars-one/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-local/stars-one/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の局所アトラスをLLMが全域閲覧。窓、星、建物と柱の境界を確認し採用。小さい画面では一部が縮小時の標本化で見えない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-local/stars-two/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-local/stars-two/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の局所アトラスをLLMが全域閲覧。窓、星、建物と柱の境界を確認し採用。小さい画面では一部が縮小時の標本化で見えない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-local/windows-four/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-local/windows-four/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の局所アトラスをLLMが全域閲覧。窓、星、建物と柱の境界を確認し採用。小さい画面では一部が縮小時の標本化で見えない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-local/windows-half/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-local/windows-half/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の局所アトラスをLLMが全域閲覧。窓、星、建物と柱の境界を確認し採用。小さい画面では一部が縮小時の標本化で見えない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-local/windows-one/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-local/windows-one/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の局所アトラスをLLMが全域閲覧。窓、星、建物と柱の境界を確認し採用。小さい画面では一部が縮小時の標本化で見えない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-local/windows-two/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-local/windows-two/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の局所アトラスをLLMが全域閲覧。窓、星、建物と柱の境界を確認し採用。小さい画面では一部が縮小時の標本化で見えない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-cat-support/left/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-cat-support/left/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の猫の各姿勢アトラスをLLMが全域閲覧し、屋上との接地を確認して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-cat-support/right/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-cat-support/right/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の猫の各姿勢アトラスをLLMが全域閲覧し、屋上との接地を確認して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/compact-4-full-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/compact-4-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/compact-rail-0-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/compact-rail-0-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/compact-rail-1-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/compact-rail-1-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/compact-road-roof-0-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/compact-road-roof-0-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/compact-road-roof-1-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/compact-road-roof-1-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-4-full-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-4-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-0-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-0-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-1-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-1-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-2-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-2-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-3-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-3-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-0-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-0-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-1-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-1-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-2-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-2-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-3-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-3-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/extreme-0-full-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/extreme-0-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/extreme-4-full-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/extreme-4-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/landscape-4-full-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/landscape-4-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/landscape-rail-0-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/landscape-rail-0-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/landscape-rail-1-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/landscape-rail-1-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/landscape-rail-2-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/landscape-rail-2-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/landscape-road-roof-0-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/landscape-road-roof-0-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/landscape-road-roof-1-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/landscape-road-roof-1-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/landscape-road-roof-2-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/landscape-road-roof-2-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/wide-1920-0-full-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/wide-1920-0-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/wide-1920-4-full-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/wide-1920-4-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/wide-3200-0-full-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/wide-3200-0-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-fine-final-active/wide-3200-4-full-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-fine-final-active/wide-3200-4-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
     }
   ]
 }

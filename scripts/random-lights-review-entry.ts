@@ -1,3 +1,4 @@
+import { createLogicalBackground } from '../src/logical-background';
 import { Application, Assets, Container, Rectangle, RenderTexture, Sprite, Texture } from 'pixi.js';
 import { generatedArt } from '../src/generated-art';
 import { createImageSkylineLights, skylineLightScenes } from '../src/image-skyline-lights';
@@ -9,6 +10,8 @@ import { starCycle } from '../src/star-timing';
 export async function renderRandomLightsReview() {
   const backgrounds = await Promise.all([generatedArt.background, generatedArt.wide.background,
     generatedArt.portrait.background].map(path => Assets.load<Texture>(`/${path}`)));
+  backgrounds[1] = createLogicalBackground(backgrounds[1], generatedArt.wide.width,
+    generatedArt.wide.height, generatedArt.wide.resolution);
   backgrounds.forEach(texture => { texture.source.scaleMode = 'nearest'; });
   const windows = createImageSkylineLights(backgrounds), stars = createImageStars(backgrounds);
   const width = 640, height = 672, panelWidth = 128, panelHeight = 112, scale = 4;

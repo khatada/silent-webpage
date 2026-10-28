@@ -1,3 +1,4 @@
+import { wideFineArt } from './wide-fine-art';
 import { Rectangle, RenderTexture, Sprite, Texture, type Renderer } from 'pixi.js';
 import type { generatedLayout } from './generated-layout';
 import { plantFrame } from './plant-timing';
@@ -7,9 +8,9 @@ export const plantArt = { image: 'art/rooftop-plant.png', frameWidth: 80, frameH
 
 /** Put one small pot on the clear floor behind the cat; omit unsupported tiny layouts. */
 export function plantGeometry(layout: ReturnType<typeof generatedLayout>, width: number, height: number) {
-  const scale = layout.scale * layout.composition.actorScale * 0.25;
-  const sourceFoot = layout.wide ? 212 : layout.portrait ? 1260 : 430;
-  const sourceFloorTop = layout.wide ? 207 : layout.portrait ? 1220 : 418;
+  const scale = layout.motionScale * layout.composition.actorScale * 0.25;
+  const sourceFoot = layout.wide ? wideFineArt.plant.sourceFoot : layout.portrait ? 1260 : 430;
+  const sourceFloorTop = layout.wide ? wideFineArt.plant.sourceFloorTop : layout.portrait ? 1220 : 418;
   const x = width / 2;
   const footY = layout.originY + sourceFoot * layout.scale;
   const frameWidth = plantArt.frameWidth * scale, frameHeight = plantArt.frameHeight * scale;

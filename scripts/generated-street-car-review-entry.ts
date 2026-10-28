@@ -1,3 +1,4 @@
+import { createLogicalBackground } from '../src/logical-background';
 import { Application, Assets, Container, Rectangle, Sprite, Texture } from 'pixi.js';
 import { generatedArt } from '../src/generated-art';
 import { createImageStreetCar, streetCarScenes } from '../src/image-street-car';
@@ -7,6 +8,8 @@ import { streetCarInitialOffset, streetCarTravel } from '../src/street-car-timin
 export async function renderGeneratedStreetCarReview() {
   const backgrounds = await Promise.all([generatedArt.background, generatedArt.wide.background,
     generatedArt.portrait.background].map(path => Assets.load<Texture>(`/${path}`)));
+  backgrounds[1] = createLogicalBackground(backgrounds[1], generatedArt.wide.width,
+    generatedArt.wide.height, generatedArt.wide.resolution);
   const source = await Assets.load<Texture>(`/${generatedArt.streetCar.image}`);
   for (const image of [...backgrounds, source]) image.source.scaleMode = 'nearest';
   const car = createImageStreetCar(source, backgrounds);

@@ -1,0 +1,184 @@
+[
+  {
+    "cell": [
+      0,
+      0
+    ],
+    "label": "window0",
+    "native": [
+      310,
+      308,
+      9,
+      11
+    ],
+    "nearestScale": 12
+  },
+  {
+    "cell": [
+      1,
+      0
+    ],
+    "label": "window1",
+    "native": [
+      1155,
+      322,
+      8,
+      10
+    ],
+    "nearestScale": 12
+  },
+  {
+    "cell": [
+      2,
+      0
+    ],
+    "label": "window2",
+    "native": [
+      608,
+      313,
+      5,
+      8
+    ],
+    "nearestScale": 12
+  },
+  {
+    "cell": [
+      3,
+      0
+    ],
+    "label": "window3",
+    "native": [
+      828,
+      317,
+      7,
+      5
+    ],
+    "nearestScale": 12
+  },
+  {
+    "cell": [
+      4,
+      0
+    ],
+    "label": "window4",
+    "native": [
+      1005,
+      300,
+      5,
+      9
+    ],
+    "nearestScale": 12
+  },
+  {
+    "cell": [
+      5,
+      0
+    ],
+    "label": "window5",
+    "native": [
+      1089,
+      291,
+      4,
+      6
+    ],
+    "nearestScale": 12
+  },
+  {
+    "cell": [
+      6,
+      0
+    ],
+    "label": "window6",
+    "native": [
+      510,
+      338,
+      10,
+      14
+    ],
+    "nearestScale": 12
+  },
+  {
+    "cell": [
+      0,
+      1
+    ],
+    "label": "window7",
+    "native": [
+      1035,
+      302,
+      3,
+      5
+    ],
+    "nearestScale": 12
+  },
+  {
+    "cell": [
+      1,
+      1
+    ],
+    "label": "window8",
+    "native": [
+      791,
+      317,
+      3,
+      6
+    ],
+    "nearestScale": 12
+  },
+  {
+    "cell": [
+      2,
+      1
+    ],
+    "label": "room-glass",
+    "native": [
+      510,
+      338,
+      10,
+      14
+    ],
+    "nearestScale": 12
+  },
+  {
+    "cell": [
+      3,
+      1
+    ],
+    "label": "room-leftGlass",
+    "native": [
+      503,
+      342,
+      4,
+      10
+    ],
+    "nearestScale": 12
+  },
+  {
+    "cell": [
+      4,
+      1
+    ],
+    "label": "room-dark",
+    "native": [
+      531,
+      338,
+      4,
+      12
+    ],
+    "nearestScale": 12
+  },
+  {
+    "cell": [
+      5,
+      1
+    ],
+    "label": "darkWall",
+    "native": [
+      1168,
+      322,
+      6,
+      10
+    ],
+    "nearestScale": 12
+  }
+]

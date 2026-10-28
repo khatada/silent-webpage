@@ -44,7 +44,7 @@ describe('generated meteor placement', () => {
     for (const progress of [0, 0.25, 0.5, 0.75, 0.995]) {
       const seconds = meteorTiming.first + meteorTiming.duration * progress;
       const cloudX = travelPosition(seconds, viewport.width, 235 * layout.cloudScale,
-        layout.scale * cityMotion.cloudSpeed, viewport.width * 0.12);
+        layout.motionScale * cityMotion.cloudSpeed, viewport.width * 0.12);
       const meteorX = Math.round(path.x + path.dx * progress);
       const meteorY = Math.round(path.y + path.dy * progress);
       const separate = meteorX + path.width <= cloudX + left * layout.cloudScale
@@ -55,7 +55,7 @@ describe('generated meteor placement', () => {
     }
   });
   it('omits the event when a very short sky cannot contain a moving full tail', () => {
-    for (const height of [185, 186, 190]) {
+    for (const height of [20, 30, 40]) {
       const sky = generatedLayout(844, height).skyBottom;
       const path = meteorGeometry(844, sky);
       expect(path.visible).toBe(false);

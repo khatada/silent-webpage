@@ -2,6 +2,32 @@ import { describe, expect, it } from 'vitest';
 import { generatedLayout } from './generated-layout';
 
 describe('generated scenery keeps its moving subjects visible', () => {
+  it('covers ordinary wide screens with uniform native pixels while preserving legacy actor speed', () => {
+    const views = [[1920, 720, 3], [3200, 1080, 5], [3840, 1080, 5],
+      [1920, 1080, 5], [2560, 1080, 5], [1280, 720, 3]];
+    for (const [width, height, previousScale] of views) {
+      const layout = generatedLayout(width, height);
+      expect(layout.wide).toBe(true);
+      expect(layout.scale % 2).toBe(0);
+      expect(layout.composition.width * layout.scale).toBeGreaterThanOrEqual(width);
+      expect(layout.originX).toBeLessThanOrEqual(0);
+      expect(layout.originX + layout.composition.width * layout.scale).toBeGreaterThanOrEqual(width);
+      expect(layout.motionScale).toBe(previousScale);
+      expect(layout.skyBottom).toBeGreaterThanOrEqual(Math.ceil(height * 0.05));
+      expect(layout.catY).toBeLessThan(height);
+    }
+  });
+  it('keeps reciprocal sampling and finite motion in tiny skies and exposes only unavoidable edge extensions', () => {
+    const impossible = generatedLayout(2000, 500);
+    expect(impossible.composition.width * impossible.scale).toBeLessThan(2000);
+    for (const [width, height] of [[320, 100], [1000, 20], [844, 1]]) {
+      const layout = generatedLayout(width, height);
+      expect(layout.scale).toBeGreaterThan(0);
+      expect(layout.motionScale).toBeGreaterThan(0);
+      expect(1 / (layout.scale / 2)).toBeCloseTo(Math.round(1 / (layout.scale / 2)));
+      expect(Number.isFinite(layout.originY)).toBe(true);
+    }
+  });
   it.each([[844, 390], [2560, 1080], [1440, 900], [390, 844],
     [1740, 1000], [1750, 1000], [1900, 1000], [800, 600], [390, 1025], [1920, 1080], [900, 1600], [1024, 1537], [320, 568], [375, 667]])('retains sky, railway and rooftop at %ix%i', (width, height) => {
     const layout = generatedLayout(width, height);

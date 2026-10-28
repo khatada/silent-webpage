@@ -1,3 +1,5 @@
+import { wideFineArt } from './wide-fine-art';
+
 /** Coordinates refer to the corrected, LLM-reviewed image files, never procedural artwork. */
 export const generatedArt = {
   streetCar: { image: 'art/street-car.png', frame: [190, 128, 256, 368] },
@@ -117,18 +119,5 @@ export const generatedArt = {
     railPoles: [[116, 732, 4, 33], [276, 732, 4, 33], [324, 732, 4, 33], [504, 732, 4, 33], [752, 732, 4, 33], [856, 732, 4, 33]],
     skyBottom: 510, aircraftY: 420, cloudY: 450, floorMargin: 18, actorScale: 2,
   },
-  wide: {
-    background: 'art/tokyo-wide.png', width: 724, height: 241,
-    windows: [[251, 169, 3, 6], [519, 132, 4, 3], [572, 161, 3, 4],
-      [304, 156, 5, 5], [333, 148, 3, 4], [410, 157, 3, 4],
-      [482, 176, 4, 6], [503, 150, 5, 4], [593, 144, 5, 3]],
-    darkWall: [238, 169, 3, 5],
-    stars: [[107, 15, 1, 1], [249, 20, 1, 1], [356, 22, 1, 1], [456, 20, 1, 1],
-      [569, 24, 1, 1], [304, 7, 1, 1], [399, 27, 1, 1], [643, 14, 1, 1],
-      [302, 37, 1, 1], [348, 39, 1, 1], [382, 41, 1, 1], [432, 44, 1, 1],
-      [567, 36, 1, 1], [462, 44, 1, 1], [258, 45, 1, 1]],
-    darkSky: [400, 8, 1, 1], floorPatch: [350, 230, 8, 8], railBottom: 122, floor: 222,
-    railPoles: [[282, 114, 3, 9], [357, 114, 3, 9], [425, 114, 3, 9], [486, 114, 3, 9], [619, 114, 3, 9]],
-    skyBottom: 55, aircraftY: 35, cloudY: 45, floorMargin: 8, actorScale: 0.5,
-  },
+  wide: { ...wideFineArt, background: wideFineArt.image },
 } as const;

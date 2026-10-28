@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-wide-fine-local/stars-half/atlas-source.png",
+    "width": 512,
+    "height": 2048,
+    "sha256": "6e5eea5693c86c1307b02d636c4d812155f9deb70e798cf619c5b07c7af4b28f"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-wide-fine-local/stars-half/atlas-corrected.png",
+    "width": 512,
+    "height": 2048,
+    "sha256": "6b5e210804b08747ae8675b9c9bf91fce03b961abbcdba8377e129eba1da5a42"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

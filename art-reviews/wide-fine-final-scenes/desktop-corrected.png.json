@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/wide-fine-final-scenes/desktop-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "90c82712905605adb233e06fc9f9b87b892d7f811a969c94aaf43a50bcd4f1b6"
+  },
+  "output": {
+    "path": "art-reviews/wide-fine-final-scenes/desktop-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "7cf3dc5a4534db6d636242d6a03dec7328b4d093c2445189332df670b33a3730"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

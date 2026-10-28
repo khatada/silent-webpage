@@ -1,0 +1,46 @@
+{
+  "sourceSha256": "96878cc7003050bdf3becc01dc8bbc91f1309c4400af3012efd1b31f032da4fc",
+  "decision": "accepted",
+  "reviewedBy": "LLM",
+  "method": "Viewed all 27 corrected PNG files at original detail using view_image. Rail and road/roof atlases compare requested 0/1/4/8 second frames; full views show requested 0 and/or 4 seconds.",
+  "reviewedFiles": [
+    "compact-4-full-corrected.png",
+    "compact-rail-0-corrected.png",
+    "compact-rail-1-corrected.png",
+    "compact-road-roof-0-corrected.png",
+    "compact-road-roof-1-corrected.png",
+    "desktop-wide-4-full-corrected.png",
+    "desktop-wide-rail-0-corrected.png",
+    "desktop-wide-rail-1-corrected.png",
+    "desktop-wide-rail-2-corrected.png",
+    "desktop-wide-rail-3-corrected.png",
+    "desktop-wide-road-roof-0-corrected.png",
+    "desktop-wide-road-roof-1-corrected.png",
+    "desktop-wide-road-roof-2-corrected.png",
+    "desktop-wide-road-roof-3-corrected.png",
+    "extreme-0-full-corrected.png",
+    "extreme-4-full-corrected.png",
+    "landscape-4-full-corrected.png",
+    "landscape-rail-0-corrected.png",
+    "landscape-rail-1-corrected.png",
+    "landscape-rail-2-corrected.png",
+    "landscape-road-roof-0-corrected.png",
+    "landscape-road-roof-1-corrected.png",
+    "landscape-road-roof-2-corrected.png",
+    "wide-1920-0-full-corrected.png",
+    "wide-1920-4-full-corrected.png",
+    "wide-3200-0-full-corrected.png",
+    "wide-3200-4-full-corrected.png"
+  ],
+  "observations": [
+    "At desktop-wide, compact and landscape, rail atlases show blue and orange trains moving between sampled frames and passing behind poles; no obvious pole seams or missing train sections were observed in those captures.",
+    "Road/roof atlases show the cat changing position and pose on the rooftop; sampled residential windows change brightness. Full views preserve the skyline and visible rooftop support without the rejected horizontal floor stripe.",
+    "Wide 1920 and 3200 captures show moving trains, cat and cloud between the two frames, with image edges filled.",
+    "Extreme 2000x500 fills the frame and shows one moon, but side-extension mirroring visibly repeats chairs and rooftop structures; this is an accepted limitation of this extreme aspect ratio."
+  ],
+  "limitations": [
+    "Finite still frames do not establish smoothness for all times, every cat pose or the full car route; star and distant window animation need separate local/time evidence.",
+    "Estimated best train RGB patch shifts at 0 to 1 requested second were 77, 46 and 60 physical pixels for desktop-wide, compact and landscape respectively. They are matching estimates, not exact speed measurements: frame timing and occlusion affect them.",
+    "These screenshots show the current generated image after correction, not a new generated artwork."
+  ]
+}

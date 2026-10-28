@@ -1,0 +1,1392 @@
+{
+  "status": "visually-reviewed-registration-awaiting-local-GPU-comparison",
+  "reviewer": "/root/wide_coordinates",
+  "actualVisualReview": true,
+  "image": "public/art/tokyo-wide-fine.png",
+  "sha256": "7f8cb65ed578188d66e1dbe929e86060f14e44df5cda54abd1484f4446d932bd",
+  "nativeSize": [
+    1446,
+    482
+  ],
+  "resolution": 2,
+  "logicalSize": [
+    723,
+    241
+  ],
+  "coordinateConvention": "NativeXYWH integer pixels, logical=each native coordinate/2; source-space crop depends on Pixi resolution2 semantics and requires GPUQA.",
+  "residentialWindows": [
+    {
+      "native": [
+        306,
+        308,
+        8,
+        10
+      ],
+      "logical": [
+        153.0,
+        154.0,
+        4.0,
+        5.0
+      ],
+      "sampleRGB": [
+        236,
+        206,
+        132
+      ]
+    },
+    {
+      "native": [
+        1155,
+        322,
+        8,
+        10
+      ],
+      "logical": [
+        577.5,
+        161.0,
+        4.0,
+        5.0
+      ],
+      "sampleRGB": [
+        253,
+        245,
+        151
+      ]
+    },
+    {
+      "native": [
+        608,
+        313,
+        5,
+        8
+      ],
+      "logical": [
+        304.0,
+        156.5,
+        2.5,
+        4.0
+      ],
+      "sampleRGB": [
+        248,
+        242,
+        132
+      ]
+    },
+    {
+      "native": [
+        828,
+        317,
+        7,
+        5
+      ],
+      "logical": [
+        414.0,
+        158.5,
+        3.5,
+        2.5
+      ],
+      "sampleRGB": [
+        235,
+        178,
+        97
+      ]
+    },
+    {
+      "native": [
+        1005,
+        300,
+        5,
+        9
+      ],
+      "logical": [
+        502.5,
+        150.0,
+        2.5,
+        4.5
+      ],
+      "sampleRGB": [
+        255,
+        252,
+        162
+      ]
+    },
+    {
+      "native": [
+        1089,
+        291,
+        4,
+        6
+      ],
+      "logical": [
+        544.5,
+        145.5,
+        2.0,
+        3.0
+      ],
+      "sampleRGB": [
+        252,
+        245,
+        182
+      ]
+    },
+    {
+      "native": [
+        510,
+        338,
+        10,
+        14
+      ],
+      "logical": [
+        255.0,
+        169.0,
+        5.0,
+        7.0
+      ],
+      "sampleRGB": [
+        214,
+        150,
+        23
+      ]
+    },
+    {
+      "native": [
+        1035,
+        302,
+        3,
+        5
+      ],
+      "logical": [
+        517.5,
+        151.0,
+        1.5,
+        2.5
+      ],
+      "sampleRGB": [
+        222,
+        177,
+        89
+      ]
+    },
+    {
+      "native": [
+        791,
+        317,
+        3,
+        6
+      ],
+      "logical": [
+        395.5,
+        158.5,
+        1.5,
+        3.0
+      ],
+      "sampleRGB": [
+        255,
+        248,
+        166
+      ]
+    }
+  ],
+  "darkWall": {
+    "native": [
+      1168,
+      322,
+      6,
+      10
+    ],
+    "logical": [
+      584.0,
+      161.0,
+      3.0,
+      5.0
+    ],
+    "sampleRGB": [
+      60,
+      45,
+      75
+    ]
+  },
+  "roomLightArea": {
+    "windowIndex": 6,
+    "glass": {
+      "native": [
+        510,
+        338,
+        10,
+        14
+      ],
+      "logical": [
+        255.0,
+        169.0,
+        5.0,
+        7.0
+      ],
+      "sampleRGB": [
+        214,
+        150,
+        23
+      ]
+    },
+    "leftGlass": {
+      "native": [
+        503,
+        342,
+        4,
+        10
+      ],
+      "logical": [
+        251.5,
+        171.0,
+        2.0,
+        5.0
+      ],
+      "sampleRGB": [
+        248,
+        214,
+        74
+      ]
+    },
+    "dark": {
+      "native": [
+        531,
+        338,
+        4,
+        12
+      ],
+      "logical": [
+        265.5,
+        169.0,
+        2.0,
+        6.0
+      ],
+      "sampleRGB": [
+        65,
+        52,
+        74
+      ]
+    },
+    "replace": true,
+    "reason": "Central large balcony upper glass, entirely above horizontal rail (native353). Right pane avoids central divider and outside right jamb. Smaller left pane excludes foreground pipe; native503..506,342..351. Native x510 is logical255, inside requested common central range."
+  },
+  "skylineLights": [
+    {
+      "lit": {
+        "native": [
+          390,
+          158,
+          1,
+          1
+        ],
+        "logical": [
+          195.0,
+          79.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          252,
+          241,
+          148
+        ]
+      },
+      "dark": {
+        "native": [
+          389,
+          160,
+          1,
+          1
+        ],
+        "logical": [
+          194.5,
+          80.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          11,
+          7,
+          38
+        ]
+      }
+    },
+    {
+      "lit": {
+        "native": [
+          489,
+          193,
+          1,
+          1
+        ],
+        "logical": [
+          244.5,
+          96.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          255,
+          255,
+          176
+        ]
+      },
+      "dark": {
+        "native": [
+          492,
+          191,
+          1,
+          1
+        ],
+        "logical": [
+          246.0,
+          95.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          50,
+          47,
+          103
+        ]
+      }
+    },
+    {
+      "lit": {
+        "native": [
+          616,
+          168,
+          1,
+          1
+        ],
+        "logical": [
+          308.0,
+          84.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          255,
+          255,
+          198
+        ]
+      },
+      "dark": {
+        "native": [
+          619,
+          168,
+          1,
+          1
+        ],
+        "logical": [
+          309.5,
+          84.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          22,
+          21,
+          81
+        ]
+      }
+    },
+    {
+      "lit": {
+        "native": [
+          758,
+          183,
+          1,
+          1
+        ],
+        "logical": [
+          379.0,
+          91.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          248,
+          253,
+          255
+        ]
+      },
+      "dark": {
+        "native": [
+          761,
+          180,
+          1,
+          1
+        ],
+        "logical": [
+          380.5,
+          90.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          6,
+          21,
+          77
+        ]
+      }
+    },
+    {
+      "lit": {
+        "native": [
+          901,
+          160,
+          1,
+          1
+        ],
+        "logical": [
+          450.5,
+          80.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          255,
+          255,
+          213
+        ]
+      },
+      "dark": {
+        "native": [
+          904,
+          158,
+          1,
+          1
+        ],
+        "logical": [
+          452.0,
+          79.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          14,
+          21,
+          64
+        ]
+      }
+    },
+    {
+      "lit": {
+        "native": [
+          1121,
+          199,
+          1,
+          1
+        ],
+        "logical": [
+          560.5,
+          99.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          250,
+          250,
+          219
+        ]
+      },
+      "dark": {
+        "native": [
+          1123,
+          196,
+          1,
+          1
+        ],
+        "logical": [
+          561.5,
+          98.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          9,
+          26,
+          76
+        ]
+      }
+    }
+  ],
+  "stars": [
+    {
+      "core": {
+        "native": [
+          281,
+          9,
+          1,
+          1
+        ],
+        "logical": [
+          140.5,
+          4.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          247,
+          248,
+          248
+        ]
+      },
+      "dark": {
+        "native": [
+          278,
+          8,
+          1,
+          1
+        ],
+        "logical": [
+          139.0,
+          4.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          3,
+          11,
+          45
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          535,
+          13,
+          1,
+          1
+        ],
+        "logical": [
+          267.5,
+          6.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          210,
+          208,
+          210
+        ]
+      },
+      "dark": {
+        "native": [
+          533,
+          14,
+          1,
+          1
+        ],
+        "logical": [
+          266.5,
+          7.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          0,
+          4,
+          39
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          805,
+          17,
+          1,
+          1
+        ],
+        "logical": [
+          402.5,
+          8.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          255,
+          253,
+          255
+        ]
+      },
+      "dark": {
+        "native": [
+          803,
+          18,
+          1,
+          1
+        ],
+        "logical": [
+          401.5,
+          9.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          0,
+          0,
+          36
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          1008,
+          20,
+          1,
+          1
+        ],
+        "logical": [
+          504.0,
+          10.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          232,
+          244,
+          255
+        ]
+      },
+      "dark": {
+        "native": [
+          1005,
+          19,
+          1,
+          1
+        ],
+        "logical": [
+          502.5,
+          9.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          4,
+          12,
+          45
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          290,
+          45,
+          1,
+          1
+        ],
+        "logical": [
+          145.0,
+          22.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          172,
+          180,
+          210
+        ]
+      },
+      "dark": {
+        "native": [
+          287,
+          43,
+          1,
+          1
+        ],
+        "logical": [
+          143.5,
+          21.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          3,
+          12,
+          45
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          541,
+          35,
+          1,
+          1
+        ],
+        "logical": [
+          270.5,
+          17.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          204,
+          180,
+          160
+        ]
+      },
+      "dark": {
+        "native": [
+          542,
+          33,
+          1,
+          1
+        ],
+        "logical": [
+          271.0,
+          16.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          8,
+          7,
+          38
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          798,
+          39,
+          1,
+          1
+        ],
+        "logical": [
+          399.0,
+          19.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          226,
+          225,
+          231
+        ]
+      },
+      "dark": {
+        "native": [
+          800,
+          40,
+          1,
+          1
+        ],
+        "logical": [
+          400.0,
+          20.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          0,
+          0,
+          36
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          1017,
+          50,
+          1,
+          1
+        ],
+        "logical": [
+          508.5,
+          25.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          255,
+          255,
+          252
+        ]
+      },
+      "dark": {
+        "native": [
+          1016,
+          51,
+          1,
+          1
+        ],
+        "logical": [
+          508.0,
+          25.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          0,
+          7,
+          36
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          316,
+          60,
+          1,
+          1
+        ],
+        "logical": [
+          158.0,
+          30.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          255,
+          233,
+          222
+        ]
+      },
+      "dark": {
+        "native": [
+          319,
+          63,
+          1,
+          1
+        ],
+        "logical": [
+          159.5,
+          31.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          3,
+          8,
+          38
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          547,
+          63,
+          1,
+          1
+        ],
+        "logical": [
+          273.5,
+          31.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          99,
+          126,
+          189
+        ]
+      },
+      "dark": {
+        "native": [
+          547,
+          60,
+          1,
+          1
+        ],
+        "logical": [
+          273.5,
+          30.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          5,
+          13,
+          53
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          755,
+          60,
+          1,
+          1
+        ],
+        "logical": [
+          377.5,
+          30.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          253,
+          249,
+          249
+        ]
+      },
+      "dark": {
+        "native": [
+          756,
+          58,
+          1,
+          1
+        ],
+        "logical": [
+          378.0,
+          29.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          3,
+          9,
+          47
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          742,
+          102,
+          1,
+          1
+        ],
+        "logical": [
+          371.0,
+          51.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          230,
+          229,
+          239
+        ]
+      },
+      "dark": {
+        "native": [
+          744,
+          100,
+          1,
+          1
+        ],
+        "logical": [
+          372,
+          50,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          10,
+          21,
+          73
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          282,
+          84,
+          1,
+          1
+        ],
+        "logical": [
+          141.0,
+          42.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          37,
+          53,
+          109
+        ]
+      },
+      "dark": {
+        "native": [
+          279,
+          81,
+          1,
+          1
+        ],
+        "logical": [
+          139.5,
+          40.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          8,
+          17,
+          59
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          515,
+          91,
+          1,
+          1
+        ],
+        "logical": [
+          257.5,
+          45.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          210,
+          217,
+          240
+        ]
+      },
+      "dark": {
+        "native": [
+          512,
+          91,
+          1,
+          1
+        ],
+        "logical": [
+          256.0,
+          45.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          9,
+          16,
+          59
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          777,
+          99,
+          1,
+          1
+        ],
+        "logical": [
+          388.5,
+          49.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          48,
+          83,
+          152
+        ]
+      },
+      "dark": {
+        "native": [
+          775,
+          100,
+          1,
+          1
+        ],
+        "logical": [
+          387.5,
+          50.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          12,
+          19,
+          67
+        ]
+      }
+    },
+    {
+      "core": {
+        "native": [
+          991,
+          88,
+          1,
+          1
+        ],
+        "logical": [
+          495.5,
+          44.0,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          102,
+          114,
+          157
+        ]
+      },
+      "dark": {
+        "native": [
+          989,
+          87,
+          1,
+          1
+        ],
+        "logical": [
+          494.5,
+          43.5,
+          0.5,
+          0.5
+        ],
+        "sampleRGB": [
+          4,
+          14,
+          60
+        ]
+      }
+    }
+  ],
+  "geometry": {
+    "railBottom": {
+      "native": 235,
+      "logical": 117.5,
+      "classification": "visual-estimate train-base/ledge; actual train baseline QA needed"
+    },
+    "railPoles": [
+      {
+        "native": [
+          568,
+          218,
+          4,
+          26
+        ],
+        "logical": [
+          284.0,
+          109.0,
+          2.0,
+          13.0
+        ],
+        "sampleRGB": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "native": [
+          715,
+          218,
+          4,
+          26
+        ],
+        "logical": [
+          357.5,
+          109.0,
+          2.0,
+          13.0
+        ],
+        "sampleRGB": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "native": [
+          851,
+          218,
+          4,
+          26
+        ],
+        "logical": [
+          425.5,
+          109.0,
+          2.0,
+          13.0
+        ],
+        "sampleRGB": [
+          9,
+          8,
+          23
+        ]
+      },
+      {
+        "native": [
+          974,
+          218,
+          4,
+          26
+        ],
+        "logical": [
+          487.0,
+          109.0,
+          2.0,
+          13.0
+        ],
+        "sampleRGB": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "native": [
+          1237,
+          218,
+          4,
+          26
+        ],
+        "logical": [
+          618.5,
+          109.0,
+          2.0,
+          13.0
+        ],
+        "sampleRGB": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "floor": {
+      "native": 424,
+      "logical": 212,
+      "classification": "visual floor support candidate: center wall ends about native414; native424 lies ten native pixels onto clear roof; all-pose GPU verification pending"
+    },
+    "floorPatch": {
+      "native": [
+        700,
+        460,
+        16,
+        16
+      ],
+      "logical": [
+        350.0,
+        230.0,
+        8.0,
+        8.0
+      ],
+      "sampleRGB": [
+        29,
+        26,
+        56
+      ]
+    },
+    "darkSky": {
+      "native": [
+        800,
+        16,
+        1,
+        1
+      ],
+      "logical": [
+        400.0,
+        8.0,
+        0.5,
+        0.5
+      ],
+      "sampleRGB": [
+        3,
+        13,
+        47
+      ]
+    },
+    "floorMargin": 4,
+    "skyBottom": 55,
+    "aircraftY": 35,
+    "cloudY": 45,
+    "plant": {
+      "sourceFoot": 209,
+      "sourceFloorTop": 207,
+      "classification": "visual candidate: center roof begins native414, pot foot native418, in front of wall and behind cat native424"
+    },
+    "streetCar": {
+      "route": [
+        [
+          357,
+          193
+        ],
+        [
+          357,
+          183
+        ],
+        [
+          354.5,
+          170
+        ],
+        [
+          355,
+          155
+        ]
+      ],
+      "width": 4,
+      "occlusion": [
+        [
+          342.5,
+          191,
+          24,
+          7.5
+        ]
+      ],
+      "context": [
+        335,
+        146,
+        45,
+        54
+      ],
+      "reviewScale": 8,
+      "classification": "candidate road center from native714,386 behind foreground wall to native710,310; GPU occlusion/scale QA pending"
+    }
+  },
+  "actualViewed": [
+    "selected-exact-crops.png initial exact windows9 and room glass/dark; exposed input window0 jamb, corrected as recorded.",
+    "window0-detail.png native298,299..333,329 nearest12",
+    "window3-detail.png native816,307..842,330 nearest12",
+    "window7-detail.png native1026,294..1046,315 nearest12",
+    "tiny-star-options.png native520,40..925,111 nearest3",
+    "tiny-star-selected.png native735,95..750,110 nearest20",
+    "overview.png original native1446x482",
+    "houses-center.png native crop380,270..1060,380 nearest2",
+    "room-options.png native450,280..850,380 nearest4",
+    "room-large.png native488,328..538,376 nearest10",
+    "room-selected.png native496,332..540,356 nearest12",
+    "room-dark-options.png native465,329..541,359 nearest10",
+    "weak-window.png native777,303..844,339 nearest10",
+    "window8-selected.png native785,313..802,327 nearest16",
+    "skyline-left.png native280,140..530,210 nearest4",
+    "skyline-new.png native365,146..413,193 nearest12",
+    "skyline0-selected.png native380,151..398,168 nearest16",
+    "stars-contacts.png input sixteen native15x15 around core, nearest8; index7 final core is one pixel below input upper shoulder",
+    "skylineLights-contacts.png input six native25x25 around lit, nearest8",
+    "residentialWindows-contacts.png input nine native35x35 around top-left crop, nearest5",
+    "rail.png native530,202..1280,255 nearest2",
+    "floor.png native450,382..1000,482 nearest2",
+    "road.png native660,275..750,390 nearest8",
+    "window0-final.png exact native306,308,8,10 nearest24; all glass, no jamb or rail."
+  ],
+  "limitations": [
+    "This is visual coordinate registration, not final production adoption; same-position GPU bright/mid/dark and off-mask equality checks pending.",
+    "floor212, plant209, streetCar route, skyBottom55/aircraft35/cloud45/floorMargin4 are visual/geometry candidates awaiting shared layout preflight and representative full-scene/all-pose GPU QA.",
+    "Dark room/wall crops copy real generated purple wall; stretching and gradients require rendered comparison.",
+    "Skyline/star cores mask only selected native pixels, preserving original surrounding halo; dim blue stars intentionally remain dim.",
+    "Input contact sheets reflect original candidate index6/8/skyline0; selected detail crops document new selections."
+  ],
+  "inputCandidate": "/workspace/art-review-trials/c033-registration.json",
+  "inputCandidateSha256": "e21e111c285746214cbe64695bff11fc03e2bfe0fadb6aab82676d912c3f704b",
+  "changesFromInput": [
+    "Residential index0 tightened to native306,308,8,10 after exact crops exposed a right jamb in input rectangle.",
+    "Star index11 replaced dim native990,70 with bright original native742,102; preserves 16 selected stars and supports 100x100 half-scale sampling phase where native coordinates are 2 modulo4.",
+    "Residential index8 moved off dark left edge and mullion to bright native791..793,317..322; foliage starts native323 so excluded.",
+    "Residential index6 replaces old far-right large room; index1 receives its earlier crop to retain nine unique windows.",
+    "Room moved into common central logical255..260. Left pane excludes pipe, upper crops stop before rail.",
+    "Skyline index0 gray facade detail replaced with warm upper lit core native390,158, same-building dark interior native389,160.",
+    "Star index7 uses native1017,50 brightest original core rather than native1017,49 upper shoulder. Other stars include dim blue stars; no pixels generated or painted."
+  ]
+}

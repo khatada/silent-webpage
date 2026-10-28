@@ -1,3 +1,4 @@
+import { createLogicalBackground } from '../src/logical-background';
 import { Application, Assets, Rectangle, Sprite, Texture } from 'pixi.js';
 import { generatedArt } from '../src/generated-art';
 import { createImageStars, starScenes } from '../src/image-stars';
@@ -6,6 +7,8 @@ import { nativeReviewTransform } from './native-review-transform';
 export async function renderStarStrengthReview() {
   const sources = await Promise.all([generatedArt.background, generatedArt.wide.background,
     generatedArt.portrait.background].map(path => Assets.load<Texture>(`/${path}`)));
+  sources[1] = createLogicalBackground(sources[1], generatedArt.wide.width,
+    generatedArt.wide.height, generatedArt.wide.resolution);
   sources.forEach(texture => { texture.source.scaleMode = 'nearest'; });
   const factory = createImageStars(sources);
   const app = new Application();

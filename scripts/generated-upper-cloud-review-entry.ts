@@ -1,3 +1,4 @@
+import { createLogicalBackground } from '../src/logical-background';
 import { Application, Assets, Container, Rectangle, RenderTexture, Sprite, Texture } from 'pixi.js';
 import { generatedArt } from '../src/generated-art';
 import { generatedLayout } from '../src/generated-layout';
@@ -26,6 +27,8 @@ export async function renderGeneratedUpperCloudReview() {
   const width = 1050, height = layouts.reduce((sum, item) => sum + item.layout.skyBottom + 8, 0);
   const materials = await Promise.all([generatedArt.atlas, generatedArt.background, generatedArt.wide.background,
     generatedArt.portrait.background].map(path => Assets.load<Texture>(`/${path}`)));
+  materials[2] = createLogicalBackground(materials[2], generatedArt.wide.width,
+    generatedArt.wide.height, generatedArt.wide.resolution);
   materials.forEach(texture => { texture.source.scaleMode = 'nearest'; });
   const cloudTexture = new Texture({ source: materials[0].source, frame: new Rectangle(...generatedArt.frames.cloud) });
   const aircraftTexture = new Texture({ source: materials[0].source, frame: new Rectangle(...generatedArt.frames.aircraft) });

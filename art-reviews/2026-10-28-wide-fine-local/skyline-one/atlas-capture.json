@@ -1,0 +1,33 @@
+{
+  "sourceSha256": "96878cc7003050bdf3becc01dc8bbc91f1309c4400af3012efd1b31f032da4fc",
+  "finalSourceSha256": "96878cc7003050bdf3becc01dc8bbc91f1309c4400af3012efd1b31f032da4fc",
+  "metadata": {
+    "kind": "skyline",
+    "scale": 1,
+    "origin": [
+      0,
+      0
+    ],
+    "width": 512,
+    "height": 768,
+    "panel": 128,
+    "stateColumns": [
+      "original",
+      "on",
+      "mid",
+      "off"
+    ],
+    "poleComparisons": [],
+    "samples": [
+      {"index":0,"nativeContext":[187,71,17,17],"glass":[[195,79,0.5,0.5]],"sampledExpected":false,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":20.415298433043063,"alpha":0,"sampled":false,"changed":0,"outside":0},{"state":"mid","seconds":20.765298433043064,"alpha":0.5000000000000031,"sampled":false,"changed":0,"outside":0},{"state":"off","seconds":24.477965032598053,"alpha":1,"sampled":false,"changed":0,"outside":0}]},
+      {"index":1,"nativeContext":[236,88,17,17],"glass":[[244.5,96.5,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":19.307026842609048,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":19.65702684260905,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":24.286013933983554,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":2,"nativeContext":[300,76,17,17],"glass":[[308,84,0.5,0.5]],"sampledExpected":false,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":23.05917332228273,"alpha":0,"sampled":false,"changed":0,"outside":0},{"state":"mid","seconds":23.409173322282733,"alpha":0.5000000000000031,"sampled":false,"changed":0,"outside":0},{"state":"off","seconds":27.35438170744968,"alpha":1,"sampled":false,"changed":0,"outside":0}]},
+      {"index":3,"nativeContext":[371,83,17,17],"glass":[[379,91.5,0.5,0.5]],"sampledExpected":false,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":21.08328373450786,"alpha":0,"sampled":false,"changed":0,"outside":0},{"state":"mid","seconds":21.43328373450786,"alpha":0.5000000000000031,"sampled":false,"changed":0,"outside":0},{"state":"off","seconds":25.060728148277832,"alpha":1,"sampled":false,"changed":0,"outside":0}]},
+      {"index":4,"nativeContext":[442,72,17,17],"glass":[[450.5,80,0.5,0.5]],"sampledExpected":false,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":25.276876412332058,"alpha":0,"sampled":false,"changed":0,"outside":0},{"state":"mid","seconds":25.62687641233206,"alpha":0.5000000000000031,"sampled":false,"changed":0,"outside":0},{"state":"off","seconds":28.370951370805027,"alpha":1,"sampled":false,"changed":0,"outside":0}]},
+      {"index":5,"nativeContext":[552,91,17,17],"glass":[[560.5,99.5,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":22.39578555058688,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":22.74578555058688,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":26.836886503376864,"alpha":1,"sampled":true,"changed":1,"outside":0}]}
+    ]
+  },
+  "method": "Image-generation textures composited by /scripts/wide-fine-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

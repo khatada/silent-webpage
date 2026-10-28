@@ -1,3 +1,4 @@
+import { wideFineArt } from './wide-fine-art';
 import { Container, Rectangle, Texture } from 'pixi.js';
 import { createWindowCover } from './image-window-cover';
 
@@ -6,7 +7,7 @@ type Rect = readonly [number, number, number, number];
 /** Glass interiors only: frames, balcony rails and plants stay in the generated backdrop. */
 export const roomLightAreas = [
   { windowIndex: 1, glass: [389, 292, 8, 8], leftGlass: [379, 292, 8, 8], dark: [400, 292, 8, 8], replace: true },
-  { windowIndex: 6, glass: [483, 175, 5, 11], leftGlass: undefined, dark: [263, 169, 4, 6], replace: true },
+  wideFineArt.roomLight,
   { windowIndex: 0, glass: [531, 936, 12, 14], leftGlass: [516, 936, 12, 14], dark: [548, 936, 12, 14], replace: true },
 ] as const;
 

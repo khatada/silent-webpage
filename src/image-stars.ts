@@ -1,3 +1,4 @@
+import { wideFineArt } from './wide-fine-art';
 import { Container, Rectangle, Sprite, Texture } from 'pixi.js';
 import { starDarkness } from './star-timing';
 
@@ -19,24 +20,7 @@ export const starScenes = [
     { core: [331, 92, 1, 1], dark: [330, 90, 1, 1] },
     { core: [321, 83, 1, 1], dark: [322, 81, 1, 1] },
   ],
-  [
-    { core: [123, 12, 1, 1], dark: [122, 14, 1, 1] },
-    { core: [283, 10, 1, 1], dark: [286, 10, 1, 1] },
-    { core: [380, 9, 1, 1], dark: [378, 8, 1, 1] },
-    { core: [643, 14, 1, 1], dark: [642, 16, 1, 1] },
-    { core: [82, 30, 1, 1], dark: [81, 28, 1, 1] },
-    { core: [513, 26, 1, 1], dark: [513, 23, 1, 1] },
-    { core: [567, 36, 1, 1], dark: [567, 33, 1, 1] },
-    { core: [492, 46, 1, 1], dark: [489, 46, 1, 1] },
-    { core: [462, 44, 1, 1], dark: [462, 41, 1, 1] },
-    { core: [258, 45, 1, 1], dark: [257, 43, 1, 1] },
-    { core: [348, 33, 1, 1], dark: [349, 31, 1, 1] },
-    { core: [412, 54, 1, 1], dark: [412, 51, 1, 1] },
-    { core: [107, 15, 1, 1], dark: [106, 17, 1, 1] },
-    { core: [137, 23, 1, 1], dark: [137, 20, 1, 1] },
-    { core: [535, 43, 1, 1], dark: [533, 44, 1, 1] },
-    { core: [323, 33, 1, 1], dark: [325, 32, 1, 1] },
-  ],
+  wideFineArt.starCores,
   [
     { core: [210, 24, 1, 1], dark: [208, 25, 1, 1] },
     { core: [486, 12, 1, 1], dark: [487, 14, 1, 1] },
@@ -57,7 +41,10 @@ export const starScenes = [
 ] as const;
 
 /** Reciprocal-integer reduction samples one source pixel per cell, never its discarded neighbours. */
-export function starCoreSampled(x: number, y: number, scale: number) {
+export function starCoreSampled(x: number, y: number, scale: number, resolution = 1) {
+  x *= resolution;
+  y *= resolution;
+  scale /= resolution;
   if (scale >= 1) return true;
   const step = Math.round(1 / scale);
   const sampledOffset = Math.floor(step / 2);
@@ -76,7 +63,7 @@ export function createImageStars(backgrounds: readonly Texture[]) {
       const star = new Sprite(textures[composition][index]);
       star.position.set(x, y);
       star.roundPixels = false;
-      star.visible = starCoreSampled(x, y, scale);
+      star.visible = starCoreSampled(x, y, scale, composition === 1 ? wideFineArt.resolution : 1);
       root.addChild(star);
       return star;
     });

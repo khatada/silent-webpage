@@ -20,10 +20,21 @@ export function generatedLayout(width: number, height: number) {
   const coverScale = Math.ceil(Math.max(width / composition.width, height / composition.height));
   const requiredSky = Math.ceil(height * 0.05);
   const scenerySpan = composition.floor + composition.floorMargin - composition.skyBottom;
-  const maximumScale = (height - requiredSky) / scenerySpan;
+  const maximumScale = Math.max(1 / (composition.height * 2), (height - requiredSky) / scenerySpan);
   // Reciprocal integer downsampling keeps a uniform nearest-neighbour output grid on small phones.
-  const scale = maximumScale < 1 ? 1 / Math.ceil(1 / maximumScale)
+  const unquantizedScale = maximumScale < 1 ? 1 / Math.ceil(1 / maximumScale)
     : Math.min(coverScale, Math.floor(maximumScale));
+  // Actor size and travel retain the previous wide composition, independently of background sampling.
+  const legacyMaximum = Math.max(1 / 482, (height - requiredSky) / (222 + 8 - 55));
+  const motionScale = wide ? (legacyMaximum < 1 ? 1 / Math.ceil(1 / legacyMaximum)
+    : Math.min(Math.ceil(Math.max(width / 724, height / 241)), Math.floor(legacyMaximum))) : unquantizedScale;
+  let scale = unquantizedScale;
+  if (wide && maximumScale >= 2) {
+    const minimumEven = 2 * Math.ceil(width / (composition.width * 2));
+    const maximumEven = 2 * Math.floor(maximumScale / 2);
+    const preferredEven = Math.max(2, 2 * Math.ceil(motionScale / 2 - 0.5));
+    scale = Math.min(maximumEven, Math.max(minimumEven, preferredEven));
+  } else if (wide && maximumScale >= 1) scale = 1;
   const originX = Math.round((width - composition.width * scale) / 2);
   const minimumY = requiredSky - composition.skyBottom * scale;
   const maximumY = height - (composition.floor + composition.floorMargin) * scale;
@@ -33,12 +44,12 @@ export function generatedLayout(width: number, height: number) {
   const railBottom = sourceY(composition.railBottom);
   const skyBottom = sourceY(composition.skyBottom);
   const skyRoom = Math.max(1, skyBottom - 2 * scale);
-  const aircraftScale = Math.min(scale * 0.17 * composition.actorScale, skyRoom / 100);
-  const cloudScale = Math.min(scale * 0.7 * composition.actorScale, skyRoom / 70);
+  const aircraftScale = Math.min(motionScale * 0.17 * composition.actorScale, skyRoom / 100);
+  const cloudScale = Math.min(motionScale * 0.7 * composition.actorScale, skyRoom / 70);
   const skyY = (source: number, actorHeight: number) => Math.round(Math.max(2 * scale,
     Math.min(sourceY(source), skyBottom - actorHeight)));
   return {
-    wide, portrait, composition, scale, originX, originY, railBottom, skyBottom, aircraftScale, cloudScale,
+    wide, portrait, composition, scale, motionScale, originX, originY, railBottom, skyBottom, aircraftScale, cloudScale,
     aircraftY: skyY(composition.aircraftY, 100 * aircraftScale),
     cloudY: skyY(composition.cloudY, 70 * cloudScale),
     catY: Math.min(height - (wide ? 4 : 8) * scale, sourceY(composition.floor)),

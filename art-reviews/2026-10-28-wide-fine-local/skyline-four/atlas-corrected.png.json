@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-wide-fine-local/skyline-four/atlas-source.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "eae7569404667b4e2e1c5ba7ce37e37f4d452788288e340f34e3f0b87e21f2e6"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-wide-fine-local/skyline-four/atlas-corrected.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "6d4d56a7bd00bbe10ddd28cf1da67b8d4236aadf2b229e2199cdd5197d735e39"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,54 @@
+{
+  "sourceSha256": "96878cc7003050bdf3becc01dc8bbc91f1309c4400af3012efd1b31f032da4fc",
+  "adoption": "ACCEPTED_LOCAL_LIGHT_COMPOSITES",
+  "method": "Production createImageWideBackground rendered once to a complete native RenderTexture per scale. Production room, skyline and star factories rendered/extracted at the same absolute origin0,0. Native RGBA buffer context cropped and putImageData 1:1 into atlas. No original artwork drawn.",
+  "verified": {
+    "samePositionOnOriginalExactRgba": 124,
+    "glassOrCoreOutsideChangedPixels": 0,
+    "nonSampledCoreChangedPixels": 0,
+    "correctionRgbaUnchanged": true,
+    "noTrainPoleFullViewportExactRgbaComparisons": 20
+  },
+  "visualReason": "All 12 corrected atlases opened in full using view_image original. Window frames, balconies and surrounding plants stay fixed; large window index6 includes both glasses. Skyline and star changes remain within selected generated cores. At scale0.5 windows7/8 show no changed pixel because their glass is discarded by sampling. Small cores sometimes quantize the mid brightness to the original pixel.",
+  "sampling": {
+    "origin": "Production generatedLayout origins are integer; tested origin0. Fractional source coordinates are retained. New runtime background roundPixels=false matches its production factory. Fractional origins are not used in production.",
+    "starsHalf": [
+      11
+    ],
+    "starsOne": [
+      0,
+      1,
+      2,
+      5,
+      9,
+      13,
+      14
+    ],
+    "skylineHalf": [
+      0
+    ],
+    "skylineOne": [
+      1,
+      5
+    ]
+  },
+  "files": [
+    {"name":"skyline-four","correctedSha256":"6d4d56a7bd00bbe10ddd28cf1da67b8d4236aadf2b229e2199cdd5197d735e39","decision":"ACCEPTED","actualLlmView":"view_image detail original, full native atlas","sampleGroups":6},
+    {"name":"skyline-half","correctedSha256":"8c310db4477f92a8552cf651bd499d921bbe1bf50aa470f747ce608ca6fb6a05","decision":"ACCEPTED","actualLlmView":"view_image detail original, full native atlas","sampleGroups":6},
+    {"name":"skyline-one","correctedSha256":"a9e0d1eb43c2fef6ff0772fa5eadcf8e136342f94acbebe7ba4cfc19a284fe60","decision":"ACCEPTED","actualLlmView":"view_image detail original, full native atlas","sampleGroups":6},
+    {"name":"skyline-two","correctedSha256":"65d70cc5f887d449a6c4dd6e7d5aac437ba46ad2547df64af0f4b326efb37e77","decision":"ACCEPTED","actualLlmView":"view_image detail original, full native atlas","sampleGroups":6},
+    {"name":"stars-four","correctedSha256":"a7178bb0f2336a5d0ae3942ac3efab4c417beebcca425e93704c554d6f0da25d","decision":"ACCEPTED","actualLlmView":"view_image detail original, full native atlas","sampleGroups":16},
+    {"name":"stars-half","correctedSha256":"6b5e210804b08747ae8675b9c9bf91fce03b961abbcdba8377e129eba1da5a42","decision":"ACCEPTED","actualLlmView":"view_image detail original, full native atlas","sampleGroups":16},
+    {"name":"stars-one","correctedSha256":"fc4a45588b0d65bb4550f9192f6b4c82a225c4789660fd73201bc819e3b04f0f","decision":"ACCEPTED","actualLlmView":"view_image detail original, full native atlas","sampleGroups":16},
+    {"name":"stars-two","correctedSha256":"02459cd8be2da5df622ffd70cfc49ac6d93aed97b57b9a24f6893af9d3d0845c","decision":"ACCEPTED","actualLlmView":"view_image detail original, full native atlas","sampleGroups":16},
+    {"name":"windows-four","correctedSha256":"56c96168421165751394ebdba59ef585d9de1e3bbe8cc6394cb1f43aae6c2f7c","decision":"ACCEPTED","actualLlmView":"view_image detail original, full native atlas","sampleGroups":9},
+    {"name":"windows-half","correctedSha256":"b7766d0919e064246164611c0b64e1472fbc699e79063b1bde622fb610db5c4a","decision":"ACCEPTED","actualLlmView":"view_image detail original, full native atlas","sampleGroups":9},
+    {"name":"windows-one","correctedSha256":"ced0e2038512b9e8fcc24b741a346954add12f0b2beb37637bd0c0b08901a527","decision":"ACCEPTED","actualLlmView":"view_image detail original, full native atlas","sampleGroups":9},
+    {"name":"windows-two","correctedSha256":"c9479c7e463a7f370015c8833ee0ec677daebe9901ae19442521a965f756d3a3","decision":"ACCEPTED","actualLlmView":"view_image detail original, full native atlas","sampleGroups":9}
+  ],
+  "poles": "Production createImageRailPoles used directly. Each of 5 returned pole sprites was individually added over the whole production background at scales0.5/1/2/4 without a train. Full viewport RGBA comparison returned0 changed pixels in all20 comparisons.",
+  "previousTrials": [
+    "/workspace/art-review-trials/c033-gpu-extract-trial: rejected ExtractOptions.frame method; rejection.json records reason",
+    "/workspace/art-review-trials/c033-before-floor-pole-fix-local: source reopened after floor stripe rejection and pole0.5 mismatches; not adopted"
+  ]
+}

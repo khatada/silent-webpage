@@ -1,3 +1,4 @@
+import { createLogicalBackground } from '../src/logical-background';
 import { Application, Assets, Container, Rectangle, RenderTexture, Sprite, Texture } from 'pixi.js';
 import { generatedArt } from '../src/generated-art';
 import { createImageRoomLights, roomLightAreas } from '../src/image-room-lights';
@@ -8,6 +9,8 @@ import { windowReviewBackground } from './window-review-background';
 export async function renderGeneratedRoomLightReview() {
   const compositions = [generatedArt, generatedArt.wide, generatedArt.portrait];
   const sources = await Promise.all(compositions.map(composition => Assets.load<Texture>(`/${composition.background}`)));
+  sources[1] = createLogicalBackground(sources[1], generatedArt.wide.width,
+    generatedArt.wide.height, generatedArt.wide.resolution);
   for (const source of sources) source.source.scaleMode = 'nearest';
   const factory = createImageRoomLights(sources);
   const app = new Application();

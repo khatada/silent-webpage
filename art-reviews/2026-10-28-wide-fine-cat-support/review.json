@@ -1,0 +1,60 @@
+{
+  "adoption": "ACCEPTED",
+  "sourceSha256": "96878cc7003050bdf3becc01dc8bbc91f1309c4400af3012efd1b31f032da4fc",
+  "method": "Same production generatedLayout(800,600), complete createImageWideBackground and createImageCat. Background rendered once to800x600 RenderTexture, cat rendered at absolute production coordinates, whole native RGBA extracted and the identical context cropped into1:1 atlas panels. Generated sprites only; no original artwork drawn.",
+  "actualLlmView": "Opened both corrected1040x1408 atlases using view_image detail original, inspecting their complete native areas. Additionally inspected a2x nearest crop of background/neutral/rise2 to resolve the floor boundary.",
+  "layout": {
+    "scale": 2,
+    "motionScale": 3,
+    "actorScale": 1.5,
+    "originX": -323,
+    "originY": 59,
+    "catY": 483,
+    "floor": 212
+  },
+  "context": [
+    80,
+    383,
+    260,
+    128
+  ],
+  "coverage": "Both directions: walk8, neutral1, look2, groom6, settle6 including endpoint poses, stretch6 including curled/stretch endpoints, turn8 including entering stretch and outgoing walk, rise6. Each atlas has43 cat snapshots plus1 background panel.",
+  "result": "ACCEPTED: Across both directions, walking paws, seated hips/feet, curled underside, lowered settle poses, extended stretch forepaws and turning feet all remain over the generated floor. No wall-top floating or silhouette clipping. The floor/wall boundary and generated furniture remain unchanged because every snapshot shares the same whole-background render and absolute context.",
+  "measurements": {
+    "catSnapshots": 86,
+    "backgroundSnapshots": 2,
+    "clippedSilhouettes": 0,
+    "rgbaCorrectionUnchanged": true,
+    "usedPoseOpaqueBottomY": [
+      481,
+      483
+    ],
+    "riseSupplementalOpaqueBottomY": [
+      475,
+      479
+    ],
+    "footY": 483
+  },
+  "walkingScope": "Nominal worldX200. Production walk frame depends on worldX; each requested phase uses the nearest worldX to200 selecting that phase, retained in metadata. Walking is not repositioned after factory.update. Other poses stay atx200.",
+  "supplementalRise": "The compact production catPose contains no riseFrame over a complete72s period sampled every0.1s. Rise1..6 were additionally displayed; their feet are up to8px higher than the nominal anchor. Enlarged nearest inspection confirms that they remain on the floor side of the parapet boundary, rather than floating on its wall. This different depth is an existing pose property, not a change to the wide geometry. The gate result is specific to800x600: other wide viewports can enable rising, so this review does not characterize rise as unused throughout the wide composition.",
+  "omissions": "The old rest-atlas groomOne/groomTwo fallback sprites without groomFrame are unreachable from current production catPose and are not separately rendered. No claim about other viewports, other worldX positions or whole-cycle temporal smoothness is made by these fixed contact snapshots.",
+  "files": [
+    {
+      "name": "right",
+      "correctedSha256": "3fa65347b9ff0c4c72655ad895f4af260995051abdc4d05788168d9ef3c2d1ec",
+      "decision": "ACCEPTED",
+      "width": 1040,
+      "height": 1408,
+      "catSnapshots": 43
+    },
+    {
+      "name": "left",
+      "correctedSha256": "9fb28555d38800331893ca1df0afaca55d4644fd03451a8ec32840d3de0dcc33",
+      "decision": "ACCEPTED",
+      "width": 1040,
+      "height": 1408,
+      "catSnapshots": 43
+    }
+  ],
+  "wallBoundaryVisualCheck": "The additional2x nearest view contains matching native background-only, neutral and rise2 panels. The lower horizontal edge of the vertical parapet face lies above the displayed paw bottoms; generated ground tiles continue under and below those paws. The native atlases were also inspected in their complete areas."
+}

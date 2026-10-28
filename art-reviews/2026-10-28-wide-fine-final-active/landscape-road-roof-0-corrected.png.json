@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/landscape-road-roof-0-source.png",
+    "width": 1280,
+    "height": 576,
+    "sha256": "3a46caacc5312f9878a9bfcb03d18e57bff7743164f66173ab119c2805a32e3c"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/landscape-road-roof-0-corrected.png",
+    "width": 1280,
+    "height": 576,
+    "sha256": "3a46caacc5312f9878a9bfcb03d18e57bff7743164f66173ab119c2805a32e3c"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

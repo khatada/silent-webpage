@@ -7,7 +7,7 @@ const viewports = [[1440, 900], [390, 844], [295, 844], [844, 390], [2560, 1080]
 describe('upper cloud lane', () => {
   it('omits crowded representative skies and preserves margins in roomy ones', () => {
     const geometries = viewports.map(([width, height]) => upperCloudGeometry(generatedLayout(width, height)));
-    expect(geometries.map(geometry => geometry.visible)).toEqual([true, false, false, false, true, false, true, true, true, true, true]);
+    expect(geometries.map(geometry => geometry.visible)).toEqual([true, false, false, false, true, true, true, true, true, true, true]);
     for (const geometry of geometries.filter(geometry => geometry.visible)) {
       expect(geometry.top).toBeGreaterThanOrEqual(4);
       expect(geometry.lowerTop - geometry.bottom).toBeGreaterThanOrEqual(4);
