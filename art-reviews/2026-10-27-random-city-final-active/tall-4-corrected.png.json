@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-random-city-final-active/tall-4-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "602710c131735828b2667c14e9701b8c459c1c4e1bc32c1611534dc2af1d6741"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-27-random-city-final-active/tall-4-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "fa676e9af06bdbce4cac7f2d715bc26ef8a270f66dcdd8a3c98ec10fc339a9cf"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

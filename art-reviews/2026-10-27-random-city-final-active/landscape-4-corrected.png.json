@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-random-city-final-active/landscape-4-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "951d1d5860f2cc739c4a931d43845c9e1ff4e014893eaff682e9e07b042ffadb"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-27-random-city-final-active/landscape-4-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "2527a50b84ab5a8bbd1c89b7d2eb74c2f86c9d04ce5451c39010797da3f8e981"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

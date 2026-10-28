@@ -139,3 +139,5 @@
 - OSの動き軽減を解除して本番QAの時計を進める場合、emulateMediaの完了だけで開始済みと扱わずcanvas[data-motion="running"]を待つ。C032ではmedia変更直後もpausedで、実験の初回running RAFが約180ms遅れ、短い中間poseが前段に写った。待機後に13段階を再撮影して解消。rendererの不具合や姿勢不足と混同せず、開始状態とRAF時刻を先に調べる。
 
 - 希望する出力寸法からcell-sizeを逆算して原画の格子だと断定しない。C033のrawは1pxの細部と混合clusterがあり、1.5pxの均一格子の根拠がなかった。原画1px補正と許可されたnearestサイズ変更と最終1px補正を別段階へ記録し、細部の由来を画像生成と明確にする。縮小で失う細部も限界へ記載する。
+
+- 端末名から背景構図を推定せず、generatedLayoutの実値をmetadataとassertへ使う。C034の390×844はnormalで、portrait検証のため390×1025を追加した。動作画像の計測は計算alphaと実画像RGB平均を分け、遮蔽/最終RAFのずれ/有限sampleの限界も併記する。

@@ -1,0 +1,30 @@
+{
+  "reviewer": "/root/rise_qa",
+  "decision": "accepted_representative_local_composition",
+  "actualVisualReview": true,
+  "viewed": "art-reviews/2026-10-27-random-lights-local/atlas-corrected.png",
+  "sourceSha256": "1c020eb2efcb96b0d27353a79cf6cd0b12cfe926f35655d8aa81b82383eb1ca0",
+  "correctedSha256": "25290b86a69017b6aece05a2200b3064ae6e63b536b70645516d04d133e549ea",
+  "sampleCount": 6,
+  "panelCount": 30,
+  "representatives": "window0/star0 of normal/wide/portrait at4x; every actor/event is not represented",
+  "reasons": [
+    "Original and event1/event2 bright panels match across every RGBA byte.",
+    "Intermediate and dim cores retain surrounding window frames, building details and star glow.",
+    "Star cores dim gently without vanishing; building window cores reach dark interiors and return lit in next event."
+  ],
+  "measurements": {
+    "allOutsideCoreChangedPixels": 0,
+    "brightPanelChangedPixels": 0,
+    "windowDimAlpha": 1,
+    "starDimAlphaRange": [
+      0.34845098366029564,
+      0.3837540117930621
+    ],
+    "correctionRGBAUnchanged": true
+  },
+  "limitations": [
+    "Static representative GPU states do not prove irregular timing for every actor. Pure function tests cover timing and independence; production active captures cover integration.",
+    "Only existing reviewed generated crops composited; no original artwork drawn."
+  ]
+}

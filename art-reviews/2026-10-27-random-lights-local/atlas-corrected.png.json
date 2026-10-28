@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-random-lights-local/atlas-source.png",
+    "width": 640,
+    "height": 672,
+    "sha256": "899da9ac5858761e2f60cb34ca63bc8e6d9563c51b085f864a07d9efba793302"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-27-random-lights-local/atlas-corrected.png",
+    "width": 640,
+    "height": 672,
+    "sha256": "25290b86a69017b6aece05a2200b3064ae6e63b536b70645516d04d133e549ea"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

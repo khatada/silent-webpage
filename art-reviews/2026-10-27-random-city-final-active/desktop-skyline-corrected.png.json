@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-random-city-final-active/desktop-skyline-source.png",
+    "width": 1440,
+    "height": 3348,
+    "sha256": "cfb04f1f6d95b428622d206ea5f0b3ab5316bfd500468b87af589ad0a296156c"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-27-random-city-final-active/desktop-skyline-corrected.png",
+    "width": 1440,
+    "height": 3348,
+    "sha256": "cfb04f1f6d95b428622d206ea5f0b3ab5316bfd500468b87af589ad0a296156c"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

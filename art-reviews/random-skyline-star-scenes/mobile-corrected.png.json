@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/random-skyline-star-scenes/mobile-source.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "38c90b27b8d820c4f2a5d79100148675b489e1a982348e8378462c29ce30d6f9"
+  },
+  "output": {
+    "path": "art-reviews/random-skyline-star-scenes/mobile-corrected.png",
+    "width": 780,
+    "height": 1688,
+    "sha256": "635bc3a7ba2eca25654079b5487f81f7a5f275eb9e672c48a447e45c35f0e9a2"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
