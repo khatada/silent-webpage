@@ -1,0 +1,43 @@
+{
+  "sourceSha256": "9273ad2c74c628833f5e594471b6f7f8814d671bf537c496131660dc5cf28650",
+  "finalSourceSha256": "9273ad2c74c628833f5e594471b6f7f8814d671bf537c496131660dc5cf28650",
+  "metadata": {
+    "kind": "skyline",
+    "scale": 2,
+    "origin": [
+      0,
+      0
+    ],
+    "width": 512,
+    "height": 2048,
+    "panel": 128,
+    "stateColumns": [
+      "original",
+      "on",
+      "mid",
+      "off"
+    ],
+    "poleComparisons": [],
+    "samples": [
+      {"index":0,"nativeContext":[374,142,33,33],"glass":[[195,79,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":20.415298433043063,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":20.765298433043064,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":24.477965032598053,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":1,"nativeContext":[473,177,33,33],"glass":[[244.5,96.5,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":19.307026842609048,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":19.65702684260905,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":24.286013933983554,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":2,"nativeContext":[600,152,33,33],"glass":[[308,84,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":23.05917332228273,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":23.409173322282733,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":27.35438170744968,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":3,"nativeContext":[742,167,33,33],"glass":[[379,91.5,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":21.08328373450786,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":21.43328373450786,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":25.060728148277832,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":4,"nativeContext":[885,144,33,33],"glass":[[450.5,80,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":25.276876412332058,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":25.62687641233206,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":28.370951370805027,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":5,"nativeContext":[1105,183,33,33],"glass":[[560.5,99.5,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":22.39578555058688,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":22.74578555058688,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":26.836886503376864,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":6,"nativeContext":[48,166,33,33],"glass":[[32,91,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":22.65449023898691,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":23.00449023898691,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":27.590125690332094,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":7,"nativeContext":[224,142,33,33],"glass":[[120,79,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":22.93816671706736,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":23.288166717067362,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":27.098440652792853,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":8,"nativeContext":[491,149,33,33],"glass":[[253.5,82.5,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":22.142727203667164,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":22.492727203667165,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":26.21367794460832,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":9,"nativeContext":[557,166,33,33],"glass":[[286.5,91,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":22.40388570446521,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":22.753885704465212,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":27.515244519604423,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":10,"nativeContext":[636,133,33,33],"glass":[[326,74.5,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":23.141101232729852,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":23.491101232729854,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":26.459916987370438,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":11,"nativeContext":[688,169,33,33],"glass":[[352,92.5,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":23.037989931181073,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":23.387989931181075,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":26.88268436885595,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":12,"nativeContext":[819,153,33,33],"glass":[[417.5,84.5,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":23.931529130786657,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":24.28152913078666,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":27.152125613899276,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":13,"nativeContext":[1054,177,33,33],"glass":[[535,96.5,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":23.7342681363225,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":24.0842681363225,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":27.801107449390337,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":14,"nativeContext":[1125,164,33,33],"glass":[[570.5,90,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":24.335152068175375,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":24.685152068175377,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":28.244280392123095,"alpha":1,"sampled":true,"changed":1,"outside":0}]},
+      {"index":15,"nativeContext":[1303,141,33,33],"glass":[[659.5,78.5,0.5,0.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":23.058861386962235,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":23.408861386962236,"alpha":0.5000000000000031,"sampled":true,"changed":1,"outside":0},{"state":"off","seconds":27.40208005617258,"alpha":1,"sampled":true,"changed":1,"outside":0}]}
+    ]
+  },
+  "method": "Image-generation textures composited by /scripts/wide-fine-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

@@ -246,3 +246,10 @@
 - 最新CI復旧: PR34はCI39774106648成功後main283a78bへマージ済み。job119808606726で実際のHTTPS取得を確認。C011のsource44ed047ce351e43eee36864186f25dc4cf7d64d3f682e787ef49080d578e94c7は変更なし。今回の記録/参照保存後にverifyを再実行してamendし、親がrebase/PR/公開へ進む。
 
 - C033 最終動作QA: 本番画面の補正後27画像をLLMが実閲覧し採用。通常画面で列車・猫・窓と柱の遮蔽に目立つ崩れなし。2000×500では端の家具・小屋が鏡像反復する制約あり。有限時刻の確認であり連続動作全体の証明ではない。証跡 `art-reviews/2026-10-28-wide-fine-final-active/review.json`。必須verify・PR・CI・公開はこれから。
+
+## 2026-10-28 C033 完了と次の作業
+
+- [PR #64](https://github.com/khatada/silent-webpage/pull/64) は head `30928f8d80110131790fab68d21fbf1e04d9d476` の CI 40710014508（Playwright 含む）成功後、main `5e43f13d2ca29c0e2783adadaf37482d7ef7420d` に squash merge。Pages 40710598687 は verify 122894508449 と publish 122896448268 が成功し公開済み。PR 添付ツールは応答しなかった。
+- 次のブランチ `feat/wide-distant-window-lights` はこの main から作成。遠景窓の追加を実装中。高精細背景で各明窓の周辺が変化しないこと、縮小後の視認性、補正・LLM閲覧を確認する。
+
+- 遠景窓拡張: 横長背景6→16芯、既存6の順序維持。source `9273ad2c74c628833f5e594471b6f7f8814d671bf537c496131660dc5cf28650`。4倍率局所、11全景、3画面×9時刻を補正後LLMが閲覧。窓以外の変更0。wide/compact/landscapeの新窓9/6/7点で時刻間最大チャネル差190–232。全景では変化が細かく、注意しないと分かりにくい。0.5倍では新窓が標本化されない。必須verify・コミット・PRはこれから。

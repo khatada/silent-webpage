@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "96878cc7003050bdf3becc01dc8bbc91f1309c4400af3012efd1b31f032da4fc",
+  "sourceSha256": "9273ad2c74c628833f5e594471b6f7f8814d671bf537c496131660dc5cf28650",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -2327,6 +2327,153 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが補正後の動作画像を全域実閲覧。列車、屋上、猫と遮蔽を確認して採用。極端な4:1画面では端の家具の鏡像反復が目立つ。有限時刻の比較であり連続動作全体の証明ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-expansion/four/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-expansion/four/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の4倍率局所画像をLLMが実閲覧。窓以外の変化がないことを確認して採用。縮小時には一部の芯が表示されない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-expansion/half/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-expansion/half/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の4倍率局所画像をLLMが実閲覧。窓以外の変化がないことを確認して採用。縮小時には一部の芯が表示されない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-expansion/one/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-expansion/one/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の4倍率局所画像をLLMが実閲覧。窓以外の変化がないことを確認して採用。縮小時には一部の芯が表示されない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-expansion/two/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-expansion/two/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の4倍率局所画像をLLMが実閲覧。窓以外の変化がないことを確認して採用。縮小時には一部の芯が表示されない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが実閲覧。猫、列車、窓や構図に新たな崩れがないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが実閲覧。猫、列車、窓や構図に新たな崩れがないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが実閲覧。猫、列車、窓や構図に新たな崩れがないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが実閲覧。猫、列車、窓や構図に新たな崩れがないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが実閲覧。猫、列車、窓や構図に新たな崩れがないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが実閲覧。猫、列車、窓や構図に新たな崩れがないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが実閲覧。猫、列車、窓や構図に新たな崩れがないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが実閲覧。猫、列車、窓や構図に新たな崩れがないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが実閲覧。猫、列車、窓や構図に新たな崩れがないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが実閲覧。猫、列車、窓や構図に新たな崩れがないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが実閲覧。猫、列車、窓や構図に新たな崩れがないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-active/compact-4-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-active/compact-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の時間差と全景をLLMが実閲覧。窓の実画素の変化を確認したが、全景では細かく注意しないと分かりにくい。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-active/compact-skyline-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-active/compact-skyline-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の時間差と全景をLLMが実閲覧。窓の実画素の変化を確認したが、全景では細かく注意しないと分かりにくい。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-active/landscape-4-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-active/landscape-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の時間差と全景をLLMが実閲覧。窓の実画素の変化を確認したが、全景では細かく注意しないと分かりにくい。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-active/landscape-skyline-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-active/landscape-skyline-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の時間差と全景をLLMが実閲覧。窓の実画素の変化を確認したが、全景では細かく注意しないと分かりにくい。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-active/wide-4-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-active/wide-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の時間差と全景をLLMが実閲覧。窓の実画素の変化を確認したが、全景では細かく注意しないと分かりにくい。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-active/wide-skyline-corrected.png",
+      "report": "art-reviews/2026-10-28-wide-skyline-active/wide-skyline-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の時間差と全景をLLMが実閲覧。窓の実画素の変化を確認したが、全景では細かく注意しないと分かりにくい。"
     }
   ]
 }

@@ -1,0 +1,125 @@
+{
+  "sourceSha256": "9273ad2c74c628833f5e594471b6f7f8814d671bf537c496131660dc5cf28650",
+  "decision": "ACCEPTED_LOCAL_COMPOSITES_ONLY",
+  "actualLlmView": "All four corrected 512×2048 atlases inspected at original size. Additionally inspected nearest-neighbor enlarged native crop of each added candidate, four states, from the scale-four corrected atlas.",
+  "method": "Production background and production skyline-light factory rendered at same origin; full render sampled at scale 0.5, 1, 2 and 4; each row compares original, on, intermediate, off. No artwork generated.",
+  "result": "The new dark pixels stay within source windows; other building details remain intact. All sampled cores change when off, and initial/on match. The one-pixel core does not darken the whole multicolor window; the practical visibility gain of additional windows is limited and full-scene and time-based review is still required. Scale 0.5 has no new visible samples and scale 1 has only three additional visible cores.",
+  "detail": {
+    "half": {
+      "sampled": [
+        0
+      ],
+      "offChanged": [
+        0
+      ],
+      "outside": 0,
+      "onChanged": 0,
+      "correctionRgbaUnchanged": true,
+      "correctedSha256": "4660bac969dfee84bfb4ceca99b904423a119b026f78ed7e4511abd4e107261b"
+    },
+    "one": {
+      "sampled": [
+        1,
+        5,
+        8,
+        12,
+        15
+      ],
+      "offChanged": [
+        1,
+        5,
+        8,
+        12,
+        15
+      ],
+      "outside": 0,
+      "onChanged": 0,
+      "correctionRgbaUnchanged": true,
+      "correctedSha256": "b55d3ec87fe785382c0c7ba0452a2377fdc5bcd42285c3e12891c37e5ad561e0"
+    },
+    "two": {
+      "sampled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "offChanged": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "outside": 0,
+      "onChanged": 0,
+      "correctionRgbaUnchanged": true,
+      "correctedSha256": "8e0c5da81f340f72fb3488eea4a0fd0c6756d0f360f1fc7d3e4b4f316735657d"
+    },
+    "four": {
+      "sampled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "offChanged": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "outside": 0,
+      "onChanged": 0,
+      "correctionRgbaUnchanged": true,
+      "correctedSha256": "bb35fede2a3b596a7391df3e04bcf9f44d1f99bf3a9ab483a7b925bd3d98c61d"
+    }
+  }
+}
