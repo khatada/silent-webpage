@@ -1,0 +1,34 @@
+{
+  "sourceSha256": "9273ad2c74c628833f5e594471b6f7f8814d671bf537c496131660dc5cf28650",
+  "decision": "ACCEPTED_VISUAL_WITH_LIMITATION",
+  "actualLlmView": "wide/compact/landscapeの4秒全景3枚と9時刻アトラス3枚を全域原寸閲覧。列車と空の動きは明瞭、遠景窓単独の変化は細かく全景では注意して見ないと判別しにくい。",
+  "method": "画像閲覧ツール original で全域を確認。大きい時系列atlasはnative pixelそのままのタイルに分けて全域閲覧。",
+  "images": [
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-active/compact-4-corrected.png",
+      "sha256": "49a82304265cb170e9200a46db7aeaa835ee0ec01c92b3ad31c5e57f852aec69"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-active/compact-skyline-corrected.png",
+      "sha256": "46e0aedc28c6c5f7b1cf69b4e315a4c0345f90aed078942d7651ac84e02064fa"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-active/landscape-4-corrected.png",
+      "sha256": "a1f44834df1c5f7380ba98e83740d7d0d88be30050961ff46027d451eaf41f66"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-active/landscape-skyline-corrected.png",
+      "sha256": "6cdf161baa93f272ca7ae30f0757378d18c86bcb0e0438b8c96af110d280e220"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-active/wide-4-corrected.png",
+      "sha256": "f3417f13f2b9c3ea79db4bf0142379d4e07fefa532f650ccb4026e09c348a3f6"
+    },
+    {
+      "image": "art-reviews/2026-10-28-wide-skyline-active/wide-skyline-corrected.png",
+      "sha256": "351ce684c0bbb24e8d3632e73dffb68ae2790e7830c2e2f3dbbb9000d99b2799"
+    }
+  ],
+  "limitations": "有限個の静止時刻と拡大閲覧による判断。連続再生時の主観的な気づきやすさの保証ではない。",
+  "pixelMeasurement": "actual-pixels.json: 登録された新窓のうち画面内の中心画素について各9時刻をRGB計測。wide 9箇所、compact 6箇所、landscape 7箇所で各チャンネル最大幅190〜232。遮蔽やフレーム時刻誤差の可能性がある。残りは画面外。"
+}
