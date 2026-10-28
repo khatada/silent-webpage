@@ -1,0 +1,134 @@
+{
+  "sourceSha256": "e1c83c39ae8d6537be37923c65fc0afd58b82d84b6ee20cf38d6dea572513ce5",
+  "decision": "ACCEPTED_LOCAL_COMPOSITES_ONLY",
+  "actualLlmView": "All four corrected 512×384 atlases inspected at original size. Additionally inspected each source context enlarged 4x from the corrected scale-four atlas.",
+  "method": "Production background and production grouped skyline-light factory rendered at same origin and scale 0.5, 1, 2 and 4; rows compare original, on, intermediate and off. No artwork generated.",
+  "result": "Three selected 2×2 native pixel cores dim together, maintaining their nearby frames. Third is a small part of a wider lit facade, so glow remains: this is a partial dimming, not whole-room blackout. At scale 0.5 two groups disappear due to sampling. Global composition, timing, and perceived visibility need separate full scene QA.",
+  "rejectedTrial": "An earlier third candidate (native 900,180) left a black hole in a larger window; rejected and trial preserved outside repository at /workspace/art-review-trials/grouped-skyline-three-candidates.",
+  "detail": {
+    "half": {
+      "visiblePerGroup": [
+        [
+          false,
+          false,
+          false,
+          true
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "changedOff": [
+        1,
+        0,
+        0
+      ],
+      "outside": 0,
+      "onChanged": 0,
+      "correctionRgbaUnchanged": true,
+      "correctedSha256": "bc5f19d19c866a521d3225715b02421e0aa843ee61540eee5d9b21e2d23c2800"
+    },
+    "one": {
+      "visiblePerGroup": [
+        [
+          true,
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          false,
+          false
+        ]
+      ],
+      "changedOff": [
+        1,
+        1,
+        1
+      ],
+      "outside": 0,
+      "onChanged": 0,
+      "correctionRgbaUnchanged": true,
+      "correctedSha256": "3185c17004518dc1b9f754416dad8f73e3a31582a5ed44ce08db72b11edf6158"
+    },
+    "two": {
+      "visiblePerGroup": [
+        [
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true
+        ]
+      ],
+      "changedOff": [
+        4,
+        4,
+        4
+      ],
+      "outside": 0,
+      "onChanged": 0,
+      "correctionRgbaUnchanged": true,
+      "correctedSha256": "c7400f4a9d48777206249edff67f44b7557d83bf39ffecc8b8fc83eb80339020"
+    },
+    "four": {
+      "visiblePerGroup": [
+        [
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          true
+        ]
+      ],
+      "changedOff": [
+        16,
+        16,
+        16
+      ],
+      "outside": 0,
+      "onChanged": 0,
+      "correctionRgbaUnchanged": true,
+      "correctedSha256": "24616d3e78261f017c559a7380cdd0230ca442c2b6f674f2e467cbd662256ab5"
+    }
+  }
+}

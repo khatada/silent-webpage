@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-grouped-skyline-active/wide-4-source.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "aa393ae361c0a2e9ea5fac7cbcc801ad8687300684f33e4737483cdb48303212"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-grouped-skyline-active/wide-4-corrected.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "0fbc8d547af484c1aab941655a79aae9741f8ea3c95cfd4532d7f3628961f072"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

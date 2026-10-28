@@ -28,6 +28,9 @@ export const skylineLightScenes = [
 export function createImageSkylineLights(backgrounds: readonly Texture[]) {
   const textures = skylineLightScenes.map((windows, composition) => windows.map(({ dark }) =>
     new Texture({ source: backgrounds[composition].source, frame: new Rectangle(...dark) })));
+  const groupTextures = wideFineArt.skylineGroups.map(({ dark: [x, y] }) =>
+    [0, 1, 2, 3].map(index => new Texture({ source: backgrounds[1].source,
+      frame: new Rectangle(x + index % 2 / 2, y + Math.floor(index / 2) / 2, 0.5, 0.5) })));
   function createSprite(composition: 0 | 1 | 2, scale: number, originX: number, originY: number) {
     const root = new Container();
     root.position.set(originX, originY);
@@ -39,10 +42,23 @@ export function createImageSkylineLights(backgrounds: readonly Texture[]) {
       root.addChild(window);
       return window;
     });
-    return { root, windows, composition };
+    const groups = composition === 1 ? wideFineArt.skylineGroups.map(({ lit: [x, y] }, index) => {
+      const group = new Container();
+      groupTextures[index].forEach((texture, pixel) => {
+        const px = x + pixel % 2 / 2, py = y + Math.floor(pixel / 2) / 2;
+        const sprite = new Sprite(texture);
+        sprite.position.set(px, py);
+        sprite.visible = starCoreSampled(px, py, scale, wideFineArt.resolution);
+        group.addChild(sprite);
+      });
+      root.addChild(group);
+      return group;
+    }) : [];
+    return { root, windows, groups, composition };
   }
   function update(actor: ReturnType<typeof createSprite>, seconds: number) {
     actor.windows.forEach((window, index) => { window.alpha = skylineLightDarkness(seconds, index, actor.composition); });
+    actor.groups.forEach((group, index) => { group.alpha = skylineLightDarkness(seconds, skylineLightScenes[1].length + index, 1); });
   }
-  return { createSprite, update, destroy() { textures.flat().forEach(texture => texture.destroy(false)); } };
+  return { createSprite, update, destroy() { [...textures.flat(), ...groupTextures.flat()].forEach(texture => texture.destroy(false)); } };
 }

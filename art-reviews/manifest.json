@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "9273ad2c74c628833f5e594471b6f7f8814d671bf537c496131660dc5cf28650",
+  "sourceSha256": "e1c83c39ae8d6537be37923c65fc0afd58b82d84b6ee20cf38d6dea572513ce5",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -2474,6 +2474,153 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "補正後の3画面の時間差と全景をLLMが実閲覧。窓の実画素の変化を確認したが、全景では細かく注意しないと分かりにくい。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline/four/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline/four/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の4倍率局所画像をLLMが全域実閲覧。窓の範囲外の変化がないことを確認して採用。小さな画面では一部が標本化されない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline/half/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline/half/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の4倍率局所画像をLLMが全域実閲覧。窓の範囲外の変化がないことを確認して採用。小さな画面では一部が標本化されない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline/one/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline/one/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の4倍率局所画像をLLMが全域実閲覧。窓の範囲外の変化がないことを確認して採用。小さな画面では一部が標本化されない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline/two/atlas-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline/two/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の4倍率局所画像をLLMが全域実閲覧。窓の範囲外の変化がないことを確認して採用。小さな画面では一部が標本化されない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが全域実閲覧。構図、猫、列車、窓に新たな崩れがないことを確認して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが全域実閲覧。構図、猫、列車、窓に新たな崩れがないことを確認して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが全域実閲覧。構図、猫、列車、窓に新たな崩れがないことを確認して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが全域実閲覧。構図、猫、列車、窓に新たな崩れがないことを確認して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが全域実閲覧。構図、猫、列車、窓に新たな崩れがないことを確認して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが全域実閲覧。構図、猫、列車、窓に新たな崩れがないことを確認して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが全域実閲覧。構図、猫、列車、窓に新たな崩れがないことを確認して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが全域実閲覧。構図、猫、列車、窓に新たな崩れがないことを確認して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが全域実閲覧。構図、猫、列車、窓に新たな崩れがないことを確認して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが全域実閲覧。構図、猫、列車、窓に新たな崩れがないことを確認して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の11全景をLLMが全域実閲覧。構図、猫、列車、窓に新たな崩れがないことを確認して採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-active/compact-4-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-active/compact-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の全景と9時刻画像をLLMが全域実閲覧。追加窓の実画素変化を確認した。全景では窓は小さく、列車や雲の動きのほうが目立つ。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-active/compact-skyline-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-active/compact-skyline-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の全景と9時刻画像をLLMが全域実閲覧。追加窓の実画素変化を確認した。全景では窓は小さく、列車や雲の動きのほうが目立つ。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-active/landscape-4-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-active/landscape-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の全景と9時刻画像をLLMが全域実閲覧。追加窓の実画素変化を確認した。全景では窓は小さく、列車や雲の動きのほうが目立つ。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-active/landscape-skyline-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-active/landscape-skyline-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の全景と9時刻画像をLLMが全域実閲覧。追加窓の実画素変化を確認した。全景では窓は小さく、列車や雲の動きのほうが目立つ。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-active/wide-4-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-active/wide-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の全景と9時刻画像をLLMが全域実閲覧。追加窓の実画素変化を確認した。全景では窓は小さく、列車や雲の動きのほうが目立つ。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-active/wide-skyline-corrected.png",
+      "report": "art-reviews/2026-10-28-grouped-skyline-active/wide-skyline-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の全景と9時刻画像をLLMが全域実閲覧。追加窓の実画素変化を確認した。全景では窓は小さく、列車や雲の動きのほうが目立つ。"
     }
   ]
 }

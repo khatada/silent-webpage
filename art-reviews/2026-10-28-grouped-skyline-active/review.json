@@ -1,0 +1,32 @@
+{
+  "sourceSha256": "e1c83c39ae8d6537be37923c65fc0afd58b82d84b6ee20cf38d6dea572513ce5",
+  "decision": "ACCEPTED_WITH_LIMITATION",
+  "actualLlmView": "wide/compact/landscapeの4秒全景3枚と9時刻アトラス3枚の全域を、native pixelを保った分割で閲覧。追加窓3組について画面内の範囲をさらに6倍拡大し、明暗の変化と周囲の窓枠を確認。窓は全景では小さく、移動する列車や雲の方が目立つ。有限時刻の静止画像は連続再生時の印象を保証しない。",
+  "images": [
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-active/compact-4-corrected.png",
+      "sha256": "c766b79f5be6337c3dc117d6740e25ca2d009238532822e4654aace4224e2418"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-active/compact-skyline-corrected.png",
+      "sha256": "953c23200205fd3fdf18134610a8933559b86054426ab9d3799cdfd9b7e0eebf"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-active/landscape-4-corrected.png",
+      "sha256": "e39346e6026ecddcd325164635e934c7d800f8ba7967ca8c49ecf7df4943f1b6"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-active/landscape-skyline-corrected.png",
+      "sha256": "d08fb8f497ffb8f86829ced87a91b053471b227b7a5f780a5ea758e8a2fd07a4"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-active/wide-4-corrected.png",
+      "sha256": "0fbc8d547af484c1aab941655a79aae9741f8ea3c95cfd4532d7f3628961f072"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-active/wide-skyline-corrected.png",
+      "sha256": "7875d2a276a630f19cf8efc4c1e6fd1b0e753f676420dd40d12d3fb5f3af02a6"
+    }
+  ],
+  "actualPixels": "group-pixels.json に追加3組だけの各画素を記録。wideでは全3組12画素の時刻間RGBチャンネル幅172〜228。compactとlandscapeでは3組目のみ画面内、各4画素の幅190〜211。画面外の組は計測しない。遮蔽やフレーム時刻のずれに注意。"
+}

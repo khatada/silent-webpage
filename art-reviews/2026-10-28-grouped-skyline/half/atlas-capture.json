@@ -1,0 +1,17 @@
+{
+  "sourceSha256": "e1c83c39ae8d6537be37923c65fc0afd58b82d84b6ee20cf38d6dea572513ce5",
+  "finalSourceSha256": "e1c83c39ae8d6537be37923c65fc0afd58b82d84b6ee20cf38d6dea572513ce5",
+  "metadata": {
+    "scale": 0.5,
+    "width": 512,
+    "height": 384,
+    "samples": [
+      {"index":0,"lit":[70.5,98.5,1,1],"sampled":[false,false,false,true],"states":[{"state":0,"changed":0,"outside":0,"alpha":0},{"state":1,"changed":0,"outside":0,"alpha":0},{"state":2,"changed":1,"outside":0,"alpha":0.5000000000000031},{"state":3,"changed":1,"outside":0,"alpha":1}]},
+      {"index":1,"lit":[118.5,95.5,1,1],"sampled":[false,false,false,false],"states":[{"state":0,"changed":0,"outside":0,"alpha":0},{"state":1,"changed":0,"outside":0,"alpha":0},{"state":2,"changed":0,"outside":0,"alpha":0.5000000000000031},{"state":3,"changed":0,"outside":0,"alpha":1}]},
+      {"index":2,"lit":[320,84.5,1,1],"sampled":[false,false,false,false],"states":[{"state":0,"changed":0,"outside":0,"alpha":0},{"state":1,"changed":0,"outside":0,"alpha":0},{"state":2,"changed":0,"outside":0,"alpha":0.5000000000000031},{"state":3,"changed":0,"outside":0,"alpha":1}]}
+    ]
+  },
+  "method": "Image-generation textures composited by /scripts/grouped-skyline-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}
