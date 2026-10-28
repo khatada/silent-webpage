@@ -1,3 +1,4 @@
+import { createLogicalBackground } from '../src/logical-background';
 import { Application, Assets, Container, Rectangle, RenderTexture, Sprite, Texture } from 'pixi.js';
 import { generatedArt } from '../src/generated-art';
 import { generatedLayout } from '../src/generated-layout';
@@ -14,6 +15,8 @@ const views = [['desktop', 1440, 900], ['mobile', 390, 844], ['narrow', 295, 844
 export async function renderStarCoverage() {
   const sources = await Promise.all([generatedArt.background, generatedArt.wide.background,
     generatedArt.portrait.background].map(path => Assets.load<Texture>(`/${path}`)));
+  sources[1] = createLogicalBackground(sources[1], generatedArt.wide.width,
+    generatedArt.wide.height, generatedArt.wide.resolution);
   sources.forEach(texture => { texture.source.scaleMode = 'nearest'; });
   const factory = createImageStars(sources);
   const app = new Application();
@@ -48,7 +51,7 @@ export async function renderStarCoverage() {
     }
     const sampled = starScenes[composition].flatMap(({ core: [x, y] }, index) => {
       const px = layout.originX + x * layout.scale, py = layout.originY + y * layout.scale;
-      return starCoreSampled(x, y, layout.scale) && px >= 0 && px < viewWidth && py >= 0 && py < layout.skyBottom
+      return starCoreSampled(x, y, layout.scale, composition === 1 ? generatedArt.wide.resolution : 1) && px >= 0 && px < viewWidth && py >= 0 && py < layout.skyBottom
         ? [{ index, x: px, y: py }] : [];
     });
     if (row < 13 && !changed) throw new Error(`No actual twinkle pixels: ${name}`);

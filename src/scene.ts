@@ -1,3 +1,6 @@
+import { createImageWideBackground } from './image-wide-background';
+import { createImageRailPoles } from './image-rail-poles';
+import { createLogicalBackground } from './logical-background';
 import { Application, Assets, Container, Rectangle, Sprite, Texture } from 'pixi.js';
 import { catPose, travelPosition, windowBrightness } from './animation';
 import { generatedArt } from './generated-art';
@@ -28,7 +31,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, wideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas, lookAtlas, plantAtlas, alternateTrain, riseAtlas] = await Promise.all([
+  const [background, loadedWideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas, lookAtlas, plantAtlas, alternateTrain, riseAtlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -54,6 +57,8 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${generatedArt.alternateTrain}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.catRiseAtlas}`),
   ]);
+  const wideBackground = createLogicalBackground(loadedWideBackground,
+    generatedArt.wide.width, generatedArt.wide.height, generatedArt.wide.resolution);
   background.source.scaleMode = 'nearest';
   wideBackground.source.scaleMode = 'nearest';
   portraitBackground.source.scaleMode = 'nearest';
@@ -124,11 +129,14 @@ export async function createScene(host: HTMLElement): Promise<{
   let width = 768;
   let height = 512;
   let scale = 1;
+  let motionScale = 1;
   let originX = 0;
   let originY = 0;
   let catY = 470;
   let actorScale = 1;
   let trains: { art: Sprite; offset: number }[] = [];
+  let mirroredBackground: ReturnType<typeof createImageWideBackground> | undefined;
+  let sampledPoles: ReturnType<typeof createImageRailPoles> | undefined;
   let trainInitialX = 0;
   let aircraft: Sprite;
   let oppositeAircraft: Sprite | undefined;
@@ -155,30 +163,40 @@ export async function createScene(host: HTMLElement): Promise<{
     canvas.style.width = `${viewport.cssWidth}px`;
     canvas.style.height = `${viewport.cssHeight}px`;
     for (const child of app.stage.removeChildren()) child.destroy({ children: true });
+    sampledPoles?.destroy();
+    sampledPoles = undefined;
+    mirroredBackground?.destroy();
+    mirroredBackground = undefined;
     const layout = generatedLayout(width, height);
     const composition = layout.composition;
     const textures = compositionTextures[layout.portrait ? 2 : layout.wide ? 1 : 0];
     scale = layout.scale;
+    motionScale = layout.motionScale;
     actorScale = composition.actorScale;
     originX = layout.originX;
     originY = layout.originY;
-    // Only uncovered edges use crops from the reviewed source image.
-    const topGap = Math.max(0, originY);
-    if (topGap) {
-      const skyEdge = sprite(textures.darkSky);
-      skyEdge.width = width;
-      skyEdge.height = topGap;
+    if (layout.wide) {
+      mirroredBackground = createImageWideBackground(textures.background, width, height, scale, originX, originY);
+      app.stage.addChild(mirroredBackground.root);
+    } else {
+      // Existing non-wide edge crops retain their original sampling and appearance.
+      const topGap = Math.max(0, originY);
+      if (topGap) {
+        const skyEdge = sprite(textures.darkSky);
+        skyEdge.width = width;
+        skyEdge.height = topGap;
+      }
+      const bottomStart = Math.max(0, originY + composition.height * scale);
+      if (bottomStart < height) {
+        const floorEdge = sprite(textures.floorPatch);
+        floorEdge.position.set(0, bottomStart);
+        floorEdge.width = width;
+        floorEdge.height = height - bottomStart;
+      }
+      const backdrop = sprite(textures.background);
+      backdrop.position.set(originX, originY);
+      backdrop.scale.set(scale);
     }
-    const bottomStart = Math.max(0, originY + composition.height * scale);
-    if (bottomStart < height) {
-      const floorEdge = sprite(textures.floorPatch);
-      floorEdge.position.set(0, bottomStart);
-      floorEdge.width = width;
-      floorEdge.height = height - bottomStart;
-    }
-    const backdrop = sprite(textures.background);
-    backdrop.position.set(originX, originY);
-    backdrop.scale.set(scale);
     skylineLights = imageSkylineLights.createSprite(layout.portrait ? 2 : layout.wide ? 1 : 0, scale, originX, originY);
     app.stage.addChild(skylineLights.root);
     stars = imageStars.createSprite(layout.portrait ? 2 : layout.wide ? 1 : 0, scale, originX, originY);
@@ -235,7 +253,7 @@ export async function createScene(host: HTMLElement): Promise<{
       oppositeAircraft.y = oppositeFlight.y;
     }
     const train = sprite(frames.train);
-    train.scale.set(scale * 0.24 * actorScale);
+    train.scale.set(motionScale * 0.24 * actorScale);
     train.y = layout.railBottom - train.height;
     trains = trainServiceOffsets(width, train.width).map((offset, index) => {
       const art = index === 0 ? train : sprite(alternateTrain);
@@ -245,12 +263,19 @@ export async function createScene(host: HTMLElement): Promise<{
     });
     trainInitialX = width * 0.1;
     let nearestPoleDistance = Infinity;
-    // Restore only the reviewed background's pole pixels over the passing train.
-    for (const { texture, frame: [x, y, w, h] } of textures.railPoles) {
-      const pole = sprite(texture);
-      pole.position.set(sourceX(x), sourceY(y));
-      pole.scale.set(scale);
-      if (pole.x + w * scale <= 0 || pole.x >= width || pole.y + h * scale <= 0 || pole.y >= height) continue;
+    // Wide poles share whole-background sampling even when individual source pixels are discarded.
+    if (layout.wide) sampledPoles = createImageRailPoles(app.renderer, textures.background,
+      composition.railPoles, scale, originX, originY, width, height);
+    const poles = sampledPoles?.poles ?? textures.railPoles.map(({ texture, frame }) => {
+      const art = new Sprite(texture);
+      art.roundPixels = true;
+      art.position.set(sourceX(frame[0]), sourceY(frame[1]));
+      art.scale.set(scale);
+      return { art, frame };
+    });
+    for (const { art: pole, frame: [x, y, w, h] } of poles) {
+      app.stage.addChild(pole);
+      if (sourceX(x + w) <= 0 || sourceX(x) >= width || sourceY(y + h) <= 0 || sourceY(y) >= height) continue;
       const center = sourceX(x + w / 2);
       const distance = Math.abs(center - width * 0.25);
       if (distance < nearestPoleDistance) {
@@ -289,16 +314,16 @@ export async function createScene(host: HTMLElement): Promise<{
       art.alpha = 0.92 * (1 - brightness);
       if (resident && index === residentArt.placements[residentComposition].window) resident.alpha = brightness;
     });
-    imageUpperCloud.update(upperCloud, elapsed, width, scale);
-    cloud.x = travelPosition(elapsed, width, cloud.width, scale * cityMotion.cloudSpeed, width * 0.12);
-    aircraft.x = travelPosition(elapsed, width, aircraft.width, scale * cityMotion.aircraftSpeed, width * 0.7);
+    imageUpperCloud.update(upperCloud, elapsed, width, motionScale);
+    cloud.x = travelPosition(elapsed, width, cloud.width, motionScale * cityMotion.cloudSpeed, width * 0.12);
+    aircraft.x = travelPosition(elapsed, width, aircraft.width, motionScale * cityMotion.aircraftSpeed, width * 0.7);
     if (oppositeAircraft) oppositeAircraft.x = travelPosition(elapsed, width, oppositeAircraft.width,
-      -scale * cityMotion.aircraftSpeed, width * oppositeAircraftArt.initialFraction);
+      -motionScale * cityMotion.aircraftSpeed, width * oppositeAircraftArt.initialFraction);
     for (const { art, offset } of trains) {
-      art.x = travelPosition(elapsed, width, art.width, scale * 16, trainInitialX + offset);
+      art.x = travelPosition(elapsed, width, art.width, motionScale * 16, trainInitialX + offset);
     }
-    const pose = catPose(elapsed, width, scale * actorScale);
-    imageCat.update(cat, pose, scale * actorScale, catY);
+    const pose = catPose(elapsed, width, motionScale * actorScale);
+    imageCat.update(cat, pose, motionScale * actorScale, catY);
   }
   app.ticker.add(ticker => { elapsed += ticker.deltaMS / 1000; animate(); });
   const updateActivity = () => {
@@ -326,7 +351,10 @@ export async function createScene(host: HTMLElement): Promise<{
       densityQuery?.removeEventListener('change', updateDensity);
       document.removeEventListener('visibilitychange', updateActivity);
       app.destroy(true, { children: true });
+      sampledPoles?.destroy();
+      mirroredBackground?.destroy();
       for (const texture of crops) texture.destroy(false);
+      wideBackground.destroy(false);
       imageCat.destroy();
       imagePlant.destroy();
       imageStreetCar.destroy();

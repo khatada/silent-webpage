@@ -1,3 +1,4 @@
+import { createLogicalBackground } from '../src/logical-background';
 import { Application, Assets, Container, Rectangle, RenderTexture, Sprite, Texture } from 'pixi.js';
 import { generatedArt } from '../src/generated-art';
 import { generatedLayout } from '../src/generated-layout';
@@ -30,6 +31,8 @@ export async function renderGeneratedMeteorReview() {
     ...[generatedArt.background, generatedArt.wide.background, generatedArt.portrait.background]
       .map(path => Assets.load<Texture>(`/${path}`)),
   ]);
+  backgrounds[1] = createLogicalBackground(backgrounds[1], generatedArt.wide.width,
+    generatedArt.wide.height, generatedArt.wide.resolution);
   const factory = createImageMeteor(material);
   const app = new Application();
   await app.init({ width, height, resolution: 1, antialias: false,

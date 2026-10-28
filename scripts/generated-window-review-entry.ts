@@ -1,3 +1,4 @@
+import { createLogicalBackground } from '../src/logical-background';
 import { Application, Assets, Rectangle, Texture } from 'pixi.js';
 import { windowBrightness } from '../src/animation';
 import { generatedArt } from '../src/generated-art';
@@ -8,7 +9,9 @@ import { windowReviewBackground } from './window-review-background';
 /** Existing generated background crops, with the production sampling phase and fade. */
 async function render(compositionIndex: 0 | 1 | 2) {
   const composition = [generatedArt, generatedArt.wide, generatedArt.portrait][compositionIndex];
-  const background = await Assets.load<Texture>(`/${composition.background}`);
+  const cached = await Assets.load<Texture>(`/${composition.background}`);
+  const background = compositionIndex === 1 ? createLogicalBackground(cached,
+    generatedArt.wide.width, generatedArt.wide.height, generatedArt.wide.resolution) : cached;
   background.source.scaleMode = 'nearest';
   const darkWall = new Texture({ source: background.source, frame: new Rectangle(...composition.darkWall) });
   const app = new Application();

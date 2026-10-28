@@ -1,0 +1,71 @@
+{
+  "reviewer": "/root/wide_plan",
+  "sourceSha256": "96878cc7003050bdf3becc01dc8bbc91f1309c4400af3012efd1b31f032da4fc",
+  "actualLLMVisualReview": true,
+  "images": [
+    {
+      "file": "compact-corrected.png",
+      "sha256": "194e272512787fc6816c794170afbd391fe9d6095f9207455dea92c04fc2b718",
+      "decision": "adopt",
+      "reason": "Adopt after fix: oversized checker stripe at the lower edge is gone. Floor pixels retain matching detail and scale through the reflected extension. Sky continues into the upper margin without the earlier flat dark bar. Houses, train poles, aircraft, cat and plant remain legible and supported.",
+      "reviewMethod": "full image"
+    },
+    {
+      "file": "tall-corrected.png",
+      "sha256": "e81f0824fd137b3a80f58c4c297a2233d9c1d803b07cd712e5989078eeb0b4df",
+      "decision": "adopt",
+      "reason": "Sky, railway, warm residential detail, cat support and small plant placement read coherently; no new visible composition defect.",
+      "reviewMethod": "Complete unscaled native bands y0..1399 and y1400..2049, width780; all pixels covered."
+    },
+    {
+      "file": "portrait-large-corrected.png",
+      "sha256": "4c13eb4b06b6ceaf51a166e6e71e7246a6ae5fe5ebd3084c60ce93314b7e3b71",
+      "decision": "adopt",
+      "reason": "Sky, railway, warm residential detail, cat support and small plant placement read coherently; no new visible composition defect. Shallow existing non-wide bottom extension remains; parent separately verifies unchanged RGBA.",
+      "reviewMethod": "full image"
+    },
+    {
+      "file": "portrait-boundary-corrected.png",
+      "sha256": "f65adc2d5ec5c4ced7dd934217e9ea48ec76b6e82a23d5cafad8a5fb02c27b60",
+      "decision": "adopt",
+      "reason": "Sky, railway, warm residential detail, cat support and small plant placement read coherently; no new visible composition defect.",
+      "reviewMethod": "full image"
+    },
+    {
+      "file": "small-phone-corrected.png",
+      "sha256": "e5b5bbea3056fa6e0ef5efcbdcd6e35d188c280ed881fad1310514d60771999e",
+      "decision": "adopt",
+      "reason": "Sky, railway, warm residential detail, cat support and small plant placement read coherently; no new visible composition defect.",
+      "reviewMethod": "full image"
+    },
+    {
+      "file": "small-mobile-corrected.png",
+      "sha256": "bc010146e2a7289bff7d72a35fa0802d65db1645f2fb3078371cde3e54f9853e",
+      "decision": "adopt",
+      "reason": "Sky, railway, warm residential detail, cat support and small plant placement read coherently; no new visible composition defect.",
+      "reviewMethod": "full image"
+    },
+    {
+      "file": "desktop-corrected.png",
+      "sha256": "7cf3dc5a4534db6d636242d6a03dec7328b4d093c2445189332df670b33a3730",
+      "decision": "adopt",
+      "reason": "Full corrected image actually reviewed. Open sky, single moon, two aircraft and readable trains/pole occlusion form a coherent scene. Cat feet and plant pot sit on the rooftop floor; window light and building detail show no added seam or misplaced overlay.",
+      "reviewMethod": "full corrected image; actual LLM image viewing"
+    },
+    {
+      "file": "mobile-corrected.png",
+      "sha256": "635bc3a7ba2eca25654079b5487f81f7a5f275eb9e672c48a447e45c35f0e9a2",
+      "decision": "adopt",
+      "reason": "Full corrected 780x1688 image actually reviewed. Aircraft and cloud fit above skyline; train is legible behind its pole. Warm houses, foreground wall, floor-supported plant and cat retain coherent placement without exposed edge bands.",
+      "reviewMethod": "full corrected image; actual LLM image viewing"
+    },
+    {
+      "file": "narrow-corrected.png",
+      "sha256": "96bd8a9613c60861670ef0a6b8a162e46b0c14c2a0b1c6e3d0dacf52d0726a8d",
+      "decision": "adopt",
+      "reason": "Full corrected 295x844 image actually reviewed. Narrow crop preserves sky, train, residential detail, rooftop plant and complete walking cat. Aircraft approaches the right edge within the image; no new blank margin or visible compositor defect.",
+      "reviewMethod": "full corrected image; actual LLM image viewing"
+    }
+  ],
+  "scope": "Nine initial corrected images: original six plus desktop, mobile and narrow independently reviewed."
+}

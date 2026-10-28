@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-wide-fine-local/stars-two/atlas-source.png",
+    "width": 512,
+    "height": 2048,
+    "sha256": "70362dd04279553e688807bb43d7d8ff49a10a32afd10ed2fe7951c217c042d8"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-wide-fine-local/stars-two/atlas-corrected.png",
+    "width": 512,
+    "height": 2048,
+    "sha256": "02459cd8be2da5df622ffd70cfc49ac6d93aed97b57b9a24f6893af9d3d0845c"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/compact-road-roof-0-source.png",
+    "width": 1280,
+    "height": 498,
+    "sha256": "12204d451a3358c8cbddf91fb6adaf7b286729dae884747d4ab2afe9c3abdb3b"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/compact-road-roof-0-corrected.png",
+    "width": 1280,
+    "height": 498,
+    "sha256": "12204d451a3358c8cbddf91fb6adaf7b286729dae884747d4ab2afe9c3abdb3b"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

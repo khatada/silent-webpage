@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/compact-rail-1-source.png",
+    "width": 320,
+    "height": 128,
+    "sha256": "a1712c74a39c1cc84ba75dd0544b5a73afb9a3b7049dc60c341f74a226e2cb34"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/compact-rail-1-corrected.png",
+    "width": 320,
+    "height": 128,
+    "sha256": "a1712c74a39c1cc84ba75dd0544b5a73afb9a3b7049dc60c341f74a226e2cb34"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -4,7 +4,11 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- 現在ブランチ `feat/random-skyline-twinkle`、worktree `/workspace/silent-webpage-glass-bounds`（再利用）。ユーザー追加要求の遠景窓ランダム点消灯/星またたきを実装済み。src/event-random.ts + timing2/tests2、112単体/type/lint成功。source1c020eb2efcb96b0d27353a79cf6cd0b12cfe926f35655d8aa81b82383eb1ca0、描画固定。局所30panelと初期11を補正後実閲覧採用。初期差分は星core+1nativepx外0。4端末本番9時刻+4秒全景を撮影し、最終8画像を担当LLMが全域実閲覧採用、visual-decision.json保存済み。親は可視coreの無変形時間差cropを実閲覧し、実画素RGB変化を測定。manifest249画像の採用記録を更新。最終verify/commit/push/PR/CI/公開が残る。高精細背景表示はこの要求の後へ延期。
+- 現在ブランチ `feat/wide-fine-view`、worktree `/workspace/silent-webpage-glass-bounds`。C033高精細背景表示を実装中。描画source `96878cc7003050bdf3becc01dc8bbc91f1309c4400af3012efd1b31f032da4fc`、logical723×241/resolution2、旧motionScaleで被写体寸法と速度を保持。作業ツリーは未コミット。PR・CI・本変更の公開は未実施。
+- 初回は床の大きな縞、縮小時の柱位相差を実画像で発見して棄却。生成済み背景の同倍率鏡像による余白補完と、全景native RenderTextureからの柱cropに修正した。旧trialは `/workspace/art-review-trials/c033-floor-stretch-scenes`、`c033-floor-stretch-active`、`c033-before-floor-pole-fix-local`、`c033-gpu-extract-trial` に非採用として保持。
+- 新sourceの局所QAは補正後12 atlasを担当LLMが実閲覧。住宅窓9・遠景6・星16の4倍率で明状態124組全RGBA一致、対象外変更0、列車なし柱20組全景RGBA一致。猫は左右各43姿勢の補正後atlasを実閲覧、接地を確認。800×600は起立gateが無効なため起立6姿勢は補助的に表示して確認した。他構図では起立可能。極小倍率では一部の窓や星がsamplingで変化しない。
+- 初期11構図は補正後画像を親と担当が分担して実閲覧し、非wide8構図は前版全RGBA一致。本番6構図の補正画像の最終閲覧は進行中。manifest更新、最終必須verify、commit、push、PR、CI、merge、Pages確認が残る。実装の仮定と画面端の制約は `implementation-notes.md` を参照。
+- ユーザー追加要求のランダム遠景窓/星PR #63はverify112/249画像とhook・CI40658769062/job122716232092成功後main d85dceb06db5a7c1725e532dd4b15ef74e455fd2へマージ。Pages40659272090（verify122717908249/publish122719484187）成功、同mergeSHAで公開済み。PR添付はNo handlerで失敗、PR作成/公開は成功。補正後11初期/30局所/最終8動作画像をLLM全域採用、実画素RGB変化も記録。requirements/root同期済。
 - C033素材PR #62はverify111/229画像とhook・CI40514466395/job122224658046成功後main6d6d8153b5d6e2404715709b40b28e386b920d88へマージ。PR添付成功。Pages40515054968（verify122226713201/publish122228191029）成功で公開済み。public/art/tokyo-wide-fine.png1446×482/SHA7f8cb65ed578188d66e1dbe929e86060f14e44df5cda54abd1484f4446d932bd、親/担当補正後実閲覧と独立RGBAreplay一致で素材採用。本番表示はまだ旧wide。座標/物理gridのpreflightはtrialsへ保存中、続きは本要求実装後。
 - C032表示PR #61はverify111/228画像とhook・CI40512469571/job122217608489成功後main3ccf90815b4f781ec42286f8c45b75a36374e523へマージ。Pages40513367006（verify122220634430/publish122222805151）成功で公開済み。PR添付成功。7生成素材/104局所/11初期/本番4構図13段階を実閲覧採用。旧neutral/look48比較・初期11全RGBA一致、停止/再開/resize成功。
 - C032素材PR #60はverify109/206画像とhook・CI40509129012/job122206062375成功後main8a733630b185e06c41270218ba5d2c8f64e42a67へマージ。Pages40509578818（verify122207622010/publish122208948020）成功で公開済み。
@@ -240,3 +244,5 @@
 - CIミラー調査補足: CI33成功ログは `Get:1 file:/etc/apt/apt-mirrors.txt` の後にAzure HTTPを参照していた。初期PR34のsourcesだけの置換は実際には無効だったため、既存PR34で実際のミラー一覧パスも対象へ修正中。成功ログをHTTPSミラーへの切替成功と解釈しない。車Pages39771950954、CI32のPages39771312848は成功。
 
 - 最新CI復旧: PR34はCI39774106648成功後main283a78bへマージ済み。job119808606726で実際のHTTPS取得を確認。C011のsource44ed047ce351e43eee36864186f25dc4cf7d64d3f682e787ef49080d578e94c7は変更なし。今回の記録/参照保存後にverifyを再実行してamendし、親がrebase/PR/公開へ進む。
+
+- C033 最終動作QA: 本番画面の補正後27画像をLLMが実閲覧し採用。通常画面で列車・猫・窓と柱の遮蔽に目立つ崩れなし。2000×500では端の家具・小屋が鏡像反復する制約あり。有限時刻の確認であり連続動作全体の証明ではない。証跡 `art-reviews/2026-10-28-wide-fine-final-active/review.json`。必須verify・PR・CI・公開はこれから。

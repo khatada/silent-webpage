@@ -1,3 +1,4 @@
+import { createLogicalBackground } from '../src/logical-background';
 import { Application, Assets, Rectangle, Sprite, Texture } from 'pixi.js';
 import { generatedArt } from '../src/generated-art';
 import { createImageSkylineLights, skylineLightScenes } from '../src/image-skyline-lights';
@@ -7,6 +8,8 @@ import { nativeReviewTransform } from './native-review-transform';
 async function render(composition: 0 | 1 | 2) {
   const sources = await Promise.all([generatedArt.background, generatedArt.wide.background,
     generatedArt.portrait.background].map(path => Assets.load<Texture>(`/${path}`)));
+  sources[1] = createLogicalBackground(sources[1], generatedArt.wide.width,
+    generatedArt.wide.height, generatedArt.wide.resolution);
   sources.forEach(texture => { texture.source.scaleMode = 'nearest'; });
   const factory = createImageSkylineLights(sources);
   const app = new Application();

@@ -1,3 +1,5 @@
+import { starCoreSampled } from './image-stars';
+import { wideFineArt } from './wide-fine-art';
 import { Container, Rectangle, Sprite, Texture } from 'pixi.js';
 import { skylineLightDarkness } from './skyline-light-timing';
 
@@ -11,14 +13,7 @@ export const skylineLightScenes = [
     { lit: [533, 174, 2, 2], dark: [532, 172, 2, 2] },
     { lit: [567, 192, 2, 2], dark: [565, 191, 2, 2] },
   ],
-  [
-    { lit: [110, 81, 1, 1], dark: [108, 81, 1, 1] },
-    { lit: [206, 101, 1, 1], dark: [205, 100, 1, 1] },
-    { lit: [247, 91, 1, 1], dark: [245, 91, 1, 1] },
-    { lit: [302, 95, 1, 1], dark: [303, 94, 1, 1] },
-    { lit: [455, 90, 1, 1], dark: [453, 90, 1, 1] },
-    { lit: [529, 104, 1, 1], dark: [531, 103, 1, 1] },
-  ],
+  wideFineArt.skylineCores,
   [
     { lit: [488, 616, 2, 2], dark: [486, 614, 2, 2] },
     { lit: [251, 600, 2, 2], dark: [250, 602, 2, 2] },
@@ -40,6 +35,7 @@ export function createImageSkylineLights(backgrounds: readonly Texture[]) {
     const windows = skylineLightScenes[composition].map(({ lit: [x, y] }, index) => {
       const window = new Sprite(textures[composition][index]);
       window.position.set(x, y);
+      if (composition === 1) window.visible = starCoreSampled(x, y, scale, wideFineArt.resolution);
       root.addChild(window);
       return window;
     });

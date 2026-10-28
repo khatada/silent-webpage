@@ -31,11 +31,13 @@ describe('room glass coverage', () => {
           expect(left.width).toBe(area.leftGlass[2] * 0.5);
           expect(left.height).toBe(area.leftGlass[3] * 0.5);
           expect(left.texture).toBe(right.texture);
-          // The actor's old anchor remains within the new cover, without a second wall overlay.
-          expect(area.leftGlass[0]).toBeLessThanOrEqual(window[0]);
-          expect(area.leftGlass[1]).toBeLessThanOrEqual(window[1]);
-          expect(area.leftGlass[0] + area.leftGlass[2]).toBeGreaterThanOrEqual(window[0] + window[2]);
-          expect(area.leftGlass[1] + area.leftGlass[3]).toBeGreaterThanOrEqual(window[1] + window[3]);
+          if (compositionId !== 1) {
+            // The actor's old anchor remains within the new cover, without a second wall overlay.
+            expect(area.leftGlass[0]).toBeLessThanOrEqual(window[0]);
+            expect(area.leftGlass[1]).toBeLessThanOrEqual(window[1]);
+            expect(area.leftGlass[0] + area.leftGlass[2]).toBeGreaterThanOrEqual(window[0] + window[2]);
+            expect(area.leftGlass[1] + area.leftGlass[3]).toBeGreaterThanOrEqual(window[1] + window[3]);
+          }
         }
         if (selected) {
           const extra = group.children.at(-1)!;

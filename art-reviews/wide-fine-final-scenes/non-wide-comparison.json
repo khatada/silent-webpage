@@ -1,0 +1,37 @@
+{
+  "baseline": "art-reviews/random-skyline-star-scenes",
+  "comparisons": [
+    {
+      "name": "desktop",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "mobile",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "narrow",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "tall",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "portrait-large",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "portrait-boundary",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "small-phone",
+      "allRGBAEqual": true
+    },
+    {
+      "name": "small-mobile",
+      "allRGBAEqual": true
+    }
+  ]
+}

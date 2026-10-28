@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-1-source.png",
+    "width": 1280,
+    "height": 222,
+    "sha256": "995587321046466d531b0cd9f98aff7bc706f78c0e3b069d90ef21bad7bde86c"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-1-corrected.png",
+    "width": 1280,
+    "height": 222,
+    "sha256": "995587321046466d531b0cd9f98aff7bc706f78c0e3b069d90ef21bad7bde86c"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

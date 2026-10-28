@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-wide-fine-local/windows-four/atlas-source.png",
+    "width": 512,
+    "height": 1152,
+    "sha256": "85db4d4d6d21e8d3f09683ab26a4e118019986711c2ec63581981ac7b8145ad5"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-wide-fine-local/windows-four/atlas-corrected.png",
+    "width": 512,
+    "height": 1152,
+    "sha256": "56c96168421165751394ebdba59ef585d9de1e3bbe8cc6394cb1f43aae6c2f7c"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

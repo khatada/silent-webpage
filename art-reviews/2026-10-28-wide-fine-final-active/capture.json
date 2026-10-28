@@ -1,0 +1,4724 @@
+{
+  "sourceSha256": "96878cc7003050bdf3becc01dc8bbc91f1309c4400af3012efd1b31f032da4fc",
+  "method": "Unmodified production page. Paused clock before goto; reduced motion disabled after ready; actual canvas running awaited. Sequential runFor <=1000ms. Usual three sizes retain 4s full; additional sizes retain 0/4s full. Rail and road/roof atlases contain native screenshot tiles in 2x2 time order 0/1/4/8; no artwork generated. Correction uses actual physical canvas grid.",
+  "limitations": "Calculated motionScale/poses/geometry are predictions, not observed exact scene time. Pixi 20fps RAF may precede requested time. RGB translation is a best-match estimate affected by poles and moving content, not exact speed proof. Finite four times do not verify every cat pose or complete car route.",
+  "captures": [
+    {
+      "name": "desktop-wide",
+      "css": [
+        2560,
+        1080
+      ],
+      "dpr": 1,
+      "viewport": {
+        "width": 2560,
+        "height": 1080,
+        "physicalScale": 1,
+        "worldScale": 2.7,
+        "cssWidth": 2560,
+        "cssHeight": 1080,
+        "worldWidth": 948.148148148148
+      },
+      "calculated": {
+        "layout": {
+          "wide": true,
+          "portrait": false,
+          "composition": {
+            "image": "art/tokyo-wide-fine.png",
+            "resolution": 2,
+            "width": 723,
+            "height": 241,
+            "windows": [
+              [
+                153,
+                154,
+                4,
+                5
+              ],
+              [
+                577.5,
+                161,
+                4,
+                5
+              ],
+              [
+                304,
+                156.5,
+                2.5,
+                4
+              ],
+              [
+                414,
+                158.5,
+                3.5,
+                2.5
+              ],
+              [
+                502.5,
+                150,
+                2.5,
+                4.5
+              ],
+              [
+                544.5,
+                145.5,
+                2,
+                3
+              ],
+              [
+                255,
+                169,
+                5,
+                7
+              ],
+              [
+                517.5,
+                151,
+                1.5,
+                2.5
+              ],
+              [
+                395.5,
+                158.5,
+                1.5,
+                3
+              ]
+            ],
+            "darkWall": [
+              584,
+              161,
+              3,
+              5
+            ],
+            "stars": [
+              [
+                140.5,
+                4.5,
+                0.5,
+                0.5
+              ],
+              [
+                267.5,
+                6.5,
+                0.5,
+                0.5
+              ],
+              [
+                402.5,
+                8.5,
+                0.5,
+                0.5
+              ],
+              [
+                504,
+                10,
+                0.5,
+                0.5
+              ],
+              [
+                145,
+                22.5,
+                0.5,
+                0.5
+              ],
+              [
+                270.5,
+                17.5,
+                0.5,
+                0.5
+              ],
+              [
+                399,
+                19.5,
+                0.5,
+                0.5
+              ],
+              [
+                508.5,
+                25,
+                0.5,
+                0.5
+              ],
+              [
+                158,
+                30,
+                0.5,
+                0.5
+              ],
+              [
+                273.5,
+                31.5,
+                0.5,
+                0.5
+              ],
+              [
+                377.5,
+                30,
+                0.5,
+                0.5
+              ],
+              [
+                371,
+                51,
+                0.5,
+                0.5
+              ],
+              [
+                141,
+                42,
+                0.5,
+                0.5
+              ],
+              [
+                257.5,
+                45.5,
+                0.5,
+                0.5
+              ],
+              [
+                388.5,
+                49.5,
+                0.5,
+                0.5
+              ],
+              [
+                495.5,
+                44,
+                0.5,
+                0.5
+              ]
+            ],
+            "starCores": [
+              {
+                "core": [
+                  140.5,
+                  4.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  139,
+                  4,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  267.5,
+                  6.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  266.5,
+                  7,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  402.5,
+                  8.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  401.5,
+                  9,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  504,
+                  10,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  502.5,
+                  9.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  145,
+                  22.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  143.5,
+                  21.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  270.5,
+                  17.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  271,
+                  16.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  399,
+                  19.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  400,
+                  20,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  508.5,
+                  25,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  508,
+                  25.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  158,
+                  30,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  159.5,
+                  31.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  273.5,
+                  31.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  273.5,
+                  30,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  377.5,
+                  30,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  378,
+                  29,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  371,
+                  51,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  372,
+                  50,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  141,
+                  42,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  139.5,
+                  40.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  257.5,
+                  45.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  256,
+                  45.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  388.5,
+                  49.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  387.5,
+                  50,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  495.5,
+                  44,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  494.5,
+                  43.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            ],
+            "skylineCores": [
+              {
+                "lit": [
+                  195,
+                  79,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  194.5,
+                  80,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  244.5,
+                  96.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  246,
+                  95.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  308,
+                  84,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  309.5,
+                  84,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  379,
+                  91.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  380.5,
+                  90,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  450.5,
+                  80,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  452,
+                  79,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  560.5,
+                  99.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  561.5,
+                  98,
+                  0.5,
+                  0.5
+                ]
+              }
+            ],
+            "roomLight": {
+              "windowIndex": 6,
+              "glass": [
+                255,
+                169,
+                5,
+                7
+              ],
+              "leftGlass": [
+                251.5,
+                171,
+                2,
+                5
+              ],
+              "dark": [
+                265.5,
+                169,
+                2,
+                6
+              ],
+              "replace": true
+            },
+            "railPoles": [
+              [
+                284,
+                109,
+                2,
+                13
+              ],
+              [
+                357.5,
+                109,
+                2,
+                13
+              ],
+              [
+                425.5,
+                109,
+                2,
+                13
+              ],
+              [
+                487,
+                109,
+                2,
+                13
+              ],
+              [
+                618.5,
+                109,
+                2,
+                13
+              ]
+            ],
+            "railBottom": 117.5,
+            "floor": 212,
+            "floorPatch": [
+              350,
+              230,
+              8,
+              8
+            ],
+            "darkSky": [
+              400,
+              8,
+              0.5,
+              0.5
+            ],
+            "skyBottom": 55,
+            "aircraftY": 35,
+            "cloudY": 45,
+            "floorMargin": 4,
+            "actorScale": 0.5,
+            "streetCar": {
+              "route": [
+                [
+                  357,
+                  193
+                ],
+                [
+                  357,
+                  183
+                ],
+                [
+                  354.5,
+                  170
+                ],
+                [
+                  355,
+                  155
+                ]
+              ],
+              "width": 4,
+              "occlusion": [
+                [
+                  342.5,
+                  191,
+                  24,
+                  7.5
+                ]
+              ],
+              "context": [
+                335,
+                146,
+                45,
+                54
+              ],
+              "reviewScale": 8
+            },
+            "plant": {
+              "sourceFoot": 209,
+              "sourceFloorTop": 207
+            },
+            "background": "art/tokyo-wide-fine.png"
+          },
+          "scale": 4,
+          "motionScale": 5,
+          "originX": -166,
+          "originY": 58,
+          "railBottom": 528,
+          "skyBottom": 278,
+          "aircraftScale": 0.42500000000000004,
+          "cloudScale": 1.75,
+          "aircraftY": 198,
+          "cloudY": 156,
+          "catY": 906
+        },
+        "plant": {
+          "x": 1280,
+          "footY": 894,
+          "scale": 0.625,
+          "width": 50,
+          "height": 70,
+          "top": 824.625,
+          "bottom": 894.625,
+          "visible": true
+        },
+        "actorScale": 2.5,
+        "trainWidth": 158.4,
+        "trainHeight": 39,
+        "initialTrainX": 894.8,
+        "trainPixelsPerSecond": 80,
+        "trainPhysicalPixelsPerSecond": 80,
+        "samples": [
+          {
+            "requestedSeconds": 0,
+            "catPose": {
+              "x": 640,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.25,
+              "distance": 0.4375,
+              "alpha": 1
+            }
+          },
+          {
+            "requestedSeconds": 1,
+            "catPose": {
+              "x": 720,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.3,
+              "distance": 0.51,
+              "alpha": 1
+            }
+          },
+          {
+            "requestedSeconds": 4,
+            "catPose": {
+              "x": 960,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.45,
+              "distance": 0.6975,
+              "alpha": 1
+            }
+          },
+          {
+            "requestedSeconds": 8,
+            "catPose": {
+              "x": 1280,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.65,
+              "distance": 0.8775000000000001,
+              "alpha": 1
+            }
+          }
+        ]
+      },
+      "measured": {
+        "screenshotPhysical": [
+          2560,
+          1080
+        ],
+        "trainTranslationPatchPhysical": {
+          "x": 919,
+          "y": 503,
+          "width": 19,
+          "height": 7
+        },
+        "bestOneSecondTrainRgbShifts": [
+          {
+            "physicalShift": 77,
+            "summedAbsoluteRgbDifference": 291
+          },
+          {
+            "physicalShift": 78,
+            "summedAbsoluteRgbDifference": 12081
+          },
+          {
+            "physicalShift": 76,
+            "summedAbsoluteRgbDifference": 12120
+          }
+        ],
+        "runtimeErrors": []
+      },
+      "atlases": [
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-0-corrected.png",
+          "cropPhysical": {
+            "x": 0,
+            "y": 481,
+            "width": 640,
+            "height": 111
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            0,
+            189,
+            4080
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-1-corrected.png",
+          "cropPhysical": {
+            "x": 640,
+            "y": 481,
+            "width": 640,
+            "height": 111
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            6388,
+            5632,
+            4067
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-2-corrected.png",
+          "cropPhysical": {
+            "x": 1280,
+            "y": 481,
+            "width": 640,
+            "height": 111
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            0,
+            2507,
+            4113
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-rail-3-corrected.png",
+          "cropPhysical": {
+            "x": 1920,
+            "y": 481,
+            "width": 640,
+            "height": 111
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            6042,
+            3863,
+            3863
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-0-corrected.png",
+          "cropPhysical": {
+            "x": 0,
+            "y": 642,
+            "width": 640,
+            "height": 438
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            2067,
+            2067,
+            2387
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-1-corrected.png",
+          "cropPhysical": {
+            "x": 640,
+            "y": 642,
+            "width": 640,
+            "height": 438
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            6450,
+            6886,
+            4896
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-2-corrected.png",
+          "cropPhysical": {
+            "x": 1280,
+            "y": 642,
+            "width": 640,
+            "height": 438
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            0,
+            320,
+            2213
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-3-corrected.png",
+          "cropPhysical": {
+            "x": 1920,
+            "y": 642,
+            "width": 640,
+            "height": 438
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            80,
+            80,
+            400
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compact",
+      "css": [
+        800,
+        600
+      ],
+      "dpr": 1,
+      "viewport": {
+        "width": 800,
+        "height": 600,
+        "physicalScale": 1,
+        "worldScale": 1.5,
+        "cssWidth": 800,
+        "cssHeight": 600,
+        "worldWidth": 533.3333333333334
+      },
+      "calculated": {
+        "layout": {
+          "wide": true,
+          "portrait": false,
+          "composition": {
+            "image": "art/tokyo-wide-fine.png",
+            "resolution": 2,
+            "width": 723,
+            "height": 241,
+            "windows": [
+              [
+                153,
+                154,
+                4,
+                5
+              ],
+              [
+                577.5,
+                161,
+                4,
+                5
+              ],
+              [
+                304,
+                156.5,
+                2.5,
+                4
+              ],
+              [
+                414,
+                158.5,
+                3.5,
+                2.5
+              ],
+              [
+                502.5,
+                150,
+                2.5,
+                4.5
+              ],
+              [
+                544.5,
+                145.5,
+                2,
+                3
+              ],
+              [
+                255,
+                169,
+                5,
+                7
+              ],
+              [
+                517.5,
+                151,
+                1.5,
+                2.5
+              ],
+              [
+                395.5,
+                158.5,
+                1.5,
+                3
+              ]
+            ],
+            "darkWall": [
+              584,
+              161,
+              3,
+              5
+            ],
+            "stars": [
+              [
+                140.5,
+                4.5,
+                0.5,
+                0.5
+              ],
+              [
+                267.5,
+                6.5,
+                0.5,
+                0.5
+              ],
+              [
+                402.5,
+                8.5,
+                0.5,
+                0.5
+              ],
+              [
+                504,
+                10,
+                0.5,
+                0.5
+              ],
+              [
+                145,
+                22.5,
+                0.5,
+                0.5
+              ],
+              [
+                270.5,
+                17.5,
+                0.5,
+                0.5
+              ],
+              [
+                399,
+                19.5,
+                0.5,
+                0.5
+              ],
+              [
+                508.5,
+                25,
+                0.5,
+                0.5
+              ],
+              [
+                158,
+                30,
+                0.5,
+                0.5
+              ],
+              [
+                273.5,
+                31.5,
+                0.5,
+                0.5
+              ],
+              [
+                377.5,
+                30,
+                0.5,
+                0.5
+              ],
+              [
+                371,
+                51,
+                0.5,
+                0.5
+              ],
+              [
+                141,
+                42,
+                0.5,
+                0.5
+              ],
+              [
+                257.5,
+                45.5,
+                0.5,
+                0.5
+              ],
+              [
+                388.5,
+                49.5,
+                0.5,
+                0.5
+              ],
+              [
+                495.5,
+                44,
+                0.5,
+                0.5
+              ]
+            ],
+            "starCores": [
+              {
+                "core": [
+                  140.5,
+                  4.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  139,
+                  4,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  267.5,
+                  6.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  266.5,
+                  7,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  402.5,
+                  8.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  401.5,
+                  9,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  504,
+                  10,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  502.5,
+                  9.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  145,
+                  22.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  143.5,
+                  21.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  270.5,
+                  17.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  271,
+                  16.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  399,
+                  19.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  400,
+                  20,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  508.5,
+                  25,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  508,
+                  25.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  158,
+                  30,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  159.5,
+                  31.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  273.5,
+                  31.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  273.5,
+                  30,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  377.5,
+                  30,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  378,
+                  29,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  371,
+                  51,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  372,
+                  50,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  141,
+                  42,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  139.5,
+                  40.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  257.5,
+                  45.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  256,
+                  45.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  388.5,
+                  49.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  387.5,
+                  50,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  495.5,
+                  44,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  494.5,
+                  43.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            ],
+            "skylineCores": [
+              {
+                "lit": [
+                  195,
+                  79,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  194.5,
+                  80,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  244.5,
+                  96.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  246,
+                  95.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  308,
+                  84,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  309.5,
+                  84,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  379,
+                  91.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  380.5,
+                  90,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  450.5,
+                  80,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  452,
+                  79,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  560.5,
+                  99.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  561.5,
+                  98,
+                  0.5,
+                  0.5
+                ]
+              }
+            ],
+            "roomLight": {
+              "windowIndex": 6,
+              "glass": [
+                255,
+                169,
+                5,
+                7
+              ],
+              "leftGlass": [
+                251.5,
+                171,
+                2,
+                5
+              ],
+              "dark": [
+                265.5,
+                169,
+                2,
+                6
+              ],
+              "replace": true
+            },
+            "railPoles": [
+              [
+                284,
+                109,
+                2,
+                13
+              ],
+              [
+                357.5,
+                109,
+                2,
+                13
+              ],
+              [
+                425.5,
+                109,
+                2,
+                13
+              ],
+              [
+                487,
+                109,
+                2,
+                13
+              ],
+              [
+                618.5,
+                109,
+                2,
+                13
+              ]
+            ],
+            "railBottom": 117.5,
+            "floor": 212,
+            "floorPatch": [
+              350,
+              230,
+              8,
+              8
+            ],
+            "darkSky": [
+              400,
+              8,
+              0.5,
+              0.5
+            ],
+            "skyBottom": 55,
+            "aircraftY": 35,
+            "cloudY": 45,
+            "floorMargin": 4,
+            "actorScale": 0.5,
+            "streetCar": {
+              "route": [
+                [
+                  357,
+                  193
+                ],
+                [
+                  357,
+                  183
+                ],
+                [
+                  354.5,
+                  170
+                ],
+                [
+                  355,
+                  155
+                ]
+              ],
+              "width": 4,
+              "occlusion": [
+                [
+                  342.5,
+                  191,
+                  24,
+                  7.5
+                ]
+              ],
+              "context": [
+                335,
+                146,
+                45,
+                54
+              ],
+              "reviewScale": 8
+            },
+            "plant": {
+              "sourceFoot": 209,
+              "sourceFloorTop": 207
+            },
+            "background": "art/tokyo-wide-fine.png"
+          },
+          "scale": 2,
+          "motionScale": 3,
+          "originX": -323,
+          "originY": 59,
+          "railBottom": 294,
+          "skyBottom": 169,
+          "aircraftScale": 0.255,
+          "cloudScale": 1.0499999999999998,
+          "aircraftY": 129,
+          "cloudY": 96,
+          "catY": 483
+        },
+        "plant": {
+          "x": 400,
+          "footY": 477,
+          "scale": 0.375,
+          "width": 30,
+          "height": 42,
+          "top": 435.375,
+          "bottom": 477.375,
+          "visible": true
+        },
+        "actorScale": 1.5,
+        "trainWidth": 95.03999999999999,
+        "trainHeight": 23.4,
+        "initialTrainX": 199.48000000000002,
+        "trainPixelsPerSecond": 48,
+        "trainPhysicalPixelsPerSecond": 48,
+        "samples": [
+          {
+            "requestedSeconds": 0,
+            "catPose": {
+              "x": 200,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.25,
+              "distance": 0.4375,
+              "alpha": 1
+            }
+          },
+          {
+            "requestedSeconds": 1,
+            "catPose": {
+              "x": 248,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.3,
+              "distance": 0.51,
+              "alpha": 1
+            }
+          },
+          {
+            "requestedSeconds": 4,
+            "catPose": {
+              "x": 392,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.45,
+              "distance": 0.6975,
+              "alpha": 1
+            }
+          },
+          {
+            "requestedSeconds": 8,
+            "catPose": {
+              "x": 584,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.65,
+              "distance": 0.8775000000000001,
+              "alpha": 1
+            }
+          }
+        ]
+      },
+      "measured": {
+        "screenshotPhysical": [
+          800,
+          600
+        ],
+        "trainTranslationPatchPhysical": {
+          "x": 214,
+          "y": 279,
+          "width": 11,
+          "height": 4
+        },
+        "bestOneSecondTrainRgbShifts": [
+          {
+            "physicalShift": 46,
+            "summedAbsoluteRgbDifference": 61
+          },
+          {
+            "physicalShift": 45,
+            "summedAbsoluteRgbDifference": 4068
+          },
+          {
+            "physicalShift": 47,
+            "summedAbsoluteRgbDifference": 4232
+          }
+        ],
+        "runtimeErrors": []
+      },
+      "atlases": [
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/compact-rail-0-corrected.png",
+          "cropPhysical": {
+            "x": 0,
+            "y": 262,
+            "width": 640,
+            "height": 64
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            2292,
+            3525,
+            3475
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/compact-rail-1-corrected.png",
+          "cropPhysical": {
+            "x": 640,
+            "y": 262,
+            "width": 160,
+            "height": 64
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            2166,
+            1399,
+            1600
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/compact-road-roof-0-corrected.png",
+          "cropPhysical": {
+            "x": 0,
+            "y": 351,
+            "width": 640,
+            "height": 249
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            2852,
+            3113,
+            3319
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/compact-road-roof-1-corrected.png",
+          "cropPhysical": {
+            "x": 640,
+            "y": 351,
+            "width": 160,
+            "height": 249
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            20,
+            65,
+            65
+          ]
+        }
+      ]
+    },
+    {
+      "name": "landscape",
+      "css": [
+        844,
+        390
+      ],
+      "dpr": 2,
+      "viewport": {
+        "width": 844,
+        "height": 390,
+        "physicalScale": 2,
+        "worldScale": 0.975,
+        "cssWidth": 844,
+        "cssHeight": 390,
+        "worldWidth": 865.6410256410256
+      },
+      "calculated": {
+        "layout": {
+          "wide": true,
+          "portrait": false,
+          "composition": {
+            "image": "art/tokyo-wide-fine.png",
+            "resolution": 2,
+            "width": 723,
+            "height": 241,
+            "windows": [
+              [
+                153,
+                154,
+                4,
+                5
+              ],
+              [
+                577.5,
+                161,
+                4,
+                5
+              ],
+              [
+                304,
+                156.5,
+                2.5,
+                4
+              ],
+              [
+                414,
+                158.5,
+                3.5,
+                2.5
+              ],
+              [
+                502.5,
+                150,
+                2.5,
+                4.5
+              ],
+              [
+                544.5,
+                145.5,
+                2,
+                3
+              ],
+              [
+                255,
+                169,
+                5,
+                7
+              ],
+              [
+                517.5,
+                151,
+                1.5,
+                2.5
+              ],
+              [
+                395.5,
+                158.5,
+                1.5,
+                3
+              ]
+            ],
+            "darkWall": [
+              584,
+              161,
+              3,
+              5
+            ],
+            "stars": [
+              [
+                140.5,
+                4.5,
+                0.5,
+                0.5
+              ],
+              [
+                267.5,
+                6.5,
+                0.5,
+                0.5
+              ],
+              [
+                402.5,
+                8.5,
+                0.5,
+                0.5
+              ],
+              [
+                504,
+                10,
+                0.5,
+                0.5
+              ],
+              [
+                145,
+                22.5,
+                0.5,
+                0.5
+              ],
+              [
+                270.5,
+                17.5,
+                0.5,
+                0.5
+              ],
+              [
+                399,
+                19.5,
+                0.5,
+                0.5
+              ],
+              [
+                508.5,
+                25,
+                0.5,
+                0.5
+              ],
+              [
+                158,
+                30,
+                0.5,
+                0.5
+              ],
+              [
+                273.5,
+                31.5,
+                0.5,
+                0.5
+              ],
+              [
+                377.5,
+                30,
+                0.5,
+                0.5
+              ],
+              [
+                371,
+                51,
+                0.5,
+                0.5
+              ],
+              [
+                141,
+                42,
+                0.5,
+                0.5
+              ],
+              [
+                257.5,
+                45.5,
+                0.5,
+                0.5
+              ],
+              [
+                388.5,
+                49.5,
+                0.5,
+                0.5
+              ],
+              [
+                495.5,
+                44,
+                0.5,
+                0.5
+              ]
+            ],
+            "starCores": [
+              {
+                "core": [
+                  140.5,
+                  4.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  139,
+                  4,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  267.5,
+                  6.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  266.5,
+                  7,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  402.5,
+                  8.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  401.5,
+                  9,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  504,
+                  10,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  502.5,
+                  9.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  145,
+                  22.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  143.5,
+                  21.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  270.5,
+                  17.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  271,
+                  16.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  399,
+                  19.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  400,
+                  20,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  508.5,
+                  25,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  508,
+                  25.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  158,
+                  30,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  159.5,
+                  31.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  273.5,
+                  31.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  273.5,
+                  30,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  377.5,
+                  30,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  378,
+                  29,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  371,
+                  51,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  372,
+                  50,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  141,
+                  42,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  139.5,
+                  40.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  257.5,
+                  45.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  256,
+                  45.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  388.5,
+                  49.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  387.5,
+                  50,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  495.5,
+                  44,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  494.5,
+                  43.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            ],
+            "skylineCores": [
+              {
+                "lit": [
+                  195,
+                  79,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  194.5,
+                  80,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  244.5,
+                  96.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  246,
+                  95.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  308,
+                  84,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  309.5,
+                  84,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  379,
+                  91.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  380.5,
+                  90,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  450.5,
+                  80,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  452,
+                  79,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  560.5,
+                  99.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  561.5,
+                  98,
+                  0.5,
+                  0.5
+                ]
+              }
+            ],
+            "roomLight": {
+              "windowIndex": 6,
+              "glass": [
+                255,
+                169,
+                5,
+                7
+              ],
+              "leftGlass": [
+                251.5,
+                171,
+                2,
+                5
+              ],
+              "dark": [
+                265.5,
+                169,
+                2,
+                6
+              ],
+              "replace": true
+            },
+            "railPoles": [
+              [
+                284,
+                109,
+                2,
+                13
+              ],
+              [
+                357.5,
+                109,
+                2,
+                13
+              ],
+              [
+                425.5,
+                109,
+                2,
+                13
+              ],
+              [
+                487,
+                109,
+                2,
+                13
+              ],
+              [
+                618.5,
+                109,
+                2,
+                13
+              ]
+            ],
+            "railBottom": 117.5,
+            "floor": 212,
+            "floorPatch": [
+              350,
+              230,
+              8,
+              8
+            ],
+            "darkSky": [
+              400,
+              8,
+              0.5,
+              0.5
+            ],
+            "skyBottom": 55,
+            "aircraftY": 35,
+            "cloudY": 45,
+            "floorMargin": 4,
+            "actorScale": 0.5,
+            "streetCar": {
+              "route": [
+                [
+                  357,
+                  193
+                ],
+                [
+                  357,
+                  183
+                ],
+                [
+                  354.5,
+                  170
+                ],
+                [
+                  355,
+                  155
+                ]
+              ],
+              "width": 4,
+              "occlusion": [
+                [
+                  342.5,
+                  191,
+                  24,
+                  7.5
+                ]
+              ],
+              "context": [
+                335,
+                146,
+                45,
+                54
+              ],
+              "reviewScale": 8
+            },
+            "plant": {
+              "sourceFoot": 209,
+              "sourceFloorTop": 207
+            },
+            "background": "art/tokyo-wide-fine.png"
+          },
+          "scale": 2,
+          "motionScale": 2,
+          "originX": -301,
+          "originY": -46,
+          "railBottom": 189,
+          "skyBottom": 64,
+          "aircraftScale": 0.17,
+          "cloudScale": 0.7,
+          "aircraftY": 24,
+          "cloudY": 15,
+          "catY": 378
+        },
+        "plant": {
+          "x": 422,
+          "footY": 372,
+          "scale": 0.25,
+          "width": 20,
+          "height": 28,
+          "top": 344.25,
+          "bottom": 372.25,
+          "visible": true
+        },
+        "actorScale": 1,
+        "trainWidth": 63.36,
+        "trainHeight": 15.6,
+        "initialTrainX": 237.32,
+        "trainPixelsPerSecond": 32,
+        "trainPhysicalPixelsPerSecond": 64,
+        "samples": [
+          {
+            "requestedSeconds": 0,
+            "catPose": {
+              "x": 211,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.25,
+              "distance": 0.4375,
+              "alpha": 1
+            }
+          },
+          {
+            "requestedSeconds": 1,
+            "catPose": {
+              "x": 243,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.3,
+              "distance": 0.51,
+              "alpha": 1
+            }
+          },
+          {
+            "requestedSeconds": 4,
+            "catPose": {
+              "x": 339,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.45,
+              "distance": 0.6975,
+              "alpha": 1
+            }
+          },
+          {
+            "requestedSeconds": 8,
+            "catPose": {
+              "x": 467,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.65,
+              "distance": 0.8775000000000001,
+              "alpha": 1
+            }
+          }
+        ]
+      },
+      "measured": {
+        "screenshotPhysical": [
+          1688,
+          780
+        ],
+        "trainTranslationPatchPhysical": {
+          "x": 494,
+          "y": 358,
+          "width": 14,
+          "height": 6
+        },
+        "bestOneSecondTrainRgbShifts": [
+          {
+            "physicalShift": 60,
+            "summedAbsoluteRgbDifference": 136
+          },
+          {
+            "physicalShift": 59,
+            "summedAbsoluteRgbDifference": 5958
+          },
+          {
+            "physicalShift": 61,
+            "summedAbsoluteRgbDifference": 6238
+          }
+        ],
+        "runtimeErrors": []
+      },
+      "atlases": [
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/landscape-rail-0-corrected.png",
+          "cropPhysical": {
+            "x": 0,
+            "y": 330,
+            "width": 640,
+            "height": 112
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            3820,
+            2712,
+            5408
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/landscape-rail-1-corrected.png",
+          "cropPhysical": {
+            "x": 640,
+            "y": 330,
+            "width": 640,
+            "height": 112
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            436,
+            2716,
+            2724
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/landscape-rail-2-corrected.png",
+          "cropPhysical": {
+            "x": 1280,
+            "y": 330,
+            "width": 408,
+            "height": 112
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            4124,
+            3796,
+            2696
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/landscape-road-roof-0-corrected.png",
+          "cropPhysical": {
+            "x": 0,
+            "y": 492,
+            "width": 640,
+            "height": 288
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            5628,
+            3464,
+            3504
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/landscape-road-roof-1-corrected.png",
+          "cropPhysical": {
+            "x": 640,
+            "y": 492,
+            "width": 640,
+            "height": 288
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            228,
+            2864,
+            2864
+          ]
+        },
+        {
+          "file": "art-reviews/2026-10-28-wide-fine-final-active/landscape-road-roof-2-corrected.png",
+          "cropPhysical": {
+            "x": 1280,
+            "y": 492,
+            "width": 408,
+            "height": 288
+          },
+          "panels": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "measuredChangedPixelsVsInitial": [
+            0,
+            80,
+            260,
+            260
+          ]
+        }
+      ]
+    },
+    {
+      "name": "wide-1920",
+      "css": [
+        1920,
+        720
+      ],
+      "dpr": 1,
+      "viewport": {
+        "width": 1920,
+        "height": 720,
+        "physicalScale": 1,
+        "worldScale": 1.8,
+        "cssWidth": 1920,
+        "cssHeight": 720,
+        "worldWidth": 1066.6666666666667
+      },
+      "calculated": {
+        "layout": {
+          "wide": true,
+          "portrait": false,
+          "composition": {
+            "image": "art/tokyo-wide-fine.png",
+            "resolution": 2,
+            "width": 723,
+            "height": 241,
+            "windows": [
+              [
+                153,
+                154,
+                4,
+                5
+              ],
+              [
+                577.5,
+                161,
+                4,
+                5
+              ],
+              [
+                304,
+                156.5,
+                2.5,
+                4
+              ],
+              [
+                414,
+                158.5,
+                3.5,
+                2.5
+              ],
+              [
+                502.5,
+                150,
+                2.5,
+                4.5
+              ],
+              [
+                544.5,
+                145.5,
+                2,
+                3
+              ],
+              [
+                255,
+                169,
+                5,
+                7
+              ],
+              [
+                517.5,
+                151,
+                1.5,
+                2.5
+              ],
+              [
+                395.5,
+                158.5,
+                1.5,
+                3
+              ]
+            ],
+            "darkWall": [
+              584,
+              161,
+              3,
+              5
+            ],
+            "stars": [
+              [
+                140.5,
+                4.5,
+                0.5,
+                0.5
+              ],
+              [
+                267.5,
+                6.5,
+                0.5,
+                0.5
+              ],
+              [
+                402.5,
+                8.5,
+                0.5,
+                0.5
+              ],
+              [
+                504,
+                10,
+                0.5,
+                0.5
+              ],
+              [
+                145,
+                22.5,
+                0.5,
+                0.5
+              ],
+              [
+                270.5,
+                17.5,
+                0.5,
+                0.5
+              ],
+              [
+                399,
+                19.5,
+                0.5,
+                0.5
+              ],
+              [
+                508.5,
+                25,
+                0.5,
+                0.5
+              ],
+              [
+                158,
+                30,
+                0.5,
+                0.5
+              ],
+              [
+                273.5,
+                31.5,
+                0.5,
+                0.5
+              ],
+              [
+                377.5,
+                30,
+                0.5,
+                0.5
+              ],
+              [
+                371,
+                51,
+                0.5,
+                0.5
+              ],
+              [
+                141,
+                42,
+                0.5,
+                0.5
+              ],
+              [
+                257.5,
+                45.5,
+                0.5,
+                0.5
+              ],
+              [
+                388.5,
+                49.5,
+                0.5,
+                0.5
+              ],
+              [
+                495.5,
+                44,
+                0.5,
+                0.5
+              ]
+            ],
+            "starCores": [
+              {
+                "core": [
+                  140.5,
+                  4.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  139,
+                  4,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  267.5,
+                  6.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  266.5,
+                  7,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  402.5,
+                  8.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  401.5,
+                  9,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  504,
+                  10,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  502.5,
+                  9.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  145,
+                  22.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  143.5,
+                  21.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  270.5,
+                  17.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  271,
+                  16.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  399,
+                  19.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  400,
+                  20,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  508.5,
+                  25,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  508,
+                  25.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  158,
+                  30,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  159.5,
+                  31.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  273.5,
+                  31.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  273.5,
+                  30,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  377.5,
+                  30,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  378,
+                  29,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  371,
+                  51,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  372,
+                  50,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  141,
+                  42,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  139.5,
+                  40.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  257.5,
+                  45.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  256,
+                  45.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  388.5,
+                  49.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  387.5,
+                  50,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  495.5,
+                  44,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  494.5,
+                  43.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            ],
+            "skylineCores": [
+              {
+                "lit": [
+                  195,
+                  79,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  194.5,
+                  80,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  244.5,
+                  96.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  246,
+                  95.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  308,
+                  84,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  309.5,
+                  84,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  379,
+                  91.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  380.5,
+                  90,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  450.5,
+                  80,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  452,
+                  79,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  560.5,
+                  99.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  561.5,
+                  98,
+                  0.5,
+                  0.5
+                ]
+              }
+            ],
+            "roomLight": {
+              "windowIndex": 6,
+              "glass": [
+                255,
+                169,
+                5,
+                7
+              ],
+              "leftGlass": [
+                251.5,
+                171,
+                2,
+                5
+              ],
+              "dark": [
+                265.5,
+                169,
+                2,
+                6
+              ],
+              "replace": true
+            },
+            "railPoles": [
+              [
+                284,
+                109,
+                2,
+                13
+              ],
+              [
+                357.5,
+                109,
+                2,
+                13
+              ],
+              [
+                425.5,
+                109,
+                2,
+                13
+              ],
+              [
+                487,
+                109,
+                2,
+                13
+              ],
+              [
+                618.5,
+                109,
+                2,
+                13
+              ]
+            ],
+            "railBottom": 117.5,
+            "floor": 212,
+            "floorPatch": [
+              350,
+              230,
+              8,
+              8
+            ],
+            "darkSky": [
+              400,
+              8,
+              0.5,
+              0.5
+            ],
+            "skyBottom": 55,
+            "aircraftY": 35,
+            "cloudY": 45,
+            "floorMargin": 4,
+            "actorScale": 0.5,
+            "streetCar": {
+              "route": [
+                [
+                  357,
+                  193
+                ],
+                [
+                  357,
+                  183
+                ],
+                [
+                  354.5,
+                  170
+                ],
+                [
+                  355,
+                  155
+                ]
+              ],
+              "width": 4,
+              "occlusion": [
+                [
+                  342.5,
+                  191,
+                  24,
+                  7.5
+                ]
+              ],
+              "context": [
+                335,
+                146,
+                45,
+                54
+              ],
+              "reviewScale": 8
+            },
+            "plant": {
+              "sourceFoot": 209,
+              "sourceFloorTop": 207
+            },
+            "background": "art/tokyo-wide-fine.png"
+          },
+          "scale": 4,
+          "motionScale": 3,
+          "originX": -486,
+          "originY": -144,
+          "railBottom": 326,
+          "skyBottom": 76,
+          "aircraftScale": 0.255,
+          "cloudScale": 0.9714285714285714,
+          "aircraftY": 8,
+          "cloudY": 8,
+          "catY": 704
+        },
+        "plant": {
+          "x": 960,
+          "footY": 692,
+          "scale": 0.375,
+          "width": 30,
+          "height": 42,
+          "top": 650.375,
+          "bottom": 692.375,
+          "visible": true
+        },
+        "actorScale": 1.5,
+        "trainWidth": 95.03999999999999,
+        "trainHeight": 23.4,
+        "initialTrainX": 606.48,
+        "trainPixelsPerSecond": 48,
+        "trainPhysicalPixelsPerSecond": 48,
+        "samples": [
+          {
+            "requestedSeconds": 0,
+            "catPose": {
+              "x": 480,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.25,
+              "distance": 0.4375,
+              "alpha": 1
+            }
+          },
+          {
+            "requestedSeconds": 4,
+            "catPose": {
+              "x": 693,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.45,
+              "distance": 0.6975,
+              "alpha": 1
+            }
+          }
+        ]
+      },
+      "measured": {
+        "screenshotPhysical": [
+          1920,
+          720
+        ],
+        "trainTranslationPatchPhysical": {
+          "x": 621,
+          "y": 311,
+          "width": 11,
+          "height": 4
+        },
+        "bestOneSecondTrainRgbShifts": [],
+        "runtimeErrors": []
+      },
+      "atlases": []
+    },
+    {
+      "name": "wide-3200",
+      "css": [
+        3200,
+        1080
+      ],
+      "dpr": 1,
+      "viewport": {
+        "width": 3200,
+        "height": 1080,
+        "physicalScale": 1,
+        "worldScale": 2.7,
+        "cssWidth": 3200,
+        "cssHeight": 1080,
+        "worldWidth": 1185.1851851851852
+      },
+      "calculated": {
+        "layout": {
+          "wide": true,
+          "portrait": false,
+          "composition": {
+            "image": "art/tokyo-wide-fine.png",
+            "resolution": 2,
+            "width": 723,
+            "height": 241,
+            "windows": [
+              [
+                153,
+                154,
+                4,
+                5
+              ],
+              [
+                577.5,
+                161,
+                4,
+                5
+              ],
+              [
+                304,
+                156.5,
+                2.5,
+                4
+              ],
+              [
+                414,
+                158.5,
+                3.5,
+                2.5
+              ],
+              [
+                502.5,
+                150,
+                2.5,
+                4.5
+              ],
+              [
+                544.5,
+                145.5,
+                2,
+                3
+              ],
+              [
+                255,
+                169,
+                5,
+                7
+              ],
+              [
+                517.5,
+                151,
+                1.5,
+                2.5
+              ],
+              [
+                395.5,
+                158.5,
+                1.5,
+                3
+              ]
+            ],
+            "darkWall": [
+              584,
+              161,
+              3,
+              5
+            ],
+            "stars": [
+              [
+                140.5,
+                4.5,
+                0.5,
+                0.5
+              ],
+              [
+                267.5,
+                6.5,
+                0.5,
+                0.5
+              ],
+              [
+                402.5,
+                8.5,
+                0.5,
+                0.5
+              ],
+              [
+                504,
+                10,
+                0.5,
+                0.5
+              ],
+              [
+                145,
+                22.5,
+                0.5,
+                0.5
+              ],
+              [
+                270.5,
+                17.5,
+                0.5,
+                0.5
+              ],
+              [
+                399,
+                19.5,
+                0.5,
+                0.5
+              ],
+              [
+                508.5,
+                25,
+                0.5,
+                0.5
+              ],
+              [
+                158,
+                30,
+                0.5,
+                0.5
+              ],
+              [
+                273.5,
+                31.5,
+                0.5,
+                0.5
+              ],
+              [
+                377.5,
+                30,
+                0.5,
+                0.5
+              ],
+              [
+                371,
+                51,
+                0.5,
+                0.5
+              ],
+              [
+                141,
+                42,
+                0.5,
+                0.5
+              ],
+              [
+                257.5,
+                45.5,
+                0.5,
+                0.5
+              ],
+              [
+                388.5,
+                49.5,
+                0.5,
+                0.5
+              ],
+              [
+                495.5,
+                44,
+                0.5,
+                0.5
+              ]
+            ],
+            "starCores": [
+              {
+                "core": [
+                  140.5,
+                  4.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  139,
+                  4,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  267.5,
+                  6.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  266.5,
+                  7,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  402.5,
+                  8.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  401.5,
+                  9,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  504,
+                  10,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  502.5,
+                  9.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  145,
+                  22.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  143.5,
+                  21.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  270.5,
+                  17.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  271,
+                  16.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  399,
+                  19.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  400,
+                  20,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  508.5,
+                  25,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  508,
+                  25.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  158,
+                  30,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  159.5,
+                  31.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  273.5,
+                  31.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  273.5,
+                  30,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  377.5,
+                  30,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  378,
+                  29,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  371,
+                  51,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  372,
+                  50,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  141,
+                  42,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  139.5,
+                  40.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  257.5,
+                  45.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  256,
+                  45.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  388.5,
+                  49.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  387.5,
+                  50,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  495.5,
+                  44,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  494.5,
+                  43.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            ],
+            "skylineCores": [
+              {
+                "lit": [
+                  195,
+                  79,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  194.5,
+                  80,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  244.5,
+                  96.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  246,
+                  95.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  308,
+                  84,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  309.5,
+                  84,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  379,
+                  91.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  380.5,
+                  90,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  450.5,
+                  80,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  452,
+                  79,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  560.5,
+                  99.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  561.5,
+                  98,
+                  0.5,
+                  0.5
+                ]
+              }
+            ],
+            "roomLight": {
+              "windowIndex": 6,
+              "glass": [
+                255,
+                169,
+                5,
+                7
+              ],
+              "leftGlass": [
+                251.5,
+                171,
+                2,
+                5
+              ],
+              "dark": [
+                265.5,
+                169,
+                2,
+                6
+              ],
+              "replace": true
+            },
+            "railPoles": [
+              [
+                284,
+                109,
+                2,
+                13
+              ],
+              [
+                357.5,
+                109,
+                2,
+                13
+              ],
+              [
+                425.5,
+                109,
+                2,
+                13
+              ],
+              [
+                487,
+                109,
+                2,
+                13
+              ],
+              [
+                618.5,
+                109,
+                2,
+                13
+              ]
+            ],
+            "railBottom": 117.5,
+            "floor": 212,
+            "floorPatch": [
+              350,
+              230,
+              8,
+              8
+            ],
+            "darkSky": [
+              400,
+              8,
+              0.5,
+              0.5
+            ],
+            "skyBottom": 55,
+            "aircraftY": 35,
+            "cloudY": 45,
+            "floorMargin": 4,
+            "actorScale": 0.5,
+            "streetCar": {
+              "route": [
+                [
+                  357,
+                  193
+                ],
+                [
+                  357,
+                  183
+                ],
+                [
+                  354.5,
+                  170
+                ],
+                [
+                  355,
+                  155
+                ]
+              ],
+              "width": 4,
+              "occlusion": [
+                [
+                  342.5,
+                  191,
+                  24,
+                  7.5
+                ]
+              ],
+              "context": [
+                335,
+                146,
+                45,
+                54
+              ],
+              "reviewScale": 8
+            },
+            "plant": {
+              "sourceFoot": 209,
+              "sourceFloorTop": 207
+            },
+            "background": "art/tokyo-wide-fine.png"
+          },
+          "scale": 6,
+          "motionScale": 5,
+          "originX": -569,
+          "originY": -216,
+          "railBottom": 489,
+          "skyBottom": 114,
+          "aircraftScale": 0.42500000000000004,
+          "cloudScale": 1.457142857142857,
+          "aircraftY": 12,
+          "cloudY": 12,
+          "catY": 1056
+        },
+        "plant": {
+          "x": 1600,
+          "footY": 1038,
+          "scale": 0.625,
+          "width": 50,
+          "height": 70,
+          "top": 968.625,
+          "bottom": 1038.625,
+          "visible": true
+        },
+        "actorScale": 2.5,
+        "trainWidth": 158.4,
+        "trainHeight": 39,
+        "initialTrainX": 1061.8,
+        "trainPixelsPerSecond": 80,
+        "trainPhysicalPixelsPerSecond": 80,
+        "samples": [
+          {
+            "requestedSeconds": 0,
+            "catPose": {
+              "x": 800,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.25,
+              "distance": 0.4375,
+              "alpha": 1
+            }
+          },
+          {
+            "requestedSeconds": 4,
+            "catPose": {
+              "x": 1156,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.45,
+              "distance": 0.6975,
+              "alpha": 1
+            }
+          }
+        ]
+      },
+      "measured": {
+        "screenshotPhysical": [
+          3200,
+          1080
+        ],
+        "trainTranslationPatchPhysical": {
+          "x": 1086,
+          "y": 464,
+          "width": 19,
+          "height": 7
+        },
+        "bestOneSecondTrainRgbShifts": [],
+        "runtimeErrors": []
+      },
+      "atlases": []
+    },
+    {
+      "name": "extreme",
+      "css": [
+        2000,
+        500
+      ],
+      "dpr": 1,
+      "viewport": {
+        "width": 2000,
+        "height": 500,
+        "physicalScale": 1,
+        "worldScale": 1.25,
+        "cssWidth": 2000,
+        "cssHeight": 500,
+        "worldWidth": 1600
+      },
+      "calculated": {
+        "layout": {
+          "wide": true,
+          "portrait": false,
+          "composition": {
+            "image": "art/tokyo-wide-fine.png",
+            "resolution": 2,
+            "width": 723,
+            "height": 241,
+            "windows": [
+              [
+                153,
+                154,
+                4,
+                5
+              ],
+              [
+                577.5,
+                161,
+                4,
+                5
+              ],
+              [
+                304,
+                156.5,
+                2.5,
+                4
+              ],
+              [
+                414,
+                158.5,
+                3.5,
+                2.5
+              ],
+              [
+                502.5,
+                150,
+                2.5,
+                4.5
+              ],
+              [
+                544.5,
+                145.5,
+                2,
+                3
+              ],
+              [
+                255,
+                169,
+                5,
+                7
+              ],
+              [
+                517.5,
+                151,
+                1.5,
+                2.5
+              ],
+              [
+                395.5,
+                158.5,
+                1.5,
+                3
+              ]
+            ],
+            "darkWall": [
+              584,
+              161,
+              3,
+              5
+            ],
+            "stars": [
+              [
+                140.5,
+                4.5,
+                0.5,
+                0.5
+              ],
+              [
+                267.5,
+                6.5,
+                0.5,
+                0.5
+              ],
+              [
+                402.5,
+                8.5,
+                0.5,
+                0.5
+              ],
+              [
+                504,
+                10,
+                0.5,
+                0.5
+              ],
+              [
+                145,
+                22.5,
+                0.5,
+                0.5
+              ],
+              [
+                270.5,
+                17.5,
+                0.5,
+                0.5
+              ],
+              [
+                399,
+                19.5,
+                0.5,
+                0.5
+              ],
+              [
+                508.5,
+                25,
+                0.5,
+                0.5
+              ],
+              [
+                158,
+                30,
+                0.5,
+                0.5
+              ],
+              [
+                273.5,
+                31.5,
+                0.5,
+                0.5
+              ],
+              [
+                377.5,
+                30,
+                0.5,
+                0.5
+              ],
+              [
+                371,
+                51,
+                0.5,
+                0.5
+              ],
+              [
+                141,
+                42,
+                0.5,
+                0.5
+              ],
+              [
+                257.5,
+                45.5,
+                0.5,
+                0.5
+              ],
+              [
+                388.5,
+                49.5,
+                0.5,
+                0.5
+              ],
+              [
+                495.5,
+                44,
+                0.5,
+                0.5
+              ]
+            ],
+            "starCores": [
+              {
+                "core": [
+                  140.5,
+                  4.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  139,
+                  4,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  267.5,
+                  6.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  266.5,
+                  7,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  402.5,
+                  8.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  401.5,
+                  9,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  504,
+                  10,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  502.5,
+                  9.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  145,
+                  22.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  143.5,
+                  21.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  270.5,
+                  17.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  271,
+                  16.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  399,
+                  19.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  400,
+                  20,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  508.5,
+                  25,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  508,
+                  25.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  158,
+                  30,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  159.5,
+                  31.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  273.5,
+                  31.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  273.5,
+                  30,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  377.5,
+                  30,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  378,
+                  29,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  371,
+                  51,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  372,
+                  50,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  141,
+                  42,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  139.5,
+                  40.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  257.5,
+                  45.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  256,
+                  45.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  388.5,
+                  49.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  387.5,
+                  50,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "core": [
+                  495.5,
+                  44,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  494.5,
+                  43.5,
+                  0.5,
+                  0.5
+                ]
+              }
+            ],
+            "skylineCores": [
+              {
+                "lit": [
+                  195,
+                  79,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  194.5,
+                  80,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  244.5,
+                  96.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  246,
+                  95.5,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  308,
+                  84,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  309.5,
+                  84,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  379,
+                  91.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  380.5,
+                  90,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  450.5,
+                  80,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  452,
+                  79,
+                  0.5,
+                  0.5
+                ]
+              },
+              {
+                "lit": [
+                  560.5,
+                  99.5,
+                  0.5,
+                  0.5
+                ],
+                "dark": [
+                  561.5,
+                  98,
+                  0.5,
+                  0.5
+                ]
+              }
+            ],
+            "roomLight": {
+              "windowIndex": 6,
+              "glass": [
+                255,
+                169,
+                5,
+                7
+              ],
+              "leftGlass": [
+                251.5,
+                171,
+                2,
+                5
+              ],
+              "dark": [
+                265.5,
+                169,
+                2,
+                6
+              ],
+              "replace": true
+            },
+            "railPoles": [
+              [
+                284,
+                109,
+                2,
+                13
+              ],
+              [
+                357.5,
+                109,
+                2,
+                13
+              ],
+              [
+                425.5,
+                109,
+                2,
+                13
+              ],
+              [
+                487,
+                109,
+                2,
+                13
+              ],
+              [
+                618.5,
+                109,
+                2,
+                13
+              ]
+            ],
+            "railBottom": 117.5,
+            "floor": 212,
+            "floorPatch": [
+              350,
+              230,
+              8,
+              8
+            ],
+            "darkSky": [
+              400,
+              8,
+              0.5,
+              0.5
+            ],
+            "skyBottom": 55,
+            "aircraftY": 35,
+            "cloudY": 45,
+            "floorMargin": 4,
+            "actorScale": 0.5,
+            "streetCar": {
+              "route": [
+                [
+                  357,
+                  193
+                ],
+                [
+                  357,
+                  183
+                ],
+                [
+                  354.5,
+                  170
+                ],
+                [
+                  355,
+                  155
+                ]
+              ],
+              "width": 4,
+              "occlusion": [
+                [
+                  342.5,
+                  191,
+                  24,
+                  7.5
+                ]
+              ],
+              "context": [
+                335,
+                146,
+                45,
+                54
+              ],
+              "reviewScale": 8
+            },
+            "plant": {
+              "sourceFoot": 209,
+              "sourceFloorTop": 207
+            },
+            "background": "art/tokyo-wide-fine.png"
+          },
+          "scale": 2,
+          "motionScale": 2,
+          "originX": 277,
+          "originY": 9,
+          "railBottom": 244,
+          "skyBottom": 119,
+          "aircraftScale": 0.17,
+          "cloudScale": 0.7,
+          "aircraftY": 79,
+          "cloudY": 70,
+          "catY": 433
+        },
+        "plant": {
+          "x": 1000,
+          "footY": 427,
+          "scale": 0.25,
+          "width": 20,
+          "height": 28,
+          "top": 399.25,
+          "bottom": 427.25,
+          "visible": true
+        },
+        "actorScale": 1,
+        "trainWidth": 63.36,
+        "trainHeight": 15.6,
+        "initialTrainX": 815.32,
+        "trainPixelsPerSecond": 32,
+        "trainPhysicalPixelsPerSecond": 32,
+        "samples": [
+          {
+            "requestedSeconds": 0,
+            "catPose": {
+              "x": 500,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.25,
+              "distance": 0.4375,
+              "alpha": 1
+            }
+          },
+          {
+            "requestedSeconds": 4,
+            "catPose": {
+              "x": 722,
+              "direction": 1,
+              "frame": 0,
+              "breath": 0
+            },
+            "streetCarTiming": {
+              "visible": true,
+              "progress": 0.45,
+              "distance": 0.6975,
+              "alpha": 1
+            }
+          }
+        ]
+      },
+      "measured": {
+        "screenshotPhysical": [
+          2000,
+          500
+        ],
+        "trainTranslationPatchPhysical": {
+          "x": 825,
+          "y": 234,
+          "width": 7,
+          "height": 3
+        },
+        "bestOneSecondTrainRgbShifts": [],
+        "runtimeErrors": []
+      },
+      "atlases": []
+    }
+  ],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

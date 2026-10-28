@@ -1,0 +1,57 @@
+{
+  "sourceSha256": "96878cc7003050bdf3becc01dc8bbc91f1309c4400af3012efd1b31f032da4fc",
+  "finalSourceSha256": "96878cc7003050bdf3becc01dc8bbc91f1309c4400af3012efd1b31f032da4fc",
+  "metadata": {
+    "kind": "windows",
+    "scale": 1,
+    "origin": [
+      0,
+      0
+    ],
+    "width": 512,
+    "height": 1152,
+    "panel": 128,
+    "stateColumns": [
+      "original",
+      "on",
+      "mid",
+      "off"
+    ],
+    "poleComparisons": [
+      {
+        "index": 0,
+        "changed": 0
+      },
+      {
+        "index": 1,
+        "changed": 0
+      },
+      {
+        "index": 2,
+        "changed": 0
+      },
+      {
+        "index": 3,
+        "changed": 0
+      },
+      {
+        "index": 4,
+        "changed": 0
+      }
+    ],
+    "samples": [
+      {"index":0,"nativeContext":[145,146,20,21],"glass":[[153,154,4,5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":12,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":10.45,"alpha":0.460000000000001,"sampled":true,"changed":20,"outside":0},{"state":"off","seconds":19.6,"alpha":0.92,"sampled":true,"changed":20,"outside":0}]},
+      {"index":1,"nativeContext":[569,153,21,21],"glass":[[577.5,161,4,5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":11.75,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":10.2,"alpha":0.460000000000001,"sampled":true,"changed":20,"outside":0},{"state":"off","seconds":20.55,"alpha":0.92,"sampled":true,"changed":20,"outside":0}]},
+      {"index":2,"nativeContext":[296,148,19,21],"glass":[[304,156.5,2.5,4]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":11.5,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":9.95,"alpha":0.460000000000001,"sampled":true,"changed":8,"outside":0},{"state":"off","seconds":21.5,"alpha":0.92,"sampled":true,"changed":8,"outside":0}]},
+      {"index":3,"nativeContext":[406,150,20,19],"glass":[[414,158.5,3.5,2.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":11.25,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":9.7,"alpha":0.460000000000001,"sampled":true,"changed":9,"outside":0},{"state":"off","seconds":22.45,"alpha":0.92,"sampled":true,"changed":9,"outside":0}]},
+      {"index":4,"nativeContext":[494,142,19,21],"glass":[[502.5,150,2.5,4.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":11,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":9.45,"alpha":0.460000000000001,"sampled":true,"changed":12,"outside":0},{"state":"off","seconds":23.4,"alpha":0.92,"sampled":true,"changed":12,"outside":0}]},
+      {"index":5,"nativeContext":[536,137,19,20],"glass":[[544.5,145.5,2,3]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":10.75,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":9.2,"alpha":0.460000000000001,"sampled":true,"changed":6,"outside":0},{"state":"off","seconds":24.35,"alpha":0.92,"sampled":true,"changed":6,"outside":0}]},
+      {"index":6,"nativeContext":[243,161,25,23],"glass":[[251.5,171,2,5],[255,169,5,7]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":10.5,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":8.95,"alpha":0.460000000000001,"sampled":true,"changed":45,"outside":0},{"state":"off","seconds":25.300000000000004,"alpha":0.92,"sampled":true,"changed":45,"outside":0}]},
+      {"index":7,"nativeContext":[509,143,18,19],"glass":[[517.5,151,1.5,2.5]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":10.25,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":8.7,"alpha":0.460000000000001,"sampled":true,"changed":4,"outside":0},{"state":"off","seconds":26.25,"alpha":0.92,"sampled":true,"changed":4,"outside":0}]},
+      {"index":8,"nativeContext":[387,150,18,20],"glass":[[395.5,158.5,1.5,3]],"sampledExpected":true,"states":[{"state":"original","seconds":null,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"on","seconds":10,"alpha":0,"sampled":true,"changed":0,"outside":0},{"state":"mid","seconds":8.45,"alpha":0.460000000000001,"sampled":true,"changed":6,"outside":0},{"state":"off","seconds":27.200000000000003,"alpha":0.92,"sampled":true,"changed":6,"outside":0}]}
+    ]
+  },
+  "method": "Image-generation textures composited by /scripts/wide-fine-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

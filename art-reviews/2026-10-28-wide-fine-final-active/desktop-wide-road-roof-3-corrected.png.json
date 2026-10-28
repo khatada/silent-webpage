@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-3-source.png",
+    "width": 1280,
+    "height": 876,
+    "sha256": "2dd562cf2c01d58acab76fafedd3644347af644aa6765db06acca342881328d6"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/desktop-wide-road-roof-3-corrected.png",
+    "width": 1280,
+    "height": 876,
+    "sha256": "2dd562cf2c01d58acab76fafedd3644347af644aa6765db06acca342881328d6"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

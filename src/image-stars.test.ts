@@ -13,6 +13,9 @@ describe('star core sampling', () => {
     expect(starCoreSampled(5, 10, 0.25)).toBe(false);
     expect(starCoreSampled(635, 8, 1)).toBe(true);
     expect(starCoreSampled(635, 8, 4)).toBe(true);
+    expect(starCoreSampled(317.5, 4.5, 1, 2)).toBe(true);
+    expect(starCoreSampled(317, 4.5, 1, 2)).toBe(false);
+    expect(starCoreSampled(3, 5, 0.5, 2)).toBe(true);
   });
   it('retains actual sampled cores in representative and formerly empty crop boundaries', () => {
     const views = [[1440, 900], [390, 844], [295, 844], [844, 390], [2560, 1080], [800, 600],
@@ -23,7 +26,7 @@ describe('star core sampling', () => {
       const composition = layout.portrait ? 2 : layout.wide ? 1 : 0;
       const visible = starScenes[composition].filter(({ core: [x, y] }) => {
         const px = layout.originX + x * layout.scale, py = layout.originY + y * layout.scale;
-        return starCoreSampled(x, y, layout.scale) && px >= 0 && px < width && py >= 0 && py < layout.skyBottom;
+        return starCoreSampled(x, y, layout.scale, composition === 1 ? 2 : 1) && px >= 0 && px < width && py >= 0 && py < layout.skyBottom;
       });
       expect(visible.length, `${width}x${height}`).toBeGreaterThan(0);
     }

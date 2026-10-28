@@ -1,3 +1,4 @@
+import { wideFineArt } from './wide-fine-art';
 import { Container, Rectangle, Sprite, Texture } from 'pixi.js';
 import { generatedArt } from './generated-art';
 import { streetCarTiming } from './street-car-timing';
@@ -7,8 +8,7 @@ type Point = readonly [number, number];
 export const streetCarScenes = [
   { route: [[309, 374], [309, 359], [314, 339], [315, 327]], width: 6,
     occlusion: [[300, 360, 30, 24], [305, 315, 4, 47]], context: [285, 300, 55, 100], reviewScale: 3 },
-  { route: [[358, 199], [358, 186], [357, 172], [357, 160]], width: 4,
-    occlusion: [[347, 188, 23, 18]], context: [337, 142, 43, 65], reviewScale: 4 },
+  wideFineArt.streetCar,
   { route: [[409, 1094], [409, 1066], [414, 1008], [409, 974], [399, 948]], width: 10,
     occlusion: [[393, 1074, 36, 32], [412, 978, 5, 99], [408, 972, 12, 12]],
     context: [375, 922, 70, 190], reviewScale: 2 },

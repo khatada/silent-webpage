@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/wide-3200-4-full-source.png",
+    "width": 3200,
+    "height": 1080,
+    "sha256": "204b40d99e2fd8accfe750316db50f97d329ebc9e83443d5bd572eb5e15a5d14"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/wide-3200-4-full-corrected.png",
+    "width": 3200,
+    "height": 1080,
+    "sha256": "23814f8fc32b7802d6feaead97c48d4f329d0770f087a18692e1d5b85f645c26"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/landscape-rail-2-source.png",
+    "width": 816,
+    "height": 224,
+    "sha256": "14bce87b501534598332b1975c428b749985ecdeec2fede8334d58bb019c1a57"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-wide-fine-final-active/landscape-rail-2-corrected.png",
+    "width": 816,
+    "height": 224,
+    "sha256": "14bce87b501534598332b1975c428b749985ecdeec2fede8334d58bb019c1a57"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

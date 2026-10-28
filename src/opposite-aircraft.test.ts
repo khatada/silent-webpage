@@ -12,7 +12,7 @@ describe('opposite aircraft lane', () => {
     const layouts = viewports.map(([width, height]) => generatedLayout(width, height));
     const geometries = layouts.map((layout, index) => oppositeAircraftGeometry(viewports[index][0], layout));
     expect(geometries.map(geometry => geometry.visible)).toEqual(
-      [true, false, false, false, true, false, true, true, true, true, true]);
+      [true, false, false, true, true, true, true, true, true, true, true]);
     geometries.forEach((geometry, index) => {
       if (!geometry.visible) return;
       expect(geometry.width).toBeGreaterThanOrEqual(oppositeAircraftArt.minimumWidth);
