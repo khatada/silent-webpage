@@ -49,8 +49,13 @@ export function catPose(seconds: number, width: number, sceneScale = 1): CatPose
   const walkDuration = Math.min(18, Math.max(2, distance / (32 * size)));
   const walking = leg < walkDuration;
   const available = 21 - walkDuration;
-  const lookDuration = Math.min(6, available - 1.5);
-  const lookStart = walkDuration + (available - lookDuration) / 2;
+  const originalLookDuration = Math.min(6, available - 1.5);
+  const originalLookStart = walkDuration + (available - originalLookDuration) / 2;
+  // Keep existing timing wherever the full rise already fits. Otherwise use the seated
+  // interval for a four-second rise and a glance of at least three seconds.
+  const extendedRise = originalLookStart - walkDuration < 5 && available >= 8;
+  const lookDuration = extendedRise ? Math.min(6, available - 5) : originalLookDuration;
+  const lookStart = extendedRise ? walkDuration + available - lookDuration : originalLookStart;
   const riseStart = lookStart - 4.5;
   // Keep at least half a second seated on either side; shorter waits retain the old sequence.
   const rising = lookStart - walkDuration >= 5 && leg >= riseStart && leg < riseStart + 4;

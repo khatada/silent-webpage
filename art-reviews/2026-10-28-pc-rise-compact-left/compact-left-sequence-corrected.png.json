@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-pc-rise-compact-left/compact-left-sequence-source.png",
+    "width": 1768,
+    "height": 100,
+    "sha256": "043678c557aadffb2ca479b3028ec400b8b90778e191d815bc922911458206be"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-pc-rise-compact-left/compact-left-sequence-corrected.png",
+    "width": 1768,
+    "height": 100,
+    "sha256": "043678c557aadffb2ca479b3028ec400b8b90778e191d815bc922911458206be"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

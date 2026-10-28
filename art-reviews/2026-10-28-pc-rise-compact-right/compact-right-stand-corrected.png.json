@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-pc-rise-compact-right/compact-right-stand-source.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "6e390588982f9af8baea537f712e56c597ff8f20b8dda355000acc53aef35728"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-pc-rise-compact-right/compact-right-stand-corrected.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "1451f76b630536129c13e9bea56a621ae9f02e2a72f688a70b54d789dcf653da"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

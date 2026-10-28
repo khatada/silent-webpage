@@ -1,7 +1,40 @@
 import { describe, expect, it } from 'vitest';
 import { catLegDuration, catPeriod, catTurnStart, catPose, travelPosition, windowBrightness } from './animation';
+import { generatedLayout } from './generated-layout';
 
 describe('city animation timing', () => {
+  it('fits a complete rise and at least three seconds of looking in the newly eligible seated interval', () => {
+    for (const offset of [0, catLegDuration]) {
+      for (const [time, frame] of [[13.4999, undefined], [13.5, 1], [13.75, 2], [14, 3],
+        [14.25, 4], [14.5, 5], [14.75, 6], [16.25, 5], [16.5, 4], [16.75, 3],
+        [17, 2], [17.25, 1], [17.5, undefined]] as const) {
+        const pose = catPose(time + offset, 832);
+        expect(pose.riseFrame).toBe(frame);
+        expect(pose.x).toBe(catPose(13 + offset, 832).x);
+        expect(pose.lookFrame).toBeUndefined();
+      }
+      expect(catPose(17.9999 + offset, 832).lookFrame).toBeUndefined();
+      expect(catPose(18 + offset, 832).lookFrame).toBe(0);
+      expect(catPose(18.75 + offset, 832).lookFrame).toBe(1);
+      expect(catPose(20.25 + offset, 832).lookFrame).toBe(0);
+      expect(catPose(21 + offset, 832).groomFrame).toBe(0);
+      for (let time = 0; time < 21; time += 0.125) {
+        expect(catPose(time + offset, 832.0064).riseFrame).toBeUndefined();
+      }
+    }
+    for (const [width, height] of [[1440, 900], [1920, 1080], [800, 600]]) {
+      const layout = generatedLayout(width, height);
+      const scale = layout.motionScale * layout.composition.actorScale;
+      expect(Array.from({ length: 168 }, (_, i) => catPose(i / 8, width, scale))
+        .some(pose => pose.riseFrame !== undefined)).toBe(true);
+    }
+  });
+  it('keeps the pose deterministic while the shared motion clock is paused', () => {
+    const paused = catPose(14, 832);
+    expect(paused.riseFrame).toBe(3);
+    for (let i = 0; i < 20; i++) expect(catPose(14, 832)).toEqual(paused);
+    expect(catPose(14.25, 832).riseFrame).toBe(4);
+  });
   it('rises and sits through every generated intermediate with a held stand on both legs', () => {
     // A 5s walk leaves exactly enough room: half a second seated, 4s rising, half a second seated.
     const stages = [[0, 0.25, 1], [0.25, 0.5, 2], [0.5, 0.75, 3], [0.75, 1, 4],
@@ -32,7 +65,7 @@ describe('city animation timing', () => {
   });
   it('only adds the rise when the seated interval fits it, preserving the existing route and later actions', () => {
     for (const [width, scale, enabled] of [[320, 1, true], [640, 2, true],
-      [320.0064, 1, false], [640, 1, false], [1280, 1, false]] as const) {
+      [320.0064, 1, true], [640, 1, true], [832, 1, true], [832.0064, 1, false], [1280, 1, false]] as const) {
       let seen = false;
       for (let time = 0; time < catPeriod; time += 0.125) {
         const pose = catPose(time, width, scale);
@@ -54,13 +87,13 @@ describe('city animation timing', () => {
     }
   });
   it('looks around once while seated, holding the clear glance between two passing poses', () => {
-    // width 640 / scale 1 finishes walking at 10s: centered six-second glance starts at 12.5s.
+    // width 640 / scale 1 finishes walking at 10s; the rise precedes a six-second glance.
     for (const offset of [-catPeriod, 0, catLegDuration, catPeriod]) {
-      for (const [time, expected] of [[12.4999, undefined], [12.5, 0], [13.9999, 0],
-        [14, 1], [16.9999, 1], [17, 0], [18.4999, 0], [18.5, undefined]] as const) {
+      for (const [time, expected] of [[14.9999, undefined], [15, 0], [16.4999, 0],
+        [16.5, 1], [19.4999, 1], [19.5, 0], [20.9999, 0], [21, undefined]] as const) {
         const pose = catPose(time + offset, 640);
         expect(pose.lookFrame).toBe(expected);
-        expect(pose.frame).toBe(4);
+        expect(pose.frame).toBe(time === 21 ? 5 : 4);
         expect(pose.x).toBe(catPose(12 + offset, 640).x);
       }
     }
