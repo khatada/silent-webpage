@@ -1,13 +1,29 @@
-export const maximumStarDarkness = 0.45;
+import { eventRandom } from './event-random';
 
-/** Different fixed periods and phases keep stars from pulsing together. */
-export function starCycle(index: number, composition: number) {
-  const period = 3 + ((index * 7 + composition * 5) % 15) * 4 / 14;
-  return { period, phase: ((index * 11 + composition * 3) % 17) / 17 * period };
+export const maximumStarDarkness = 0.45;
+const eventSpacing = 5;
+const eventJitter = 2;
+const initialPhase = (index: number, composition: number) => eventRandom(index, composition, 0, 10) * eventSpacing;
+const eventStart = (event: number, index: number, composition: number) =>
+  -initialPhase(index, composition) + event * eventSpacing
+    + (event === 0 ? 0 : eventRandom(index, composition, event, 11) * eventJitter);
+
+/** An individual event, retaining period/phase for review callers; later events have new timing and depth. */
+export function starCycle(index: number, composition: number, event = 0) {
+  const start = eventStart(event, index, composition);
+  const period = eventStart(event + 1, index, composition) - start;
+  return { period, phase: -start,
+    peak: period * (0.35 + eventRandom(index, composition, event, 12) * 0.3),
+    maximum: 0.32 + eventRandom(index, composition, event, 13) * (maximumStarDarkness - 0.32) };
 }
 
-/** Smooth changes retain more than half of the original core light and preserve its surrounding glow. */
+/** Smooth irregular twinkles retain over half of the core light; the surrounding glow stays untouched. */
 export function starDarkness(seconds: number, index: number, composition: number): number {
-  const { period, phase } = starCycle(index, composition);
-  return maximumStarDarkness / 2 * (1 - Math.cos((seconds + phase) / period * Math.PI * 2));
+  if (!Number.isFinite(seconds)) return 0;
+  let event = Math.floor((seconds + initialPhase(index, composition)) / eventSpacing);
+  if (seconds < eventStart(event, index, composition)) event--;
+  const { period, phase, peak, maximum } = starCycle(index, composition, event);
+  const time = seconds + phase;
+  const amount = Math.max(0, Math.min(1, time < peak ? time / peak : (period - time) / (period - peak)));
+  return maximum * amount * amount * (3 - 2 * amount);
 }

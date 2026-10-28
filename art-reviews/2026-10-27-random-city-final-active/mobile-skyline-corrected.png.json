@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-27-random-city-final-active/mobile-skyline-source.png",
+    "width": 780,
+    "height": 5688,
+    "sha256": "8aeee81b3b9e5116364180b07d16027552ae2edf7fa29b4fdb55b71f7de537d4"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-27-random-city-final-active/mobile-skyline-corrected.png",
+    "width": 780,
+    "height": 5688,
+    "sha256": "8aeee81b3b9e5116364180b07d16027552ae2edf7fa29b4fdb55b71f7de537d4"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,0 +1,61 @@
+{
+  "baseline": "art-reviews/cat-rise-final-scenes",
+  "method": "Compare all RGBA bytes. Only existing star core frames plus 1 native pixel margin are allowed; initial skyline windows remain lit. This is an initial regression check, not temporal QA.",
+  "comparisons": [
+    {
+      "name": "desktop",
+      "changedPixels": 28,
+      "outsideStarFramesPlus1NativePixel": 0
+    },
+    {
+      "name": "mobile",
+      "changedPixels": 32,
+      "outsideStarFramesPlus1NativePixel": 0
+    },
+    {
+      "name": "narrow",
+      "changedPixels": 8,
+      "outsideStarFramesPlus1NativePixel": 0
+    },
+    {
+      "name": "landscape",
+      "changedPixels": 96,
+      "outsideStarFramesPlus1NativePixel": 0
+    },
+    {
+      "name": "wide",
+      "changedPixels": 275,
+      "outsideStarFramesPlus1NativePixel": 0
+    },
+    {
+      "name": "compact",
+      "changedPixels": 54,
+      "outsideStarFramesPlus1NativePixel": 0
+    },
+    {
+      "name": "tall",
+      "changedPixels": 24,
+      "outsideStarFramesPlus1NativePixel": 0
+    },
+    {
+      "name": "portrait-large",
+      "changedPixels": 15,
+      "outsideStarFramesPlus1NativePixel": 0
+    },
+    {
+      "name": "portrait-boundary",
+      "changedPixels": 15,
+      "outsideStarFramesPlus1NativePixel": 0
+    },
+    {
+      "name": "small-phone",
+      "changedPixels": 0,
+      "outsideStarFramesPlus1NativePixel": 0
+    },
+    {
+      "name": "small-mobile",
+      "changedPixels": 0,
+      "outsideStarFramesPlus1NativePixel": 0
+    }
+  ]
+}

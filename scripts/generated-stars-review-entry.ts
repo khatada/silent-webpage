@@ -19,11 +19,13 @@ async function render(composition: 0 | 1 | 2, start: number) {
   selected.forEach(({ core, dark }, localIndex) => {
     const starIndex = start + localIndex;
     const context = [core[0] - 8, core[1] - 8, 17, 17] as const;
-    const { period, phase } = starCycle(starIndex, composition);
-    const bright = (period - phase) % period;
+    const event = 1;
+    const { phase, peak } = starCycle(starIndex, composition, event);
+    const bright = -phase;
+    const nextBright = -starCycle(starIndex, composition, event + 1).phase;
     [0.5, 1, 4].forEach((scale, scaleIndex) => {
       const row = localIndex * 3 + scaleIndex;
-      [undefined, bright, bright + period / 4, bright + period / 2].forEach((seconds, column) => {
+      [undefined, bright, bright + peak / 2, bright + peak].forEach((seconds, column) => {
         const panelX = column * columnWidth + 8, panelY = row * rowHeight + 6;
         const transform = nativeReviewTransform(panelX, panelY, context, scale);
         const background = new Sprite(new Texture({ source: sources[composition].source,
@@ -39,7 +41,7 @@ async function render(composition: 0 | 1 | 2, start: number) {
           app.stage.addChild(actor.root);
         }
         samples.push({ composition, starIndex, scale, row, column, columnWidth, rowHeight,
-          panelX, panelY, context, core, dark, ...transform, seconds: seconds ?? null, alpha });
+          panelX, panelY, context, core, dark, ...transform, event, nextBright, seconds: seconds ?? null, alpha });
       });
     });
   });

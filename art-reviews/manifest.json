@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "686d02f9bd4d0df22fbeaf8fef54b623502a0217f4b74bba98bace62e2c66e5b",
+  "sourceSha256": "1c020eb2efcb96b0d27353a79cf6cd0b12cfe926f35655d8aa81b82383eb1ca0",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -1823,6 +1823,146 @@
         "prompt": "Regenerate referenced wide Tokyo night rooftop with finer pixel-art detail. Exact unabridged prompt retained in promptFile.",
         "generationEvidence": "art-reviews/2026-10-27-wide-fine/generation.json"
       }
+    },
+    {
+      "image": "art-reviews/random-skyline-star-scenes/compact-corrected.png",
+      "report": "art-reviews/random-skyline-star-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親5/担当6構図の補正後初期全景を実閲覧、wide/tallは無変形帯で全域確認。星芯/空/街/線路/屋上/猫の輪郭と配置を保持。前版との全RGBA比較で既存星core+1nativepx余白外変更0、smallphone/smallmobileは初期全RGBA一致。動作採否は別の本番時間差画像で確認。"
+    },
+    {
+      "image": "art-reviews/random-skyline-star-scenes/desktop-corrected.png",
+      "report": "art-reviews/random-skyline-star-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親5/担当6構図の補正後初期全景を実閲覧、wide/tallは無変形帯で全域確認。星芯/空/街/線路/屋上/猫の輪郭と配置を保持。前版との全RGBA比較で既存星core+1nativepx余白外変更0、smallphone/smallmobileは初期全RGBA一致。動作採否は別の本番時間差画像で確認。"
+    },
+    {
+      "image": "art-reviews/random-skyline-star-scenes/landscape-corrected.png",
+      "report": "art-reviews/random-skyline-star-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親5/担当6構図の補正後初期全景を実閲覧、wide/tallは無変形帯で全域確認。星芯/空/街/線路/屋上/猫の輪郭と配置を保持。前版との全RGBA比較で既存星core+1nativepx余白外変更0、smallphone/smallmobileは初期全RGBA一致。動作採否は別の本番時間差画像で確認。"
+    },
+    {
+      "image": "art-reviews/random-skyline-star-scenes/mobile-corrected.png",
+      "report": "art-reviews/random-skyline-star-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親5/担当6構図の補正後初期全景を実閲覧、wide/tallは無変形帯で全域確認。星芯/空/街/線路/屋上/猫の輪郭と配置を保持。前版との全RGBA比較で既存星core+1nativepx余白外変更0、smallphone/smallmobileは初期全RGBA一致。動作採否は別の本番時間差画像で確認。"
+    },
+    {
+      "image": "art-reviews/random-skyline-star-scenes/narrow-corrected.png",
+      "report": "art-reviews/random-skyline-star-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親5/担当6構図の補正後初期全景を実閲覧、wide/tallは無変形帯で全域確認。星芯/空/街/線路/屋上/猫の輪郭と配置を保持。前版との全RGBA比較で既存星core+1nativepx余白外変更0、smallphone/smallmobileは初期全RGBA一致。動作採否は別の本番時間差画像で確認。"
+    },
+    {
+      "image": "art-reviews/random-skyline-star-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/random-skyline-star-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親5/担当6構図の補正後初期全景を実閲覧、wide/tallは無変形帯で全域確認。星芯/空/街/線路/屋上/猫の輪郭と配置を保持。前版との全RGBA比較で既存星core+1nativepx余白外変更0、smallphone/smallmobileは初期全RGBA一致。動作採否は別の本番時間差画像で確認。"
+    },
+    {
+      "image": "art-reviews/random-skyline-star-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/random-skyline-star-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親5/担当6構図の補正後初期全景を実閲覧、wide/tallは無変形帯で全域確認。星芯/空/街/線路/屋上/猫の輪郭と配置を保持。前版との全RGBA比較で既存星core+1nativepx余白外変更0、smallphone/smallmobileは初期全RGBA一致。動作採否は別の本番時間差画像で確認。"
+    },
+    {
+      "image": "art-reviews/random-skyline-star-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/random-skyline-star-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親5/担当6構図の補正後初期全景を実閲覧、wide/tallは無変形帯で全域確認。星芯/空/街/線路/屋上/猫の輪郭と配置を保持。前版との全RGBA比較で既存星core+1nativepx余白外変更0、smallphone/smallmobileは初期全RGBA一致。動作採否は別の本番時間差画像で確認。"
+    },
+    {
+      "image": "art-reviews/random-skyline-star-scenes/small-phone-corrected.png",
+      "report": "art-reviews/random-skyline-star-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親5/担当6構図の補正後初期全景を実閲覧、wide/tallは無変形帯で全域確認。星芯/空/街/線路/屋上/猫の輪郭と配置を保持。前版との全RGBA比較で既存星core+1nativepx余白外変更0、smallphone/smallmobileは初期全RGBA一致。動作採否は別の本番時間差画像で確認。"
+    },
+    {
+      "image": "art-reviews/random-skyline-star-scenes/tall-corrected.png",
+      "report": "art-reviews/random-skyline-star-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親5/担当6構図の補正後初期全景を実閲覧、wide/tallは無変形帯で全域確認。星芯/空/街/線路/屋上/猫の輪郭と配置を保持。前版との全RGBA比較で既存星core+1nativepx余白外変更0、smallphone/smallmobileは初期全RGBA一致。動作採否は別の本番時間差画像で確認。"
+    },
+    {
+      "image": "art-reviews/random-skyline-star-scenes/wide-corrected.png",
+      "report": "art-reviews/random-skyline-star-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親5/担当6構図の補正後初期全景を実閲覧、wide/tallは無変形帯で全域確認。星芯/空/街/線路/屋上/猫の輪郭と配置を保持。前版との全RGBA比較で既存星core+1nativepx余白外変更0、smallphone/smallmobileは初期全RGBA一致。動作採否は別の本番時間差画像で確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-random-lights-local/atlas-corrected.png",
+      "report": "art-reviews/2026-10-27-random-lights-local/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "親/担当LLMが補正後30panelを実閲覧。window0/star0×3構図、event1 bright/mid/dim/event2brightとoriginalを同絶対位置GPU比較。original/bright全RGBA一致、変化core外0。窓は消灯/点灯し星は光点を残して明暗、枠/haloに新破損なし。全対象の時間特性は112単体で別検証。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-random-city-final-active/desktop-4-corrected.png",
+      "report": "art-reviews/2026-10-27-random-city-final-active/desktop-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが最終8補正画像を全域実閲覧。4秒全景4枚と9時刻×4構図の全幅native帯36枚、全可視coreの無変形matrixを確認。親も4端末の可視core時間差cropを実閲覧。窓と星が独立に明暗変化し、周辺/構図の新破損なし。親の実画素RGB計測は計算alphaと区別。有限sample/遮蔽/小さい遠景core/最終RAFずれを限界としてvisual-decisionへ記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-random-city-final-active/desktop-skyline-corrected.png",
+      "report": "art-reviews/2026-10-27-random-city-final-active/desktop-skyline-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが最終8補正画像を全域実閲覧。4秒全景4枚と9時刻×4構図の全幅native帯36枚、全可視coreの無変形matrixを確認。親も4端末の可視core時間差cropを実閲覧。窓と星が独立に明暗変化し、周辺/構図の新破損なし。親の実画素RGB計測は計算alphaと区別。有限sample/遮蔽/小さい遠景core/最終RAFずれを限界としてvisual-decisionへ記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-random-city-final-active/landscape-4-corrected.png",
+      "report": "art-reviews/2026-10-27-random-city-final-active/landscape-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが最終8補正画像を全域実閲覧。4秒全景4枚と9時刻×4構図の全幅native帯36枚、全可視coreの無変形matrixを確認。親も4端末の可視core時間差cropを実閲覧。窓と星が独立に明暗変化し、周辺/構図の新破損なし。親の実画素RGB計測は計算alphaと区別。有限sample/遮蔽/小さい遠景core/最終RAFずれを限界としてvisual-decisionへ記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-random-city-final-active/landscape-skyline-corrected.png",
+      "report": "art-reviews/2026-10-27-random-city-final-active/landscape-skyline-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが最終8補正画像を全域実閲覧。4秒全景4枚と9時刻×4構図の全幅native帯36枚、全可視coreの無変形matrixを確認。親も4端末の可視core時間差cropを実閲覧。窓と星が独立に明暗変化し、周辺/構図の新破損なし。親の実画素RGB計測は計算alphaと区別。有限sample/遮蔽/小さい遠景core/最終RAFずれを限界としてvisual-decisionへ記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-random-city-final-active/mobile-4-corrected.png",
+      "report": "art-reviews/2026-10-27-random-city-final-active/mobile-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが最終8補正画像を全域実閲覧。4秒全景4枚と9時刻×4構図の全幅native帯36枚、全可視coreの無変形matrixを確認。親も4端末の可視core時間差cropを実閲覧。窓と星が独立に明暗変化し、周辺/構図の新破損なし。親の実画素RGB計測は計算alphaと区別。有限sample/遮蔽/小さい遠景core/最終RAFずれを限界としてvisual-decisionへ記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-random-city-final-active/mobile-skyline-corrected.png",
+      "report": "art-reviews/2026-10-27-random-city-final-active/mobile-skyline-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが最終8補正画像を全域実閲覧。4秒全景4枚と9時刻×4構図の全幅native帯36枚、全可視coreの無変形matrixを確認。親も4端末の可視core時間差cropを実閲覧。窓と星が独立に明暗変化し、周辺/構図の新破損なし。親の実画素RGB計測は計算alphaと区別。有限sample/遮蔽/小さい遠景core/最終RAFずれを限界としてvisual-decisionへ記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-random-city-final-active/tall-4-corrected.png",
+      "report": "art-reviews/2026-10-27-random-city-final-active/tall-4-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが最終8補正画像を全域実閲覧。4秒全景4枚と9時刻×4構図の全幅native帯36枚、全可視coreの無変形matrixを確認。親も4端末の可視core時間差cropを実閲覧。窓と星が独立に明暗変化し、周辺/構図の新破損なし。親の実画素RGB計測は計算alphaと区別。有限sample/遮蔽/小さい遠景core/最終RAFずれを限界としてvisual-decisionへ記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-27-random-city-final-active/tall-skyline-corrected.png",
+      "report": "art-reviews/2026-10-27-random-city-final-active/tall-skyline-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが最終8補正画像を全域実閲覧。4秒全景4枚と9時刻×4構図の全幅native帯36枚、全可視coreの無変形matrixを確認。親も4端末の可視core時間差cropを実閲覧。窓と星が独立に明暗変化し、周辺/構図の新破損なし。親の実画素RGB計測は計算alphaと区別。有限sample/遮蔽/小さい遠景core/最終RAFずれを限界としてvisual-decisionへ記録。"
     }
   ]
 }
