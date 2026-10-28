@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-pc-rise-fullhd-left/fullhd-left-stand-source.png",
+    "width": 1920,
+    "height": 1080,
+    "sha256": "95687992581960cfac112e41104ab373d1dc6ff87c6cf67f8197dc32e8c44688"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-pc-rise-fullhd-left/fullhd-left-stand-corrected.png",
+    "width": 1920,
+    "height": 1080,
+    "sha256": "6a28897ebcf470ba56f65960fdbadf3ce74d15624e3da49cdf56553a4ebd659c"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

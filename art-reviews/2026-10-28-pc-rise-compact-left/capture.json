@@ -1,0 +1,23 @@
+{
+  "sourceSha256": "ef9c9d676c4c134ffc953f38633fc4ac67c7bc93308ff030c5181c4a0ac149f3",
+  "method": "Unmodified production page on 4173. Both directions at actual scene motionScale. Paused clock before navigation, OS motion enabled after initialization and canvas running state awaited before advancing, sequential runFor steps of at most 1000ms. Sample midpoints discovered via catPose. Thirteen native cat-context crops are copied into each device sequence atlas; only standing full scenes are retained in the review directory. Other full scenes remain temporary. Requested seconds, expected poses, catX and footY are calculated geometry. Comparisons include moving background and do not prove cat-only endpoint equality; actual output is reviewed visually, with the last 20fps RAF potentially preceding the requested time.",
+  "samples": [
+    {"name":"compact-left","label":"neutral-before","requestedSeconds":45.42,"expectedFrame":4,"expectedRiseFrame":null,"native":[800,600],"dpr":1,"sceneScale":1.5,"catX":200,"footY":483,"atlasPanel":0,"cropPhysical":{"x":120,"y":397,"width":136,"height":100}},
+    {"name":"compact-left","label":"lean-out","requestedSeconds":46.625,"expectedFrame":4,"expectedRiseFrame":1,"native":[800,600],"dpr":1,"sceneScale":1.5,"catX":200,"footY":483,"atlasPanel":1,"cropPhysical":{"x":120,"y":397,"width":136,"height":100}},
+    {"name":"compact-left","label":"low-out","requestedSeconds":46.875,"expectedFrame":4,"expectedRiseFrame":2,"native":[800,600],"dpr":1,"sceneScale":1.5,"catX":200,"footY":483,"atlasPanel":2,"cropPhysical":{"x":120,"y":397,"width":136,"height":100}},
+    {"name":"compact-left","label":"crouch-out","requestedSeconds":47.125,"expectedFrame":4,"expectedRiseFrame":3,"native":[800,600],"dpr":1,"sceneScale":1.5,"catX":200,"footY":483,"atlasPanel":3,"cropPhysical":{"x":120,"y":397,"width":136,"height":100}},
+    {"name":"compact-left","label":"tail-out","requestedSeconds":47.375,"expectedFrame":4,"expectedRiseFrame":4,"native":[800,600],"dpr":1,"sceneScale":1.5,"catX":200,"footY":483,"atlasPanel":4,"cropPhysical":{"x":120,"y":397,"width":136,"height":100}},
+    {"name":"compact-left","label":"bridge-out","requestedSeconds":47.625,"expectedFrame":4,"expectedRiseFrame":5,"native":[800,600],"dpr":1,"sceneScale":1.5,"catX":200,"footY":483,"atlasPanel":5,"cropPhysical":{"x":120,"y":397,"width":136,"height":100}},
+    {"name":"compact-left","label":"stand","requestedSeconds":48.5,"expectedFrame":4,"expectedRiseFrame":6,"native":[800,600],"dpr":1,"sceneScale":1.5,"catX":200,"footY":483,"atlasPanel":6,"cropPhysical":{"x":120,"y":397,"width":136,"height":100}},
+    {"name":"compact-left","label":"bridge-back","requestedSeconds":49.375,"expectedFrame":4,"expectedRiseFrame":5,"native":[800,600],"dpr":1,"sceneScale":1.5,"catX":200,"footY":483,"atlasPanel":7,"cropPhysical":{"x":120,"y":397,"width":136,"height":100}},
+    {"name":"compact-left","label":"tail-back","requestedSeconds":49.625,"expectedFrame":4,"expectedRiseFrame":4,"native":[800,600],"dpr":1,"sceneScale":1.5,"catX":200,"footY":483,"atlasPanel":8,"cropPhysical":{"x":120,"y":397,"width":136,"height":100}},
+    {"name":"compact-left","label":"crouch-back","requestedSeconds":49.875,"expectedFrame":4,"expectedRiseFrame":3,"native":[800,600],"dpr":1,"sceneScale":1.5,"catX":200,"footY":483,"atlasPanel":9,"cropPhysical":{"x":120,"y":397,"width":136,"height":100}},
+    {"name":"compact-left","label":"low-back","requestedSeconds":50.125,"expectedFrame":4,"expectedRiseFrame":2,"native":[800,600],"dpr":1,"sceneScale":1.5,"catX":200,"footY":483,"atlasPanel":10,"cropPhysical":{"x":120,"y":397,"width":136,"height":100}},
+    {"name":"compact-left","label":"lean-back","requestedSeconds":50.375,"expectedFrame":4,"expectedRiseFrame":1,"native":[800,600],"dpr":1,"sceneScale":1.5,"catX":200,"footY":483,"atlasPanel":11,"cropPhysical":{"x":120,"y":397,"width":136,"height":100}},
+    {"name":"compact-left","label":"neutral-after","requestedSeconds":50.75,"expectedFrame":4,"expectedRiseFrame":null,"native":[800,600],"dpr":1,"sceneScale":1.5,"catX":200,"footY":483,"atlasPanel":12,"cropPhysical":{"x":120,"y":397,"width":136,"height":100}}
+  ],
+  "comparisons": [
+    {"name":"compact-left","changedFromNeutral":[1399,1620,1745,1857,1926,1974,1926,1857,1745,1620,1399,180],"changedLowerHalfFromNeutral":[1138,1365,1473,1525,1519,1423,1519,1525,1473,1365,1138,0],"changedLeanOutVsBack":0,"changedEndpoint":180}
+  ],
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

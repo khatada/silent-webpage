@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "e1c83c39ae8d6537be37923c65fc0afd58b82d84b6ee20cf38d6dea572513ce5",
+  "sourceSha256": "ef9c9d676c4c134ffc953f38633fc4ac67c7bc93308ff030c5181c4a0ac149f3",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -2621,6 +2621,167 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "補正後の3画面の全景と9時刻画像をLLMが全域実閲覧。追加窓の実画素変化を確認した。全景では窓は小さく、列車や雲の動きのほうが目立つ。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-active-v2/desktop-left-sequence-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-active-v2/desktop-left-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-active-v2/desktop-left-stand-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-active-v2/desktop-left-stand-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-active-v2/desktop-right-sequence-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-active-v2/desktop-right-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-active-v2/desktop-right-stand-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-active-v2/desktop-right-stand-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-active-v2/fullhd-right-sequence-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-active-v2/fullhd-right-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-active-v2/fullhd-right-stand-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-active-v2/fullhd-right-stand-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-cat-rise-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-rise-compact-left/compact-left-sequence-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-rise-compact-left/compact-left-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-rise-compact-left/compact-left-stand-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-rise-compact-left/compact-left-stand-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-rise-compact-right/compact-right-sequence-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-rise-compact-right/compact-right-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-rise-compact-right/compact-right-stand-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-rise-compact-right/compact-right-stand-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-rise-fullhd-left/fullhd-left-sequence-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-rise-fullhd-left/fullhd-left-sequence-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-rise-fullhd-left/fullhd-left-stand-corrected.png",
+      "report": "art-reviews/2026-10-28-pc-rise-fullhd-left/fullhd-left-stand-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後画像をLLMが実閲覧。代表画面で猫の姿勢、接地と構図に明白な破綻がないことを確認。モバイル動作、境界、動作軽減時の実画面は未検証で、連続再生全体は保証しない。"
     }
   ]
 }

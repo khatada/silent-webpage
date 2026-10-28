@@ -1,0 +1,61 @@
+{
+  "sourceSha256": "ef9c9d676c4c134ffc953f38633fc4ac67c7bc93308ff030c5181c4a0ac149f3",
+  "decision": "ACCEPTED_REVIEWED_IMAGES_ONLY",
+  "actualLlmView": "1440x900、1920x1080、800x600の左右各13段階アトラスと各立位全景の計12補正画像を原寸で実閲覧。立ち座りの順序と接地を確認し、明白な浮きや輪郭切れを認めない。小さい画面では猫自体が小さい。",
+  "limitations": [
+    "モバイルの起立動作、起立しない境界、および動作軽減中の実画面は今回未検証。",
+    "最初の3方向を含むactive-v2は4画面目で要素と画面スクリーンショットがタイムアウトし capture.json が未作成。画像と補正レポートは残り、各PNGは個別に実閲覧。",
+    "単独のChrome直接撮影ではDPR2モバイルの画像寸法が不一致となり試行失敗。閲覧していない画像は採用しない。",
+    "静止時刻の確認であり連続再生すべての証明ではない。"
+  ],
+  "images": [
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-active-v2/desktop-right-sequence-corrected.png",
+      "sha256": "861f54021a0948e2464fffb68d1d1e52e14e50e82fb6de2e1bbd459420535382"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-active-v2/desktop-right-stand-corrected.png",
+      "sha256": "65cc4a8ad8c8c608bf74faa7f00b86143fba255bc5656d5f5452a7630d6f37f6"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-active-v2/desktop-left-sequence-corrected.png",
+      "sha256": "a05fc493fa0b72e51bf591ec1fd2a7613e13ecb5ecbffea83d5098b2e6001628"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-active-v2/desktop-left-stand-corrected.png",
+      "sha256": "c06a6d2d44263e4359a1ac0818b4e9d3ddb269021b0a2fea65f6694841bc70bb"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-active-v2/fullhd-right-sequence-corrected.png",
+      "sha256": "6479293c54431292b7dd881c5d96a66676f4c6f440f3c65bb1c4d6bb520ce717"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-cat-rise-active-v2/fullhd-right-stand-corrected.png",
+      "sha256": "9bbfdf5f59634aee8e72794c9a147fd34daf1930f1d238e6918ef5ee690a2d0e"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-rise-compact-right/compact-right-sequence-corrected.png",
+      "sha256": "cdb7ce4eb534b6f066ace687a271f72e0c5abe54cf399a0143bd8f6f11f2cbcb"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-rise-compact-right/compact-right-stand-corrected.png",
+      "sha256": "1451f76b630536129c13e9bea56a621ae9f02e2a72f688a70b54d789dcf653da"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-rise-compact-left/compact-left-sequence-corrected.png",
+      "sha256": "043678c557aadffb2ca479b3028ec400b8b90778e191d815bc922911458206be"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-rise-compact-left/compact-left-stand-corrected.png",
+      "sha256": "915c36f9b7faaef3161836612168dee7bd1273c09954c895453b2a01c695803c"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-rise-fullhd-left/fullhd-left-sequence-corrected.png",
+      "sha256": "751c0f14032a04d8467a3a82dde295ef8ed438f81a5f7565f42894fc7dcd1cce"
+    },
+    {
+      "image": "art-reviews/2026-10-28-pc-rise-fullhd-left/fullhd-left-stand-corrected.png",
+      "sha256": "6a28897ebcf470ba56f65960fdbadf3ce74d15624e3da49cdf56553a4ebd659c"
+    }
+  ]
+}

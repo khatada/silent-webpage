@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-pc-cat-rise-active-v2/fullhd-right-stand-source.png",
+    "width": 1920,
+    "height": 1080,
+    "sha256": "87c2e907b22482768b256ded6342b41877010e44da3fd42816240d805f9723e3"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-pc-cat-rise-active-v2/fullhd-right-stand-corrected.png",
+    "width": 1920,
+    "height": 1080,
+    "sha256": "9bbfdf5f59634aee8e72794c9a147fd34daf1930f1d238e6918ef5ee690a2d0e"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
