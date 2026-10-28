@@ -1,0 +1,51 @@
+{
+  "sourceSha256": "e1c83c39ae8d6537be37923c65fc0afd58b82d84b6ee20cf38d6dea572513ce5",
+  "decision": "ACCEPTED_WITH_LIMITATION",
+  "actualLlmView": "11全景全域を補正後原寸で閲覧。構図、ビル、猫、列車に目立つ新たな崩れなし。",
+  "images": [
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/compact-corrected.png",
+      "sha256": "194e272512787fc6816c794170afbd391fe9d6095f9207455dea92c04fc2b718"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/desktop-corrected.png",
+      "sha256": "7cf3dc5a4534db6d636242d6a03dec7328b4d093c2445189332df670b33a3730"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/landscape-corrected.png",
+      "sha256": "9bd0dc81b4629c8591d1dd48488fe2a3c264f90f6482f15a00961ebca9816d81"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/mobile-corrected.png",
+      "sha256": "635bc3a7ba2eca25654079b5487f81f7a5f275eb9e672c48a447e45c35f0e9a2"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/narrow-corrected.png",
+      "sha256": "96bd8a9613c60861670ef0a6b8a162e46b0c14c2a0b1c6e3d0dacf52d0726a8d"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/portrait-boundary-corrected.png",
+      "sha256": "f65adc2d5ec5c4ced7dd934217e9ea48ec76b6e82a23d5cafad8a5fb02c27b60"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/portrait-large-corrected.png",
+      "sha256": "4c13eb4b06b6ceaf51a166e6e71e7246a6ae5fe5ebd3084c60ce93314b7e3b71"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/small-mobile-corrected.png",
+      "sha256": "bc010146e2a7289bff7d72a35fa0802d65db1645f2fb3078371cde3e54f9853e"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/small-phone-corrected.png",
+      "sha256": "e5b5bbea3056fa6e0ef5efcbdcd6e35d188c280ed881fad1310514d60771999e"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/tall-corrected.png",
+      "sha256": "e81f0824fd137b3a80f58c4c297a2233d9c1d803b07cd712e5989078eeb0b4df"
+    },
+    {
+      "image": "art-reviews/2026-10-28-grouped-skyline-scenes/wide-corrected.png",
+      "sha256": "bf8c381bfe3d0fea2c89c4c6cf0d9a72d37fa301d04c936e106c0581c49497c5"
+    }
+  ]
+}
