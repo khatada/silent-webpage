@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-landscape-cat-rise-scenes/small-mobile-source.png",
+    "width": 750,
+    "height": 1334,
+    "sha256": "1c8a5660367868e75587dbd0720934cd52a55614596008893026389ff1c90b54"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-landscape-cat-rise-scenes/small-mobile-corrected.png",
+    "width": 750,
+    "height": 1334,
+    "sha256": "bc010146e2a7289bff7d72a35fa0802d65db1645f2fb3078371cde3e54f9853e"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

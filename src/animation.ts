@@ -51,15 +51,18 @@ export function catPose(seconds: number, width: number, sceneScale = 1): CatPose
   const available = 21 - walkDuration;
   const originalLookDuration = Math.min(6, available - 1.5);
   const originalLookStart = walkDuration + (available - originalLookDuration) / 2;
-  // Keep existing timing wherever the full rise already fits. Otherwise use the seated
-  // interval for a four-second rise and a glance of at least three seconds.
-  const extendedRise = originalLookStart - walkDuration < 5 && available >= 8;
-  const lookDuration = extendedRise ? Math.min(6, available - 5) : originalLookDuration;
+  // Existing poses keep their timing wherever the full rise already fits. A short
+  // seated interval can use the same intermediates with a shorter standing hold.
+  const shortRise = originalLookStart - walkDuration < 5 && available >= 7.5 && available < 8;
+  const extendedRise = originalLookStart - walkDuration < 5 && available >= 7.5;
+  const riseDuration = shortRise ? 3.5 : 4;
+  const lookDuration = extendedRise ? Math.min(6, available - riseDuration - 1) : originalLookDuration;
   const lookStart = extendedRise ? walkDuration + available - lookDuration : originalLookStart;
-  const riseStart = lookStart - 4.5;
+  const riseStart = lookStart - riseDuration - 0.5;
   // Keep at least half a second seated on either side; shorter waits retain the old sequence.
-  const rising = lookStart - walkDuration >= 5 && leg >= riseStart && leg < riseStart + 4;
+  const rising = lookStart - walkDuration >= riseDuration + 1 && leg >= riseStart && leg < riseStart + riseDuration;
   const riseProgress = leg - riseStart;
+  const riseStep = shortRise && riseProgress >= 2.25 ? riseProgress + 0.5 : riseProgress;
   const looking = lookDuration >= 3 && leg >= lookStart && leg < lookStart + lookDuration;
   const lookProgress = (leg - lookStart) / lookDuration;
   const progress = outward ? Math.min(leg / walkDuration, 1) : 1 - Math.min(leg / walkDuration, 1);
@@ -73,7 +76,7 @@ export function catPose(seconds: number, width: number, sceneScale = 1): CatPose
     x: Math.round(width * (0.25 + 0.5 * progress)),
     direction: outward ? 1 : -1,
     frame,
-    ...(rising ? { riseFrame: risingSteps.find(([end]) => riseProgress < end)![1] } : {}),
+    ...(rising ? { riseFrame: risingSteps.find(([end]) => riseStep < end)![1] } : {}),
     ...(looking ? { lookFrame: lookProgress < 0.25 || lookProgress >= 0.75 ? 0 as const : 1 as const } : {}),
     ...(leg >= catTurnStart ? { turnFrame: turningSteps.find(([end]) => leg < end)![1] } : {}),
     breath: frame === 7 && leg >= 26 && leg < 28.5 ? 0.5 : 0,
