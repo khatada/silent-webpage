@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-29-wide-rooftop-towels/atlas-source.png",
+    "width": 1280,
+    "height": 624,
+    "sha256": "ad4fad38a8f90653338672a9b5001655bc4b7a1d7b9dd62b26f7e6b869833cd9"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-29-wide-rooftop-towels/atlas-corrected.png",
+    "width": 1280,
+    "height": 624,
+    "sha256": "0c4f7bcc0cfcecd2ca1dbb20ebe10a50d11b493894724a54a26942ced4be16a1"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

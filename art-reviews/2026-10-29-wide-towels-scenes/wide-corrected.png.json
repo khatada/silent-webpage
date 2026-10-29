@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-29-wide-towels-scenes/wide-source.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "1d957c60bcfe287f6c325885845b3a0cba1f773d68d72c614d71d2123245c3f1"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-29-wide-towels-scenes/wide-corrected.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "0d24fed79ad23f3dd30baa3c5c088c8e17be28fc3abef5a482bac25e84c153d3"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

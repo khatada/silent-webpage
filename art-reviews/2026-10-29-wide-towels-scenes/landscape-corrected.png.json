@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-29-wide-towels-scenes/landscape-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "b5f34f6941ec0e3df936c10579ff9dfa3b75461a7a2c8f91ba566db34b5da552"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-29-wide-towels-scenes/landscape-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "de73006b1911620ff4e94dd9221a3e03fa19f9de16e60c66ff5fcf70069e19b4"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

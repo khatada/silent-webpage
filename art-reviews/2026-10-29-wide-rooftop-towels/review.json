@@ -1,0 +1,156 @@
+{
+  "sourceSha256": "bfca5453879acc88e1c1d883d0c2d03423178905f6e8602f52cd33a0589d7cb4",
+  "decision": "ACCEPTED_LOCAL_COMPOSITES_ONLY",
+  "image": "art-reviews/2026-10-29-wide-rooftop-towels/atlas-corrected.png",
+  "actualLlmView": "Opened corrected1280x624 atlas at original size and inspected all15 panels: background and4 cloth poses at2x/4x/6x. The upper fold sits on the generated parapet cap, hems remain above the floor, and the two towels visibly bend in opposite directions over the cycle. No conspicuous floating, cut-off outline or isolated coloured speckles in these native display panels.",
+  "method": "Complete production wide viewport rendered to native RT; integer crops copied at 1:1 into atlas.",
+  "verified": {
+    "rgbaCorrectionUnchanged": true,
+    "outsideClothChangedPixels": 0,
+    "fixedSupportRowsEqual": true
+  },
+  "measurements": [
+    {
+      "scale": 2,
+      "viewport": [
+        800,
+        600
+      ],
+      "geometry": {
+        "x": 199.59459459459458,
+        "y": 437.4864864864865,
+        "width": 36.32432432432432,
+        "height": 30.270270270270274,
+        "floorY": 473,
+        "visible": true
+      },
+      "bodyChanges": [
+        {
+          "column": 2,
+          "changedPixels": 654,
+          "bounds": [
+            19,
+            16,
+            50,
+            40
+          ]
+        },
+        {
+          "column": 3,
+          "changedPixels": 595,
+          "bounds": [
+            19,
+            16,
+            49,
+            40
+          ]
+        },
+        {
+          "column": 4,
+          "changedPixels": 621,
+          "bounds": [
+            17,
+            16,
+            49,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "scale": 4,
+      "viewport": [
+        2560,
+        1080
+      ],
+      "geometry": {
+        "x": 879.1891891891892,
+        "y": 814.972972972973,
+        "width": 72.64864864864865,
+        "height": 60.54054054054055,
+        "floorY": 886,
+        "visible": true
+      },
+      "bodyChanges": [
+        {
+          "column": 2,
+          "changedPixels": 2557,
+          "bounds": [
+            38,
+            33,
+            102,
+            81
+          ]
+        },
+        {
+          "column": 3,
+          "changedPixels": 2376,
+          "bounds": [
+            37,
+            33,
+            100,
+            82
+          ]
+        },
+        {
+          "column": 4,
+          "changedPixels": 2443,
+          "bounds": [
+            34,
+            33,
+            98,
+            81
+          ]
+        }
+      ]
+    },
+    {
+      "scale": 6,
+      "viewport": [
+        3200,
+        1080
+      ],
+      "geometry": {
+        "x": 998.7837837837837,
+        "y": 919.4594594594596,
+        "width": 108.97297297297297,
+        "height": 90.81081081081082,
+        "floorY": 1026,
+        "visible": true
+      },
+      "bodyChanges": [
+        {
+          "column": 2,
+          "changedPixels": 5802,
+          "bounds": [
+            57,
+            49,
+            153,
+            123
+          ]
+        },
+        {
+          "column": 3,
+          "changedPixels": 5408,
+          "bounds": [
+            55,
+            49,
+            150,
+            124
+          ]
+        },
+        {
+          "column": 4,
+          "changedPixels": 5523,
+          "bounds": [
+            51,
+            49,
+            148,
+            123
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": "Only static local production-factory composites. Full scene, actual shared-clock playback and resize/pause/resume are not newly verified by this atlas. Scale2 towels are about36x30physical pixels and movement is smaller than scale4/6. Backgroundscale1 omits the pair. Public source asset remains unchanged."
+}

@@ -1,0 +1,65 @@
+{
+  "sourceSha256": "bfca5453879acc88e1c1d883d0c2d03423178905f6e8602f52cd33a0589d7cb4",
+  "decision": "ACCEPTED_LLM_ACTUALLY_VIEWED",
+  "actualLlmView": "All 6 corrected PNGs actually opened with view_image original: three full scenes and three four-time native context atlases. Folds stay on the parapet while lower bodies bend. Cat can temporarily pass in front of the towels, especially compact at time0 and wide at time4; this is expected foreground occlusion. No conspicuous support drift, floor overlap, broken outlines, or isolated coloured pixels. At scale2 the towels are about36x30physical and their movement is small; at scale4 about73x61physical, clearer.",
+  "images": [
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-active/compact-full-corrected.png",
+      "sha256": "ccd29c236b35f2183262a6ea31ac7afbb4e5b66b4ea767f23e398a790d89a8a6"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-active/compact-poses-corrected.png",
+      "sha256": "5ada3c8ffadd3cf17a5c6ec8f5add9802d2d4b60056c95b80105d291b730a82c"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-active/landscape-full-corrected.png",
+      "sha256": "9587a0bf191f528bbf5c639212260042b6355039ef6acf857c1aa3612e934fe8"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-active/landscape-poses-corrected.png",
+      "sha256": "1bc99eab4c5f0d31fa938df062cdee84996154647dc538f8e793bb998d9a542e"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-active/wide-full-corrected.png",
+      "sha256": "fdb399846e1ef53c5ef0c1006361225b32ec996620fb047e3d198ed994d5a3e8"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-active/wide-poses-corrected.png",
+      "sha256": "439f549ba102157b1a2ede018e2ba3c188847736e8d0a80297aab84eb60e2b21"
+    }
+  ],
+  "limitations": "Full static views were displayed in entirety; very large views were resized by the viewer. Native motion atlases were viewed at actual resolution. Four sampled times do not verify every frame or all devices. Activity uses DPR1 deliberately; initial scenes include DPR2. Resize asserts canvas dimensions and absence of errors; resized output was not adopted as a visual proof.",
+  "measuredChangesAt7Vs9Seconds": [
+    {
+      "name": "wide",
+      "changedPixels": 2489,
+      "boundsInAtlasPanel": [
+        33,
+        41,
+        99,
+        90
+      ]
+    },
+    {
+      "name": "compact",
+      "changedPixels": 630,
+      "boundsInAtlasPanel": [
+        17,
+        20,
+        49,
+        44
+      ]
+    },
+    {
+      "name": "landscape",
+      "changedPixels": 630,
+      "boundsInAtlasPanel": [
+        17,
+        20,
+        49,
+        44
+      ]
+    }
+  ],
+  "runtimeChecks": "All three views: reduced-motion pause retained full screenshot RGBA after2seconds of clock advancement; resize to900x700 matched canvas dimensions with no pageerror; running state resumed. Changes vs initial context can include cat; separate7vs9 comparison avoids cat in reviewed region."
+}

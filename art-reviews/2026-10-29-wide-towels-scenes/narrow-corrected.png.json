@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-29-wide-towels-scenes/narrow-source.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "a7fb3934c1c516d3574080e5eee5a4a08db6d2c9cbbfd3b773de92a824072d19"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-29-wide-towels-scenes/narrow-corrected.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "96bd8a9613c60861670ef0a6b8a162e46b0c14c2a0b1c6e3d0dacf52d0726a8d"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

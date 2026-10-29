@@ -13,7 +13,7 @@ import { createImageFan, fanArt } from './image-fan';
 import { createImageResident, residentArt } from './image-resident';
 import { createImageSteam, steamArt } from './image-steam';
 import { createImageMeteor, meteorArt } from './image-meteor';
-import { createImageLaundry, laundryArt } from './image-laundry';
+import { createImageLaundry, laundryArt, wideLaundryGeometry } from './image-laundry';
 import { createImageUpperCloud } from './image-upper-cloud';
 import { createImageSkylineLights } from './image-skyline-lights';
 import { createImageStars } from './image-stars';
@@ -207,8 +207,8 @@ export async function createScene(host: HTMLElement): Promise<{
       app.stage.addChild(fan.root);
     }
     laundry = undefined;
-    if (!layout.wide) {
-      laundry = imageLaundry.createSprite(layout.portrait ? 1 : 0, scale, originX, originY);
+    if (!layout.wide || wideLaundryGeometry(width, height, scale, originX, originY).visible) {
+      laundry = imageLaundry.createSprite(layout.wide ? 2 : layout.portrait ? 1 : 0, scale, originX, originY);
       app.stage.addChild(laundry.root);
     }
     curtain = undefined;
