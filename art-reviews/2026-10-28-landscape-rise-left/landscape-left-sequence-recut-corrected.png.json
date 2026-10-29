@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-28-landscape-rise-left/landscape-left-sequence-recut-source.png",
+    "width": 2496,
+    "height": 144,
+    "sha256": "7fe99f4c79a7f946e8b73d860ffd160fb290f06ab1d95d13adb987dbd7084926"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-28-landscape-rise-left/landscape-left-sequence-recut-corrected.png",
+    "width": 2496,
+    "height": 144,
+    "sha256": "61ba8e8a9de9a75b0c057ef9441c3b6f04f46212fdc74efdf68c9a1ca45bdd07"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

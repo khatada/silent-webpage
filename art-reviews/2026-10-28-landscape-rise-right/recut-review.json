@@ -1,0 +1,63 @@
+{
+  "sourceSha256": "bc26b23a264eae9aff4b67da6f54f8579685b3e10dfe371a52622023ff1b45a4",
+  "decision": "ACCEPTED_RECUT_ATLAS_ONLY",
+  "image": "art-reviews/2026-10-28-landscape-rise-right/landscape-right-sequence-recut-corrected.png",
+  "sha256": "4cca74a3ff465370726dc3478b2dbeb5a62c3be2805d64a02ce90d7d6412e592",
+  "actualLlmView": "補正後13コマを原寸で全域閲覧。最初と以降の猫と背景の位置・大きさは揃い、6段階の起立と逆順で戻る姿勢、床の支持が見える。明白な浮きや切れは見えない。",
+  "method": "保存済み各時刻画像を利用。初回1688×780、以後3376×1560を最近傍で1688×780に統一して同一位置を切り出し、2px格子で補正。DPRを撮影後2へ復元し、実時刻順にrunForで進めた。最初の位置ずれアトラスと4倍全景は採用しない。",
+  "limits": "撮影時のDPR復元が画面描画に及ぼす影響について、全てのブラウザ・連続再生を保証するものではない。4倍から2倍への縮小がありDPR2の元画像そのものではない。時刻は要求値で、最終RAFが直前となる場合がある。",
+  "temporaryOriginals": [
+    {
+      "name": "landscape-right-bridge-back-source.png",
+      "sha256": "87c38fc62c35110221a4227f544b3b14a7413e3664c7c684f315ff76af8eccf9"
+    },
+    {
+      "name": "landscape-right-bridge-out-source.png",
+      "sha256": "b95f8feaf88fd85b285524b251c13d985e362f4d561e9384b5b08a233a8df438"
+    },
+    {
+      "name": "landscape-right-crouch-back-source.png",
+      "sha256": "fa342ba9be5568211326b4c1120b0889e94a9050a02526d2fe52bb77171fb8df"
+    },
+    {
+      "name": "landscape-right-crouch-out-source.png",
+      "sha256": "efb091780b197970458154f25dbdaaf1605e0b8d44912393958473ac0ea03e70"
+    },
+    {
+      "name": "landscape-right-lean-back-source.png",
+      "sha256": "31ca4493c0a6552ed0e0a7df7c21bdc66d3e5639e23964339cd826be356ce3fe"
+    },
+    {
+      "name": "landscape-right-lean-out-source.png",
+      "sha256": "af94bef55e294a5a6b6092afbe908b5873f6bbf40c43d2695fb00d02ff9fb14c"
+    },
+    {
+      "name": "landscape-right-low-back-source.png",
+      "sha256": "248d93ec81cc003b698e086c0db449590280f4e2c89c92495268d437ba8111f5"
+    },
+    {
+      "name": "landscape-right-low-out-source.png",
+      "sha256": "aa26948fc6bc91a4e13789d3472b39e54c069acfc3a1b706261bf224997cee3a"
+    },
+    {
+      "name": "landscape-right-neutral-after-source.png",
+      "sha256": "4c75026b550f76cb19fefb179308ba4b4df1e0bb0a124e487091d747abe328f2"
+    },
+    {
+      "name": "landscape-right-neutral-before-source.png",
+      "sha256": "cb3f6a96a5413534ea754b51bcac1793ac4afcd0fdc3bbf70ec9246d0f80e193"
+    },
+    {
+      "name": "landscape-right-stand-source.png",
+      "sha256": "30c1710d3429e313c8c21b9a2116ea9963d1328a5dbe8d8f77f1acadeb64e83c"
+    },
+    {
+      "name": "landscape-right-tail-back-source.png",
+      "sha256": "2155e78acc060534d8dca03ad38d0c6061e81053d2a73741dcb7fae7d181201c"
+    },
+    {
+      "name": "landscape-right-tail-out-source.png",
+      "sha256": "ca863df7d8a58f4c5431358cb8b4a293a3fd67ce57e07b3b64b03013a915ef93"
+    }
+  ]
+}

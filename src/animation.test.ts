@@ -19,7 +19,7 @@ describe('city animation timing', () => {
       expect(catPose(20.25 + offset, 832).lookFrame).toBe(0);
       expect(catPose(21 + offset, 832).groomFrame).toBe(0);
       for (let time = 0; time < 21; time += 0.125) {
-        expect(catPose(time + offset, 832.0064).riseFrame).toBeUndefined();
+        expect(catPose(time + offset, 864.0064).riseFrame).toBeUndefined();
       }
     }
     for (const [width, height] of [[1440, 900], [1920, 1080], [800, 600]]) {
@@ -27,6 +27,32 @@ describe('city animation timing', () => {
       const scale = layout.motionScale * layout.composition.actorScale;
       expect(Array.from({ length: 168 }, (_, i) => catPose(i / 8, width, scale))
         .some(pose => pose.riseFrame !== undefined)).toBe(true);
+    }
+  });
+  it('retains every rise transition while shortening only the standing hold on landscape screens', () => {
+    const stages = [[0, 0.25, 1], [0.25, 0.5, 2], [0.5, 0.75, 3], [0.75, 1, 4],
+      [1, 1.25, 5], [1.25, 2.25, 6], [2.25, 2.5, 5], [2.5, 2.75, 4],
+      [2.75, 3, 3], [3, 3.25, 2], [3.25, 3.5, 1]] as const;
+    const width = 844, layout = generatedLayout(width, 390);
+    const scale = layout.motionScale * layout.composition.actorScale;
+    const start = width / (64 * scale) + 0.5;
+    for (const offset of [0, catLegDuration]) {
+      expect(catPose(start - 0.0001 + offset, width, scale).riseFrame).toBeUndefined();
+      for (const [from, to, frame] of stages) {
+        for (const time of [start + from + 0.0001, start + to - 0.0001]) {
+          const pose = catPose(time + offset, width, scale);
+          expect(pose.riseFrame).toBe(frame);
+          expect(pose.lookFrame).toBeUndefined();
+          expect(pose.x).toBe(catPose(start + offset, width, scale).x);
+        }
+      }
+      expect(catPose(start + 3.5 + offset, width, scale).riseFrame).toBeUndefined();
+      expect(catPose(start + 3.9999 + offset, width, scale).lookFrame).toBeUndefined();
+      expect(catPose(start + 4 + offset, width, scale).lookFrame).toBe(0);
+      expect(catPose(20.9999 + offset, width, scale).lookFrame).toBe(0);
+      expect(catPose(21 + offset, width, scale).groomFrame).toBe(0);
+      expect(catPose(14 + offset, 864).riseFrame).toBe(1);
+      expect(catPose(14 + offset, 864.0064).riseFrame).toBeUndefined();
     }
   });
   it('keeps the pose deterministic while the shared motion clock is paused', () => {
@@ -65,7 +91,7 @@ describe('city animation timing', () => {
   });
   it('only adds the rise when the seated interval fits it, preserving the existing route and later actions', () => {
     for (const [width, scale, enabled] of [[320, 1, true], [640, 2, true],
-      [320.0064, 1, true], [640, 1, true], [832, 1, true], [832.0064, 1, false], [1280, 1, false]] as const) {
+      [320.0064, 1, true], [640, 1, true], [832, 1, true], [864, 1, true], [864.0064, 1, false], [1280, 1, false]] as const) {
       let seen = false;
       for (let time = 0; time < catPeriod; time += 0.125) {
         const pose = catPose(time, width, scale);
