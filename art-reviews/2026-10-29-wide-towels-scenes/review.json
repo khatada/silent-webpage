@@ -1,0 +1,52 @@
+{
+  "sourceSha256": "bfca5453879acc88e1c1d883d0c2d03423178905f6e8602f52cd33a0589d7cb4",
+  "decision": "ACCEPTED_LLM_ACTUALLY_VIEWED",
+  "actualLlmView": "All 11 corrected full scenes actually opened with view_image original. Wide/compact/landscape wall-mounted towels remain over the parapet and above the floor. Other compositions retain their existing small roof towels. No new obvious blank edge, clipping, floating actor or geometry damage. Compact initial cat temporarily hides much of the towels.",
+  "images": [
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/compact-corrected.png",
+      "sha256": "1f70b13f1824ca5cf9bbad34aa529269371a50d412bcd8aa057c91bf6a00aae8"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/desktop-corrected.png",
+      "sha256": "7cf3dc5a4534db6d636242d6a03dec7328b4d093c2445189332df670b33a3730"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/landscape-corrected.png",
+      "sha256": "de73006b1911620ff4e94dd9221a3e03fa19f9de16e60c66ff5fcf70069e19b4"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/mobile-corrected.png",
+      "sha256": "635bc3a7ba2eca25654079b5487f81f7a5f275eb9e672c48a447e45c35f0e9a2"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/narrow-corrected.png",
+      "sha256": "96bd8a9613c60861670ef0a6b8a162e46b0c14c2a0b1c6e3d0dacf52d0726a8d"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/portrait-boundary-corrected.png",
+      "sha256": "f65adc2d5ec5c4ced7dd934217e9ea48ec76b6e82a23d5cafad8a5fb02c27b60"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/portrait-large-corrected.png",
+      "sha256": "4c13eb4b06b6ceaf51a166e6e71e7246a6ae5fe5ebd3084c60ce93314b7e3b71"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/small-mobile-corrected.png",
+      "sha256": "bc010146e2a7289bff7d72a35fa0802d65db1645f2fb3078371cde3e54f9853e"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/small-phone-corrected.png",
+      "sha256": "e5b5bbea3056fa6e0ef5efcbdcd6e35d188c280ed881fad1310514d60771999e"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/tall-corrected.png",
+      "sha256": "e81f0824fd137b3a80f58c4c297a2233d9c1d803b07cd712e5989078eeb0b4df"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/wide-corrected.png",
+      "sha256": "0d24fed79ad23f3dd30baa3c5c088c8e17be28fc3abef5a482bac25e84c153d3"
+    }
+  ],
+  "limitations": "Full static views were displayed in entirety; very large views were resized by the viewer. Native motion atlases were viewed at actual resolution. Four sampled times do not verify every frame or all devices. Activity uses DPR1 deliberately; initial scenes include DPR2. Resize asserts canvas dimensions and absence of errors; resized output was not adopted as a visual proof."
+}

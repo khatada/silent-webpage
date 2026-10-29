@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-29-wide-towels-active/wide-poses-source.png",
+    "width": 274,
+    "height": 250,
+    "sha256": "439f549ba102157b1a2ede018e2ba3c188847736e8d0a80297aab84eb60e2b21"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-29-wide-towels-active/wide-poses-corrected.png",
+    "width": 274,
+    "height": 250,
+    "sha256": "439f549ba102157b1a2ede018e2ba3c188847736e8d0a80297aab84eb60e2b21"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

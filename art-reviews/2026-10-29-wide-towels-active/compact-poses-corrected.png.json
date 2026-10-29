@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-29-wide-towels-active/compact-poses-source.png",
+    "width": 138,
+    "height": 126,
+    "sha256": "5ada3c8ffadd3cf17a5c6ec8f5add9802d2d4b60056c95b80105d291b730a82c"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-29-wide-towels-active/compact-poses-corrected.png",
+    "width": 138,
+    "height": 126,
+    "sha256": "5ada3c8ffadd3cf17a5c6ec8f5add9802d2d4b60056c95b80105d291b730a82c"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

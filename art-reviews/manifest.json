@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "bc26b23a264eae9aff4b67da6f54f8579685b3e10dfe371a52622023ff1b45a4",
+  "sourceSha256": "bfca5453879acc88e1c1d883d0c2d03423178905f6e8602f52cd33a0589d7cb4",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -2873,6 +2873,132 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "補正後の11初期全景または横持ち左右13姿勢をLLMが実閲覧。猫と背景の位置と接地を確認。動作画像は撮影倍率の差を最近傍縮小で揃えており、DPR2原寸そのものではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-rooftop-towels/atlas-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-rooftop-towels/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後15パネルを担当と親LLMが全域実閲覧。上端の支持と裾が床より上で揺れることを確認。布の領域外に変化がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11全景を担当LLMが全域実閲覧。屋上の布と構図、猫、列車に目立つ破綻がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11全景を担当LLMが全域実閲覧。屋上の布と構図、猫、列車に目立つ破綻がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11全景を担当LLMが全域実閲覧。屋上の布と構図、猫、列車に目立つ破綻がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11全景を担当LLMが全域実閲覧。屋上の布と構図、猫、列車に目立つ破綻がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11全景を担当LLMが全域実閲覧。屋上の布と構図、猫、列車に目立つ破綻がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11全景を担当LLMが全域実閲覧。屋上の布と構図、猫、列車に目立つ破綻がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11全景を担当LLMが全域実閲覧。屋上の布と構図、猫、列車に目立つ破綻がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11全景を担当LLMが全域実閲覧。屋上の布と構図、猫、列車に目立つ破綻がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11全景を担当LLMが全域実閲覧。屋上の布と構図、猫、列車に目立つ破綻がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11全景を担当LLMが全域実閲覧。屋上の布と構図、猫、列車に目立つ破綻がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後11全景を担当LLMが全域実閲覧。屋上の布と構図、猫、列車に目立つ破綻がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-active/compact-full-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-active/compact-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後3全景と4時刻の局所atlas3枚を担当LLMが実閲覧。上端固定と裾の曲がりを確認。親もcompact全景を実閲覧。猫による一時的遮蔽や小型表示では動きが小さい制約を記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-active/compact-poses-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-active/compact-poses-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後3全景と4時刻の局所atlas3枚を担当LLMが実閲覧。上端固定と裾の曲がりを確認。親もcompact全景を実閲覧。猫による一時的遮蔽や小型表示では動きが小さい制約を記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-active/landscape-full-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-active/landscape-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後3全景と4時刻の局所atlas3枚を担当LLMが実閲覧。上端固定と裾の曲がりを確認。親もcompact全景を実閲覧。猫による一時的遮蔽や小型表示では動きが小さい制約を記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-active/landscape-poses-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-active/landscape-poses-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後3全景と4時刻の局所atlas3枚を担当LLMが実閲覧。上端固定と裾の曲がりを確認。親もcompact全景を実閲覧。猫による一時的遮蔽や小型表示では動きが小さい制約を記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-active/wide-full-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-active/wide-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後3全景と4時刻の局所atlas3枚を担当LLMが実閲覧。上端固定と裾の曲がりを確認。親もcompact全景を実閲覧。猫による一時的遮蔽や小型表示では動きが小さい制約を記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-wide-towels-active/wide-poses-corrected.png",
+      "report": "art-reviews/2026-10-29-wide-towels-active/wide-poses-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後3全景と4時刻の局所atlas3枚を担当LLMが実閲覧。上端固定と裾の曲がりを確認。親もcompact全景を実閲覧。猫による一時的遮蔽や小型表示では動きが小さい制約を記録。"
     }
   ]
 }

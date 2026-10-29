@@ -1,0 +1,486 @@
+{
+  "sourceSha256": "bfca5453879acc88e1c1d883d0c2d03423178905f6e8602f52cd33a0589d7cb4",
+  "finalSourceSha256": "bfca5453879acc88e1c1d883d0c2d03423178905f6e8602f52cd33a0589d7cb4",
+  "metadata": {
+    "width": 1280,
+    "height": 624,
+    "samples": [
+      {
+        "row": 0,
+        "column": 0,
+        "seconds": null,
+        "viewport": [
+          800,
+          600
+        ],
+        "layout": {
+          "scale": 2,
+          "originX": -323,
+          "originY": 59
+        },
+        "geometry": {
+          "x": 199.59459459459458,
+          "y": 437.4864864864865,
+          "width": 36.32432432432432,
+          "height": 30.270270270270274,
+          "floorY": 473,
+          "visible": true
+        },
+        "context": [
+          183,
+          425,
+          68,
+          60
+        ],
+        "changed": 0,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "seconds": 0,
+        "viewport": [
+          800,
+          600
+        ],
+        "layout": {
+          "scale": 2,
+          "originX": -323,
+          "originY": 59
+        },
+        "geometry": {
+          "x": 199.59459459459458,
+          "y": 437.4864864864865,
+          "width": 36.32432432432432,
+          "height": 30.270270270270274,
+          "floorY": 473,
+          "visible": true
+        },
+        "context": [
+          183,
+          425,
+          68,
+          60
+        ],
+        "changed": 653,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "seconds": 4,
+        "viewport": [
+          800,
+          600
+        ],
+        "layout": {
+          "scale": 2,
+          "originX": -323,
+          "originY": 59
+        },
+        "geometry": {
+          "x": 199.59459459459458,
+          "y": 437.4864864864865,
+          "width": 36.32432432432432,
+          "height": 30.270270270270274,
+          "floorY": 473,
+          "visible": true
+        },
+        "context": [
+          183,
+          425,
+          68,
+          60
+        ],
+        "changed": 661,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 0,
+        "column": 3,
+        "seconds": 6.5,
+        "viewport": [
+          800,
+          600
+        ],
+        "layout": {
+          "scale": 2,
+          "originX": -323,
+          "originY": 59
+        },
+        "geometry": {
+          "x": 199.59459459459458,
+          "y": 437.4864864864865,
+          "width": 36.32432432432432,
+          "height": 30.270270270270274,
+          "floorY": 473,
+          "visible": true
+        },
+        "context": [
+          183,
+          425,
+          68,
+          60
+        ],
+        "changed": 659,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 0,
+        "column": 4,
+        "seconds": 9,
+        "viewport": [
+          800,
+          600
+        ],
+        "layout": {
+          "scale": 2,
+          "originX": -323,
+          "originY": 59
+        },
+        "geometry": {
+          "x": 199.59459459459458,
+          "y": 437.4864864864865,
+          "width": 36.32432432432432,
+          "height": 30.270270270270274,
+          "floorY": 473,
+          "visible": true
+        },
+        "context": [
+          183,
+          425,
+          68,
+          60
+        ],
+        "changed": 631,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "seconds": null,
+        "viewport": [
+          2560,
+          1080
+        ],
+        "layout": {
+          "scale": 4,
+          "originX": -166,
+          "originY": 58
+        },
+        "geometry": {
+          "x": 879.1891891891892,
+          "y": 814.972972972973,
+          "width": 72.64864864864865,
+          "height": 60.54054054054055,
+          "floorY": 886,
+          "visible": true
+        },
+        "context": [
+          846,
+          790,
+          136,
+          120
+        ],
+        "changed": 0,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "seconds": 0,
+        "viewport": [
+          2560,
+          1080
+        ],
+        "layout": {
+          "scale": 4,
+          "originX": -166,
+          "originY": 58
+        },
+        "geometry": {
+          "x": 879.1891891891892,
+          "y": 814.972972972973,
+          "width": 72.64864864864865,
+          "height": 60.54054054054055,
+          "floorY": 886,
+          "visible": true
+        },
+        "context": [
+          846,
+          790,
+          136,
+          120
+        ],
+        "changed": 2610,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "seconds": 4,
+        "viewport": [
+          2560,
+          1080
+        ],
+        "layout": {
+          "scale": 4,
+          "originX": -166,
+          "originY": 58
+        },
+        "geometry": {
+          "x": 879.1891891891892,
+          "y": 814.972972972973,
+          "width": 72.64864864864865,
+          "height": 60.54054054054055,
+          "floorY": 886,
+          "visible": true
+        },
+        "context": [
+          846,
+          790,
+          136,
+          120
+        ],
+        "changed": 2599,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "seconds": 6.5,
+        "viewport": [
+          2560,
+          1080
+        ],
+        "layout": {
+          "scale": 4,
+          "originX": -166,
+          "originY": 58
+        },
+        "geometry": {
+          "x": 879.1891891891892,
+          "y": 814.972972972973,
+          "width": 72.64864864864865,
+          "height": 60.54054054054055,
+          "floorY": 886,
+          "visible": true
+        },
+        "context": [
+          846,
+          790,
+          136,
+          120
+        ],
+        "changed": 2665,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 1,
+        "column": 4,
+        "seconds": 9,
+        "viewport": [
+          2560,
+          1080
+        ],
+        "layout": {
+          "scale": 4,
+          "originX": -166,
+          "originY": 58
+        },
+        "geometry": {
+          "x": 879.1891891891892,
+          "y": 814.972972972973,
+          "width": 72.64864864864865,
+          "height": 60.54054054054055,
+          "floorY": 886,
+          "visible": true
+        },
+        "context": [
+          846,
+          790,
+          136,
+          120
+        ],
+        "changed": 2540,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "seconds": null,
+        "viewport": [
+          3200,
+          1080
+        ],
+        "layout": {
+          "scale": 6,
+          "originX": -569,
+          "originY": -216
+        },
+        "geometry": {
+          "x": 998.7837837837837,
+          "y": 919.4594594594596,
+          "width": 108.97297297297297,
+          "height": 90.81081081081082,
+          "floorY": 1026,
+          "visible": true
+        },
+        "context": [
+          949,
+          882,
+          204,
+          180
+        ],
+        "changed": 0,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "seconds": 0,
+        "viewport": [
+          3200,
+          1080
+        ],
+        "layout": {
+          "scale": 6,
+          "originX": -569,
+          "originY": -216
+        },
+        "geometry": {
+          "x": 998.7837837837837,
+          "y": 919.4594594594596,
+          "width": 108.97297297297297,
+          "height": 90.81081081081082,
+          "floorY": 1026,
+          "visible": true
+        },
+        "context": [
+          949,
+          882,
+          204,
+          180
+        ],
+        "changed": 5900,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "seconds": 4,
+        "viewport": [
+          3200,
+          1080
+        ],
+        "layout": {
+          "scale": 6,
+          "originX": -569,
+          "originY": -216
+        },
+        "geometry": {
+          "x": 998.7837837837837,
+          "y": 919.4594594594596,
+          "width": 108.97297297297297,
+          "height": 90.81081081081082,
+          "floorY": 1026,
+          "visible": true
+        },
+        "context": [
+          949,
+          882,
+          204,
+          180
+        ],
+        "changed": 5871,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "seconds": 6.5,
+        "viewport": [
+          3200,
+          1080
+        ],
+        "layout": {
+          "scale": 6,
+          "originX": -569,
+          "originY": -216
+        },
+        "geometry": {
+          "x": 998.7837837837837,
+          "y": 919.4594594594596,
+          "width": 108.97297297297297,
+          "height": 90.81081081081082,
+          "floorY": 1026,
+          "visible": true
+        },
+        "context": [
+          949,
+          882,
+          204,
+          180
+        ],
+        "changed": 6026,
+        "outside": 0,
+        "fixedFold": true
+      },
+      {
+        "row": 2,
+        "column": 4,
+        "seconds": 9,
+        "viewport": [
+          3200,
+          1080
+        ],
+        "layout": {
+          "scale": 6,
+          "originX": -569,
+          "originY": -216
+        },
+        "geometry": {
+          "x": 998.7837837837837,
+          "y": 919.4594594594596,
+          "width": 108.97297297297297,
+          "height": 90.81081081081082,
+          "floorY": 1026,
+          "visible": true
+        },
+        "context": [
+          949,
+          882,
+          204,
+          180
+        ],
+        "changed": 5674,
+        "outside": 0,
+        "fixedFold": true
+      }
+    ],
+    "columns": [
+      "background",
+      "straight",
+      "right",
+      "near-center",
+      "left"
+    ],
+    "method": "Complete production wide viewport rendered to native RT; integer crops copied at 1:1 into atlas."
+  },
+  "method": "Image-generation textures composited by /scripts/wide-rooftop-towels-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

@@ -1,8 +1,15 @@
 # 実装の進行状況
 
-最終更新: 2026-10-27（日本時間）。別セッションの実装再開用。
+最終更新: 2026-10-29（UTC）。別セッションの実装再開用。
 
 ## 現在の作業（再開時はまずここを参照）
+
+- ブランチ `feat/wide-rooftop-towels`、worktree `/workspace/silent-webpage-glass-bounds`。横長背景の屋上壁に既存の生成済み布を掛け、見つけやすい揺れを追加する案を実装中。担当はサブエージェント `landscape_review`、親は記録・採用manifest・Git・CI・公開を担当。
+- 直前の横持ち猫起立 [PR #68](https://github.com/khatada/silent-webpage/pull/68) は head `0031fbec2a02077ea5ef2ed9b2a499f0c34a430e` の verify121テスト/379画像とhook、CI40866973347/job123424083276（Playwright含む）成功後 main `255fffe33baf2cf4bfa0b3f919abaee95a624566` にマージ。Pages40867542712 は verify123426010411 と publish123427750691 が成功し公開済み。PR添付ツールは応答せず中断した。
+- 猫の最終画像は11全景と左右13姿勢を補正後LLMが閲覧。動作atlasは撮影DPRの寸法差を最近傍縮小で揃えた再切り出しのみ採用し、DPR2原寸そのものではない。縦持ち・境界・動き軽減の実動作は未確認。
+- 布の候補配置はwide logical `[270,190]`、高さ14logical、物理高さ24px未満は省略。上端固定と揺れるbodyの既存factoryを活用予定。局所15パネルの補正画像をLLMが実閲覧し、上端の支持・裾の動き・床との間隔を確認。source `bfca5453879acc88e1c1d883d0c2d03423178905f6e8602f52cd33a0589d7cb4` に凍結。全景11枚と動作6枚を補正後LLMが実閲覧・採用。DPR1で0/4/7/9秒の4姿勢、動き軽減で2秒後の全RGBA一致、停止/再開・900×700リサイズとpageerrorなしを確認。必須verify、コミット、PRは未実施。
+
+## 過去の進行状況（C033時点の記録）
 
 - 現在ブランチ `feat/wide-fine-view`、worktree `/workspace/silent-webpage-glass-bounds`。C033高精細背景表示を実装中。描画source `96878cc7003050bdf3becc01dc8bbc91f1309c4400af3012efd1b31f032da4fc`、logical723×241/resolution2、旧motionScaleで被写体寸法と速度を保持。作業ツリーは未コミット。PR・CI・本変更の公開は未実施。
 - 初回は床の大きな縞、縮小時の柱位相差を実画像で発見して棄却。生成済み背景の同倍率鏡像による余白補完と、全景native RenderTextureからの柱cropに修正した。旧trialは `/workspace/art-review-trials/c033-floor-stretch-scenes`、`c033-floor-stretch-active`、`c033-before-floor-pole-fix-local`、`c033-gpu-extract-trial` に非採用として保持。
@@ -280,3 +287,5 @@
 - 横持ち猫起立: source `bc26b23a264eae9aff4b67da6f54f8579685b3e10dfe371a52622023ff1b45a4` に凍結。余裕7.5〜8秒の画面のみ立位保持を1.5秒から1秒に短縮、全中間姿勢と顔向き3秒、座位前後各0.5秒を保持。代表画面は旧実装と同一、横持ちのみ変更。画像QA・verify・PRはこれから。
 
 - 横持ち猫起立QA: 11全景と左右13姿勢を補正後LLMが実閲覧。最初の撮影atlasは画面密度変更で猫の位置がずれたため不採用、保存済み元画像を実寸に揃えた再切り出しを採用。4倍→2倍の最近傍縮小がありDPR2原寸ではない。縦持ち、境界、動き軽減の実動作は未検証。verify・PRはこれから。
+
+- 屋上の布QA: 7秒対9秒の実画素変化はwide2489、compact630、landscape630画素。猫が手前を通る時は布を一時的に隠す。物理2倍表示では約36×30pxで揺れは小さく、4倍では約73×61pxと読み取りやすい。短時間・有限画面の確認であり全端末・連続再生を保証しない。
