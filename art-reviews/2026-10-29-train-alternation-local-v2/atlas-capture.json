@@ -1,0 +1,931 @@
+{
+  "sourceSha256": "e0713f741a46358a77bf53e56030ae1039b086f54549e77f756ba9e75b45ccc4",
+  "finalSourceSha256": "e0713f741a46358a77bf53e56030ae1039b086f54549e77f756ba9e75b45ccc4",
+  "metadata": {
+    "metadata": [
+      {
+        "name": "normal",
+        "native": [
+          1440,
+          900
+        ],
+        "css": [
+          1440,
+          900
+        ],
+        "dpr": 1,
+        "composition": "normal",
+        "scale": 2,
+        "trainScale": 0.48,
+        "schedule": {
+          "width": 1440,
+          "length": 126.72,
+          "count": 2,
+          "period": 48.96,
+          "speed": 37.725134131242264,
+          "travelDuration": 41.52987222124978,
+          "startGap": 6.930127778750219,
+          "phase": 13.952501750393836,
+          "clearance": 0.5
+        },
+        "noTrainPoleChanged": 0,
+        "crop": {
+          "width": 240,
+          "height": 120,
+          "poleX": 338,
+          "top": 312
+        },
+        "poleSamples": [
+          {
+            "column": 1,
+            "seconds": -0.13253763346752834,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": true,
+                "x": 394
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": true,
+                "x": 133
+              }
+            ],
+            "changed": 5007,
+            "changedBounds": [
+              146,
+              342,
+              519,
+              371
+            ]
+          },
+          {
+            "column": 2,
+            "seconds": 6.79759014528269,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": true,
+                "x": 656
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": true,
+                "x": 394
+              }
+            ],
+            "changed": 4954,
+            "changedBounds": [
+              398,
+              342,
+              781,
+              371
+            ]
+          },
+          {
+            "column": 3,
+            "seconds": 62.71740635392964,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 394
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": true,
+                "x": 656
+              }
+            ],
+            "changed": 4947,
+            "changedBounds": [
+              395,
+              342,
+              778,
+              371
+            ]
+          },
+          {
+            "column": 4,
+            "seconds": 69.64753413267985,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 133
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": true,
+                "x": 394
+              }
+            ],
+            "changed": 4975,
+            "changedBounds": [
+              134,
+              342,
+              516,
+              371
+            ]
+          }
+        ],
+        "events": [
+          {
+            "column": 0,
+            "seconds": 34.407498249606164,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 1697
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": true,
+                "x": 1436
+              }
+            ]
+          },
+          {
+            "column": 1,
+            "seconds": 34.60749824960617,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 1705
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": false,
+                "x": 1443
+              }
+            ]
+          },
+          {
+            "column": 2,
+            "seconds": 34.907498249606164,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 1716
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": false,
+                "x": 1455
+              }
+            ]
+          },
+          {
+            "column": 3,
+            "seconds": 35.10749824960617,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 1436
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": false,
+                "x": 1697
+              }
+            ]
+          },
+          {
+            "column": 4,
+            "seconds": 38.466532032207255,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 1309
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": false,
+                "x": 1570
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "wide",
+        "native": [
+          2560,
+          1080
+        ],
+        "css": [
+          2560,
+          1080
+        ],
+        "dpr": 1,
+        "composition": "wide",
+        "scale": 4,
+        "trainScale": 0.6,
+        "schedule": {
+          "width": 2560,
+          "length": 158.4,
+          "count": 2,
+          "period": 33.980000000000004,
+          "speed": 91.25448028673834,
+          "travelDuration": 29.78922230950511,
+          "startGap": 3.6907776904948943,
+          "phase": 11.541351139041637,
+          "clearance": 0.5
+        },
+        "noTrainPoleChanged": 0,
+        "crop": {
+          "width": 240,
+          "height": 120,
+          "poleX": 850,
+          "top": 461
+        },
+        "poleSamples": [
+          {
+            "column": 1,
+            "seconds": -0.04383346425766099,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": true,
+                "x": 890
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": true,
+                "x": 554
+              }
+            ],
+            "changed": 8133,
+            "changedBounds": [
+              559,
+              491,
+              1046,
+              527
+            ]
+          },
+          {
+            "column": 2,
+            "seconds": 3.646944226237233,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": true,
+                "x": 1227
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": true,
+                "x": 890
+              }
+            ],
+            "changed": 7950,
+            "changedBounds": [
+              895,
+              491,
+              1383,
+              527
+            ]
+          },
+          {
+            "column": 3,
+            "seconds": 40.730353495679495,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 890
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": true,
+                "x": 1227
+              }
+            ],
+            "changed": 7914,
+            "changedBounds": [
+              891,
+              490,
+              1379,
+              527
+            ]
+          },
+          {
+            "column": 4,
+            "seconds": 44.42113118617439,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 554
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": true,
+                "x": 890
+              }
+            ],
+            "changed": 8150,
+            "changedBounds": [
+              555,
+              490,
+              1042,
+              527
+            ]
+          }
+        ],
+        "events": [
+          {
+            "column": 0,
+            "seconds": 21.838648860958365,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 2887
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": true,
+                "x": 2550
+              }
+            ]
+          },
+          {
+            "column": 1,
+            "seconds": 22.038648860958368,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 2905
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": false,
+                "x": 2569
+              }
+            ]
+          },
+          {
+            "column": 2,
+            "seconds": 22.338648860958365,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 2933
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": false,
+                "x": 2596
+              }
+            ]
+          },
+          {
+            "column": 3,
+            "seconds": 22.538648860958368,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 2550
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": false,
+                "x": 2887
+              }
+            ]
+          },
+          {
+            "column": 4,
+            "seconds": 24.27445404556167,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 2392
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": false,
+                "x": 2729
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "portrait",
+        "native": [
+          390,
+          1025
+        ],
+        "css": [
+          390,
+          1025
+        ],
+        "dpr": 2,
+        "composition": "portrait",
+        "scale": 1,
+        "trainScale": 0.48,
+        "schedule": {
+          "width": 390,
+          "length": 126.72,
+          "count": 2,
+          "period": 32.295,
+          "speed": 24.34848246579651,
+          "travelDuration": 21.221856463780096,
+          "startGap": 10.573143536219902,
+          "phase": 2.971848455099721,
+          "clearance": 0.5
+        },
+        "noTrainPoleChanged": 0,
+        "crop": {
+          "width": 240,
+          "height": 120,
+          "poleX": 67,
+          "top": 341
+        },
+        "poleSamples": [
+          {
+            "column": 1,
+            "seconds": 7.310517205745581,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": true,
+                "x": 123
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": false,
+                "x": -134
+              }
+            ],
+            "changed": 2643,
+            "changedBounds": [
+              126,
+              371,
+              248,
+              400
+            ]
+          },
+          {
+            "column": 2,
+            "seconds": 17.883660741965485,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": true,
+                "x": 381
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": true,
+                "x": 123
+              }
+            ],
+            "changed": 2653,
+            "changedBounds": [
+              127,
+              372,
+              389,
+              399
+            ]
+          },
+          {
+            "column": 3,
+            "seconds": 40.262642347835076,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 123
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": true,
+                "x": 381
+              }
+            ],
+            "changed": 2800,
+            "changedBounds": [
+              124,
+              371,
+              389,
+              400
+            ]
+          },
+          {
+            "column": 4,
+            "seconds": 50.83578588405498,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": false,
+                "x": -134
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": true,
+                "x": 123
+              }
+            ],
+            "changed": 2559,
+            "changedBounds": [
+              124,
+              372,
+              245,
+              399
+            ]
+          }
+        ],
+        "events": [
+          {
+            "column": 0,
+            "seconds": 28.72315154490028,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 645
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": true,
+                "x": 387
+              }
+            ]
+          },
+          {
+            "column": 1,
+            "seconds": 28.923151544900282,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 649
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": false,
+                "x": 392
+              }
+            ]
+          },
+          {
+            "column": 2,
+            "seconds": 29.22315154490028,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 657
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": false,
+                "x": 399
+              }
+            ]
+          },
+          {
+            "column": 3,
+            "seconds": 29.423151544900282,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 387
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": false,
+                "x": 645
+              }
+            ]
+          },
+          {
+            "column": 4,
+            "seconds": 34.62758267024905,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 260
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": false,
+                "x": 518
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "fractional",
+        "native": [
+          469,
+          834
+        ],
+        "css": [
+          375,
+          667
+        ],
+        "dpr": 1.25,
+        "composition": "portrait",
+        "scale": 0.5,
+        "trainScale": 0.24,
+        "schedule": {
+          "width": 469,
+          "length": 63.36,
+          "count": 2,
+          "period": 66.545,
+          "speed": 10.039821333938981,
+          "travelDuration": 53.02484798214393,
+          "startGap": 13.020152017856065,
+          "phase": 14.908631839295404,
+          "clearance": 0.5
+        },
+        "noTrainPoleChanged": 71,
+        "crop": {
+          "width": 240,
+          "height": 120,
+          "poleX": 21,
+          "top": 371
+        },
+        "poleSamples": [
+          {
+            "column": 1,
+            "seconds": 2.290877420522415,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": true,
+                "x": 109
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": true,
+                "x": -22
+              }
+            ],
+            "changed": 1099,
+            "changedBounds": [
+              0,
+              399,
+              171,
+              414
+            ]
+          },
+          {
+            "column": 2,
+            "seconds": 15.31102943837848,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": true,
+                "x": 240
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": true,
+                "x": 109
+              }
+            ],
+            "changed": 1345,
+            "changedBounds": [
+              111,
+              399,
+              302,
+              414
+            ]
+          },
+          {
+            "column": 3,
+            "seconds": 87.46170688303071,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 109
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": true,
+                "x": 240
+              }
+            ],
+            "changed": 1346,
+            "changedBounds": [
+              109,
+              399,
+              300,
+              414
+            ]
+          },
+          {
+            "column": 4,
+            "seconds": 100.48185890088678,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": -22
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": true,
+                "x": 109
+              }
+            ],
+            "changed": 1075,
+            "changedBounds": [
+              0,
+              399,
+              169,
+              414
+            ]
+          }
+        ],
+        "events": [
+          {
+            "column": 0,
+            "seconds": 51.0363681607046,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 598
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": true,
+                "x": 467
+              }
+            ]
+          },
+          {
+            "column": 1,
+            "seconds": 51.2363681607046,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 600
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": false,
+                "x": 470
+              }
+            ]
+          },
+          {
+            "column": 2,
+            "seconds": 51.5363681607046,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 603
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": false,
+                "x": 473
+              }
+            ]
+          },
+          {
+            "column": 3,
+            "seconds": 51.7363681607046,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 467
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": false,
+                "x": 598
+              }
+            ]
+          },
+          {
+            "column": 4,
+            "seconds": 58.047237437413294,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 404
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": false,
+                "x": 535
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "mirror": [
+      {
+        "colour": 0,
+        "rgbaChannelDifferencesFromHorizontalReverse": 0
+      },
+      {
+        "colour": 1,
+        "rgbaChannelDifferencesFromHorizontalReverse": 0
+      }
+    ],
+    "rows": "Each case: background/blue-right/copper-right/blue-left/copper-left; then last-exit-before/clear-after/gap-end-before/reverse-partial/reverse-full. Bottom: native-scale blue pair and copper pair.",
+    "method": "Production sceneTrainService/trainServiceState used directly; sprite texture/anchor/scale mirror follows scene code. Complete native GPU viewport extracted once per sample; integer context crops copied 1:1. Fractional DPR case uses actual pixelViewport-derived native dimensions, not screenshot emulation."
+  },
+  "method": "Image-generation textures composited by /scripts/train-alternation-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

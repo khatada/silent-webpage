@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-29-train-alternation-local-v2/atlas-source.png",
+    "width": 1280,
+    "height": 1280,
+    "sha256": "0dcf035ad80147bba2fbc7da61f4c10eb12f425270514338eaf6441bbb43035d"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-29-train-alternation-local-v2/atlas-corrected.png",
+    "width": 1280,
+    "height": 1280,
+    "sha256": "1f327f3f1efd26b5b7025b3b4b4405b79fd6ba88ee3bf9d81839487ac0279260"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

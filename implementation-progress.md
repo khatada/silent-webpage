@@ -4,10 +4,11 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ `feat/wide-rooftop-towels`、worktree `/workspace/silent-webpage-glass-bounds`。横長背景の屋上壁に既存の生成済み布を掛け、見つけやすい揺れを追加する案を実装中。担当はサブエージェント `landscape_review`、親は記録・採用manifest・Git・CI・公開を担当。
-- 直前の横持ち猫起立 [PR #68](https://github.com/khatada/silent-webpage/pull/68) は head `0031fbec2a02077ea5ef2ed9b2a499f0c34a430e` の verify121テスト/379画像とhook、CI40866973347/job123424083276（Playwright含む）成功後 main `255fffe33baf2cf4bfa0b3f919abaee95a624566` にマージ。Pages40867542712 は verify123426010411 と publish123427750691 が成功し公開済み。PR添付ツールは応答せず中断した。
-- 猫の最終画像は11全景と左右13姿勢を補正後LLMが閲覧。動作atlasは撮影DPRの寸法差を最近傍縮小で揃えた再切り出しのみ採用し、DPR2原寸そのものではない。縦持ち・境界・動き軽減の実動作は未確認。
-- 布の候補配置はwide logical `[270,190]`、高さ14logical、物理高さ24px未満は省略。上端固定と揺れるbodyの既存factoryを活用予定。局所15パネルの補正画像をLLMが実閲覧し、上端の支持・裾の動き・床との間隔を確認。source `bfca5453879acc88e1c1d883d0c2d03423178905f6e8602f52cd33a0589d7cb4` に凍結。全景11枚と動作6枚を補正後LLMが実閲覧・採用。DPR1で0/4/7/9秒の4姿勢、動き軽減で2秒後の全RGBA一致、停止/再開・900×700リサイズとpageerrorなしを確認。必須verify、コミット、PRは未実施。
+- ブランチ `feat/alternating-train-service`、worktree `/workspace/silent-webpage-glass-bounds`。生成済み青・銅色の列車を同方向の組として通し、全編成退出後0.5秒空けて逆方向へ切り替える案を実装中。サブエージェント `landscape_review` はsrc/テスト、親は記録・採用manifest・画像QA/Git/CI/公開を担当。
+- 屋上の布 [PR #69](https://github.com/khatada/silent-webpage/pull/69) は head `6fadcda6927b6c46511afc4e8a6dee31d36cbed9` のverify123テスト/397画像とhook、CI40869624404/job123433061792成功後、main `b5f5ec6034adc37cf8e6e3e9877fd55a1e9fa7e1` へマージ。Pages40870242173 は verify123435141601 と publish123437086021 が成功し公開済み。PR添付ツールは無応答で中断。
+- 布は局所15パネル・11全景・本番6画像を補正後LLMが閲覧。DPR1の3画面で4姿勢、動き軽減時2秒後の全RGBA一致、resize/resume/pageerrorなしを確認。猫が手前を通ると一時的に布を隠す。小型画面と切れる構図では省略する。
+- 横持ち猫のPR #68はmain `255fffe33baf2cf4bfa0b3f919abaee95a624566`、Pages40867542712のverify123426010411/publish123427750691成功で公開済み。動作atlasはDPR寸法差を最近傍縮小した再切り出しであり、DPR2原寸そのものではない。
+- 列車案は平均通過頻度を保つため速度を上げ、通過間隔が不均等になる仮定を置く。既存のmotionScaleを使い、同時に逆方向の列車が重ならないことをテストと補正後実画像で確認する。source `e0713f741a46358a77bf53e56030ae1039b086f54549e77f756ba9e75b45ccc4` に凍結。型・Lint・運行5テスト成功。補正後の左右車体・柱・退出/進入の画像QA中。verify・コミット・PRは未実施。
 
 ## 過去の進行状況（C033時点の記録）
 
@@ -289,3 +290,5 @@
 - 横持ち猫起立QA: 11全景と左右13姿勢を補正後LLMが実閲覧。最初の撮影atlasは画面密度変更で猫の位置がずれたため不採用、保存済み元画像を実寸に揃えた再切り出しを採用。4倍→2倍の最近傍縮小がありDPR2原寸ではない。縦持ち、境界、動き軽減の実動作は未検証。verify・PRはこれから。
 
 - 屋上の布QA: 7秒対9秒の実画素変化はwide2489、compact630、landscape630画素。猫が手前を通る時は布を一時的に隠す。物理2倍表示では約36×30pxで揺れは小さく、4倍では約73×61pxと読み取りやすい。短時間・有限画面の確認であり全端末・連続再生を保証しない。
+
+- 交互運行QA: 補正後の局所atlas、11全景、実時計2画面4画像を担当LLMが実閲覧。左右両色、柱、退出・空白・逆方向からの再入を確認。動き軽減中の全RGBA一致、resize/resumeも確認。小数DPR縦長の既存柱再合成に71画素差あり、別途修正候補。必須verify・PRは未実施。

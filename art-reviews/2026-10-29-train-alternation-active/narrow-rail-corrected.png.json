@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-29-train-alternation-active/narrow-rail-source.png",
+    "width": 295,
+    "height": 600,
+    "sha256": "3601c39e94cc88cc09d8a0f7c3870b1331b0fa788015c1767949a0c2fbdc542e"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-29-train-alternation-active/narrow-rail-corrected.png",
+    "width": 295,
+    "height": 600,
+    "sha256": "3601c39e94cc88cc09d8a0f7c3870b1331b0fa788015c1767949a0c2fbdc542e"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

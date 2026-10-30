@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-29-train-alternation-active/wide-reverse-full-source.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "d79bad9b2b5680ea9dd88c20e9dd536d7c4f9151e773fe99e10e0571f8968283"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-29-train-alternation-active/wide-reverse-full-corrected.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "d79bad9b2b5680ea9dd88c20e9dd536d7c4f9151e773fe99e10e0571f8968283"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
