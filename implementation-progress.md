@@ -4,10 +4,10 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ `fix/fractional-rail-poles`、worktree `/workspace/silent-webpage-glass-bounds`。小数DPRの縦長画面で、倍率0.5の柱の再合成に71画素の差が出る既存の問題を修正中。担当サブエージェント `pole_plan` が本番描画・局所画像とテスト、親が記録・全景QA・Git・CI・公開を担当。
-- 列車の交互運行 [PR #70](https://github.com/khatada/silent-webpage/pull/70) は head `3280469d4f0f8e554d578ccbbf806006b30ce042` のverify125テスト/413画像とhook、CI41063078281/job124087418546成功後、main `75bab4931d3b6312818a7cb94b3633be83472ab5` へマージ。Pages41063857633 は verify124090030272 と publish124092350226 が成功し公開済み。PRはタスクに添付済み。
-- 列車は同方向の組が退出してから0.5秒空けて逆方向の別色が進入。平均通過頻度維持のため速度が増し、間隔は不均等。局所・11全景・2画面の実時計画像を補正後LLMが実閲覧し、停止/再開・動き軽減も確認。未採用の初回局所画像は `/workspace/art-review-trials/train-alternation-local-initial` に保存。
-- 柱修正は背景全体から同じnative画素を切り出す方式を倍率1未満へ適用予定。非横長のroundPixelsを本番に合わせ、無列車のRGBA一致に加えて列車との遮蔽境界、縮小倍率・resize・リソース破棄を確認する。source `799d95b7835e0a7e0c4e3661e77460f36ec23ce5e1394902d039693cd2d34ba9` に凍結。小数DPRの柱差は71→0、両色・左右列車の局所遮蔽差なし。11全景と倍率1/3の補正画像をLLMが実閲覧し、柱差0と列車遮蔽を確認。resize中・連続再生の実画像は未検証。verify・PRは未完了。
+- ブランチ `feat/visible-meteor`、worktree `/workspace/silent-webpage-glass-bounds`。空に余裕がある画面で生成済み流れ星のサイズ・軌跡を見つけやすくする改善をサブエージェント `pole_final` が実装中。狭い画面や雲・飛行機との重なりを補正後画像で確認する。source `da3a03a6a97d015963a2875cb10c7481649899abe0cc8d449603dbc63a656bc6` 凍結。広い空では幅最大64・移動最大112、狭い画面は旧寸法で最大alpha1。局所11構図×4時刻は補正後LLM閲覧済み。補正後11全景と3画面の5時刻・4秒全景をLLMが実閲覧。動き軽減時RGBA一致、resize/resume成功。線は淡く小型画面で非常に小さい。有限時刻・DPR1の確認。必須verify・PRは未実施。
+- 柱の縮小表示修正 [PR #71](https://github.com/khatada/silent-webpage/pull/71) は head `0c7c3e8a3dd8c5729bf805d0f458b499874281c6` のverify126テスト/426画像とhook、CI41065924546/job124097182976成功後 main `051946b9d0a1a9955a58bd2d05f8c64a00820669` にマージ。Pages41066481638 は verify124099079432 と publish124101371074 が成功し公開済み。PR添付済み。
+- 柱は倍率0.5で再合成差71→0、1/3で差0。局所・11全景を補正後LLMが閲覧。resize中・連続再生の実画像は未検証。
+- 列車の交互運行 [PR #70](https://github.com/khatada/silent-webpage/pull/70) はmain `75bab4931d3b6312818a7cb94b3633be83472ab5`、Pages41063857633のverify124090030272/publish124092350226成功で公開済み。
 
 ## 過去の進行状況（C033時点の記録）
 

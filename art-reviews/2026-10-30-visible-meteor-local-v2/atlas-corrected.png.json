@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-30-visible-meteor-local-v2/atlas-source.png",
+    "width": 768,
+    "height": 2393,
+    "sha256": "b5889ffe315a6d47a2a49e9b3c82ef9d0cf75fb13f69337167ba2e890a92d5db"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-30-visible-meteor-local-v2/atlas-corrected.png",
+    "width": 768,
+    "height": 2393,
+    "sha256": "82db43248117c9908f90404121fae8278129d711ae5cce7157915e0c012a09f2"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

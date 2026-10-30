@@ -7,12 +7,12 @@ describe('occasional meteor scene timing', () => {
       expect(meteorState(seconds)).toEqual({ progress: 0, alpha: 0 });
     }
     expect(meteorState(3)).toEqual({ progress: 0, alpha: 0 });
-    expect(meteorState(4)).toEqual({ progress: 0.5, alpha: 0.8 });
+    expect(meteorState(4)).toEqual({ progress: 0.5, alpha: 1 });
     expect(meteorState(32)).toEqual(meteorState(4));
   });
   it('gently fades both endpoints without a bright flash', () => {
-    expect(meteorState(3.225).alpha).toBeCloseTo(0.4);
-    expect(meteorState(4.775).alpha).toBeCloseTo(0.4);
+    expect(meteorState(3.225).alpha).toBeCloseTo(0.5);
+    expect(meteorState(4.775).alpha).toBeCloseTo(0.5);
     expect(meteorState(4.99999).alpha).toBeLessThan(0.000001);
     for (let phase = 0; phase < 2; phase += 0.01) {
       const state = meteorState(3 + phase);

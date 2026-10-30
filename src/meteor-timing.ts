@@ -1,4 +1,4 @@
-export const meteorTiming = { first: 3, interval: 28, duration: 2, fade: 0.45, peakAlpha: 0.8 } as const;
+export const meteorTiming = { first: 3, interval: 28, duration: 2, fade: 0.45, peakAlpha: 1 } as const;
 
 /** An occasional event derives entirely from the shared, pausable scene clock. */
 export function meteorState(seconds: number) {

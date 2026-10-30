@@ -1,0 +1,51 @@
+{
+  "sourceSha256": "da3a03a6a97d015963a2875cb10c7481649899abe0cc8d449603dbc63a656bc6",
+  "decision": "ACCEPTED_LLM_ACTUALLY_VIEWED",
+  "actualLlmView": "11初期全景を画像閲覧。wideとtallはviewer縮小。流れ星は初期非表示、構図や猫・列車・屋上に新たな破損なし。",
+  "images": [
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/compact-corrected.png",
+      "sha256": "c155ac9df5da107fac0c5eba3aee2625ce0409bb41b3339c885f7e61b2f34126"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/desktop-corrected.png",
+      "sha256": "7b823e646924336607ba08cb22914269e2514c69544c849cf14fa4b0486697d5"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/landscape-corrected.png",
+      "sha256": "292fcf36c22a32b2d37f295a8147058e83ec640451a2ffc9e2ca52f6d7cc1e04"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/mobile-corrected.png",
+      "sha256": "5142fe19533d2c856c447c921628b9822041b2fad944bcb80b641d085cc4dbd0"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/narrow-corrected.png",
+      "sha256": "96bd8a9613c60861670ef0a6b8a162e46b0c14c2a0b1c6e3d0dacf52d0726a8d"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/portrait-boundary-corrected.png",
+      "sha256": "33412d1427178882d8bca824ea8a29b64c6fdf9219da0637f51006f993a55f67"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/portrait-large-corrected.png",
+      "sha256": "07d34ff3537726d201a894ede2445d34866c37fa79b67d5cf186322b93794678"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/small-mobile-corrected.png",
+      "sha256": "d35f74ede1979d579bcaa17bb43a6cea75b8beb7f44246bd0a4d2ee9362553e5"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/small-phone-corrected.png",
+      "sha256": "f1ae99848b62ff18e8cda781d6b7cbd3896320f2cec28ecd619761eb2cb579e8"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/tall-corrected.png",
+      "sha256": "1246038f04d6307ef591d12226f7d1836b05555858e7b5fc116d840c9f069162"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/wide-corrected.png",
+      "sha256": "486a8bafc5b39d1176c83ba3713c7901b0f63e7707624e78447da91baab73a81"
+    }
+  ]
+}

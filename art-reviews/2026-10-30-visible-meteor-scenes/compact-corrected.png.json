@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-30-visible-meteor-scenes/compact-source.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "288a5a30322432c9bc25c547fdeb66fd0a2ad2f856722ada30c71dab28db7b75"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-30-visible-meteor-scenes/compact-corrected.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "c155ac9df5da107fac0c5eba3aee2625ce0409bb41b3339c885f7e61b2f34126"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

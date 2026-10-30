@@ -1,0 +1,11 @@
+{
+  "sourceSha256": "da3a03a6a97d015963a2875cb10c7481649899abe0cc8d449603dbc63a656bc6",
+  "decision": "ACCEPTED_LOCAL_COMPOSITES_ONLY",
+  "reviewedBy": "LLM",
+  "image": "art-reviews/2026-10-30-visible-meteor-local-v2/atlas-corrected.png",
+  "sha256": "82db43248117c9908f90404121fae8278129d711ae5cce7157915e0c012a09f2",
+  "actualLlmView": "補正後768×2393アトラスを1200px以下の2帯に分割しoriginalで全域実閲覧。11構図の3.15/3.7/4.3/4.85秒、広い空で長い尾の移動とフェードを確認。",
+  "method": "既存生成済みmeteorと背景を本番factoryで合成。1px格子補正、RGBA前後一致。",
+  "limitations": "局所静止合成のみ。空の背景のみで、航空機・雲や本番の実時間再生は含まない。小型画面では既存同様に細く短い。尾の元画像が淡く全景での視認性は別途評価が必要。画面端/初回雲の矩形分離を単体で確認。",
+  "priorTrial": "最大幅48・不透明度0.8の試作は視認性が弱いため /workspace/art-review-trials/visible-meteor-dim-trial に不採用保存。"
+}
