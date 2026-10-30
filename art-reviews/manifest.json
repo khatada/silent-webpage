@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "799d95b7835e0a7e0c4e3661e77460f36ec23ce5e1394902d039693cd2d34ba9",
+  "sourceSha256": "da3a03a6a97d015963a2875cb10c7481649899abe0cc8d449603dbc63a656bc6",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -3202,6 +3202,132 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが補正後画像を実閲覧。倍率1/3で柱の再合成差0、両色左右の列車を確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-local-v2/atlas-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-local-v2/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11構図×4時刻を実閲覧し、広い空で長い軌跡と狭い画面の維持を確認。雲や航空機はこの局所atlasに含まれない。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図の目立つ破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図の目立つ破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図の目立つ破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図の目立つ破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図の目立つ破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図の目立つ破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図の目立つ破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図の目立つ破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図の目立つ破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図の目立つ破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図の目立つ破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-active/normal-full-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-active/normal-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3画面の全景と5時刻画像を実閲覧。出現・移動・消失を確認。親もwideの軌跡を閲覧。線は淡く、小型画面では極めて小さい。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-active/normal-poses-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-active/normal-poses-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3画面の全景と5時刻画像を実閲覧。出現・移動・消失を確認。親もwideの軌跡を閲覧。線は淡く、小型画面では極めて小さい。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-active/small-full-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-active/small-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3画面の全景と5時刻画像を実閲覧。出現・移動・消失を確認。親もwideの軌跡を閲覧。線は淡く、小型画面では極めて小さい。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-active/small-poses-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-active/small-poses-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3画面の全景と5時刻画像を実閲覧。出現・移動・消失を確認。親もwideの軌跡を閲覧。線は淡く、小型画面では極めて小さい。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-active/wide-full-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-active/wide-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3画面の全景と5時刻画像を実閲覧。出現・移動・消失を確認。親もwideの軌跡を閲覧。線は淡く、小型画面では極めて小さい。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-active/wide-poses-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-meteor-active/wide-poses-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3画面の全景と5時刻画像を実閲覧。出現・移動・消失を確認。親もwideの軌跡を閲覧。線は淡く、小型画面では極めて小さい。"
     }
   ]
 }

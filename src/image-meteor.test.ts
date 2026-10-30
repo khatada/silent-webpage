@@ -15,13 +15,22 @@ export const meteorViewports = [
 ] as const;
 
 describe('generated meteor placement', () => {
+  it('makes the event larger and longer only when the sky has room', () => {
+    const spacious = meteorGeometry(1440, 124);
+    expect(spacious.width).toBe(64);
+    expect(spacious.dx).toBe(112);
+    const shallow = meteorGeometry(844, 64);
+    expect(shallow.width).toBe(28);
+    expect(shallow.dx).toBe(48);
+    expect(spacious.x + spacious.width + spacious.dx).toBeLessThan(1440 * 0.7);
+  });
   it.each(meteorViewports)('keeps the entire tail in native sky at %s', (_name, cssWidth, cssHeight, dpr) => {
     const viewport = pixelViewport(cssWidth, cssHeight, dpr);
     const sky = generatedLayout(viewport.width, viewport.height).skyBottom;
     const path = meteorGeometry(viewport.width, sky);
     expect(path.visible).toBe(true);
     expect(path.width).toBeGreaterThanOrEqual(14);
-    expect(path.width).toBeLessThanOrEqual(28);
+    expect(path.width).toBeLessThanOrEqual(64);
     expect(Number.isInteger(path.width)).toBe(true);
     expect(path.height / path.width).toBeCloseTo(meteorArt.frame[3] / meteorArt.frame[2]);
     expect(path.dx).toBeGreaterThanOrEqual(14);

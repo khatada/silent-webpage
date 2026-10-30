@@ -5,12 +5,13 @@ export const meteorArt = { image: 'art/meteor.png', frame: [125, 83, 230, 62], s
 
 /** Bounds include the entire generated tail throughout its short diagonal flight. */
 export function meteorGeometry(width: number, skyBottom: number) {
-  const spriteWidth = Math.round(Math.max(14, Math.min(28, width * 0.05)));
+  const roomySky = skyBottom >= 80 && width >= 500;
+  const spriteWidth = Math.round(Math.max(14, Math.min(roomySky ? 64 : 28, width * (roomySky ? 0.085 : 0.05))));
   const spriteHeight = spriteWidth * meteorArt.frame[3] / meteorArt.frame[2];
   // Enter through the open left sky, clear of the main cloud during the first flight.
   const x = Math.round(Math.max(4, width * 0.025));
   const y = Math.round(Math.max(4, skyBottom * 0.18));
-  const dx = Math.max(0, Math.min(Math.round(width * 0.12), 48, width - 4 - x - spriteWidth,
+  const dx = Math.max(0, Math.min(Math.round(width * (roomySky ? 0.2 : 0.12)), roomySky ? 112 : 48, width - 4 - x - spriteWidth,
     Math.floor((skyBottom - 4 - y - spriteHeight) / meteorArt.slope)));
   const visible = y + spriteHeight <= skyBottom - 4 && dx >= 14;
   return { x, y, dx, dy: dx * meteorArt.slope, width: spriteWidth, height: spriteHeight, visible };

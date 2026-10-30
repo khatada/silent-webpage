@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-30-visible-meteor-active/small-poses-source.png",
+    "width": 330,
+    "height": 29,
+    "sha256": "cf3e509872c3e8c1f75b5a08f80c4e13d7ec459001bbcf97217cede30ff7537a"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-30-visible-meteor-active/small-poses-corrected.png",
+    "width": 330,
+    "height": 29,
+    "sha256": "cf3e509872c3e8c1f75b5a08f80c4e13d7ec459001bbcf97217cede30ff7537a"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

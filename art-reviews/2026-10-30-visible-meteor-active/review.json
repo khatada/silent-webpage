@@ -1,0 +1,31 @@
+{
+  "sourceSha256": "da3a03a6a97d015963a2875cb10c7481649899abe0cc8d449603dbc63a656bc6",
+  "decision": "ACCEPTED_LLM_ACTUALLY_VIEWED",
+  "actualLlmView": "wide/normal/smallの補正後全景3枚と5時刻の局所atlas3枚を実閲覧。0秒は非表示、3.5/4/4.5秒の流星が右下へ移動し5.2秒では消失。wideとnormalでは線が見えるが細く淡く、smallでは極めて小さい。大きいwide全景はviewer縮小。局所範囲では雲や航空機との不自然な重なりは見えないが全景と有限時刻の目視であり常に無干渉の証明ではない。動き軽減2秒RGBA一致とresize/resumeはcapture.jsonに記録。",
+  "images": [
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-active/normal-full-corrected.png",
+      "sha256": "591890e7da2ae05eaef55b1476128e9b264519aee7d21ea5daa77255bfc8b24f"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-active/normal-poses-corrected.png",
+      "sha256": "24a620b5f05ccaf91c00846b938f926b37b1227deb3737391aef95155a2bfe41"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-active/small-full-corrected.png",
+      "sha256": "5824960bff691f31c64f557041ec65829ab03f9b94a704933114357ec56a65b8"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-active/small-poses-corrected.png",
+      "sha256": "cf3e509872c3e8c1f75b5a08f80c4e13d7ec459001bbcf97217cede30ff7537a"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-active/wide-full-corrected.png",
+      "sha256": "fe076f92b0d8880d7d92f6d2fd0a818c0794667ff0c2fbcf891b1d96fed40e8c"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-meteor-active/wide-poses-corrected.png",
+      "sha256": "176472dc7a6b5cd1e4b32d1ed8f74faa8eff9746eced485db6c0efeac84c1548"
+    }
+  ]
+}

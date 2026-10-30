@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-30-visible-meteor-active/wide-full-source.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "fe076f92b0d8880d7d92f6d2fd0a818c0794667ff0c2fbcf891b1d96fed40e8c"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-30-visible-meteor-active/wide-full-corrected.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "fe076f92b0d8880d7d92f6d2fd0a818c0794667ff0c2fbcf891b1d96fed40e8c"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

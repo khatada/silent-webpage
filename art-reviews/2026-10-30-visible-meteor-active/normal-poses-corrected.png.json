@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-30-visible-meteor-active/normal-poses-source.png",
+    "width": 960,
+    "height": 62,
+    "sha256": "24a620b5f05ccaf91c00846b938f926b37b1227deb3737391aef95155a2bfe41"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-30-visible-meteor-active/normal-poses-corrected.png",
+    "width": 960,
+    "height": 62,
+    "sha256": "24a620b5f05ccaf91c00846b938f926b37b1227deb3737391aef95155a2bfe41"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
