@@ -1,0 +1,67 @@
+{
+  "sourceSha256": "28dc0f31680d6371b1a892f61cffa1e0fc5a0707d7791a206cf38d71f52a4eb4",
+  "results": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "times": [
+        0,
+        4,
+        8
+      ],
+      "skyHeight": 132,
+      "motionScale": 2,
+      "calculatedCloudPixelsPerSecond": 12.8,
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    },
+    {
+      "name": "compact",
+      "width": 800,
+      "height": 600,
+      "dpr": 1,
+      "times": [
+        0,
+        4,
+        8
+      ],
+      "skyHeight": 177,
+      "motionScale": 3,
+      "calculatedCloudPixelsPerSecond": 19.200000000000003,
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "times": [
+        0,
+        4,
+        8
+      ],
+      "skyHeight": 76,
+      "motionScale": 2,
+      "calculatedCloudPixelsPerSecond": 12.8,
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    }
+  ],
+  "method": "Production page; one Chromium per DPR1 case, running awaited and dimensions asserted. Sky strips copied from screenshots at native pixels.",
+  "limitations": "Calculated velocity differs from actual sampled final RAF; finite samples do not verify all times. The crop includes other moving sky actors. Resize checks dimensions, not visual adoption."
+}

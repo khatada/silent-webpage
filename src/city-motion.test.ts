@@ -5,10 +5,11 @@ import { generatedLayout } from './generated-layout';
 
 describe('readable city motion', () => {
   it('moves large sky actors visibly during a short glance, even on a small phone', () => {
+    expect(cityMotion.cloudSpeed).toBeGreaterThanOrEqual(4.8 * 1.3);
     for (const [width, height] of [[1440, 900], [390, 844], [320, 568], [844, 390]]) {
-      const { scale } = generatedLayout(width, height);
-      expect(cityMotion.cloudSpeed * scale * 8).toBeGreaterThanOrEqual(16);
-      expect(cityMotion.aircraftSpeed * scale * 8).toBeGreaterThanOrEqual(40);
+      const { motionScale } = generatedLayout(width, height);
+      expect(cityMotion.cloudSpeed * motionScale * 8).toBeGreaterThanOrEqual(16);
+      expect(cityMotion.aircraftSpeed * motionScale * 8).toBeGreaterThanOrEqual(40);
     }
   });
   it('changes several residential rooms in the first eight seconds without synchronizing them', () => {

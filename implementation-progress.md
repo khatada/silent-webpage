@@ -4,10 +4,10 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ `feat/visible-meteor`、worktree `/workspace/silent-webpage-glass-bounds`。空に余裕がある画面で生成済み流れ星のサイズ・軌跡を見つけやすくする改善をサブエージェント `pole_final` が実装中。狭い画面や雲・飛行機との重なりを補正後画像で確認する。source `da3a03a6a97d015963a2875cb10c7481649899abe0cc8d449603dbc63a656bc6` 凍結。広い空では幅最大64・移動最大112、狭い画面は旧寸法で最大alpha1。局所11構図×4時刻は補正後LLM閲覧済み。補正後11全景と3画面の5時刻・4秒全景をLLMが実閲覧。動き軽減時RGBA一致、resize/resume成功。線は淡く小型画面で非常に小さい。有限時刻・DPR1の確認。必須verify・PRは未実施。
-- 柱の縮小表示修正 [PR #71](https://github.com/khatada/silent-webpage/pull/71) は head `0c7c3e8a3dd8c5729bf805d0f458b499874281c6` のverify126テスト/426画像とhook、CI41065924546/job124097182976成功後 main `051946b9d0a1a9955a58bd2d05f8c64a00820669` にマージ。Pages41066481638 は verify124099079432 と publish124101371074 が成功し公開済み。PR添付済み。
-- 柱は倍率0.5で再合成差71→0、1/3で差0。局所・11全景を補正後LLMが閲覧。resize中・連続再生の実画像は未検証。
-- 列車の交互運行 [PR #70](https://github.com/khatada/silent-webpage/pull/70) はmain `75bab4931d3b6312818a7cb94b3633be83472ab5`、Pages41063857633のverify124090030272/publish124092350226成功で公開済み。
+- ブランチ `feat/visible-cloud-motion`、worktree `/workspace/silent-webpage-glass-bounds`。主雲の速度4.8→6.4を試し、画面内で見つけやすくしながら落ち着いた雰囲気を維持する改善をサブエージェント `pole_final` が実装・画像検証中。source `28dc0f31680d6371b1a892f61cffa1e0fc5a0707d7791a206cf38d71f52a4eb4` に凍結。3画面の0/4/8秒と全景6画像を補正後LLMが閲覧、動き軽減・resize/resumeを確認。desktop8秒で飛行機が雲の上縁を横切るが判別可能。11初期全景も補正後LLMが実閲覧し採用。manifest更新済み、verify・PRは未実施。
+- [PR #72](https://github.com/khatada/silent-webpage/pull/72) は head `af3a494e417975a9b3e7b5f96e39f06398a7d0cb` のverify127テスト/444画像、hook、CI41069431267/job124109329387成功後 main `423c13d387795ca56cbeb773d65d2a09c80bf61e` にマージ。Pages41070200201 は verify124111972123 と publish124114429366 が成功し公開済み。PR添付済み。
+- 流れ星は11局所・11全景・3画面時系列を補正後LLMが実閲覧し、出現・移動・消失、動き軽減とresize/resumeを確認。広い空では長く明るいが元素材の尾は細く小型画面では非常に小さい。
+- 柱修正PR #71はmain `051946b9d0a1a9955a58bd2d05f8c64a00820669`、Pages41066481638のverify124099079432/publish124101371074成功で公開済み。
 
 ## 過去の進行状況（C033時点の記録）
 

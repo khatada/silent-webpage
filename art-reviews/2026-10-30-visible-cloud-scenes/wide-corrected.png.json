@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-30-visible-cloud-scenes/wide-source.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "1f3a58a604a126039b62e60f61ee46e66947f995f0ce96c0e0fc55ed46e87573"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-30-visible-cloud-scenes/wide-corrected.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "486a8bafc5b39d1176c83ba3713c7901b0f63e7707624e78447da91baab73a81"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
