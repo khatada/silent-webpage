@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "e0713f741a46358a77bf53e56030ae1039b086f54549e77f756ba9e75b45ccc4",
+  "sourceSha256": "799d95b7835e0a7e0c4e3661e77460f36ec23ce5e1394902d039693cd2d34ba9",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -3111,6 +3111,97 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが補正後4画像を実閲覧し、退出・空白・逆方向からの全身再入を確認。有限時刻の確認でRAF誤差がある。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-fractional-poles-local/atlas-corrected.png",
+      "report": "art-reviews/2026-10-30-fractional-poles-local/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後局所画像を実閲覧。小数DPR柱の再合成差71→0、列車の遮蔽を確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-fractional-poles-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-30-fractional-poles-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、列車や柱に目立つ新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-fractional-poles-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-30-fractional-poles-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、列車や柱に目立つ新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-fractional-poles-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-30-fractional-poles-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、列車や柱に目立つ新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-fractional-poles-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-30-fractional-poles-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、列車や柱に目立つ新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-fractional-poles-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-30-fractional-poles-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、列車や柱に目立つ新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-fractional-poles-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-30-fractional-poles-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、列車や柱に目立つ新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-fractional-poles-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-30-fractional-poles-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、列車や柱に目立つ新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-fractional-poles-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-30-fractional-poles-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、列車や柱に目立つ新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-fractional-poles-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-30-fractional-poles-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、列車や柱に目立つ新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-fractional-poles-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-30-fractional-poles-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、列車や柱に目立つ新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-fractional-poles-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-30-fractional-poles-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、列車や柱に目立つ新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-third-poles-local/atlas-corrected.png",
+      "report": "art-reviews/2026-10-30-third-poles-local/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後画像を実閲覧。倍率1/3で柱の再合成差0、両色左右の列車を確認。"
     }
   ]
 }

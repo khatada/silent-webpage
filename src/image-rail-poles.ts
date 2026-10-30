@@ -4,11 +4,11 @@ type Rect = readonly [number, number, number, number];
 
 /** Sample the whole generated background before cropping: subtexture nearest ties differ at half scale. */
 export function createImageRailPoles(renderer: Renderer, background: Texture, frames: readonly Rect[],
-  scale: number, originX: number, originY: number, width: number, height: number) {
+  scale: number, originX: number, originY: number, width: number, height: number, backgroundRoundPixels = false) {
   const whole = RenderTexture.create({ width, height, resolution: 1 });
   whole.source.scaleMode = 'nearest';
   const backdrop = new Sprite(background);
-  backdrop.roundPixels = false;
+  backdrop.roundPixels = backgroundRoundPixels;
   backdrop.position.set(originX, originY);
   backdrop.scale.set(scale);
   renderer.render({ container: backdrop, target: whole, clear: true });

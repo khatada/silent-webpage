@@ -1,0 +1,250 @@
+{
+  "sourceSha256": "799d95b7835e0a7e0c4e3661e77460f36ec23ce5e1394902d039693cd2d34ba9",
+  "finalSourceSha256": "799d95b7835e0a7e0c4e3661e77460f36ec23ce5e1394902d039693cd2d34ba9",
+  "metadata": {
+    "metadata": [
+      {
+        "name": "third",
+        "native": [
+          200,
+          360
+        ],
+        "css": [
+          200,
+          360
+        ],
+        "dpr": 1,
+        "composition": "portrait",
+        "scale": 0.3333333333333333,
+        "trainScale": 0.15999999999999998,
+        "schedule": {
+          "width": 200,
+          "length": 42.239999999999995,
+          "count": 2,
+          "period": 45.42,
+          "speed": 7.362422083704364,
+          "travelDuration": 32.90221577164973,
+          "startGap": 12.017784228350264,
+          "phase": 8.029966134494437,
+          "clearance": 0.5
+        },
+        "noTrainPoleChanged": 0,
+        "crop": {
+          "width": 200,
+          "height": 120,
+          "poleX": 0,
+          "top": 113
+        },
+        "poleSamples": [
+          {
+            "column": 1,
+            "seconds": -0.13582486695694396,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": true,
+                "x": 15
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": false,
+                "x": -73
+              }
+            ],
+            "changed": 272,
+            "changedBounds": [
+              16,
+              142,
+              56,
+              151
+            ]
+          },
+          {
+            "column": 2,
+            "seconds": 11.88195936139332,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": true,
+                "x": 104
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": true,
+                "x": 15
+              }
+            ],
+            "changed": 563,
+            "changedBounds": [
+              16,
+              142,
+              145,
+              151
+            ]
+          },
+          {
+            "column": 3,
+            "seconds": 62.3981083696178,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 15
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": true,
+                "x": 104
+              }
+            ],
+            "changed": 558,
+            "changedBounds": [
+              15,
+              142,
+              144,
+              151
+            ]
+          },
+          {
+            "column": 4,
+            "seconds": 74.41589259796807,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": false,
+                "x": -73
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": true,
+                "x": 15
+              }
+            ],
+            "changed": 259,
+            "changedBounds": [
+              15,
+              143,
+              55,
+              151
+            ]
+          }
+        ],
+        "events": [
+          {
+            "column": 0,
+            "seconds": 36.79003386550556,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 287
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": true,
+                "x": 199
+              }
+            ]
+          },
+          {
+            "column": 1,
+            "seconds": 36.990033865505566,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 289
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": false,
+                "x": 200
+              }
+            ]
+          },
+          {
+            "column": 2,
+            "seconds": 37.29003386550556,
+            "states": [
+              {
+                "direction": 1,
+                "colour": 0,
+                "visible": false,
+                "x": 291
+              },
+              {
+                "direction": 1,
+                "colour": 1,
+                "visible": false,
+                "x": 202
+              }
+            ]
+          },
+          {
+            "column": 3,
+            "seconds": 37.490033865505566,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 199
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": false,
+                "x": 287
+              }
+            ]
+          },
+          {
+            "column": 4,
+            "seconds": 43.22727624576681,
+            "states": [
+              {
+                "direction": -1,
+                "colour": 0,
+                "visible": true,
+                "x": 157
+              },
+              {
+                "direction": -1,
+                "colour": 1,
+                "visible": false,
+                "x": 245
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "mirror": [
+      {
+        "colour": 0,
+        "rgbaChannelDifferencesFromHorizontalReverse": 0
+      },
+      {
+        "colour": 1,
+        "rgbaChannelDifferencesFromHorizontalReverse": 0
+      }
+    ],
+    "rows": "Each case: background/blue-right/copper-right/blue-left/copper-left; then last-exit-before/clear-after/gap-end-before/reverse-partial/reverse-full. Bottom: native-scale blue pair and copper pair.",
+    "method": "Production sceneTrainService/trainServiceState used directly; sprite texture/anchor/scale mirror follows scene code. Complete native GPU viewport extracted once per sample; integer context crops copied 1:1. Fractional DPR case uses actual pixelViewport-derived native dimensions, not screenshot emulation."
+  },
+  "method": "Image-generation textures composited by /scripts/third-pole-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}
