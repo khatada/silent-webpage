@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-29-train-alternation-active/narrow-reverse-full-source.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "e0b0a4cd67cbcf352e93fea2278b9cccc5825d3c1a1b3d04c4e1a720725f7aa2"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-29-train-alternation-active/narrow-reverse-full-corrected.png",
+    "width": 295,
+    "height": 844,
+    "sha256": "e0b0a4cd67cbcf352e93fea2278b9cccc5825d3c1a1b3d04c4e1a720725f7aa2"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

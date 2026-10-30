@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "bfca5453879acc88e1c1d883d0c2d03423178905f6e8602f52cd33a0589d7cb4",
+  "sourceSha256": "e0713f741a46358a77bf53e56030ae1039b086f54549e77f756ba9e75b45ccc4",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -2999,6 +2999,118 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "補正後3全景と4時刻の局所atlas3枚を担当LLMが実閲覧。上端固定と裾の曲がりを確認。親もcompact全景を実閲覧。猫による一時的遮蔽や小型表示では動きが小さい制約を記録。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-local-v2/atlas-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-local-v2/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMと親が補正後アトラスを実閲覧し両色・左右方向と柱の遮蔽を確認。小数DPR縦長では既存の柱再合成に71画素の差がある。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図と列車に新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図と列車に新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図と列車に新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図と列車に新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図と列車に新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図と列車に新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図と列車に新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図と列車に新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図と列車に新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図と列車に新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し、構図と列車に新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-active/narrow-rail-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-active/narrow-rail-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後4画像を実閲覧し、退出・空白・逆方向からの全身再入を確認。有限時刻の確認でRAF誤差がある。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-active/narrow-reverse-full-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-active/narrow-reverse-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後4画像を実閲覧し、退出・空白・逆方向からの全身再入を確認。有限時刻の確認でRAF誤差がある。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-active/wide-rail-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-active/wide-rail-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後4画像を実閲覧し、退出・空白・逆方向からの全身再入を確認。有限時刻の確認でRAF誤差がある。"
+    },
+    {
+      "image": "art-reviews/2026-10-29-train-alternation-active/wide-reverse-full-corrected.png",
+      "report": "art-reviews/2026-10-29-train-alternation-active/wide-reverse-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後4画像を実閲覧し、退出・空白・逆方向からの全身再入を確認。有限時刻の確認でRAF誤差がある。"
     }
   ]
 }

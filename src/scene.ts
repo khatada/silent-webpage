@@ -18,7 +18,7 @@ import { createImageUpperCloud } from './image-upper-cloud';
 import { createImageSkylineLights } from './image-skyline-lights';
 import { createImageStars } from './image-stars';
 import { createImageRoomLights } from './image-room-lights';
-import { trainServiceOffsets } from './train-service';
+import { sceneTrainService, trainServiceState, type TrainServiceSchedule } from './train-service';
 import { createImagePlant, plantArt, plantGeometry } from './image-plant';
 import { cityMotion, residentialLightCycle } from './city-motion';
 import { oppositeAircraftArt, oppositeAircraftGeometry } from './opposite-aircraft';
@@ -134,10 +134,11 @@ export async function createScene(host: HTMLElement): Promise<{
   let originY = 0;
   let catY = 470;
   let actorScale = 1;
-  let trains: { art: Sprite; offset: number }[] = [];
+  let trains: Sprite[] = [];
+  let trainSchedule: TrainServiceSchedule;
+  let trainScale = 1;
   let mirroredBackground: ReturnType<typeof createImageWideBackground> | undefined;
   let sampledPoles: ReturnType<typeof createImageRailPoles> | undefined;
-  let trainInitialX = 0;
   let aircraft: Sprite;
   let oppositeAircraft: Sprite | undefined;
   let cloud: Sprite;
@@ -253,16 +254,17 @@ export async function createScene(host: HTMLElement): Promise<{
       oppositeAircraft.y = oppositeFlight.y;
     }
     const train = sprite(frames.train);
-    train.scale.set(motionScale * 0.24 * actorScale);
+    const service = sceneTrainService(width, height, layout);
+    trainScale = service.scale;
+    trainSchedule = service.schedule;
+    train.scale.set(trainScale);
     train.y = layout.railBottom - train.height;
-    trains = trainServiceOffsets(width, train.width).map((offset, index) => {
+    trains = Array.from({ length: trainSchedule.count }, (_, index) => {
       const art = index === 0 ? train : sprite(alternateTrain);
       art.scale.copyFrom(train.scale);
       art.y = train.y;
-      return { art, offset };
+      return art;
     });
-    trainInitialX = width * 0.1;
-    let nearestPoleDistance = Infinity;
     // Wide poles share whole-background sampling even when individual source pixels are discarded.
     if (layout.wide) sampledPoles = createImageRailPoles(app.renderer, textures.background,
       composition.railPoles, scale, originX, originY, width, height);
@@ -273,16 +275,7 @@ export async function createScene(host: HTMLElement): Promise<{
       art.scale.set(scale);
       return { art, frame };
     });
-    for (const { art: pole, frame: [x, y, w, h] } of poles) {
-      app.stage.addChild(pole);
-      if (sourceX(x + w) <= 0 || sourceX(x) >= width || sourceY(y + h) <= 0 || sourceY(y) >= height) continue;
-      const center = sourceX(x + w / 2);
-      const distance = Math.abs(center - width * 0.25);
-      if (distance < nearestPoleDistance) {
-        nearestPoleDistance = distance;
-        trainInitialX = center - train.width / 2;
-      }
-    }
+    for (const { art: pole } of poles) app.stage.addChild(pole);
     steam = undefined;
     if (!layout.wide) {
       steam = imageSteam.createSprite(layout.portrait ? 1 : 0, scale, originX, originY);
@@ -319,9 +312,15 @@ export async function createScene(host: HTMLElement): Promise<{
     aircraft.x = travelPosition(elapsed, width, aircraft.width, motionScale * cityMotion.aircraftSpeed, width * 0.7);
     if (oppositeAircraft) oppositeAircraft.x = travelPosition(elapsed, width, oppositeAircraft.width,
       -motionScale * cityMotion.aircraftSpeed, width * oppositeAircraftArt.initialFraction);
-    for (const { art, offset } of trains) {
-      art.x = travelPosition(elapsed, width, art.width, motionScale * 16, trainInitialX + offset);
-    }
+    trainServiceState(trainSchedule, elapsed).forEach((state, index) => {
+      const art = trains[index];
+      art.visible = state.visible;
+      art.texture = state.colour === 0 ? frames.train : alternateTrain;
+      // Anchor1 with a negative scale keeps x at the mirrored train's left bound.
+      art.anchor.set(state.direction === 1 ? 0 : 1, 0);
+      art.scale.set(state.direction * trainScale, trainScale);
+      art.x = state.x;
+    });
     const pose = catPose(elapsed, width, motionScale * actorScale);
     imageCat.update(cat, pose, motionScale * actorScale, catY);
   }

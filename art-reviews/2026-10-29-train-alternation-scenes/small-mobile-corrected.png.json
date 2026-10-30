@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-29-train-alternation-scenes/small-mobile-source.png",
+    "width": 750,
+    "height": 1334,
+    "sha256": "56778c299e5d6271d3b5403277686ab13fac961f8204f9bb6e48bba5fe7427e0"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-29-train-alternation-scenes/small-mobile-corrected.png",
+    "width": 750,
+    "height": 1334,
+    "sha256": "6f67c4b01585be91b1396b8512bf11998afc33f4b6f34b7d812e671d94490645"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

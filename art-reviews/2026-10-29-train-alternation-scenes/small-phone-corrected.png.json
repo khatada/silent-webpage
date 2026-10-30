@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-29-train-alternation-scenes/small-phone-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "25e3935df8c29378d2bbe98d1887f93ce05135e62e19de0e79b546cd7abee6f7"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-29-train-alternation-scenes/small-phone-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "8e88bfe98a9b00bef8e0a9f14a823e33793a7cdeeecd97a4196270d8888a20e7"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

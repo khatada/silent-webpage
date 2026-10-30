@@ -1,0 +1,233 @@
+{
+  "sourceSha256": "e0713f741a46358a77bf53e56030ae1039b086f54549e77f756ba9e75b45ccc4",
+  "method": "Unmodified production page. Separate Chromium per case, DPR1 fixed, actual screenshot dimensions asserted; paused clock before goto, running awaited, runFor <=1000ms. Calculated expected positions are separate from actual screenshots.",
+  "limitations": "Final20fps RAF may precede requested clock time. Finite six moments are not every-frame proof. DPR2 and fractional conditions are covered by initial scenes/static native API atlas, not these two clock sequences.",
+  "samples": [
+    {
+      "name": "narrow",
+      "viewport": [
+        295,
+        844
+      ],
+      "dpr": 1,
+      "railTop": 256,
+      "railHeight": 100,
+      "schedule": {
+        "width": 295,
+        "length": 126.72,
+        "count": 1,
+        "period": 13.17875,
+        "speed": 33.26195405698511,
+        "travelDuration": 12.67875,
+        "startGap": 7.860031300388884,
+        "phase": 6.143956535141801,
+        "clearance": 0.5
+      },
+      "times": [
+        {
+          "requestedSeconds": 0,
+          "expected": [
+            {
+              "direction": 1,
+              "colour": 0,
+              "visible": true,
+              "x": 77
+            }
+          ]
+        },
+        {
+          "requestedSeconds": 1,
+          "expected": [
+            {
+              "direction": 1,
+              "colour": 0,
+              "visible": true,
+              "x": 110
+            }
+          ]
+        },
+        {
+          "requestedSeconds": 6.384793464858199,
+          "expected": [
+            {
+              "direction": 1,
+              "colour": 0,
+              "visible": true,
+              "x": 290
+            }
+          ]
+        },
+        {
+          "requestedSeconds": 6.7347934648582,
+          "expected": [
+            {
+              "direction": 1,
+              "colour": 0,
+              "visible": false,
+              "x": 301
+            }
+          ]
+        },
+        {
+          "requestedSeconds": 7.2347934648582,
+          "expected": [
+            {
+              "direction": -1,
+              "colour": 1,
+              "visible": true,
+              "x": 288
+            }
+          ]
+        },
+        {
+          "requestedSeconds": 11.044551598216826,
+          "expected": [
+            {
+              "direction": -1,
+              "colour": 1,
+              "visible": true,
+              "x": 161
+            }
+          ]
+        }
+      ],
+      "reducedMotionPauseFullRgbaExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    },
+    {
+      "name": "wide",
+      "viewport": [
+        800,
+        600
+      ],
+      "dpr": 1,
+      "railTop": 242,
+      "railHeight": 100,
+      "schedule": {
+        "width": 800,
+        "length": 95.03999999999999,
+        "count": 2,
+        "period": 18.646666666666665,
+        "speed": 60.458486407053634,
+        "travelDuration": 14.804207865441642,
+        "startGap": 3.3424588012250256,
+        "phase": 4.871441835593797,
+        "clearance": 0.5
+      },
+      "times": [
+        {
+          "requestedSeconds": 0,
+          "expected": [
+            {
+              "direction": 1,
+              "colour": 0,
+              "visible": true,
+              "x": 199
+            },
+            {
+              "direction": 1,
+              "colour": 1,
+              "visible": true,
+              "x": -3
+            }
+          ]
+        },
+        {
+          "requestedSeconds": 1,
+          "expected": [
+            {
+              "direction": 1,
+              "colour": 0,
+              "visible": true,
+              "x": 259
+            },
+            {
+              "direction": 1,
+              "colour": 1,
+              "visible": true,
+              "x": 57
+            }
+          ]
+        },
+        {
+          "requestedSeconds": 13.125224831072869,
+          "expected": [
+            {
+              "direction": 1,
+              "colour": 0,
+              "visible": false,
+              "x": 993
+            },
+            {
+              "direction": 1,
+              "colour": 1,
+              "visible": true,
+              "x": 790
+            }
+          ]
+        },
+        {
+          "requestedSeconds": 13.475224831072868,
+          "expected": [
+            {
+              "direction": 1,
+              "colour": 0,
+              "visible": false,
+              "x": 1014
+            },
+            {
+              "direction": 1,
+              "colour": 1,
+              "visible": false,
+              "x": 812
+            }
+          ]
+        },
+        {
+          "requestedSeconds": 13.975224831072868,
+          "expected": [
+            {
+              "direction": -1,
+              "colour": 0,
+              "visible": true,
+              "x": 787
+            },
+            {
+              "direction": -1,
+              "colour": 1,
+              "visible": false,
+              "x": 989
+            }
+          ]
+        },
+        {
+          "requestedSeconds": 15.547212580817654,
+          "expected": [
+            {
+              "direction": -1,
+              "colour": 0,
+              "visible": true,
+              "x": 692
+            },
+            {
+              "direction": -1,
+              "colour": 1,
+              "visible": false,
+              "x": 894
+            }
+          ]
+        }
+      ],
+      "reducedMotionPauseFullRgbaExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    }
+  ]
+}
