@@ -1,0 +1,47 @@
+{
+  "sourceSha256": "799d95b7835e0a7e0c4e3661e77460f36ec23ce5e1394902d039693cd2d34ba9",
+  "decision": "ACCEPTED_LOCAL_ONLY",
+  "reviewedBy": "LLM",
+  "actualLlmView": "補正後1280×1280アトラスをoriginalで全域実閲覧。通常・横長・縦長・小数DPR縦長の青/銅列車の左右通過と柱遮蔽を確認。目立つ柱の欠けや列車のはみ出しは見えない。",
+  "measurements": {
+    "noTrainPoleChanged": {
+      "normal": 0,
+      "wide": 0,
+      "portrait": 0,
+      "fractional": 0
+    },
+    "fractionalBefore": 71,
+    "fractionalAfter": 0,
+    "fractionalCropOldVsNew": {
+      "row6_changed_per_panel": [
+        47,
+        47,
+        47,
+        47,
+        47
+      ],
+      "row7_changed_per_panel": [
+        36,
+        36,
+        36,
+        36,
+        36
+      ],
+      "train_state_difference_equals_no_train": true
+    },
+    "mirror": [
+      {
+        "colour": 0,
+        "rgbaChannelDifferencesFromHorizontalReverse": 0
+      },
+      {
+        "colour": 1,
+        "rgbaChannelDifferencesFromHorizontalReverse": 0
+      }
+    ]
+  },
+  "comparisonMethod": "前版と新local atlasを同じnative cropの同一画素で比較。fractional rows6/7各5列について、列車あり各列の旧→新RGBA差は同じ行の列車なし列と完全一致し、局所領域で列車による追加遮蔽差なし。",
+  "limitations": "finite静止時刻・表示上のcropに限る。縮小倍率1/3および全列車位置・resize実画像は未検証。GPU背景全体RTを縮小非wideでも確保する。全景と実時間QAは別途必要。",
+  "image": "art-reviews/2026-10-30-fractional-poles-local/atlas-corrected.png",
+  "sha256": "98793fd482d36490b3bc50a2d938d2e7826bc18acc049e83e6422c9dc256efe0"
+}

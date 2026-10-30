@@ -4,11 +4,10 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ `feat/alternating-train-service`、worktree `/workspace/silent-webpage-glass-bounds`。生成済み青・銅色の列車を同方向の組として通し、全編成退出後0.5秒空けて逆方向へ切り替える案を実装中。サブエージェント `landscape_review` はsrc/テスト、親は記録・採用manifest・画像QA/Git/CI/公開を担当。
-- 屋上の布 [PR #69](https://github.com/khatada/silent-webpage/pull/69) は head `6fadcda6927b6c46511afc4e8a6dee31d36cbed9` のverify123テスト/397画像とhook、CI40869624404/job123433061792成功後、main `b5f5ec6034adc37cf8e6e3e9877fd55a1e9fa7e1` へマージ。Pages40870242173 は verify123435141601 と publish123437086021 が成功し公開済み。PR添付ツールは無応答で中断。
-- 布は局所15パネル・11全景・本番6画像を補正後LLMが閲覧。DPR1の3画面で4姿勢、動き軽減時2秒後の全RGBA一致、resize/resume/pageerrorなしを確認。猫が手前を通ると一時的に布を隠す。小型画面と切れる構図では省略する。
-- 横持ち猫のPR #68はmain `255fffe33baf2cf4bfa0b3f919abaee95a624566`、Pages40867542712のverify123426010411/publish123427750691成功で公開済み。動作atlasはDPR寸法差を最近傍縮小した再切り出しであり、DPR2原寸そのものではない。
-- 列車案は平均通過頻度を保つため速度を上げ、通過間隔が不均等になる仮定を置く。既存のmotionScaleを使い、同時に逆方向の列車が重ならないことをテストと補正後実画像で確認する。source `e0713f741a46358a77bf53e56030ae1039b086f54549e77f756ba9e75b45ccc4` に凍結。型・Lint・運行5テスト成功。補正後の左右車体・柱・退出/進入の画像QA中。verify・コミット・PRは未実施。
+- ブランチ `fix/fractional-rail-poles`、worktree `/workspace/silent-webpage-glass-bounds`。小数DPRの縦長画面で、倍率0.5の柱の再合成に71画素の差が出る既存の問題を修正中。担当サブエージェント `pole_plan` が本番描画・局所画像とテスト、親が記録・全景QA・Git・CI・公開を担当。
+- 列車の交互運行 [PR #70](https://github.com/khatada/silent-webpage/pull/70) は head `3280469d4f0f8e554d578ccbbf806006b30ce042` のverify125テスト/413画像とhook、CI41063078281/job124087418546成功後、main `75bab4931d3b6312818a7cb94b3633be83472ab5` へマージ。Pages41063857633 は verify124090030272 と publish124092350226 が成功し公開済み。PRはタスクに添付済み。
+- 列車は同方向の組が退出してから0.5秒空けて逆方向の別色が進入。平均通過頻度維持のため速度が増し、間隔は不均等。局所・11全景・2画面の実時計画像を補正後LLMが実閲覧し、停止/再開・動き軽減も確認。未採用の初回局所画像は `/workspace/art-review-trials/train-alternation-local-initial` に保存。
+- 柱修正は背景全体から同じnative画素を切り出す方式を倍率1未満へ適用予定。非横長のroundPixelsを本番に合わせ、無列車のRGBA一致に加えて列車との遮蔽境界、縮小倍率・resize・リソース破棄を確認する。source `799d95b7835e0a7e0c4e3661e77460f36ec23ce5e1394902d039693cd2d34ba9` に凍結。小数DPRの柱差は71→0、両色・左右列車の局所遮蔽差なし。11全景と倍率1/3の補正画像をLLMが実閲覧し、柱差0と列車遮蔽を確認。resize中・連続再生の実画像は未検証。verify・PRは未完了。
 
 ## 過去の進行状況（C033時点の記録）
 

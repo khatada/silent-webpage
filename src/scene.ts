@@ -266,8 +266,8 @@ export async function createScene(host: HTMLElement): Promise<{
       return art;
     });
     // Wide poles share whole-background sampling even when individual source pixels are discarded.
-    if (layout.wide) sampledPoles = createImageRailPoles(app.renderer, textures.background,
-      composition.railPoles, scale, originX, originY, width, height);
+    if (layout.wide || scale < 1) sampledPoles = createImageRailPoles(app.renderer, textures.background,
+      composition.railPoles, scale, originX, originY, width, height, !layout.wide);
     const poles = sampledPoles?.poles ?? textures.railPoles.map(({ texture, frame }) => {
       const art = new Sprite(texture);
       art.roundPixels = true;

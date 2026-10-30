@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-30-third-poles-local/atlas-source.png",
+    "width": 1280,
+    "height": 1280,
+    "sha256": "817db7216e5c3dc064a1ff0b447233c2891e2bfcb43395e0d9ca7014f475c449"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-30-third-poles-local/atlas-corrected.png",
+    "width": 1280,
+    "height": 1280,
+    "sha256": "5e8237ccf034d0eedff70b02e7fccc845a36f5b3f0926430ff0dd98d893e5168"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

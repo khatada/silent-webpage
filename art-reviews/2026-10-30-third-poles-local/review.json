@@ -1,0 +1,23 @@
+{
+  "sourceSha256": "799d95b7835e0a7e0c4e3661e77460f36ec23ce5e1394902d039693cd2d34ba9",
+  "decision": "ACCEPTED",
+  "image": "art-reviews/2026-10-30-third-poles-local/atlas-corrected.png",
+  "sha256": "5e8237ccf034d0eedff70b02e7fccc845a36f5b3f0926430ff0dd98d893e5168",
+  "actualLlmView": "補正後1280×1280アトラスを全域実閲覧。200×360縮小構図の柱、両色列車の左右通過、退出・再入を確認。極小のため視認しにくい箇所がある。",
+  "measurements": {
+    "scale": 0.3333333333333333,
+    "noTrainPoleChanged": 0,
+    "mirror": [
+      {
+        "colour": 0,
+        "rgbaChannelDifferencesFromHorizontalReverse": 0
+      },
+      {
+        "colour": 1,
+        "rgbaChannelDifferencesFromHorizontalReverse": 0
+      }
+    ]
+  },
+  "limitations": "GPU局所合成の有限時刻。リサイズ、全列車位置及び連続再生は未検証。",
+  "method": "本番のbackground・pillar factoryとservice APIを使用し、完全native RGBAを一度抽出して整数crop。"
+}

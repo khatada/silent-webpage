@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-30-fractional-poles-local/atlas-source.png",
+    "width": 1280,
+    "height": 1280,
+    "sha256": "2ccc876aa8a5ff1e49ab7991b352c47c30584be1a6d57fb92aeb5063be065a92"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-30-fractional-poles-local/atlas-corrected.png",
+    "width": 1280,
+    "height": 1280,
+    "sha256": "98793fd482d36490b3bc50a2d938d2e7826bc18acc049e83e6422c9dc256efe0"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
