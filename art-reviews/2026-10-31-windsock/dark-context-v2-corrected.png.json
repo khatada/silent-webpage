@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-windsock/dark-context-v2-source.png",
+    "width": 960,
+    "height": 300,
+    "sha256": "723254c4dcb75e24b12f9e49ac1cfbc2d28f5c2552b3fcc041819d4159d230ae"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-windsock/dark-context-v2-corrected.png",
+    "width": 960,
+    "height": 300,
+    "sha256": "f98258d9e4de8b43c896f79b11581a69fc646272976a9d3eff25e9399cfb774e"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

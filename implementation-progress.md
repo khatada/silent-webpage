@@ -4,10 +4,10 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ `feat/wide-window-resident`、worktree `/workspace/silent-webpage-glass-bounds`。横長背景の暖かな大窓に既存生成住人の中間姿勢を表示する改善を `bird_review` が実装中。ガラス外へのはみ出しと点消灯の同期を補正後画像で確認する。source `aa745a6e7624cb1d85a4f0311d030fb313a2a56eb1c246250afa30e08ba818b8` に凍結。局所3倍率・3姿勢で窓外変更0、消灯時RGBA一致を確認し補正後LLM閲覧。11全景と時系列6画像を補正後LLMが実閲覧。中間明度と消灯・点灯、ガラス内姿勢変化を確認。小型での視認性は低く、scale2未満省略とresize後の見た目・連続再生は未検証。manifest更新済み、verify・PR未実施。
-- [PR #75](https://github.com/khatada/silent-webpage/pull/75) は head `bb044049704e464e90717aba80b386db43c10820` のverify131テスト/479画像とhook、CI41161958729/job124421240262成功後main `266e084b12fb2c8d43761f8f715ede0ba7709bfc` にマージ。Pages41162210054 は verify124422013492 と publish124423003559 が成功し公開済み。PR添付ツールは応答せず中断。
-- 鳥はimagegen原画・3px補正と実閲覧を経た素材の5姿勢を位置合わせして往復。3画面時系列・11初期全景をLLM実閲覧し停止/resume・resize・動き軽減を確認。横持ち844×390・極小は航空機との衝突回避や表示サイズ条件で省略。desktopは約75秒飛び約150秒周期。有限時刻の検証で月/雲との全時刻の重なりは未保証。
-- 鳥素材PR #74はmain `8649fc515f6c066c7becbd655e0c631ec677b3da`、Pages41160595595のverify124417067872/publish124418224712成功。
+- ブランチ `feat/windsock-art`、worktree `/workspace/silent-webpage-glass-bounds`。近景の大きな動きを増やすため吹き流しの6姿勢をimage_gen.imagegenで生成し、原画 `/workspace/generated_images/exec-664b1aa2-767b-42e6-8bfe-b0cb96fa88ef.png` を親が実閲覧。輪郭の赤/マゼンタにじみがあり、そのまま不採用。`windsock_art` が補正・部分編集と実閲覧で素材採否を検証中。imagegen編集原画 exec-465fc74b-a1d4-4a05-9e8c-44df58ddfc38.png を3px補正し素材のみ採用。暗背景6姿勢×60/90pxをLLM実閲覧。棒の位置差・微小紫縁が残り、表示で支持登録を検証。manifest更新済み、verify/PR未実施。素材と表示は別PRにする。
+- 住人の [PR #76](https://github.com/khatada/silent-webpage/pull/76) はhead `ab3af38807275e915dcf74e0b6ac9ff00c68bf5c` のverify132テスト/497画像とhook、CI41205078796/job124548403743成功後 main `1c5d43a2500a77488de1d7aa62d6ecc364fdc26f` にマージ。Pages41205533808 は verify124549729135 と publish124550743823 が成功し公開済み。PR添付ツール無応答で中断。
+- 住人は局所・11全景・時系列6画像を補正後LLMが実閲覧。ガラス外変更0、消灯時一致、中間明度と姿勢を確認。小型全景では注視必要。scale2未満省略・resize後の見た目・連続再生は未検証。
+- 鳥PR #75はmain `266e084b12fb2c8d43761f8f715ede0ba7709bfc`、Pages41162210054のverify124422013492/publish124423003559成功で公開済み。
 
 ## 過去の進行状況（C033時点の記録）
 

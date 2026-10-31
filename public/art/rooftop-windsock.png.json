@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-windsock/edited-original.png",
+    "width": 2172,
+    "height": 724,
+    "sha256": "4e9db1cd25b09428f96c5d557d57d3b78040fa2f435bf2a257efe33b595f6a20"
+  },
+  "output": {
+    "path": "public/art/rooftop-windsock.png",
+    "width": 724,
+    "height": 241,
+    "sha256": "f66c2d12cbf50bfe0059c61fa8ab6b48cdb275f777164b4a894a51078365de30"
+  },
+  "grid": {
+    "cellSize": 3,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
