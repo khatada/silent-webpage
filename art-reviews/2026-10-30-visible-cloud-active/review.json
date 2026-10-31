@@ -1,0 +1,36 @@
+{
+  "sourceSha256": "28dc0f31680d6371b1a892f61cffa1e0fc5a0707d7791a206cf38d71f52a4eb4",
+  "decision": "ACCEPTED_VISUAL_WITH_LIMITATION",
+  "reviewedBy": "LLM",
+  "actualLlmView": "desktop/compact/mobile各4秒全景と0/4/8秒空の帯、計6補正画像をoriginalで全域実閲覧。雲の大きな移動と星空・建物・流れ星の輪郭が維持され、自然な空の流れとして採用。desktop 8秒画像では小型飛行機が雲の上縁を一時的に横切るが、前景に表示され形状は判別できる。",
+  "observations": "3枚の時間帯で雲の移動が明確。初回4秒の流星は雲から離れて見える。静止時点では速度感や連続再生の自然さを完全に判断できない。",
+  "limitations": "DPR1の3画面、0/4/8秒の有限時刻のみ。飛行機・流星と全時間帯で重ならない保証ではない。予測速度と最終RAFは別であり、resize後の視覚的採否は未検証。",
+  "sourceSha256Final": "28dc0f31680d6371b1a892f61cffa1e0fc5a0707d7791a206cf38d71f52a4eb4",
+  "images": [
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-active/compact-full-corrected.png",
+      "sha256": "10666d534d974558393cdb20eb019768c4a8a671ac317fd182ad3d4eca8638e6"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-active/compact-sky-corrected.png",
+      "sha256": "2a752da2cb011f2daca660ac4e91e3f8f03849bd7cfd32e26809212b9a178404"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-active/desktop-full-corrected.png",
+      "sha256": "a67dffae8a3a93dd028c2e8c54b89bd633df7744baa2e7685d263488a514f844"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-active/desktop-sky-corrected.png",
+      "sha256": "504e3a6a79ad6216eadf13013bde9c630855829bc4ef7aaa9e30d746052b2962"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-active/mobile-full-corrected.png",
+      "sha256": "18116e326f724316456f678b05a6d4c88e12e2cb2bdfeb0e69693577f7ef46d7"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-active/mobile-sky-corrected.png",
+      "sha256": "e307662963e8b41e5a38976e5112da708625a2c772eb5378db7cb653926ee110"
+    }
+  ],
+  "tests": "3画面で動き軽減2秒の全RGBA一致、900×700へresize寸法、resume、pageerrorなし。"
+}

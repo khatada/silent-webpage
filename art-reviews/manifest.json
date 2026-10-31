@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "da3a03a6a97d015963a2875cb10c7481649899abe0cc8d449603dbc63a656bc6",
+  "sourceSha256": "28dc0f31680d6371b1a892f61cffa1e0fc5a0707d7791a206cf38d71f52a4eb4",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -3328,6 +3328,125 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが3画面の全景と5時刻画像を実閲覧。出現・移動・消失を確認。親もwideの軌跡を閲覧。線は淡く、小型画面では極めて小さい。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11画面を全域実閲覧し構図や表示に破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11画面を全域実閲覧し構図や表示に破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11画面を全域実閲覧し構図や表示に破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11画面を全域実閲覧し構図や表示に破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11画面を全域実閲覧し構図や表示に破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11画面を全域実閲覧し構図や表示に破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11画面を全域実閲覧し構図や表示に破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11画面を全域実閲覧し構図や表示に破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11画面を全域実閲覧し構図や表示に破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11画面を全域実閲覧し構図や表示に破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11画面を全域実閲覧し構図や表示に破損がないことを確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-active/compact-full-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-active/compact-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3画面の補正後時系列・全景を全域実閲覧、親もdesktopの時系列を閲覧し雲の移動を確認。desktopで航空機が雲の上縁を横切る。有限時刻で連続再生すべては未検証。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-active/compact-sky-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-active/compact-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3画面の補正後時系列・全景を全域実閲覧、親もdesktopの時系列を閲覧し雲の移動を確認。desktopで航空機が雲の上縁を横切る。有限時刻で連続再生すべては未検証。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-active/desktop-full-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-active/desktop-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3画面の補正後時系列・全景を全域実閲覧、親もdesktopの時系列を閲覧し雲の移動を確認。desktopで航空機が雲の上縁を横切る。有限時刻で連続再生すべては未検証。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-active/desktop-sky-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-active/desktop-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3画面の補正後時系列・全景を全域実閲覧、親もdesktopの時系列を閲覧し雲の移動を確認。desktopで航空機が雲の上縁を横切る。有限時刻で連続再生すべては未検証。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-active/mobile-full-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-active/mobile-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3画面の補正後時系列・全景を全域実閲覧、親もdesktopの時系列を閲覧し雲の移動を確認。desktopで航空機が雲の上縁を横切る。有限時刻で連続再生すべては未検証。"
+    },
+    {
+      "image": "art-reviews/2026-10-30-visible-cloud-active/mobile-sky-corrected.png",
+      "report": "art-reviews/2026-10-30-visible-cloud-active/mobile-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが3画面の補正後時系列・全景を全域実閲覧、親もdesktopの時系列を閲覧し雲の移動を確認。desktopで航空機が雲の上縁を横切る。有限時刻で連続再生すべては未検証。"
     }
   ]
 }

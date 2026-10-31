@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-30-visible-cloud-active/compact-sky-source.png",
+    "width": 800,
+    "height": 531,
+    "sha256": "2a752da2cb011f2daca660ac4e91e3f8f03849bd7cfd32e26809212b9a178404"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-30-visible-cloud-active/compact-sky-corrected.png",
+    "width": 800,
+    "height": 531,
+    "sha256": "2a752da2cb011f2daca660ac4e91e3f8f03849bd7cfd32e26809212b9a178404"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
