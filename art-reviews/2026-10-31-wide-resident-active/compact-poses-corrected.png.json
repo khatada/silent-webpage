@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-wide-resident-active/compact-poses-source.png",
+    "width": 108,
+    "height": 68,
+    "sha256": "42115b7104170cc08f14f7911f97a46a13c9fa59edea7bcf30ff22c6fdd286a2"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-wide-resident-active/compact-poses-corrected.png",
+    "width": 108,
+    "height": 68,
+    "sha256": "42115b7104170cc08f14f7911f97a46a13c9fa59edea7bcf30ff22c6fdd286a2"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

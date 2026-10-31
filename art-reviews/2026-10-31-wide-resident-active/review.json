@@ -1,0 +1,163 @@
+{
+  "sourceSha256": "aa745a6e7624cb1d85a4f0311d030fb313a2a56eb1c246250afa30e08ba818b8",
+  "decision": "ACCEPTED_LLM_ACTUALLY_VIEWED",
+  "actualLlmView": "All six corrected PNGs opened using view_image original. Wide full scene was resized by viewer; native window atlas viewed at original size. Three six-time atlases show dim/off/bright glass and resident silhouette changes within the glass. Wide full scene shows resident; compact/landscape silhouette is small and requires attention. No conspicuous frame overflow or compositing break observed.",
+  "measurements": [
+    {
+      "name": "wide",
+      "measuredGlassMeanRGB": [
+        [
+          134.85,
+          103.79,
+          79.06
+        ],
+        [
+          84.32,
+          64.85,
+          79.1
+        ],
+        [
+          84.32,
+          64.85,
+          79.1
+        ],
+        [
+          143.76,
+          110.79,
+          79.31
+        ],
+        [
+          200.79,
+          155.49,
+          76.6
+        ],
+        [
+          201.18,
+          155.7,
+          76.59
+        ]
+      ],
+      "times": [
+        0,
+        0.5,
+        6.5,
+        8.95,
+        9.4,
+        10.5
+      ]
+    },
+    {
+      "name": "compact",
+      "measuredGlassMeanRGB": [
+        [
+          135.59,
+          104.29,
+          79.21
+        ],
+        [
+          84.32,
+          64.74,
+          79.09
+        ],
+        [
+          84.32,
+          64.74,
+          79.09
+        ],
+        [
+          142.64,
+          109.84,
+          79.21
+        ],
+        [
+          198.11,
+          153.33,
+          76.26
+        ],
+        [
+          198.48,
+          153.53,
+          76.26
+        ]
+      ],
+      "times": [
+        0,
+        0.5,
+        6.5,
+        8.95,
+        9.4,
+        10.5
+      ]
+    },
+    {
+      "name": "landscape",
+      "measuredGlassMeanRGB": [
+        [
+          135.57,
+          104.27,
+          79.2
+        ],
+        [
+          84.32,
+          64.74,
+          79.09
+        ],
+        [
+          84.32,
+          64.74,
+          79.09
+        ],
+        [
+          143.13,
+          110.26,
+          79.21
+        ],
+        [
+          198.1,
+          153.33,
+          76.26
+        ],
+        [
+          198.47,
+          153.51,
+          76.26
+        ]
+      ],
+      "times": [
+        0,
+        0.5,
+        6.5,
+        8.95,
+        9.4,
+        10.5
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-active/compact-full-corrected.png",
+      "sha256": "7a95171d7c19c8f7333c8a73792471be554dad48bf8f208b91406b785f035a7b"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-active/compact-poses-corrected.png",
+      "sha256": "42115b7104170cc08f14f7911f97a46a13c9fa59edea7bcf30ff22c6fdd286a2"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-active/landscape-full-corrected.png",
+      "sha256": "e41384334f8e322aa8d5111717f6c1a462c73cbf7a3d1aa6c29d566c7c60dfcd"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-active/landscape-poses-corrected.png",
+      "sha256": "2ab6ac7b1c7b8f0362cea10f862e91e15b9b96826a8dfeedf356255b18d3aaad"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-active/wide-full-corrected.png",
+      "sha256": "395b453f1350af9f574150f3fd24865e26b22dabc2177178c08c323d7cdd8774"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-active/wide-poses-corrected.png",
+      "sha256": "a7f33aa9fd683bd27673d606a396a819912c3ffd6826e5ac58bc850e700d0cba"
+    }
+  ],
+  "limits": "Glass mean RGB is measured from the corrected atlas, not inferred brightness. Requested times and expected frame/brightness remain predictions; final RAF may precede them. Means include both person and glass, so do not prove alpha formula or individual frame identity. No strict outside-glass difference comparison on these time snapshots, because other scene content can animate; strict local comparisons remain in local/review.json. Scale<2 omission and resized visual appearance not newly verified. Capture metadata reports pauseExact and canvas900x700/resume/no pageerror, not independently rerun. Finite samples do not prove continuous animation."
+}

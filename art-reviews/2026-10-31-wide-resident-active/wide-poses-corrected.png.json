@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-wide-resident-active/wide-poses-source.png",
+    "width": 216,
+    "height": 136,
+    "sha256": "a7f33aa9fd683bd27673d606a396a819912c3ffd6826e5ac58bc850e700d0cba"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-wide-resident-active/wide-poses-corrected.png",
+    "width": 216,
+    "height": 136,
+    "sha256": "a7f33aa9fd683bd27673d606a396a819912c3ffd6826e5ac58bc850e700d0cba"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "55b0e9367f7d85fa265e6789bee2894f6664f1d8629c96afb40f5b0ee223454f",
+  "sourceSha256": "aa745a6e7624cb1d85a4f0311d030fb313a2a56eb1c246250afa30e08ba818b8",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -3578,6 +3578,132 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが11画面の補正後初期全景を全域実閲覧し、構図に明白な新破損がないと判断。鳥は初期画面にはまだ現れない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-local/atlas-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-local/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後局所画像を実閲覧。3倍率3姿勢でガラス外変更0、消灯時RGBA一致を確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し明白な新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し明白な新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し明白な新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し明白な新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し明白な新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し明白な新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し明白な新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し明白な新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し明白な新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し明白な新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し明白な新破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-active/compact-full-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-active/compact-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが保存済み補正画像6枚を実閲覧。点灯・中間・消灯とガラス内の姿勢変化を確認。小型全景では小さく注意が必要。scale2未満省略・resize後の見た目・連続再生は未検証。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-active/compact-poses-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-active/compact-poses-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが保存済み補正画像6枚を実閲覧。点灯・中間・消灯とガラス内の姿勢変化を確認。小型全景では小さく注意が必要。scale2未満省略・resize後の見た目・連続再生は未検証。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-active/landscape-full-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-active/landscape-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが保存済み補正画像6枚を実閲覧。点灯・中間・消灯とガラス内の姿勢変化を確認。小型全景では小さく注意が必要。scale2未満省略・resize後の見た目・連続再生は未検証。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-active/landscape-poses-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-active/landscape-poses-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが保存済み補正画像6枚を実閲覧。点灯・中間・消灯とガラス内の姿勢変化を確認。小型全景では小さく注意が必要。scale2未満省略・resize後の見た目・連続再生は未検証。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-active/wide-full-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-active/wide-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが保存済み補正画像6枚を実閲覧。点灯・中間・消灯とガラス内の姿勢変化を確認。小型全景では小さく注意が必要。scale2未満省略・resize後の見た目・連続再生は未検証。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-active/wide-poses-corrected.png",
+      "report": "art-reviews/2026-10-31-wide-resident-active/wide-poses-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが保存済み補正画像6枚を実閲覧。点灯・中間・消灯とガラス内の姿勢変化を確認。小型全景では小さく注意が必要。scale2未満省略・resize後の見た目・連続再生は未検証。"
     }
   ]
 }

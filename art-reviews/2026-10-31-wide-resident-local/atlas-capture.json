@@ -1,0 +1,266 @@
+{
+  "sourceSha256": "aa745a6e7624cb1d85a4f0311d030fb313a2a56eb1c246250afa30e08ba818b8",
+  "finalSourceSha256": "aa745a6e7624cb1d85a4f0311d030fb313a2a56eb1c246250afa30e08ba818b8",
+  "metadata": {
+    "width": 1536,
+    "height": 624,
+    "samples": [
+      {
+        "row": 0,
+        "column": 0,
+        "viewport": [
+          800,
+          600
+        ],
+        "scale": 2,
+        "seconds": 0,
+        "brightness": 1,
+        "hasPerson": false,
+        "changed": 0,
+        "outside": 0
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "viewport": [
+          800,
+          600
+        ],
+        "scale": 2,
+        "seconds": 0,
+        "brightness": 1,
+        "hasPerson": true,
+        "changed": 30,
+        "outside": 0
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "viewport": [
+          800,
+          600
+        ],
+        "scale": 2,
+        "seconds": 7,
+        "brightness": 1,
+        "hasPerson": true,
+        "changed": 33,
+        "outside": 0
+      },
+      {
+        "row": 0,
+        "column": 3,
+        "viewport": [
+          800,
+          600
+        ],
+        "scale": 2,
+        "seconds": 9,
+        "brightness": 1,
+        "hasPerson": true,
+        "changed": 29,
+        "outside": 0
+      },
+      {
+        "row": 0,
+        "column": 4,
+        "viewport": [
+          800,
+          600
+        ],
+        "scale": 2,
+        "seconds": 0,
+        "brightness": 0,
+        "hasPerson": false,
+        "changed": 0,
+        "outside": 0
+      },
+      {
+        "row": 0,
+        "column": 5,
+        "viewport": [
+          800,
+          600
+        ],
+        "scale": 2,
+        "seconds": 9,
+        "brightness": 0,
+        "hasPerson": true,
+        "changed": 0,
+        "outside": 0
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "viewport": [
+          2560,
+          1080
+        ],
+        "scale": 4,
+        "seconds": 0,
+        "brightness": 1,
+        "hasPerson": false,
+        "changed": 0,
+        "outside": 0
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "viewport": [
+          2560,
+          1080
+        ],
+        "scale": 4,
+        "seconds": 0,
+        "brightness": 1,
+        "hasPerson": true,
+        "changed": 125,
+        "outside": 0
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "viewport": [
+          2560,
+          1080
+        ],
+        "scale": 4,
+        "seconds": 7,
+        "brightness": 1,
+        "hasPerson": true,
+        "changed": 114,
+        "outside": 0
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "viewport": [
+          2560,
+          1080
+        ],
+        "scale": 4,
+        "seconds": 9,
+        "brightness": 1,
+        "hasPerson": true,
+        "changed": 111,
+        "outside": 0
+      },
+      {
+        "row": 1,
+        "column": 4,
+        "viewport": [
+          2560,
+          1080
+        ],
+        "scale": 4,
+        "seconds": 0,
+        "brightness": 0,
+        "hasPerson": false,
+        "changed": 0,
+        "outside": 0
+      },
+      {
+        "row": 1,
+        "column": 5,
+        "viewport": [
+          2560,
+          1080
+        ],
+        "scale": 4,
+        "seconds": 9,
+        "brightness": 0,
+        "hasPerson": true,
+        "changed": 0,
+        "outside": 0
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "viewport": [
+          3200,
+          1080
+        ],
+        "scale": 6,
+        "seconds": 0,
+        "brightness": 1,
+        "hasPerson": false,
+        "changed": 0,
+        "outside": 0
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "viewport": [
+          3200,
+          1080
+        ],
+        "scale": 6,
+        "seconds": 0,
+        "brightness": 1,
+        "hasPerson": true,
+        "changed": 275,
+        "outside": 0
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "viewport": [
+          3200,
+          1080
+        ],
+        "scale": 6,
+        "seconds": 7,
+        "brightness": 1,
+        "hasPerson": true,
+        "changed": 271,
+        "outside": 0
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "viewport": [
+          3200,
+          1080
+        ],
+        "scale": 6,
+        "seconds": 9,
+        "brightness": 1,
+        "hasPerson": true,
+        "changed": 253,
+        "outside": 0
+      },
+      {
+        "row": 2,
+        "column": 4,
+        "viewport": [
+          3200,
+          1080
+        ],
+        "scale": 6,
+        "seconds": 0,
+        "brightness": 0,
+        "hasPerson": false,
+        "changed": 0,
+        "outside": 0
+      },
+      {
+        "row": 2,
+        "column": 5,
+        "viewport": [
+          3200,
+          1080
+        ],
+        "scale": 6,
+        "seconds": 9,
+        "brightness": 0,
+        "hasPerson": true,
+        "changed": 0,
+        "outside": 0
+      }
+    ],
+    "method": "Full viewport native RT; pixels cropped 1:1."
+  },
+  "method": "Image-generation textures composited by /scripts/wide-resident-review-entry.ts; no original artwork drawn and no simulated wait.",
+  "rgbaUnchanged": true,
+  "adoption": "PENDING_LLM_VISUAL_REVIEW"
+}

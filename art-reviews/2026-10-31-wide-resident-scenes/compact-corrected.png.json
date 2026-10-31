@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-wide-resident-scenes/compact-source.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "3aed35470ed6fc9c16ffa609dc6a83c8f9d74536b836a499a086e73c5d86ba1a"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-wide-resident-scenes/compact-corrected.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "17cfb294b4229c9006956a0eeb3ec9c7f0e13fed8d27d76db3b6988cdba56783"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
