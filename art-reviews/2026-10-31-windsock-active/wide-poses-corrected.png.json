@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-windsock-active/wide-poses-source.png",
+    "width": 531,
+    "height": 314,
+    "sha256": "ad3c19ca3b365cc40ae92a7b5658a988a5804c56d4dee8911d30859fca3413db"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-windsock-active/wide-poses-corrected.png",
+    "width": 531,
+    "height": 314,
+    "sha256": "ad3c19ca3b365cc40ae92a7b5658a988a5804c56d4dee8911d30859fca3413db"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

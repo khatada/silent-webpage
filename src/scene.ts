@@ -14,6 +14,7 @@ import { createImageResident, residentArt } from './image-resident';
 import { createImageSteam, steamArt } from './image-steam';
 import { createImageMeteor, meteorArt } from './image-meteor';
 import { createImageLaundry, laundryArt, wideLaundryGeometry } from './image-laundry';
+import { createImageWindsock, windsockArt, windsockGeometry } from './image-windsock';
 import { createImageUpperCloud } from './image-upper-cloud';
 import { createImageSkylineLights } from './image-skyline-lights';
 import { createImageStars } from './image-stars';
@@ -32,7 +33,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, loadedWideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas, lookAtlas, plantAtlas, alternateTrain, riseAtlas, birdAtlas] = await Promise.all([
+  const [background, loadedWideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas, lookAtlas, plantAtlas, alternateTrain, riseAtlas, birdAtlas, windsockAtlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -58,6 +59,7 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${generatedArt.alternateTrain}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.catRiseAtlas}`),
     Assets.load<Texture>(`${baseUrl}${birdArt.image}`),
+    Assets.load<Texture>(`${baseUrl}${windsockArt.image}`),
   ]);
   const wideBackground = createLogicalBackground(loadedWideBackground,
     generatedArt.wide.width, generatedArt.wide.height, generatedArt.wide.resolution);
@@ -84,6 +86,8 @@ export async function createScene(host: HTMLElement): Promise<{
   let meteor: Sprite;
   let meteorSkyBottom = 0;
   const imageLaundry = createImageLaundry(laundryAtlas);
+  const imageWindsock = createImageWindsock(windsockAtlas);
+  let windsock: ReturnType<typeof imageWindsock.createSprite> | undefined;
   let laundry: ReturnType<typeof imageLaundry.createSprite> | undefined;
   let residentComposition: 0 | 1 | 2 = 0;
   let roadCar: ReturnType<typeof imageStreetCar.createSprite>;
@@ -217,6 +221,8 @@ export async function createScene(host: HTMLElement): Promise<{
       laundry = imageLaundry.createSprite(layout.wide ? 2 : layout.portrait ? 1 : 0, scale, originX, originY);
       app.stage.addChild(laundry.root);
     }
+    windsock = imageWindsock.createSprite(windsockGeometry(width, height, layout, viewport.physicalScale));
+    app.stage.addChild(windsock.root);
     curtain = undefined;
     resident = undefined;
     residentComposition = layout.wide ? 2 : layout.portrait ? 1 : 0;
@@ -307,6 +313,7 @@ export async function createScene(host: HTMLElement): Promise<{
     imageBird.update(bird, elapsed, width, birdLayout);
     if (steam) imageSteam.update(steam, elapsed);
     if (laundry) imageLaundry.update(laundry, elapsed);
+    if (windsock) imageWindsock.update(windsock, elapsed);
     if (curtain) imageCurtain.update(curtain, elapsed);
     if (fan) imageFan.update(fan, elapsed);
     if (resident) imageResident.update(resident, elapsed, residentComposition);
@@ -374,6 +381,7 @@ export async function createScene(host: HTMLElement): Promise<{
       imageMeteor.destroy();
       imageBird.destroy();
       imageLaundry.destroy();
+      imageWindsock.destroy();
       imageSkylineLights.destroy();
       imageStars.destroy();
       imageRoomLights.destroy();
