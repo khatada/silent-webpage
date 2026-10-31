@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-wide-resident-scenes/landscape-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "f800ac27ae1a83229a534c19447dccdbcb6090a489472cdd50addfcad9314f00"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-wide-resident-scenes/landscape-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "5efbd5ba2d9b8b48c3ae7b7067c2040f002477e0ae490d985660cfc95b354bc0"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -7,6 +7,7 @@ export const residentArt = {
   placements: [
     { window: 1, height: 5, offset: 0 },
     { window: 0, height: 6, offset: 7 },
+    { window: 6, height: 5, offset: 3 },
   ],
 } as const;
 
@@ -14,7 +15,7 @@ export const residentArt = {
 export function createImageResident(source: Texture) {
   source.source.scaleMode = 'nearest';
   const textures = residentArt.frames.map(frame => new Texture({ source: source.source, frame: new Rectangle(...frame) }));
-  function createSprite(window: readonly number[], composition: 0 | 1, scale: number, originX: number, originY: number) {
+  function createSprite(window: readonly number[], composition: 0 | 1 | 2, scale: number, originX: number, originY: number) {
     const [x, y, width, height] = window;
     const placement = residentArt.placements[composition];
     const sprite = new Sprite(textures[0]);
@@ -23,7 +24,7 @@ export function createImageResident(source: Texture) {
     sprite.scale.set(placement.height / 64 * scale);
     return sprite;
   }
-  function update(sprite: Sprite, seconds: number, composition: 0 | 1) {
+  function update(sprite: Sprite, seconds: number, composition: 0 | 1 | 2) {
     sprite.texture = textures[residentFrame(seconds, residentArt.placements[composition].offset)];
   }
   return { createSprite, update, destroy() { for (const texture of textures) texture.destroy(false); } };

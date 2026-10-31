@@ -1,0 +1,51 @@
+{
+  "sourceSha256": "aa745a6e7624cb1d85a4f0311d030fb313a2a56eb1c246250afa30e08ba818b8",
+  "decision": "ACCEPTED_INITIAL_SCENES",
+  "actualLlmView": "補正後11全景をLLMが実閲覧、wide/tallはnative等倍2分割cropも確認。構図、建物、猫と列車に明白な新規破損なし。初期画面だけでは住人の動作や灯り同期を保証しない。",
+  "images": [
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/compact-corrected.png",
+      "sha256": "17cfb294b4229c9006956a0eeb3ec9c7f0e13fed8d27d76db3b6988cdba56783"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/desktop-corrected.png",
+      "sha256": "7b823e646924336607ba08cb22914269e2514c69544c849cf14fa4b0486697d5"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/landscape-corrected.png",
+      "sha256": "5efbd5ba2d9b8b48c3ae7b7067c2040f002477e0ae490d985660cfc95b354bc0"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/mobile-corrected.png",
+      "sha256": "5142fe19533d2c856c447c921628b9822041b2fad944bcb80b641d085cc4dbd0"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/narrow-corrected.png",
+      "sha256": "96bd8a9613c60861670ef0a6b8a162e46b0c14c2a0b1c6e3d0dacf52d0726a8d"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/portrait-boundary-corrected.png",
+      "sha256": "33412d1427178882d8bca824ea8a29b64c6fdf9219da0637f51006f993a55f67"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/portrait-large-corrected.png",
+      "sha256": "07d34ff3537726d201a894ede2445d34866c37fa79b67d5cf186322b93794678"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/small-mobile-corrected.png",
+      "sha256": "d35f74ede1979d579bcaa17bb43a6cea75b8beb7f44246bd0a4d2ee9362553e5"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/small-phone-corrected.png",
+      "sha256": "f1ae99848b62ff18e8cda781d6b7cbd3896320f2cec28ecd619761eb2cb579e8"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/tall-corrected.png",
+      "sha256": "1246038f04d6307ef591d12226f7d1836b05555858e7b5fc116d840c9f069162"
+    },
+    {
+      "image": "art-reviews/2026-10-31-wide-resident-scenes/wide-corrected.png",
+      "sha256": "b6bf503ef790fca755229dbc34069bbb62a261a524d0ca18ecac3c7ae2f03527"
+    }
+  ]
+}

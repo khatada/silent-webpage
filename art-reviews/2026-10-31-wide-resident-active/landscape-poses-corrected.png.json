@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-wide-resident-active/landscape-poses-source.png",
+    "width": 108,
+    "height": 68,
+    "sha256": "2ab6ac7b1c7b8f0362cea10f862e91e15b9b96826a8dfeedf356255b18d3aaad"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-wide-resident-active/landscape-poses-corrected.png",
+    "width": 108,
+    "height": 68,
+    "sha256": "2ab6ac7b1c7b8f0362cea10f862e91e15b9b96826a8dfeedf356255b18d3aaad"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

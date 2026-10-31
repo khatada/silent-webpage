@@ -1,0 +1,187 @@
+{
+  "sourceSha256": "aa745a6e7624cb1d85a4f0311d030fb313a2a56eb1c246250afa30e08ba818b8",
+  "method": "Production page; DPR1; separate Chromium; screenshot dimensions asserted; running awaited; context crops 1:1.",
+  "limitations": "Requested time and calculated brightness/frame are not measured actual RAF; final 20fps frame can precede request. Six still times do not prove continuous motion. Resize dimensions checked only.",
+  "results": [
+    {
+      "name": "wide",
+      "viewport": [
+        2560,
+        1080
+      ],
+      "scale": 4,
+      "crop": {
+        "x": 826,
+        "y": 714,
+        "width": 72,
+        "height": 68
+      },
+      "times": [
+        0,
+        0.5,
+        6.5,
+        8.95,
+        9.4,
+        10.5
+      ],
+      "calculated": [
+        {
+          "t": 0,
+          "brightness": 0.3680713305898473,
+          "frame": 0
+        },
+        {
+          "t": 0.5,
+          "brightness": 0,
+          "frame": 0
+        },
+        {
+          "t": 6.5,
+          "brightness": 0,
+          "frame": 1
+        },
+        {
+          "t": 8.95,
+          "brightness": 0.4999999999999989,
+          "frame": 2
+        },
+        {
+          "t": 9.4,
+          "brightness": 1,
+          "frame": 2
+        },
+        {
+          "t": 10.5,
+          "brightness": 1,
+          "frame": 1
+        }
+      ],
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "errors": []
+    },
+    {
+      "name": "compact",
+      "viewport": [
+        800,
+        600
+      ],
+      "scale": 2,
+      "crop": {
+        "x": 173,
+        "y": 387,
+        "width": 36,
+        "height": 34
+      },
+      "times": [
+        0,
+        0.5,
+        6.5,
+        8.95,
+        9.4,
+        10.5
+      ],
+      "calculated": [
+        {
+          "t": 0,
+          "brightness": 0.3680713305898473,
+          "frame": 0
+        },
+        {
+          "t": 0.5,
+          "brightness": 0,
+          "frame": 0
+        },
+        {
+          "t": 6.5,
+          "brightness": 0,
+          "frame": 1
+        },
+        {
+          "t": 8.95,
+          "brightness": 0.4999999999999989,
+          "frame": 2
+        },
+        {
+          "t": 9.4,
+          "brightness": 1,
+          "frame": 2
+        },
+        {
+          "t": 10.5,
+          "brightness": 1,
+          "frame": 1
+        }
+      ],
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "errors": []
+    },
+    {
+      "name": "landscape",
+      "viewport": [
+        844,
+        390
+      ],
+      "scale": 2,
+      "crop": {
+        "x": 195,
+        "y": 282,
+        "width": 36,
+        "height": 34
+      },
+      "times": [
+        0,
+        0.5,
+        6.5,
+        8.95,
+        9.4,
+        10.5
+      ],
+      "calculated": [
+        {
+          "t": 0,
+          "brightness": 0.3680713305898473,
+          "frame": 0
+        },
+        {
+          "t": 0.5,
+          "brightness": 0,
+          "frame": 0
+        },
+        {
+          "t": 6.5,
+          "brightness": 0,
+          "frame": 1
+        },
+        {
+          "t": 8.95,
+          "brightness": 0.4999999999999989,
+          "frame": 2
+        },
+        {
+          "t": 9.4,
+          "brightness": 1,
+          "frame": 2
+        },
+        {
+          "t": 10.5,
+          "brightness": 1,
+          "frame": 1
+        }
+      ],
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "errors": []
+    }
+  ]
+}

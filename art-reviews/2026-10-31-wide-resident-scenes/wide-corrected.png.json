@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-wide-resident-scenes/wide-source.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "279ba8396ddb0acbcf5f2d62bd142e197f178a8fb11139c3b65eb9fcbbd1fa01"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-wide-resident-scenes/wide-corrected.png",
+    "width": 2560,
+    "height": 1080,
+    "sha256": "b6bf503ef790fca755229dbc34069bbb62a261a524d0ca18ecac3c7ae2f03527"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -17,7 +17,7 @@ import { createImageLaundry, laundryArt, wideLaundryGeometry } from './image-lau
 import { createImageUpperCloud } from './image-upper-cloud';
 import { createImageSkylineLights } from './image-skyline-lights';
 import { createImageStars } from './image-stars';
-import { createImageRoomLights } from './image-room-lights';
+import { createImageRoomLights, roomLightAreas } from './image-room-lights';
 import { sceneTrainService, trainServiceState, type TrainServiceSchedule } from './train-service';
 import { createImagePlant, plantArt, plantGeometry } from './image-plant';
 import { cityMotion, residentialLightCycle } from './city-motion';
@@ -85,7 +85,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let meteorSkyBottom = 0;
   const imageLaundry = createImageLaundry(laundryAtlas);
   let laundry: ReturnType<typeof imageLaundry.createSprite> | undefined;
-  let residentComposition: 0 | 1 = 0;
+  let residentComposition: 0 | 1 | 2 = 0;
   let roadCar: ReturnType<typeof imageStreetCar.createSprite>;
   const crops: Texture[] = [];
   const crop = (source: Texture, frame: Frame) => {
@@ -219,11 +219,12 @@ export async function createScene(host: HTMLElement): Promise<{
     }
     curtain = undefined;
     resident = undefined;
-    residentComposition = layout.portrait ? 1 : 0;
+    residentComposition = layout.wide ? 2 : layout.portrait ? 1 : 0;
     windows = composition.windows.map(([x, y, w, h], index) => {
       // Residents and curtains are beneath the existing dark overlay and inherit its light cycle.
-      if (!layout.wide && index === residentArt.placements[residentComposition].window) {
-        resident = imageResident.createSprite([x, y, w, h], residentComposition, scale, originX, originY);
+      if ((!layout.wide || scale >= 2) && index === residentArt.placements[residentComposition].window) {
+        const residentWindow = layout.wide ? roomLightAreas[1].glass : [x, y, w, h];
+        resident = imageResident.createSprite(residentWindow, residentComposition, scale, originX, originY);
         app.stage.addChild(resident);
       }
       if (!layout.wide && index === (layout.portrait ? curtainArt.portraitWindow : curtainArt.normalWindow)) {

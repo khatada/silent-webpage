@@ -1,0 +1,10 @@
+{
+  "sourceSha256": "aa745a6e7624cb1d85a4f0311d030fb313a2a56eb1c246250afa30e08ba818b8",
+  "decision": "ACCEPTED_LOCAL_COMPOSITES_ONLY",
+  "reviewedBy": "LLM",
+  "actualLlmView": "補正済み1536×624アトラス全域をoriginalで実閲覧。横長背景の3倍率において明るい窓内の頭・肩の3姿勢が確認でき、窓枠・隣のガラス・外壁をはみ出さず暗い状態では人物が消える。小さいscale2では人物はごく小さい。",
+  "method": "本番の背景全景RT、住人factory、窓暗化factoryを同一の絶対座標で合成。native RGBAを整数切り出し1:1で配置。原画のプログラム生成なし。",
+  "observations": "3倍率×3明状態は窓ガラス外の変更0。3倍率の暗状態は人物なしと人物ありのRGBAが完全一致。補正前後RGBA一致。",
+  "limitations": "ローカルの強制した明暗0/1の静止合成。遷移中の位相、sceneの小画面省略、全景、本番時系列、連続再生、scale2での視認性は未確認。",
+  "image": "art-reviews/2026-10-31-wide-resident-local/atlas-corrected.png"
+}
