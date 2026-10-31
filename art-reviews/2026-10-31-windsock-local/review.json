@@ -1,0 +1,43 @@
+{
+  "sourceSha256": "3e9f948f0340afbed77af3111737476c6bb4e9ffa94349945716c3716c15cc39",
+  "decision": "ACCEPTED_LOCAL_COMPOSITES_ONLY",
+  "actualLlmView": "Opened corrected960x420 atlas using view_image original and inspected all18 native panels: background plus5 cloth poses in2560x1080,800x600,and844x390 DPR2 render-coordinate case. Fixed support base sits on parapet, generated ring joins cloth without conspicuous detached gap, each hem bends visibly. Pole and bracket remain stationary; floor and cat lane stay below support. No glaring neon fringe in these native composites.",
+  "verified": {
+    "noOutsideBoundsChanges": true,
+    "noSupportChanges": true,
+    "composites": 15,
+    "correctionRgbaUnchanged": true
+  },
+  "image": "art-reviews/2026-10-31-windsock-local/atlas-corrected.png",
+  "sha256": "d0f340284f860b6a938d83b2965c5f21b729c051a9c263439af87302eacbb331",
+  "placement": {
+    "logicalSupport": [
+      430,
+      190
+    ],
+    "nominalPhysicalHeight": [
+      60,
+      90
+    ],
+    "fixedSupportSource": [
+      12,
+      77,
+      23,
+      93
+    ],
+    "fixedSupportPosition": [
+      -9,
+      -93
+    ],
+    "clothPosition": [
+      14,
+      -96
+    ]
+  },
+  "limits": [
+    "Static local production-factory composites only; full scene, shared-clock playback, pause/reduced-motion, resize and all phases are not newly visually verified.",
+    "Third row uses DPR2 in geometry but atlas stores render-coordinate pixels, so displayed physical pixels would be2x; this is not a native full-DPR screenshot.",
+    "The foreground prop covers a small part of static residential scenery; selected animated resident window, towels and plant are separate by geometry. Actual cat poses/scene z-order need final visual QA.",
+    "All original art comes from adopted imagegen-edited material. Pole and ring held from first pose, only cloth crops change; mild texture/neck shape changes remain."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "sourceSha256": "3e9f948f0340afbed77af3111737476c6bb4e9ffa94349945716c3716c15cc39",
+  "decision": "ACCEPTED_LLM_ACTUALLY_VIEWED",
+  "reviewedBy": "LLM",
+  "actualLlmView": "All11 corrected initial scenes actually opened using view_image original. Windsock sits on parapet in wide/compact/landscape, above the floor and away from cats/towels/window. Some background homes are intentionally obscured as foreground prop. No new obvious floating, cut outlines or scene breakage. Wide and tall were resized by viewer; static images do not verify motion.",
+  "images": [
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/compact-corrected.png",
+      "sha256": "f292d95c0ca824c0165cd1cd0e319683e6c23b086aa2a33325039b59314987ec"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/desktop-corrected.png",
+      "sha256": "7b823e646924336607ba08cb22914269e2514c69544c849cf14fa4b0486697d5"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/landscape-corrected.png",
+      "sha256": "8ac8c40908646ac837ae1791d2a7025a83a31b305bad0da5ec90ffd472035721"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/mobile-corrected.png",
+      "sha256": "5142fe19533d2c856c447c921628b9822041b2fad944bcb80b641d085cc4dbd0"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/narrow-corrected.png",
+      "sha256": "96bd8a9613c60861670ef0a6b8a162e46b0c14c2a0b1c6e3d0dacf52d0726a8d"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/portrait-boundary-corrected.png",
+      "sha256": "33412d1427178882d8bca824ea8a29b64c6fdf9219da0637f51006f993a55f67"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/portrait-large-corrected.png",
+      "sha256": "07d34ff3537726d201a894ede2445d34866c37fa79b67d5cf186322b93794678"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/small-mobile-corrected.png",
+      "sha256": "d35f74ede1979d579bcaa17bb43a6cea75b8beb7f44246bd0a4d2ee9362553e5"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/small-phone-corrected.png",
+      "sha256": "f1ae99848b62ff18e8cda781d6b7cbd3896320f2cec28ecd619761eb2cb579e8"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/tall-corrected.png",
+      "sha256": "1246038f04d6307ef591d12226f7d1836b05555858e7b5fc116d840c9f069162"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/wide-corrected.png",
+      "sha256": "9e1bfedd41a93960eb896ef8ff24abc71b9ec54cef6aeb11d1e162bddf565c77"
+    }
+  ],
+  "limitations": "DPR1 activity; initial scenes includeDPR2. Resize canvas dimensions and page errors checked, not adopted visual proof of resize. Last20fps RAF may precede requested time. Finite snapshots and no live user speed evaluation."
+}

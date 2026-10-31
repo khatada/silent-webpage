@@ -1,0 +1,145 @@
+{
+  "sourceSha256": "3e9f948f0340afbed77af3111737476c6bb4e9ffa94349945716c3716c15cc39",
+  "method": "Unmodified production page, DPR1, separate browser per view. Paused clock before navigation; running state awaited. Times advanced in <=1000ms steps. Full screenshots cropped at actual native resolution. No artwork generated.",
+  "limitations": "Requested times may precede final 20fps RAF. Context pixel differences include other moving subjects. Not a full-cycle or all-device proof.",
+  "results": [
+    {
+      "name": "wide",
+      "viewport": [
+        2560,
+        1080
+      ],
+      "dpr": 1,
+      "crop": {
+        "x": 1513,
+        "y": 693,
+        "width": 177,
+        "height": 157
+      },
+      "geometry": {
+        "x": 1554,
+        "y": 818,
+        "scale": 0.967741935483871,
+        "left": 1545.2903225806451,
+        "right": 1657.5483870967741,
+        "top": 725.0967741935484,
+        "physicalHeight": 90,
+        "visible": true
+      },
+      "times": [
+        0,
+        0.75,
+        1.2,
+        2.6,
+        3.2,
+        3.7
+      ],
+      "changedPixelsVsInitialInContext": [
+        0,
+        2269,
+        2609,
+        2156,
+        2300,
+        2156
+      ],
+      "reducedMotionPauseRgbaExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    },
+    {
+      "name": "compact",
+      "viewport": [
+        800,
+        600
+      ],
+      "dpr": 1,
+      "crop": {
+        "x": 515,
+        "y": 361,
+        "width": 107,
+        "height": 94
+      },
+      "geometry": {
+        "x": 537,
+        "y": 439,
+        "scale": 0.6451612903225806,
+        "left": 531.1935483870968,
+        "right": 606.0322580645161,
+        "top": 377.06451612903226,
+        "physicalHeight": 60,
+        "visible": true
+      },
+      "times": [
+        0,
+        0.75,
+        1.2,
+        2.6,
+        3.2,
+        3.7
+      ],
+      "changedPixelsVsInitialInContext": [
+        0,
+        1006,
+        1168,
+        968,
+        1031,
+        968
+      ],
+      "reducedMotionPauseRgbaExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    },
+    {
+      "name": "landscape",
+      "viewport": [
+        844,
+        390
+      ],
+      "dpr": 1,
+      "crop": {
+        "x": 537,
+        "y": 256,
+        "width": 107,
+        "height": 94
+      },
+      "geometry": {
+        "x": 559,
+        "y": 334,
+        "scale": 0.6451612903225806,
+        "left": 553.1935483870968,
+        "right": 628.0322580645161,
+        "top": 272.06451612903226,
+        "physicalHeight": 60,
+        "visible": true
+      },
+      "times": [
+        0,
+        0.75,
+        1.2,
+        2.6,
+        3.2,
+        3.7
+      ],
+      "changedPixelsVsInitialInContext": [
+        0,
+        1006,
+        1168,
+        968,
+        1031,
+        968
+      ],
+      "reducedMotionPauseRgbaExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    }
+  ]
+}

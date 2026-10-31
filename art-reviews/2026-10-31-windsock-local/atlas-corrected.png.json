@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-windsock-local/atlas-source.png",
+    "width": 960,
+    "height": 420,
+    "sha256": "459e3b8e0707c8890eacf4cac1f3c75e80f86e1f19d5b8963a8482fe23bf2fe3"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-windsock-local/atlas-corrected.png",
+    "width": 960,
+    "height": 420,
+    "sha256": "d0f340284f860b6a938d83b2965c5f21b729c051a9c263439af87302eacbb331"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
