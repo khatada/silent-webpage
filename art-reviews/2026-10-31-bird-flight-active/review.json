@@ -1,0 +1,345 @@
+{
+  "sourceSha256": "55b0e9367f7d85fa265e6789bee2894f6664f1d8629c96afb40f5b0ee223454f",
+  "decision": "ACCEPTED_LLM_VIEWED",
+  "reviewedBy": "LLM",
+  "actualLlmView": "desktop1440×900 DPR1、compact800×600 DPR1、mobile390×844 DPR2の初回飛行開始10秒後の全景3枚と0秒・羽ばたき8時刻・飛行開始10秒後の空atlas3枚を補正後originalで全域実閲覧。各画像で鳥の翼姿勢と移動、飛行機・雲・月との見え方を確認。鳥は暗いが3画面で形が分かり、翼を上げ下げして見える。表示例の飛行機は鳥と重ならない。",
+  "method": "Production page; separate Chromium per case; device DPR retained, running awaited, screenshot dimensions asserted. Native sky strips copied at 1:1.",
+  "results": [
+    {
+      "name": "desktop",
+      "viewport": [
+        1440,
+        900,
+        1
+      ],
+      "physicalScale": 1,
+      "skyHeight": 132,
+      "times": [
+        0,
+        11.87,
+        12.01,
+        12.15,
+        12.29,
+        12.43,
+        12.57,
+        12.71,
+        12.85,
+        19
+      ],
+      "geometry": {
+        "scale": 0.45714285714285713,
+        "height": 69.48571428571428,
+        "y": 4,
+        "speed": 20,
+        "duration": 74.74285714285715,
+        "period": 149.9568,
+        "first": 9,
+        "direction": -1,
+        "visible": true
+      },
+      "calculatedStates": [
+        {
+          "visible": false,
+          "frame": 0,
+          "x": 1440
+        },
+        {
+          "visible": true,
+          "frame": 4,
+          "x": 1382.6
+        },
+        {
+          "visible": true,
+          "frame": 3,
+          "x": 1379.8
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 1377
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 1374.2
+        },
+        {
+          "visible": true,
+          "frame": 0,
+          "x": 1371.4
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 1368.6
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 1365.8
+        },
+        {
+          "visible": true,
+          "frame": 3,
+          "x": 1363
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 1240
+        }
+      ],
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    },
+    {
+      "name": "compact",
+      "viewport": [
+        800,
+        600,
+        1
+      ],
+      "physicalScale": 1,
+      "skyHeight": 177,
+      "times": [
+        0,
+        11.87,
+        12.01,
+        12.15,
+        12.29,
+        12.43,
+        12.57,
+        12.71,
+        12.85,
+        19
+      ],
+      "geometry": {
+        "scale": 0.45714285714285713,
+        "height": 69.48571428571428,
+        "y": 4,
+        "speed": 30,
+        "duration": 28.495238095238097,
+        "period": 56.311733333333336,
+        "first": 9,
+        "direction": -1,
+        "visible": true
+      },
+      "calculatedStates": [
+        {
+          "visible": false,
+          "frame": 0,
+          "x": 800
+        },
+        {
+          "visible": true,
+          "frame": 4,
+          "x": 713.9
+        },
+        {
+          "visible": true,
+          "frame": 3,
+          "x": 709.7
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 705.5
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 701.3000000000001
+        },
+        {
+          "visible": true,
+          "frame": 0,
+          "x": 697.1
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 692.9
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 688.6999999999999
+        },
+        {
+          "visible": true,
+          "frame": 3,
+          "x": 684.5
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 500
+        }
+      ],
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    },
+    {
+      "name": "mobile",
+      "viewport": [
+        390,
+        844,
+        2
+      ],
+      "physicalScale": 2,
+      "skyHeight": 152,
+      "times": [
+        0,
+        12.67,
+        12.81,
+        12.95,
+        13.09,
+        13.23,
+        13.37,
+        13.51,
+        13.65,
+        19.8
+      ],
+      "geometry": {
+        "scale": 0.22857142857142856,
+        "height": 34.74285714285714,
+        "y": 4,
+        "speed": 20,
+        "duration": 20.871428571428574,
+        "period": 46.446000000000005,
+        "first": 9.8,
+        "direction": 1,
+        "visible": true
+      },
+      "calculatedStates": [
+        {
+          "visible": false,
+          "frame": 0,
+          "x": -27.428571428571427
+        },
+        {
+          "visible": true,
+          "frame": 4,
+          "x": 29.971428571428557
+        },
+        {
+          "visible": true,
+          "frame": 3,
+          "x": 32.77142857142857
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 35.57142857142854
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 38.37142857142855
+        },
+        {
+          "visible": true,
+          "frame": 0,
+          "x": 41.171428571428564
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 43.97142857142855
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 46.77142857142856
+        },
+        {
+          "visible": true,
+          "frame": 3,
+          "x": 49.57142857142857
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 172.57142857142858
+        }
+      ],
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    }
+  ],
+  "images": [
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-active/compact-full-corrected.png",
+      "sha256": "63c774deec7fc0be5f4b755cb6e57cd3d575cb63dd0345322b873b70b7bebd99"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-active/compact-sky-corrected.png",
+      "sha256": "ef8092686b8b3cb64d31bcdd8da6194f5891d97f4aff088fb60752dfe85cb40e"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-active/desktop-full-corrected.png",
+      "sha256": "aba4abb43db02c8b30979211f8d2ce6004565c6472cac44140dcdb8a44696f82"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-active/desktop-sky-corrected.png",
+      "sha256": "ac532cdb7abc62e29103feb47b0af8d7f6471ff3c399c2b120328d7b99aaa801"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-active/mobile-full-corrected.png",
+      "sha256": "75f0ddf7c216b506fa5591b6ddf87e70050301d78df14a02c21df78cbabe764f"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-active/mobile-sky-corrected.png",
+      "sha256": "1cc2aabe654d884a71adeedc61c3dfbf7679408cb8f5c130c7a4626fd754c72a"
+    }
+  ],
+  "limitations": [
+    "有限時刻の画像であり、計算状態は実測ではない。最終RAFは要求時刻より前の可能性がある。",
+    "大型モニターでは鳥の通過は約75秒、次の開始は約150秒周期となる。主航空機との距離を保つため同じ速さにしている。",
+    "844×390横持ち等では2方向の航空機と同じ狭い空域になり鳥を省略。200×360等の小画面でも32物理px未満なら省略。",
+    "確認範囲外の雲・月との重なりや連続再生の自然さは保証しない。DPR2では表示中の画素が拡大される。",
+    "初回画像は鳥と航空機が交差する恐れがあったため修正前試作として /workspace/art-review-trials/bird-flight-aircraft-overlap に保持。"
+  ],
+  "additionalNumericalSweep": {
+    "cssWidths": [
+      280,
+      320,
+      390,
+      500,
+      700,
+      844,
+      1000,
+      1440,
+      1920,
+      2560
+    ],
+    "cssHeights": [
+      360,
+      600,
+      844,
+      1080
+    ],
+    "dpr": [
+      1,
+      1.25,
+      2
+    ],
+    "visibleLayouts": 101,
+    "sampleStepSeconds": 0.1,
+    "cycles": 2,
+    "result": "鳥と両航空機の矩形重なり0。数学的サンプルであり全時刻の証明ではない。",
+    "actualRender": "本番の静止sampleはresultsと画像一覧を参照"
+  }
+}

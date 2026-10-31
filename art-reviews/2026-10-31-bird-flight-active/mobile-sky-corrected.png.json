@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-bird-flight-active/mobile-sky-source.png",
+    "width": 780,
+    "height": 1520,
+    "sha256": "1cc2aabe654d884a71adeedc61c3dfbf7679408cb8f5c130c7a4626fd754c72a"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-bird-flight-active/mobile-sky-corrected.png",
+    "width": 780,
+    "height": 1520,
+    "sha256": "1cc2aabe654d884a71adeedc61c3dfbf7679408cb8f5c130c7a4626fd754c72a"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

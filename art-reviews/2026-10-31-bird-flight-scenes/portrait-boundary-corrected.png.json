@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-bird-flight-scenes/portrait-boundary-source.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "daaaa5b2d076a6ce33ffb6aaf97cc35061d8b779085672f74608680914c6ea03"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-bird-flight-scenes/portrait-boundary-corrected.png",
+    "width": 1024,
+    "height": 1537,
+    "sha256": "33412d1427178882d8bca824ea8a29b64c6fdf9219da0637f51006f993a55f67"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

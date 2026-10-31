@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-bird-flight-active/compact-full-source.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "63c774deec7fc0be5f4b755cb6e57cd3d575cb63dd0345322b873b70b7bebd99"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-bird-flight-active/compact-full-corrected.png",
+    "width": 800,
+    "height": 600,
+    "sha256": "63c774deec7fc0be5f4b755cb6e57cd3d575cb63dd0345322b873b70b7bebd99"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

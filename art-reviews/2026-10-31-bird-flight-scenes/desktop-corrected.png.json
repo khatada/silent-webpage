@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-bird-flight-scenes/desktop-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "26f6c196ddd438169da69f87aca2854d8ba8d4febe5e03c73d3dca54eba1b10d"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-bird-flight-scenes/desktop-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "7b823e646924336607ba08cb22914269e2514c69544c849cf14fa4b0486697d5"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

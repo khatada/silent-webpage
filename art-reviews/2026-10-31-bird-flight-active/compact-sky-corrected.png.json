@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-bird-flight-active/compact-sky-source.png",
+    "width": 800,
+    "height": 1770,
+    "sha256": "ef8092686b8b3cb64d31bcdd8da6194f5891d97f4aff088fb60752dfe85cb40e"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-bird-flight-active/compact-sky-corrected.png",
+    "width": 800,
+    "height": 1770,
+    "sha256": "ef8092686b8b3cb64d31bcdd8da6194f5891d97f4aff088fb60752dfe85cb40e"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

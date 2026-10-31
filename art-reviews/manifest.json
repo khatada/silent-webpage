@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "28dc0f31680d6371b1a892f61cffa1e0fc5a0707d7791a206cf38d71f52a4eb4",
+  "sourceSha256": "55b0e9367f7d85fa265e6789bee2894f6664f1d8629c96afb40f5b0ee223454f",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -3459,6 +3459,125 @@
         "originalSha256": "a1791597b1ef85a53a387f5e815a940db589c14407238ca0e09170482805eacb",
         "prompt": "Create a sprite sheet for an existing calm nighttime Tokyo pixel-art website. Transparent background. One single small dark charcoal bird, identical silhouette, size and anchor across SIX DISTINCT naturally connected wing-flap poses, left-to-right horizontal row: wings raised high, halfway raised, level extended, halfway lowered, wings fully lowered, halfway raised returning. Strict fine retro pixel art, hard pixel edges, no anti-aliasing, restrained navy and lavender highlights, compact bird profile facing right; exact consistent body, beak and tail for every pose, only wings change. Six sprites separated by ample transparent margins, each complete and centered in equal-sized invisible cells; no text, no grid, no borders, no scenery, no shadows, no extra birds or objects. Intended for natural smooth looping animation on deep navy sky."
       }
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-active/compact-full-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-active/compact-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の時系列と全景を担当LLMが実閲覧し羽ばたき、移動、航空機との位置を確認。親もcompact時系列を閲覧。暗い鳥は3画面で形が分かるが小さい画面や狭い空では省略。有限時刻で全時刻の保証ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-active/compact-sky-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-active/compact-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の時系列と全景を担当LLMが実閲覧し羽ばたき、移動、航空機との位置を確認。親もcompact時系列を閲覧。暗い鳥は3画面で形が分かるが小さい画面や狭い空では省略。有限時刻で全時刻の保証ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-active/desktop-full-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-active/desktop-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の時系列と全景を担当LLMが実閲覧し羽ばたき、移動、航空機との位置を確認。親もcompact時系列を閲覧。暗い鳥は3画面で形が分かるが小さい画面や狭い空では省略。有限時刻で全時刻の保証ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-active/desktop-sky-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-active/desktop-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の時系列と全景を担当LLMが実閲覧し羽ばたき、移動、航空機との位置を確認。親もcompact時系列を閲覧。暗い鳥は3画面で形が分かるが小さい画面や狭い空では省略。有限時刻で全時刻の保証ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-active/mobile-full-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-active/mobile-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の時系列と全景を担当LLMが実閲覧し羽ばたき、移動、航空機との位置を確認。親もcompact時系列を閲覧。暗い鳥は3画面で形が分かるが小さい画面や狭い空では省略。有限時刻で全時刻の保証ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-active/mobile-sky-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-active/mobile-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "補正後の3画面の時系列と全景を担当LLMが実閲覧し羽ばたき、移動、航空機との位置を確認。親もcompact時系列を閲覧。暗い鳥は3画面で形が分かるが小さい画面や狭い空では省略。有限時刻で全時刻の保証ではない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11画面の補正後初期全景を全域実閲覧し、構図に明白な新破損がないと判断。鳥は初期画面にはまだ現れない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11画面の補正後初期全景を全域実閲覧し、構図に明白な新破損がないと判断。鳥は初期画面にはまだ現れない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11画面の補正後初期全景を全域実閲覧し、構図に明白な新破損がないと判断。鳥は初期画面にはまだ現れない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11画面の補正後初期全景を全域実閲覧し、構図に明白な新破損がないと判断。鳥は初期画面にはまだ現れない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11画面の補正後初期全景を全域実閲覧し、構図に明白な新破損がないと判断。鳥は初期画面にはまだ現れない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11画面の補正後初期全景を全域実閲覧し、構図に明白な新破損がないと判断。鳥は初期画面にはまだ現れない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11画面の補正後初期全景を全域実閲覧し、構図に明白な新破損がないと判断。鳥は初期画面にはまだ現れない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11画面の補正後初期全景を全域実閲覧し、構図に明白な新破損がないと判断。鳥は初期画面にはまだ現れない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11画面の補正後初期全景を全域実閲覧し、構図に明白な新破損がないと判断。鳥は初期画面にはまだ現れない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11画面の補正後初期全景を全域実閲覧し、構図に明白な新破損がないと判断。鳥は初期画面にはまだ現れない。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-bird-flight-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-31-bird-flight-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11画面の補正後初期全景を全域実閲覧し、構図に明白な新破損がないと判断。鳥は初期画面にはまだ現れない。"
     }
   ]
 }
