@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-windsock/original.png",
+    "width": 2172,
+    "height": 724,
+    "sha256": "bf2911f9d5ba7b1142c0cfeafc92ac16aae5027d65000d7db4615d59f7f922c8"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-windsock/corrected-3.png",
+    "width": 724,
+    "height": 241,
+    "sha256": "95a72bee2f8be82457c47697877d2f914f65e1c3e947b6936a61c2bdb78d4348"
+  },
+  "grid": {
+    "cellSize": 3,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

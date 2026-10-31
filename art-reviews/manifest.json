@@ -3704,6 +3704,25 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが保存済み補正画像6枚を実閲覧。点灯・中間・消灯とガラス内の姿勢変化を確認。小型全景では小さく注意が必要。scale2未満省略・resize後の見た目・連続再生は未検証。"
+    },
+    {
+      "image": "public/art/rooftop-windsock.png",
+      "report": "public/art/rooftop-windsock.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "imagegen編集原画と3px補正後を担当・親LLMが実閲覧し素材のみ採用。6姿勢の棒の位置が一致しないため表示実装で支持点登録が必要。微小な紫縁が残る。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "4e9db1cd25b09428f96c5d557d57d3b78040fa2f435bf2a257efe33b595f6a20",
+        "prompt": "Clean the attached pixel-art windsock sprite sheet. Preserve the exact six poses, spacing, sizes, pole geometry, transparent background and all existing intended colours. REMOVE ALL bright red, neon pink, magenta and electric-blue edge fringes outside the intended windsock and pole silhouettes. Replace those fringe pixels by full transparency, retaining a clean dark navy hard-edged outline. Keep muted ivory cloth and faded warm orange bands. Fine crisp pixel art with no anti-aliasing haze and no new objects. Six complete poses exactly as input, only remove the unwanted neon fringe contamination."
+      }
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock/dark-context-v2-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock/dark-context-v2-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが60px/90pxの6姿勢を補正後暗背景で全域実閲覧。強い色縁は目立たず素材採用。背景全景での支持・アニメーションは別途確認。"
     }
   ]
 }
