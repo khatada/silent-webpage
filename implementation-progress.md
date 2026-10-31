@@ -4,10 +4,9 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ `feat/visible-cloud-motion`、worktree `/workspace/silent-webpage-glass-bounds`。主雲の速度4.8→6.4を試し、画面内で見つけやすくしながら落ち着いた雰囲気を維持する改善をサブエージェント `pole_final` が実装・画像検証中。source `28dc0f31680d6371b1a892f61cffa1e0fc5a0707d7791a206cf38d71f52a4eb4` に凍結。3画面の0/4/8秒と全景6画像を補正後LLMが閲覧、動き軽減・resize/resumeを確認。desktop8秒で飛行機が雲の上縁を横切るが判別可能。11初期全景も補正後LLMが実閲覧し採用。manifest更新済み、verify・PRは未実施。
-- [PR #72](https://github.com/khatada/silent-webpage/pull/72) は head `af3a494e417975a9b3e7b5f96e39f06398a7d0cb` のverify127テスト/444画像、hook、CI41069431267/job124109329387成功後 main `423c13d387795ca56cbeb773d65d2a09c80bf61e` にマージ。Pages41070200201 は verify124111972123 と publish124114429366 が成功し公開済み。PR添付済み。
-- 流れ星は11局所・11全景・3画面時系列を補正後LLMが実閲覧し、出現・移動・消失、動き軽減とresize/resumeを確認。広い空では長く明るいが元素材の尾は細く小型画面では非常に小さい。
-- 柱修正PR #71はmain `051946b9d0a1a9955a58bd2d05f8c64a00820669`、Pages41066481638のverify124099079432/publish124101371074成功で公開済み。
+- ブランチ `feat/bird-flight-art`、worktree `/workspace/silent-webpage-glass-bounds`。夜空を羽ばたく鳥の素材をimage_gen.imagegenで生成。原画 `/workspace/generated_images/exec-d74ffb12-e74c-4d7a-9589-d99a7469cbc9.png` を親が閲覧し、6姿勢を確認。担当 `bird_art` が必須のドット補正・透明度・姿勢の採否を検証中。原画と3px補正後を親・担当LLMが実閲覧し素材のみ採用、manifest登録。6姿勢目から最初へ直接戻すと跳ぶため、表示時は5姿勢の往復と体位置の登録を検証。verify、PRは未実施。表示への統合は素材と別PRにする。
+- 雲の [PR #73](https://github.com/khatada/silent-webpage/pull/73) は head `49fc0507fa25c0dfaec7bdf3af7b65c0bf8cbb8b` のverify127テスト/461画像とhook、CI41072313066/job124119295847成功後 main `5137f75e8741d8819441866af7c17a11c702668c` にマージ。Pages41159652503は確認中。PR添付済み。
+- 雲は3画面の0/4/8秒と11全景を補正後LLMが実閲覧。動き軽減・resize/resume確認済み。desktop8秒では飛行機が雲上縁を横切るが判別可能。連続再生の速度感・全時刻の交差は未検証。
 
 ## 過去の進行状況（C033時点の記録）
 

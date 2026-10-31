@@ -1,0 +1,74 @@
+{
+  "tool": "image_gen.imagegen",
+  "original": "art-reviews/2026-10-31-bird-flight/original.png",
+  "originalSha256": "a1791597b1ef85a53a387f5e815a940db589c14407238ca0e09170482805eacb",
+  "corrected": "public/art/night-bird-flight.png",
+  "correctedSha256": "2728075657d99d64cd4a28cf81e7a4a81630b5706cadac313a75ffc108ae2d08",
+  "prompt": "Create a sprite sheet for an existing calm nighttime Tokyo pixel-art website. Transparent background. One single small dark charcoal bird, identical silhouette, size and anchor across SIX DISTINCT naturally connected wing-flap poses, left-to-right horizontal row: wings raised high, halfway raised, level extended, halfway lowered, wings fully lowered, halfway raised returning. Strict fine retro pixel art, hard pixel edges, no anti-aliasing, restrained navy and lavender highlights, compact bird profile facing right; exact consistent body, beak and tail for every pose, only wings change. Six sprites separated by ample transparent margins, each complete and centered in equal-sized invisible cells; no text, no grid, no borders, no scenery, no shadows, no extra birds or objects. Intended for natural smooth looping animation on deep navy sky.",
+  "transparentBackground": true,
+  "correction": {
+    "cellSize": 3,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1,
+    "selection": "視覚上の比較により3pxを採用。均一格子の自動推定ではなく、原画の細部は変化する。4px候補は /tmp/bird-corrected-4.png に一時保存し、より粗いので見送った。"
+  },
+  "decision": "ACCEPTED_MATERIAL_ONLY",
+  "reviewedBy": "LLM",
+  "actualLlmView": "原画2172×724と補正後724×241を実際に閲覧。紺・紫の同種の鳥、透明余白、各羽形、表情と輪郭を確認。補正後も輪郭と羽根の細部が概ね保たれる。",
+  "candidateBoxesAlphaAbove16": [
+    [
+      13,
+      56,
+      118,
+      163
+    ],
+    [
+      126,
+      75,
+      231,
+      163
+    ],
+    [
+      247,
+      116,
+      353,
+      163
+    ],
+    [
+      368,
+      117,
+      479,
+      187
+    ],
+    [
+      486,
+      117,
+      592,
+      194
+    ],
+    [
+      611,
+      80,
+      716,
+      163
+    ]
+  ],
+  "alpha": {
+    "transparent": 150959,
+    "opaque": 251,
+    "partial": 23274,
+    "cornerAlpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "limitations": [
+    "素材としての判断のみ。本番の姿勢の登録・大きさ・コントラスト・全景表示は未検証。",
+    "6姿勢目は上げた翼に急に戻るため、連続ループでは最初の5姿勢を往復させ、中間姿勢を飛ばさないことを推奨。生成時の各鳥の位置や体格は完全に同一ではないため、各姿勢の頭・身体の位置を揃え、切り出しの混入がないか再確認する。",
+    "アルファの大半は253で完全不透明ではない。輪郭付近には低alpha画素もあるため、暗い空との合成と視認性を確認する。",
+    "3px均一補正は局所的なずれを自動修復しない。ピクセルの混合や細部が損なわれる可能性があり、原画と補正後画像を保持する。"
+  ]
+}

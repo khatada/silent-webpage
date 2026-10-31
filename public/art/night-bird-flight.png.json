@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-bird-flight/original.png",
+    "width": 2172,
+    "height": 724,
+    "sha256": "a1791597b1ef85a53a387f5e815a940db589c14407238ca0e09170482805eacb"
+  },
+  "output": {
+    "path": "public/art/night-bird-flight.png",
+    "width": 724,
+    "height": 241,
+    "sha256": "2728075657d99d64cd4a28cf81e7a4a81630b5706cadac313a75ffc108ae2d08"
+  },
+  "grid": {
+    "cellSize": 3,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
