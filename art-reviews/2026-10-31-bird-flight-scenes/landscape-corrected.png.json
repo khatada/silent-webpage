@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-bird-flight-scenes/landscape-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "33ad1bab08ef19d6e1b7eb19c8b531a95994313be316447eeceb3823de3baa48"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-bird-flight-scenes/landscape-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "292fcf36c22a32b2d37f295a8147058e83ec640451a2ffc9e2ca52f6d7cc1e04"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

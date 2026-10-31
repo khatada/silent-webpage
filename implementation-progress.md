@@ -4,9 +4,10 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ `feat/bird-flight-art`、worktree `/workspace/silent-webpage-glass-bounds`。夜空を羽ばたく鳥の素材をimage_gen.imagegenで生成。原画 `/workspace/generated_images/exec-d74ffb12-e74c-4d7a-9589-d99a7469cbc9.png` を親が閲覧し、6姿勢を確認。担当 `bird_art` が必須のドット補正・透明度・姿勢の採否を検証中。原画と3px補正後を親・担当LLMが実閲覧し素材のみ採用、manifest登録。6姿勢目から最初へ直接戻すと跳ぶため、表示時は5姿勢の往復と体位置の登録を検証。verify、PRは未実施。表示への統合は素材と別PRにする。
-- 雲の [PR #73](https://github.com/khatada/silent-webpage/pull/73) は head `49fc0507fa25c0dfaec7bdf3af7b65c0bf8cbb8b` のverify127テスト/461画像とhook、CI41072313066/job124119295847成功後 main `5137f75e8741d8819441866af7c17a11c702668c` にマージ。Pages41159652503は確認中。PR添付済み。
-- 雲は3画面の0/4/8秒と11全景を補正後LLMが実閲覧。動き軽減・resize/resume確認済み。desktop8秒では飛行機が雲上縁を横切るが判別可能。連続再生の速度感・全時刻の交差は未検証。
+- ブランチ `feat/bird-flight-scene`、worktree `/workspace/silent-webpage-glass-bounds`。採用済み生成鳥の5姿勢を位置合わせして往復し、夜空を飛ぶ表示を `bird_art` が実装中。元画像の静止合成では幅24pxは暗く埋もれやすく48pxは読み取りやすいが、遠近感・空の混雑・全景の自然さを実画像で検証する。source `55b0e9367f7d85fa265e6789bee2894f6664f1d8629c96afb40f5b0ee223454f` に凍結。3画面の時系列6枚と11初期全景を補正後LLM実閲覧、動き軽減/resize/resume確認。航空機との有限サンプル非交差を独立レビュー。manifest更新済み、verify・PR未実施。
+- 鳥素材 [PR #74](https://github.com/khatada/silent-webpage/pull/74) はhead `645e8b804db429fb10cc58f055231be85ddc750d` のverify127テスト/462画像、hook、CI41160214668/job124415914595成功後、main `8649fc515f6c066c7becbd655e0c631ec677b3da` にマージ。Pages41160595595 は verify124417067872 と publish124418224712 が成功し公開済み。PR添付ツールは応答せず中断。
+- 生成原画と3px補正後を親・担当LLMが実閲覧し素材として採用。6姿勢目から最初への直接移行は跳ぶため最初5姿勢を往復する。体の位置差、透明輪郭、格子幅の不確実性は表示QAで確認する。
+- 雲の [PR #73](https://github.com/khatada/silent-webpage/pull/73) はmain `5137f75e8741d8819441866af7c17a11c702668c`、Pages41159652503のverify124414140578/publish124415178001成功で公開済み。
 
 ## 過去の進行状況（C033時点の記録）
 

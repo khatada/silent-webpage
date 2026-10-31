@@ -1,0 +1,280 @@
+{
+  "sourceSha256": "55b0e9367f7d85fa265e6789bee2894f6664f1d8629c96afb40f5b0ee223454f",
+  "results": [
+    {
+      "name": "desktop",
+      "viewport": [
+        1440,
+        900,
+        1
+      ],
+      "physicalScale": 1,
+      "skyHeight": 132,
+      "times": [
+        0,
+        11.87,
+        12.01,
+        12.15,
+        12.29,
+        12.43,
+        12.57,
+        12.71,
+        12.85,
+        19
+      ],
+      "geometry": {
+        "scale": 0.45714285714285713,
+        "height": 69.48571428571428,
+        "y": 4,
+        "speed": 20,
+        "duration": 74.74285714285715,
+        "period": 149.9568,
+        "first": 9,
+        "direction": -1,
+        "visible": true
+      },
+      "calculatedStates": [
+        {
+          "visible": false,
+          "frame": 0,
+          "x": 1440
+        },
+        {
+          "visible": true,
+          "frame": 4,
+          "x": 1382.6
+        },
+        {
+          "visible": true,
+          "frame": 3,
+          "x": 1379.8
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 1377
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 1374.2
+        },
+        {
+          "visible": true,
+          "frame": 0,
+          "x": 1371.4
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 1368.6
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 1365.8
+        },
+        {
+          "visible": true,
+          "frame": 3,
+          "x": 1363
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 1240
+        }
+      ],
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    },
+    {
+      "name": "compact",
+      "viewport": [
+        800,
+        600,
+        1
+      ],
+      "physicalScale": 1,
+      "skyHeight": 177,
+      "times": [
+        0,
+        11.87,
+        12.01,
+        12.15,
+        12.29,
+        12.43,
+        12.57,
+        12.71,
+        12.85,
+        19
+      ],
+      "geometry": {
+        "scale": 0.45714285714285713,
+        "height": 69.48571428571428,
+        "y": 4,
+        "speed": 30,
+        "duration": 28.495238095238097,
+        "period": 56.311733333333336,
+        "first": 9,
+        "direction": -1,
+        "visible": true
+      },
+      "calculatedStates": [
+        {
+          "visible": false,
+          "frame": 0,
+          "x": 800
+        },
+        {
+          "visible": true,
+          "frame": 4,
+          "x": 713.9
+        },
+        {
+          "visible": true,
+          "frame": 3,
+          "x": 709.7
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 705.5
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 701.3000000000001
+        },
+        {
+          "visible": true,
+          "frame": 0,
+          "x": 697.1
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 692.9
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 688.6999999999999
+        },
+        {
+          "visible": true,
+          "frame": 3,
+          "x": 684.5
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 500
+        }
+      ],
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    },
+    {
+      "name": "mobile",
+      "viewport": [
+        390,
+        844,
+        2
+      ],
+      "physicalScale": 2,
+      "skyHeight": 152,
+      "times": [
+        0,
+        12.67,
+        12.81,
+        12.95,
+        13.09,
+        13.23,
+        13.37,
+        13.51,
+        13.65,
+        19.8
+      ],
+      "geometry": {
+        "scale": 0.22857142857142856,
+        "height": 34.74285714285714,
+        "y": 4,
+        "speed": 20,
+        "duration": 20.871428571428574,
+        "period": 46.446000000000005,
+        "first": 9.8,
+        "direction": 1,
+        "visible": true
+      },
+      "calculatedStates": [
+        {
+          "visible": false,
+          "frame": 0,
+          "x": -27.428571428571427
+        },
+        {
+          "visible": true,
+          "frame": 4,
+          "x": 29.971428571428557
+        },
+        {
+          "visible": true,
+          "frame": 3,
+          "x": 32.77142857142857
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 35.57142857142854
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 38.37142857142855
+        },
+        {
+          "visible": true,
+          "frame": 0,
+          "x": 41.171428571428564
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 43.97142857142855
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 46.77142857142856
+        },
+        {
+          "visible": true,
+          "frame": 3,
+          "x": 49.57142857142857
+        },
+        {
+          "visible": true,
+          "frame": 1,
+          "x": 172.57142857142858
+        }
+      ],
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    }
+  ],
+  "method": "Production page; separate Chromium per case; device DPR retained, running awaited, screenshot dimensions asserted. Native sky strips copied at 1:1.",
+  "limitations": "Expected state and positions are calculated, not measured. 20fps final RAF may precede requested time; sky includes clouds and aircraft. Finite snapshots do not show every instant. Resize checks dimensions, not visual adoption."
+}

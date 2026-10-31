@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-bird-flight-active/desktop-sky-source.png",
+    "width": 1440,
+    "height": 1320,
+    "sha256": "ac532cdb7abc62e29103feb47b0af8d7f6471ff3c399c2b120328d7b99aaa801"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-bird-flight-active/desktop-sky-corrected.png",
+    "width": 1440,
+    "height": 1320,
+    "sha256": "ac532cdb7abc62e29103feb47b0af8d7f6471ff3c399c2b120328d7b99aaa801"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

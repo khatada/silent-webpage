@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-bird-flight-scenes/small-phone-source.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "510751612128af8e76503ff11d7a555163034444fb0f8552e06e44477f03d23d"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-bird-flight-scenes/small-phone-corrected.png",
+    "width": 640,
+    "height": 1136,
+    "sha256": "f1ae99848b62ff18e8cda781d6b7cbd3896320f2cec28ecd619761eb2cb579e8"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

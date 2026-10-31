@@ -22,6 +22,7 @@ import { sceneTrainService, trainServiceState, type TrainServiceSchedule } from 
 import { createImagePlant, plantArt, plantGeometry } from './image-plant';
 import { cityMotion, residentialLightCycle } from './city-motion';
 import { oppositeAircraftArt, oppositeAircraftGeometry } from './opposite-aircraft';
+import { birdArt, birdGeometry, createImageBird } from './image-bird';
 
 type Frame = readonly [number, number, number, number];
 
@@ -31,7 +32,7 @@ export async function createScene(host: HTMLElement): Promise<{
   destroy(): void;
 }> {
   const baseUrl = new URL('.', document.baseURI).href;
-  const [background, loadedWideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas, lookAtlas, plantAtlas, alternateTrain, riseAtlas] = await Promise.all([
+  const [background, loadedWideBackground, portraitBackground, atlas, restAtlas, walkAtlas, back, lift, groomAtlas, settleAtlas, streetCar, stretchAtlas, stretchMid, curtainAtlas, turnAtlas, fanAtlas, residentAtlas, steamAtlas, meteorAtlas, laundryAtlas, lookAtlas, plantAtlas, alternateTrain, riseAtlas, birdAtlas] = await Promise.all([
     Assets.load<Texture>(`${baseUrl}${generatedArt.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.wide.background}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.portrait.background}`),
@@ -56,6 +57,7 @@ export async function createScene(host: HTMLElement): Promise<{
     Assets.load<Texture>(`${baseUrl}${plantArt.image}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.alternateTrain}`),
     Assets.load<Texture>(`${baseUrl}${generatedArt.catRiseAtlas}`),
+    Assets.load<Texture>(`${baseUrl}${birdArt.image}`),
   ]);
   const wideBackground = createLogicalBackground(loadedWideBackground,
     generatedArt.wide.width, generatedArt.wide.height, generatedArt.wide.resolution);
@@ -76,6 +78,9 @@ export async function createScene(host: HTMLElement): Promise<{
   const imageSteam = createImageSteam(steamAtlas);
   let steam: Sprite | undefined;
   const imageMeteor = createImageMeteor(meteorAtlas);
+  const imageBird = createImageBird(birdAtlas);
+  let bird: Sprite;
+  let birdLayout: ReturnType<typeof birdGeometry>;
   let meteor: Sprite;
   let meteorSkyBottom = 0;
   const imageLaundry = createImageLaundry(laundryAtlas);
@@ -119,7 +124,7 @@ export async function createScene(host: HTMLElement): Promise<{
   const imagePlant = createImagePlant(plantAtlas, app.renderer);
   const canvas = app.canvas;
   canvas.setAttribute('role', 'img');
-  canvas.setAttribute('aria-label', '星が瞬く東京の夜景。電車と飛行機がゆっくり行き交い、屋上で猫が歩き、毛づくろいをしたり丸くなって休んだりしながら、窓の灯りが移ろいます。');
+  canvas.setAttribute('aria-label', '星が瞬く東京の夜景。電車と飛行機が行き交い、鳥が羽ばたき、屋上の猫が歩いたり休んだりしながら、窓の灯りが移ろいます。');
   canvas.style.display = 'block';
   canvas.style.imageRendering = 'pixelated';
   host.append(canvas);
@@ -241,6 +246,9 @@ export async function createScene(host: HTMLElement): Promise<{
     cloud.scale.set(layout.cloudScale);
     cloud.y = layout.cloudY;
     cloud.alpha = 0.35;
+    birdLayout = birdGeometry(width, layout, viewport.physicalScale);
+    bird = imageBird.createSprite(birdLayout);
+    app.stage.addChild(bird);
     aircraft = sprite(frames.aircraft);
     aircraft.scale.set(layout.aircraftScale);
     aircraft.y = layout.aircraftY;
@@ -295,6 +303,7 @@ export async function createScene(host: HTMLElement): Promise<{
     imageSkylineLights.update(skylineLights, elapsed);
     imageStreetCar.update(roadCar, elapsed);
     imageMeteor.update(meteor, elapsed, width, meteorSkyBottom);
+    imageBird.update(bird, elapsed, width, birdLayout);
     if (steam) imageSteam.update(steam, elapsed);
     if (laundry) imageLaundry.update(laundry, elapsed);
     if (curtain) imageCurtain.update(curtain, elapsed);
@@ -362,6 +371,7 @@ export async function createScene(host: HTMLElement): Promise<{
       imageResident.destroy();
       imageSteam.destroy();
       imageMeteor.destroy();
+      imageBird.destroy();
       imageLaundry.destroy();
       imageSkylineLights.destroy();
       imageStars.destroy();

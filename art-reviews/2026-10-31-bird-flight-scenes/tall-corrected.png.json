@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-bird-flight-scenes/tall-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "8a63a3cc5f53818a5e3f8d6983a7de200ac8f7b98c3f38e16fd8f6ab2172d287"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-bird-flight-scenes/tall-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "1246038f04d6307ef591d12226f7d1836b05555858e7b5fc116d840c9f069162"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
