@@ -3447,6 +3447,18 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが3画面の補正後時系列・全景を全域実閲覧、親もdesktopの時系列を閲覧し雲の移動を確認。desktopで航空機が雲の上縁を横切る。有限時刻で連続再生すべては未検証。"
+    },
+    {
+      "image": "public/art/night-bird-flight.png",
+      "report": "public/art/night-bird-flight.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "生成原画と3px補正後を担当・親LLMが実閲覧。6姿勢と透明余白を確認し素材として採用。羽と体の位置に差があり6姿勢目から最初へ直接戻すと跳ぶため、表示時は位置合わせと中間姿勢の往復を検証する。部分透明の輪郭や格子選択の不確実性が残る。",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "originalSha256": "a1791597b1ef85a53a387f5e815a940db589c14407238ca0e09170482805eacb",
+        "prompt": "Create a sprite sheet for an existing calm nighttime Tokyo pixel-art website. Transparent background. One single small dark charcoal bird, identical silhouette, size and anchor across SIX DISTINCT naturally connected wing-flap poses, left-to-right horizontal row: wings raised high, halfway raised, level extended, halfway lowered, wings fully lowered, halfway raised returning. Strict fine retro pixel art, hard pixel edges, no anti-aliasing, restrained navy and lavender highlights, compact bird profile facing right; exact consistent body, beak and tail for every pose, only wings change. Six sprites separated by ample transparent margins, each complete and centered in equal-sized invisible cells; no text, no grid, no borders, no scenery, no shadows, no extra birds or objects. Intended for natural smooth looping animation on deep navy sky."
+      }
     }
   ]
 }
