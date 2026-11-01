@@ -4,10 +4,10 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ブランチ `feat/windsock-art`、worktree `/workspace/silent-webpage-glass-bounds`。近景の大きな動きを増やすため吹き流しの6姿勢をimage_gen.imagegenで生成し、原画 `/workspace/generated_images/exec-664b1aa2-767b-42e6-8bfe-b0cb96fa88ef.png` を親が実閲覧。輪郭の赤/マゼンタにじみがあり、そのまま不採用。`windsock_art` が補正・部分編集と実閲覧で素材採否を検証中。imagegen編集原画 exec-465fc74b-a1d4-4a05-9e8c-44df58ddfc38.png を3px補正し素材のみ採用。暗背景6姿勢×60/90pxをLLM実閲覧。棒の位置差・微小紫縁が残り、表示で支持登録を検証。manifest更新済み、verify/PR未実施。素材と表示は別PRにする。
-- 住人の [PR #76](https://github.com/khatada/silent-webpage/pull/76) はhead `ab3af38807275e915dcf74e0b6ac9ff00c68bf5c` のverify132テスト/497画像とhook、CI41205078796/job124548403743成功後 main `1c5d43a2500a77488de1d7aa62d6ecc364fdc26f` にマージ。Pages41205533808 は verify124549729135 と publish124550743823 が成功し公開済み。PR添付ツール無応答で中断。
-- 住人は局所・11全景・時系列6画像を補正後LLMが実閲覧。ガラス外変更0、消灯時一致、中間明度と姿勢を確認。小型全景では注視必要。scale2未満省略・resize後の見た目・連続再生は未検証。
-- 鳥PR #75はmain `266e084b12fb2c8d43761f8f715ede0ba7709bfc`、Pages41162210054のverify124422013492/publish124423003559成功で公開済み。
+- ブランチ `feat/rooftop-windsock`、worktree `/workspace/silent-webpage-glass-bounds`。採用済み生成吹き流しを屋上logical[430,190]へ60〜90physical pxで配置する案を `windsock_art` が実装・局所補正画像で検証中。棒は1本固定・布だけ切替、候補順0→1→2→1→0→3→4→3→0。支持継ぎ目・猫/住宅の遮蔽・画面外省略を確認する。source `3e9f948f0340afbed77af3111737476c6bb4e9ffa94349945716c3716c15cc39` に凍結。18局所パネルを補正後LLMが閲覧し支持・継ぎ目確認、棒変化0・bounds外変更0。11全景と本番3画面6時刻の補正後画像をLLMが実閲覧。棒固定と支持、布5姿勢、猫・住宅遮蔽を確認。動き軽減RGBA一致、resize/resume成功。DPR1動作・有限時刻の制約を記録。manifest更新済み、verify/PR未実施。
+- [PR #77](https://github.com/khatada/silent-webpage/pull/77) はhead `eacbe785f4d0b2c1c77a8fca4ba130bdce90505b` のverify132テスト/499画像とhook、CI41206515425/job124552574743成功後main `fd2aebbfc3e45ce3bca502f3e4dc2995decca86d` にマージ。Pages41206941003 は verify124553844243 と publish124554919679 が成功し公開済み。PR添付ツール無応答で中断。
+- 吹き流し原画の赤/マゼンタ縁が強い試作は不採用、imagegen編集後の原画を3px補正し親/担当LLMが実閲覧。暗背景6姿勢×60/90pxで素材採用。微小紫縁と棒の位置差が残るため表示時に支持を固定する。
+- 住人PR #76はmain `1c5d43a2500a77488de1d7aa62d6ecc364fdc26f`、Pages41205533808のverify124549729135/publish124550743823成功で公開済み。
 
 ## 過去の進行状況（C033時点の記録）
 

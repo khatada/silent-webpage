@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "aa745a6e7624cb1d85a4f0311d030fb313a2a56eb1c246250afa30e08ba818b8",
+  "sourceSha256": "3e9f948f0340afbed77af3111737476c6bb4e9ffa94349945716c3716c15cc39",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -3723,6 +3723,132 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが60px/90pxの6姿勢を補正後暗背景で全域実閲覧。強い色縁は目立たず素材採用。背景全景での支持・アニメーションは別途確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-local/atlas-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-local/atlas-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後18局所パネルを実閲覧。棒の変化0と範囲外変更0、継ぎ目を確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し支持と前景遮蔽を採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し支持と前景遮蔽を採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し支持と前景遮蔽を採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し支持と前景遮蔽を採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し支持と前景遮蔽を採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し支持と前景遮蔽を採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し支持と前景遮蔽を採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し支持と前景遮蔽を採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し支持と前景遮蔽を採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し支持と前景遮蔽を採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後11全景を実閲覧し支持と前景遮蔽を採用。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-active/compact-full-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-active/compact-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後3画面の6時刻と全景を実閲覧。固定棒と布5姿勢、猫の床側の関係を確認。親もcompact全景を閲覧。小領域の住宅を前景として隠し、有限時刻の確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-active/compact-poses-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-active/compact-poses-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後3画面の6時刻と全景を実閲覧。固定棒と布5姿勢、猫の床側の関係を確認。親もcompact全景を閲覧。小領域の住宅を前景として隠し、有限時刻の確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-active/landscape-full-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-active/landscape-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後3画面の6時刻と全景を実閲覧。固定棒と布5姿勢、猫の床側の関係を確認。親もcompact全景を閲覧。小領域の住宅を前景として隠し、有限時刻の確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-active/landscape-poses-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-active/landscape-poses-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後3画面の6時刻と全景を実閲覧。固定棒と布5姿勢、猫の床側の関係を確認。親もcompact全景を閲覧。小領域の住宅を前景として隠し、有限時刻の確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-active/wide-full-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-active/wide-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後3画面の6時刻と全景を実閲覧。固定棒と布5姿勢、猫の床側の関係を確認。親もcompact全景を閲覧。小領域の住宅を前景として隠し、有限時刻の確認。"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-active/wide-poses-corrected.png",
+      "report": "art-reviews/2026-10-31-windsock-active/wide-poses-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが補正後3画面の6時刻と全景を実閲覧。固定棒と布5姿勢、猫の床側の関係を確認。親もcompact全景を閲覧。小領域の住宅を前景として隠し、有限時刻の確認。"
     }
   ]
 }

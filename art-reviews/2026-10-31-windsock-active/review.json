@@ -1,0 +1,33 @@
+{
+  "sourceSha256": "3e9f948f0340afbed77af3111737476c6bb4e9ffa94349945716c3716c15cc39",
+  "decision": "ACCEPTED_LLM_ACTUALLY_VIEWED",
+  "reviewedBy": "LLM",
+  "actualLlmView": "All6 corrected images actually opened using view_image original: full scenes and six-time atlases at0/.75/1.2/2.6/3.2/3.7 seconds in wide/compact/landscape DPR1. Cloth curves through all5 poses while support remains stationary. Seam is readable and pole touches cap, cat stays below. Some small housing details behind cloth are covered. Faint purple fringe not conspicuous. Full wide viewer resized; native atlases opened at original size. Finite snapshots do not prove continuous motion or all devices.",
+  "images": [
+    {
+      "image": "art-reviews/2026-10-31-windsock-active/compact-full-corrected.png",
+      "sha256": "8c95ae70472b20f4ae7c974db580d054703a52fa3251f6f8c3a8a61c94268af6"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-active/compact-poses-corrected.png",
+      "sha256": "0ce0dac397d4686d6add7cff0f37af5723b2ee5508c7d54e41e529e4d4e4d97a"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-active/landscape-full-corrected.png",
+      "sha256": "d4a6ab9d1cad2eab6dbbadd6088a05c79a5b42a06e6431f396845d998b1ccb5b"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-active/landscape-poses-corrected.png",
+      "sha256": "0ce0dac397d4686d6add7cff0f37af5723b2ee5508c7d54e41e529e4d4e4d97a"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-active/wide-full-corrected.png",
+      "sha256": "f6829246258922b0d83035e60d3ae062715038f9a2cc3e50e3c37cc70913d951"
+    },
+    {
+      "image": "art-reviews/2026-10-31-windsock-active/wide-poses-corrected.png",
+      "sha256": "ad3c19ca3b365cc40ae92a7b5658a988a5804c56d4dee8911d30859fca3413db"
+    }
+  ],
+  "limitations": "DPR1 activity; initial scenes includeDPR2. Resize canvas dimensions and page errors checked, not adopted visual proof of resize. Last20fps RAF may precede requested time. Finite snapshots and no live user speed evaluation."
+}

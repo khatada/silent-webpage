@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-10-31-windsock-active/landscape-full-source.png",
+    "width": 844,
+    "height": 390,
+    "sha256": "d4a6ab9d1cad2eab6dbbadd6088a05c79a5b42a06e6431f396845d998b1ccb5b"
+  },
+  "output": {
+    "path": "art-reviews/2026-10-31-windsock-active/landscape-full-corrected.png",
+    "width": 844,
+    "height": 390,
+    "sha256": "d4a6ab9d1cad2eab6dbbadd6088a05c79a5b42a06e6431f396845d998b1ccb5b"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
