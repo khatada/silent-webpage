@@ -1,0 +1,41 @@
+{
+  "sourceSha256": "332a7b7ac17e6f04202392683a3fbd226330eca2d0e0db1679e79238ab018d64",
+  "decision": "accepted",
+  "reviewedBy": "LLM",
+  "method": "All six corrected images independently viewed at original detail; each sky atlas contains native 0/8/16-second strips, full images show the last sampled moment.",
+  "images": [
+    {
+      "name": "desktop-full-corrected.png",
+      "sha256": "ed6b30fb3b1bad1c222a22e75d37abbabf3792bd740308a8afc8f62b7ae2c12d"
+    },
+    {
+      "name": "desktop-sky-corrected.png",
+      "sha256": "6b8fe36030e79d413c564c7a75c0579925b08d244e085d6ce65dbd0cdf446a00"
+    },
+    {
+      "name": "small-full-corrected.png",
+      "sha256": "d7bd7ef44025f2109948c1cb1e177dec2d01f4bdd17e30d75f7b639a949199f9"
+    },
+    {
+      "name": "small-sky-corrected.png",
+      "sha256": "eb31b13c1fb5c69443ed75d7f3ddd1b1fbf91c3838d7b031b19c0f6604155835"
+    },
+    {
+      "name": "tall-full-corrected.png",
+      "sha256": "58e86fac820889fad04c2feabc1150c3c1ec9af5849d0061f92d2a13bd2889b1"
+    },
+    {
+      "name": "tall-sky-corrected.png",
+      "sha256": "cb2b9ded5f5872878180d08463cc2f292cbc53f43e4ebc6f75a3bcfd68a5c41b"
+    }
+  ],
+  "observations": [
+    "The small upper cloud is discernible separately from the larger lower cloud in all three layouts, and shifts right across sampled sky strips.",
+    "Full images preserve the skyline, trains, rooftop and cat; no obvious cloud clipping or strip displacement was seen. At tall 16s a flying bird overlaps the upper cloud briefly; both shapes remain legible.",
+    "The two-second paused screenshots had identical full RGBA data for all three sizes and running state returned afterward."
+  ],
+  "limitations": [
+    "Position/displacement numbers in capture.json come from the production factory at requested times rather than image measurement; actual final frame timing may lag.",
+    "Snapshots show three moments, not continuous motion, and cannot prove a complete cycle or every actor overlap. Resume confirms running state only."
+  ]
+}

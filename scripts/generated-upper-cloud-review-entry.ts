@@ -2,8 +2,9 @@ import { createLogicalBackground } from '../src/logical-background';
 import { Application, Assets, Container, Rectangle, RenderTexture, Sprite, Texture } from 'pixi.js';
 import { generatedArt } from '../src/generated-art';
 import { generatedLayout } from '../src/generated-layout';
-import { createImageUpperCloud, upperCloudGeometry } from '../src/image-upper-cloud';
+import { createImageUpperCloud, upperCloudArt, upperCloudGeometry } from '../src/image-upper-cloud';
 import { travelPosition } from '../src/animation';
+import { cityMotion } from '../src/city-motion';
 
 const views = [['desktop', 1440, 900], ['mobile', 390, 844], ['narrow', 295, 844],
   ['landscape', 844, 390], ['wide', 2560, 1080], ['compact', 800, 600], ['tall', 390, 1025],
@@ -12,8 +13,8 @@ const views = [['desktop', 1440, 900], ['mobile', 390, 844], ['narrow', 295, 844
 /** Choose actual closest horizontal approaches over one upper-cloud crossing; never simulate a wait. */
 function closestTime(width: number, scale: number, upperWidth: number, otherWidth: number, speed: number, initial: number) {
   let bestTime = 0, bestDistance = Infinity;
-  for (let seconds = 0; seconds <= (width + upperWidth) / (scale * 0.35); seconds++) {
-    const upper = travelPosition(seconds, width, upperWidth, scale * 0.35, width * 0.65);
+  for (let seconds = 0; seconds <= (width + upperWidth) / (scale * upperCloudArt.speed); seconds++) {
+    const upper = travelPosition(seconds, width, upperWidth, scale * upperCloudArt.speed, width * 0.65);
     const other = travelPosition(seconds, width, otherWidth, speed, initial);
     if (upper + upperWidth <= 0 || upper >= width || other + otherWidth <= 0 || other >= width) continue;
     const distance = Math.abs(upper + upperWidth / 2 - other - otherWidth / 2);
@@ -43,8 +44,8 @@ export async function renderGeneratedUpperCloudReview() {
     reviewLayouts[name] = { ...layout, composition: layout.portrait ? 'portrait' : layout.wide ? 'wide' : 'normal' };
     const geometry = upperCloudGeometry(layout);
     const times = [0,
-      closestTime(viewWidth, layout.scale, geometry.width, 235 * layout.cloudScale, layout.scale * 1.2, viewWidth * 0.12),
-      closestTime(viewWidth, layout.scale, geometry.width, aircraftTexture.width * layout.aircraftScale, layout.scale * 3.2, viewWidth * 0.7)];
+      closestTime(viewWidth, layout.motionScale, geometry.width, 235 * layout.cloudScale, layout.motionScale * cityMotion.cloudSpeed, viewWidth * 0.12),
+      closestTime(viewWidth, layout.motionScale, geometry.width, aircraftTexture.width * layout.aircraftScale, layout.motionScale * cityMotion.aircraftSpeed, viewWidth * 0.7)];
     times.forEach((seconds, column) => {
       const target = RenderTexture.create({ width: viewWidth, height: layout.skyBottom });
       const root = new Container();
@@ -56,13 +57,13 @@ export async function renderGeneratedUpperCloudReview() {
       const background = new Sprite(source);
       background.position.set(layout.originX, layout.originY); background.scale.set(layout.scale); root.addChild(background);
       const upper = factory.createSprite(layout);
-      factory.update(upper, seconds, viewWidth, layout.scale); root.addChild(upper);
+      factory.update(upper, seconds, viewWidth, layout.motionScale); root.addChild(upper);
       const lower = new Sprite(cloudTexture);
       lower.scale.set(layout.cloudScale); lower.y = layout.cloudY; lower.alpha = 0.35;
-      lower.x = travelPosition(seconds, viewWidth, lower.width, layout.scale * 1.2, viewWidth * 0.12); root.addChild(lower);
+      lower.x = travelPosition(seconds, viewWidth, lower.width, layout.motionScale * cityMotion.cloudSpeed, viewWidth * 0.12); root.addChild(lower);
       const plane = new Sprite(aircraftTexture);
       plane.scale.set(layout.aircraftScale); plane.y = layout.aircraftY;
-      plane.x = travelPosition(seconds, viewWidth, plane.width, layout.scale * 3.2, viewWidth * 0.7); root.addChild(plane);
+      plane.x = travelPosition(seconds, viewWidth, plane.width, layout.motionScale * cityMotion.aircraftSpeed, viewWidth * 0.7); root.addChild(plane);
       app.renderer.render({ container: root, target });
       const contextWidth = Math.min(350, viewWidth);
       const contextX = Math.max(0, Math.min(viewWidth - contextWidth, Math.floor(upper.x - 32)));
