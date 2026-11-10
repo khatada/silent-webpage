@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "3e9f948f0340afbed77af3111737476c6bb4e9ffa94349945716c3716c15cc39",
+  "sourceSha256": "269e6af4eaf28b1d88a5621d7a491af399dbeb623b3d5d18a87b0acd50c77171",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -3849,6 +3849,111 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが補正後3画面の6時刻と全景を実閲覧。固定棒と布5姿勢、猫の床側の関係を確認。親もcompact全景を閲覧。小領域の住宅を前景として隠し、有限時刻の確認。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-scenes/compact-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11全景を補正後実閲覧。wide/tallも原寸分割閲覧し新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-scenes/desktop-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11全景を補正後実閲覧。wide/tallも原寸分割閲覧し新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-scenes/landscape-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11全景を補正後実閲覧。wide/tallも原寸分割閲覧し新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-scenes/mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11全景を補正後実閲覧。wide/tallも原寸分割閲覧し新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-scenes/narrow-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11全景を補正後実閲覧。wide/tallも原寸分割閲覧し新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11全景を補正後実閲覧。wide/tallも原寸分割閲覧し新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11全景を補正後実閲覧。wide/tallも原寸分割閲覧し新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11全景を補正後実閲覧。wide/tallも原寸分割閲覧し新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-scenes/small-phone-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11全景を補正後実閲覧。wide/tallも原寸分割閲覧し新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-scenes/tall-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11全景を補正後実閲覧。wide/tallも原寸分割閲覧し新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-scenes/wide-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMが11全景を補正後実閲覧。wide/tallも原寸分割閲覧し新たな破損がないと判断。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-active/landscape-one-full-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-active/landscape-one-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMがDPR1/2動作4画像を補正後実閲覧。7/12/18秒の滑空と航空機の上下分離を確認。全退出/次周期・resize後の見た目は未確認。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-active/landscape-one-sky-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-active/landscape-one-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMがDPR1/2動作4画像を補正後実閲覧。7/12/18秒の滑空と航空機の上下分離を確認。全退出/次周期・resize後の見た目は未確認。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-active/landscape-two-full-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-active/landscape-two-full-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMがDPR1/2動作4画像を補正後実閲覧。7/12/18秒の滑空と航空機の上下分離を確認。全退出/次周期・resize後の見た目は未確認。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-gliding-bird-active/landscape-two-sky-corrected.png",
+      "report": "art-reviews/2026-11-10-gliding-bird-active/landscape-two-sky-corrected.png.json",
+      "decision": "accepted",
+      "reviewedBy": "LLM",
+      "reason": "担当LLMがDPR1/2動作4画像を補正後実閲覧。7/12/18秒の滑空と航空機の上下分離を確認。全退出/次周期・resize後の見た目は未確認。"
     }
   ]
 }

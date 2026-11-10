@@ -1,0 +1,145 @@
+{
+  "sourceSha256": "269e6af4eaf28b1d88a5621d7a491af399dbeb623b3d5d18a87b0acd50c77171",
+  "results": [
+    {
+      "name": "landscape-one",
+      "viewport": [
+        844,
+        390,
+        1
+      ],
+      "physicalScale": 1,
+      "skyHeight": 72,
+      "times": [
+        0,
+        3.9,
+        4.5,
+        7,
+        12,
+        18
+      ],
+      "geometry": {
+        "scale": 0.3125,
+        "height": 15,
+        "y": 45,
+        "speed": 20,
+        "duration": 43.8875,
+        "period": 61.8875,
+        "first": 4,
+        "direction": 1,
+        "gliding": true,
+        "frameWidth": 108,
+        "visible": true
+      },
+      "calculatedStates": [
+        {
+          "visible": false,
+          "frame": 0,
+          "x": -33.75
+        },
+        {
+          "visible": false,
+          "frame": 0,
+          "x": -33.75
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": -23.75
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 26.25
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 126.25
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 246.25
+        }
+      ],
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    },
+    {
+      "name": "landscape-two",
+      "viewport": [
+        844,
+        390,
+        2
+      ],
+      "physicalScale": 2,
+      "skyHeight": 144,
+      "times": [
+        0,
+        3.9,
+        4.5,
+        7,
+        12,
+        18
+      ],
+      "geometry": {
+        "scale": 0.22641509433962265,
+        "height": 10.867924528301888,
+        "y": 45,
+        "speed": 20,
+        "duration": 43.422641509433966,
+        "period": 61.422641509433966,
+        "first": 4,
+        "direction": 1,
+        "gliding": true,
+        "frameWidth": 108,
+        "visible": true
+      },
+      "calculatedStates": [
+        {
+          "visible": false,
+          "frame": 0,
+          "x": -24.452830188679247
+        },
+        {
+          "visible": false,
+          "frame": 0,
+          "x": -24.452830188679247
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": -14.452830188679247
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 35.54716981132076
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 135.54716981132074
+        },
+        {
+          "visible": true,
+          "frame": 2,
+          "x": 255.54716981132074
+        }
+      ],
+      "pauseExact": true,
+      "resized": {
+        "width": 900,
+        "height": 700
+      },
+      "resumed": true
+    }
+  ],
+  "method": "Production page; separate Chromium per case; device DPR retained, running awaited, screenshot dimensions asserted. Native sky strips copied at 1:1.",
+  "limitations": "Expected state and positions are calculated, not measured. 20fps final RAF may precede requested time; sky includes clouds and aircraft. Finite snapshots do not show every instant. Resize checks dimensions, not visual adoption."
+}
