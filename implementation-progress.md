@@ -1,15 +1,13 @@
 # 実装の進行状況
 
-最終更新: 2026-10-29（UTC）。別セッションの実装再開用。
+最終更新: 2026-11-10（UTC）。別セッションの実装再開用。
 
 ## 現在の作業（再開時はまずここを参照）
 
-- ユーザー最新指示: 今回の滑空表示をPRマージまで進めたら停止し、次の指示を待つ。自律改善ループを新たに開始しない。
-
-- 2026-11-10: 環境更新により旧 `/workspace/silent-webpage-glass-bounds` とその未コミット滑空表示・QA画像が失われた。現repo `/workspace/silent-webpage`、branch `feat/landscape-gliding-bird`、公開済みPR #78のmain `43b2bbde215fabee89aebedc66d058dbdc2862b5` から再実装中。
-- 方針: 横持ちで両航空機と空域が重なり羽ばたく鳥を省略する場合、既存生成素材の水平pose[246,116,108,48]を下側の別laneへ滑空表示する。初回4秒、他構図の羽ばたきを維持。旧QAは現環境に存在せず採用根拠にせず、補正・実閲覧と必須チェックを再実行する。
-- 担当restore_glideがsrc/tests、親が記録・画像QA・manifest・Git/CI/公開。依存復元済み。source `269e6af4eaf28b1d88a5621d7a491af399dbeb623b3d5d18a87b0acd50c77171` に凍結。型/Lint/鳥5テスト成功、新環境の11全景とDPR1/2動作4画像を補正後LLMが実閲覧。滑空、停止RGBA一致、resume/pageerrorなしを確認。全退出/次周期・resize後の見た目は未検証。manifest更新済み、verify/PR未実施。シェルはbash/login:false、現workdirを使用する。
-- 吹き流しPR #78はCI41208150463成功後mainへマージ、Pages41311466160のverify124862574759/publish124863734390成功で公開済み。
+- 2026-11-10 ユーザーのrestartで1件の改善を再開。今回もPRマージ後に停止し、次の指示を待つ。
+- PR #79はCI42828387793成功後main `65efb89d7b1fa403fe921f7782312e85ee20e06c`へマージ済み。公開状態は今回未照合。
+- repo `/workspace/silent-webpage`、branch `feat/visible-upper-cloud`、最新mainから作成済み。上層雲の濃さと速度を改善し、配置と省略条件は維持する案を検証中。
+- next_content担当が実装と単体、fresh_glide_qa担当が初期11全景、active_review担当が本番動作画像、親が記録・採否manifest・verify・Git/CI/merge。描画source `332a7b7ac17e6f04202392683a3fbd226330eca2d0e0db1679e79238ab018d64`へ固定。型/Lint/137単体成功。初期11全景と3構図0/8/16秒の動作6画像を補正後LLMが実閲覧し採用、manifest549画像へ更新。3構図でpause2秒全RGBA一致・resume状態確認・pageerrorなし。独立コードレビュー重大指摘なし。コミット前verify（型/Lint/137単体/549画像/production build）成功。コミットhook・push・PR・CI・マージが残る。今回マージ後停止。
 
 ## 過去の進行状況（C033時点の記録）
 

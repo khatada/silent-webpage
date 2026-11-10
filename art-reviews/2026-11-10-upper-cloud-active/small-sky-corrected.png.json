@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-11-10-upper-cloud-active/small-sky-source.png",
+    "width": 640,
+    "height": 822,
+    "sha256": "eb31b13c1fb5c69443ed75d7f3ddd1b1fbf91c3838d7b031b19c0f6604155835"
+  },
+  "output": {
+    "path": "art-reviews/2026-11-10-upper-cloud-active/small-sky-corrected.png",
+    "width": 640,
+    "height": 822,
+    "sha256": "eb31b13c1fb5c69443ed75d7f3ddd1b1fbf91c3838d7b031b19c0f6604155835"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

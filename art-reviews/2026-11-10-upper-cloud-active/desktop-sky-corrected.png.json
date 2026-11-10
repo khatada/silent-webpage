@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-11-10-upper-cloud-active/desktop-sky-source.png",
+    "width": 1440,
+    "height": 396,
+    "sha256": "6b8fe36030e79d413c564c7a75c0579925b08d244e085d6ce65dbd0cdf446a00"
+  },
+  "output": {
+    "path": "art-reviews/2026-11-10-upper-cloud-active/desktop-sky-corrected.png",
+    "width": 1440,
+    "height": 396,
+    "sha256": "6b8fe36030e79d413c564c7a75c0579925b08d244e085d6ce65dbd0cdf446a00"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

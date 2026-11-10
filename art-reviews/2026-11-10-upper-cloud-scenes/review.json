@@ -1,0 +1,190 @@
+{
+  "sourceSha256": "332a7b7ac17e6f04202392683a3fbd226330eca2d0e0db1679e79238ab018d64",
+  "reviewer": "fresh_glide_qa",
+  "reviewedAt": "2026-11-10",
+  "adoption": "accepted",
+  "images": [
+    {
+      "file": "compact-corrected.png",
+      "sha256": "4924286e34a9f67d01c5c479becd66da34af72b64046507074ecef12a8e95323",
+      "width": 800,
+      "height": 600,
+      "grid": {
+        "cellSize": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 1
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "viewing": "Corrected PNG opened with view_image at original detail.",
+      "reason": "Initial composition accepted: small upper cloud is distinguishable but modest in size/contrast, not a large prominent feature. Larger lower cloud, planes, skyline, windows and roof details remain coherent. No new obvious composition damage or dot misalignment observed."
+    },
+    {
+      "file": "desktop-corrected.png",
+      "sha256": "d0c163d112c2affe99def0cef07d18fb27a495ec8909baf2eee7abfc9a3622e1",
+      "width": 1440,
+      "height": 900,
+      "grid": {
+        "cellSize": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 1
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "viewing": "Corrected PNG opened with view_image at original detail.",
+      "reason": "Initial composition accepted: small upper cloud is distinguishable but modest in size/contrast, not a large prominent feature. Larger lower cloud, planes, skyline, windows and roof details remain coherent. No new obvious composition damage or dot misalignment observed."
+    },
+    {
+      "file": "landscape-corrected.png",
+      "sha256": "8ac8c40908646ac837ae1791d2a7025a83a31b305bad0da5ec90ffd472035721",
+      "width": 1688,
+      "height": 780,
+      "grid": {
+        "cellSize": 2,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 2
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "viewing": "Corrected PNG opened with view_image at original detail.",
+      "reason": "Initial composition accepted: navy sky, warm building/window details, train and cat remain coherent. The small upper cloud is not separately evident in this cropped viewport; this image does not prove its visibility. No new obvious composition damage or dot misalignment observed."
+    },
+    {
+      "file": "mobile-corrected.png",
+      "sha256": "5142fe19533d2c856c447c921628b9822041b2fad944bcb80b641d085cc4dbd0",
+      "width": 780,
+      "height": 1688,
+      "grid": {
+        "cellSize": 2,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 2
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "viewing": "Corrected PNG opened with view_image at original detail.",
+      "reason": "Initial composition accepted: navy sky, warm building/window details, train and cat remain coherent. The small upper cloud is not separately evident in this cropped viewport; this image does not prove its visibility. No new obvious composition damage or dot misalignment observed."
+    },
+    {
+      "file": "narrow-corrected.png",
+      "sha256": "96bd8a9613c60861670ef0a6b8a162e46b0c14c2a0b1c6e3d0dacf52d0726a8d",
+      "width": 295,
+      "height": 844,
+      "grid": {
+        "cellSize": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 1
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "viewing": "Corrected PNG opened with view_image at original detail.",
+      "reason": "Initial composition accepted: navy sky, warm building/window details, train and cat remain coherent. The small upper cloud is not separately evident in this cropped viewport; this image does not prove its visibility. No new obvious composition damage or dot misalignment observed."
+    },
+    {
+      "file": "portrait-boundary-corrected.png",
+      "sha256": "266e589d2e9d9dde1a2bfc67e6a1a76554e9a474a9990b207c2dc90346d04d45",
+      "width": 1024,
+      "height": 1537,
+      "grid": {
+        "cellSize": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 1
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "viewing": "Corrected PNG opened with view_image at original detail.",
+      "reason": "Initial composition accepted: small upper cloud is distinguishable but modest in size/contrast, not a large prominent feature. Larger lower cloud, planes, skyline, windows and roof details remain coherent. No new obvious composition damage or dot misalignment observed."
+    },
+    {
+      "file": "portrait-large-corrected.png",
+      "sha256": "c3c8c5e34a2e0ec6d466dd233f208c40d4256b936445f1109de176b3ad917edb",
+      "width": 900,
+      "height": 1600,
+      "grid": {
+        "cellSize": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 1
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "viewing": "Corrected PNG opened with view_image at original detail.",
+      "reason": "Initial composition accepted: small upper cloud is distinguishable but modest in size/contrast, not a large prominent feature. Larger lower cloud, planes, skyline, windows and roof details remain coherent. No new obvious composition damage or dot misalignment observed."
+    },
+    {
+      "file": "small-mobile-corrected.png",
+      "sha256": "23deb2cef87f140b10aeded91a61b26b51a6088d414942d8e92f6df102084224",
+      "width": 750,
+      "height": 1334,
+      "grid": {
+        "cellSize": 2,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 2
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "viewing": "Corrected PNG opened with view_image at original detail.",
+      "reason": "Initial composition accepted: small upper cloud is distinguishable but modest in size/contrast, not a large prominent feature. Larger lower cloud, planes, skyline, windows and roof details remain coherent. No new obvious composition damage or dot misalignment observed."
+    },
+    {
+      "file": "small-phone-corrected.png",
+      "sha256": "f881441b69f93890ee927c9f288bd7f0bbd11688a97df8b05e8f72e0b8d17de4",
+      "width": 640,
+      "height": 1136,
+      "grid": {
+        "cellSize": 2,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 2
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "viewing": "Corrected PNG opened with view_image at original detail.",
+      "reason": "Initial composition accepted: small upper cloud is distinguishable but modest in size/contrast, not a large prominent feature. Larger lower cloud, planes, skyline, windows and roof details remain coherent. No new obvious composition damage or dot misalignment observed."
+    },
+    {
+      "file": "tall-corrected.png",
+      "sha256": "62c5929522906a2ce1d57b8aa21a885f8e9cfa40e8e7948c14652d30f1200f97",
+      "width": 780,
+      "height": 2050,
+      "grid": {
+        "cellSize": 2,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 2
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "viewing": "Two disjoint native-size halves covering the entire corrected PNG, opened with view_image; no rescaling.",
+      "reason": "Initial composition accepted: small upper cloud is distinguishable but modest in size/contrast, not a large prominent feature. Larger lower cloud, planes, skyline, windows and roof details remain coherent. No new obvious composition damage or dot misalignment observed."
+    },
+    {
+      "file": "wide-corrected.png",
+      "sha256": "93f1357958d38182f4fd0085066494c8c2335f62cd8804663dcfd175a1317f38",
+      "width": 2560,
+      "height": 1080,
+      "grid": {
+        "cellSize": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 1
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "viewing": "Two disjoint native-size halves covering the entire corrected PNG, opened with view_image; no rescaling.",
+      "reason": "Initial composition accepted: small upper cloud is distinguishable but modest in size/contrast, not a large prominent feature. Larger lower cloud, planes, skyline, windows and roof details remain coherent. No new obvious composition damage or dot misalignment observed."
+    }
+  ],
+  "method": "Production preview captured with npm run art:capture, all eleven corrected scenes actually visually inspected. PNG decoded dimensions and SHA256 checked against correction reports. For wide and tall, native-size disjoint halves cover complete corrected files.",
+  "limitations": [
+    "Initial still scenes do not establish cloud motion, duration, pause behavior or every-frame overlap.",
+    "The small upper cloud remains subtle; visibility is not claimed for cropped mobile/narrow/landscape views.",
+    "These records cover composition regression only; active animation evidence is owned separately."
+  ]
+}
