@@ -7,7 +7,7 @@ import { oppositeAircraftArt, oppositeAircraftGeometry } from './opposite-aircra
 
 /** Corrected imagegen sheet. The eye offsets register all poses to one fixed point. */
 export const birdArt = { image: 'art/night-bird-flight.png', frame: [120, 152],
-  frameY: 48, eyeOffsets: [[0, 0], [6, 1], [5, 1], [-1, 0], [4, 1]],
+  glideFrame: [246, 116, 108, 48], frameY: 48, eyeOffsets: [[0, 0], [6, 1], [5, 1], [-1, 0], [4, 1]],
   order: [0, 1, 2, 3, 4, 3, 2, 1], frameSeconds: 0.14, first: 9, rest: 18 } as const;
 
 /** Size uses physical pixels so a high-density phone does not shrink the bird. */
@@ -26,6 +26,16 @@ export function birdGeometry(width: number, layout: ReturnType<typeof generatedL
   const oppositeOverlap = opposite.visible && y < opposite.y + opposite.height && y + height > opposite.y;
   // Two opposing aircraft in the same narrow vertical lane leave no safe bird route.
   const laneClear = !(mainOverlap && oppositeOverlap);
+  if (!laneClear && layout.wide) {
+    const glideY = Math.ceil(Math.max(layout.aircraftY + mainHeight, opposite.y + opposite.height)) + 4;
+    const glideScale = Math.min(target / (106 * density), Math.max(0, skyBottom - 4 - glideY) / birdArt.glideFrame[3]);
+    const frameWidth = birdArt.glideFrame[2];
+    const speed = layout.motionScale * cityMotion.aircraftSpeed;
+    const duration = (width + frameWidth * glideScale) / speed;
+    return { scale: glideScale, height: birdArt.glideFrame[3] * glideScale, y: glideY, speed,
+      duration, period: duration + birdArt.rest, first: 4, direction: 1 as const, gliding: true, frameWidth,
+      visible: Number.isFinite(width) && width > 0 && 106 * glideScale * density >= 32 };
+  }
   const direction: 1 | -1 = oppositeOverlap ? -1 : 1;
   const planeWidth = oppositeOverlap ? opposite.width : mainWidth;
   const planeInitial = width * (oppositeOverlap ? oppositeAircraftArt.initialFraction : 0.7);
@@ -48,17 +58,17 @@ export function birdGeometry(width: number, layout: ReturnType<typeof generatedL
   const duration = (width + birdArt.frame[0] * scale) / speed;
   const period = mainOverlap || oppositeOverlap ? Math.ceil((duration + birdArt.rest) / planePeriod) * planePeriod
     : duration + birdArt.rest;
-  return { scale, height, y, speed, duration, period, first, direction, visible: width > 0 && skyBottom > 8
+  return { scale, height, y, speed, duration, period, first, direction, gliding: false, frameWidth: birdArt.frame[0], visible: width > 0 && skyBottom > 8
     && Number.isFinite(width) && Number.isFinite(skyBottom) && physicalWidth >= 32 && laneClear && entryFound };
 }
 
 export function birdState(seconds: number, width: number, geometry: ReturnType<typeof birdGeometry>) {
   if (!geometry.visible || !Number.isFinite(seconds) || seconds < geometry.first)
-    return { visible: false, frame: 0, x: geometry.direction === 1 ? -birdArt.frame[0] * geometry.scale : width };
+    return { visible: false, frame: 0, x: geometry.direction === 1 ? -geometry.frameWidth * geometry.scale : width };
   const phase = (seconds - geometry.first) % geometry.period;
   const visible = phase >= 0 && phase < geometry.duration;
-  const frame = birdArt.order[Math.floor(phase / birdArt.frameSeconds) % birdArt.order.length];
-  return { visible, frame, x: geometry.direction === 1 ? -birdArt.frame[0] * geometry.scale + phase * geometry.speed
+  const frame = geometry.gliding ? 2 : birdArt.order[Math.floor(phase / birdArt.frameSeconds) % birdArt.order.length];
+  return { visible, frame, x: geometry.direction === 1 ? -geometry.frameWidth * geometry.scale + phase * geometry.speed
     : width - phase * geometry.speed };
 }
 
@@ -66,8 +76,9 @@ export function createImageBird(source: Texture) {
   source.source.scaleMode = 'nearest';
   const textures = birdArt.eyeOffsets.map((_, index) => new Texture({ source: source.source,
     frame: new Rectangle(index * birdArt.frame[0], birdArt.frameY, ...birdArt.frame) }));
+  const glideTexture = new Texture({ source: source.source, frame: new Rectangle(...birdArt.glideFrame) });
   function createSprite(geometry: ReturnType<typeof birdGeometry>) {
-    const sprite = new Sprite(textures[0]);
+    const sprite = new Sprite(geometry.gliding ? glideTexture : textures[0]);
     sprite.roundPixels = true;
     sprite.anchor.set(geometry.direction === -1 ? 1 : 0, 0);
     sprite.scale.set(geometry.direction * geometry.scale, geometry.scale);
@@ -78,9 +89,9 @@ export function createImageBird(source: Texture) {
     const state = birdState(seconds, width, geometry);
     sprite.visible = state.visible;
     if (!state.visible) return;
-    sprite.texture = textures[state.frame];
-    const [dx, dy] = birdArt.eyeOffsets[state.frame];
+    sprite.texture = geometry.gliding ? glideTexture : textures[state.frame];
+    const [dx, dy] = geometry.gliding ? [0, 0] : birdArt.eyeOffsets[state.frame];
     sprite.position.set(Math.round(state.x + geometry.direction * dx * geometry.scale), Math.round(geometry.y + dy * geometry.scale));
   }
-  return { createSprite, update, destroy() { textures.forEach(texture => texture.destroy(false)); } };
+  return { createSprite, update, destroy() { textures.forEach(texture => texture.destroy(false)); glideTexture.destroy(false); } };
 }

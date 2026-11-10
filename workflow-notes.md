@@ -157,3 +157,5 @@
 - 短い周期の動作QAは、画面ごとの独立Chromium・DPR1・画像実寸assertを使うと、CDPのDPR切替を避けて本番の4姿勢・動き軽減・resume/resizeを同じ手順で確認できた。初期のDPR2全景と役割を分け、有限時刻・縮小表示の限界を記録する。
 
 - 高精細背景で背景倍率と被写体倍率を分離した後は、過去のQAとテストも本番のmotionScaleを使うか点検する。旧列車capture/helperはlayout.scaleを使っており、そのままでは本番の寸法・速度と異なる。新しいQAは共通のschedule/state APIを利用し、数式のコピーを避ける。
+
+- 環境更新後は旧worktreeパスと未コミット成果物があるか先に確認する。execのNo such fileはシェルではなくcwd消失の場合がある。現repoと公開済みSHAを確認して復元し、存在しない旧QA画像を採用済みとして扱わない。

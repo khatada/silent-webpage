@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-11-10-gliding-bird-active/landscape-one-full-source.png",
+    "width": 844,
+    "height": 390,
+    "sha256": "3003636544ca9e4d987423d9b5556772a1ee13587d9c73930e0f272bd726281f"
+  },
+  "output": {
+    "path": "art-reviews/2026-11-10-gliding-bird-active/landscape-one-full-corrected.png",
+    "width": 844,
+    "height": 390,
+    "sha256": "3003636544ca9e4d987423d9b5556772a1ee13587d9c73930e0f272bd726281f"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

@@ -20,7 +20,31 @@ describe('bird flight', () => {
       expect(105 * g.scale * v.physicalScale).toBeLessThanOrEqual(48.001);
     }
     expect(birdGeometry(200, generatedLayout(200, 360), 1).visible).toBe(false);
-    expect(birdGeometry(844, generatedLayout(844, 390), 2).visible).toBe(false);
+    expect(birdGeometry(844, generatedLayout(844, 390), 2).gliding).toBe(true);
+  });
+  it('glides below both aircraft only when the flapping lane is crowded', () => {
+    for (const density of [1, 2]) {
+      const layout = generatedLayout(844, 390), g = birdGeometry(844, layout, density);
+      const other = oppositeAircraftGeometry(844, layout);
+      expect(g.visible).toBe(true); expect(g.gliding).toBe(true);
+      expect(106 * g.scale * density).toBeGreaterThanOrEqual(32);
+      expect(106 * g.scale * density).toBeLessThanOrEqual(48.001);
+      expect(g.y).toBeGreaterThanOrEqual(layout.aircraftY + generatedArt.frames.aircraft[3] * layout.aircraftScale + 4);
+      expect(g.y).toBeGreaterThanOrEqual(other.y + other.height + 4);
+      expect(g.y + g.height).toBeLessThanOrEqual(layout.skyBottom - 4);
+      expect(birdState(3.99, 844, g).visible).toBe(false);
+      expect(birdState(4, 844, g).x).toBe(-108 * g.scale);
+      expect(birdState(12, 844, g).frame).toBe(2);
+      expect(birdState(4 + g.duration + 0.001, 844, g).visible).toBe(false);
+      const source = new Texture({ source: new TextureSource({ width: 724, height: 241 }) });
+      const factory = createImageBird(source), sprite = factory.createSprite(g);
+      factory.update(sprite, 12, 844, g);
+      expect(sprite.texture.frame.x).toBe(246); expect(sprite.texture.frame.height).toBe(48);
+      expect(sprite.y).toBe(g.y);
+      sprite.destroy(); factory.destroy(); source.destroy(true);
+    }
+    for (const [w,h] of [[1440,900],[800,600],[390,844],[2560,1080]])
+      expect(birdGeometry(w, generatedLayout(w,h), 1).gliding).toBe(false);
   });
   it('enters and exits completely before resting, using a deterministic shared clock', () => {
     const g = birdGeometry(800, generatedLayout(800, 600), 1);

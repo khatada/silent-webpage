@@ -1,0 +1,82 @@
+{
+  "sourceSha256": "269e6af4eaf28b1d88a5621d7a491af399dbeb623b3d5d18a87b0acd50c77171",
+  "reviewer": "fresh_glide_qa",
+  "reviewedAt": "2026-11-10",
+  "adoption": "accepted",
+  "images": [
+    {
+      "file": "landscape-one-full-corrected.png",
+      "sha256": "3003636544ca9e4d987423d9b5556772a1ee13587d9c73930e0f272bd726281f",
+      "width": 844,
+      "height": 390,
+      "grid": {
+        "cellSize": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 1
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "reason": "Actual LLM viewing: horizontal bird silhouette is readable at 7/12/18 second rows; sampled bird lies below aircraft and stays clear of skyline. Full scene retains navy/warm-light composition, cat, train and roof details."
+    },
+    {
+      "file": "landscape-one-sky-corrected.png",
+      "sha256": "23195136180ebf0e4a9305b24a2156d491fa86fb2f8aa257c768f88a9fe4a0ba",
+      "width": 844,
+      "height": 432,
+      "grid": {
+        "cellSize": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 1
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "reason": "Actual LLM viewing: horizontal bird silhouette is readable at 7/12/18 second rows; sampled bird lies below aircraft and stays clear of skyline. Full scene retains navy/warm-light composition, cat, train and roof details."
+    },
+    {
+      "file": "landscape-two-full-corrected.png",
+      "sha256": "596aeb613637645ba0dd0db41984bc01d520a7d0f268c71ce1373d83b9f12f32",
+      "width": 1688,
+      "height": 780,
+      "grid": {
+        "cellSize": 2,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 2
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "reason": "Actual LLM viewing: horizontal bird silhouette is readable at 7/12/18 second rows; sampled bird lies below aircraft and stays clear of skyline. Full scene retains navy/warm-light composition, cat, train and roof details."
+    },
+    {
+      "file": "landscape-two-sky-corrected.png",
+      "sha256": "5708189efc47d5faaaf67715651cbfe2ba59c5f58e2e0d07e48ed158ad66669a",
+      "width": 1688,
+      "height": 864,
+      "grid": {
+        "cellSize": 2,
+        "offsetX": 0,
+        "offsetY": 0,
+        "outputScale": 2
+      },
+      "adoption": "accepted",
+      "actuallyViewed": true,
+      "reason": "Actual LLM viewing: horizontal bird silhouette is readable at 7/12/18 second rows; sampled bird lies below aircraft and stays clear of skyline. Full scene retains navy/warm-light composition, cat, train and roof details."
+    }
+  ],
+  "method": "All four corrected PNGs individually opened with view_image at original detail; sky strips are six consecutive native-scale rows. Production application rendered with Playwright controlled browser clock, not state-only factory.",
+  "findings": [
+    "Bird is clearly visible and progresses rightward at sampled 7,12,18 seconds in DPR 1 and DPR 2.",
+    "At 0/3.9 seconds bird is absent. At 4.5 seconds expected state has only just entered and its body is not clearly distinguishable; this is not claimed as visual entry proof.",
+    "Airplanes and drifting cloud are present; sampled bird is separated vertically from airplanes.",
+    "Pause with reduced motion gave exact RGBA equality after 2 seconds; resume reached running state; no browser page errors.",
+    "Resize produced native canvas 900x700 in both DPR cases; visual resize adoption is not claimed."
+  ],
+  "limitations": [
+    "Browser time was advanced with Playwright clock; this is not wall-clock or every-frame observation.",
+    "Full exit and subsequent flight cycle were not visually verified.",
+    "Expected geometry/state metadata is calculated; exact rendered pixel position was not measured.",
+    "Finite samples do not prove continuous cloud or aircraft separation at all times."
+  ]
+}
