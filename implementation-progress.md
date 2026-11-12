@@ -4,10 +4,10 @@
 
 ## 現在の作業（再開時はまずここを参照）
 
-- 2026-11-10 ユーザーのrestartで次の改善を1件だけ再開。今回もPRマージ後に停止し、次の指示を待つ。
-- PR #80はCI成功後main `5dc34179a397b7c5d8541cf82e58d56c683bb434`へマージ済み。公開状態は今回未照合。
-- repo `/workspace/silent-webpage`、branch `feat/more-street-car-passes`、最新mainから作成済み。既存生成素材の街路車を28秒周期/20秒走行/8秒休止から20秒周期/14秒走行/6秒休止へ変更する案を実装中。初期進捗25%と走行時間比約70%、経路・縮小・遮蔽・終端fadeは維持する。
-- next_content担当がtimingと単体、親が初期11全景、active_review担当が本番動作画像、親が記録・採否manifest・verify・Git/CI/merge。描画source `7074380419d767e4e7110a87d02c4fa4d0093a62fe2799910e93cef34c136410`へ固定。環境再起動後も未コミット成果物を保持。初期11全景と3構図の動作6画像を補正後LLMが原寸実閲覧し採用、manifest566画像へ更新。3構図でpause2秒全RGBA一致・resume状態・pageerrorなし。独立レビュー重大指摘なし。コミット前verify（型/Lint/137単体/566画像/production build）成功。commit・push・PR・CI・mergeが残る。
+- PR #81はCI成功後main `3d0a6ebae0da54ec046c53780dec6ba2cc7b91a3`へマージ済み。街路車の周期20秒/走行14秒/休止6秒を公開対象へ統合した。
+- repo `/workspace/silent-webpage`、branch `feat/lively-window-lights`。ユーザー指定の遠景ビル・近景住宅の高頻度で多様な明滅を実装中。
+- 遠景は6.5〜10.5秒、住宅は6〜10秒の独立イベント。窓ごとに初期明暗、開始時刻、フェードを分散し、共有経過時間から決定論的に再現する。初回の全点灯寄り試作は不採用とし、遠景も点灯/消灯を交互化した。
+- 描画source `fd15718baad97a1918bdd16dda10b079006c838b9da95d8eb9e2eff58fc747ee`。desktop/wide/portraitの0〜12秒7時点atlasは遠景と住宅窓を両方含み、6秒全景と合わせた補正後6画像を親/独立LLMが採用。構図ID不一致・旧crop不足・capture説明を修正後に再撮影/再確認済み。コミット前verify（型/Lint/140単体/572画像/production build）成功。commit、push、PR、CI、mergeが残る。
 
 ## 過去の進行状況（C033時点の記録）
 

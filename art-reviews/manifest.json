@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "7074380419d767e4e7110a87d02c4fa4d0093a62fe2799910e93cef34c136410",
+  "sourceSha256": "fd15718baad97a1918bdd16dda10b079006c838b9da95d8eb9e2eff58fc747ee",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -4175,6 +4175,42 @@
       "report": "art-reviews/2026-11-10-street-car-frequency/tall-road-corrected.png.json",
       "decision": "accepted", "reviewedBy": "LLM",
       "reason": "本番3構図の補正後動作6画像をLLMが原寸実閲覧。0/2/4/6秒の位置・縮小変化と20秒後の通過を確認。16.5秒の開始は遮蔽内で、正確な境界と6秒休止は計算値。"
+    },
+    {
+      "image": "art-reviews/2026-11-12-lively-window-lights-final-v3/desktop-skyline-corrected.png",
+      "report": "art-reviews/2026-11-12-lively-window-lights-final-v3/desktop-skyline-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "本番desktopの0〜12秒7時点を補正後に親/独立LLMが原寸実閲覧。遠景と住宅の灯りが別位相で変化し、一斉点滅・ストロボ・窓枠や格子の破損がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-11-12-lively-window-lights-final-v3/wide-skyline-corrected.png",
+      "report": "art-reviews/2026-11-12-lively-window-lights-final-v3/wide-skyline-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "本番wideの0〜12秒7時点を補正後に親/独立LLMが原寸実閲覧。広い街の左右・中央で明暗分布が変わり、明るい窓を残して同期せず、構図と細部を保持するため採用。"
+    },
+    {
+      "image": "art-reviews/2026-11-12-lively-window-lights-final-v3/portrait-skyline-corrected.png",
+      "report": "art-reviews/2026-11-12-lively-window-lights-final-v3/portrait-skyline-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "本番portraitの0〜12秒7時点を補正後に親/独立LLMが原寸実閲覧。高層ビルの小窓と住宅の大窓が独立して変わり、DPR2でもにじみや窓外へのはみ出しがないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-11-12-lively-window-lights-final-v3/desktop-6-corrected.png",
+      "report": "art-reviews/2026-11-12-lively-window-lights-final-v3/desktop-6-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "6秒時点の補正後全景を親/独立LLMが原寸実閲覧。遠景・近景とも暖色灯を十分に残し、屋上と乗り物を含む構図の静けさを維持するため採用。"
+    },
+    {
+      "image": "art-reviews/2026-11-12-lively-window-lights-final-v3/wide-6-corrected.png",
+      "report": "art-reviews/2026-11-12-lively-window-lights-final-v3/wide-6-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "6秒時点の補正後wide全景を親/独立LLMが原寸実閲覧。灯りが街全体へ分散し、過度な明暗塊や一斉消灯、背景格子の破損がないため採用。"
+    },
+    {
+      "image": "art-reviews/2026-11-12-lively-window-lights-final-v3/portrait-6-corrected.png",
+      "report": "art-reviews/2026-11-12-lively-window-lights-final-v3/portrait-6-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "6秒時点の補正後portrait全景を親/独立LLMが原寸実閲覧。遠景・住宅の灯りを区別でき、壁・植栽・窓枠への暗幕の漏れがないため採用。"
     }
   ]
 }

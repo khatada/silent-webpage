@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { cityMotion, residentialLightCycle } from './city-motion';
-import { windowBrightness } from './animation';
+import { cityMotion } from './city-motion';
+import { residentialLightBrightness } from './residential-light-timing';
 import { generatedLayout } from './generated-layout';
 
 describe('readable city motion', () => {
@@ -14,14 +14,12 @@ describe('readable city motion', () => {
   });
   it('changes several residential rooms in the first eight seconds without synchronizing them', () => {
     const changes = Array.from({ length: 9 }, (_, index) => {
-      const { phase, period } = residentialLightCycle(index);
-      const levels = Array.from({ length: 33 }, (_, step) => windowBrightness(step / 4, phase, period));
+      const levels = Array.from({ length: 33 }, (_, step) => residentialLightBrightness(step / 4, index, 0));
       return Math.max(...levels) - Math.min(...levels);
     });
     expect(changes.filter(change => change > 0.75).length).toBeGreaterThanOrEqual(6);
     const initial = Array.from({ length: 9 }, (_, index) => {
-      const { phase, period } = residentialLightCycle(index);
-      return windowBrightness(0, phase, period);
+      return residentialLightBrightness(0, index, 0);
     });
     expect(initial.some(level => level === 0)).toBe(true);
     expect(initial.some(level => level === 1)).toBe(true);
