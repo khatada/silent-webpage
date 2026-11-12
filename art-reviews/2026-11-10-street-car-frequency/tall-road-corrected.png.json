@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-11-10-street-car-frequency/tall-road-source.png",
+    "width": 140,
+    "height": 2660,
+    "sha256": "291d9791ced75f1c9512aa4f69ab50cfd01c4ddc2d135d8c70b396a4b6bb7ac0"
+  },
+  "output": {
+    "path": "art-reviews/2026-11-10-street-car-frequency/tall-road-corrected.png",
+    "width": 140,
+    "height": 2660,
+    "sha256": "291d9791ced75f1c9512aa4f69ab50cfd01c4ddc2d135d8c70b396a4b6bb7ac0"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

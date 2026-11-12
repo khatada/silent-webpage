@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-11-10-street-car-frequency/desktop-road-source.png",
+    "width": 110,
+    "height": 1400,
+    "sha256": "c48376c5402678b892adae4a89b1378f01367c5da9e4fdf196cc0bd58927f23d"
+  },
+  "output": {
+    "path": "art-reviews/2026-11-10-street-car-frequency/desktop-road-corrected.png",
+    "width": 110,
+    "height": 1400,
+    "sha256": "c48376c5402678b892adae4a89b1378f01367c5da9e4fdf196cc0bd58927f23d"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

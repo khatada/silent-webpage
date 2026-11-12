@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-11-10-street-car-frequency/tall-full-source.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "d613d5db23ece7ef5b2e5ae2342fd561650eea1f87d2e214a1fa490ac25d9967"
+  },
+  "output": {
+    "path": "art-reviews/2026-11-10-street-car-frequency/tall-full-corrected.png",
+    "width": 780,
+    "height": 2050,
+    "sha256": "d613d5db23ece7ef5b2e5ae2342fd561650eea1f87d2e214a1fa490ac25d9967"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

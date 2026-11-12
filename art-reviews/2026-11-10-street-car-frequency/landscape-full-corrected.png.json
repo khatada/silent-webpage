@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-11-10-street-car-frequency/landscape-full-source.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "79637552e080fdb7320173cd224513344486d3d6cd6c7a2634f7ab8deb7a0d77"
+  },
+  "output": {
+    "path": "art-reviews/2026-11-10-street-car-frequency/landscape-full-corrected.png",
+    "width": 1688,
+    "height": 780,
+    "sha256": "79637552e080fdb7320173cd224513344486d3d6cd6c7a2634f7ab8deb7a0d77"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
