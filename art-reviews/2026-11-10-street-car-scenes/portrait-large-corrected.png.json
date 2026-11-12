@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-11-10-street-car-scenes/portrait-large-source.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "bba8e1baa1d7158329fe0e22e123d789f4cc459e10987138e686a4886bc3066b"
+  },
+  "output": {
+    "path": "art-reviews/2026-11-10-street-car-scenes/portrait-large-corrected.png",
+    "width": 900,
+    "height": 1600,
+    "sha256": "c3c8c5e34a2e0ec6d466dd233f208c40d4256b936445f1109de176b3ad917edb"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

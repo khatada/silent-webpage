@@ -1,0 +1,23 @@
+{
+  "sourceSha256": "7074380419d767e4e7110a87d02c4fa4d0093a62fe2799910e93cef34c136410",
+  "decision": "accepted",
+  "reviewedBy": "LLM",
+  "method": "All six corrected images viewed at original detail. Road atlases show seven native crops at requested 0, 2, 4, 6, 10.5, 16.5 and 20 seconds; full views show 20 seconds.",
+  "images": [
+    { "name": "desktop-full-corrected.png", "sha256": "3ea3f209710a520735fff1bedd9398aa760e51253ba8ea573a3e10e39c618add" },
+    { "name": "desktop-road-corrected.png", "sha256": "c48376c5402678b892adae4a89b1378f01367c5da9e4fdf196cc0bd58927f23d" },
+    { "name": "landscape-full-corrected.png", "sha256": "79637552e080fdb7320173cd224513344486d3d6cd6c7a2634f7ab8deb7a0d77" },
+    { "name": "landscape-road-corrected.png", "sha256": "f436c6d6bbdd6debb3231eddb2c58788603265caa3afe706927d619edf823da8" },
+    { "name": "tall-full-corrected.png", "sha256": "d613d5db23ece7ef5b2e5ae2342fd561650eea1f87d2e214a1fa490ac25d9967" },
+    { "name": "tall-road-corrected.png", "sha256": "291d9791ced75f1c9512aa4f69ab50cfd01c4ddc2d135d8c70b396a4b6bb7ac0" }
+  ],
+  "observations": [
+    "Road crops show the vehicle at different positions and apparent sizes across the 0/2/4/6-second samples in each composition, though it becomes very small or obscured in later positions.",
+    "At the 10.5-second capture the vehicle is not discernible; at 20 seconds it is visible again. The 16.5-second timing start remains behind route occlusion, so the image does not establish visible reappearance at that boundary.",
+    "Full views retain the surrounding city scene. Capture reports identical full RGBA data during two seconds of pause, resumed motion state and no page errors for all three viewports."
+  ],
+  "limitations": [
+    "The six-second absence and precise 10.5/16.5 transition boundaries are timing calculations in capture.json, not direct proof of every rendered frame. The final RAF may precede a requested capture time.",
+    "Finite samples do not establish continuous movement, every occlusion or the exact visible reappearance time. Resume confirms running state rather than measured displacement."
+  ]
+}

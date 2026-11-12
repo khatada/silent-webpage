@@ -1,0 +1,27 @@
+{
+  "sourceSha256": "7074380419d767e4e7110a87d02c4fa4d0093a62fe2799910e93cef34c136410",
+  "decision": "accepted",
+  "reviewedBy": "LLM",
+  "method": "All eleven corrected production screenshots were opened and actually viewed at original detail across two image-viewer calls.",
+  "images": [
+    { "name": "compact-corrected.png", "sha256": "4924286e34a9f67d01c5c479becd66da34af72b64046507074ecef12a8e95323", "width": 800, "height": 600 },
+    { "name": "desktop-corrected.png", "sha256": "d0c163d112c2affe99def0cef07d18fb27a495ec8909baf2eee7abfc9a3622e1", "width": 1440, "height": 900 },
+    { "name": "landscape-corrected.png", "sha256": "8ac8c40908646ac837ae1791d2a7025a83a31b305bad0da5ec90ffd472035721", "width": 1688, "height": 780 },
+    { "name": "mobile-corrected.png", "sha256": "5142fe19533d2c856c447c921628b9822041b2fad944bcb80b641d085cc4dbd0", "width": 780, "height": 1688 },
+    { "name": "narrow-corrected.png", "sha256": "96bd8a9613c60861670ef0a6b8a162e46b0c14c2a0b1c6e3d0dacf52d0726a8d", "width": 295, "height": 844 },
+    { "name": "portrait-boundary-corrected.png", "sha256": "266e589d2e9d9dde1a2bfc67e6a1a76554e9a474a9990b207c2dc90346d04d45", "width": 1024, "height": 1537 },
+    { "name": "portrait-large-corrected.png", "sha256": "c3c8c5e34a2e0ec6d466dd233f208c40d4256b936445f1109de176b3ad917edb", "width": 900, "height": 1600 },
+    { "name": "small-mobile-corrected.png", "sha256": "23deb2cef87f140b10aeded91a61b26b51a6088d414942d8e92f6df102084224", "width": 750, "height": 1334 },
+    { "name": "small-phone-corrected.png", "sha256": "f881441b69f93890ee927c9f288bd7f0bbd11688a97df8b05e8f72e0b8d17de4", "width": 640, "height": 1136 },
+    { "name": "tall-corrected.png", "sha256": "62c5929522906a2ce1d57b8aa21a885f8e9cfa40e8e7948c14652d30f1200f97", "width": 780, "height": 2050 },
+    { "name": "wide-corrected.png", "sha256": "93f1357958d38182f4fd0085066494c8c2335f62cd8804663dcfd175a1317f38", "width": 2560, "height": 1080 }
+  ],
+  "observations": [
+    "The initial scene remains coherent in all eleven representative layouts: city, railway, rooftop actors and foreground details preserve their alignment and pixel grid.",
+    "At time zero the street car keeps the prior 25 percent route progress by calculation; the full-scene images are accepted as composition evidence rather than proof of the faster timing."
+  ],
+  "limitations": [
+    "Initial still images do not demonstrate speed, the six-second absence, the next pass, or every occlusion instant; those require the production activity capture.",
+    "The street car is deliberately tiny and partly occluded in the full scenes, so these images do not establish continuous lamp legibility."
+  ]
+}

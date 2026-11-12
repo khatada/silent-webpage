@@ -1,0 +1,274 @@
+{
+  "sourceSha256": "7074380419d767e4e7110a87d02c4fa4d0093a62fe2799910e93cef34c136410",
+  "results": [
+    {
+      "name": "desktop",
+      "viewport": [
+        1440,
+        900,
+        1
+      ],
+      "physicalScale": 1,
+      "sceneIndex": 0,
+      "contextPhysical": [
+        522,
+        524,
+        110,
+        200
+      ],
+      "times": [
+        0,
+        2,
+        4,
+        6,
+        10.5,
+        16.5,
+        20
+      ],
+      "calculatedTiming": [
+        {
+          "seconds": 0,
+          "visible": true,
+          "progress": 0.25,
+          "distance": 0.4375,
+          "alpha": 1
+        },
+        {
+          "seconds": 2,
+          "visible": true,
+          "progress": 0.39285714285714285,
+          "distance": 0.631377551020408,
+          "alpha": 1
+        },
+        {
+          "seconds": 4,
+          "visible": true,
+          "progress": 0.5357142857142857,
+          "distance": 0.784438775510204,
+          "alpha": 1
+        },
+        {
+          "seconds": 6,
+          "visible": true,
+          "progress": 0.6785714285714286,
+          "distance": 0.8966836734693878,
+          "alpha": 1
+        },
+        {
+          "seconds": 10.5,
+          "visible": false,
+          "progress": 1,
+          "distance": 1,
+          "alpha": 0
+        },
+        {
+          "seconds": 16.5,
+          "visible": true,
+          "progress": 0,
+          "distance": 0,
+          "alpha": 1
+        },
+        {
+          "seconds": 20,
+          "visible": true,
+          "progress": 0.25,
+          "distance": 0.4375,
+          "alpha": 1
+        }
+      ],
+      "pauseExact": true,
+      "resumed": true,
+      "runtimeErrors": []
+    },
+    {
+      "name": "landscape",
+      "viewport": [
+        844,
+        390,
+        2
+      ],
+      "physicalScale": 2,
+      "sceneIndex": 1,
+      "contextPhysical": [
+        738,
+        492,
+        180,
+        216
+      ],
+      "times": [
+        0,
+        2,
+        4,
+        6,
+        10.5,
+        16.5,
+        20
+      ],
+      "calculatedTiming": [
+        {
+          "seconds": 0,
+          "visible": true,
+          "progress": 0.25,
+          "distance": 0.4375,
+          "alpha": 1
+        },
+        {
+          "seconds": 2,
+          "visible": true,
+          "progress": 0.39285714285714285,
+          "distance": 0.631377551020408,
+          "alpha": 1
+        },
+        {
+          "seconds": 4,
+          "visible": true,
+          "progress": 0.5357142857142857,
+          "distance": 0.784438775510204,
+          "alpha": 1
+        },
+        {
+          "seconds": 6,
+          "visible": true,
+          "progress": 0.6785714285714286,
+          "distance": 0.8966836734693878,
+          "alpha": 1
+        },
+        {
+          "seconds": 10.5,
+          "visible": false,
+          "progress": 1,
+          "distance": 1,
+          "alpha": 0
+        },
+        {
+          "seconds": 16.5,
+          "visible": true,
+          "progress": 0,
+          "distance": 0,
+          "alpha": 1
+        },
+        {
+          "seconds": 20,
+          "visible": true,
+          "progress": 0.25,
+          "distance": 0.4375,
+          "alpha": 1
+        }
+      ],
+      "pauseExact": true,
+      "resumed": true,
+      "runtimeErrors": []
+    },
+    {
+      "name": "tall",
+      "viewport": [
+        390,
+        1025,
+        2
+      ],
+      "physicalScale": 2,
+      "sceneIndex": 2,
+      "contextPhysical": [
+        116,
+        1118,
+        140,
+        380
+      ],
+      "times": [
+        0,
+        2,
+        4,
+        6,
+        10.5,
+        16.5,
+        20
+      ],
+      "calculatedTiming": [
+        {
+          "seconds": 0,
+          "visible": true,
+          "progress": 0.25,
+          "distance": 0.4375,
+          "alpha": 1
+        },
+        {
+          "seconds": 2,
+          "visible": true,
+          "progress": 0.39285714285714285,
+          "distance": 0.631377551020408,
+          "alpha": 1
+        },
+        {
+          "seconds": 4,
+          "visible": true,
+          "progress": 0.5357142857142857,
+          "distance": 0.784438775510204,
+          "alpha": 1
+        },
+        {
+          "seconds": 6,
+          "visible": true,
+          "progress": 0.6785714285714286,
+          "distance": 0.8966836734693878,
+          "alpha": 1
+        },
+        {
+          "seconds": 10.5,
+          "visible": false,
+          "progress": 1,
+          "distance": 1,
+          "alpha": 0
+        },
+        {
+          "seconds": 16.5,
+          "visible": true,
+          "progress": 0,
+          "distance": 0,
+          "alpha": 1
+        },
+        {
+          "seconds": 20,
+          "visible": true,
+          "progress": 0.25,
+          "distance": 0.4375,
+          "alpha": 1
+        }
+      ],
+      "pauseExact": true,
+      "resumed": true,
+      "runtimeErrors": []
+    }
+  ],
+  "calculatedBoundaries": [
+    {
+      "seconds": 10.49,
+      "visible": true,
+      "progress": 0.9992857142857144,
+      "distance": 0.9999994897959184,
+      "alpha": 0.004761904761903709
+    },
+    {
+      "seconds": 10.5,
+      "visible": false,
+      "progress": 1,
+      "distance": 1,
+      "alpha": 0
+    },
+    {
+      "seconds": 16.49,
+      "visible": false,
+      "progress": 1,
+      "distance": 1,
+      "alpha": 0
+    },
+    {
+      "seconds": 16.5,
+      "visible": true,
+      "progress": 0,
+      "distance": 0,
+      "alpha": 1
+    }
+  ],
+  "method": "Production page; separate Chromium per case, running awaited and device screenshot dimensions asserted. Road context strips copied at native resolution from actual screenshots.",
+  "limitations": "Timing states and exact boundaries are calculated, not measured; the 20fps final RAF may precede requested capture time. Crops may be clipped at viewport edges. Finite snapshots do not show every instant. Resume confirms running state only."
+}

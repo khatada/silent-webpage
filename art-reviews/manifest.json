@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "332a7b7ac17e6f04202392683a3fbd226330eca2d0e0db1679e79238ab018d64",
+  "sourceSha256": "7074380419d767e4e7110a87d02c4fa4d0093a62fe2799910e93cef34c136410",
   "images": [
     {
       "image": "public/art/tokyo-night.png",
@@ -4073,6 +4073,108 @@
       "decision": "accepted",
       "reviewedBy": "LLM",
       "reason": "担当LLMが補正後の本番動作6画像を原寸実閲覧。0/8/16秒の上層雲の移動と全景を採用。tall16秒で鳥と一時重なるが識別可能。位置は計算値、全周期や全時刻は未検証。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-scenes/compact-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-scenes/compact-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "補正後の初期11全景をLLMが原寸実閲覧。街・線路・屋上の構図と格子整列を確認し採用。初期車は計算上従来同じ25%進捗で、静止画は速度や全遮蔽時刻の証拠ではない。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-scenes/desktop-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-scenes/desktop-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "補正後の初期11全景をLLMが原寸実閲覧。街・線路・屋上の構図と格子整列を確認し採用。初期車は計算上従来同じ25%進捗で、静止画は速度や全遮蔽時刻の証拠ではない。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-scenes/landscape-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-scenes/landscape-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "補正後の初期11全景をLLMが原寸実閲覧。街・線路・屋上の構図と格子整列を確認し採用。初期車は計算上従来同じ25%進捗で、静止画は速度や全遮蔽時刻の証拠ではない。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-scenes/mobile-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-scenes/mobile-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "補正後の初期11全景をLLMが原寸実閲覧。街・線路・屋上の構図と格子整列を確認し採用。初期車は計算上従来同じ25%進捗で、静止画は速度や全遮蔽時刻の証拠ではない。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-scenes/narrow-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-scenes/narrow-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "補正後の初期11全景をLLMが原寸実閲覧。街・線路・屋上の構図と格子整列を確認し採用。初期車は計算上従来同じ25%進捗で、静止画は速度や全遮蔽時刻の証拠ではない。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-scenes/portrait-boundary-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-scenes/portrait-boundary-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "補正後の初期11全景をLLMが原寸実閲覧。街・線路・屋上の構図と格子整列を確認し採用。初期車は計算上従来同じ25%進捗で、静止画は速度や全遮蔽時刻の証拠ではない。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-scenes/portrait-large-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-scenes/portrait-large-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "補正後の初期11全景をLLMが原寸実閲覧。街・線路・屋上の構図と格子整列を確認し採用。初期車は計算上従来同じ25%進捗で、静止画は速度や全遮蔽時刻の証拠ではない。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-scenes/small-mobile-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-scenes/small-mobile-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "補正後の初期11全景をLLMが原寸実閲覧。街・線路・屋上の構図と格子整列を確認し採用。初期車は計算上従来同じ25%進捗で、静止画は速度や全遮蔽時刻の証拠ではない。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-scenes/small-phone-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-scenes/small-phone-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "補正後の初期11全景をLLMが原寸実閲覧。街・線路・屋上の構図と格子整列を確認し採用。初期車は計算上従来同じ25%進捗で、静止画は速度や全遮蔽時刻の証拠ではない。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-scenes/tall-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-scenes/tall-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "補正後の初期11全景をLLMが原寸実閲覧。街・線路・屋上の構図と格子整列を確認し採用。初期車は計算上従来同じ25%進捗で、静止画は速度や全遮蔽時刻の証拠ではない。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-scenes/wide-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-scenes/wide-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "補正後の初期11全景をLLMが原寸実閲覧。街・線路・屋上の構図と格子整列を確認し採用。初期車は計算上従来同じ25%進捗で、静止画は速度や全遮蔽時刻の証拠ではない。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-frequency/desktop-full-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-frequency/desktop-full-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "本番3構図の補正後動作6画像をLLMが原寸実閲覧。0/2/4/6秒の位置・縮小変化と20秒後の通過を確認。16.5秒の開始は遮蔽内で、正確な境界と6秒休止は計算値。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-frequency/desktop-road-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-frequency/desktop-road-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "本番3構図の補正後動作6画像をLLMが原寸実閲覧。0/2/4/6秒の位置・縮小変化と20秒後の通過を確認。16.5秒の開始は遮蔽内で、正確な境界と6秒休止は計算値。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-frequency/landscape-full-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-frequency/landscape-full-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "本番3構図の補正後動作6画像をLLMが原寸実閲覧。0/2/4/6秒の位置・縮小変化と20秒後の通過を確認。16.5秒の開始は遮蔽内で、正確な境界と6秒休止は計算値。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-frequency/landscape-road-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-frequency/landscape-road-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "本番3構図の補正後動作6画像をLLMが原寸実閲覧。0/2/4/6秒の位置・縮小変化と20秒後の通過を確認。16.5秒の開始は遮蔽内で、正確な境界と6秒休止は計算値。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-frequency/tall-full-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-frequency/tall-full-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "本番3構図の補正後動作6画像をLLMが原寸実閲覧。0/2/4/6秒の位置・縮小変化と20秒後の通過を確認。16.5秒の開始は遮蔽内で、正確な境界と6秒休止は計算値。"
+    },
+    {
+      "image": "art-reviews/2026-11-10-street-car-frequency/tall-road-corrected.png",
+      "report": "art-reviews/2026-11-10-street-car-frequency/tall-road-corrected.png.json",
+      "decision": "accepted", "reviewedBy": "LLM",
+      "reason": "本番3構図の補正後動作6画像をLLMが原寸実閲覧。0/2/4/6秒の位置・縮小変化と20秒後の通過を確認。16.5秒の開始は遮蔽内で、正確な境界と6秒休止は計算値。"
     }
   ]
 }
