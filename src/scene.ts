@@ -2,7 +2,7 @@ import { createImageWideBackground } from './image-wide-background';
 import { createImageRailPoles } from './image-rail-poles';
 import { createLogicalBackground } from './logical-background';
 import { Application, Assets, Container, Rectangle, Sprite, Texture } from 'pixi.js';
-import { catPose, travelPosition, windowBrightness } from './animation';
+import { catPose, travelPosition } from './animation';
 import { generatedArt } from './generated-art';
 import { generatedLayout } from './generated-layout';
 import { createImageCat } from './image-cat';
@@ -19,9 +19,10 @@ import { createImageUpperCloud } from './image-upper-cloud';
 import { createImageSkylineLights } from './image-skyline-lights';
 import { createImageStars } from './image-stars';
 import { createImageRoomLights, roomLightAreas } from './image-room-lights';
+import { residentialLightBrightness } from './residential-light-timing';
 import { sceneTrainService, trainServiceState, type TrainServiceSchedule } from './train-service';
 import { createImagePlant, plantArt, plantGeometry } from './image-plant';
-import { cityMotion, residentialLightCycle } from './city-motion';
+import { cityMotion } from './city-motion';
 import { oppositeAircraftArt, oppositeAircraftGeometry } from './opposite-aircraft';
 import { birdArt, birdGeometry, createImageBird } from './image-bird';
 
@@ -90,6 +91,7 @@ export async function createScene(host: HTMLElement): Promise<{
   let windsock: ReturnType<typeof imageWindsock.createSprite> | undefined;
   let laundry: ReturnType<typeof imageLaundry.createSprite> | undefined;
   let residentComposition: 0 | 1 | 2 = 0;
+  let lightComposition: 0 | 1 | 2 = 0;
   let roadCar: ReturnType<typeof imageStreetCar.createSprite>;
   const crops: Texture[] = [];
   const crop = (source: Texture, frame: Frame) => {
@@ -226,6 +228,7 @@ export async function createScene(host: HTMLElement): Promise<{
     curtain = undefined;
     resident = undefined;
     residentComposition = layout.wide ? 2 : layout.portrait ? 1 : 0;
+    lightComposition = layout.portrait ? 2 : layout.wide ? 1 : 0;
     windows = composition.windows.map(([x, y, w, h], index) => {
       // Residents and curtains are beneath the existing dark overlay and inherit its light cycle.
       if ((!layout.wide || scale >= 2) && index === residentArt.placements[residentComposition].window) {
@@ -319,8 +322,7 @@ export async function createScene(host: HTMLElement): Promise<{
     if (resident) imageResident.update(resident, elapsed, residentComposition);
     imageStars.update(stars, elapsed);
     windows.forEach((art, index) => {
-      const cycle = residentialLightCycle(index);
-      const brightness = windowBrightness(elapsed, cycle.phase, cycle.period);
+      const brightness = residentialLightBrightness(elapsed, index, lightComposition);
       art.alpha = 0.92 * (1 - brightness);
       if (resident && index === residentArt.placements[residentComposition].window) resident.alpha = brightness;
     });

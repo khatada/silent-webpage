@@ -11,6 +11,7 @@ import { starCoreSampled, starScenes } from '../src/image-stars';
 import { skylineLightScenes } from '../src/image-skyline-lights';
 import { starDarkness } from '../src/star-timing';
 import { skylineLightDarkness } from '../src/skyline-light-timing';
+import { residentialLightBrightness } from '../src/residential-light-timing';
 import { artSourceHash } from './art-source-hash';
 
 const { values } = parseArgs({ options: { output: { type: 'string' } } });
@@ -24,18 +25,20 @@ const correct = (input: string, corrected: string, dpr: number) => execFileSync(
     '--cell-size', String(dpr), '--scale', String(dpr)], { stdio: 'ignore' });
 const browser = await chromium.launch({ executablePath: process.env.ART_BROWSER_PATH || '/usr/bin/chromium',
   args: ['--no-sandbox', '--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
-const times = [0, 2, 4, 6, 8, 18, 22, 26, 30];
+const times = [0, 2, 4, 6, 8, 10, 12];
 const layouts: unknown[] = [], samples: unknown[] = [];
 try {
   for (const [name, cssWidth, cssHeight, dpr, expectedComposition] of [
-    ['wide', 2560, 1080, 1, 1], ['compact', 800, 600, 1, 1],
-    ['landscape', 844, 390, 2, 1],
+    ['desktop', 1440, 900, 1, 0], ['wide', 2560, 1080, 1, 1],
+    ['portrait', 390, 1025, 2, 2],
   ] as const) {
     const viewport = pixelViewport(cssWidth, cssHeight, dpr);
     const layout = generatedLayout(viewport.width, viewport.height);
     const composition = layout.portrait ? 2 : layout.wide ? 1 : 0;
     if (composition !== expectedComposition) throw new Error(`${name}: unexpected composition`);
-    const bandBottom = Math.min(viewport.height, Math.ceil(layout.railBottom));
+    const residentialBottom = Math.max(...layout.composition.windows.map(([, y, , height]) =>
+      layout.originY + (y + height) * layout.scale));
+    const bandBottom = Math.min(viewport.height, Math.ceil(Math.max(layout.railBottom, residentialBottom)));
     const width = viewport.width * dpr, height = bandBottom * dpr;
     if (width * height * times.length > 16_000_000) throw new Error(`${name}: atlas exceeds 16MP`);
     const atlas = new PNG({ width, height: height * times.length });
@@ -80,14 +83,16 @@ try {
       if (screenshot.width !== width || screenshot.height !== viewport.height * dpr) throw new Error(`${name}: screenshot dimensions differ`);
       // Copy production screenshot pixels only; no artwork is drawn for this QA atlas.
       PNG.bitblt(screenshot, atlas, 0, 0, width, height, 0, panel * height);
-      if (seconds === 4) {
-        const fullSource = `${output}/${name}-4-source.png`;
+      if (seconds === 6) {
+        const fullSource = `${output}/${name}-6-source.png`;
         await copyFile(input, fullSource);
-        correct(fullSource, `${output}/${name}-4-corrected.png`, dpr);
+        correct(fullSource, `${output}/${name}-6-corrected.png`, dpr);
       }
       samples.push({ name, panel, requestedSceneSeconds: seconds,
         calculatedStarDarkness: stars.map(({ index }) => starDarkness(seconds, index, composition)),
-        calculatedWindowDarkness: windows.map(({ index }) => skylineLightDarkness(seconds, index, composition)) });
+        calculatedWindowDarkness: windows.map(({ index }) => skylineLightDarkness(seconds, index, composition)),
+        calculatedResidentialBrightness: Array.from({ length: 9 }, (_, index) =>
+          residentialLightBrightness(seconds, index, composition)) });
     }
     const atlasSource = `${output}/${name}-skyline-source.png`;
     await writeFile(atlasSource, PNG.sync.write(atlas));
@@ -99,7 +104,7 @@ try {
 const finalSourceSha256 = await artSourceHash();
 if (sourceSha256 !== finalSourceSha256) throw new Error('Rendering source changed during capture; discard screenshots.');
 const capture = { sourceSha256, finalSourceSha256, times,
-  method: 'Unmodified production page. Clock paused before navigation, reduced motion removed after readiness, canvas running state awaited, runFor steps <=1000ms. Nine full-width native sky/building bands run from y0 through generatedLayout railBottom, stacked in times order. Only 4s full scenes are retained. Core rectangles and sampling eligibility are calculated geometry, not pixel-measured visibility; passing clouds/aircraft can occlude them. Darkness arrays match the visible core index order in layouts and are calculated at requested seconds, not measured pixel timing. The last 20fps RAF may precede requested time. These screenshot crops create no original art. Correction uses cell-size=dpr and scale=dpr. Actual LLM review decides adoption; finite samples do not prove every event is unique or establish a subjective continuous-motion impression.',
+  method: 'Unmodified production page. Clock paused before navigation, reduced motion removed after readiness, canvas running state awaited, runFor steps <=1000ms. Seven full-width native bands run from y0 through the farther-down edge of generatedLayout railBottom or all residential review windows, stacked in times order. Only 6s full scenes are retained. Core rectangles and sampling eligibility are calculated geometry, not pixel-measured visibility; passing clouds/aircraft can occlude them. Darkness and residential brightness arrays are calculated at requested seconds, not measured pixel timing. The last 20fps RAF may precede requested time. These screenshot crops create no original art. Correction uses cell-size=dpr and scale=dpr. Actual LLM review decides adoption; finite samples do not prove every event is unique or establish a subjective continuous-motion impression.',
   layouts, samples, adoption: 'PENDING_LLM_VISUAL_REVIEW' };
 const formatted = `{\n${Object.entries(capture).map(([key, value]) => `  ${JSON.stringify(key)}: ${Array.isArray(value)
   ? `[\n${value.map(row => `    ${JSON.stringify(row)}`).join(',\n')}\n  ]` : JSON.stringify(value)}`).join(',\n')}\n}\n`;

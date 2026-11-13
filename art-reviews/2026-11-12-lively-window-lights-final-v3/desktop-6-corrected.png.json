@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-11-12-lively-window-lights-final-v3/desktop-6-source.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "a6aac84e37e8b16974bb91d3965b7582deb2465d0262b32c7d53a81a101b14a2"
+  },
+  "output": {
+    "path": "art-reviews/2026-11-12-lively-window-lights-final-v3/desktop-6-corrected.png",
+    "width": 1440,
+    "height": 900,
+    "sha256": "50af8ed50fd777eebeb88ee89003e3033029186e0414cb7761e3913014c79b57"
+  },
+  "grid": {
+    "cellSize": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 1
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}

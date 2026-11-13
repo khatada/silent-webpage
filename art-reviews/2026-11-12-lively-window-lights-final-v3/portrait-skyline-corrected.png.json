@@ -1,0 +1,24 @@
+{
+  "input": {
+    "path": "art-reviews/2026-11-12-lively-window-lights-final-v3/portrait-skyline-source.png",
+    "width": 780,
+    "height": 9002,
+    "sha256": "fab371ef84459585f0a247b20758bb87e85d53adf41924abbe33b62d47e7b40d"
+  },
+  "output": {
+    "path": "art-reviews/2026-11-12-lively-window-lights-final-v3/portrait-skyline-corrected.png",
+    "width": 780,
+    "height": 9002,
+    "sha256": "fab371ef84459585f0a247b20758bb87e85d53adf41924abbe33b62d47e7b40d"
+  },
+  "grid": {
+    "cellSize": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "outputScale": 2
+  },
+  "method": "Dominant original RGBA per declared cell; center-distance tie break; integer nearest-neighbor expansion.",
+  "edges": "Partial edge cells cropped.",
+  "limitations": "Uniform grid only; no automatic grid inference or local warp repair.",
+  "adoption": "PENDING_LLM_VISUAL_REVIEW: correction never automatically approves an image."
+}
